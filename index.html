@@ -530,15 +530,6 @@
         }
     });
 
-    // Auto-load Sulfuric Acid on page load
-    const sulfuricIdx = chemicals.findIndex(c => 
-        c.name.toLowerCase().includes('sulfuric acid') || 
-        c.name.toLowerCase().includes('schwefelsäure')
-    );
-    if (sulfuricIdx !== -1) {
-        selectChemical(sulfuricIdx);
-    }
-
     lucide.createIcons();
     </script>
 </body>
