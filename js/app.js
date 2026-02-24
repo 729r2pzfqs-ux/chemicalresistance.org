@@ -75,30 +75,47 @@ const materialInfo = {
 // Rating display order (best to worst)
 const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
-// Hazard code display info
-const hazardInfo = {
-    'T+': { label: 'Very Toxic', color: 'bg-purple-600', icon: '☠️' },
-    'T': { label: 'Toxic', color: 'bg-purple-500', icon: '☠️' },
-    'C+': { label: 'Very Corrosive', color: 'bg-red-600', icon: '🧪' },
-    'C': { label: 'Corrosive', color: 'bg-red-500', icon: '🧪' },
-    'Xn': { label: 'Harmful', color: 'bg-orange-500', icon: '⚠️' },
-    'Xi': { label: 'Irritant', color: 'bg-yellow-500', icon: '⚠️' },
-    'F+': { label: 'Extremely Flammable', color: 'bg-red-600', icon: '🔥' },
-    'F': { label: 'Flammable', color: 'bg-orange-500', icon: '🔥' },
-    'O': { label: 'Oxidizing', color: 'bg-amber-500', icon: '⭕' },
-    'N': { label: 'Environmental Hazard', color: 'bg-green-600', icon: '🌿' },
+// GHS pictogram URLs (official UNECE diamonds)
+const ghsPictograms = {
+    'GHS01': 'https://upload.wikimedia.org/wikipedia/commons/f/f5/GHS-pictogram-explos.svg',
+    'GHS02': 'https://upload.wikimedia.org/wikipedia/commons/6/6d/GHS-pictogram-flamme.svg',
+    'GHS03': 'https://upload.wikimedia.org/wikipedia/commons/b/b5/GHS-pictogram-rondflam.svg',
+    'GHS04': 'https://upload.wikimedia.org/wikipedia/commons/c/ca/GHS-pictogram-bottle.svg',
+    'GHS05': 'https://upload.wikimedia.org/wikipedia/commons/a/a1/GHS-pictogram-acid.svg',
+    'GHS06': 'https://upload.wikimedia.org/wikipedia/commons/5/5a/GHS-pictogram-skull.svg',
+    'GHS07': 'https://upload.wikimedia.org/wikipedia/commons/c/c3/GHS-pictogram-exclam.svg',
+    'GHS08': 'https://upload.wikimedia.org/wikipedia/commons/2/21/GHS-pictogram-silhouette.svg',
+    'GHS09': 'https://upload.wikimedia.org/wikipedia/commons/b/b9/GHS-pictogram-pollu.svg',
+};
+
+// Map old EU hazard codes to GHS pictograms
+const euToGhs = {
+    'T+': { ghs: 'GHS06', label: 'Very Toxic' },
+    'T': { ghs: 'GHS06', label: 'Toxic' },
+    'C+': { ghs: 'GHS05', label: 'Very Corrosive' },
+    'C': { ghs: 'GHS05', label: 'Corrosive' },
+    'Xn': { ghs: 'GHS07', label: 'Harmful' },
+    'Xi': { ghs: 'GHS07', label: 'Irritant' },
+    'F+': { ghs: 'GHS02', label: 'Extremely Flammable' },
+    'F': { ghs: 'GHS02', label: 'Flammable' },
+    'O': { ghs: 'GHS03', label: 'Oxidizing' },
+    'N': { ghs: 'GHS09', label: 'Environmental Hazard' },
 };
 
 function getHazardBadges(hazardStr) {
     if (!hazardStr || hazardStr === '—') return '';
     const codes = hazardStr.replace(/[()]/g, '').split(/[,\s]+/).filter(c => c && c !== '—');
+    const seenGhs = new Set();
+    
     return codes.map(code => {
-        const info = hazardInfo[code];
-        if (info) {
-            return `<span class="${info.color} text-white text-xs px-1.5 py-0.5 rounded" title="${info.label}">${info.icon} ${code}</span>`;
+        const info = euToGhs[code];
+        if (info && !seenGhs.has(info.ghs)) {
+            seenGhs.add(info.ghs);
+            const picUrl = ghsPictograms[info.ghs];
+            return `<img src="${picUrl}" alt="${info.label}" title="${info.label} (${code})" class="w-6 h-6 inline-block">`;
         }
         return '';
-    }).filter(Boolean).join(' ');
+    }).filter(Boolean).join('');
 }
 
 // Convert numeric ratings to letter grades for display
