@@ -1,0 +1,507 @@
+[
+  {
+    "medium": "Alkydharze",
+    "temperature_c": 20,
+    "viscosity_mPas": "500-3.000 mPas"
+  },
+  {
+    "medium": "Apfelmus",
+    "temperature_c": 20,
+    "viscosity_mPas": "1500"
+  },
+  {
+    "medium": "Babynahrung",
+    "temperature_c": 40,
+    "viscosity_mPas": "1400"
+  },
+  {
+    "medium": "Baumwollöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "60"
+  },
+  {
+    "medium": "Bienenhonig",
+    "temperature_c": 40,
+    "viscosity_mPas": "2000"
+  },
+  {
+    "medium": "Bierhefe",
+    "temperature_c": 20,
+    "viscosity_mPas": "370"
+  },
+  {
+    "medium": "Bratensauce",
+    "temperature_c": 80,
+    "viscosity_mPas": "110"
+  },
+  {
+    "medium": "Butter",
+    "temperature_c": 40,
+    "viscosity_mPas": "30000"
+  },
+  {
+    "medium": "Butterfett",
+    "temperature_c": 40,
+    "viscosity_mPas": "45"
+  },
+  {
+    "medium": "Butterrahm, sauer",
+    "temperature_c": 20,
+    "viscosity_mPas": "550"
+  },
+  {
+    "medium": "Dipropylenglycol",
+    "temperature_c": 20,
+    "viscosity_mPas": "107"
+  },
+  {
+    "medium": "Druckfarben",
+    "temperature_c": 40,
+    "viscosity_mPas": "550-2.200 mPas"
+  },
+  {
+    "medium": "Erdnussöl",
+    "temperature_c": 40,
+    "viscosity_mPas": "40"
+  },
+  {
+    "medium": "Flüssigei",
+    "temperature_c": 45,
+    "viscosity_mPas": "150"
+  },
+  {
+    "medium": "Flüssigseife",
+    "temperature_c": 60,
+    "viscosity_mPas": "85"
+  },
+  {
+    "medium": "Flüssigwachs",
+    "temperature_c": 90,
+    "viscosity_mPas": "500"
+  },
+  {
+    "medium": "Fruchtmaische",
+    "temperature_c": 20,
+    "viscosity_mPas": "600"
+  },
+  {
+    "medium": "Fruchtsaft",
+    "temperature_c": 20,
+    "viscosity_mPas": "50"
+  },
+  {
+    "medium": "Fruchtsaftkonzentrat",
+    "temperature_c": 20,
+    "viscosity_mPas": "2500"
+  },
+  {
+    "medium": "Gelatine",
+    "temperature_c": 45,
+    "viscosity_mPas": "1200"
+  },
+  {
+    "medium": "Gemüsesuppe",
+    "temperature_c": 20,
+    "viscosity_mPas": "430"
+  },
+  {
+    "medium": "Getriebeöl SAE 140",
+    "temperature_c": 20,
+    "viscosity_mPas": "2700"
+  },
+  {
+    "medium": "Getriebeöl SAE 90",
+    "temperature_c": 20,
+    "viscosity_mPas": "700"
+  },
+  {
+    "medium": "Glukose",
+    "temperature_c": "25-30°C",
+    "viscosity_mPas": "4.300-6.800 mPas"
+  },
+  {
+    "medium": "Glykol",
+    "temperature_c": 20,
+    "viscosity_mPas": "40"
+  },
+  {
+    "medium": "Glyzerin 100%",
+    "temperature_c": 20,
+    "viscosity_mPas": "1490"
+  },
+  {
+    "medium": "Glyzerin 100%",
+    "temperature_c": 10,
+    "viscosity_mPas": "4500"
+  },
+  {
+    "medium": "Glyzerin 100%",
+    "temperature_c": 0,
+    "viscosity_mPas": "12100"
+  },
+  {
+    "medium": "Handcreme",
+    "temperature_c": 20,
+    "viscosity_mPas": "8000"
+  },
+  {
+    "medium": "Harzlösung",
+    "temperature_c": 20,
+    "viscosity_mPas": "7100"
+  },
+  {
+    "medium": "Hydrauliköl HLP 100",
+    "temperature_c": 20,
+    "viscosity_mPas": "300"
+  },
+  {
+    "medium": "Hydrauliköl HLP 46",
+    "temperature_c": 20,
+    "viscosity_mPas": "120"
+  },
+  {
+    "medium": "Hydrauliköl HLP 68",
+    "temperature_c": 20,
+    "viscosity_mPas": "195"
+  },
+  {
+    "medium": "Joghurt",
+    "temperature_c": 40,
+    "viscosity_mPas": "150"
+  },
+  {
+    "medium": "Kakaobutter",
+    "temperature_c": 60,
+    "viscosity_mPas": "50"
+  },
+  {
+    "medium": "Kakaomasse",
+    "temperature_c": 20,
+    "viscosity_mPas": "4000"
+  },
+  {
+    "medium": "Kaliumhydroxid",
+    "temperature_c": 20,
+    "viscosity_mPas": "67"
+  },
+  {
+    "medium": "Knochenöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "300"
+  },
+  {
+    "medium": "Kokosöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "60"
+  },
+  {
+    "medium": "Kondensmilch",
+    "temperature_c": 40,
+    "viscosity_mPas": "80"
+  },
+  {
+    "medium": "Kondensmilch, gezuckert",
+    "temperature_c": 20,
+    "viscosity_mPas": "6100"
+  },
+  {
+    "medium": "Konfitüre",
+    "temperature_c": 20,
+    "viscosity_mPas": "8500"
+  },
+  {
+    "medium": "Lacke (25% Pigmente)",
+    "temperature_c": 20,
+    "viscosity_mPas": "3000"
+  },
+  {
+    "medium": "Latexemulsion",
+    "temperature_c": 20,
+    "viscosity_mPas": "200"
+  },
+  {
+    "medium": "Lebertran",
+    "temperature_c": 40,
+    "viscosity_mPas": "35"
+  },
+  {
+    "medium": "Leinsamenöl",
+    "temperature_c": 40,
+    "viscosity_mPas": "30"
+  },
+  {
+    "medium": "Liköre",
+    "temperature_c": 20,
+    "viscosity_mPas": "10-100 mPas"
+  },
+  {
+    "medium": "Maisöl",
+    "temperature_c": 60,
+    "viscosity_mPas": "30"
+  },
+  {
+    "medium": "Malzextrakt",
+    "temperature_c": 20,
+    "viscosity_mPas": "9500"
+  },
+  {
+    "medium": "Maschinenöl, leicht",
+    "temperature_c": 20,
+    "viscosity_mPas": "150"
+  },
+  {
+    "medium": "Maschinenöl, schwer",
+    "temperature_c": 20,
+    "viscosity_mPas": "600"
+  },
+  {
+    "medium": "Mayonnaise",
+    "temperature_c": 20,
+    "viscosity_mPas": "2000"
+  },
+  {
+    "medium": "Melasse 80°Bx",
+    "temperature_c": 20,
+    "viscosity_mPas": "10000"
+  },
+  {
+    "medium": "Melasse 83°Bx",
+    "temperature_c": 20,
+    "viscosity_mPas": "50000"
+  },
+  {
+    "medium": "Melasse 85°Bx",
+    "temperature_c": 20,
+    "viscosity_mPas": "100000"
+  },
+  {
+    "medium": "Milch",
+    "temperature_c": 20,
+    "viscosity_mPas": "2"
+  },
+  {
+    "medium": "Molke",
+    "temperature_c": 40,
+    "viscosity_mPas": "800-1.500 mPas"
+  },
+  {
+    "medium": "Motoröl SAE 10",
+    "temperature_c": 20,
+    "viscosity_mPas": "50"
+  },
+  {
+    "medium": "Motoröl SAE 15",
+    "temperature_c": 20,
+    "viscosity_mPas": "130"
+  },
+  {
+    "medium": "Motoröl SAE 15W40",
+    "temperature_c": 20,
+    "viscosity_mPas": "390"
+  },
+  {
+    "medium": "Motoröl SAE 15W40",
+    "temperature_c": -15,
+    "viscosity_mPas": "3000"
+  },
+  {
+    "medium": "Motoröl SAE 5",
+    "temperature_c": 20,
+    "viscosity_mPas": "30"
+  },
+  {
+    "medium": "Motoröl SAE 50",
+    "temperature_c": 20,
+    "viscosity_mPas": "750"
+  },
+  {
+    "medium": "Natronlauge 50%",
+    "temperature_c": 20,
+    "viscosity_mPas": "45"
+  },
+  {
+    "medium": "Olivenöl",
+    "temperature_c": 40,
+    "viscosity_mPas": "40"
+  },
+  {
+    "medium": "Ölsäure",
+    "temperature_c": 20,
+    "viscosity_mPas": "40"
+  },
+  {
+    "medium": "Palmöl",
+    "temperature_c": 40,
+    "viscosity_mPas": "45"
+  },
+  {
+    "medium": "Paraffineemulsion",
+    "temperature_c": 20,
+    "viscosity_mPas": "3000"
+  },
+  {
+    "medium": "Pectin",
+    "temperature_c": 40,
+    "viscosity_mPas": "300"
+  },
+  {
+    "medium": "Polyesterharz",
+    "temperature_c": 30,
+    "viscosity_mPas": "3000"
+  },
+  {
+    "medium": "Polymerlösung",
+    "temperature_c": 20,
+    "viscosity_mPas": "20000"
+  },
+  {
+    "medium": "Polyol (A-Komponente)",
+    "temperature_c": 10,
+    "viscosity_mPas": "85000"
+  },
+  {
+    "medium": "Polyol, unpigmentiert",
+    "temperature_c": 20,
+    "viscosity_mPas": "500-5.000 mPas"
+  },
+  {
+    "medium": "Pudding",
+    "temperature_c": 40,
+    "viscosity_mPas": "1000"
+  },
+  {
+    "medium": "Rahm (30-50% Fettgehalt)",
+    "temperature_c": 20,
+    "viscosity_mPas": "15-115 mPas"
+  },
+  {
+    "medium": "Rapsöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "160"
+  },
+  {
+    "medium": "Reinigungsemulsion",
+    "temperature_c": 70,
+    "viscosity_mPas": "2420"
+  },
+  {
+    "medium": "Risziunusöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "1.000-1.500 mPas"
+  },
+  {
+    "medium": "Salatdressing",
+    "temperature_c": 20,
+    "viscosity_mPas": "1.300-2.600 mPas"
+  },
+  {
+    "medium": "Schaumspeise",
+    "temperature_c": 40,
+    "viscosity_mPas": "1500"
+  },
+  {
+    "medium": "Schmelzkäse",
+    "temperature_c": 60,
+    "viscosity_mPas": "30000"
+  },
+  {
+    "medium": "Schmieröl",
+    "temperature_c": 20,
+    "viscosity_mPas": "60-200 mPas"
+  },
+  {
+    "medium": "Schokoladensauce",
+    "temperature_c": 50,
+    "viscosity_mPas": "280"
+  },
+  {
+    "medium": "Schweinefett",
+    "temperature_c": 40,
+    "viscosity_mPas": "65"
+  },
+  {
+    "medium": "Shampoo",
+    "temperature_c": 20,
+    "viscosity_mPas": "3000"
+  },
+  {
+    "medium": "Sojaöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "60"
+  },
+  {
+    "medium": "Sojaöl, behandelt",
+    "temperature_c": 20,
+    "viscosity_mPas": "600-800 mPas"
+  },
+  {
+    "medium": "Stärkelösung, 25°Bé",
+    "temperature_c": 20,
+    "viscosity_mPas": "300"
+  },
+  {
+    "medium": "Tomatenketchup",
+    "temperature_c": 30,
+    "viscosity_mPas": "1000"
+  },
+  {
+    "medium": "Tomatenmark",
+    "temperature_c": 20,
+    "viscosity_mPas": "195"
+  },
+  {
+    "medium": "Transformatorenöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "30"
+  },
+  {
+    "medium": "Transformatorenöl",
+    "temperature_c": 10,
+    "viscosity_mPas": "75"
+  },
+  {
+    "medium": "Turbinenöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "200-1.100 mPas"
+  },
+  {
+    "medium": "Vitaminöl",
+    "temperature_c": 10,
+    "viscosity_mPas": "4500"
+  },
+  {
+    "medium": "Walöl",
+    "temperature_c": 20,
+    "viscosity_mPas": "100"
+  },
+  {
+    "medium": "Wasserlack",
+    "temperature_c": 20,
+    "viscosity_mPas": "900"
+  },
+  {
+    "medium": "Zahnpasta",
+    "temperature_c": 40,
+    "viscosity_mPas": "70000"
+  },
+  {
+    "medium": "Zuckerlösung 65°Bx",
+    "temperature_c": 20,
+    "viscosity_mPas": "120"
+  },
+  {
+    "medium": "Zuckerlösung 70°Bx",
+    "temperature_c": 20,
+    "viscosity_mPas": "400"
+  },
+  {
+    "medium": "°Bx = °Brix",
+    "temperature_c": null,
+    "viscosity_mPas": ""
+  },
+  {
+    "medium": "°Bé = °Baumé",
+    "temperature_c": null,
+    "viscosity_mPas": ""
+  }
+]

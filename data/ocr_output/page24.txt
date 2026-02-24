@@ -1,0 +1,54 @@
+(c) Birkle GmbH 2024 Legend
+Chemical resistance
+Two values are given per substance
+left number = value at +20°C / right number = value at +50°C.
+0 no data available
+1 resistant
+2 practically resistant
+3 partially resistant
+4 not resistant
+K no general information available
+L danger of pitting or stress-cracking corrosion
+QO estimated value
+Hazard notes
+E ‘explosive
+° oxidizing
+F highly flammable
+Fe extremely flammable
+T toxic
+T+ very toxic
+c corrosive
+Xn harmful
+Xi irritant
+N dangerous for the environment
+Description of the materials
+Thermoplastics
+HDPE Polyethylene (high density)
+LDPE Polyethylene (low density)
+PA Polyamide (Nylon)
+PC Polycarbonate
+PETG Polyethylene terephthalate glycol (PET copolymer)
+PMP Polymethylpentene (TPX)
+POM Polyoxymethylene, polyacetal
+PP Polypropylene
+PS Polystyrene
+PSU Polysulfone
+Pvc Polyvinyl chloride
+SAN Styrene-acrylnitrile
+Fluoroplastics
+E-CTFE Ethylene-chlorotrifIuoroethylene (Halar )
+ETFE Ethylene-tetrafluoroethylene
+FEP Tetrafluoroethylene-perfluoropropylene (Teflon, FEP)
+PTFE Polytetrafluoroethylene (Teflon)
+PVDF Polyvinylidene fluoride
+Elastomers
+EPDM Ethylene-propylene-diene rubber
+FPMFKM Fluorinated rubber (Viton)
+NBR Acryl-nitrile-butadiene rubber
+SI Silicone rubber
+Metals:
+Al Aluminium
+V2A Stainless steel 1.4301 (AISI 304)
+V4A Stainless steel 1.4401 (AISI 316)
+Hastelloy © Nickel-chromium-molybdenum alloy
+24 of 24
