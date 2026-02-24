@@ -131,6 +131,40 @@ let currentGroupIndices = [];
 let currentSelectedIdx = 0;
 let currentLang = 'de';
 
+// Helper functions for material filters
+function getSelectedMaterials() {
+    const checkboxes = document.querySelectorAll('#materialFilters input[type="checkbox"]:checked, #moreMaterials input[type="checkbox"]:checked');
+    return Array.from(checkboxes).map(cb => cb.value);
+}
+
+window.clearMaterialFilters = function() {
+    document.querySelectorAll('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]').forEach(cb => cb.checked = false);
+    const searchResults = document.getElementById('searchResults');
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput.value.length < 2) {
+        searchResults.classList.add('hidden');
+    } else {
+        showSearchResults(searchInput.value.toLowerCase().trim());
+    }
+    // Update table to show all materials again
+    if (currentGroupIndices.length > 0) {
+        updateRatingsTable();
+    }
+};
+
+window.toggleMoreMaterials = function() {
+    const more = document.getElementById('moreMaterials');
+    const btn = document.getElementById('moreMatBtn');
+    if (!more || !btn) return;
+    if (more.classList.contains('hidden')) {
+        more.classList.remove('hidden');
+        btn.textContent = '−Weniger';
+    } else {
+        more.classList.add('hidden');
+        btn.textContent = '+Mehr';
+    }
+};
+
 // Initialize app
 async function init() {
     try {
@@ -198,8 +232,9 @@ function setupEventListeners() {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     const langSelect = document.getElementById('langSelect');
+    const ratingFilter = document.getElementById('ratingFilter');
 
-    // Search input
+    // Search input - only trigger on text search
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
         if (query.length < 2) {
@@ -207,6 +242,23 @@ function setupEventListeners() {
             return;
         }
         showSearchResults(query);
+        searchResults.classList.remove('hidden');
+    });
+
+    // Material checkbox changes - only update the results TABLE
+    document.addEventListener('change', (e) => {
+        if (e.target.matches('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]')) {
+            if (currentGroupIndices.length > 0) {
+                updateRatingsTable();
+            }
+        }
+    });
+
+    // Rating filter change - update the table
+    ratingFilter?.addEventListener('change', () => {
+        if (currentGroupIndices.length > 0) {
+            updateRatingsTable();
+        }
     });
 
     // Click on search result
@@ -403,37 +455,59 @@ function updateRatingsTable() {
     
     const tbody = document.getElementById('ratingsTable');
     const recommended = [];
+    const selectedMaterials = getSelectedMaterials();
+    const ratingFilter = document.getElementById('ratingFilter');
+    const minRating = ratingFilter?.value || '12'; // '1' = nur A, '12' = A oder B
     
-    // Sort materials by rating (best first)
-    const sortedMaterials = Object.entries(chem.ratings).sort((a, b) => {
-        const orderA = ratingOrder[a[1].c20] ?? 4;
-        const orderB = ratingOrder[b[1].c20] ?? 4;
-        return orderA - orderB;
-    });
+    // Get materials to show - either selected ones or all
+    let materialsToShow;
+    if (selectedMaterials.length > 0) {
+        // Only show selected materials
+        materialsToShow = selectedMaterials
+            .filter(mat => chem.ratings[mat])
+            .map(mat => [mat, chem.ratings[mat]]);
+    } else {
+        // Show all materials, sorted by rating, filtered by rating preference
+        materialsToShow = Object.entries(chem.ratings)
+            .filter(([mat, rating]) => {
+                if (minRating === '1') return rating.c20 === '1';
+                if (minRating === '12') return ['1', '2'].includes(rating.c20);
+                return true;
+            })
+            .sort((a, b) => {
+                const orderA = ratingOrder[a[1].c20] ?? 4;
+                const orderB = ratingOrder[b[1].c20] ?? 4;
+                return orderA - orderB;
+            });
+    }
 
-    tbody.innerHTML = sortedMaterials.map(([mat, rating]) => {
-        const info = materialInfo[mat] || { name: mat, full: mat, type: '' };
-        const grade20 = ratingToGrade(rating.c20);
-        const grade50 = ratingToGrade(rating.c50);
-        
-        if (grade20 === 'A') recommended.push(info.name);
-        
-        return `
-            <tr class="border-b border-gray-100 hover:bg-gray-50">
-                <td class="py-3 px-4">
-                    <div class="font-medium text-gray-900">${info.name}</div>
-                    <div class="text-xs text-gray-500">${info.full}</div>
-                </td>
-                <td class="py-3 px-4 text-center">
-                    <span class="rating-${grade20} px-3 py-1 rounded text-sm font-bold">${grade20}</span>
-                </td>
-                <td class="py-3 px-4 text-center">
-                    <span class="rating-${grade50} px-3 py-1 rounded text-sm font-bold">${grade50}</span>
-                </td>
-                <td class="py-3 px-4 text-gray-500 text-sm">${info.type}</td>
-            </tr>
-        `;
-    }).join('');
+    if (materialsToShow.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-500">Keine Materialien mit ${minRating === '1' ? 'A' : 'A/B'}-Bewertung für diese Chemikalie. Versuchen Sie, den Filter zu ändern.</td></tr>`;
+    } else {
+        tbody.innerHTML = materialsToShow.map(([mat, rating]) => {
+            const info = materialInfo[mat] || { name: mat, full: mat, type: '' };
+            const grade20 = ratingToGrade(rating.c20);
+            const grade50 = ratingToGrade(rating.c50);
+            
+            if (grade20 === 'A') recommended.push(info.name);
+            
+            return `
+                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                    <td class="py-3 px-4">
+                        <div class="font-medium text-gray-900">${info.name}</div>
+                        <div class="text-xs text-gray-500">${info.full}</div>
+                    </td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${grade20} px-3 py-1 rounded text-sm font-bold">${grade20}</span>
+                    </td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${grade50} px-3 py-1 rounded text-sm font-bold">${grade50}</span>
+                    </td>
+                    <td class="py-3 px-4 text-gray-500 text-sm">${info.type}</td>
+                </tr>
+            `;
+        }).join('');
+    }
 
     // Update recommendations
     const recMaterials = document.getElementById('recMaterials');
@@ -442,7 +516,7 @@ function updateRatingsTable() {
     if (recMaterials) {
         recMaterials.textContent = recommended.length > 0 
             ? recommended.join(', ') 
-            : 'Check ratings below - limited compatibility';
+            : 'Bewertungen unten prüfen - eingeschränkte Kompatibilität';
     }
     
     if (recommendation) {
