@@ -291,59 +291,48 @@ function setupEventListeners() {
 
 function showSearchResults(query) {
     const searchResults = document.getElementById('searchResults');
-    const matchingKeys = new Set();
+    const seenDisplayNames = new Set();
     const matchInfo = {};
 
-    // Build reverse translation map (English → German terms)
-    const reverseTranslations = {};
-    for (const [de, en] of Object.entries(translations)) {
-        reverseTranslations[en.toLowerCase()] = de;
-    }
-
-    // Check if query matches any English term
     const queryLower = query.toLowerCase();
-    let germanQuery = queryLower;
-    for (const [en, de] of Object.entries(reverseTranslations)) {
-        if (en.includes(queryLower) || queryLower.includes(en.split(' ')[0])) {
-            germanQuery = de;
-            break;
-        }
-    }
 
     chemicals.forEach((c, idx) => {
-        const displayName = getDisplayName(c).toLowerCase();
+        const displayName = getDisplayName(c);
+        const displayNameLower = displayName.toLowerCase();
         const matches = 
-            c.name.toLowerCase().includes(query) ||
-            c.name.toLowerCase().includes(germanQuery) ||
-            displayName.includes(query) ||
-            (c.cas && c.cas.includes(query)) ||
-            (c.formula && c.formula.toLowerCase().includes(query));
+            c.name.toLowerCase().includes(queryLower) ||
+            displayNameLower.includes(queryLower) ||
+            (c.cas && c.cas.includes(queryLower)) ||
+            (c.formula && c.formula.toLowerCase().includes(queryLower));
         
         if (matches) {
-            const key = getChemicalKey(c);
-            matchingKeys.add(key);
-            if (!matchInfo[key]) {
-                matchInfo[key] = { chem: c, indices: chemicalGroups[key] };
+            // Dedupe by DISPLAYED name
+            const displayKey = displayNameLower;
+            if (!seenDisplayNames.has(displayKey)) {
+                seenDisplayNames.add(displayKey);
+                const key = getChemicalKey(c);
+                matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key };
             }
         }
     });
 
-    const uniqueMatches = Array.from(matchingKeys).slice(0, 15);
+    const uniqueMatches = Array.from(seenDisplayNames).slice(0, 20);
 
     if (uniqueMatches.length > 0) {
-        searchResults.innerHTML = uniqueMatches.map(key => {
-            const info = matchInfo[key];
+        searchResults.innerHTML = uniqueMatches.map(displayKey => {
+            const info = matchInfo[displayKey];
             const c = info.chem;
             const displayName = getDisplayName(c);
+            const chemKey = info.key;
             return `
-                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${key}">
+                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${chemKey}">
                     <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}</div>
                 </div>
             `;
         }).join('');
         searchResults.classList.remove('hidden');
     } else {
-        searchResults.innerHTML = '<div class="px-4 py-3 text-gray-500">No chemicals found</div>';
+        searchResults.innerHTML = '<div class="px-4 py-3 text-gray-500">Keine Chemikalien gefunden</div>';
         searchResults.classList.remove('hidden');
     }
 }
