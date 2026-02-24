@@ -42,6 +42,10 @@
             <div class="flex items-center gap-4 text-sm">
                 <a href="#guide" class="text-gray-600 hover:text-gray-900 hidden sm:block">Material Guide</a>
                 <a href="#about" class="text-gray-600 hover:text-gray-900 hidden sm:block">About</a>
+                <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="de">🇩🇪 DE</option>
+                </select>
             </div>
         </div>
     </header>
@@ -249,7 +253,37 @@
         "NBR": { name: "NBR", full: "Nitrile Rubber", type: "Elastomer" },
     };
 
-    // Group chemicals by name_en (or name if no English name)
+    // Language handling
+    const langSelect = document.getElementById('langSelect');
+    let currentLang = localStorage.getItem('chemLang') || 'en';
+    langSelect.value = currentLang;
+    
+    langSelect.addEventListener('change', () => {
+        currentLang = langSelect.value;
+        localStorage.setItem('chemLang', currentLang);
+        // Refresh display if results are showing
+        if (currentGroupIndices.length > 0) {
+            showResultsForGroup(currentGroupIndices);
+        }
+    });
+    
+    // Get display name based on selected language
+    function getDisplayName(c) {
+        if (currentLang === 'de') {
+            return c.name; // German is the original name
+        }
+        return c.name_en || c.name; // English preferred, fallback to German
+    }
+    
+    // Get secondary name (the other language)
+    function getSecondaryName(c) {
+        if (currentLang === 'de') {
+            return c.name_en || ''; // Show English as secondary
+        }
+        return c.name_en ? c.name : ''; // Show German as secondary if different
+    }
+
+    // Group chemicals by name_en (or name if no English name) - key stays consistent
     function getChemicalKey(c) {
         return (c.name_en || c.name).toLowerCase();
     }
@@ -267,6 +301,8 @@
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     const resultsSection = document.getElementById('results');
+    let currentGroupIndices = [];
+    let currentSelectedIdx = 0;
 
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
@@ -302,8 +338,8 @@
                 const info = matchInfo[key];
                 const c = info.chem;
                 const count = info.indices.length;
-                const displayName = c.name_en || c.name;
-                const subtitle = c.name_en ? c.name : '';
+                const displayName = getDisplayName(c);
+                const subtitle = getSecondaryName(c);
                 
                 return `
                     <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${key}">
@@ -329,13 +365,8 @@
             const key = item.dataset.key;
             const indices = chemicalGroups[key];
             if (indices && indices.length > 0) {
-                try {
-                    showResultsForGroup(indices);
-                    searchResults.classList.add('hidden');
-                } catch (err) {
-                    console.error('Error in showResultsForGroup:', err);
-                    alert('Error: ' + err.message);
-                }
+                showResultsForGroup(indices);
+                searchResults.classList.add('hidden');
             }
         }
     });
@@ -357,20 +388,16 @@
         }, 0);
     }
 
-    let currentGroupIndices = [];
-    let currentSelectedIdx = 0;
-
     function showResultsForGroup(indices) {
-        console.log('showResultsForGroup called with', indices);
         currentGroupIndices = indices;
         currentSelectedIdx = 0;
         
         const firstChem = chemicals[indices[0]];
-        console.log('firstChem:', firstChem);
-        const displayName = firstChem.name_en || firstChem.name;
+        const displayName = getDisplayName(firstChem);
+        const secondaryName = getSecondaryName(firstChem);
         
         document.getElementById('chemName').textContent = displayName;
-        document.getElementById('chemNameDe').textContent = firstChem.name_en ? `(${firstChem.name})` : '';
+        document.getElementById('chemNameDe').textContent = secondaryName ? `(${secondaryName})` : '';
         document.getElementById('chemFormula').textContent = firstChem.formula || '';
         document.getElementById('chemFormula').style.display = firstChem.formula ? 'inline' : 'none';
         document.getElementById('chemCas').textContent = firstChem.cas ? `CAS: ${firstChem.cas}` : '';
@@ -402,29 +429,16 @@
             concContainer.style.display = conc ? 'inline' : 'none';
         }
 
-        console.log('About to updateRatingsTable');
         updateRatingsTable();
-        console.log('About to show resultsSection');
         resultsSection.classList.remove('hidden');
-        console.log('About to scrollIntoView');
         resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        console.log('About to createIcons');
         lucide.createIcons();
-        console.log('showResultsForGroup complete');
     }
 
     function updateRatingsTable() {
-        console.log('updateRatingsTable: currentGroupIndices=', currentGroupIndices, 'currentSelectedIdx=', currentSelectedIdx);
         const chem = chemicals[currentGroupIndices[currentSelectedIdx]];
-        console.log('updateRatingsTable: chem=', chem);
-        if (!chem) {
-            console.error('No chemical found!');
-            return;
-        }
-        if (!chem.ratings) {
-            console.error('Chemical has no ratings:', chem);
-            return;
-        }
+        if (!chem || !chem.ratings) return;
+        
         const tbody = document.getElementById('ratingsTable');
         const recommended = [];
         
@@ -457,9 +471,6 @@
         const recMaterials = document.getElementById('recMaterials');
         const recommendation = document.getElementById('recommendation');
         
-        console.log('recMaterials element:', recMaterials);
-        console.log('recommendation element:', recommendation);
-        
         if (recMaterials) {
             recMaterials.textContent = recommended.length > 0 
                 ? recommended.join(', ') 
@@ -471,14 +482,12 @@
                 ? 'p-4 bg-emerald-50 border-b border-emerald-100'
                 : 'p-4 bg-amber-50 border-b border-amber-100';
             const icon = recommendation.querySelector('i');
-            console.log('icon element:', icon);
             if (icon) {
                 icon.className = recommended.length > 0
                     ? 'w-5 h-5 text-emerald-600'
                     : 'w-5 h-5 text-amber-600';
             }
         }
-        console.log('updateRatingsTable complete');
     }
 
     function clearResults() {
