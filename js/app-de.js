@@ -320,10 +320,23 @@ function showSearchResults(query) {
         }
     });
 
-    const uniqueMatches = Array.from(seenDisplayNames).slice(0, 20);
+    // Sort: exact matches first, then starts-with, then contains
+    const sortedMatches = Array.from(seenDisplayNames).sort((a, b) => {
+        const aExact = a === queryLower;
+        const bExact = b === queryLower;
+        if (aExact && !bExact) return -1;
+        if (bExact && !aExact) return 1;
+        
+        const aStarts = a.startsWith(queryLower);
+        const bStarts = b.startsWith(queryLower);
+        if (aStarts && !bStarts) return -1;
+        if (bStarts && !aStarts) return 1;
+        
+        return a.localeCompare(b);
+    }).slice(0, 20);
 
-    if (uniqueMatches.length > 0) {
-        searchResults.innerHTML = uniqueMatches.map(displayKey => {
+    if (sortedMatches.length > 0) {
+        searchResults.innerHTML = sortedMatches.map(displayKey => {
             const info = matchInfo[displayKey];
             const c = info.chem;
             const displayName = getDisplayName(c);
