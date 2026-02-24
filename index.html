@@ -324,19 +324,18 @@
     });
 
     searchResults.addEventListener('click', (e) => {
-        console.log('searchResults click!', e.target);
         const item = e.target.closest('[data-key]');
-        console.log('item found:', item);
         if (item) {
             const key = item.dataset.key;
-            console.log('key:', key);
             const indices = chemicalGroups[key];
-            console.log('indices:', indices);
             if (indices && indices.length > 0) {
-                showResultsForGroup(indices);
-                searchResults.classList.add('hidden');
-            } else {
-                console.error('No indices found for key:', key);
+                try {
+                    showResultsForGroup(indices);
+                    searchResults.classList.add('hidden');
+                } catch (err) {
+                    console.error('Error in showResultsForGroup:', err);
+                    alert('Error: ' + err.message);
+                }
             }
         }
     });
@@ -362,10 +361,12 @@
     let currentSelectedIdx = 0;
 
     function showResultsForGroup(indices) {
+        console.log('showResultsForGroup called with', indices);
         currentGroupIndices = indices;
         currentSelectedIdx = 0;
         
         const firstChem = chemicals[indices[0]];
+        console.log('firstChem:', firstChem);
         const displayName = firstChem.name_en || firstChem.name;
         
         document.getElementById('chemName').textContent = displayName;
@@ -401,10 +402,15 @@
             concContainer.style.display = conc ? 'inline' : 'none';
         }
 
+        console.log('About to updateRatingsTable');
         updateRatingsTable();
+        console.log('About to show resultsSection');
         resultsSection.classList.remove('hidden');
+        console.log('About to scrollIntoView');
         resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        console.log('About to createIcons');
         lucide.createIcons();
+        console.log('showResultsForGroup complete');
     }
 
     function updateRatingsTable() {
