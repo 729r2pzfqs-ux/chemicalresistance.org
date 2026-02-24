@@ -65,17 +65,84 @@
         </div>
     </section>
 
-    <!-- Viscosity Reference -->
-    <section class="px-4 py-6 bg-white border-b border-gray-200">
+    <!-- Visual Viscosity Scale -->
+    <section class="px-4 py-8 bg-white border-b border-gray-200">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-sm font-semibold text-gray-500 mb-3">VISCOSITY REFERENCE</h2>
-            <div class="flex flex-wrap gap-3 text-sm">
-                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full">Water: ~1 mPa·s</span>
-                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full">Milk: ~3 mPa·s</span>
-                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full">Olive Oil: ~80 mPa·s</span>
-                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full">Motor Oil: ~300 mPa·s</span>
-                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full">Honey: ~2000+ mPa·s</span>
+            <h2 class="text-lg font-bold text-gray-900 mb-4">Viscosity Scale — What Does It Feel Like?</h2>
+            
+            <!-- Visual scale bar -->
+            <div class="relative mb-6">
+                <div class="h-4 rounded-full bg-gradient-to-r from-blue-200 via-blue-400 via-amber-400 via-orange-500 to-red-600"></div>
+                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                    <span>1</span>
+                    <span>10</span>
+                    <span>100</span>
+                    <span>1,000</span>
+                    <span>10,000</span>
+                    <span>100,000+</span>
+                </div>
+                <div class="text-center text-xs text-gray-400 mt-0">mPa·s (= cP)</div>
             </div>
+
+            <!-- Reference cards -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-sm">
+                <div class="bg-blue-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">💧</div>
+                    <div class="font-semibold text-blue-800">Water</div>
+                    <div class="text-blue-600">~1 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Flows instantly</div>
+                </div>
+                <div class="bg-blue-100 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🥛</div>
+                    <div class="font-semibold text-blue-800">Milk</div>
+                    <div class="text-blue-600">~3 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Pours easily</div>
+                </div>
+                <div class="bg-amber-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🫒</div>
+                    <div class="font-semibold text-amber-800">Olive Oil</div>
+                    <div class="text-amber-600">~80 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Slow pour</div>
+                </div>
+                <div class="bg-orange-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🍯</div>
+                    <div class="font-semibold text-orange-800">Honey</div>
+                    <div class="text-orange-600">~2,000 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Thick, sticky</div>
+                </div>
+                <div class="bg-red-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🧴</div>
+                    <div class="font-semibold text-red-800">Toothpaste</div>
+                    <div class="text-red-600">~100,000 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Won't flow alone</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unit Converter -->
+    <section class="px-4 py-6 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-lg font-bold text-gray-900 mb-4">Viscosity Unit Converter</h2>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">mPa·s (= cP)</label>
+                    <input type="number" id="conv_mPas" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="1000" oninput="convertViscosity('mPas')">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Pa·s</label>
+                    <input type="number" id="conv_Pas" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="1" oninput="convertViscosity('Pas')">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Poise (P)</label>
+                    <input type="number" id="conv_P" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="10" oninput="convertViscosity('P')">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">cP (= mPa·s)</label>
+                    <input type="number" id="conv_cP" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="1000" oninput="convertViscosity('cP')">
+                </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-3">1 Pa·s = 1000 mPa·s = 10 Poise = 1000 cP</p>
         </div>
     </section>
 
@@ -237,6 +304,31 @@
             searchInput.addEventListener('input', () => {
                 renderTable(searchInput.value.toLowerCase());
             });
+        }
+
+        // Unit converter
+        function convertViscosity(source) {
+            const mPas = document.getElementById('conv_mPas');
+            const Pas = document.getElementById('conv_Pas');
+            const P = document.getElementById('conv_P');
+            const cP = document.getElementById('conv_cP');
+            
+            let baseMPas;
+            
+            if (source === 'mPas') {
+                baseMPas = parseFloat(mPas.value) || 0;
+            } else if (source === 'Pas') {
+                baseMPas = (parseFloat(Pas.value) || 0) * 1000;
+            } else if (source === 'P') {
+                baseMPas = (parseFloat(P.value) || 0) * 100;
+            } else if (source === 'cP') {
+                baseMPas = parseFloat(cP.value) || 0;
+            }
+            
+            if (source !== 'mPas') mPas.value = baseMPas ? baseMPas.toFixed(4).replace(/\.?0+$/, '') : '';
+            if (source !== 'Pas') Pas.value = baseMPas ? (baseMPas / 1000).toFixed(6).replace(/\.?0+$/, '') : '';
+            if (source !== 'P') P.value = baseMPas ? (baseMPas / 100).toFixed(5).replace(/\.?0+$/, '') : '';
+            if (source !== 'cP') cP.value = baseMPas ? baseMPas.toFixed(4).replace(/\.?0+$/, '') : '';
         }
 
         document.addEventListener('DOMContentLoaded', init);
