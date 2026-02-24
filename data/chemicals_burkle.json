@@ -1,7 +1,7 @@
 [
   {
     "name": "Abgase, alkalisch",
-    "name_en": "",
+    "name_en": "Alkaline Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -115,7 +115,7 @@
   },
   {
     "name": "Abgase, kohlendioxidhaltig",
-    "name_en": "",
+    "name_en": "Carbon Dioxide Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "gering",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Abgase, nitrosehaltig",
-    "name_en": "",
+    "name_en": "Nitrous Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "gering",
@@ -286,7 +286,7 @@
   },
   {
     "name": "Abgase, schwefeldioxidhaltig",
-    "name_en": "",
+    "name_en": "Sulfur Dioxide Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "gering",
@@ -400,7 +400,7 @@
   },
   {
     "name": "Abgase, schwefeltrioxidhaltig",
-    "name_en": "",
+    "name_en": "Sulfur Trioxide Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "gering",
@@ -742,7 +742,7 @@
   },
   {
     "name": "Acetophenon",
-    "name_en": "",
+    "name_en": "Acetophenone",
     "formula": "C8H8O",
     "cas": "000098-86-2",
     "concentration": "",
@@ -913,7 +913,7 @@
   },
   {
     "name": "Acetylsalicylsäure",
-    "name_en": "",
+    "name_en": "Acetylsalicylic Acid (Aspirin)",
     "formula": "C9H8O4",
     "cas": "000050-78-2",
     "concentration": "100 %",
@@ -1084,7 +1084,7 @@
   },
   {
     "name": "Akkusäure",
-    "name_en": "",
+    "name_en": "Battery Acid",
     "formula": "H2SO4",
     "cas": "007664-93-9",
     "concentration": "38 %",
@@ -1198,7 +1198,7 @@
   },
   {
     "name": "Allylacetat",
-    "name_en": "",
+    "name_en": "Allyl Acetate",
     "formula": "C5H8O2",
     "cas": "000591-87-7",
     "concentration": "100 %",
@@ -1369,7 +1369,7 @@
   },
   {
     "name": "Allylsenföl",
-    "name_en": "",
+    "name_en": "Allyl Mustard Oil",
     "formula": "C4H5NS",
     "cas": "000057-06-7",
     "concentration": "",
@@ -1426,7 +1426,7 @@
   },
   {
     "name": "Aluminium(hydroxid)acetat",
-    "name_en": "",
+    "name_en": "Aluminum Hydroxide Acetate",
     "formula": "C4H7AlO5",
     "cas": "000139-12-8",
     "concentration": "wässrig",
@@ -2566,7 +2566,7 @@
   },
   {
     "name": "Ammoniumdihydrogenphosphat",
-    "name_en": "",
+    "name_en": "Ammonium Dihydrogen Phosphate",
     "formula": "(NH4)H2PO4",
     "cas": "007722-76-1",
     "concentration": "jede",
@@ -2623,7 +2623,7 @@
   },
   {
     "name": "Ammoniumeisen-(II)-sulfat",
-    "name_en": "",
+    "name_en": "Ammonium Iron(II) Sulfate",
     "formula": "(NH4)2Fe(SO4)2",
     "cas": "007783-85-9",
     "concentration": "",
@@ -2680,7 +2680,7 @@
   },
   {
     "name": "Ammoniumeisen-(III)-sulfat",
-    "name_en": "",
+    "name_en": "Ammonium Iron(III) Sulfate",
     "formula": "(NH4)Fe(SO4)2",
     "cas": "007783-83-7",
     "concentration": "gesättigt",
@@ -2851,7 +2851,7 @@
   },
   {
     "name": "Ammoniumglycolat",
-    "name_en": "",
+    "name_en": "Ammonium Glycolate",
     "formula": "C2H7NO3",
     "cas": "035249-89-9",
     "concentration": "",
@@ -2908,7 +2908,7 @@
   },
   {
     "name": "Ammoniumheptamolybdat",
-    "name_en": "",
+    "name_en": "Ammonium Heptamolybdate",
     "formula": "(NH4)6Mo7O24",
     "cas": "012054-85-2",
     "concentration": "",
@@ -2961,7 +2961,7 @@
   },
   {
     "name": "Ammoniumhydrogencarbonat",
-    "name_en": "",
+    "name_en": "Ammonium Bicarbonate",
     "formula": "CH5NO3",
     "cas": "001066-33-7",
     "concentration": "gesättigt",
@@ -3018,7 +3018,7 @@
   },
   {
     "name": "Ammoniumhydrogendifluorid",
-    "name_en": "",
+    "name_en": "Ammonium Bifluoride",
     "formula": "F2H5N",
     "cas": "001341-49-7",
     "concentration": "50 %",
@@ -3075,7 +3075,7 @@
   },
   {
     "name": "Ammoniumhydrosulfid",
-    "name_en": "",
+    "name_en": "Ammonium Hydrosulfide",
     "formula": "(NH4)HS",
     "cas": "012124-99-1",
     "concentration": "jede",
@@ -3303,7 +3303,7 @@
   },
   {
     "name": "Ammoniummetaphosphat",
-    "name_en": "",
+    "name_en": "Ammonium Metaphosphate",
     "formula": "(NH4PO3)n",
     "cas": "068333-79-9",
     "concentration": "",
@@ -3588,7 +3588,7 @@
   },
   {
     "name": "Ammoniumperoxodisulfat",
-    "name_en": "",
+    "name_en": "Ammonium Persulfate",
     "formula": "(NH4)2S2O8",
     "cas": "007727-54-0",
     "concentration": "gesättigt",
@@ -3645,7 +3645,7 @@
   },
   {
     "name": "Ammoniumperoxodisulfat",
-    "name_en": "",
+    "name_en": "Ammonium Persulfate",
     "formula": "(NH4)2S2O8",
     "cas": "007727-54-0",
     "concentration": "wässrig",
@@ -3930,7 +3930,7 @@
   },
   {
     "name": "Ammoniumthiocyanat",
-    "name_en": "",
+    "name_en": "Ammonium Thiocyanate",
     "formula": "CH4N2S",
     "cas": "001762-95-4",
     "concentration": "",
@@ -4158,7 +4158,7 @@
   },
   {
     "name": "Amylzimtaldehyd",
-    "name_en": "",
+    "name_en": "Amyl Cinnamaldehyde",
     "formula": "C14H18O",
     "cas": "000122-40-7",
     "concentration": "",
@@ -4215,7 +4215,7 @@
   },
   {
     "name": "Ananassaft",
-    "name_en": "",
+    "name_en": "Pineapple Juice",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -4386,7 +4386,7 @@
   },
   {
     "name": "Anis",
-    "name_en": "",
+    "name_en": "Anise",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -4443,7 +4443,7 @@
   },
   {
     "name": "Anisol",
-    "name_en": "",
+    "name_en": "Anisole",
     "formula": "C7H8O",
     "cas": "000100-66-3",
     "concentration": "100 %",
@@ -4500,7 +4500,7 @@
   },
   {
     "name": "Anisöl",
-    "name_en": "",
+    "name_en": "Anise Oil",
     "formula": "",
     "cas": "084775-42-8",
     "concentration": "",
@@ -4785,7 +4785,7 @@
   },
   {
     "name": "Apfelsaft",
-    "name_en": "",
+    "name_en": "Apple Juice",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -4842,7 +4842,7 @@
   },
   {
     "name": "Apfelsinensaft",
-    "name_en": "",
+    "name_en": "Orange Juice",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -4899,7 +4899,7 @@
   },
   {
     "name": "Apfelsinenschalenöl",
-    "name_en": "",
+    "name_en": "Orange Peel Oil",
     "formula": "",
     "cas": "008028-48-6",
     "concentration": "",
@@ -4956,7 +4956,7 @@
   },
   {
     "name": "Arsenpentoxid",
-    "name_en": "",
+    "name_en": "Arsenic Pentoxide",
     "formula": "As2O5",
     "cas": "001303-28-2",
     "concentration": "",
@@ -5013,7 +5013,7 @@
   },
   {
     "name": "Arsensäure",
-    "name_en": "",
+    "name_en": "Arsenic Acid",
     "formula": "H3AsO4",
     "cas": "022538-92-7",
     "concentration": "wässrig",
@@ -5070,7 +5070,7 @@
   },
   {
     "name": "Arsensäure",
-    "name_en": "",
+    "name_en": "Arsenic Acid",
     "formula": "H3AsO4",
     "cas": "022538-92-7",
     "concentration": "",
@@ -5127,7 +5127,7 @@
   },
   {
     "name": "Ascorbinsäure",
-    "name_en": "",
+    "name_en": "Ascorbic Acid (Vitamin C)",
     "formula": "C6H8O6",
     "cas": "000050-81-7",
     "concentration": "wässrig",
@@ -5184,7 +5184,7 @@
   },
   {
     "name": "Atropinsulfat",
-    "name_en": "",
+    "name_en": "Atropine Sulfate",
     "formula": "C34H48N2SO10-H2O",
     "cas": "000055-48-1",
     "concentration": "",
@@ -5241,7 +5241,7 @@
   },
   {
     "name": "Baldriantropfen",
-    "name_en": "",
+    "name_en": "Valerian Drops",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -5697,7 +5697,7 @@
   },
   {
     "name": "Baumwollsamenöl",
-    "name_en": "",
+    "name_en": "Cottonseed Oil",
     "formula": "",
     "cas": "008001-29-4",
     "concentration": "techn. rein",
@@ -5982,7 +5982,7 @@
   },
   {
     "name": "Benzoesäureethylester",
-    "name_en": "",
+    "name_en": "Ethyl Benzoate",
     "formula": "C9H10O2",
     "cas": "000093-89-0",
     "concentration": "",
@@ -6210,7 +6210,7 @@
   },
   {
     "name": "Benzylacetat",
-    "name_en": "",
+    "name_en": "Benzyl Acetate",
     "formula": "C9H10O2",
     "cas": "000140-11-4",
     "concentration": "",
@@ -6267,7 +6267,7 @@
   },
   {
     "name": "Benzylalkohol",
-    "name_en": "",
+    "name_en": "Benzyl Alcohol",
     "formula": "C7H8O",
     "cas": "000100-51-6",
     "concentration": "",
@@ -6324,7 +6324,7 @@
   },
   {
     "name": "Benzylbenzoat",
-    "name_en": "",
+    "name_en": "Benzyl Benzoate",
     "formula": "C14H12O2",
     "cas": "000120-51-4",
     "concentration": "",
@@ -6552,7 +6552,7 @@
   },
   {
     "name": "Bernsteinsäurediethylester",
-    "name_en": "",
+    "name_en": "Diethyl Succinate",
     "formula": "C8H14O4",
     "cas": "000123-25-1",
     "concentration": "",
@@ -6609,7 +6609,7 @@
   },
   {
     "name": "Bienenwachs",
-    "name_en": "",
+    "name_en": "Beeswax",
     "formula": "",
     "cas": "008012-89-3",
     "concentration": "",
@@ -6780,7 +6780,7 @@
   },
   {
     "name": "Bismutsubnitrat",
-    "name_en": "",
+    "name_en": "Bismuth Subnitrate",
     "formula": "Bi5O(HO)9(NO3)4",
     "cas": "001304-85-4",
     "concentration": "",
@@ -6837,7 +6837,7 @@
   },
   {
     "name": "Bisulfitlauge",
-    "name_en": "",
+    "name_en": "Bisulfite Liquor",
     "formula": "NaHSO3",
     "cas": "??",
     "concentration": "",
@@ -6894,7 +6894,7 @@
   },
   {
     "name": "Bisulfitlauge, S02-haltig",
-    "name_en": "",
+    "name_en": "Bisulfite Liquor with SO2",
     "formula": "NaHSO3",
     "cas": "??",
     "concentration": "gesättigt",
@@ -6951,7 +6951,7 @@
   },
   {
     "name": "Bittermandelöl",
-    "name_en": "",
+    "name_en": "Bitter Almond Oil",
     "formula": "C7H6O",
     "cas": "090320-35-7",
     "concentration": "",
@@ -7008,7 +7008,7 @@
   },
   {
     "name": "Bitumen",
-    "name_en": "",
+    "name_en": "Bitumen",
     "formula": "",
     "cas": "008052-42-4",
     "concentration": "",
@@ -7065,7 +7065,7 @@
   },
   {
     "name": "Blausäure",
-    "name_en": "",
+    "name_en": "Hydrocyanic Acid",
     "formula": "HCN",
     "cas": "000074-90-8",
     "concentration": "techn. rein",
@@ -7122,7 +7122,7 @@
   },
   {
     "name": "Blausäure",
-    "name_en": "",
+    "name_en": "Hydrocyanic Acid",
     "formula": "HCN",
     "cas": "000074-90-8",
     "concentration": "wässrig",
@@ -7179,7 +7179,7 @@
   },
   {
     "name": "Blei-(II)-acetat",
-    "name_en": "",
+    "name_en": "Lead(II) Acetate",
     "formula": "C4H6PbO4",
     "cas": "000301-04-2",
     "concentration": "wässrig",
@@ -7236,7 +7236,7 @@
   },
   {
     "name": "Blei-(II)-acetat",
-    "name_en": "",
+    "name_en": "Lead(II) Acetate",
     "formula": "C4H6PbO4",
     "cas": "000301-04-2",
     "concentration": "",
@@ -7293,7 +7293,7 @@
   },
   {
     "name": "Blei-(II)-nitrat",
-    "name_en": "",
+    "name_en": "Lead(II) Nitrate",
     "formula": "Pb(NO3)2",
     "cas": "010099-74-8",
     "concentration": "wässrig",
@@ -7350,7 +7350,7 @@
   },
   {
     "name": "Blei-(II)-nitrat",
-    "name_en": "",
+    "name_en": "Lead(II) Nitrate",
     "formula": "Pb(NO3)2",
     "cas": "010099-74-8",
     "concentration": "",
@@ -7407,7 +7407,7 @@
   },
   {
     "name": "Bleistearat",
-    "name_en": "",
+    "name_en": "Lead Stearate",
     "formula": "C36H70PbO4",
     "cas": "001072-35-1",
     "concentration": "",
@@ -7635,7 +7635,7 @@
   },
   {
     "name": "Bremsflüssigkeit",
-    "name_en": "",
+    "name_en": "Brake Fluid",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -7863,7 +7863,7 @@
   },
   {
     "name": "Bromdämpfe",
-    "name_en": "",
+    "name_en": "Bromine Vapors",
     "formula": "Br2",
     "cas": "007726-95-6",
     "concentration": "",
@@ -7920,7 +7920,7 @@
   },
   {
     "name": "Brommethan",
-    "name_en": "",
+    "name_en": "Bromomethane",
     "formula": "CH3Br",
     "cas": "000074-83-9",
     "concentration": "techn. rein",
@@ -7977,7 +7977,7 @@
   },
   {
     "name": "Bromoform",
-    "name_en": "",
+    "name_en": "Bromoform",
     "formula": "CHBr3",
     "cas": "000075-25-2",
     "concentration": "",
@@ -8034,7 +8034,7 @@
   },
   {
     "name": "Brompentafluorid",
-    "name_en": "",
+    "name_en": "Bromine Pentafluoride",
     "formula": "BrF5",
     "cas": "007789-30-2",
     "concentration": "",
@@ -8091,7 +8091,7 @@
   },
   {
     "name": "Bromsäure",
-    "name_en": "",
+    "name_en": "Bromic Acid",
     "formula": "HBrO3",
     "cas": "007789-31-3",
     "concentration": "konz.",
@@ -8148,7 +8148,7 @@
   },
   {
     "name": "Bromtrifluorid",
-    "name_en": "",
+    "name_en": "Bromine Trifluoride",
     "formula": "BrF3",
     "cas": "007787-71-5",
     "concentration": "",
@@ -8205,7 +8205,7 @@
   },
   {
     "name": "Bromtrifluormethan",
-    "name_en": "",
+    "name_en": "Bromotrifluoromethane",
     "formula": "CBrF3",
     "cas": "000075-63-8",
     "concentration": "",
@@ -8490,7 +8490,7 @@
   },
   {
     "name": "Butadien, 1,3-",
-    "name_en": "",
+    "name_en": "1,3-Butadiene",
     "formula": "C4H6",
     "cas": "000106-99-0",
     "concentration": "",
@@ -8547,7 +8547,7 @@
   },
   {
     "name": "Butan",
-    "name_en": "",
+    "name_en": "Butane",
     "formula": "C4H10",
     "cas": "000106-97-8",
     "concentration": "techn. rein",
@@ -8661,7 +8661,7 @@
   },
   {
     "name": "Butantriol",
-    "name_en": "",
+    "name_en": "Butanetriol",
     "formula": "C4H10O3",
     "cas": "",
     "concentration": "100 %",
@@ -8718,7 +8718,7 @@
   },
   {
     "name": "Buten",
-    "name_en": "",
+    "name_en": "Butene",
     "formula": "C4H8",
     "cas": "",
     "concentration": "techn. rein",
@@ -8775,7 +8775,7 @@
   },
   {
     "name": "Butter",
-    "name_en": "",
+    "name_en": "Butter",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -8889,7 +8889,7 @@
   },
   {
     "name": "Butylacrylat",
-    "name_en": "",
+    "name_en": "Butyl Acrylate",
     "formula": "C7H12O2",
     "cas": "000141-32-2",
     "concentration": "100 %",
@@ -8946,7 +8946,7 @@
   },
   {
     "name": "Butylalkohol, sekundär",
-    "name_en": "",
+    "name_en": "Secondary Butyl Alcohol",
     "formula": "C4H10O",
     "cas": "000078-92-2",
     "concentration": "",
@@ -9003,7 +9003,7 @@
   },
   {
     "name": "Butylalkohol, tertiär",
-    "name_en": "",
+    "name_en": "Tertiary Butyl Alcohol",
     "formula": "C4H10O",
     "cas": "000075-65-0",
     "concentration": "",
@@ -9117,7 +9117,7 @@
   },
   {
     "name": "Butylenglycol",
-    "name_en": "",
+    "name_en": "Butylene Glycol",
     "formula": "C4H10O2",
     "cas": "",
     "concentration": "techn. rein",
@@ -9345,7 +9345,7 @@
   },
   {
     "name": "Butyraldehyd",
-    "name_en": "",
+    "name_en": "Butyraldehyde",
     "formula": "C4H8O",
     "cas": "000123-72-8",
     "concentration": "",
@@ -9402,7 +9402,7 @@
   },
   {
     "name": "Cadmiumbromid",
-    "name_en": "",
+    "name_en": "Cadmium Bromide",
     "formula": "CdBr",
     "cas": "007789-42-6",
     "concentration": "",
@@ -9573,7 +9573,7 @@
   },
   {
     "name": "Calciumbisulfit",
-    "name_en": "",
+    "name_en": "Calcium Bisulfite",
     "formula": "Ca(HSO3)2",
     "cas": "013780-03-5",
     "concentration": "gesättigt",
@@ -9630,7 +9630,7 @@
   },
   {
     "name": "Calciumbisulfit",
-    "name_en": "",
+    "name_en": "Calcium Bisulfite",
     "formula": "Ca(HSO3)2",
     "cas": "013780-03-5",
     "concentration": "wässrig",
@@ -9744,7 +9744,7 @@
   },
   {
     "name": "Calciumcarbid",
-    "name_en": "",
+    "name_en": "Calcium Carbide",
     "formula": "CaC2",
     "cas": "000075-20-7",
     "concentration": "",
@@ -10713,7 +10713,7 @@
   },
   {
     "name": "Campher",
-    "name_en": "",
+    "name_en": "Camphor",
     "formula": "C10H16O",
     "cas": "000464-48-2 / -49-2",
     "concentration": "",
@@ -10770,7 +10770,7 @@
   },
   {
     "name": "Campheröl",
-    "name_en": "",
+    "name_en": "Camphor Oil",
     "formula": "",
     "cas": "008008-51-3",
     "concentration": "",
@@ -10827,7 +10827,7 @@
   },
   {
     "name": "Carbazol",
-    "name_en": "",
+    "name_en": "Carbazole",
     "formula": "C12H9N",
     "cas": "000086-74-8",
     "concentration": "",
@@ -10884,7 +10884,7 @@
   },
   {
     "name": "Carbolineum",
-    "name_en": "",
+    "name_en": "Carbolineum",
     "formula": "",
     "cas": "008001-58-9",
     "concentration": "wässrig",
@@ -10941,7 +10941,7 @@
   },
   {
     "name": "Carnaubawachs",
-    "name_en": "",
+    "name_en": "Carnauba Wax",
     "formula": "",
     "cas": "008015-86-9",
     "concentration": "",
@@ -10998,7 +10998,7 @@
   },
   {
     "name": "Cäsiumbromid",
-    "name_en": "",
+    "name_en": "Cesium Bromide",
     "formula": "CsBr",
     "cas": "007787-69-1",
     "concentration": "",
@@ -11055,7 +11055,7 @@
   },
   {
     "name": "Cetylalkohol",
-    "name_en": "",
+    "name_en": "Cetyl Alcohol",
     "formula": "C16H34O",
     "cas": "036653-82-4",
     "concentration": "100 %",
@@ -11112,7 +11112,7 @@
   },
   {
     "name": "Chinin",
-    "name_en": "",
+    "name_en": "Quinine",
     "formula": "C20H24N2O2",
     "cas": "000130-95-0",
     "concentration": "",
@@ -12993,7 +12993,7 @@
   },
   {
     "name": "Chromalaun",
-    "name_en": "",
+    "name_en": "Chrome Alum",
     "formula": "KCr(SO4)2 x 12H2O",
     "cas": "007788-99-0",
     "concentration": "gesättigt",
@@ -13050,7 +13050,7 @@
   },
   {
     "name": "Chromsalze",
-    "name_en": "",
+    "name_en": "Chrome Salts",
     "formula": "",
     "cas": "",
     "concentration": "jede",
@@ -13327,7 +13327,7 @@
   },
   {
     "name": "Clophen A60",
-    "name_en": "",
+    "name_en": "Clophen A60 (PCB)",
     "formula": "",
     "cas": "011096-82-5",
     "concentration": "",
@@ -13441,7 +13441,7 @@
   },
   {
     "name": "Crotonaldehyd",
-    "name_en": "",
+    "name_en": "Crotonaldehyde",
     "formula": "C4H6O",
     "cas": "004170-30-3",
     "concentration": "techn. rein",
@@ -13498,7 +13498,7 @@
   },
   {
     "name": "Cumol",
-    "name_en": "",
+    "name_en": "Cumene",
     "formula": "C9H12",
     "cas": "000098-82-8",
     "concentration": "",
@@ -13555,7 +13555,7 @@
   },
   {
     "name": "Curry",
-    "name_en": "",
+    "name_en": "Curry",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -13612,7 +13612,7 @@
   },
   {
     "name": "Cyclanon",
-    "name_en": "",
+    "name_en": "Cyclanon",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -13840,7 +13840,7 @@
   },
   {
     "name": "Cymol, p-",
-    "name_en": "",
+    "name_en": "Cymene",
     "formula": "C10H14",
     "cas": "000099-87-6",
     "concentration": "",
@@ -13897,7 +13897,7 @@
   },
   {
     "name": "Dampf",
-    "name_en": "",
+    "name_en": "Steam",
     "formula": "H2O",
     "cas": "",
     "concentration": "bis 150°C",
@@ -13954,7 +13954,7 @@
   },
   {
     "name": "DDT (Emulsion)",
-    "name_en": "",
+    "name_en": "DDT (Emulsion)",
     "formula": "C14H9Cl5",
     "cas": "000050-29-3",
     "concentration": "",
@@ -14011,7 +14011,7 @@
   },
   {
     "name": "Decahydronaphtalin",
-    "name_en": "",
+    "name_en": "Decahydronaphthalene",
     "formula": "C10H18",
     "cas": "000091-17-8",
     "concentration": "",
@@ -14068,7 +14068,7 @@
   },
   {
     "name": "Decan",
-    "name_en": "",
+    "name_en": "Decane",
     "formula": "C10H22",
     "cas": "000124-18-5",
     "concentration": "",
@@ -14125,7 +14125,7 @@
   },
   {
     "name": "Dehydracetsäure",
-    "name_en": "",
+    "name_en": "Dehydroacetic Acid",
     "formula": "C8H8O4",
     "cas": "000520-45-6",
     "concentration": "",
@@ -14182,7 +14182,7 @@
   },
   {
     "name": "Densodrin W",
-    "name_en": "",
+    "name_en": "Densodrin W",
     "formula": "",
     "cas": "",
     "concentration": "wässrig",
@@ -14239,7 +14239,7 @@
   },
   {
     "name": "Desmodur 44",
-    "name_en": "",
+    "name_en": "Desmodur 44",
     "formula": "C15H10N2O2",
     "cas": "000101-68-8",
     "concentration": "",
@@ -14410,7 +14410,7 @@
   },
   {
     "name": "Dibenzylether",
-    "name_en": "",
+    "name_en": "Dibenzyl Ether",
     "formula": "C14H14O",
     "cas": "000103-50-4",
     "concentration": "",
@@ -14467,7 +14467,7 @@
   },
   {
     "name": "Dibenzylsebacat",
-    "name_en": "",
+    "name_en": "Dibenzyl Sebacate",
     "formula": "C24H26O4",
     "cas": "??",
     "concentration": "",
@@ -14524,7 +14524,7 @@
   },
   {
     "name": "Dibromethan-1,2",
-    "name_en": "",
+    "name_en": "1,2-Dibromoethane",
     "formula": "C2H4Br2",
     "cas": "000106-93-4",
     "concentration": "",
@@ -14581,7 +14581,7 @@
   },
   {
     "name": "Dibromtetrafluormethan",
-    "name_en": "",
+    "name_en": "Dibromotetrafluoromethane",
     "formula": "C2Br2F4",
     "cas": "000124-73-2",
     "concentration": "",
@@ -14638,7 +14638,7 @@
   },
   {
     "name": "Dibutylamin",
-    "name_en": "",
+    "name_en": "Dibutylamine",
     "formula": "C8H19N",
     "cas": "000111-92-2",
     "concentration": "",
@@ -14695,7 +14695,7 @@
   },
   {
     "name": "Dibutylether",
-    "name_en": "",
+    "name_en": "Dibutyl Ether",
     "formula": "C8H18O",
     "cas": "000142-96-1",
     "concentration": "techn. rein",
@@ -14752,7 +14752,7 @@
   },
   {
     "name": "Dibutylphthalat",
-    "name_en": "",
+    "name_en": "Dibutyl Phthalate",
     "formula": "C16H22O4",
     "cas": "000084-74-2",
     "concentration": "FR, 80°C",
@@ -14809,7 +14809,7 @@
   },
   {
     "name": "Dibutylphthalat",
-    "name_en": "",
+    "name_en": "Dibutyl Phthalate",
     "formula": "C16H22O4",
     "cas": "000084-74-2",
     "concentration": "",
@@ -14866,7 +14866,7 @@
   },
   {
     "name": "Dibutylsebacat",
-    "name_en": "",
+    "name_en": "Dibutyl Sebacate",
     "formula": "C18H34O4",
     "cas": "000109-43-3",
     "concentration": "techn. rein",
@@ -15660,7 +15660,7 @@
   },
   {
     "name": "Dicyclohexylamin (DCHA)",
-    "name_en": "",
+    "name_en": "Dicyclohexylamine (DCHA)",
     "formula": "C12H23N",
     "cas": "000101-83-7",
     "concentration": "",
@@ -15717,7 +15717,7 @@
   },
   {
     "name": "Dicyclohexylphthalat",
-    "name_en": "",
+    "name_en": "Dicyclohexyl Phthalate",
     "formula": "C20H26O4",
     "cas": "000084-61-7",
     "concentration": "techn. rein",
@@ -15945,7 +15945,7 @@
   },
   {
     "name": "Diethylamin",
-    "name_en": "",
+    "name_en": "Diethylamine",
     "formula": "C4H11N",
     "cas": "000109-89-7",
     "concentration": "techn. rein",
@@ -16059,7 +16059,7 @@
   },
   {
     "name": "Diethylenglycol",
-    "name_en": "",
+    "name_en": "Diethylene Glycol",
     "formula": "C4H10O3",
     "cas": "000111-46-6",
     "concentration": "",
@@ -16116,7 +16116,7 @@
   },
   {
     "name": "Diethylenglycolether",
-    "name_en": "",
+    "name_en": "Diethylene Glycol Ether",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -16173,7 +16173,7 @@
   },
   {
     "name": "Diethylketon",
-    "name_en": "",
+    "name_en": "Diethyl Ketone",
     "formula": "C5H10O",
     "cas": "000096-22-0",
     "concentration": "",
@@ -16230,7 +16230,7 @@
   },
   {
     "name": "Diethylmalonat",
-    "name_en": "",
+    "name_en": "Diethyl Malonate",
     "formula": "C7H12O4",
     "cas": "000105-53-3",
     "concentration": "",
@@ -16287,7 +16287,7 @@
   },
   {
     "name": "Diethylsebacat",
-    "name_en": "",
+    "name_en": "Diethyl Sebacate",
     "formula": "C14H26O4",
     "cas": "000110-40-7",
     "concentration": "",
@@ -16401,7 +16401,7 @@
   },
   {
     "name": "Difluorethan",
-    "name_en": "",
+    "name_en": "Difluoroethane",
     "formula": "C2H2F2",
     "cas": "000075-37-6",
     "concentration": "",
@@ -16458,7 +16458,7 @@
   },
   {
     "name": "Difluormethan",
-    "name_en": "",
+    "name_en": "Difluoromethane",
     "formula": "CH2F2",
     "cas": "000075-10-5",
     "concentration": "",
@@ -16572,7 +16572,7 @@
   },
   {
     "name": "Diglycolsäure",
-    "name_en": "",
+    "name_en": "Diglycolic Acid",
     "formula": "C4H6O5",
     "cas": "000110-99-6",
     "concentration": "wässrig",
@@ -16629,7 +16629,7 @@
   },
   {
     "name": "Diglycolsäure",
-    "name_en": "",
+    "name_en": "Diglycolic Acid",
     "formula": "C4H6O5",
     "cas": "000110-99-6",
     "concentration": "30 %",
@@ -16686,7 +16686,7 @@
   },
   {
     "name": "Diisobutylen (DIB)",
-    "name_en": "",
+    "name_en": "Diisobutylene (DIB)",
     "formula": "C6H10",
     "cas": "025167-70-8",
     "concentration": "",
@@ -16743,7 +16743,7 @@
   },
   {
     "name": "Diisobutylketon",
-    "name_en": "",
+    "name_en": "Diisobutyl Ketone",
     "formula": "C9H18O",
     "cas": "000108-83-8",
     "concentration": "techn. rein",
@@ -16800,7 +16800,7 @@
   },
   {
     "name": "Diisooctylphthalat (DOP)",
-    "name_en": "",
+    "name_en": "Diisooctyl Phthalate (DOP)",
     "formula": "C24H38O4",
     "cas": "000117-81-7",
     "concentration": "techn. rein",
@@ -16857,7 +16857,7 @@
   },
   {
     "name": "Diisopropylketon",
-    "name_en": "",
+    "name_en": "Diisopropyl Ketone",
     "formula": "C7H14O",
     "cas": "000565-80-0",
     "concentration": "",
@@ -16914,7 +16914,7 @@
   },
   {
     "name": "Dimethylamin",
-    "name_en": "",
+    "name_en": "Dimethylamine",
     "formula": "C2H7N",
     "cas": "000124-40-3",
     "concentration": "techn. rein",
@@ -16971,7 +16971,7 @@
   },
   {
     "name": "Dimethylanilin",
-    "name_en": "",
+    "name_en": "Dimethylaniline",
     "formula": "C8H11N",
     "cas": "",
     "concentration": "",
@@ -17028,7 +17028,7 @@
   },
   {
     "name": "Dimethylether",
-    "name_en": "",
+    "name_en": "Dimethyl Ether",
     "formula": "C2H6O",
     "cas": "000115-10-6",
     "concentration": "Gas",
@@ -17142,7 +17142,7 @@
   },
   {
     "name": "Dimethylphthalat (DMP)",
-    "name_en": "",
+    "name_en": "Dimethyl Phthalate (DMP)",
     "formula": "C10H10O4",
     "cas": "000131-11-3",
     "concentration": "100 %",
@@ -17313,7 +17313,7 @@
   },
   {
     "name": "Dinonylphthalat (DNP)",
-    "name_en": "",
+    "name_en": "Dinonyl Phthalate (DNP)",
     "formula": "C26H42O4",
     "cas": "000084-76-4",
     "concentration": "techn. rein",
@@ -17370,7 +17370,7 @@
   },
   {
     "name": "Dioctyladipat",
-    "name_en": "",
+    "name_en": "Dioctyl Adipate",
     "formula": "C22H42O4",
     "cas": "000103-23-1",
     "concentration": "",
@@ -17427,7 +17427,7 @@
   },
   {
     "name": "Dioctylsebacat",
-    "name_en": "",
+    "name_en": "Dioctyl Sebacate",
     "formula": "C26H50O4",
     "cas": "002432-87-3",
     "concentration": "",
@@ -17541,7 +17541,7 @@
   },
   {
     "name": "Diphenylamin",
-    "name_en": "",
+    "name_en": "Diphenylamine",
     "formula": "C12H11N",
     "cas": "000122-39-4",
     "concentration": "",
@@ -17598,7 +17598,7 @@
   },
   {
     "name": "Diphenylether",
-    "name_en": "",
+    "name_en": "Diphenyl Ether",
     "formula": "C12H10O",
     "cas": "000101-84-8",
     "concentration": "",
@@ -17655,7 +17655,7 @@
   },
   {
     "name": "Diphyl",
-    "name_en": "",
+    "name_en": "Diphyl",
     "formula": "",
     "cas": "008004-13-5",
     "concentration": "",
@@ -17712,7 +17712,7 @@
   },
   {
     "name": "Dipropylenglycol",
-    "name_en": "",
+    "name_en": "Dipropylene Glycol",
     "formula": "C6H14O3",
     "cas": "025265-71-8",
     "concentration": "",
@@ -17769,7 +17769,7 @@
   },
   {
     "name": "Dipropylketon",
-    "name_en": "",
+    "name_en": "Dipropyl Ketone",
     "formula": "C7H14O",
     "cas": "000123-19-3",
     "concentration": "",
@@ -17883,7 +17883,7 @@
   },
   {
     "name": "Eisen-(II)-sulfat",
-    "name_en": "",
+    "name_en": "Iron(II) Sulfate",
     "formula": "FeSO4",
     "cas": "007720-78-7",
     "concentration": "gesättigt",
@@ -17940,7 +17940,7 @@
   },
   {
     "name": "Eisen-(II)-sulfat",
-    "name_en": "",
+    "name_en": "Iron(II) Sulfate",
     "formula": "FeSO4",
     "cas": "007720-78-7",
     "concentration": "wässrig",
@@ -17997,7 +17997,7 @@
   },
   {
     "name": "Eisen-(II)-sulfat",
-    "name_en": "",
+    "name_en": "Iron(II) Sulfate",
     "formula": "FeSO4",
     "cas": "007720-78-7",
     "concentration": "",
@@ -18111,7 +18111,7 @@
   },
   {
     "name": "Eisen-(III)-sulfat",
-    "name_en": "",
+    "name_en": "Iron(III) Sulfate",
     "formula": "Fe2(SO4)3",
     "cas": "010028-22-5",
     "concentration": "gesättigt",
@@ -18282,7 +18282,7 @@
   },
   {
     "name": "Emulgatoren",
-    "name_en": "",
+    "name_en": "Emulsifiers",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -18335,7 +18335,7 @@
   },
   {
     "name": "Entwicklerflüssigkeiten",
-    "name_en": "",
+    "name_en": "Developer Fluids",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -18392,7 +18392,7 @@
   },
   {
     "name": "Ephetin",
-    "name_en": "",
+    "name_en": "Ephetin",
     "formula": "",
     "cas": "",
     "concentration": "10% in Wasser",
@@ -18506,7 +18506,7 @@
   },
   {
     "name": "Erdgas",
-    "name_en": "",
+    "name_en": "Natural Gas",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -18563,7 +18563,7 @@
   },
   {
     "name": "Erdnußöl",
-    "name_en": "",
+    "name_en": "Peanut Oil",
     "formula": "",
     "cas": "008002-03-7",
     "concentration": "",
@@ -18620,7 +18620,7 @@
   },
   {
     "name": "Erdöl",
-    "name_en": "",
+    "name_en": "Crude Oil",
     "formula": "",
     "cas": "008002-05-9",
     "concentration": "",
@@ -19019,7 +19019,7 @@
   },
   {
     "name": "Essigsaure Tonerde",
-    "name_en": "",
+    "name_en": "Aluminum Acetate Solution",
     "formula": "C4H7AlO5 x H2O",
     "cas": "000142-03-0",
     "concentration": "gesättigt",
@@ -19475,7 +19475,7 @@
   },
   {
     "name": "Ethanthiol",
-    "name_en": "",
+    "name_en": "Ethanethiol",
     "formula": "C2H6S",
     "cas": "000075-08-1",
     "concentration": "",
@@ -19589,7 +19589,7 @@
   },
   {
     "name": "Ethylacrylat",
-    "name_en": "",
+    "name_en": "Ethyl Acrylate",
     "formula": "C5H8O2",
     "cas": "000140-88-5",
     "concentration": "100 %",
@@ -19703,7 +19703,7 @@
   },
   {
     "name": "Ethylbutyrat",
-    "name_en": "",
+    "name_en": "Ethyl Butyrate",
     "formula": "C6H12O2",
     "cas": "000105-54-4",
     "concentration": "",
@@ -19817,7 +19817,7 @@
   },
   {
     "name": "Ethylcyanacetat",
-    "name_en": "",
+    "name_en": "Ethyl Cyanoacetate",
     "formula": "C5H7NO2",
     "cas": "000105-56-6",
     "concentration": "",
@@ -19874,7 +19874,7 @@
   },
   {
     "name": "Ethylen",
-    "name_en": "",
+    "name_en": "Ethylene",
     "formula": "C2H4",
     "cas": "000074-85-1",
     "concentration": "",
@@ -19988,7 +19988,7 @@
   },
   {
     "name": "Ethylendiamin",
-    "name_en": "",
+    "name_en": "Ethylenediamine",
     "formula": "C2H8N2",
     "cas": "000107-15-3",
     "concentration": "techn. rein",
@@ -20159,7 +20159,7 @@
   },
   {
     "name": "Ethylenglycolmonoethyletheracetat",
-    "name_en": "",
+    "name_en": "Ethylene Glycol Monoethyl Ether Acetate",
     "formula": "C6H12O3",
     "cas": "000115-15-9",
     "concentration": "",
@@ -20273,7 +20273,7 @@
   },
   {
     "name": "Ethylether",
-    "name_en": "",
+    "name_en": "Ethyl Ether",
     "formula": "C4H10O",
     "cas": "000060-29-7",
     "concentration": "techn. rein",
@@ -20330,7 +20330,7 @@
   },
   {
     "name": "Ethylformiat",
-    "name_en": "",
+    "name_en": "Ethyl Formate",
     "formula": "C3H6O2",
     "cas": "000109-94-4",
     "concentration": "",
@@ -20387,7 +20387,7 @@
   },
   {
     "name": "Ethylglycol",
-    "name_en": "",
+    "name_en": "Ethyl Glycol",
     "formula": "C4H10O2",
     "cas": "000110-80-5",
     "concentration": "100 %",
@@ -20444,7 +20444,7 @@
   },
   {
     "name": "Ethylhexanol-1",
-    "name_en": "",
+    "name_en": "1-Ethylhexanol",
     "formula": "C8H18O",
     "cas": "000104-76-7",
     "concentration": "",
@@ -20501,7 +20501,7 @@
   },
   {
     "name": "Ethyllactat",
-    "name_en": "",
+    "name_en": "Ethyl Lactate",
     "formula": "C5H10O3",
     "cas": "000097-64-3",
     "concentration": "",
@@ -20558,7 +20558,7 @@
   },
   {
     "name": "Eukalyptusöl",
-    "name_en": "",
+    "name_en": "Eucalyptus Oil",
     "formula": "",
     "cas": "008000-48-8",
     "concentration": "",
@@ -20615,7 +20615,7 @@
   },
   {
     "name": "Exsikkatorfett",
-    "name_en": "",
+    "name_en": "Desiccator Grease",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -20672,7 +20672,7 @@
   },
   {
     "name": "Ferricyankalium",
-    "name_en": "",
+    "name_en": "Potassium Ferricyanide",
     "formula": "C6FeK3N6",
     "cas": "013746-66-2",
     "concentration": "jede",
@@ -20729,7 +20729,7 @@
   },
   {
     "name": "Ferrocyankalium",
-    "name_en": "",
+    "name_en": "Potassium Ferrocyanide",
     "formula": "C6FeK4N6 x 3H2O",
     "cas": "014459-95-1",
     "concentration": "gesättigt",
@@ -20786,7 +20786,7 @@
   },
   {
     "name": "Ferrocyankalium",
-    "name_en": "",
+    "name_en": "Potassium Ferrocyanide",
     "formula": "C6FeK4N6 x 3H2O",
     "cas": "014459-95-1",
     "concentration": "verdünnt",
@@ -21014,7 +21014,7 @@
   },
   {
     "name": "Fettalkoholsulfonate",
-    "name_en": "",
+    "name_en": "Fatty Alcohol Sulfonates",
     "formula": "",
     "cas": "",
     "concentration": "wässrig",
@@ -21071,7 +21071,7 @@
   },
   {
     "name": "Fette, Speiseöle",
-    "name_en": "",
+    "name_en": "Fats, Cooking Oils",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21128,7 +21128,7 @@
   },
   {
     "name": "Fichtennadelöl",
-    "name_en": "",
+    "name_en": "Pine Needle Oil",
     "formula": "",
     "cas": "008008-80-8",
     "concentration": "",
@@ -21185,7 +21185,7 @@
   },
   {
     "name": "Fischtran",
-    "name_en": "",
+    "name_en": "Fish Oil",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21242,7 +21242,7 @@
   },
   {
     "name": "Flugmotorenkraftstoffe (JP)",
-    "name_en": "",
+    "name_en": "Aviation Fuels (JP)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21299,7 +21299,7 @@
   },
   {
     "name": "Fluid 101, 100°C",
-    "name_en": "",
+    "name_en": "Fluid 101 (100°C)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21527,7 +21527,7 @@
   },
   {
     "name": "Fluoride",
-    "name_en": "",
+    "name_en": "Fluorides",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21694,7 +21694,7 @@
   },
   {
     "name": "Flüssigseifen",
-    "name_en": "",
+    "name_en": "Liquid Soaps",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -22150,7 +22150,7 @@
   },
   {
     "name": "Formamid",
-    "name_en": "",
+    "name_en": "Formamide",
     "formula": "CH3NO",
     "cas": "000075-12-7",
     "concentration": "techn. rein",
@@ -22207,7 +22207,7 @@
   },
   {
     "name": "Fotoemulsionen",
-    "name_en": "",
+    "name_en": "Photo Emulsions",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -22264,7 +22264,7 @@
   },
   {
     "name": "Fotoentwickler",
-    "name_en": "",
+    "name_en": "Photo Developer",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -22321,7 +22321,7 @@
   },
   {
     "name": "Fotofixierbäder",
-    "name_en": "",
+    "name_en": "Photo Fixing Baths",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -22435,7 +22435,7 @@
   },
   {
     "name": "Fruchtsäfte",
-    "name_en": "",
+    "name_en": "Fruit Juices",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -22492,7 +22492,7 @@
   },
   {
     "name": "Fructose",
-    "name_en": "",
+    "name_en": "Fructose",
     "formula": "C6H12O6",
     "cas": "000057-48-7",
     "concentration": "jede",
@@ -22549,7 +22549,7 @@
   },
   {
     "name": "Furan",
-    "name_en": "",
+    "name_en": "Furan",
     "formula": "C4H4O",
     "cas": "000110-00-9",
     "concentration": "",
@@ -22606,7 +22606,7 @@
   },
   {
     "name": "Furfurol",
-    "name_en": "",
+    "name_en": "Furfural",
     "formula": "C5H4O2",
     "cas": "000098-01-1",
     "concentration": "",
@@ -22663,7 +22663,7 @@
   },
   {
     "name": "Furfurylalkohol",
-    "name_en": "",
+    "name_en": "Furfuryl Alcohol",
     "formula": "C5H6O2",
     "cas": "000098-00-0",
     "concentration": "techn. rein",
@@ -22720,7 +22720,7 @@
   },
   {
     "name": "Gallussäure",
-    "name_en": "",
+    "name_en": "Gallic Acid",
     "formula": "C7H6O5 x H2O",
     "cas": "000149-91-7",
     "concentration": "",
@@ -22777,7 +22777,7 @@
   },
   {
     "name": "Gärungsmaische",
-    "name_en": "",
+    "name_en": "Fermentation Mash",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -22834,7 +22834,7 @@
   },
   {
     "name": "Gasöl",
-    "name_en": "",
+    "name_en": "Gas Oil",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -22891,7 +22891,7 @@
   },
   {
     "name": "Gasoline",
-    "name_en": "",
+    "name_en": "Gasoline",
     "formula": "",
     "cas": "008006-61-9",
     "concentration": "",
@@ -23062,7 +23062,7 @@
   },
   {
     "name": "Genantin",
-    "name_en": "",
+    "name_en": "Genantin",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -23119,7 +23119,7 @@
   },
   {
     "name": "Gerbeextrakte, pflanzlich",
-    "name_en": "",
+    "name_en": "Vegetable Tanning Extracts",
     "formula": "",
     "cas": "",
     "concentration": "techn. üblich",
@@ -23176,7 +23176,7 @@
   },
   {
     "name": "Gerbextrakte",
-    "name_en": "",
+    "name_en": "Tanning Extracts",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -23233,7 +23233,7 @@
   },
   {
     "name": "Getriebeöl, EP (Hypoid), 110°C",
-    "name_en": "",
+    "name_en": "Gear Oil, EP (Hypoid), 110°C",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -23290,7 +23290,7 @@
   },
   {
     "name": "Glucose",
-    "name_en": "",
+    "name_en": "Glucose",
     "formula": "C6H12O6",
     "cas": "000050-99-7",
     "concentration": "jede",
@@ -23404,7 +23404,7 @@
   },
   {
     "name": "Glycolsäure",
-    "name_en": "",
+    "name_en": "Glycolic Acid",
     "formula": "C2H4O3",
     "cas": "000079-14-1",
     "concentration": "37 %",
@@ -23461,7 +23461,7 @@
   },
   {
     "name": "Glycolsäure",
-    "name_en": "",
+    "name_en": "Glycolic Acid",
     "formula": "C2H4O3",
     "cas": "000079-14-1",
     "concentration": "70 %",
@@ -23518,7 +23518,7 @@
   },
   {
     "name": "Glysantin",
-    "name_en": "",
+    "name_en": "Glysantin (Antifreeze)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -23575,7 +23575,7 @@
   },
   {
     "name": "Grubengas",
-    "name_en": "",
+    "name_en": "Mine Gas (Methane)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -23632,7 +23632,7 @@
   },
   {
     "name": "Harnsäure",
-    "name_en": "",
+    "name_en": "Uric Acid",
     "formula": "C5H4N4O3",
     "cas": "000069-93-2",
     "concentration": "",
@@ -23803,7 +23803,7 @@
   },
   {
     "name": "HD-Öl Motorenöl, aromatenfrei",
-    "name_en": "",
+    "name_en": "HD Motor Oil, Aromatic-Free",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -23860,7 +23860,7 @@
   },
   {
     "name": "Hefe",
-    "name_en": "",
+    "name_en": "Yeast",
     "formula": "",
     "cas": "",
     "concentration": "jede",
@@ -24031,7 +24031,7 @@
   },
   {
     "name": "Henkel-P3-Lösung",
-    "name_en": "",
+    "name_en": "Henkel P3 Solution",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -24145,7 +24145,7 @@
   },
   {
     "name": "Heptanol, 1-",
-    "name_en": "",
+    "name_en": "1-Heptanol",
     "formula": "C7H16O",
     "cas": "000111-70-6",
     "concentration": "",
@@ -24202,7 +24202,7 @@
   },
   {
     "name": "Heptanon",
-    "name_en": "",
+    "name_en": "Heptanone",
     "formula": "C7H14O",
     "cas": "",
     "concentration": "",
@@ -24430,7 +24430,7 @@
   },
   {
     "name": "Hexamethylentetramin",
-    "name_en": "",
+    "name_en": "Hexamethylenetetramine",
     "formula": "C6H12N4",
     "cas": "000100-97-0",
     "concentration": "",
@@ -24544,7 +24544,7 @@
   },
   {
     "name": "Hexanal",
-    "name_en": "",
+    "name_en": "Hexanal",
     "formula": "C6H12O",
     "cas": "000066-25-1",
     "concentration": "",
@@ -24601,7 +24601,7 @@
   },
   {
     "name": "Hexanol, (1-)",
-    "name_en": "",
+    "name_en": "Hexanol",
     "formula": "C6H14O",
     "cas": "000111-27-3",
     "concentration": "",
@@ -24658,7 +24658,7 @@
   },
   {
     "name": "Hexantriol",
-    "name_en": "",
+    "name_en": "Hexanetriol",
     "formula": "C6H14O3",
     "cas": "",
     "concentration": "100 %",
@@ -24715,7 +24715,7 @@
   },
   {
     "name": "Hexen, 1-",
-    "name_en": "",
+    "name_en": "Hexene",
     "formula": "C6H12",
     "cas": "000592-41-6",
     "concentration": "",
@@ -24772,7 +24772,7 @@
   },
   {
     "name": "Holzöl",
-    "name_en": "",
+    "name_en": "Wood Oil (Tung Oil)",
     "formula": "",
     "cas": "008001-20-5",
     "concentration": "",
@@ -24829,7 +24829,7 @@
   },
   {
     "name": "Honig",
-    "name_en": "",
+    "name_en": "Honey",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -24886,7 +24886,7 @@
   },
   {
     "name": "Hydraulikflüssigkeiten, HFA",
-    "name_en": "",
+    "name_en": "Hydraulic Fluids, HFA",
     "formula": "",
     "cas": "",
     "concentration": "50°C",
@@ -24943,7 +24943,7 @@
   },
   {
     "name": "Hydraulikflüssigkeiten, HFB",
-    "name_en": "",
+    "name_en": "Hydraulic Fluids, HFB",
     "formula": "",
     "cas": "",
     "concentration": "50°C",
@@ -25000,7 +25000,7 @@
   },
   {
     "name": "Hydraulikflüssigkeiten, HFC",
-    "name_en": "",
+    "name_en": "Hydraulic Fluids, HFC",
     "formula": "",
     "cas": "",
     "concentration": "60°C",
@@ -25057,7 +25057,7 @@
   },
   {
     "name": "Hydraulikflüssigkeiten, HFD-R",
-    "name_en": "",
+    "name_en": "Hydraulic Fluids, HFD-R",
     "formula": "",
     "cas": "",
     "concentration": "100°C",
@@ -25114,7 +25114,7 @@
   },
   {
     "name": "Hydraulikflüssigkeiten, HFD-S",
-    "name_en": "",
+    "name_en": "Hydraulic Fluids, HFD-S",
     "formula": "",
     "cas": "",
     "concentration": "100°C",
@@ -25285,7 +25285,7 @@
   },
   {
     "name": "Hydrazinhydrat",
-    "name_en": "",
+    "name_en": "Hydrazine Hydrate",
     "formula": "N2H6O",
     "cas": "010217-52-4",
     "concentration": "wässrig",
@@ -25342,7 +25342,7 @@
   },
   {
     "name": "Hydrochinon",
-    "name_en": "",
+    "name_en": "Hydroquinone",
     "formula": "C6H6O2",
     "cas": "000123-31-9",
     "concentration": "gesättigt",
@@ -25513,7 +25513,7 @@
   },
   {
     "name": "Ingwer",
-    "name_en": "",
+    "name_en": "Ginger",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -25570,7 +25570,7 @@
   },
   {
     "name": "Isoamylalkohol",
-    "name_en": "",
+    "name_en": "Isoamyl Alcohol",
     "formula": "C5H12O",
     "cas": "000123-51-3",
     "concentration": "",
@@ -25684,7 +25684,7 @@
   },
   {
     "name": "Isobutylacetat",
-    "name_en": "",
+    "name_en": "Isobutyl Acetate",
     "formula": "C6H12O2",
     "cas": "000110-19-0",
     "concentration": "",
@@ -25741,7 +25741,7 @@
   },
   {
     "name": "Isobutylmethylketon",
-    "name_en": "",
+    "name_en": "Isobutyl Methyl Ketone",
     "formula": "C6H12O",
     "cas": "000108-10-1",
     "concentration": "",
@@ -25798,7 +25798,7 @@
   },
   {
     "name": "Isooctan",
-    "name_en": "",
+    "name_en": "Isooctane",
     "formula": "C8H18",
     "cas": "000540-84-1",
     "concentration": "techn. rein",
@@ -25912,7 +25912,7 @@
   },
   {
     "name": "Isopropylacetat",
-    "name_en": "",
+    "name_en": "Isopropyl Acetate",
     "formula": "C5H10O2",
     "cas": "000108-21-4",
     "concentration": "",
@@ -26026,7 +26026,7 @@
   },
   {
     "name": "Isopropylether",
-    "name_en": "",
+    "name_en": "Isopropyl Ether",
     "formula": "C6H14O",
     "cas": "000108-20-3",
     "concentration": "techn. rein",
@@ -26083,7 +26083,7 @@
   },
   {
     "name": "Isopropylmethylketon",
-    "name_en": "",
+    "name_en": "Isopropyl Methyl Ketone",
     "formula": "C5H10O",
     "cas": "000563-80-4",
     "concentration": "",
@@ -26140,7 +26140,7 @@
   },
   {
     "name": "Jodoform",
-    "name_en": "",
+    "name_en": "Iodoform",
     "formula": "CHJ3",
     "cas": "000075-47-8",
     "concentration": "100 %",
@@ -26197,7 +26197,7 @@
   },
   {
     "name": "Jodpentafluorid",
-    "name_en": "",
+    "name_en": "Iodine Pentafluoride",
     "formula": "JF5",
     "cas": "007783-66-6",
     "concentration": "",
@@ -26254,7 +26254,7 @@
   },
   {
     "name": "Jodtinktur",
-    "name_en": "",
+    "name_en": "Iodine Tincture",
     "formula": "I2",
     "cas": "007553-56-2",
     "concentration": "",
@@ -26311,7 +26311,7 @@
   },
   {
     "name": "Kakao",
-    "name_en": "",
+    "name_en": "Cocoa",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -26368,7 +26368,7 @@
   },
   {
     "name": "Kakaobutter",
-    "name_en": "",
+    "name_en": "Cocoa Butter",
     "formula": "",
     "cas": "008002-31-1",
     "concentration": "",
@@ -26482,7 +26482,7 @@
   },
   {
     "name": "Kaliumaluminiumsulfat",
-    "name_en": "",
+    "name_en": "Potassium Aluminum Sulfate",
     "formula": "KAl(SO4)2 x 12H2O",
     "cas": "010043-67-1",
     "concentration": "verdünnt",
@@ -26539,7 +26539,7 @@
   },
   {
     "name": "Kaliumaluminiumsulfat",
-    "name_en": "",
+    "name_en": "Potassium Aluminum Sulfate",
     "formula": "KAl(SO4)2 x 12H2O",
     "cas": "010043-67-1",
     "concentration": "gesättigt",
@@ -26710,7 +26710,7 @@
   },
   {
     "name": "Kaliumbromat",
-    "name_en": "",
+    "name_en": "Potassium Bromate",
     "formula": "KBrO3",
     "cas": "007758-01-2",
     "concentration": "gesättigt",
@@ -26767,7 +26767,7 @@
   },
   {
     "name": "Kaliumbromat",
-    "name_en": "",
+    "name_en": "Potassium Bromate",
     "formula": "KBrO3",
     "cas": "007758-01-2",
     "concentration": "wässrig",
@@ -27565,7 +27565,7 @@
   },
   {
     "name": "Kaliumhydrogencarbonat",
-    "name_en": "",
+    "name_en": "Potassium Hydrogen Carbonate",
     "formula": "CHKO3",
     "cas": "000298-14-6",
     "concentration": "gesättigt",
@@ -27622,7 +27622,7 @@
   },
   {
     "name": "Kaliumhydrogensulfat",
-    "name_en": "",
+    "name_en": "Potassium Bisulfate",
     "formula": "KHSO4",
     "cas": "007646-93-7",
     "concentration": "wässrig",
@@ -27679,7 +27679,7 @@
   },
   {
     "name": "Kaliumhydrogensulfat",
-    "name_en": "",
+    "name_en": "Potassium Bisulfate",
     "formula": "KHSO4",
     "cas": "007646-93-7",
     "concentration": "",
@@ -27736,7 +27736,7 @@
   },
   {
     "name": "Kaliumhydrogentartat",
-    "name_en": "",
+    "name_en": "Potassium Hydrogen Tartrate",
     "formula": "C4H5KO6",
     "cas": "000868-14-4",
     "concentration": "gesättigt",
@@ -28135,7 +28135,7 @@
   },
   {
     "name": "Kaliumjodat",
-    "name_en": "",
+    "name_en": "Potassium Iodate",
     "formula": "KJO3",
     "cas": "007758-05-6",
     "concentration": "",
@@ -28648,7 +28648,7 @@
   },
   {
     "name": "Kaliumpersulfat",
-    "name_en": "",
+    "name_en": "Potassium Persulfate",
     "formula": "K2(SO4)2",
     "cas": "007727-21-1",
     "concentration": "jede",
@@ -28933,7 +28933,7 @@
   },
   {
     "name": "Kardamom",
-    "name_en": "",
+    "name_en": "Cardamom",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -28990,7 +28990,7 @@
   },
   {
     "name": "Kautschukdispersion",
-    "name_en": "",
+    "name_en": "Rubber Dispersion",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -29104,7 +29104,7 @@
   },
   {
     "name": "Kiefernadelöl",
-    "name_en": "",
+    "name_en": "Pine Needle Oil",
     "formula": "",
     "cas": "008023-99-2",
     "concentration": "",
@@ -29275,7 +29275,7 @@
   },
   {
     "name": "Knochenöl",
-    "name_en": "",
+    "name_en": "Bone Oil",
     "formula": "",
     "cas": "008001-85-2",
     "concentration": "",
@@ -29503,7 +29503,7 @@
   },
   {
     "name": "Kokosfett",
-    "name_en": "",
+    "name_en": "Coconut Fat",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -29560,7 +29560,7 @@
   },
   {
     "name": "Kokosfettalkohol",
-    "name_en": "",
+    "name_en": "Coconut Fatty Alcohol",
     "formula": "",
     "cas": "068425-37-6",
     "concentration": "techn. rein",
@@ -29617,7 +29617,7 @@
   },
   {
     "name": "Kokosnussöl",
-    "name_en": "",
+    "name_en": "Coconut Oil",
     "formula": "",
     "cas": "008001-31-8",
     "concentration": "techn. rein",
@@ -29845,7 +29845,7 @@
   },
   {
     "name": "Kraftstoff, Normal",
-    "name_en": "",
+    "name_en": "Regular Fuel",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -29902,7 +29902,7 @@
   },
   {
     "name": "Kraftstoff, Super",
-    "name_en": "",
+    "name_en": "Premium Fuel",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -29959,7 +29959,7 @@
   },
   {
     "name": "Kreide",
-    "name_en": "",
+    "name_en": "Chalk",
     "formula": "CaCO3",
     "cas": "",
     "concentration": "",
@@ -30130,7 +30130,7 @@
   },
   {
     "name": "Kümmel",
-    "name_en": "",
+    "name_en": "Caraway",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -30301,7 +30301,7 @@
   },
   {
     "name": "Kupfer-(II)-nitrat",
-    "name_en": "",
+    "name_en": "Copper(II) Nitrate",
     "formula": "Cu(NO3)2",
     "cas": "003251-23-8",
     "concentration": "gesättigt",
@@ -30358,7 +30358,7 @@
   },
   {
     "name": "Kupfer-(II)-nitrat",
-    "name_en": "",
+    "name_en": "Copper(II) Nitrate",
     "formula": "Cu(NO3)2",
     "cas": "003251-23-8",
     "concentration": "wässrig",
@@ -30529,7 +30529,7 @@
   },
   {
     "name": "Kupfervitriol",
-    "name_en": "",
+    "name_en": "Copper Vitriol (Copper Sulfate)",
     "formula": "CuSO4 x 5H2O",
     "cas": "007758-99-8",
     "concentration": "wässrig",
@@ -30586,7 +30586,7 @@
   },
   {
     "name": "Lachgas",
-    "name_en": "",
+    "name_en": "Laughing Gas (Nitrous Oxide)",
     "formula": "N2O",
     "cas": "010024-97-2",
     "concentration": "",
@@ -30643,7 +30643,7 @@
   },
   {
     "name": "Lactame",
-    "name_en": "",
+    "name_en": "Lactams",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -30700,7 +30700,7 @@
   },
   {
     "name": "Lactose",
-    "name_en": "",
+    "name_en": "Lactose",
     "formula": "C12H22O11",
     "cas": "000063-42-3",
     "concentration": "wässrig",
@@ -30757,7 +30757,7 @@
   },
   {
     "name": "Lanolin",
-    "name_en": "",
+    "name_en": "Lanolin",
     "formula": "",
     "cas": "008006-54-0",
     "concentration": "techn. rein",
@@ -30871,7 +30871,7 @@
   },
   {
     "name": "Laurylalkohol",
-    "name_en": "",
+    "name_en": "Lauryl Alcohol",
     "formula": "C12H26O",
     "cas": "000112-53-8",
     "concentration": "100 %",
@@ -30985,7 +30985,7 @@
   },
   {
     "name": "Lavendelöl",
-    "name_en": "",
+    "name_en": "Lavender Oil",
     "formula": "",
     "cas": "008000-28-0",
     "concentration": "",
@@ -31042,7 +31042,7 @@
   },
   {
     "name": "Lebertran",
-    "name_en": "",
+    "name_en": "Cod Liver Oil",
     "formula": "",
     "cas": "008001-69-2",
     "concentration": "",
@@ -31099,7 +31099,7 @@
   },
   {
     "name": "Leim (Knochenleim)",
-    "name_en": "",
+    "name_en": "Glue",
     "formula": "",
     "cas": "",
     "concentration": "jede",
@@ -31156,7 +31156,7 @@
   },
   {
     "name": "Leinöl",
-    "name_en": "",
+    "name_en": "Linseed Oil",
     "formula": "",
     "cas": "008001-26-1",
     "concentration": "techn. rein",
@@ -31213,7 +31213,7 @@
   },
   {
     "name": "Lemongrasöl",
-    "name_en": "",
+    "name_en": "Lemongrass Oil",
     "formula": "",
     "cas": "008007-02-1",
     "concentration": "",
@@ -31327,7 +31327,7 @@
   },
   {
     "name": "Ligroin",
-    "name_en": "",
+    "name_en": "Ligroin",
     "formula": "",
     "cas": "008032-32-4",
     "concentration": "",
@@ -31384,7 +31384,7 @@
   },
   {
     "name": "Liköre",
-    "name_en": "",
+    "name_en": "Liqueurs",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -31441,7 +31441,7 @@
   },
   {
     "name": "Limonen, DL-",
-    "name_en": "",
+    "name_en": "DL-Limonene",
     "formula": "C10H16",
     "cas": "000138-86-3",
     "concentration": "",
@@ -31555,7 +31555,7 @@
   },
   {
     "name": "Lorbeer",
-    "name_en": "",
+    "name_en": "Bay Laurel",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -31612,7 +31612,7 @@
   },
   {
     "name": "Lysol",
-    "name_en": "",
+    "name_en": "Lysol",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -32125,7 +32125,7 @@
   },
   {
     "name": "Maiskeimöl",
-    "name_en": "",
+    "name_en": "Corn Germ Oil",
     "formula": "",
     "cas": "008001-30-7",
     "concentration": "techn. rein",
@@ -32296,7 +32296,7 @@
   },
   {
     "name": "Mandelöl",
-    "name_en": "",
+    "name_en": "Almond Oil",
     "formula": "",
     "cas": "008007-69-0",
     "concentration": "",
@@ -32353,7 +32353,7 @@
   },
   {
     "name": "Margarine",
-    "name_en": "",
+    "name_en": "Margarine",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -32410,7 +32410,7 @@
   },
   {
     "name": "Marmelade",
-    "name_en": "",
+    "name_en": "Jam",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -32467,7 +32467,7 @@
   },
   {
     "name": "Maschinenöl",
-    "name_en": "",
+    "name_en": "Machine Oil",
     "formula": "",
     "cas": "",
     "concentration": "100 %",
@@ -32581,7 +32581,7 @@
   },
   {
     "name": "Melassewürze",
-    "name_en": "",
+    "name_en": "Molasses Wort",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -32695,7 +32695,7 @@
   },
   {
     "name": "Mesityloxid",
-    "name_en": "",
+    "name_en": "Mesityl Oxide",
     "formula": "C6H10O",
     "cas": "000141-79-7",
     "concentration": "",
@@ -32752,7 +32752,7 @@
   },
   {
     "name": "Methacrylsäure",
-    "name_en": "",
+    "name_en": "Methacrylic Acid",
     "formula": "C4H6O2",
     "cas": "000079-41-4",
     "concentration": "",
@@ -32980,7 +32980,7 @@
   },
   {
     "name": "Methoxyethyloleat",
-    "name_en": "",
+    "name_en": "Methoxyethyl Oleate",
     "formula": "C21H40O3",
     "cas": "000111-10-4",
     "concentration": "",
@@ -33037,7 +33037,7 @@
   },
   {
     "name": "Methyethylether",
-    "name_en": "",
+    "name_en": "Methyl Ethyl Ether",
     "formula": "C3H8O",
     "cas": "000540-67-0",
     "concentration": "100 %",
@@ -33094,7 +33094,7 @@
   },
   {
     "name": "Methylacrylat",
-    "name_en": "",
+    "name_en": "Methyl Acrylate",
     "formula": "C4H6O2",
     "cas": "000096-33-3",
     "concentration": "",
@@ -33322,7 +33322,7 @@
   },
   {
     "name": "Methylbutylketon",
-    "name_en": "",
+    "name_en": "Methyl Butyl Ketone",
     "formula": "C6H12O",
     "cas": "000591-78-6",
     "concentration": "",
@@ -33436,7 +33436,7 @@
   },
   {
     "name": "Methylcyclohexan",
-    "name_en": "",
+    "name_en": "Methylcyclohexane",
     "formula": "C7H14",
     "cas": "000108-87-2",
     "concentration": "",
@@ -33493,7 +33493,7 @@
   },
   {
     "name": "Methylcyclopentan",
-    "name_en": "",
+    "name_en": "Methylcyclopentane",
     "formula": "C6H12",
     "cas": "000096-37-7",
     "concentration": "",
@@ -33664,7 +33664,7 @@
   },
   {
     "name": "Methylformiat",
-    "name_en": "",
+    "name_en": "Methyl Formate",
     "formula": "C2H4O2",
     "cas": "000107-31-3",
     "concentration": "",
@@ -33721,7 +33721,7 @@
   },
   {
     "name": "Methylglycol",
-    "name_en": "",
+    "name_en": "Methyl Glycol",
     "formula": "C3H8O2",
     "cas": "000109-86-4",
     "concentration": "100 %",
@@ -33778,7 +33778,7 @@
   },
   {
     "name": "Methylglycolacetat",
-    "name_en": "",
+    "name_en": "Methyl Glycol Acetate",
     "formula": "C5H10O3",
     "cas": "000110-49-6",
     "concentration": "",
@@ -33835,7 +33835,7 @@
   },
   {
     "name": "Methylmethacrylat",
-    "name_en": "",
+    "name_en": "Methyl Methacrylate",
     "formula": "C5H8O2",
     "cas": "000080-62-6",
     "concentration": "100 %",
@@ -33892,7 +33892,7 @@
   },
   {
     "name": "Methyloleat",
-    "name_en": "",
+    "name_en": "Methyl Oleate",
     "formula": "C19H36O2",
     "cas": "000112-62-9",
     "concentration": "",
@@ -33949,7 +33949,7 @@
   },
   {
     "name": "Methylpropylketon",
-    "name_en": "",
+    "name_en": "Methyl Propyl Ketone",
     "formula": "C5H10O",
     "cas": "000107-87-9",
     "concentration": "",
@@ -34006,7 +34006,7 @@
   },
   {
     "name": "Methylsalicylat",
-    "name_en": "",
+    "name_en": "Methyl Salicylate",
     "formula": "C8H8O3",
     "cas": "000119-36-8",
     "concentration": "",
@@ -34519,7 +34519,7 @@
   },
   {
     "name": "Molke",
-    "name_en": "",
+    "name_en": "Whey",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -34633,7 +34633,7 @@
   },
   {
     "name": "Motorenöl",
-    "name_en": "",
+    "name_en": "Motor Oil",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -34690,7 +34690,7 @@
   },
   {
     "name": "Mowilith D",
-    "name_en": "",
+    "name_en": "Mowilith D",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -34747,7 +34747,7 @@
   },
   {
     "name": "Muskat",
-    "name_en": "",
+    "name_en": "Nutmeg",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -34804,7 +34804,7 @@
   },
   {
     "name": "Muskatnussöl",
-    "name_en": "",
+    "name_en": "Nutmeg Oil",
     "formula": "",
     "cas": "008008-45-5",
     "concentration": "",
@@ -34861,7 +34861,7 @@
   },
   {
     "name": "Nagellackentferner",
-    "name_en": "",
+    "name_en": "Nail Polish Remover",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -38908,7 +38908,7 @@
   },
   {
     "name": "Nelken",
-    "name_en": "",
+    "name_en": "Cloves",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -39022,7 +39022,7 @@
   },
   {
     "name": "Netzmittel",
-    "name_en": "",
+    "name_en": "Wetting Agent",
     "formula": "",
     "cas": "",
     "concentration": "5 %",
@@ -39417,7 +39417,7 @@
   },
   {
     "name": "Nicotin",
-    "name_en": "",
+    "name_en": "Nicotine",
     "formula": "C10H14N2",
     "cas": "000054-11-5",
     "concentration": "",
@@ -39474,7 +39474,7 @@
   },
   {
     "name": "Nicotinsäure",
-    "name_en": "",
+    "name_en": "Nicotinic Acid",
     "formula": "C6H5NO2",
     "cas": "000059-67-6",
     "concentration": "verdünnt",
@@ -39531,7 +39531,7 @@
   },
   {
     "name": "Nitrobenzoesäure",
-    "name_en": "",
+    "name_en": "Nitrobenzoic Acid",
     "formula": "C7H5NO4",
     "cas": "",
     "concentration": "",
@@ -39645,7 +39645,7 @@
   },
   {
     "name": "Nitroethan",
-    "name_en": "",
+    "name_en": "Nitroethane",
     "formula": "C2H5NO2",
     "cas": "000079-24-3",
     "concentration": "",
@@ -39702,7 +39702,7 @@
   },
   {
     "name": "Nitroglycerin",
-    "name_en": "",
+    "name_en": "Nitroglycerin",
     "formula": "C3H5(NO3)3",
     "cas": "000055-63-0",
     "concentration": "verdünnt",
@@ -39759,7 +39759,7 @@
   },
   {
     "name": "Nitroglycol",
-    "name_en": "",
+    "name_en": "Nitroglycol",
     "formula": "C2H4(NO3)2",
     "cas": "000628-96-6",
     "concentration": "verdünnt",
@@ -39816,7 +39816,7 @@
   },
   {
     "name": "Nitropropan",
-    "name_en": "",
+    "name_en": "Nitropropane",
     "formula": "C3H7NO2",
     "cas": "",
     "concentration": "",
@@ -39873,7 +39873,7 @@
   },
   {
     "name": "Nitrose Gase",
-    "name_en": "",
+    "name_en": "Nitrous Gases",
     "formula": "",
     "cas": "",
     "concentration": "verdünnt",
@@ -39987,7 +39987,7 @@
   },
   {
     "name": "Nitroverdünnung",
-    "name_en": "",
+    "name_en": "Nitro Thinner",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -40044,7 +40044,7 @@
   },
   {
     "name": "Nonanol",
-    "name_en": "",
+    "name_en": "Nonanol",
     "formula": "C9H20O",
     "cas": "000143-08-8",
     "concentration": "100 %",
@@ -40101,7 +40101,7 @@
   },
   {
     "name": "Obstpulp",
-    "name_en": "",
+    "name_en": "Fruit Pulp",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -40215,7 +40215,7 @@
   },
   {
     "name": "Octafluor-cyclobutan",
-    "name_en": "",
+    "name_en": "Octafluorocyclobutane",
     "formula": "C4F8",
     "cas": "000115-25-3",
     "concentration": "",
@@ -40329,7 +40329,7 @@
   },
   {
     "name": "Octylalkohol, -n",
-    "name_en": "",
+    "name_en": "n-Octyl Alcohol",
     "formula": "C8H18O",
     "cas": "000111-87-5",
     "concentration": "",
@@ -40386,7 +40386,7 @@
   },
   {
     "name": "Octylkresol",
-    "name_en": "",
+    "name_en": "Octyl Cresol",
     "formula": "C15H24O",
     "cas": "",
     "concentration": "100 %",
@@ -40443,7 +40443,7 @@
   },
   {
     "name": "Öle und Fette, pflanzlich",
-    "name_en": "",
+    "name_en": "Vegetable Oils and Fats",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -40500,7 +40500,7 @@
   },
   {
     "name": "Öle, ätherisch",
-    "name_en": "",
+    "name_en": "Essential Oils",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -40557,7 +40557,7 @@
   },
   {
     "name": "Oleum",
-    "name_en": "",
+    "name_en": "Oleum",
     "formula": "H2SO4 x SO3",
     "cas": "008014-95-7",
     "concentration": "10 % SO3",
@@ -40614,7 +40614,7 @@
   },
   {
     "name": "Oleumdämpfe",
-    "name_en": "",
+    "name_en": "Oleum Vapors",
     "formula": "",
     "cas": "",
     "concentration": "gering",
@@ -40899,7 +40899,7 @@
   },
   {
     "name": "Oxymethylfurfurol, 5-",
-    "name_en": "",
+    "name_en": "5-Hydroxymethylfurfural",
     "formula": "C6H6O3",
     "cas": "000067-47-0",
     "concentration": "",
@@ -41013,7 +41013,7 @@
   },
   {
     "name": "Ozon-Luft-Gemisch",
-    "name_en": "",
+    "name_en": "Ozone-Air Mixture",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -41127,7 +41127,7 @@
   },
   {
     "name": "Palmkernöl",
-    "name_en": "",
+    "name_en": "Palm Kernel Oil",
     "formula": "",
     "cas": "008023-79-8",
     "concentration": "",
@@ -41184,7 +41184,7 @@
   },
   {
     "name": "Palmöl",
-    "name_en": "",
+    "name_en": "Palm Oil",
     "formula": "",
     "cas": "008002-75-3",
     "concentration": "",
@@ -41241,7 +41241,7 @@
   },
   {
     "name": "Paraffine",
-    "name_en": "",
+    "name_en": "Paraffins",
     "formula": "CnH2n+2",
     "cas": "",
     "concentration": "100 %",
@@ -41298,7 +41298,7 @@
   },
   {
     "name": "Paraffinemulsion",
-    "name_en": "",
+    "name_en": "Paraffin Emulsion",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -41355,7 +41355,7 @@
   },
   {
     "name": "Paraffinwachs",
-    "name_en": "",
+    "name_en": "Paraffin Wax",
     "formula": "",
     "cas": "008002-74-2",
     "concentration": "geschmolzen",
@@ -41469,7 +41469,7 @@
   },
   {
     "name": "Parfüms",
-    "name_en": "",
+    "name_en": "Perfumes",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -41526,7 +41526,7 @@
   },
   {
     "name": "Pectin",
-    "name_en": "",
+    "name_en": "Pectin",
     "formula": "",
     "cas": "009000-69-5",
     "concentration": "wässrig",
@@ -41583,7 +41583,7 @@
   },
   {
     "name": "Pectin",
-    "name_en": "",
+    "name_en": "Pectin",
     "formula": "",
     "cas": "009000-69-5",
     "concentration": "",
@@ -41640,7 +41640,7 @@
   },
   {
     "name": "Penicillin",
-    "name_en": "",
+    "name_en": "Penicillin",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -41811,7 +41811,7 @@
   },
   {
     "name": "Pentanthiol, 1-",
-    "name_en": "",
+    "name_en": "1-Pentanethiol",
     "formula": "C5H12S",
     "cas": "000110-66-7",
     "concentration": "",
@@ -42039,7 +42039,7 @@
   },
   {
     "name": "Perfluorpropan",
-    "name_en": "",
+    "name_en": "Perfluoropropane",
     "formula": "C3F8",
     "cas": "000076-19-7",
     "concentration": "",
@@ -42210,7 +42210,7 @@
   },
   {
     "name": "Pfeffer",
-    "name_en": "",
+    "name_en": "Pepper",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -42267,7 +42267,7 @@
   },
   {
     "name": "Pflanzliche Öle",
-    "name_en": "",
+    "name_en": "Vegetable Oils",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -42324,7 +42324,7 @@
   },
   {
     "name": "Phenacetin",
-    "name_en": "",
+    "name_en": "Phenacetin",
     "formula": "C10H13NO2",
     "cas": "000062-44-2",
     "concentration": "",
@@ -42609,7 +42609,7 @@
   },
   {
     "name": "Phenylethylether",
-    "name_en": "",
+    "name_en": "Phenyl Ethyl Ether",
     "formula": "C8H10O",
     "cas": "000103-73-1",
     "concentration": "",
@@ -42666,7 +42666,7 @@
   },
   {
     "name": "Phenylhydrazin",
-    "name_en": "",
+    "name_en": "Phenylhydrazine",
     "formula": "C6H8N2",
     "cas": "000100-63-0",
     "concentration": "techn. rein",
@@ -42723,7 +42723,7 @@
   },
   {
     "name": "Phenylhydrazin-HCl",
-    "name_en": "",
+    "name_en": "Phenylhydrazine Hydrochloride",
     "formula": "C6H8N2-HCl",
     "cas": "000059-88-1",
     "concentration": "",
@@ -42780,7 +42780,7 @@
   },
   {
     "name": "Phenylsulfonat",
-    "name_en": "",
+    "name_en": "Phenyl Sulfonate",
     "formula": "",
     "cas": "70528-83-5",
     "concentration": "",
@@ -42837,7 +42837,7 @@
   },
   {
     "name": "Phosgen",
-    "name_en": "",
+    "name_en": "Phosgene",
     "formula": "COCl2",
     "cas": "000075-44-5",
     "concentration": "flüssig",
@@ -42894,7 +42894,7 @@
   },
   {
     "name": "Phosgen",
-    "name_en": "",
+    "name_en": "Phosgene",
     "formula": "COCl2",
     "cas": "000075-44-5",
     "concentration": "gasförmig",
@@ -42951,7 +42951,7 @@
   },
   {
     "name": "Phosphate",
-    "name_en": "",
+    "name_en": "Phosphates",
     "formula": "",
     "cas": "",
     "concentration": "wässrig",
@@ -43008,7 +43008,7 @@
   },
   {
     "name": "Phosphin",
-    "name_en": "",
+    "name_en": "Phosphine",
     "formula": "PH3",
     "cas": "007803-51-2",
     "concentration": "konz.",
@@ -43236,7 +43236,7 @@
   },
   {
     "name": "Phosphorpentoxid",
-    "name_en": "",
+    "name_en": "Phosphorus Pentoxide",
     "formula": "P4O10",
     "cas": "001314-56-3",
     "concentration": "techn. rein",
@@ -43578,7 +43578,7 @@
   },
   {
     "name": "Phthalsäure",
-    "name_en": "",
+    "name_en": "Phthalic Acid",
     "formula": "C8H6O4",
     "cas": "000088-99-3",
     "concentration": "gesättigt",
@@ -43635,7 +43635,7 @@
   },
   {
     "name": "Phthalsäureamylester",
-    "name_en": "",
+    "name_en": "Amyl Phthalate",
     "formula": "C18H26O4",
     "cas": "000131-18-0",
     "concentration": "100 %",
@@ -43692,7 +43692,7 @@
   },
   {
     "name": "Phthalsäuremonoamylester",
-    "name_en": "",
+    "name_en": "Monoamyl Phthalate",
     "formula": "C13H16O4",
     "cas": "??",
     "concentration": "",
@@ -43749,7 +43749,7 @@
   },
   {
     "name": "Pikrinsäure",
-    "name_en": "",
+    "name_en": "Picric Acid",
     "formula": "C6H3N3O7",
     "cas": "000088-89-1",
     "concentration": "1 % wässrig",
@@ -43806,7 +43806,7 @@
   },
   {
     "name": "Piment",
-    "name_en": "",
+    "name_en": "Allspice",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -43920,7 +43920,7 @@
   },
   {
     "name": "Polyesterharze",
-    "name_en": "",
+    "name_en": "Polyester Resins",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -43977,7 +43977,7 @@
   },
   {
     "name": "Polyethylenglycol",
-    "name_en": "",
+    "name_en": "Polyethylene Glycol",
     "formula": "HO-(C2H4O)n-H",
     "cas": "025322-68-3",
     "concentration": "100 %",
@@ -44034,7 +44034,7 @@
   },
   {
     "name": "Polyran M25 N",
-    "name_en": "",
+    "name_en": "Polyran M25 N",
     "formula": "",
     "cas": "",
     "concentration": "80°C",
@@ -44091,7 +44091,7 @@
   },
   {
     "name": "Polyran M400",
-    "name_en": "",
+    "name_en": "Polyran M400",
     "formula": "",
     "cas": "",
     "concentration": "80°C",
@@ -44148,7 +44148,7 @@
   },
   {
     "name": "Polysolvan O",
-    "name_en": "",
+    "name_en": "Polysolvan O",
     "formula": "C6H12O3",
     "cas": "007397-62-8",
     "concentration": "100 %",
@@ -44205,7 +44205,7 @@
   },
   {
     "name": "Pomeranzenöl",
-    "name_en": "",
+    "name_en": "Bitter Orange Oil",
     "formula": "",
     "cas": "068916-04-1",
     "concentration": "",
@@ -44262,7 +44262,7 @@
   },
   {
     "name": "Pressluft",
-    "name_en": "",
+    "name_en": "Compressed Air",
     "formula": "",
     "cas": "",
     "concentration": "ölhaltig",
@@ -44319,7 +44319,7 @@
   },
   {
     "name": "Prontosil",
-    "name_en": "",
+    "name_en": "Prontosil",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -44547,7 +44547,7 @@
   },
   {
     "name": "Propargylalkohol",
-    "name_en": "",
+    "name_en": "Propargyl Alcohol",
     "formula": "C3H4O",
     "cas": "000107-19-7",
     "concentration": "7 %",
@@ -44604,7 +44604,7 @@
   },
   {
     "name": "Propen",
-    "name_en": "",
+    "name_en": "Propene",
     "formula": "C3H6",
     "cas": "000115-07-1",
     "concentration": "",
@@ -44775,7 +44775,7 @@
   },
   {
     "name": "Propylacetat",
-    "name_en": "",
+    "name_en": "Propyl Acetate",
     "formula": "C5H10O2",
     "cas": "000109-60-4",
     "concentration": "",
@@ -44832,7 +44832,7 @@
   },
   {
     "name": "Propylamin, n-",
-    "name_en": "",
+    "name_en": "n-Propylamine",
     "formula": "C3H9N",
     "cas": "000107-10-8",
     "concentration": "",
@@ -44946,7 +44946,7 @@
   },
   {
     "name": "Propylenglycolmethylether",
-    "name_en": "",
+    "name_en": "Propylene Glycol Methyl Ether",
     "formula": "C4H10O2",
     "cas": "",
     "concentration": "",
@@ -45060,7 +45060,7 @@
   },
   {
     "name": "Propylnitrat",
-    "name_en": "",
+    "name_en": "Propyl Nitrate",
     "formula": "C3H7NO3",
     "cas": "000627-13-4",
     "concentration": "",
@@ -45117,7 +45117,7 @@
   },
   {
     "name": "Pseudocumol",
-    "name_en": "",
+    "name_en": "Pseudocumene",
     "formula": "C9H12",
     "cas": "000095-63-6",
     "concentration": "",
@@ -45174,7 +45174,7 @@
   },
   {
     "name": "Pydraul C (312, 540)",
-    "name_en": "",
+    "name_en": "Pydraul C (312, 540)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -45231,7 +45231,7 @@
   },
   {
     "name": "Pydraul E (29, 30, 50, 65, 90, 11)",
-    "name_en": "",
+    "name_en": "Pydraul E Series",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -45345,7 +45345,7 @@
   },
   {
     "name": "Pyrogallol",
-    "name_en": "",
+    "name_en": "Pyrogallol",
     "formula": "C6H6O3",
     "cas": "000087-66-1",
     "concentration": "",
@@ -45459,7 +45459,7 @@
   },
   {
     "name": "Quecksilber",
-    "name_en": "",
+    "name_en": "Mercury",
     "formula": "Hg",
     "cas": "007439-97-6",
     "concentration": "rein",
@@ -45573,7 +45573,7 @@
   },
   {
     "name": "Quecksilber-(II)-cyanid",
-    "name_en": "",
+    "name_en": "Mercury(II) Cyanide",
     "formula": "C2HgN2",
     "cas": "000592-04-1",
     "concentration": "gesättigt",
@@ -45687,7 +45687,7 @@
   },
   {
     "name": "Ramasit",
-    "name_en": "",
+    "name_en": "Ramasit",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -45858,7 +45858,7 @@
   },
   {
     "name": "Rindertalg",
-    "name_en": "",
+    "name_en": "Beef Tallow",
     "formula": "",
     "cas": "061789-97-7",
     "concentration": "",
@@ -45915,7 +45915,7 @@
   },
   {
     "name": "Rindertalg-Emulsion",
-    "name_en": "",
+    "name_en": "Beef Tallow Emulsion",
     "formula": "",
     "cas": "",
     "concentration": "sulfuriert",
@@ -45972,7 +45972,7 @@
   },
   {
     "name": "Rizinusöl",
-    "name_en": "",
+    "name_en": "Castor Oil",
     "formula": "",
     "cas": "008001-79-4",
     "concentration": "100 %",
@@ -46029,7 +46029,7 @@
   },
   {
     "name": "Rohöl",
-    "name_en": "",
+    "name_en": "Crude Oil",
     "formula": "",
     "cas": "",
     "concentration": "100 %",
@@ -46086,7 +46086,7 @@
   },
   {
     "name": "Rosenöl",
-    "name_en": "",
+    "name_en": "Rose Oil",
     "formula": "",
     "cas": "008007-01-0",
     "concentration": "",
@@ -46143,7 +46143,7 @@
   },
   {
     "name": "Röstgase",
-    "name_en": "",
+    "name_en": "Roasting Gases",
     "formula": "",
     "cas": "",
     "concentration": "jede",
@@ -46200,7 +46200,7 @@
   },
   {
     "name": "Rüböl",
-    "name_en": "",
+    "name_en": "Rapeseed Oil",
     "formula": "",
     "cas": "008002-13-9",
     "concentration": "",
@@ -46257,7 +46257,7 @@
   },
   {
     "name": "Rumaroma",
-    "name_en": "",
+    "name_en": "Rum Flavoring",
     "formula": "",
     "cas": "008030-89-5",
     "concentration": "",
@@ -46314,7 +46314,7 @@
   },
   {
     "name": "Sagrotan",
-    "name_en": "",
+    "name_en": "Sagrotan (Disinfectant)",
     "formula": "",
     "cas": "",
     "concentration": "flüssig",
@@ -46371,7 +46371,7 @@
   },
   {
     "name": "Salicylaldehyd",
-    "name_en": "",
+    "name_en": "Salicylaldehyde",
     "formula": "C7H6O2",
     "cas": "000090-02-8",
     "concentration": "",
@@ -46428,7 +46428,7 @@
   },
   {
     "name": "Salicylsäure",
-    "name_en": "",
+    "name_en": "Salicylic Acid",
     "formula": "C7H6O3",
     "cas": "000069-72-7",
     "concentration": "gesättigt",
@@ -46485,7 +46485,7 @@
   },
   {
     "name": "Salicylsäure",
-    "name_en": "",
+    "name_en": "Salicylic Acid",
     "formula": "C7H6O3",
     "cas": "000069-72-7",
     "concentration": "Pulver",
@@ -47055,7 +47055,7 @@
   },
   {
     "name": "Salzsole",
-    "name_en": "",
+    "name_en": "Salt Brine",
     "formula": "NaCl",
     "cas": "007647-14-5",
     "concentration": "gesättigt",
@@ -47169,7 +47169,7 @@
   },
   {
     "name": "Sattdampfkondensat",
-    "name_en": "",
+    "name_en": "Saturated Steam Condensate",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -47283,7 +47283,7 @@
   },
   {
     "name": "Schmieröle",
-    "name_en": "",
+    "name_en": "Lubricating Oils",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -47340,7 +47340,7 @@
   },
   {
     "name": "Schmierseife",
-    "name_en": "",
+    "name_en": "Soft Soap",
     "formula": "",
     "cas": "",
     "concentration": "verdünnt",
@@ -47568,7 +47568,7 @@
   },
   {
     "name": "Schwefeldioxid",
-    "name_en": "",
+    "name_en": "Sulfur Dioxide",
     "formula": "SO2",
     "cas": "007446-09-5",
     "concentration": "feucht",
@@ -47625,7 +47625,7 @@
   },
   {
     "name": "Schwefeldioxid",
-    "name_en": "",
+    "name_en": "Sulfur Dioxide",
     "formula": "SO2",
     "cas": "007446-09-5",
     "concentration": "flüssig",
@@ -47682,7 +47682,7 @@
   },
   {
     "name": "Schwefelhexafluorid",
-    "name_en": "",
+    "name_en": "Sulfur Hexafluoride",
     "formula": "SF6",
     "cas": "002551-62-4",
     "concentration": "",
@@ -47739,7 +47739,7 @@
   },
   {
     "name": "Schwefelkohlenstoff",
-    "name_en": "",
+    "name_en": "Carbon Disulfide",
     "formula": "CS2",
     "cas": "000075-15-0",
     "concentration": "",
@@ -48195,7 +48195,7 @@
   },
   {
     "name": "Schwefeltrioxid",
-    "name_en": "",
+    "name_en": "Sulfur Trioxide",
     "formula": "SO3",
     "cas": "007446-11-9",
     "concentration": "",
@@ -48423,7 +48423,7 @@
   },
   {
     "name": "Seifenlösung",
-    "name_en": "",
+    "name_en": "Soap Solution",
     "formula": "",
     "cas": "",
     "concentration": "jede",
@@ -48480,7 +48480,7 @@
   },
   {
     "name": "Senf",
-    "name_en": "",
+    "name_en": "Mustard",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -48765,7 +48765,7 @@
   },
   {
     "name": "Siliconfette",
-    "name_en": "",
+    "name_en": "Silicone Greases",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -48822,7 +48822,7 @@
   },
   {
     "name": "Siliconöl",
-    "name_en": "",
+    "name_en": "Silicone Oil",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -48879,7 +48879,7 @@
   },
   {
     "name": "Skydrol 500 (B4)",
-    "name_en": "",
+    "name_en": "Skydrol 500 (B4)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -48936,7 +48936,7 @@
   },
   {
     "name": "Skydrol 7000",
-    "name_en": "",
+    "name_en": "Skydrol 7000",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -48993,7 +48993,7 @@
   },
   {
     "name": "Sojaöl",
-    "name_en": "",
+    "name_en": "Soybean Oil",
     "formula": "",
     "cas": "008001-22-7",
     "concentration": "",
@@ -49050,7 +49050,7 @@
   },
   {
     "name": "Spindelöl",
-    "name_en": "",
+    "name_en": "Spindle Oil",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -49107,7 +49107,7 @@
   },
   {
     "name": "Spinnbadsäuren",
-    "name_en": "",
+    "name_en": "Spinning Bath Acids",
     "formula": "",
     "cas": "",
     "concentration": "100mg CS2/l",
@@ -49164,7 +49164,7 @@
   },
   {
     "name": "Spinnlösung, viskose ~",
-    "name_en": "",
+    "name_en": "Viscose Spinning Solution",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -49221,7 +49221,7 @@
   },
   {
     "name": "Spirituosen",
-    "name_en": "",
+    "name_en": "Spirits",
     "formula": "C2H6O",
     "cas": "",
     "concentration": "",
@@ -49278,7 +49278,7 @@
   },
   {
     "name": "Spiritus",
-    "name_en": "",
+    "name_en": "Spirit",
     "formula": "C2H6O",
     "cas": "",
     "concentration": "",
@@ -49335,7 +49335,7 @@
   },
   {
     "name": "Spülmittel",
-    "name_en": "",
+    "name_en": "Dish Soap",
     "formula": "",
     "cas": "",
     "concentration": "wässrig",
@@ -49392,7 +49392,7 @@
   },
   {
     "name": "Stärkelösung",
-    "name_en": "",
+    "name_en": "Starch Solution",
     "formula": "(C6H10O5)n",
     "cas": "",
     "concentration": "jede",
@@ -49449,7 +49449,7 @@
   },
   {
     "name": "Stärkesirup",
-    "name_en": "",
+    "name_en": "Starch Syrup",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -49506,7 +49506,7 @@
   },
   {
     "name": "Staufferfett",
-    "name_en": "",
+    "name_en": "Stauffer Grease",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -49620,7 +49620,7 @@
   },
   {
     "name": "Stearinsäurebutylester",
-    "name_en": "",
+    "name_en": "Butyl Stearate",
     "formula": "C22H44O2",
     "cas": "000123-95-5",
     "concentration": "100 %",
@@ -49677,7 +49677,7 @@
   },
   {
     "name": "Steinkohlenteeröl",
-    "name_en": "",
+    "name_en": "Coal Tar Oil",
     "formula": "",
     "cas": "092045-38-0",
     "concentration": "100 %",
@@ -49791,7 +49791,7 @@
   },
   {
     "name": "Stickstofftetroxid",
-    "name_en": "",
+    "name_en": "Nitrogen Tetroxide",
     "formula": "N2O4",
     "cas": "010544-72-6",
     "concentration": "",
@@ -49848,7 +49848,7 @@
   },
   {
     "name": "Strontiumbromid",
-    "name_en": "",
+    "name_en": "Strontium Bromide",
     "formula": "SrBr2",
     "cas": "010476-81-0",
     "concentration": "",
@@ -49905,7 +49905,7 @@
   },
   {
     "name": "Strychnin",
-    "name_en": "",
+    "name_en": "Strychnine",
     "formula": "C21H22N2O2",
     "cas": "000057-24-9",
     "concentration": "",
@@ -50076,7 +50076,7 @@
   },
   {
     "name": "Talg",
-    "name_en": "",
+    "name_en": "Tallow",
     "formula": "",
     "cas": "",
     "concentration": "techn. rein",
@@ -50304,7 +50304,7 @@
   },
   {
     "name": "Terpentinersatz",
-    "name_en": "",
+    "name_en": "Turpentine Substitute",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -50361,7 +50361,7 @@
   },
   {
     "name": "Terpentinöl",
-    "name_en": "",
+    "name_en": "Turpentine Oil",
     "formula": "",
     "cas": "008006-64-2",
     "concentration": "",
@@ -50475,7 +50475,7 @@
   },
   {
     "name": "Testkraftstoff A (ISO-Fluid A)",
-    "name_en": "",
+    "name_en": "Test Fuel A (ISO Fluid A)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -50532,7 +50532,7 @@
   },
   {
     "name": "Testkraftstoff B (ISO-Fluid B)",
-    "name_en": "",
+    "name_en": "Test Fuel B (ISO Fluid B)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -50589,7 +50589,7 @@
   },
   {
     "name": "Testkraftstoff C (ISO-Fluid C)",
-    "name_en": "",
+    "name_en": "Test Fuel C (ISO Fluid C)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -50646,7 +50646,7 @@
   },
   {
     "name": "Testkraftstoff D (ISO-Fluid D)",
-    "name_en": "",
+    "name_en": "Test Fuel D (ISO Fluid D)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -50703,7 +50703,7 @@
   },
   {
     "name": "Tetrabromethan (TBE)",
-    "name_en": "",
+    "name_en": "Tetrabromoethane",
     "formula": "C2H2Br4",
     "cas": "",
     "concentration": "100 %",
@@ -50760,7 +50760,7 @@
   },
   {
     "name": "Tetrabromkohlenstoff",
-    "name_en": "",
+    "name_en": "Carbon Tetrabromide",
     "formula": "CBr4",
     "cas": "000558-13-4",
     "concentration": "",
@@ -50931,7 +50931,7 @@
   },
   {
     "name": "Tetraethylblei (TEL)",
-    "name_en": "",
+    "name_en": "Tetraethyl Lead",
     "formula": "C8H20Pb",
     "cas": "000078-00-2",
     "concentration": "techn. rein",
@@ -50988,7 +50988,7 @@
   },
   {
     "name": "Tetraethylorthosilicat",
-    "name_en": "",
+    "name_en": "Tetraethyl Orthosilicate",
     "formula": "C8H20SiO4",
     "cas": "000078-10-4",
     "concentration": "",
@@ -51045,7 +51045,7 @@
   },
   {
     "name": "Tetrafluormethan",
-    "name_en": "",
+    "name_en": "Tetrafluoromethane",
     "formula": "CF4",
     "cas": "000075-73-0",
     "concentration": "",
@@ -51159,7 +51159,7 @@
   },
   {
     "name": "Tetrahydrofurfurylalkohol",
-    "name_en": "",
+    "name_en": "Tetrahydrofurfuryl Alcohol",
     "formula": "C5H10O2",
     "cas": "000097-99-4",
     "concentration": "",
@@ -51216,7 +51216,7 @@
   },
   {
     "name": "Tetrahydronaphthalin",
-    "name_en": "",
+    "name_en": "Tetrahydronaphthalene",
     "formula": "C10H12",
     "cas": "000119-64-2",
     "concentration": "techn. rein",
@@ -51273,7 +51273,7 @@
   },
   {
     "name": "Thioglycolsäure",
-    "name_en": "",
+    "name_en": "Thioglycolic Acid",
     "formula": "C2H4SO2",
     "cas": "000068-11-1",
     "concentration": "",
@@ -51444,7 +51444,7 @@
   },
   {
     "name": "Thymol",
-    "name_en": "",
+    "name_en": "Thymol",
     "formula": "C10H14O",
     "cas": "000089-83-8",
     "concentration": "",
@@ -51558,7 +51558,7 @@
   },
   {
     "name": "Traganth",
-    "name_en": "",
+    "name_en": "Tragacanth",
     "formula": "",
     "cas": "009000-65-1",
     "concentration": "",
@@ -51615,7 +51615,7 @@
   },
   {
     "name": "Transformatorenöl",
-    "name_en": "",
+    "name_en": "Transformer Oil",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -51729,7 +51729,7 @@
   },
   {
     "name": "Tributylcitrat",
-    "name_en": "",
+    "name_en": "Tributyl Citrate",
     "formula": "C18H32O7",
     "cas": "000077-94-1",
     "concentration": "",
@@ -52470,7 +52470,7 @@
   },
   {
     "name": "Triglycol",
-    "name_en": "",
+    "name_en": "Triglycol",
     "formula": "C6H14O4",
     "cas": "000112-27-6",
     "concentration": "",
@@ -52527,7 +52527,7 @@
   },
   {
     "name": "Triglycolacetat",
-    "name_en": "",
+    "name_en": "Triglycol Acetate",
     "formula": "C10H18O6",
     "cas": "000111-21-7",
     "concentration": "",
@@ -52641,7 +52641,7 @@
   },
   {
     "name": "Trikresylphosphat (TCF)",
-    "name_en": "",
+    "name_en": "Tricresyl Phosphate",
     "formula": "C21H21PO4",
     "cas": "",
     "concentration": "techn. rein",
@@ -52698,7 +52698,7 @@
   },
   {
     "name": "Trimethylolpropan",
-    "name_en": "",
+    "name_en": "Trimethylolpropane",
     "formula": "C6H14O3",
     "cas": "000077-99-6",
     "concentration": "wässrig",
@@ -52812,7 +52812,7 @@
   },
   {
     "name": "Trioctylphosphat",
-    "name_en": "",
+    "name_en": "Trioctyl Phosphate",
     "formula": "C24H54PO4",
     "cas": "000078-42-2",
     "concentration": "techn. rein",
@@ -52869,7 +52869,7 @@
   },
   {
     "name": "Tripropylenglycol (TPG)",
-    "name_en": "",
+    "name_en": "Tripropylene Glycol",
     "formula": "C9H20O4",
     "cas": "024800-44-0",
     "concentration": "",
@@ -52983,7 +52983,7 @@
   },
   {
     "name": "Undecylalkohol",
-    "name_en": "",
+    "name_en": "Undecyl Alcohol",
     "formula": "C11H24O",
     "cas": "000112-42-5",
     "concentration": "",
@@ -53040,7 +53040,7 @@
   },
   {
     "name": "Urin",
-    "name_en": "",
+    "name_en": "Urine",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -53154,7 +53154,7 @@
   },
   {
     "name": "Vaselinöl",
-    "name_en": "",
+    "name_en": "Petroleum Oil",
     "formula": "",
     "cas": "008012-95-1",
     "concentration": "100 %",
@@ -53211,7 +53211,7 @@
   },
   {
     "name": "Vaselinöl",
-    "name_en": "",
+    "name_en": "Petroleum Oil",
     "formula": "",
     "cas": "008012-95-1",
     "concentration": "",
@@ -53382,7 +53382,7 @@
   },
   {
     "name": "Vitamin C",
-    "name_en": "",
+    "name_en": "Vitamin C",
     "formula": "C6H8O6",
     "cas": "000050-81-7",
     "concentration": "flüssig",
@@ -53439,7 +53439,7 @@
   },
   {
     "name": "Wachsalkohol",
-    "name_en": "",
+    "name_en": "Wax Alcohol",
     "formula": "",
     "cas": "",
     "concentration": "techn. rein",
@@ -53496,7 +53496,7 @@
   },
   {
     "name": "Wachse",
-    "name_en": "",
+    "name_en": "Waxes",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -53553,7 +53553,7 @@
   },
   {
     "name": "Walnussöl",
-    "name_en": "",
+    "name_en": "Walnut Oil",
     "formula": "",
     "cas": "008024-09-7",
     "concentration": "",
@@ -53610,7 +53610,7 @@
   },
   {
     "name": "Walrat",
-    "name_en": "",
+    "name_en": "Spermaceti",
     "formula": "",
     "cas": "008002-23-1",
     "concentration": "",
@@ -54180,7 +54180,7 @@
   },
   {
     "name": "Weichmacher",
-    "name_en": "",
+    "name_en": "Plasticizers",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -54522,7 +54522,7 @@
   },
   {
     "name": "Whiskey",
-    "name_en": "",
+    "name_en": "Whiskey",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -54579,7 +54579,7 @@
   },
   {
     "name": "White Spirit",
-    "name_en": "",
+    "name_en": "White Spirit",
     "formula": "",
     "cas": "008042-47-5",
     "concentration": "",
@@ -54750,7 +54750,7 @@
   },
   {
     "name": "Zedernöl",
-    "name_en": "",
+    "name_en": "Cedar Oil",
     "formula": "",
     "cas": "008000-27-9",
     "concentration": "",
@@ -54807,7 +54807,7 @@
   },
   {
     "name": "Zimt",
-    "name_en": "",
+    "name_en": "Cinnamon",
     "formula": "",
     "cas": "",
     "concentration": "gemahlen",
@@ -54864,7 +54864,7 @@
   },
   {
     "name": "Zimtaldehyd",
-    "name_en": "",
+    "name_en": "Cinnamaldehyde",
     "formula": "C9H8O",
     "cas": "000104-55-2",
     "concentration": "",
@@ -54921,7 +54921,7 @@
   },
   {
     "name": "Zimtöl",
-    "name_en": "",
+    "name_en": "Cinnamon Oil",
     "formula": "",
     "cas": "008007-80-5",
     "concentration": "",
@@ -55434,7 +55434,7 @@
   },
   {
     "name": "Zinksalbe",
-    "name_en": "",
+    "name_en": "Zinc Ointment",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -55491,7 +55491,7 @@
   },
   {
     "name": "Zinkschlamm",
-    "name_en": "",
+    "name_en": "Zinc Sludge",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -55548,7 +55548,7 @@
   },
   {
     "name": "Zinkstearat",
-    "name_en": "",
+    "name_en": "Zinc Stearate",
     "formula": "C36H70ZnO4",
     "cas": "000557-05-1",
     "concentration": "",
@@ -55833,7 +55833,7 @@
   },
   {
     "name": "Zitronensaft",
-    "name_en": "",
+    "name_en": "Lemon Juice",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -56061,7 +56061,7 @@
   },
   {
     "name": "Zitronenschalenöl",
-    "name_en": "",
+    "name_en": "Lemon Peel Oil",
     "formula": "",
     "cas": "084929-31-7",
     "concentration": "",
@@ -56118,7 +56118,7 @@
   },
   {
     "name": "Zitrussäfte",
-    "name_en": "",
+    "name_en": "Citrus Juices",
     "formula": "",
     "cas": "",
     "concentration": "wässrig",
@@ -56175,7 +56175,7 @@
   },
   {
     "name": "Zuckerrübensaft",
-    "name_en": "",
+    "name_en": "Sugar Beet Juice",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -56232,7 +56232,7 @@
   },
   {
     "name": "Zuckersäure",
-    "name_en": "",
+    "name_en": "Saccharic Acid",
     "formula": "",
     "cas": "",
     "concentration": "gesättigt",
@@ -56289,7 +56289,7 @@
   },
   {
     "name": "Zuckersirup",
-    "name_en": "",
+    "name_en": "Sugar Syrup",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -56346,7 +56346,7 @@
   },
   {
     "name": "Zweitaktöl",
-    "name_en": "",
+    "name_en": "Two-Stroke Oil",
     "formula": "",
     "cas": "",
     "concentration": "100 %",
