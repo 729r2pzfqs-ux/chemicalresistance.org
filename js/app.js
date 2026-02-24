@@ -347,6 +347,10 @@ function showSearchResults(query) {
                 seenDisplayNames.add(displayKey);
                 const key = getChemicalKey(c);
                 matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key };
+            } else if (c.hazard && !matchInfo[displayKey].chem.hazard) {
+                // Prefer entry WITH hazard data
+                const key = getChemicalKey(c);
+                matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key };
             }
         }
     });
