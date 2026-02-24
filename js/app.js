@@ -210,17 +210,46 @@ function translateConc(conc) {
     return conc;
 }
 
+// Helper functions for material filters
+function getSelectedMaterials() {
+    const checkboxes = document.querySelectorAll('#materialFilters input[type="checkbox"]:checked, #moreMaterials input[type="checkbox"]:checked');
+    return Array.from(checkboxes).map(cb => cb.value);
+}
+
+window.clearMaterialFilters = function() {
+    document.querySelectorAll('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]').forEach(cb => cb.checked = false);
+    const searchResults = document.getElementById('searchResults');
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput.value.length < 2) {
+        searchResults.classList.add('hidden');
+    } else {
+        showSearchResults(searchInput.value.toLowerCase().trim());
+    }
+};
+
+window.toggleMoreMaterials = function() {
+    const more = document.getElementById('moreMaterials');
+    const btn = document.getElementById('moreMatBtn');
+    if (more.classList.contains('hidden')) {
+        more.classList.remove('hidden');
+        btn.textContent = '−Less';
+    } else {
+        more.classList.add('hidden');
+        btn.textContent = '+More';
+    }
+};
+
 function setupEventListeners() {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     const langSelect = document.getElementById('langSelect');
-    const materialFilter = document.getElementById('materialFilter');
     const ratingFilter = document.getElementById('ratingFilter');
 
     // Search input
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        if (query.length < 2 && !materialFilter?.value) {
+        const selectedMaterials = getSelectedMaterials();
+        if (query.length < 2 && selectedMaterials.length === 0) {
             searchResults.classList.add('hidden');
             return;
         }
@@ -228,27 +257,27 @@ function setupEventListeners() {
         searchResults.classList.remove('hidden');
     });
 
-    // Material filter change - show results immediately
-    materialFilter?.addEventListener('change', () => {
-        const query = searchInput.value.toLowerCase().trim();
-        if (materialFilter.value) {
-            showSearchResults(query);
-            searchResults.classList.remove('hidden');
-        } else if (query.length >= 2) {
-            showSearchResults(query);
-        } else {
-            searchResults.classList.add('hidden');
-        }
+    // Material checkbox changes
+    document.querySelectorAll('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', () => {
+            const query = searchInput.value.toLowerCase().trim();
+            const selectedMaterials = getSelectedMaterials();
+            if (selectedMaterials.length > 0 || query.length >= 2) {
+                showSearchResults(query);
+                searchResults.classList.remove('hidden');
+            } else {
+                searchResults.classList.add('hidden');
+            }
+        });
     });
 
     // Rating filter change  
     ratingFilter?.addEventListener('change', () => {
         const query = searchInput.value.toLowerCase().trim();
-        if (materialFilter?.value) {
+        const selectedMaterials = getSelectedMaterials();
+        if (selectedMaterials.length > 0 || query.length >= 2) {
             showSearchResults(query);
             searchResults.classList.remove('hidden');
-        } else if (query.length >= 2) {
-            showSearchResults(query);
         }
     });
 
@@ -282,10 +311,9 @@ function setupEventListeners() {
 
 function showSearchResults(query) {
     const searchResults = document.getElementById('searchResults');
-    const materialFilter = document.getElementById('materialFilter');
     const ratingFilter = document.getElementById('ratingFilter');
-    const selectedMaterial = materialFilter?.value || '';
-    const selectedRating = ratingFilter?.value || '';
+    const selectedMaterials = getSelectedMaterials();
+    const selectedRating = ratingFilter?.value || '12';
     
     const matchingKeys = new Set();
     const matchInfo = {};
@@ -317,16 +345,21 @@ function showSearchResults(query) {
             (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(query));
         
-        // Material filter match
+        // Material filter match - ALL selected materials must have good rating
         let materialMatches = true;
-        if (selectedMaterial && c.ratings) {
-            const rating = c.ratings[selectedMaterial]?.c20;
-            if (!rating || rating === '0') {
-                materialMatches = false;
-            } else if (selectedRating === '1' && rating !== '1') {
-                materialMatches = false;
-            } else if (selectedRating === '12' && !['1', '2'].includes(rating)) {
-                materialMatches = false;
+        if (selectedMaterials.length > 0 && c.ratings) {
+            for (const mat of selectedMaterials) {
+                const rating = c.ratings[mat]?.c20;
+                if (!rating || rating === '0') {
+                    materialMatches = false;
+                    break;
+                } else if (selectedRating === '1' && rating !== '1') {
+                    materialMatches = false;
+                    break;
+                } else if (selectedRating === '12' && !['1', '2'].includes(rating)) {
+                    materialMatches = false;
+                    break;
+                }
             }
         }
         
@@ -347,24 +380,31 @@ function showSearchResults(query) {
             const c = info.chem;
             const displayName = getDisplayName(c);
             
-            // Show material rating if filtered
-            let ratingBadge = '';
-            if (selectedMaterial && c.ratings && c.ratings[selectedMaterial]) {
-                const grade = ratingToGrade(c.ratings[selectedMaterial].c20);
-                ratingBadge = `<span class="rating-${grade} px-1.5 py-0.5 rounded text-xs font-bold ml-2">${grade}</span>`;
+            // Show rating badges for all selected materials
+            let ratingBadges = '';
+            if (selectedMaterials.length > 0 && c.ratings) {
+                ratingBadges = selectedMaterials.map(mat => {
+                    if (c.ratings[mat]) {
+                        const grade = ratingToGrade(c.ratings[mat].c20);
+                        const matName = materialInfo[mat]?.name || mat;
+                        return `<span class="rating-${grade} px-1.5 py-0.5 rounded text-xs font-bold" title="${matName}">${matName.split(' ')[0]}:${grade}</span>`;
+                    }
+                    return '';
+                }).filter(Boolean).join(' ');
             }
             
             return `
-                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0 flex items-center justify-between" data-key="${key}">
-                    <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}</div>
-                    ${ratingBadge}
+                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0 flex items-center justify-between gap-2" data-key="${key}">
+                    <div class="font-medium text-gray-900 truncate">${highlightMatch(displayName, query)}</div>
+                    <div class="flex gap-1 flex-shrink-0">${ratingBadges}</div>
                 </div>
             `;
         }).join('');
         searchResults.classList.remove('hidden');
     } else {
-        const msg = selectedMaterial 
-            ? `No chemicals found with ${selectedRating === '1' ? 'A rating' : selectedRating === '12' ? 'A/B rating' : 'data'} for ${materialInfo[selectedMaterial]?.name || selectedMaterial}`
+        const matNames = selectedMaterials.map(m => materialInfo[m]?.name || m).join(' + ');
+        const msg = selectedMaterials.length > 0 
+            ? `No chemicals with ${selectedRating === '1' ? 'A' : 'A/B'} rating for: ${matNames}`
             : 'No chemicals found';
         searchResults.innerHTML = `<div class="px-4 py-3 text-gray-500">${msg}</div>`;
         searchResults.classList.remove('hidden');
