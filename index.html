@@ -344,11 +344,6 @@
                 return `
                     <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${key}">
                         <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}</div>
-                        <div class="text-sm text-gray-500 flex gap-2 flex-wrap">
-                            ${subtitle ? `<span>${subtitle}</span>` : ''}
-                            ${c.cas ? `<span class="text-blue-600">CAS: ${c.cas}</span>` : ''}
-                            ${count > 1 ? `<span class="text-emerald-600">${count} concentrations</span>` : ''}
-                        </div>
                     </div>
                 `;
             }).join('');
