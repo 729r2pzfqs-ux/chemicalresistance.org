@@ -214,15 +214,33 @@ function setupEventListeners() {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     const langSelect = document.getElementById('langSelect');
+    const materialFilter = document.getElementById('materialFilter');
+    const ratingFilter = document.getElementById('ratingFilter');
 
     // Search input
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        if (query.length < 2) {
+        if (query.length < 2 && !materialFilter?.value) {
             searchResults.classList.add('hidden');
             return;
         }
         showSearchResults(query);
+    });
+
+    // Material filter change
+    materialFilter?.addEventListener('change', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        if (materialFilter.value || query.length >= 2) {
+            showSearchResults(query);
+        }
+    });
+
+    // Rating filter change  
+    ratingFilter?.addEventListener('change', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        if (materialFilter?.value || query.length >= 2) {
+            showSearchResults(query);
+        }
     });
 
     // Click on search result
@@ -255,6 +273,11 @@ function setupEventListeners() {
 
 function showSearchResults(query) {
     const searchResults = document.getElementById('searchResults');
+    const materialFilter = document.getElementById('materialFilter');
+    const ratingFilter = document.getElementById('ratingFilter');
+    const selectedMaterial = materialFilter?.value || '';
+    const selectedRating = ratingFilter?.value || '';
+    
     const matchingKeys = new Set();
     const matchInfo = {};
 
@@ -276,14 +299,29 @@ function showSearchResults(query) {
 
     chemicals.forEach((c, idx) => {
         const displayName = getDisplayName(c).toLowerCase();
-        const matches = 
+        
+        // Text search match (or no query if filtering by material)
+        const textMatches = !query || 
             c.name.toLowerCase().includes(query) ||
             c.name.toLowerCase().includes(germanQuery) ||
             displayName.includes(query) ||
             (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(query));
         
-        if (matches) {
+        // Material filter match
+        let materialMatches = true;
+        if (selectedMaterial && c.ratings) {
+            const rating = c.ratings[selectedMaterial]?.c20;
+            if (!rating || rating === '0') {
+                materialMatches = false;
+            } else if (selectedRating === '1' && rating !== '1') {
+                materialMatches = false;
+            } else if (selectedRating === '12' && !['1', '2'].includes(rating)) {
+                materialMatches = false;
+            }
+        }
+        
+        if (textMatches && materialMatches) {
             const key = getChemicalKey(c);
             matchingKeys.add(key);
             if (!matchInfo[key]) {
@@ -292,22 +330,34 @@ function showSearchResults(query) {
         }
     });
 
-    const uniqueMatches = Array.from(matchingKeys).slice(0, 15);
+    const uniqueMatches = Array.from(matchingKeys).slice(0, 20);
 
     if (uniqueMatches.length > 0) {
         searchResults.innerHTML = uniqueMatches.map(key => {
             const info = matchInfo[key];
             const c = info.chem;
             const displayName = getDisplayName(c);
+            
+            // Show material rating if filtered
+            let ratingBadge = '';
+            if (selectedMaterial && c.ratings && c.ratings[selectedMaterial]) {
+                const grade = ratingToGrade(c.ratings[selectedMaterial].c20);
+                ratingBadge = `<span class="rating-${grade} px-1.5 py-0.5 rounded text-xs font-bold ml-2">${grade}</span>`;
+            }
+            
             return `
-                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${key}">
+                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0 flex items-center justify-between" data-key="${key}">
                     <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}</div>
+                    ${ratingBadge}
                 </div>
             `;
         }).join('');
         searchResults.classList.remove('hidden');
     } else {
-        searchResults.innerHTML = '<div class="px-4 py-3 text-gray-500">No chemicals found</div>';
+        const msg = selectedMaterial 
+            ? `No chemicals found with ${selectedRating === '1' ? 'A rating' : selectedRating === '12' ? 'A/B rating' : 'data'} for ${materialInfo[selectedMaterial]?.name || selectedMaterial}`
+            : 'No chemicals found';
+        searchResults.innerHTML = `<div class="px-4 py-3 text-gray-500">${msg}</div>`;
         searchResults.classList.remove('hidden');
     }
 }
