@@ -75,17 +75,17 @@ const materialInfo = {
 // Rating display order (best to worst)
 const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
-// GHS pictogram URLs (Wikipedia Commons PNG thumbs - more reliable)
-const ghsPictograms = {
-    'GHS01': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/GHS-pictogram-explos.svg/100px-GHS-pictogram-explos.svg.png',
-    'GHS02': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/GHS-pictogram-flamme.svg/100px-GHS-pictogram-flamme.svg.png',
-    'GHS03': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/GHS-pictogram-rondflam.svg/100px-GHS-pictogram-rondflam.svg.png',
-    'GHS04': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/GHS-pictogram-bottle.svg/100px-GHS-pictogram-bottle.svg.png',
-    'GHS05': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GHS-pictogram-acid.svg/100px-GHS-pictogram-acid.svg.png',
-    'GHS06': 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/GHS-pictogram-skull.svg/100px-GHS-pictogram-skull.svg.png',
-    'GHS07': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/GHS-pictogram-exclam.svg/100px-GHS-pictogram-exclam.svg.png',
-    'GHS08': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/GHS-pictogram-silhouette.svg/100px-GHS-pictogram-silhouette.svg.png',
-    'GHS09': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/GHS-pictogram-pollu.svg/100px-GHS-pictogram-pollu.svg.png',
+// GHS pictogram emojis (fallback - always works)
+const ghsEmoji = {
+    'GHS01': '💥', // Explosiv
+    'GHS02': '🔥', // Brennbar
+    'GHS03': '⭕', // Oxidierend
+    'GHS04': '🔵', // Gasflasche
+    'GHS05': '🧪', // Ätzend
+    'GHS06': '☠️', // Giftig
+    'GHS07': '⚠️', // Gesundheitsschädlich
+    'GHS08': '🫁', // Gesundheitsgefahr
+    'GHS09': '🌿', // Umweltgefährlich
 };
 
 // Map old EU hazard codes to GHS pictograms (German labels)
@@ -111,11 +111,11 @@ function getHazardBadges(hazardStr) {
         const info = euToGhs[code];
         if (info && !seenGhs.has(info.ghs)) {
             seenGhs.add(info.ghs);
-            const picUrl = ghsPictograms[info.ghs];
-            return `<img src="${picUrl}" alt="${info.label}" title="${info.label} (${code})" class="w-6 h-6 inline-block">`;
+            const emoji = ghsEmoji[info.ghs];
+            return `<span title="${info.label} (${code})" class="text-base">${emoji}</span>`;
         }
         return '';
-    }).filter(Boolean).join('');
+    }).filter(Boolean).join(' ');
 }
 
 // Convert numeric ratings to letter grades for display
