@@ -253,22 +253,17 @@
         "NBR": { name: "NBR", full: "Nitrile Rubber", type: "Elastomer" },
     };
 
-    // Language handling
+    // Language handling - simple file-based (no localStorage confusion)
     const langSelect = document.getElementById('langSelect');
-    let currentLang = 'de'; // German page defaults to German
-    langSelect.value = currentLang;
+    let currentLang = 'de'; // This is de.html = German
+    langSelect.value = 'de';
     
     langSelect.addEventListener('change', () => {
-        // Redirect to correct language page
+        // Redirect to English page
         if (langSelect.value === 'en') {
             window.location.href = 'index.html';
-        } else {
-            window.location.href = 'de.html';
         }
-        // Refresh display if results are showing
-        if (currentGroupIndices.length > 0) {
-            showResultsForGroup(currentGroupIndices);
-        }
+        // No need to redirect to de.html - we're already here
     });
     
     // Get display name based on selected language
