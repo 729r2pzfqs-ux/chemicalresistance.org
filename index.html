@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Resistance Guide | Material Compatibility Checker</title>
+    <meta name="description" content="Free chemical resistance chart. Check material compatibility for PE, PP, HDPE, stainless steel and more against hundreds of chemicals.">
+    <link rel="canonical" href="https://chemicalresistance.org/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chemical Resistance Guide | Material Compatibility Checker">
+    <meta property="og:description" content="Free chemical resistance chart. Check material compatibility for plastics and metals against hundreds of chemicals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemicalresistance.org/">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #0d1117; min-height: 100vh; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 16px; }
+        .input-field { background: #0d1117; border: 2px solid #30363d; color: #c9d1d9; }
+        .input-field:focus { border-color: #58a6ff; outline: none; box-shadow: 0 0 0 3px rgba(56, 139, 253, 0.3); }
+        .btn-primary { background: #238636; }
+        .btn-primary:hover { background: #2ea043; }
+        .rating-A { background: #238636; color: white; }
+        .rating-B { background: #1f6feb; color: white; }
+        .rating-C { background: #d29922; color: white; }
+        .rating-D { background: #da3633; color: white; }
+        .rating-NR { background: #6e7681; color: white; }
+    </style>
+</head>
+<body class="text-gray-200">
+    <!-- Header -->
+    <header class="border-b border-gray-800 py-4 px-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+                    <i data-lucide="flask-conical" class="w-6 h-6 text-white"></i>
+                </div>
+                <span class="text-xl font-bold text-white">ChemicalResistance.org</span>
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm">
+                <a href="#lookup" class="text-gray-400 hover:text-white">Chemical Lookup</a>
+                <a href="#materials" class="text-gray-400 hover:text-white">Materials Guide</a>
+                <a href="#about" class="text-gray-400 hover:text-white">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="px-4 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Chemical Resistance Guide
+            </h1>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                Find the right material for your chemical storage needs. Check compatibility for plastics, metals, and elastomers against hundreds of chemicals.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <span class="px-3 py-1 bg-gray-800 rounded-full text-gray-300">✓ 400+ Chemicals</span>
+                <span class="px-3 py-1 bg-gray-800 rounded-full text-gray-300">✓ 40+ Materials</span>
+                <span class="px-3 py-1 bg-gray-800 rounded-full text-gray-300">✓ 100% Free</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="lookup" class="px-4 pb-16">
+        <div class="max-w-4xl mx-auto">
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <i data-lucide="search" class="w-6 h-6 text-emerald-500"></i>
+                    Chemical Lookup
+                </h2>
+                
+                <div class="relative mb-6">
+                    <input 
+                        type="text" 
+                        id="chemicalSearch" 
+                        placeholder="Search for a chemical (e.g., Sulfuric Acid, Acetone, Sodium Hydroxide...)"
+                        class="input-field w-full px-4 py-4 rounded-xl text-lg"
+                        autocomplete="off"
+                    >
+                    <div id="searchResults" class="absolute top-full left-0 right-0 mt-2 bg-[#161b22] border border-gray-700 rounded-xl overflow-hidden hidden z-10">
+                    </div>
+                </div>
+
+                <!-- Results Table -->
+                <div id="resultsContainer" class="hidden">
+                    <h3 id="chemicalName" class="text-xl font-bold text-white mb-4"></h3>
+                    <p id="chemicalFormula" class="text-gray-400 mb-4"></p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="border-b border-gray-700">
+                                    <th class="py-3 px-4 text-gray-400 font-medium">Material</th>
+                                    <th class="py-3 px-4 text-gray-400 font-medium">20°C</th>
+                                    <th class="py-3 px-4 text-gray-400 font-medium">50°C</th>
+                                    <th class="py-3 px-4 text-gray-400 font-medium">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultsBody">
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-gray-800/50 rounded-xl">
+                        <h4 class="font-semibold text-white mb-2">Rating Legend</h4>
+                        <div class="flex flex-wrap gap-3 text-sm">
+                            <span class="flex items-center gap-2"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> Excellent</span>
+                            <span class="flex items-center gap-2"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> Good</span>
+                            <span class="flex items-center gap-2"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> Fair</span>
+                            <span class="flex items-center gap-2"><span class="rating-D px-2 py-0.5 rounded text-xs font-bold">D</span> Not Recommended</span>
+                            <span class="flex items-center gap-2"><span class="rating-NR px-2 py-0.5 rounded text-xs font-bold">NR</span> No Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="text-center py-12">
+                    <i data-lucide="beaker" class="w-16 h-16 text-gray-600 mx-auto mb-4"></i>
+                    <p class="text-gray-500">Search for a chemical to see material compatibility ratings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="px-4 py-16 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold text-white text-center mb-12">Why Use Our Guide?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card p-6">
+                    <div class="w-12 h-12 bg-emerald-900/50 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Safety First</h3>
+                    <p class="text-gray-400 text-sm">Proper material selection prevents leaks, spills, and chemical reactions that can harm people and the environment.</p>
+                </div>
+                <div class="card p-6">
+                    <div class="w-12 h-12 bg-blue-900/50 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="database" class="w-6 h-6 text-blue-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Comprehensive Data</h3>
+                    <p class="text-gray-400 text-sm">Our database covers plastics (PE, PP, PTFE), metals (stainless steel, carbon steel), and elastomers (Viton, EPDM).</p>
+                </div>
+                <div class="card p-6">
+                    <div class="w-12 h-12 bg-purple-900/50 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="zap" class="w-6 h-6 text-purple-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Instant Results</h3>
+                    <p class="text-gray-400 text-sm">No more searching through PDFs or outdated charts. Get instant compatibility ratings for your chemical.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="materials" class="px-4 py-16 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold text-white text-center mb-4">Common Applications</h2>
+            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Choose the right material for your specific application</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="card p-5 hover:border-gray-600 transition-colors">
+                    <i data-lucide="container" class="w-8 h-8 text-amber-400 mb-3"></i>
+                    <h3 class="font-semibold text-white mb-1">Secondary Containment</h3>
+                    <p class="text-gray-500 text-sm">Sumps, spill pallets, bunds</p>
+                </div>
+                <div class="card p-5 hover:border-gray-600 transition-colors">
+                    <i data-lucide="archive" class="w-8 h-8 text-red-400 mb-3"></i>
+                    <h3 class="font-semibold text-white mb-1">Hazmat Cabinets</h3>
+                    <p class="text-gray-500 text-sm">Flammable, corrosive storage</p>
+                </div>
+                <div class="card p-5 hover:border-gray-600 transition-colors">
+                    <i data-lucide="pipette" class="w-8 h-8 text-blue-400 mb-3"></i>
+                    <h3 class="font-semibold text-white mb-1">Drum Pumps</h3>
+                    <p class="text-gray-500 text-sm">Body & seal materials</p>
+                </div>
+                <div class="card p-5 hover:border-gray-600 transition-colors">
+                    <i data-lucide="package" class="w-8 h-8 text-green-400 mb-3"></i>
+                    <h3 class="font-semibold text-white mb-1">IBCs & Containers</h3>
+                    <p class="text-gray-500 text-sm">Bulk storage solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="px-4 py-16 border-t border-gray-800">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">About This Tool</h2>
+            <p class="text-gray-400 mb-6">
+                ChemicalResistance.org provides free, easy-to-use chemical compatibility data for engineers, safety professionals, and anyone working with hazardous materials. Our data is compiled from manufacturer specifications and industry standards.
+            </p>
+            <p class="text-gray-500 text-sm">
+                <strong class="text-gray-400">Disclaimer:</strong> This information is provided as a general guide only. Always verify compatibility with the specific manufacturer of your equipment and conduct proper testing for critical applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+            <p>© 2026 ChemicalResistance.org — Free Chemical Compatibility Guide</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chemical data (sample - will be expanded)
+        const chemicals = [
+            {
+                name: "Sulfuric Acid (10-75%)",
+                formula: "H₂SO₄",
+                cas: "7664-93-9",
+                ratings: {
+                    "HDPE": { c20: "A", c50: "B", notes: "Excellent for dilute concentrations" },
+                    "PP": { c20: "A", c50: "B", notes: "Good general resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent at all concentrations" },
+                    "PVC": { c20: "B", c50: "C", notes: "Limited to dilute solutions" },
+                    "316 Stainless": { c20: "B", c50: "C", notes: "Risk of pitting at higher temps" },
+                    "Carbon Steel": { c20: "D", c50: "D", notes: "Not recommended" },
+                    "Viton": { c20: "A", c50: "A", notes: "Excellent seal material" },
+                    "EPDM": { c20: "D", c50: "D", notes: "Not compatible" }
+                }
+            },
+            {
+                name: "Sodium Hydroxide (10-50%)",
+                formula: "NaOH",
+                cas: "1310-73-2",
+                ratings: {
+                    "HDPE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PP": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent at all concentrations" },
+                    "PVC": { c20: "A", c50: "B", notes: "Good for dilute solutions" },
+                    "316 Stainless": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "Carbon Steel": { c20: "B", c50: "C", notes: "May corrode at high temps" },
+                    "Viton": { c20: "C", c50: "D", notes: "Limited resistance" },
+                    "EPDM": { c20: "A", c50: "A", notes: "Excellent seal material" }
+                }
+            },
+            {
+                name: "Acetone",
+                formula: "C₃H₆O",
+                cas: "67-64-1",
+                ratings: {
+                    "HDPE": { c20: "B", c50: "C", notes: "May cause swelling" },
+                    "PP": { c20: "A", c50: "B", notes: "Good resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PVC": { c20: "D", c50: "D", notes: "Dissolves PVC" },
+                    "316 Stainless": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "Carbon Steel": { c20: "A", c50: "A", notes: "Good resistance" },
+                    "Viton": { c20: "D", c50: "D", notes: "Not compatible" },
+                    "EPDM": { c20: "D", c50: "D", notes: "Not compatible" }
+                }
+            },
+            {
+                name: "Hydrochloric Acid (10-37%)",
+                formula: "HCl",
+                cas: "7647-01-0",
+                ratings: {
+                    "HDPE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PP": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent at all concentrations" },
+                    "PVC": { c20: "A", c50: "B", notes: "Good for most concentrations" },
+                    "316 Stainless": { c20: "C", c50: "D", notes: "Not recommended" },
+                    "Carbon Steel": { c20: "D", c50: "D", notes: "Highly corrosive" },
+                    "Viton": { c20: "A", c50: "A", notes: "Excellent seal material" },
+                    "EPDM": { c20: "C", c50: "D", notes: "Limited resistance" }
+                }
+            },
+            {
+                name: "Nitric Acid (10-70%)",
+                formula: "HNO₃",
+                cas: "7697-37-2",
+                ratings: {
+                    "HDPE": { c20: "A", c50: "B", notes: "Good for dilute solutions" },
+                    "PP": { c20: "B", c50: "C", notes: "Limited resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent at all concentrations" },
+                    "PVC": { c20: "B", c50: "D", notes: "Dilute only" },
+                    "316 Stainless": { c20: "A", c50: "A", notes: "Forms protective layer" },
+                    "Carbon Steel": { c20: "D", c50: "D", notes: "Highly corrosive" },
+                    "Viton": { c20: "A", c50: "B", notes: "Good seal material" },
+                    "EPDM": { c20: "D", c50: "D", notes: "Not compatible" }
+                }
+            },
+            {
+                name: "Ethanol (Ethyl Alcohol)",
+                formula: "C₂H₅OH",
+                cas: "64-17-5",
+                ratings: {
+                    "HDPE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PP": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PVC": { c20: "A", c50: "A", notes: "Good resistance" },
+                    "316 Stainless": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "Carbon Steel": { c20: "A", c50: "A", notes: "Good resistance" },
+                    "Viton": { c20: "B", c50: "C", notes: "May swell" },
+                    "EPDM": { c20: "B", c50: "C", notes: "May swell" }
+                }
+            },
+            {
+                name: "Bleach (Sodium Hypochlorite)",
+                formula: "NaOCl",
+                cas: "7681-52-9",
+                ratings: {
+                    "HDPE": { c20: "A", c50: "B", notes: "Good resistance" },
+                    "PP": { c20: "A", c50: "B", notes: "Good resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PVC": { c20: "A", c50: "A", notes: "Commonly used material" },
+                    "316 Stainless": { c20: "B", c50: "C", notes: "May pit at high concentrations" },
+                    "Carbon Steel": { c20: "D", c50: "D", notes: "Highly corrosive" },
+                    "Viton": { c20: "B", c50: "C", notes: "Limited resistance" },
+                    "EPDM": { c20: "A", c50: "B", notes: "Good seal material" }
+                }
+            },
+            {
+                name: "Diesel Fuel",
+                formula: "Hydrocarbon mix",
+                cas: "68476-34-6",
+                ratings: {
+                    "HDPE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PP": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PTFE": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "PVC": { c20: "C", c50: "D", notes: "Not recommended" },
+                    "316 Stainless": { c20: "A", c50: "A", notes: "Excellent resistance" },
+                    "Carbon Steel": { c20: "A", c50: "A", notes: "Standard material" },
+                    "Viton": { c20: "A", c50: "A", notes: "Excellent seal material" },
+                    "EPDM": { c20: "D", c50: "D", notes: "Not compatible with hydrocarbons" }
+                }
+            }
+        ];
+
+        const searchInput = document.getElementById('chemicalSearch');
+        const searchResults = document.getElementById('searchResults');
+        const resultsContainer = document.getElementById('resultsContainer');
+        const emptyState = document.getElementById('emptyState');
+        const chemicalNameEl = document.getElementById('chemicalName');
+        const chemicalFormulaEl = document.getElementById('chemicalFormula');
+        const resultsBody = document.getElementById('resultsBody');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            if (query.length < 2) {
+                searchResults.classList.add('hidden');
+                return;
+            }
+
+            const matches = chemicals.filter(c => 
+                c.name.toLowerCase().includes(query) || 
+                c.formula.toLowerCase().includes(query) ||
+                c.cas.includes(query)
+            );
+
+            if (matches.length > 0) {
+                searchResults.innerHTML = matches.map(c => `
+                    <div class="px-4 py-3 hover:bg-gray-700 cursor-pointer border-b border-gray-700 last:border-0" data-name="${c.name}">
+                        <div class="font-medium text-white">${c.name}</div>
+                        <div class="text-sm text-gray-500">${c.formula} • CAS: ${c.cas}</div>
+                    </div>
+                `).join('');
+                searchResults.classList.remove('hidden');
+            } else {
+                searchResults.innerHTML = '<div class="px-4 py-3 text-gray-500">No chemicals found</div>';
+                searchResults.classList.remove('hidden');
+            }
+        });
+
+        searchResults.addEventListener('click', (e) => {
+            const item = e.target.closest('[data-name]');
+            if (item) {
+                const name = item.dataset.name;
+                const chemical = chemicals.find(c => c.name === name);
+                if (chemical) {
+                    showResults(chemical);
+                    searchInput.value = chemical.name;
+                    searchResults.classList.add('hidden');
+                }
+            }
+        });
+
+        function showResults(chemical) {
+            chemicalNameEl.textContent = chemical.name;
+            chemicalFormulaEl.innerHTML = `Formula: ${chemical.formula} • CAS: ${chemical.cas}`;
+            
+            resultsBody.innerHTML = Object.entries(chemical.ratings).map(([material, data]) => `
+                <tr class="border-b border-gray-800 hover:bg-gray-800/50">
+                    <td class="py-3 px-4 font-medium text-white">${material}</td>
+                    <td class="py-3 px-4"><span class="rating-${data.c20} px-2 py-1 rounded text-xs font-bold">${data.c20}</span></td>
+                    <td class="py-3 px-4"><span class="rating-${data.c50} px-2 py-1 rounded text-xs font-bold">${data.c50}</span></td>
+                    <td class="py-3 px-4 text-gray-400 text-sm">${data.notes}</td>
+                </tr>
+            `).join('');
+
+            emptyState.classList.add('hidden');
+            resultsContainer.classList.remove('hidden');
+        }
+
+        // Close search results when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.add('hidden');
+            }
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
