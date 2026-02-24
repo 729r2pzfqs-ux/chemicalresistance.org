@@ -78,47 +78,46 @@
                 </div>
             </div>
             
-            <div class="mt-6 max-w-4xl mx-auto">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="text-sm text-gray-500">Filter by material compatibility:</span>
-                    <div class="flex items-center gap-2">
-                        <select id="ratingFilter" class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-xs cursor-pointer focus:border-emerald-500 outline-none">
-                            <option value="12">A or B rating</option>
-                            <option value="1">A only</option>
-                        </select>
-                        <button onclick="clearMaterialFilters()" class="text-xs text-gray-500 hover:text-emerald-600">Clear all</button>
-                    </div>
+            <!-- Material Filter - directly under search -->
+            <div class="mt-3 max-w-2xl mx-auto">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                    <span class="text-xs text-gray-400">Filter table by:</span>
+                    <select id="ratingFilter" class="bg-gray-100 border-0 rounded px-2 py-0.5 text-xs cursor-pointer focus:ring-1 focus:ring-emerald-500 outline-none">
+                        <option value="12">A/B rated</option>
+                        <option value="1">A only</option>
+                    </select>
+                    <button onclick="clearMaterialFilters()" class="text-xs text-gray-400 hover:text-emerald-600">Clear</button>
                 </div>
-                <div id="materialFilters" class="flex flex-wrap gap-2 justify-center">
-                    <label class="material-chip"><input type="checkbox" value="HDPE" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">HDPE</span></label>
-                    <label class="material-chip"><input type="checkbox" value="PP" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">PP</span></label>
-                    <label class="material-chip"><input type="checkbox" value="PTFE" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">PTFE</span></label>
-                    <label class="material-chip"><input type="checkbox" value="PVDF" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">PVDF</span></label>
-                    <label class="material-chip"><input type="checkbox" value="V4A" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">SS 316</span></label>
-                    <label class="material-chip"><input type="checkbox" value="FPM" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">Viton</span></label>
-                    <label class="material-chip"><input type="checkbox" value="EPDM" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">EPDM</span></label>
-                    <label class="material-chip"><input type="checkbox" value="NBR" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">NBR</span></label>
-                    <button onclick="toggleMoreMaterials()" id="moreMatBtn" class="px-3 py-1.5 rounded-full border border-dashed border-gray-300 text-sm text-gray-500 hover:border-emerald-400 hover:text-emerald-600">+More</button>
+                <div id="materialFilters" class="flex flex-wrap gap-1.5 justify-center">
+                    <label><input type="checkbox" value="HDPE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">HDPE</span></label>
+                    <label><input type="checkbox" value="PP" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PP</span></label>
+                    <label><input type="checkbox" value="PTFE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PTFE</span></label>
+                    <label><input type="checkbox" value="PVDF" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PVDF</span></label>
+                    <label><input type="checkbox" value="V4A" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">SS316</span></label>
+                    <label><input type="checkbox" value="FPM" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Viton</span></label>
+                    <label><input type="checkbox" value="EPDM" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">EPDM</span></label>
+                    <label><input type="checkbox" value="NBR" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">NBR</span></label>
+                    <button onclick="toggleMoreMaterials()" id="moreMatBtn" class="px-2.5 py-1 rounded-full border border-dashed border-gray-200 text-xs text-gray-400 hover:border-emerald-300 hover:text-emerald-600">+more</button>
                 </div>
-                <div id="moreMaterials" class="hidden flex flex-wrap gap-2 justify-center mt-2">
-                    <label class="material-chip"><input type="checkbox" value="LDPE" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">LDPE</span></label>
-                    <label class="material-chip"><input type="checkbox" value="PA" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">PA</span></label>
-                    <label class="material-chip"><input type="checkbox" value="PC" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">PC</span></label>
-                    <label class="material-chip"><input type="checkbox" value="POM" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">POM</span></label>
-                    <label class="material-chip"><input type="checkbox" value="PVC_HART" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">PVC</span></label>
-                    <label class="material-chip"><input type="checkbox" value="FEP" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">FEP</span></label>
-                    <label class="material-chip"><input type="checkbox" value="ECTFE_ETFE" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">ECTFE</span></label>
-                    <label class="material-chip"><input type="checkbox" value="SI" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">Silicone</span></label>
-                    <label class="material-chip"><input type="checkbox" value="V2A" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">SS 304</span></label>
-                    <label class="material-chip"><input type="checkbox" value="AL" class="hidden peer"><span class="px-3 py-1.5 rounded-full border border-gray-300 text-sm cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-400 transition-colors">Aluminum</span></label>
+                <div id="moreMaterials" class="hidden flex flex-wrap gap-1.5 justify-center mt-1.5">
+                    <label><input type="checkbox" value="LDPE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">LDPE</span></label>
+                    <label><input type="checkbox" value="PA" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PA</span></label>
+                    <label><input type="checkbox" value="PC" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PC</span></label>
+                    <label><input type="checkbox" value="POM" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">POM</span></label>
+                    <label><input type="checkbox" value="PVC_HART" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PVC</span></label>
+                    <label><input type="checkbox" value="FEP" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">FEP</span></label>
+                    <label><input type="checkbox" value="ECTFE_ETFE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">ECTFE</span></label>
+                    <label><input type="checkbox" value="SI" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Silicone</span></label>
+                    <label><input type="checkbox" value="V2A" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">SS304</span></label>
+                    <label><input type="checkbox" value="AL" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Aluminum</span></label>
                 </div>
             </div>
-            <div class="mt-3 flex flex-wrap justify-center gap-2 text-sm">
-                <span class="text-gray-500">Popular:</span>
+            
+            <div class="mt-4 flex flex-wrap justify-center gap-2 text-sm">
+                <span class="text-gray-400">Try:</span>
                 <button onclick="searchFor('Sulfuric Acid')" class="text-emerald-600 hover:underline">Sulfuric Acid</button>
                 <button onclick="searchFor('Sodium Hydroxide')" class="text-emerald-600 hover:underline">Sodium Hydroxide</button>
                 <button onclick="searchFor('Acetone')" class="text-emerald-600 hover:underline">Acetone</button>
-                <button onclick="searchFor('Hydrochloric')" class="text-emerald-600 hover:underline">Hydrochloric Acid</button>
             </div>
         </div>
     </section>
