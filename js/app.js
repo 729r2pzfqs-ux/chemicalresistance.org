@@ -311,37 +311,19 @@ function showSearchResults(query) {
     
     const seenDisplayNames = new Set();
     const matchInfo = {};
-
-    // Build reverse translation map (English → German terms)
-    const reverseTranslations = {};
-    for (const [de, en] of Object.entries(translations)) {
-        reverseTranslations[en.toLowerCase()] = de;
-    }
-
-    // Check if query matches any English term
     const queryLower = query.toLowerCase();
-    let germanQuery = queryLower;
-    for (const [en, de] of Object.entries(reverseTranslations)) {
-        if (en.includes(queryLower) || queryLower.includes(en.split(' ')[0])) {
-            germanQuery = de;
-            break;
-        }
-    }
 
     chemicals.forEach((c, idx) => {
         const displayName = getDisplayName(c);
         const displayNameLower = displayName.toLowerCase();
         
-        // Text search match only
+        // Search ONLY by displayed name (English) or CAS/formula
         const textMatches = 
-            c.name.toLowerCase().includes(query) ||
-            c.name.toLowerCase().includes(germanQuery) ||
-            displayNameLower.includes(query) ||
+            displayNameLower.includes(queryLower) ||
             (c.cas && c.cas.includes(query)) ||
-            (c.formula && c.formula.toLowerCase().includes(query));
+            (c.formula && c.formula.toLowerCase().includes(queryLower));
         
         if (textMatches) {
-            // Dedupe by DISPLAYED name (handles Natronlauge + Natriumhydroxid → both show as "Sodium Hydroxide")
             const displayKey = displayNameLower;
             if (!seenDisplayNames.has(displayKey)) {
                 seenDisplayNames.add(displayKey);

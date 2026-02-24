@@ -293,20 +293,19 @@ function showSearchResults(query) {
     const searchResults = document.getElementById('searchResults');
     const seenDisplayNames = new Set();
     const matchInfo = {};
-
     const queryLower = query.toLowerCase();
 
     chemicals.forEach((c, idx) => {
-        const displayName = getDisplayName(c);
+        const displayName = getDisplayName(c); // German name
         const displayNameLower = displayName.toLowerCase();
+        
+        // Search ONLY by displayed name (German) or CAS/formula
         const matches = 
-            c.name.toLowerCase().includes(queryLower) ||
             displayNameLower.includes(queryLower) ||
-            (c.cas && c.cas.includes(queryLower)) ||
+            (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(queryLower));
         
         if (matches) {
-            // Dedupe by DISPLAYED name
             const displayKey = displayNameLower;
             if (!seenDisplayNames.has(displayKey)) {
                 seenDisplayNames.add(displayKey);
