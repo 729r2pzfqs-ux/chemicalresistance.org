@@ -225,20 +225,29 @@ function setupEventListeners() {
             return;
         }
         showSearchResults(query);
+        searchResults.classList.remove('hidden');
     });
 
-    // Material filter change
+    // Material filter change - show results immediately
     materialFilter?.addEventListener('change', () => {
         const query = searchInput.value.toLowerCase().trim();
-        if (materialFilter.value || query.length >= 2) {
+        if (materialFilter.value) {
             showSearchResults(query);
+            searchResults.classList.remove('hidden');
+        } else if (query.length >= 2) {
+            showSearchResults(query);
+        } else {
+            searchResults.classList.add('hidden');
         }
     });
 
     // Rating filter change  
     ratingFilter?.addEventListener('change', () => {
         const query = searchInput.value.toLowerCase().trim();
-        if (materialFilter?.value || query.length >= 2) {
+        if (materialFilter?.value) {
+            showSearchResults(query);
+            searchResults.classList.remove('hidden');
+        } else if (query.length >= 2) {
             showSearchResults(query);
         }
     });
@@ -363,6 +372,7 @@ function showSearchResults(query) {
 }
 
 function highlightMatch(text, query) {
+    if (!query) return text;
     const idx = text.toLowerCase().indexOf(query);
     if (idx >= 0) {
         return text.slice(0, idx) + '<mark class="search-highlight">' + text.slice(idx, idx + query.length) + '</mark>' + text.slice(idx + query.length);
