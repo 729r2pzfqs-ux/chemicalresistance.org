@@ -58,7 +58,7 @@
   },
   {
     "name": "Abgase, fluorwasserstoffhaltig",
-    "name_en": "Hydrofluoric Acid",
+    "name_en": "Hydrogen Fluoride Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "gering",
@@ -229,7 +229,7 @@
   },
   {
     "name": "Abgase, salzsäurehaltig",
-    "name_en": "Hydrochloric Acid",
+    "name_en": "Hydrochloric Acid Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "jede",
@@ -343,7 +343,7 @@
   },
   {
     "name": "Abgase, schwefelsäurehaltig",
-    "name_en": "Sulfuric Acid",
+    "name_en": "Sulfuric Acid Exhaust Gases",
     "formula": "",
     "cas": "",
     "concentration": "jede",
@@ -799,7 +799,7 @@
   },
   {
     "name": "Acetylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Acetyl Chloride",
     "formula": "C2H3ClO",
     "cas": "000075-36-5",
     "concentration": "100 %",
@@ -1312,7 +1312,7 @@
   },
   {
     "name": "Allylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Allyl Chloride",
     "formula": "C3H5Cl",
     "cas": "000107-05-1",
     "concentration": "100 %",
@@ -1483,7 +1483,7 @@
   },
   {
     "name": "Aluminiumammoniumsulfat",
-    "name_en": "Ammonium Sulfate",
+    "name_en": "Aluminum Ammonium Sulfate",
     "formula": "(NH4)Al(SO4)2",
     "cas": "007784-26-1",
     "concentration": "gesättigt",
@@ -1540,7 +1540,7 @@
   },
   {
     "name": "Aluminiumchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Aluminum Chloride",
     "formula": "AlCl3",
     "cas": "007784-13-6",
     "concentration": "10 %",
@@ -1597,7 +1597,7 @@
   },
   {
     "name": "Aluminiumchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Aluminum Chloride",
     "formula": "AlCl3",
     "cas": "007784-13-6",
     "concentration": "fest",
@@ -1654,7 +1654,7 @@
   },
   {
     "name": "Aluminiumchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Aluminum Chloride",
     "formula": "AlCl3",
     "cas": "007784-13-6",
     "concentration": "gesättigt",
@@ -2224,7 +2224,7 @@
   },
   {
     "name": "Aminoessigsäure",
-    "name_en": "Acetic Acid",
+    "name_en": "Glycine",
     "formula": "C2H5NO2",
     "cas": "000056-40-6",
     "concentration": "10 %",
@@ -4101,7 +4101,7 @@
   },
   {
     "name": "Amylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Amyl Chloride",
     "formula": "C5H11Cl",
     "cas": "000543-59-9",
     "concentration": "",
@@ -4329,7 +4329,7 @@
   },
   {
     "name": "Anilinchlorhydrat",
-    "name_en": "Chlorine",
+    "name_en": "Aniline Hydrochloride",
     "formula": "C6H3ClN6",
     "cas": "000142-04-1",
     "concentration": "gesättigt",
@@ -4557,7 +4557,7 @@
   },
   {
     "name": "Antimonpentachlorid",
-    "name_en": "Chlorine",
+    "name_en": "Antimony Pentachloride",
     "formula": "SbCl5",
     "cas": "007647-18-9",
     "concentration": "",
@@ -4614,7 +4614,7 @@
   },
   {
     "name": "Antimontrichlorid",
-    "name_en": "Chlorine",
+    "name_en": "Antimony Trichloride",
     "formula": "SbCl3",
     "cas": "010025-91-9",
     "concentration": "90 %",
@@ -4671,7 +4671,7 @@
   },
   {
     "name": "Antimontrichlorid",
-    "name_en": "Chlorine",
+    "name_en": "Antimony Trichloride",
     "formula": "SbCl3",
     "cas": "010025-91-9",
     "concentration": "wasserfrei",
@@ -4728,7 +4728,7 @@
   },
   {
     "name": "Antimontrichlorid",
-    "name_en": "Chlorine",
+    "name_en": "Antimony Trichloride",
     "formula": "SbCl3",
     "cas": "010025-91-9",
     "concentration": "wässrig",
@@ -5412,7 +5412,7 @@
   },
   {
     "name": "Bariumchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Barium Chloride",
     "formula": "BaCl2",
     "cas": "010361-37-2",
     "concentration": "gesättigt",
@@ -5469,7 +5469,7 @@
   },
   {
     "name": "Bariumchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Barium Chloride",
     "formula": "BaCl2",
     "cas": "010361-37-2",
     "concentration": "wässrig",
@@ -6096,7 +6096,7 @@
   },
   {
     "name": "Benzolsulfonsäure",
-    "name_en": "Benzene",
+    "name_en": "Benzenesulfonic Acid",
     "formula": "C6H6SO3",
     "cas": "000098-11-3",
     "concentration": "gesättigt",
@@ -6153,7 +6153,7 @@
   },
   {
     "name": "Benzoylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Benzoyl Chloride",
     "formula": "C7H5ClO",
     "cas": "000098-88-4",
     "concentration": "100 %",
@@ -6381,7 +6381,7 @@
   },
   {
     "name": "Benzylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Benzyl Chloride",
     "formula": "C7H7Cl",
     "cas": "000100-44-7",
     "concentration": "100 %",
@@ -6723,7 +6723,7 @@
   },
   {
     "name": "Bismutchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Bismuth Chloride",
     "formula": "BiCl3",
     "cas": "007787-60-2",
     "concentration": "",
@@ -7749,7 +7749,7 @@
   },
   {
     "name": "Brombenzol",
-    "name_en": "Benzene",
+    "name_en": "Bromobenzene",
     "formula": "C6H5Br",
     "cas": "000108-86-1",
     "concentration": "",
@@ -7806,7 +7806,7 @@
   },
   {
     "name": "Bromchlormethan",
-    "name_en": "Chlorine",
+    "name_en": "Bromochloromethane",
     "formula": "CH2BrCl",
     "cas": "000074-97-5",
     "concentration": "100 %",
@@ -8262,7 +8262,7 @@
   },
   {
     "name": "Bromwasser",
-    "name_en": "Water",
+    "name_en": "Bromine Water",
     "formula": "Br2+H2O",
     "cas": "007726-95-6",
     "concentration": "gesättigt",
@@ -8319,7 +8319,7 @@
   },
   {
     "name": "Bromwasserstoffsäure",
-    "name_en": "Water",
+    "name_en": "Hydrobromic Acid",
     "formula": "HBr",
     "cas": "010035-10-6",
     "concentration": "40 %",
@@ -8376,7 +8376,7 @@
   },
   {
     "name": "Bromwasserstoffsäure",
-    "name_en": "Water",
+    "name_en": "Hydrobromic Acid",
     "formula": "HBr",
     "cas": "010035-10-6",
     "concentration": "50 %",
@@ -8433,7 +8433,7 @@
   },
   {
     "name": "Bromwasserstoffsäure",
-    "name_en": "Water",
+    "name_en": "Hydrobromic Acid",
     "formula": "HBr",
     "cas": "010035-10-6",
     "concentration": "verdünnt",
@@ -9231,7 +9231,7 @@
   },
   {
     "name": "Butylphenol",
-    "name_en": "Phenol",
+    "name_en": "Butylphenol",
     "formula": "C10H14O",
     "cas": "",
     "concentration": "100 %",
@@ -9288,7 +9288,7 @@
   },
   {
     "name": "Butylphenol, p-tertiär",
-    "name_en": "Phenol",
+    "name_en": "p-tert-Butylphenol",
     "formula": "C11H15NO",
     "cas": "000098-54-4",
     "concentration": "techn. rein",
@@ -9858,7 +9858,7 @@
   },
   {
     "name": "Calciumchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Calcium Chlorate",
     "formula": "Ca(ClO3)2",
     "cas": "010137-74-3",
     "concentration": "gesättigt",
@@ -11340,7 +11340,7 @@
   },
   {
     "name": "Chloracetophenon, p-",
-    "name_en": "Chlorine",
+    "name_en": "p-Chloroacetophenone",
     "formula": "C8H7ClO",
     "cas": "000099-91-2",
     "concentration": "",
@@ -11397,7 +11397,7 @@
   },
   {
     "name": "Chloralhydrat",
-    "name_en": "Chlorine",
+    "name_en": "Chloral Hydrate",
     "formula": "C2H3Cl3O2",
     "cas": "000302-17-0",
     "concentration": "techn. rein",
@@ -11454,7 +11454,7 @@
   },
   {
     "name": "Chloramin T",
-    "name_en": "Chlorine",
+    "name_en": "Chloramine-T",
     "formula": "C7H7ClNaNSO2",
     "cas": "000127-65-1",
     "concentration": "verdünnt",
@@ -11511,7 +11511,7 @@
   },
   {
     "name": "Chlorbenzol",
-    "name_en": "Benzene",
+    "name_en": "Chlorobenzene",
     "formula": "C6H5Cl",
     "cas": "000108-90-7",
     "concentration": "",
@@ -11568,7 +11568,7 @@
   },
   {
     "name": "Chlorbutadien",
-    "name_en": "Chlorine",
+    "name_en": "Chlorobutadiene",
     "formula": "C4H5Cl",
     "cas": "000126-99-8",
     "concentration": "",
@@ -11625,7 +11625,7 @@
   },
   {
     "name": "Chlordifluormethan",
-    "name_en": "Chlorine",
+    "name_en": "Chlorodifluoromethane",
     "formula": "CHClF2",
     "cas": "000075-45-6",
     "concentration": "",
@@ -11682,7 +11682,7 @@
   },
   {
     "name": "Chlordioxid",
-    "name_en": "Chlorine",
+    "name_en": "Chlorine Dioxide",
     "formula": "ClO2",
     "cas": "010049-04-4",
     "concentration": "",
@@ -11739,7 +11739,7 @@
   },
   {
     "name": "Chloressigsäure",
-    "name_en": "Chlorine",
+    "name_en": "Chloroacetic Acid",
     "formula": "C2H3ClO2",
     "cas": "000079-11-8",
     "concentration": "50 %",
@@ -11796,7 +11796,7 @@
   },
   {
     "name": "Chloressigsäure",
-    "name_en": "Chlorine",
+    "name_en": "Chloroacetic Acid",
     "formula": "C2H3ClO2",
     "cas": "000079-11-8",
     "concentration": "",
@@ -11853,7 +11853,7 @@
   },
   {
     "name": "Chlorethan",
-    "name_en": "Chlorine",
+    "name_en": "Chloroethane",
     "formula": "C2H5Cl",
     "cas": "000075-00-3",
     "concentration": "",
@@ -11910,7 +11910,7 @@
   },
   {
     "name": "Chlorethanol",
-    "name_en": "Chlorine",
+    "name_en": "Chloroethanol",
     "formula": "C2H5ClO",
     "cas": "000107-07-3",
     "concentration": "techn. rein",
@@ -11967,7 +11967,7 @@
   },
   {
     "name": "Chlorethylen",
-    "name_en": "Chlorine",
+    "name_en": "Vinyl Chloride",
     "formula": "C2H3Cl",
     "cas": "000075-01-4",
     "concentration": "techn. rein",
@@ -12024,7 +12024,7 @@
   },
   {
     "name": "Chlorfluormethan",
-    "name_en": "Chlorine",
+    "name_en": "Chlorofluoromethane",
     "formula": "CH2ClF",
     "cas": "000593-70-4",
     "concentration": "",
@@ -12081,7 +12081,7 @@
   },
   {
     "name": "Chlorgas",
-    "name_en": "Chlorine",
+    "name_en": "Chlorine Gas",
     "formula": "Cl2",
     "cas": "007782-50-5",
     "concentration": "",
@@ -12138,7 +12138,7 @@
   },
   {
     "name": "Chlorkalk",
-    "name_en": "Chlorine",
+    "name_en": "Calcium Hypochlorite",
     "formula": "[3 x CaCl(OCl) + Ca(OH)2] x 5 H2O",
     "cas": "",
     "concentration": "wässrig",
@@ -12195,7 +12195,7 @@
   },
   {
     "name": "Chlorkalk",
-    "name_en": "Chlorine",
+    "name_en": "Calcium Hypochlorite",
     "formula": "[3 x CaCl(OCl) + Ca(OH)2] x 5 H2O",
     "cas": "",
     "concentration": "",
@@ -12252,7 +12252,7 @@
   },
   {
     "name": "Chlormethan",
-    "name_en": "Chlorine",
+    "name_en": "Chloromethane",
     "formula": "CH3Cl",
     "cas": "000074-87-3",
     "concentration": "techn. rein",
@@ -12309,7 +12309,7 @@
   },
   {
     "name": "Chlornaphthalin, 1-",
-    "name_en": "Chlorine",
+    "name_en": "1-Chloronaphthalene",
     "formula": "C10H7Cl",
     "cas": "000090-13-1",
     "concentration": "",
@@ -12366,7 +12366,7 @@
   },
   {
     "name": "Chloroform",
-    "name_en": "Chlorine",
+    "name_en": "Chloroform",
     "formula": "CHCl3",
     "cas": "000067-66-3",
     "concentration": "100 %",
@@ -12423,7 +12423,7 @@
   },
   {
     "name": "Chlorpentafluorethan",
-    "name_en": "Chlorine",
+    "name_en": "Chloropentafluoroethane",
     "formula": "C2ClF5",
     "cas": "000076-15-3",
     "concentration": "",
@@ -12480,7 +12480,7 @@
   },
   {
     "name": "Chlorsäure",
-    "name_en": "Chlorine",
+    "name_en": "Chloric Acid",
     "formula": "HClO3",
     "cas": "007790-93-4",
     "concentration": "1 %",
@@ -12537,7 +12537,7 @@
   },
   {
     "name": "Chlorsäure",
-    "name_en": "Chlorine",
+    "name_en": "Chloric Acid",
     "formula": "HClO3",
     "cas": "007790-93-4",
     "concentration": "10 %",
@@ -12594,7 +12594,7 @@
   },
   {
     "name": "Chlorsäure",
-    "name_en": "Chlorine",
+    "name_en": "Chloric Acid",
     "formula": "HClO3",
     "cas": "007790-93-4",
     "concentration": "20 %",
@@ -12651,7 +12651,7 @@
   },
   {
     "name": "Chlorsulfonsäure",
-    "name_en": "Chlorine",
+    "name_en": "Chlorosulfonic Acid",
     "formula": "ClHSO3",
     "cas": "007790-94-5",
     "concentration": "techn. rein",
@@ -12708,7 +12708,7 @@
   },
   {
     "name": "Chlortoluol",
-    "name_en": "Chlorine",
+    "name_en": "Chlorotoluene",
     "formula": "C7H7Cl",
     "cas": "",
     "concentration": "",
@@ -12765,7 +12765,7 @@
   },
   {
     "name": "Chlortrifluorid",
-    "name_en": "Chlorine",
+    "name_en": "Chlorine Trifluoride",
     "formula": "ClF3",
     "cas": "007790-91-2",
     "concentration": "",
@@ -12822,7 +12822,7 @@
   },
   {
     "name": "Chlortrifluormethan",
-    "name_en": "Chlorine",
+    "name_en": "Chlorotrifluoromethane",
     "formula": "CClF3",
     "cas": "000075-72-9",
     "concentration": "",
@@ -12879,7 +12879,7 @@
   },
   {
     "name": "Chlorwasser",
-    "name_en": "Chlorine",
+    "name_en": "Chlorine Water",
     "formula": "Cl2 x H2O",
     "cas": "007782-50-5",
     "concentration": "",
@@ -12936,7 +12936,7 @@
   },
   {
     "name": "Chlorwasserstoff(gas)",
-    "name_en": "Chlorine",
+    "name_en": "Hydrogen Chloride Gas",
     "formula": "HCl",
     "cas": "007647-01-0",
     "concentration": "wasserfrei",
@@ -13270,7 +13270,7 @@
   },
   {
     "name": "Chromschwefelsäure",
-    "name_en": "Sulfuric Acid",
+    "name_en": "Chromic-Sulfuric Acid",
     "formula": "CrO3 + H2SO4",
     "cas": "065272-71-1",
     "concentration": "konz.",
@@ -13384,7 +13384,7 @@
   },
   {
     "name": "Cobalt-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Cobalt(II) Chloride",
     "formula": "CoCl2",
     "cas": "007646-79-9",
     "concentration": "wässrig",
@@ -14923,7 +14923,7 @@
   },
   {
     "name": "Dichlorbenzol, 1,2-",
-    "name_en": "Benzene",
+    "name_en": "1,2-Dichlorobenzene",
     "formula": "C6H4Cl2",
     "cas": "000095-50-1",
     "concentration": "",
@@ -14980,7 +14980,7 @@
   },
   {
     "name": "Dichlorbenzol, 1,4-",
-    "name_en": "Benzene",
+    "name_en": "1,4-Dichlorobenzene",
     "formula": "C6H4Cl2",
     "cas": "000106-46-7",
     "concentration": "",
@@ -15037,7 +15037,7 @@
   },
   {
     "name": "Dichlordifluormethan",
-    "name_en": "Chlorine",
+    "name_en": "Dichlorodifluoromethane",
     "formula": "CCl2F2",
     "cas": "000075-71-8",
     "concentration": "techn. rein",
@@ -15094,7 +15094,7 @@
   },
   {
     "name": "Dichlordifluormethan",
-    "name_en": "Chlorine",
+    "name_en": "Dichlorodifluoromethane",
     "formula": "CCl2F2",
     "cas": "000075-71-8",
     "concentration": "",
@@ -15151,7 +15151,7 @@
   },
   {
     "name": "Dichloressigsäure",
-    "name_en": "Chlorine",
+    "name_en": "Dichloroacetic Acid",
     "formula": "C2H2Cl2O2",
     "cas": "000079-43-6",
     "concentration": "50 %",
@@ -15208,7 +15208,7 @@
   },
   {
     "name": "Dichloressigsäure",
-    "name_en": "Chlorine",
+    "name_en": "Dichloroacetic Acid",
     "formula": "C2H2Cl2O2",
     "cas": "000079-43-6",
     "concentration": "techn. rein",
@@ -15265,7 +15265,7 @@
   },
   {
     "name": "Dichlorethylen",
-    "name_en": "Chlorine",
+    "name_en": "Dichloroethylene",
     "formula": "C2H2Cl2",
     "cas": "",
     "concentration": "techn. rein",
@@ -15322,7 +15322,7 @@
   },
   {
     "name": "Dichlorfluormethan",
-    "name_en": "Chlorine",
+    "name_en": "Dichlorofluoromethane",
     "formula": "CHCl2F",
     "cas": "000075-43-4",
     "concentration": "100 %",
@@ -15379,7 +15379,7 @@
   },
   {
     "name": "Dichlor-hexafluorcyclobutan",
-    "name_en": "Chlorine",
+    "name_en": "Dichlorohexafluorocyclobutane",
     "formula": "C4Cl2F6",
     "cas": "000356-18-3",
     "concentration": "",
@@ -15436,7 +15436,7 @@
   },
   {
     "name": "Dichlorisopropylether",
-    "name_en": "Chlorine",
+    "name_en": "Dichloroisopropyl Ether",
     "formula": "C6H12Cl2O",
     "cas": "",
     "concentration": "",
@@ -15493,7 +15493,7 @@
   },
   {
     "name": "Dichlormethan",
-    "name_en": "Chlorine",
+    "name_en": "Dichloromethane",
     "formula": "CH2Cl2",
     "cas": "000075-09-2",
     "concentration": "",
@@ -15550,7 +15550,7 @@
   },
   {
     "name": "Dichlorpropan",
-    "name_en": "Chlorine",
+    "name_en": "Dichloropropane",
     "formula": "C3H6Cl2",
     "cas": "",
     "concentration": "100 %",
@@ -15603,7 +15603,7 @@
   },
   {
     "name": "Dichlortetrafluorethan",
-    "name_en": "Chlorine",
+    "name_en": "Dichlorotetrafluoroethane",
     "formula": "C2Cl2F4",
     "cas": "000076-14-2",
     "concentration": "",
@@ -15888,7 +15888,7 @@
   },
   {
     "name": "Diethanolamin (DEA)",
-    "name_en": "Ethanol",
+    "name_en": "Diethanolamine",
     "formula": "C4H11NO2",
     "cas": "000111-42-2",
     "concentration": "100 %",
@@ -16002,7 +16002,7 @@
   },
   {
     "name": "Diethylbenzol",
-    "name_en": "Benzene",
+    "name_en": "Diethylbenzene",
     "formula": "C10H14",
     "cas": "000135-01-3",
     "concentration": "",
@@ -16344,7 +16344,7 @@
   },
   {
     "name": "Difluorchlorethan",
-    "name_en": "Chlorine",
+    "name_en": "Difluorochloroethane",
     "formula": "C2H3ClF2",
     "cas": "000075-68-3",
     "concentration": "",
@@ -16515,7 +16515,7 @@
   },
   {
     "name": "Difluortetrachlorethan",
-    "name_en": "Chlorine",
+    "name_en": "Difluorotetrachloroethane",
     "formula": "C2Cl4F2",
     "cas": "000076-12-0",
     "concentration": "",
@@ -17256,7 +17256,7 @@
   },
   {
     "name": "Dinatriumphosphat",
-    "name_en": "Sodium",
+    "name_en": "Disodium Phosphate",
     "formula": "Na2HPO4",
     "cas": "007558-79-4",
     "concentration": "",
@@ -17826,7 +17826,7 @@
   },
   {
     "name": "Eisen-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Iron(II) Chloride",
     "formula": "FeCl2",
     "cas": "007758-94-3",
     "concentration": "gesättigt",
@@ -18054,7 +18054,7 @@
   },
   {
     "name": "Eisen-(III)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Iron(III) Chloride",
     "formula": "FeCl3",
     "cas": "007705-08-0",
     "concentration": "gesättigt",
@@ -18449,7 +18449,7 @@
   },
   {
     "name": "Epichlorhydrin",
-    "name_en": "Chlorine",
+    "name_en": "Epichlorohydrin",
     "formula": "C3H5ClO",
     "cas": "000106-89-8",
     "concentration": "100 %",
@@ -19076,7 +19076,7 @@
   },
   {
     "name": "Essigsäureanhydrid",
-    "name_en": "Acetic Acid",
+    "name_en": "Acetic Anhydride",
     "formula": "C4H6O3",
     "cas": "000108-24-7",
     "concentration": "techn. rein",
@@ -19133,7 +19133,7 @@
   },
   {
     "name": "Essigsäurebutylester",
-    "name_en": "Acetic Acid",
+    "name_en": "Butyl Acetate",
     "formula": "C6H12O2",
     "cas": "000123-86-4",
     "concentration": "100 %",
@@ -19190,7 +19190,7 @@
   },
   {
     "name": "Essigsäuremethylester",
-    "name_en": "Acetic Acid",
+    "name_en": "Methyl Acetate",
     "formula": "C3H6O2",
     "cas": "000079-20-9",
     "concentration": "techn. rein",
@@ -19418,7 +19418,7 @@
   },
   {
     "name": "Ethanolamin",
-    "name_en": "Ethanol",
+    "name_en": "Ethanolamine",
     "formula": "C2H7NO",
     "cas": "000141-43-5",
     "concentration": "",
@@ -19646,7 +19646,7 @@
   },
   {
     "name": "Ethylbenzol",
-    "name_en": "Benzene",
+    "name_en": "Ethylbenzene",
     "formula": "C8H10",
     "cas": "000100-41-4",
     "concentration": "",
@@ -19760,7 +19760,7 @@
   },
   {
     "name": "Ethylchloracetat",
-    "name_en": "Chlorine",
+    "name_en": "Ethyl Chloroacetate",
     "formula": "C4H7ClO2",
     "cas": "000105-39-5",
     "concentration": "techn. rein",
@@ -19931,7 +19931,7 @@
   },
   {
     "name": "Ethylenchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Ethylene Dichloride",
     "formula": "C2H4Cl2",
     "cas": "",
     "concentration": "",
@@ -20045,7 +20045,7 @@
   },
   {
     "name": "Ethylendiamintetraessigsäure (EDTA)",
-    "name_en": "Acetic Acid",
+    "name_en": "EDTA",
     "formula": "C10H16N2O8",
     "cas": "000060-00-4",
     "concentration": "",
@@ -21413,7 +21413,7 @@
   },
   {
     "name": "Fluorbenzol",
-    "name_en": "Benzene",
+    "name_en": "Fluorobenzene",
     "formula": "C6H5F",
     "cas": "000462-06-6",
     "concentration": "",
@@ -21470,7 +21470,7 @@
   },
   {
     "name": "Fluorchloralkane (FCKW)",
-    "name_en": "Chlorine",
+    "name_en": "Chlorofluorocarbons (CFCs)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21580,7 +21580,7 @@
   },
   {
     "name": "Fluorkohlenwasserstoffe (FKW)",
-    "name_en": "Water",
+    "name_en": "Fluorocarbons (CFCs)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21637,7 +21637,7 @@
   },
   {
     "name": "Fluorwasserstoff",
-    "name_en": "Hydrofluoric Acid",
+    "name_en": "Hydrogen Fluoride",
     "formula": "HF",
     "cas": "007664-39-3",
     "concentration": "wasserfrei",
@@ -21979,7 +21979,7 @@
   },
   {
     "name": "Formaldehydlösung",
-    "name_en": "Formaldehyde",
+    "name_en": "Formaldehyde Solution",
     "formula": "CH2O",
     "cas": "000050-00-0",
     "concentration": "10 %",
@@ -22036,7 +22036,7 @@
   },
   {
     "name": "Formaldehydlösung",
-    "name_en": "Formaldehyde",
+    "name_en": "Formaldehyde Solution",
     "formula": "CH2O",
     "cas": "000050-00-0",
     "concentration": "30 %",
@@ -22093,7 +22093,7 @@
   },
   {
     "name": "Formaldehydlösung",
-    "name_en": "Formaldehyde",
+    "name_en": "Formaldehyde Solution",
     "formula": "CH2O",
     "cas": "000050-00-0",
     "concentration": "40 %",
@@ -22948,7 +22948,7 @@
   },
   {
     "name": "Gaswasser",
-    "name_en": "Water",
+    "name_en": "Gas Water",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -24259,7 +24259,7 @@
   },
   {
     "name": "Hexachlorbenzol (HCB)",
-    "name_en": "Benzene",
+    "name_en": "Hexachlorobenzene",
     "formula": "C6Cl6",
     "cas": "000118-74-1",
     "concentration": "",
@@ -24316,7 +24316,7 @@
   },
   {
     "name": "Hexachlorbutadien (HCBD)",
-    "name_en": "Chlorine",
+    "name_en": "Hexachlorobutadiene",
     "formula": "C4Cl6",
     "cas": "000087-68-3",
     "concentration": "",
@@ -24373,7 +24373,7 @@
   },
   {
     "name": "Hexachlorcyclohexan (HCH)",
-    "name_en": "Chlorine",
+    "name_en": "Hexachlorocyclohexane",
     "formula": "C6H6Cl6",
     "cas": "000319-84-6",
     "concentration": "",
@@ -25399,7 +25399,7 @@
   },
   {
     "name": "Hydroxylammoniumsulfat",
-    "name_en": "Ammonium Sulfate",
+    "name_en": "Hydroxylammonium Sulfate",
     "formula": "H8N2SO6",
     "cas": "010039-54-0",
     "concentration": "12 %",
@@ -25456,7 +25456,7 @@
   },
   {
     "name": "Hydroxylammoniumsulfat",
-    "name_en": "Ammonium Sulfate",
+    "name_en": "Hydroxylammonium Sulfate",
     "formula": "H8N2SO6",
     "cas": "010039-54-0",
     "concentration": "jede",
@@ -25627,7 +25627,7 @@
   },
   {
     "name": "Isobutanol",
-    "name_en": "Butanol",
+    "name_en": "Isobutanol",
     "formula": "C4H10O",
     "cas": "000078-83-1",
     "concentration": "",
@@ -25969,7 +25969,7 @@
   },
   {
     "name": "Isopropylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Isopropyl Chloride",
     "formula": "C3H7Cl",
     "cas": "000075-29-6",
     "concentration": "",
@@ -26995,7 +26995,7 @@
   },
   {
     "name": "Kaliumchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Potassium Chlorate",
     "formula": "KClO3",
     "cas": "003811-04-9",
     "concentration": "gesättigt",
@@ -27052,7 +27052,7 @@
   },
   {
     "name": "Kaliumchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Potassium Chlorate",
     "formula": "KClO3",
     "cas": "003811-04-9",
     "concentration": "wässrig",
@@ -28078,7 +28078,7 @@
   },
   {
     "name": "Kaliumhypochlorit",
-    "name_en": "Chlorine",
+    "name_en": "Potassium Hypochlorite",
     "formula": "KClO",
     "cas": "007778-66-7",
     "concentration": "verdünnt",
@@ -28420,7 +28420,7 @@
   },
   {
     "name": "Kaliumperchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Potassium Perchlorate",
     "formula": "KClO4",
     "cas": "007778-74-7",
     "concentration": "gesättigt",
@@ -28477,7 +28477,7 @@
   },
   {
     "name": "Kaliumperchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Potassium Perchlorate",
     "formula": "KClO4",
     "cas": "007778-74-7",
     "concentration": "wässrig",
@@ -29161,7 +29161,7 @@
   },
   {
     "name": "Kieselfluorwasserstoffsäure",
-    "name_en": "Hydrofluoric Acid",
+    "name_en": "Fluorosilicic Acid",
     "formula": "H2SiF6",
     "cas": "016961-83-4",
     "concentration": "32 %",
@@ -29674,7 +29674,7 @@
   },
   {
     "name": "Königswasser",
-    "name_en": "Water",
+    "name_en": "Aqua Regia",
     "formula": "HNO3 + HCl",
     "cas": "008007-56-5",
     "concentration": "",
@@ -29731,7 +29731,7 @@
   },
   {
     "name": "Kraftstoff + 20% Ethanol",
-    "name_en": "Ethanol",
+    "name_en": "Fuel + 20% Ethanol",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -29788,7 +29788,7 @@
   },
   {
     "name": "Kraftstoff + 20% Methanol",
-    "name_en": "Ethanol",
+    "name_en": "Fuel + 20% Methanol",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -30187,7 +30187,7 @@
   },
   {
     "name": "Kupfer-(I)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Copper(I) Chloride",
     "formula": "CuCl",
     "cas": "007758-89-6",
     "concentration": "wässrig",
@@ -30244,7 +30244,7 @@
   },
   {
     "name": "Kupfer-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Copper(II) Chloride",
     "formula": "CuCl2",
     "cas": "007447-39-4",
     "concentration": "gesättigt",
@@ -30928,7 +30928,7 @@
   },
   {
     "name": "Laurylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Lauryl Chloride",
     "formula": "C12H25Cl",
     "cas": "000112-52-7",
     "concentration": "100 %",
@@ -31270,7 +31270,7 @@
   },
   {
     "name": "Leuchtgas, benzolfrei",
-    "name_en": "Benzene",
+    "name_en": "Town Gas (Benzene-free)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -31783,7 +31783,7 @@
   },
   {
     "name": "Magnesiumchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Magnesium Chloride",
     "formula": "MgCl2",
     "cas": "007786-30-3",
     "concentration": "wässrig",
@@ -31840,7 +31840,7 @@
   },
   {
     "name": "Magnesiumchlorit",
-    "name_en": "Chlorine",
+    "name_en": "Magnesium Chlorite",
     "formula": "Mg(ClO2)2",
     "cas": "??",
     "concentration": "",
@@ -32923,7 +32923,7 @@
   },
   {
     "name": "Methoxybutanol",
-    "name_en": "Butanol",
+    "name_en": "Methoxybutanol",
     "formula": "C5H12O2",
     "cas": "",
     "concentration": "100 %",
@@ -33208,7 +33208,7 @@
   },
   {
     "name": "Methylbenzol",
-    "name_en": "Benzene",
+    "name_en": "Toluene",
     "formula": "C7H8",
     "cas": "000108-88-3",
     "concentration": "",
@@ -33265,7 +33265,7 @@
   },
   {
     "name": "Methylbutanol",
-    "name_en": "Butanol",
+    "name_en": "Methyl Butanol",
     "formula": "C5H12O",
     "cas": "",
     "concentration": "",
@@ -33379,7 +33379,7 @@
   },
   {
     "name": "Methylchloracetat",
-    "name_en": "Chlorine",
+    "name_en": "Methyl Chloroacetate",
     "formula": "C3H5ClO2",
     "cas": "000096-34-4",
     "concentration": "techn. rein",
@@ -33550,7 +33550,7 @@
   },
   {
     "name": "Methyldichloracetat",
-    "name_en": "Chlorine",
+    "name_en": "Methyl Dichloroacetate",
     "formula": "C3H4Cl2O2",
     "cas": "000116-54-1",
     "concentration": "",
@@ -34063,7 +34063,7 @@
   },
   {
     "name": "Methylschwefelsäure",
-    "name_en": "Sulfuric Acid",
+    "name_en": "Methanesulfonic Acid",
     "formula": "CH4SO4",
     "cas": "000077-78-1",
     "concentration": "50 %",
@@ -34120,7 +34120,7 @@
   },
   {
     "name": "Methylschwefelsäure",
-    "name_en": "Sulfuric Acid",
+    "name_en": "Methanesulfonic Acid",
     "formula": "CH4SO4",
     "cas": "000077-78-1",
     "concentration": "wässrig",
@@ -35089,7 +35089,7 @@
   },
   {
     "name": "Natriumacetat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Acetate",
     "formula": "C2H3NaO2",
     "cas": "000127-09-3",
     "concentration": "jede",
@@ -35146,7 +35146,7 @@
   },
   {
     "name": "Natriumaluminiumsulfat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Aluminum Sulfate",
     "formula": "NaAl(SO4)2",
     "cas": "010102-71-3",
     "concentration": "",
@@ -35203,7 +35203,7 @@
   },
   {
     "name": "Natriumbenzoat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Benzoate",
     "formula": "C7H5NaO2",
     "cas": "000532-32-1",
     "concentration": "36 %",
@@ -35260,7 +35260,7 @@
   },
   {
     "name": "Natriumbenzoat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Benzoate",
     "formula": "C7H5NaO2",
     "cas": "000532-32-1",
     "concentration": "wässrig",
@@ -35317,7 +35317,7 @@
   },
   {
     "name": "Natriumbenzoat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Benzoate",
     "formula": "C7H5NaO2",
     "cas": "000532-32-1",
     "concentration": "",
@@ -35374,7 +35374,7 @@
   },
   {
     "name": "Natriumbicarbonat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Bicarbonate",
     "formula": "NaHCO3",
     "cas": "000144-55-8",
     "concentration": "wässrig",
@@ -35431,7 +35431,7 @@
   },
   {
     "name": "Natriumbisulfat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Bisulfate",
     "formula": "NaHSO4",
     "cas": "007681-38-1",
     "concentration": "10 %",
@@ -35488,7 +35488,7 @@
   },
   {
     "name": "Natriumbisulfat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Bisulfate",
     "formula": "NaHSO4",
     "cas": "007681-38-1",
     "concentration": "jede",
@@ -35545,7 +35545,7 @@
   },
   {
     "name": "Natriumbisulfit",
-    "name_en": "Sodium",
+    "name_en": "Sodium Bisulfite",
     "formula": "NaHSO3",
     "cas": "007631-90-5",
     "concentration": "wässrig",
@@ -35602,7 +35602,7 @@
   },
   {
     "name": "Natriumborat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Borate",
     "formula": "Na2B4O7 x 10 H2O",
     "cas": "001303-96-4",
     "concentration": "gesättigt",
@@ -35659,7 +35659,7 @@
   },
   {
     "name": "Natriumborat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Borate",
     "formula": "Na2B4O7 x 10 H2O",
     "cas": "001303-96-4",
     "concentration": "wässrig",
@@ -35716,7 +35716,7 @@
   },
   {
     "name": "Natriumbromat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Bromate",
     "formula": "NaBrO3",
     "cas": "007789-38-0",
     "concentration": "jede",
@@ -35773,7 +35773,7 @@
   },
   {
     "name": "Natriumbromid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Bromide",
     "formula": "NaBr",
     "cas": "007647-15-6",
     "concentration": "jede",
@@ -36001,7 +36001,7 @@
   },
   {
     "name": "Natriumchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Sodium Chlorate",
     "formula": "NaClO3",
     "cas": "007775-09-9",
     "concentration": "jede",
@@ -36058,7 +36058,7 @@
   },
   {
     "name": "Natriumchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Sodium Chlorate",
     "formula": "NaClO3",
     "cas": "007775-09-9",
     "concentration": "wässrig",
@@ -36229,7 +36229,7 @@
   },
   {
     "name": "Natriumchlorit",
-    "name_en": "Chlorine",
+    "name_en": "Sodium Chlorite",
     "formula": "NaClO2",
     "cas": "007758-19-2",
     "concentration": "verdünnt",
@@ -36286,7 +36286,7 @@
   },
   {
     "name": "Natriumchromat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Chromate",
     "formula": "NaCrO4",
     "cas": "007775-11-3",
     "concentration": "verdünnt",
@@ -36343,7 +36343,7 @@
   },
   {
     "name": "Natriumcyanid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Cyanide",
     "formula": "CNNa",
     "cas": "000143-33-9",
     "concentration": "gesättigt",
@@ -36400,7 +36400,7 @@
   },
   {
     "name": "Natriumcyanid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Cyanide",
     "formula": "CNNa",
     "cas": "000143-33-9",
     "concentration": "wässrig",
@@ -36457,7 +36457,7 @@
   },
   {
     "name": "Natriumdichromat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Dichromate",
     "formula": "Na2Cr2O7",
     "cas": "010588-01-9",
     "concentration": "",
@@ -36514,7 +36514,7 @@
   },
   {
     "name": "Natriumdisulfit",
-    "name_en": "Sodium",
+    "name_en": "Sodium Metabisulfite",
     "formula": "Na2S2O5",
     "cas": "007681-57-4",
     "concentration": "jede",
@@ -36571,7 +36571,7 @@
   },
   {
     "name": "Natriumdithionit",
-    "name_en": "Sodium",
+    "name_en": "Sodium Dithionite",
     "formula": "Na2S2O4",
     "cas": "007775-14-6",
     "concentration": "10 %",
@@ -36628,7 +36628,7 @@
   },
   {
     "name": "Natriumdithionit",
-    "name_en": "Sodium",
+    "name_en": "Sodium Dithionite",
     "formula": "Na2S2O4",
     "cas": "007775-14-6",
     "concentration": "",
@@ -36685,7 +36685,7 @@
   },
   {
     "name": "Natriumdodecylbenzolsulfonat",
-    "name_en": "Benzene",
+    "name_en": "Sodium Dodecylbenzene Sulfonate",
     "formula": "C18H29NaSO3",
     "cas": "025155-30-0",
     "concentration": "",
@@ -36742,7 +36742,7 @@
   },
   {
     "name": "Natriumfluorid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Fluoride",
     "formula": "NaF",
     "cas": "007681-49-4",
     "concentration": "gesättigt",
@@ -36799,7 +36799,7 @@
   },
   {
     "name": "Natriumhexacyanoferrat-(II)",
-    "name_en": "Sodium",
+    "name_en": "Sodium Ferrocyanide",
     "formula": "C6FeNa4N6",
     "cas": "013601-19-9",
     "concentration": "",
@@ -36856,7 +36856,7 @@
   },
   {
     "name": "Natriumhexametaphosphat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Hexametaphosphate",
     "formula": "(NaPO3)6",
     "cas": "068915-31-1",
     "concentration": "gesättigt",
@@ -37483,7 +37483,7 @@
   },
   {
     "name": "Natriumjodid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Iodide",
     "formula": "NaJ",
     "cas": "007681-82-5",
     "concentration": "jede",
@@ -37654,7 +37654,7 @@
   },
   {
     "name": "Natriumnitrit",
-    "name_en": "Sodium",
+    "name_en": "Sodium Nitrite",
     "formula": "NaNO2",
     "cas": "007632-00-0",
     "concentration": "gesättigt",
@@ -37711,7 +37711,7 @@
   },
   {
     "name": "Natriumnitrit",
-    "name_en": "Sodium",
+    "name_en": "Sodium Nitrite",
     "formula": "NaNO2",
     "cas": "007632-00-0",
     "concentration": "wässrig",
@@ -37768,7 +37768,7 @@
   },
   {
     "name": "Natriumoxalat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Oxalate",
     "formula": "C2Na2O4",
     "cas": "000062-76-0",
     "concentration": "gesättigt",
@@ -37825,7 +37825,7 @@
   },
   {
     "name": "Natriumperborat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Perborate",
     "formula": "NaBO2(HO)2 x 3H2O",
     "cas": "013517-20-9",
     "concentration": "gesättigt",
@@ -37882,7 +37882,7 @@
   },
   {
     "name": "Natriumperborat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Perborate",
     "formula": "NaBO2(HO)2 x 3H2O",
     "cas": "013517-20-9",
     "concentration": "wässrig",
@@ -37939,7 +37939,7 @@
   },
   {
     "name": "Natriumperchlorat",
-    "name_en": "Chlorine",
+    "name_en": "Sodium Perchlorate",
     "formula": "NaClO4",
     "cas": "007601-89-0",
     "concentration": "gesättigt",
@@ -37996,7 +37996,7 @@
   },
   {
     "name": "Natriumperoxid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Peroxide",
     "formula": "Na2O2",
     "cas": "001313-60-6",
     "concentration": "10 %",
@@ -38053,7 +38053,7 @@
   },
   {
     "name": "Natriumperoxid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Peroxide",
     "formula": "Na2O2",
     "cas": "001313-60-6",
     "concentration": "gesättigt",
@@ -38110,7 +38110,7 @@
   },
   {
     "name": "Natriumpersulfat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Persulfate",
     "formula": "Na2S2O8",
     "cas": "007775-27-1",
     "concentration": "gesättigt",
@@ -38167,7 +38167,7 @@
   },
   {
     "name": "Natriumphosphat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Phosphate",
     "formula": "Na3PO4 x 12H2O",
     "cas": "010101-89-0",
     "concentration": "gesättigt",
@@ -38224,7 +38224,7 @@
   },
   {
     "name": "Natriumphosphat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Phosphate",
     "formula": "Na3PO4 x 12H2O",
     "cas": "010101-89-0",
     "concentration": "wässrig",
@@ -38281,7 +38281,7 @@
   },
   {
     "name": "Natriumsilicat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Silicate",
     "formula": "Na2Si3O7",
     "cas": "001344-09-8",
     "concentration": "jede",
@@ -38338,7 +38338,7 @@
   },
   {
     "name": "Natriumstearat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Stearate",
     "formula": "C18H35NaO2",
     "cas": "000822-16-2",
     "concentration": "wässrig",
@@ -38566,7 +38566,7 @@
   },
   {
     "name": "Natriumsulfid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Sulfide",
     "formula": "Na2S",
     "cas": "001313-82-2",
     "concentration": "gesättigt",
@@ -38623,7 +38623,7 @@
   },
   {
     "name": "Natriumsulfid",
-    "name_en": "Sodium",
+    "name_en": "Sodium Sulfide",
     "formula": "Na2S",
     "cas": "001313-82-2",
     "concentration": "wässrig",
@@ -38680,7 +38680,7 @@
   },
   {
     "name": "Natriumsulfit",
-    "name_en": "Sodium",
+    "name_en": "Sodium Sulfite",
     "formula": "Na2SO3",
     "cas": "007757-83-7",
     "concentration": "gesättigt",
@@ -38737,7 +38737,7 @@
   },
   {
     "name": "Natriumthiosulfat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Thiosulfate",
     "formula": "Na2S2O3 x 5H2O",
     "cas": "010102-17-7",
     "concentration": "jede",
@@ -38794,7 +38794,7 @@
   },
   {
     "name": "Natriumthiosulfat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Thiosulfate",
     "formula": "Na2S2O3 x 5H2O",
     "cas": "010102-17-7",
     "concentration": "gesättigt",
@@ -38851,7 +38851,7 @@
   },
   {
     "name": "Natriumthiosulfat",
-    "name_en": "Sodium",
+    "name_en": "Sodium Thiosulfate",
     "formula": "Na2S2O3 x 5H2O",
     "cas": "010102-17-7",
     "concentration": "wässrig",
@@ -39075,7 +39075,7 @@
   },
   {
     "name": "Nickel-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Nickel(II) Chloride",
     "formula": "NiCl2",
     "cas": "007718-54-9",
     "concentration": "gesättigt",
@@ -39132,7 +39132,7 @@
   },
   {
     "name": "Nickel-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Nickel(II) Chloride",
     "formula": "NiCl2",
     "cas": "007718-54-9",
     "concentration": "wässrig",
@@ -39588,7 +39588,7 @@
   },
   {
     "name": "Nitrobenzol",
-    "name_en": "Benzene",
+    "name_en": "Nitrobenzene",
     "formula": "C6H5NO2",
     "cas": "000098-95-3",
     "concentration": "",
@@ -39930,7 +39930,7 @@
   },
   {
     "name": "Nitrotoluole",
-    "name_en": "Toluene",
+    "name_en": "Nitrotoluene",
     "formula": "C7H7NO2",
     "cas": "001321-12-6",
     "concentration": "techn. rein",
@@ -40158,7 +40158,7 @@
   },
   {
     "name": "Obstwein",
-    "name_en": "Wine",
+    "name_en": "Fruit Wine",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -41412,7 +41412,7 @@
   },
   {
     "name": "Paraformaldehyd",
-    "name_en": "Formaldehyde",
+    "name_en": "Paraformaldehyde",
     "formula": "(CH2O)nH2O",
     "cas": "030525-89-4",
     "concentration": "",
@@ -41697,7 +41697,7 @@
   },
   {
     "name": "Pentachlordiphenyl",
-    "name_en": "Chlorine",
+    "name_en": "Pentachlorobiphenyl",
     "formula": "C12H5Cl5",
     "cas": "",
     "concentration": "",
@@ -41868,7 +41868,7 @@
   },
   {
     "name": "Perchlorethylen (PER)",
-    "name_en": "Chlorine",
+    "name_en": "Perchloroethylene",
     "formula": "C2Cl4",
     "cas": "000127-18-4",
     "concentration": "",
@@ -41925,7 +41925,7 @@
   },
   {
     "name": "Perchlorsäure",
-    "name_en": "Chlorine",
+    "name_en": "Perchloric Acid",
     "formula": "HClO4",
     "cas": "007601-90-3",
     "concentration": "70 %",
@@ -41982,7 +41982,7 @@
   },
   {
     "name": "Perchlorsäure",
-    "name_en": "Chlorine",
+    "name_en": "Perchloric Acid",
     "formula": "HClO4",
     "cas": "007601-90-3",
     "concentration": "20 %",
@@ -42495,7 +42495,7 @@
   },
   {
     "name": "Phenolharzformmasse",
-    "name_en": "Phenol",
+    "name_en": "Phenolic Resin",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -42552,7 +42552,7 @@
   },
   {
     "name": "Phenylethanol",
-    "name_en": "Ethanol",
+    "name_en": "Phenylethanol",
     "formula": "C8H10O",
     "cas": "000060-12-8",
     "concentration": "",
@@ -43065,7 +43065,7 @@
   },
   {
     "name": "Phosphoroxychlorid",
-    "name_en": "Chlorine",
+    "name_en": "Phosphorus Oxychloride",
     "formula": "PCl3O",
     "cas": "010025-87-3",
     "concentration": "100 %",
@@ -43122,7 +43122,7 @@
   },
   {
     "name": "Phosphoroxychlorid",
-    "name_en": "Chlorine",
+    "name_en": "Phosphorus Oxychloride",
     "formula": "PCl3O",
     "cas": "010025-87-3",
     "concentration": "",
@@ -43179,7 +43179,7 @@
   },
   {
     "name": "Phosphorpentachlorid",
-    "name_en": "Chlorine",
+    "name_en": "Phosphorus Pentachloride",
     "formula": "PCl5",
     "cas": "010026-13-8",
     "concentration": "",
@@ -43521,7 +43521,7 @@
   },
   {
     "name": "Phosphortrichlorid",
-    "name_en": "Chlorine",
+    "name_en": "Phosphorus Trichloride",
     "formula": "PCl3",
     "cas": "007719-12-2",
     "concentration": "",
@@ -45516,7 +45516,7 @@
   },
   {
     "name": "Quecksilber-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Mercury(II) Chloride",
     "formula": "HgCl2",
     "cas": "007487-94-7",
     "concentration": "wässrig",
@@ -45630,7 +45630,7 @@
   },
   {
     "name": "Quecksilbernitrat",
-    "name_en": "Silver Nitrate",
+    "name_en": "Mercury Nitrate",
     "formula": "Hg(NO3)2",
     "cas": "010045-94-0",
     "concentration": "gesättigt",
@@ -47511,7 +47511,7 @@
   },
   {
     "name": "Schwefelchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Sulfur Chloride",
     "formula": "S2Cl2",
     "cas": "010025-67-9",
     "concentration": "",
@@ -48252,7 +48252,7 @@
   },
   {
     "name": "Schwefelwasserstoff",
-    "name_en": "Water",
+    "name_en": "Hydrogen Sulfide",
     "formula": "H2S",
     "cas": "007783-06-4",
     "concentration": "gesättigt",
@@ -48366,7 +48366,7 @@
   },
   {
     "name": "Schweinefett",
-    "name_en": "Wine",
+    "name_en": "Lard (Pork Fat)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -50019,7 +50019,7 @@
   },
   {
     "name": "Sulfurylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Sulfuryl Chloride",
     "formula": "Cl2SO2",
     "cas": "007791-25-5",
     "concentration": "techn. rein",
@@ -50418,7 +50418,7 @@
   },
   {
     "name": "Testbenzin",
-    "name_en": "Gasoline",
+    "name_en": "White Spirit",
     "formula": "",
     "cas": "",
     "concentration": "flüssig",
@@ -50817,7 +50817,7 @@
   },
   {
     "name": "Tetrachlorethan",
-    "name_en": "Chlorine",
+    "name_en": "Tetrachloroethane",
     "formula": "C2H2Cl4",
     "cas": "",
     "concentration": "techn. rein",
@@ -50874,7 +50874,7 @@
   },
   {
     "name": "Tetrachlorkohlenstoff (TETRA)",
-    "name_en": "Chlorine",
+    "name_en": "Carbon Tetrachloride",
     "formula": "CCl4",
     "cas": "000056-23-5",
     "concentration": "",
@@ -51330,7 +51330,7 @@
   },
   {
     "name": "Thionylchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Thionyl Chloride",
     "formula": "Cl2SO",
     "cas": "007719-09-7",
     "concentration": "techn. rein",
@@ -51501,7 +51501,7 @@
   },
   {
     "name": "Titantetrachlorid",
-    "name_en": "Chlorine",
+    "name_en": "Titanium Tetrachloride",
     "formula": "TiCl4",
     "cas": "007550-45-0",
     "concentration": "",
@@ -51843,7 +51843,7 @@
   },
   {
     "name": "Trichloracetaldehyd",
-    "name_en": "Chlorine",
+    "name_en": "Trichloroacetaldehyde",
     "formula": "C2HCl3O",
     "cas": "000075-87-6",
     "concentration": "100 %",
@@ -51900,7 +51900,7 @@
   },
   {
     "name": "Trichlorbenzol",
-    "name_en": "Benzene",
+    "name_en": "Trichlorobenzene",
     "formula": "C6H3Cl3",
     "cas": "",
     "concentration": "100 %",
@@ -51957,7 +51957,7 @@
   },
   {
     "name": "Trichloressigsäure (TCA)",
-    "name_en": "Chlorine",
+    "name_en": "Trichloroacetic Acid",
     "formula": "C2HCl3O2",
     "cas": "000076-03-9",
     "concentration": "",
@@ -52014,7 +52014,7 @@
   },
   {
     "name": "Trichlorethan",
-    "name_en": "Chlorine",
+    "name_en": "Trichloroethane",
     "formula": "C2H3Cl3",
     "cas": "",
     "concentration": "",
@@ -52071,7 +52071,7 @@
   },
   {
     "name": "Trichlorethylen (TRI)",
-    "name_en": "Chlorine",
+    "name_en": "Trichloroethylene",
     "formula": "C2HCl3",
     "cas": "000079-01-6",
     "concentration": "100 %",
@@ -52128,7 +52128,7 @@
   },
   {
     "name": "Trichlorfluormethan",
-    "name_en": "Chlorine",
+    "name_en": "Trichlorofluoromethane",
     "formula": "CCl3F",
     "cas": "000075-69-4",
     "concentration": "",
@@ -52185,7 +52185,7 @@
   },
   {
     "name": "Trichlorphenol",
-    "name_en": "Chlorine",
+    "name_en": "Trichlorophenol",
     "formula": "C6H3Cl3O",
     "cas": "",
     "concentration": "",
@@ -52242,7 +52242,7 @@
   },
   {
     "name": "Trichlortrifluorethan",
-    "name_en": "Chlorine",
+    "name_en": "Trichlorotrifluoroethane",
     "formula": "C2Cl3F3",
     "cas": "000076-13-1",
     "concentration": "",
@@ -52299,7 +52299,7 @@
   },
   {
     "name": "Triethanolamin (TEA)",
-    "name_en": "Ethanol",
+    "name_en": "Triethanolamine",
     "formula": "C6H15NO3",
     "cas": "000102-71-6",
     "concentration": "techn. rein",
@@ -52413,7 +52413,7 @@
   },
   {
     "name": "Trifluortrichlorethan",
-    "name_en": "Chlorine",
+    "name_en": "Trifluorotrichloroethane",
     "formula": "C2Cl3F3",
     "cas": "",
     "concentration": "100 %",
@@ -52584,7 +52584,7 @@
   },
   {
     "name": "Triisopropylbenzol",
-    "name_en": "Benzene",
+    "name_en": "Triisopropylbenzene",
     "formula": "C15H24",
     "cas": "000717-74-8",
     "concentration": "",
@@ -52755,7 +52755,7 @@
   },
   {
     "name": "Trinatriumphosphat",
-    "name_en": "Sodium",
+    "name_en": "Trisodium Phosphate",
     "formula": "Na3PO4",
     "cas": "007601-54-9",
     "concentration": "",
@@ -52926,7 +52926,7 @@
   },
   {
     "name": "Turbinenöl (Mineralölbasis)",
-    "name_en": "Mineral Oil",
+    "name_en": "Turbine Oil (Mineral-based)",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -53325,7 +53325,7 @@
   },
   {
     "name": "Vinylidenchlorid",
-    "name_en": "Chlorine",
+    "name_en": "Vinylidene Chloride",
     "formula": "C2H2Cl2",
     "cas": "000075-35-4",
     "concentration": "",
@@ -53838,7 +53838,7 @@
   },
   {
     "name": "Wasserglas",
-    "name_en": "Water",
+    "name_en": "Sodium Silicate (Water Glass)",
     "formula": "Na2Si3O7",
     "cas": "001344-09-8",
     "concentration": "gesättigt",
@@ -53895,7 +53895,7 @@
   },
   {
     "name": "Wasserstoff",
-    "name_en": "Water",
+    "name_en": "Hydrogen",
     "formula": "H2",
     "cas": "001333-74-0",
     "concentration": "techn. rein",
@@ -54294,7 +54294,7 @@
   },
   {
     "name": "Weingeist",
-    "name_en": "Wine",
+    "name_en": "Ethyl Alcohol",
     "formula": "C2H6O",
     "cas": "",
     "concentration": "50 %",
@@ -54351,7 +54351,7 @@
   },
   {
     "name": "Weingeist",
-    "name_en": "Wine",
+    "name_en": "Ethyl Alcohol",
     "formula": "C2H6O",
     "cas": "",
     "concentration": "96 %",
@@ -54408,7 +54408,7 @@
   },
   {
     "name": "Weinsäure",
-    "name_en": "Wine",
+    "name_en": "Tartaric Acid",
     "formula": "C4H6O6",
     "cas": "000087-69-4",
     "concentration": "wässrig",
@@ -54465,7 +54465,7 @@
   },
   {
     "name": "Weinsäure",
-    "name_en": "Wine",
+    "name_en": "Tartaric Acid",
     "formula": "C4H6O6",
     "cas": "000087-69-4",
     "concentration": "",
@@ -55662,7 +55662,7 @@
   },
   {
     "name": "Zinn-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Tin(II) Chloride",
     "formula": "SnCl2",
     "cas": "007772-99-8",
     "concentration": "wässrig",
@@ -55719,7 +55719,7 @@
   },
   {
     "name": "Zinn-(II)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Tin(II) Chloride",
     "formula": "SnCl2",
     "cas": "007772-99-8",
     "concentration": "gesättigt",
@@ -55776,7 +55776,7 @@
   },
   {
     "name": "Zinn-(IV)-chlorid",
-    "name_en": "Chlorine",
+    "name_en": "Tin(IV) Chloride",
     "formula": "SnCl4",
     "cas": "007646-78-8",
     "concentration": "wässrig",
