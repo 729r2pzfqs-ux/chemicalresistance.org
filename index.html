@@ -249,6 +249,21 @@
         "NBR": { name: "NBR", full: "Nitrile Rubber", type: "Elastomer" },
     };
 
+    // Group chemicals by name_en (or name if no English name)
+    function getChemicalKey(c) {
+        return (c.name_en || c.name).toLowerCase();
+    }
+
+    // Build grouped index: { "sulfuric acid": [idx1, idx2, idx3...] }
+    const chemicalGroups = {};
+    chemicals.forEach((c, idx) => {
+        const key = getChemicalKey(c);
+        if (!chemicalGroups[key]) {
+            chemicalGroups[key] = [];
+        }
+        chemicalGroups[key].push(idx);
+    });
+
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     const resultsSection = document.getElementById('results');
@@ -260,24 +275,43 @@
             return;
         }
 
-        const matches = chemicals.filter(c => 
-            c.name.toLowerCase().includes(query) ||
-            (c.name_en && c.name_en.toLowerCase().includes(query)) ||
-            (c.cas && c.cas.includes(query)) ||
-            (c.formula && c.formula.toLowerCase().includes(query))
-        ).slice(0, 15);
+        // Find matching chemicals
+        const matchingKeys = new Set();
+        const matchInfo = {};
+        
+        chemicals.forEach((c, idx) => {
+            const matches = 
+                c.name.toLowerCase().includes(query) ||
+                (c.name_en && c.name_en.toLowerCase().includes(query)) ||
+                (c.cas && c.cas.includes(query)) ||
+                (c.formula && c.formula.toLowerCase().includes(query));
+            
+            if (matches) {
+                const key = getChemicalKey(c);
+                matchingKeys.add(key);
+                if (!matchInfo[key]) {
+                    matchInfo[key] = { chem: c, indices: chemicalGroups[key] };
+                }
+            }
+        });
 
-        if (matches.length > 0) {
-            searchResults.innerHTML = matches.map(c => {
+        const uniqueMatches = Array.from(matchingKeys).slice(0, 15);
+
+        if (uniqueMatches.length > 0) {
+            searchResults.innerHTML = uniqueMatches.map(key => {
+                const info = matchInfo[key];
+                const c = info.chem;
+                const count = info.indices.length;
                 const displayName = c.name_en || c.name;
                 const subtitle = c.name_en ? c.name : '';
+                
                 return `
-                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-idx="${chemicals.indexOf(c)}">
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${key}">
                         <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}</div>
-                        <div class="text-sm text-gray-500 flex gap-2">
+                        <div class="text-sm text-gray-500 flex gap-2 flex-wrap">
                             ${subtitle ? `<span>${subtitle}</span>` : ''}
                             ${c.cas ? `<span class="text-blue-600">CAS: ${c.cas}</span>` : ''}
-                            ${c.concentration ? `<span class="text-amber-600">${c.concentration}</span>` : ''}
+                            ${count > 1 ? `<span class="text-emerald-600">${count} concentrations</span>` : ''}
                         </div>
                     </div>
                 `;
@@ -290,10 +324,11 @@
     });
 
     searchResults.addEventListener('click', (e) => {
-        const item = e.target.closest('[data-idx]');
+        const item = e.target.closest('[data-key]');
         if (item) {
-            const chem = chemicals[parseInt(item.dataset.idx)];
-            showResults(chem);
+            const key = item.dataset.key;
+            const indices = chemicalGroups[key];
+            showResultsForGroup(indices);
             searchResults.classList.add('hidden');
         }
     });
@@ -311,19 +346,57 @@
         searchInput.dispatchEvent(new Event('input'));
     }
 
-    function showResults(chem) {
-        const displayName = chem.name_en || chem.name;
-        document.getElementById('chemName').textContent = displayName;
-        document.getElementById('chemNameDe').textContent = chem.name_en ? `(${chem.name})` : '';
-        document.getElementById('chemFormula').textContent = chem.formula || '';
-        document.getElementById('chemFormula').style.display = chem.formula ? 'inline' : 'none';
-        document.getElementById('chemCas').textContent = chem.cas ? `CAS: ${chem.cas}` : '';
-        document.getElementById('chemCas').style.display = chem.cas ? 'inline' : 'none';
-        document.getElementById('chemConc').textContent = chem.concentration || '';
-        document.getElementById('chemConc').style.display = chem.concentration ? 'inline' : 'none';
+    let currentGroupIndices = [];
+    let currentSelectedIdx = 0;
 
+    function showResultsForGroup(indices) {
+        currentGroupIndices = indices;
+        currentSelectedIdx = 0;
+        
+        const firstChem = chemicals[indices[0]];
+        const displayName = firstChem.name_en || firstChem.name;
+        
+        document.getElementById('chemName').textContent = displayName;
+        document.getElementById('chemNameDe').textContent = firstChem.name_en ? `(${firstChem.name})` : '';
+        document.getElementById('chemFormula').textContent = firstChem.formula || '';
+        document.getElementById('chemFormula').style.display = firstChem.formula ? 'inline' : 'none';
+        document.getElementById('chemCas').textContent = firstChem.cas ? `CAS: ${firstChem.cas}` : '';
+        document.getElementById('chemCas').style.display = firstChem.cas ? 'inline' : 'none';
+        
         searchInput.value = displayName;
 
+        // Show concentration selector if multiple
+        const concContainer = document.getElementById('chemConc');
+        if (indices.length > 1) {
+            const options = indices.map((idx, i) => {
+                const c = chemicals[idx];
+                const label = c.concentration || 'General';
+                return `<option value="${i}" ${i === 0 ? 'selected' : ''}>${label}</option>`;
+            }).join('');
+            concContainer.innerHTML = `
+                <select id="concSelect" class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded border-0 cursor-pointer">
+                    ${options}
+                </select>
+            `;
+            concContainer.style.display = 'inline';
+            document.getElementById('concSelect').addEventListener('change', (e) => {
+                currentSelectedIdx = parseInt(e.target.value);
+                updateRatingsTable();
+            });
+        } else {
+            const conc = firstChem.concentration;
+            concContainer.textContent = conc || '';
+            concContainer.style.display = conc ? 'inline' : 'none';
+        }
+
+        updateRatingsTable();
+        resultsSection.classList.remove('hidden');
+        resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        lucide.createIcons();
+    }
+
+    function updateRatingsTable() {
+        const chem = chemicals[currentGroupIndices[currentSelectedIdx]];
         const tbody = document.getElementById('ratingsTable');
         const recommended = [];
         
@@ -362,10 +435,6 @@
         document.getElementById('recommendation').querySelector('i').className = recommended.length > 0
             ? 'w-5 h-5 text-emerald-600'
             : 'w-5 h-5 text-amber-600';
-
-        resultsSection.classList.remove('hidden');
-        resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        lucide.createIcons();
     }
 
     function clearResults() {
