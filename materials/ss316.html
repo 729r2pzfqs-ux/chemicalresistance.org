@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stainless Steel 316 Chemical Resistance Chart | SS316 Compatibility</title>
+    <meta name="description" content="Complete SS 316 stainless steel chemical resistance chart. Find which chemicals are compatible with 316 grade steel (1.4401). Free searchable database.">
+    <link rel="canonical" href="https://chemicalresistance.org/materials/ss316">
+    
+    <meta property="og:title" content="Stainless Steel 316 Chemical Resistance Chart">
+    <meta property="og:description" content="Complete compatibility data for SS 316 stainless steel. The marine-grade steel for corrosive environments.">
+    <meta property="og:type" content="article">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .rating-A { background: #22c55e; color: white; }
+        .rating-B { background: #3b82f6; color: white; }
+        .rating-C { background: #f59e0b; color: white; }
+        .rating-D { background: #ef4444; color: white; }
+        .rating-NR { background: #e5e7eb; color: #9ca3af; }
+    </style>
+</head>
+<body class="text-gray-700 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+                    <i data-lucide="flask-conical" class="w-5 h-5 text-white"></i>
+                </div>
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500">Chemical compatibility database</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-4 text-sm">
+                <a href="../index.html" class="text-gray-600 hover:text-gray-900">← Back to Search</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-slate-100 to-white px-4 py-8 md:py-12">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-2 text-sm text-slate-600 mb-3">
+                <a href="../index.html" class="hover:underline">Home</a>
+                <span>›</span>
+                <span>Materials</span>
+                <span>›</span>
+                <span class="text-gray-600">SS 316</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                Stainless Steel 316 Chemical Resistance
+            </h1>
+            <p class="text-lg text-gray-600 mb-4">
+                SS 316 (1.4401/1.4404) is the "marine grade" stainless steel with excellent corrosion resistance. 
+                The molybdenum content provides superior protection against chlorides and pitting compared to 304.
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">900+ chemicals tested</span>
+                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Marine grade</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="px-4 py-6 border-b border-gray-200 bg-white">
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div>
+                <div class="text-2xl font-bold text-emerald-600" id="statA">—</div>
+                <div class="text-sm text-gray-500">Excellent (A)</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-blue-600" id="statB">—</div>
+                <div class="text-sm text-gray-500">Good (B)</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-amber-600" id="statC">—</div>
+                <div class="text-sm text-gray-500">Limited (C)</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-red-600" id="statD">—</div>
+                <div class="text-sm text-gray-500">Not Recommended (D)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Table -->
+    <section class="px-4 py-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Filters -->
+            <div class="bg-white rounded-xl border border-gray-200 p-4 mb-6">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Search chemicals</label>
+                        <input type="text" id="searchInput" placeholder="e.g. Sulfuric acid, Sodium chloride..." 
+                            class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 focus:ring-2 focus:ring-slate-100 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Rating filter</label>
+                        <select id="ratingFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 outline-none">
+                            <option value="all">All ratings</option>
+                            <option value="A">A - Excellent</option>
+                            <option value="B">B - Good</option>
+                            <option value="AB">A & B (Compatible)</option>
+                            <option value="C">C - Limited</option>
+                            <option value="D">D - Not recommended</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Temperature</label>
+                        <select id="tempFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 outline-none">
+                            <option value="c20">20°C</option>
+                            <option value="c50">50°C</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results count -->
+            <div class="mb-4 text-sm text-gray-500">
+                Showing <span id="resultCount" class="font-semibold text-gray-700">0</span> chemicals
+            </div>
+
+            <!-- Table -->
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-gray-50 text-left text-sm">
+                                <th class="py-3 px-4 font-semibold text-gray-600">Chemical</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">Concentration</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">CAS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="chemTable" class="divide-y divide-gray-100">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Load more -->
+            <div id="loadMore" class="mt-4 text-center hidden">
+                <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 transition-colors">
+                    Load more chemicals
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Properties -->
+    <section class="px-4 py-12 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">SS 316 Properties</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Grade</span>
+                        <span class="font-medium text-gray-900">AISI 316 / 1.4401 (EU)</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Low Carbon Variant</span>
+                        <span class="font-medium text-gray-900">316L / 1.4404</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Max Temperature</span>
+                        <span class="font-medium text-gray-900">870°C (1600°F) intermittent</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Molybdenum Content</span>
+                        <span class="font-medium text-gray-900">2-3% (pitting resistance)</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Density</span>
+                        <span class="font-medium text-gray-900">8.0 g/cm³</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Magnetic</span>
+                        <span class="font-medium text-gray-900">No (austenitic)</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Weldable</span>
+                        <span class="font-medium text-gray-900">Yes (use 316L for welding)</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Cost</span>
+                        <span class="font-medium text-gray-900">Moderate-High</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Uses -->
+    <section class="px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Common Applications</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <div class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center mb-3">
+                        <i data-lucide="ship" class="w-5 h-5 text-slate-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Marine Equipment</h3>
+                    <p class="text-sm text-gray-600">Boat fittings, coastal structures, offshore platforms</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
+                        <i data-lucide="pill" class="w-5 h-5 text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Pharmaceutical</h3>
+                    <p class="text-sm text-gray-600">Process vessels, reactors, cleanroom equipment</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-3">
+                        <i data-lucide="utensils" class="w-5 h-5 text-emerald-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Food Processing</h3>
+                    <p class="text-sm text-gray-600">Tanks, conveyors, brewing equipment, dairy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Avoid -->
+    <section class="px-4 py-12 bg-red-50 border-t border-red-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">⚠️ Not Recommended For</h2>
+            <p class="text-gray-600 mb-4">SS 316 can corrode when exposed to:</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Hydrochloric acid (any concentration)
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Hot concentrated sulfuric acid
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Ferric chloride solutions
+                    </li>
+                </ul>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Bleach / sodium hypochlorite
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Seawater at elevated temperatures
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                        Reducing acids without oxidizers
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-4 p-3 bg-white rounded-lg border border-red-200">
+                <p class="text-sm text-gray-600">
+                    <strong>Tip:</strong> For highly aggressive chloride environments, consider upgrading to 
+                    duplex stainless steel (2205) or super-austenitic grades (904L, 254 SMO).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare -->
+    <section class="px-4 py-12 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Compare Materials</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <a href="ss304.html" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">SS 304</div>
+                    <div class="text-xs text-gray-500">Budget option</div>
+                </a>
+                <a href="hdpe.html" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">HDPE</div>
+                    <div class="text-xs text-gray-500">Plastic alternative</div>
+                </a>
+                <a href="ptfe.html" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">PTFE</div>
+                    <div class="text-xs text-gray-500">Lined option</div>
+                </a>
+                <a href="viton.html" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">Viton®</div>
+                    <div class="text-xs text-gray-500">For seals</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>© 2026 ChemicalResistance.org — Free chemical compatibility tool</p>
+            <p class="mt-2">Data sources: Bürkle, INEOS, industry standards</p>
+        </div>
+    </footer>
+
+    <script>
+    const MATERIAL = 'SS316';
+    let chemicals = [];
+    let filteredChemicals = [];
+    let displayCount = 50;
+
+    fetch('../data/chemicals_burkle.json')
+        .then(r => r.json())
+        .then(data => {
+            chemicals = data.filter(c => c.ratings[MATERIAL] && (c.ratings[MATERIAL].c20 || c.ratings[MATERIAL].c50));
+            updateStats();
+            applyFilters();
+        });
+
+    function updateStats() {
+        const stats = { A: 0, B: 0, C: 0, D: 0 };
+        chemicals.forEach(c => {
+            const r = c.ratings[MATERIAL]?.c20;
+            if (stats[r] !== undefined) stats[r]++;
+        });
+        document.getElementById('statA').textContent = stats.A;
+        document.getElementById('statB').textContent = stats.B;
+        document.getElementById('statC').textContent = stats.C;
+        document.getElementById('statD').textContent = stats.D;
+    }
+
+    function applyFilters() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const rating = document.getElementById('ratingFilter').value;
+        const temp = document.getElementById('tempFilter').value;
+
+        filteredChemicals = chemicals.filter(c => {
+            const matchesSearch = !query || 
+                c.name.toLowerCase().includes(query) ||
+                (c.name_en && c.name_en.toLowerCase().includes(query)) ||
+                (c.cas && c.cas.includes(query));
+            
+            const r = c.ratings[MATERIAL]?.[temp];
+            let matchesRating = true;
+            if (rating === 'A') matchesRating = r === 'A';
+            else if (rating === 'B') matchesRating = r === 'B';
+            else if (rating === 'AB') matchesRating = r === 'A' || r === 'B';
+            else if (rating === 'C') matchesRating = r === 'C';
+            else if (rating === 'D') matchesRating = r === 'D';
+
+            return matchesSearch && matchesRating;
+        });
+
+        const order = { A: 0, B: 1, C: 2, D: 3, NR: 4 };
+        filteredChemicals.sort((a, b) => {
+            const ra = a.ratings[MATERIAL]?.[temp] || 'NR';
+            const rb = b.ratings[MATERIAL]?.[temp] || 'NR';
+            return (order[ra] ?? 5) - (order[rb] ?? 5);
+        });
+
+        displayCount = 50;
+        renderTable();
+    }
+
+    function renderTable() {
+        const tbody = document.getElementById('chemTable');
+        const temp = document.getElementById('tempFilter').value;
+        const toShow = filteredChemicals.slice(0, displayCount);
+        
+        document.getElementById('resultCount').textContent = filteredChemicals.length;
+        document.getElementById('loadMore').classList.toggle('hidden', displayCount >= filteredChemicals.length);
+
+        tbody.innerHTML = toShow.map(c => {
+            const name = c.name_en || c.name;
+            const r20 = c.ratings[MATERIAL]?.c20 || 'NR';
+            const r50 = c.ratings[MATERIAL]?.c50 || 'NR';
+            const conc = c.concentration || '—';
+            const cas = c.cas || '—';
+
+            return `
+                <tr class="hover:bg-gray-50">
+                    <td class="py-3 px-4">
+                        <div class="font-medium text-gray-900">${name}</div>
+                        ${c.name_en ? `<div class="text-xs text-gray-500">${c.name}</div>` : ''}
+                    </td>
+                    <td class="py-3 px-4 text-sm text-gray-600">${conc}</td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${r20} px-2 py-1 rounded text-xs font-bold">${r20}</span>
+                    </td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${r50} px-2 py-1 rounded text-xs font-bold">${r50}</span>
+                    </td>
+                    <td class="py-3 px-4 text-sm text-gray-500 font-mono">${cas}</td>
+                </tr>
+            `;
+        }).join('');
+    }
+
+    function loadMore() {
+        displayCount += 50;
+        renderTable();
+    }
+
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+    document.getElementById('ratingFilter').addEventListener('change', applyFilters);
+    document.getElementById('tempFilter').addEventListener('change', applyFilters);
+
+    lucide.createIcons();
+    </script>
+</body>
+</html>
