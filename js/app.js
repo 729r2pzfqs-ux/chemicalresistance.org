@@ -250,11 +250,10 @@ function setupEventListeners() {
     const langSelect = document.getElementById('langSelect');
     const ratingFilter = document.getElementById('ratingFilter');
 
-    // Search input
+    // Search input - only trigger on text search, not material selection
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        const selectedMaterials = getSelectedMaterials();
-        if (query.length < 2 && selectedMaterials.length === 0) {
+        if (query.length < 2) {
             searchResults.classList.add('hidden');
             return;
         }
@@ -262,31 +261,20 @@ function setupEventListeners() {
         searchResults.classList.remove('hidden');
     });
 
-    // Material checkbox changes - use event delegation for dynamic elements
+    // Material checkbox changes - only update the results TABLE, don't trigger search
     document.addEventListener('change', (e) => {
         if (e.target.matches('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]')) {
-            const query = searchInput.value.toLowerCase().trim();
-            const selectedMaterials = getSelectedMaterials();
-            if (selectedMaterials.length > 0 || query.length >= 2) {
-                showSearchResults(query);
-                searchResults.classList.remove('hidden');
-            } else {
-                searchResults.classList.add('hidden');
-            }
-            // Also update the results table if showing
+            // Update the results table if a chemical is displayed
             if (currentGroupIndices.length > 0) {
                 updateRatingsTable();
             }
         }
     });
 
-    // Rating filter change  
+    // Rating filter change - update the table
     ratingFilter?.addEventListener('change', () => {
-        const query = searchInput.value.toLowerCase().trim();
-        const selectedMaterials = getSelectedMaterials();
-        if (selectedMaterials.length > 0 || query.length >= 2) {
-            showSearchResults(query);
-            searchResults.classList.remove('hidden');
+        if (currentGroupIndices.length > 0) {
+            updateRatingsTable();
         }
     });
 
@@ -320,9 +308,6 @@ function setupEventListeners() {
 
 function showSearchResults(query) {
     const searchResults = document.getElementById('searchResults');
-    const ratingFilter = document.getElementById('ratingFilter');
-    const selectedMaterials = getSelectedMaterials();
-    const selectedRating = ratingFilter?.value || '12';
     
     const matchingKeys = new Set();
     const matchInfo = {};
@@ -346,33 +331,15 @@ function showSearchResults(query) {
     chemicals.forEach((c, idx) => {
         const displayName = getDisplayName(c).toLowerCase();
         
-        // Text search match (or no query if filtering by material)
-        const textMatches = !query || 
+        // Text search match only
+        const textMatches = 
             c.name.toLowerCase().includes(query) ||
             c.name.toLowerCase().includes(germanQuery) ||
             displayName.includes(query) ||
             (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(query));
         
-        // Material filter match - ALL selected materials must have good rating
-        let materialMatches = true;
-        if (selectedMaterials.length > 0 && c.ratings) {
-            for (const mat of selectedMaterials) {
-                const rating = c.ratings[mat]?.c20;
-                if (!rating || rating === '0') {
-                    materialMatches = false;
-                    break;
-                } else if (selectedRating === '1' && rating !== '1') {
-                    materialMatches = false;
-                    break;
-                } else if (selectedRating === '12' && !['1', '2'].includes(rating)) {
-                    materialMatches = false;
-                    break;
-                }
-            }
-        }
-        
-        if (textMatches && materialMatches) {
+        if (textMatches) {
             const key = getChemicalKey(c);
             matchingKeys.add(key);
             if (!matchInfo[key]) {
@@ -389,33 +356,15 @@ function showSearchResults(query) {
             const c = info.chem;
             const displayName = getDisplayName(c);
             
-            // Show rating badges for all selected materials
-            let ratingBadges = '';
-            if (selectedMaterials.length > 0 && c.ratings) {
-                ratingBadges = selectedMaterials.map(mat => {
-                    if (c.ratings[mat]) {
-                        const grade = ratingToGrade(c.ratings[mat].c20);
-                        const matName = materialInfo[mat]?.name || mat;
-                        return `<span class="rating-${grade} px-1.5 py-0.5 rounded text-xs font-bold" title="${matName}">${matName.split(' ')[0]}:${grade}</span>`;
-                    }
-                    return '';
-                }).filter(Boolean).join(' ');
-            }
-            
             return `
-                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0 flex items-center justify-between gap-2" data-key="${key}">
-                    <div class="font-medium text-gray-900 truncate">${highlightMatch(displayName, query)}</div>
-                    <div class="flex gap-1 flex-shrink-0">${ratingBadges}</div>
+                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${key}">
+                    <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}</div>
                 </div>
             `;
         }).join('');
         searchResults.classList.remove('hidden');
     } else {
-        const matNames = selectedMaterials.map(m => materialInfo[m]?.name || m).join(' + ');
-        const msg = selectedMaterials.length > 0 
-            ? `No chemicals with ${selectedRating === '1' ? 'A' : 'A/B'} rating for: ${matNames}`
-            : 'No chemicals found';
-        searchResults.innerHTML = `<div class="px-4 py-3 text-gray-500">${msg}</div>`;
+        searchResults.innerHTML = `<div class="px-4 py-3 text-gray-500">No chemicals found</div>`;
         searchResults.classList.remove('hidden');
     }
 }
@@ -529,6 +478,8 @@ function updateRatingsTable() {
     const tbody = document.getElementById('ratingsTable');
     const recommended = [];
     const selectedMaterials = getSelectedMaterials();
+    const ratingFilter = document.getElementById('ratingFilter');
+    const minRating = ratingFilter?.value || '12'; // '1' = A only, '12' = A or B
     
     // Get materials to show - either selected ones or all
     let materialsToShow;
@@ -538,37 +489,47 @@ function updateRatingsTable() {
             .filter(mat => chem.ratings[mat])
             .map(mat => [mat, chem.ratings[mat]]);
     } else {
-        // Show all materials, sorted by rating
-        materialsToShow = Object.entries(chem.ratings).sort((a, b) => {
-            const orderA = ratingOrder[a[1].c20] ?? 4;
-            const orderB = ratingOrder[b[1].c20] ?? 4;
-            return orderA - orderB;
-        });
+        // Show all materials, sorted by rating, filtered by rating preference
+        materialsToShow = Object.entries(chem.ratings)
+            .filter(([mat, rating]) => {
+                if (minRating === '1') return rating.c20 === '1';
+                if (minRating === '12') return ['1', '2'].includes(rating.c20);
+                return true;
+            })
+            .sort((a, b) => {
+                const orderA = ratingOrder[a[1].c20] ?? 4;
+                const orderB = ratingOrder[b[1].c20] ?? 4;
+                return orderA - orderB;
+            });
     }
 
-    tbody.innerHTML = materialsToShow.map(([mat, rating]) => {
-        const info = materialInfo[mat] || { name: mat, full: mat, type: '' };
-        const grade20 = ratingToGrade(rating.c20);
-        const grade50 = ratingToGrade(rating.c50);
-        
-        if (grade20 === 'A') recommended.push(info.name);
-        
-        return `
-            <tr class="border-b border-gray-100 hover:bg-gray-50">
-                <td class="py-3 px-4">
-                    <div class="font-medium text-gray-900">${info.name}</div>
-                    <div class="text-xs text-gray-500">${info.full}</div>
-                </td>
-                <td class="py-3 px-4 text-center">
-                    <span class="rating-${grade20} px-3 py-1 rounded text-sm font-bold">${grade20}</span>
-                </td>
-                <td class="py-3 px-4 text-center">
-                    <span class="rating-${grade50} px-3 py-1 rounded text-sm font-bold">${grade50}</span>
-                </td>
-                <td class="py-3 px-4 text-gray-500 text-sm">${info.type}</td>
-            </tr>
-        `;
-    }).join('');
+    if (materialsToShow.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-500">No materials with ${minRating === '1' ? 'A' : 'A/B'} rating for this chemical. Try changing the filter.</td></tr>`;
+    } else {
+        tbody.innerHTML = materialsToShow.map(([mat, rating]) => {
+            const info = materialInfo[mat] || { name: mat, full: mat, type: '' };
+            const grade20 = ratingToGrade(rating.c20);
+            const grade50 = ratingToGrade(rating.c50);
+            
+            if (grade20 === 'A') recommended.push(info.name);
+            
+            return `
+                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                    <td class="py-3 px-4">
+                        <div class="font-medium text-gray-900">${info.name}</div>
+                        <div class="text-xs text-gray-500">${info.full}</div>
+                    </td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${grade20} px-3 py-1 rounded text-sm font-bold">${grade20}</span>
+                    </td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${grade50} px-3 py-1 rounded text-sm font-bold">${grade50}</span>
+                    </td>
+                    <td class="py-3 px-4 text-gray-500 text-sm">${info.type}</td>
+                </tr>
+            `;
+        }).join('');
+    }
 
     // Update recommendations
     const recMaterials = document.getElementById('recMaterials');
