@@ -224,7 +224,7 @@ function setupEventListeners() {
 
     // Language switch
     langSelect?.addEventListener('change', () => {
-        if (langSelect.value === 'de') {
+        if (langSelect.value === 'en') {
             window.location.href = 'index.html';
         }
     });
