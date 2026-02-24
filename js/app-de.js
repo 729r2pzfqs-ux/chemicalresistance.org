@@ -307,14 +307,19 @@ function showSearchResults(query) {
         
         if (matches) {
             const displayKey = displayNameLower;
+            const hasRealRatings = c.ratings && Object.values(c.ratings).some(r => r.c20 !== '0');
+            
             if (!seenDisplayNames.has(displayKey)) {
                 seenDisplayNames.add(displayKey);
                 const key = getChemicalKey(c);
-                matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key };
-            } else if (c.hazard && !matchInfo[displayKey].chem.hazard) {
-                // Prefer entry WITH hazard data
-                const key = getChemicalKey(c);
-                matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key };
+                matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key, hasRealRatings };
+            } else {
+                // Prefer entries with real ratings data over redirect/empty entries
+                const existingHasRatings = matchInfo[displayKey].hasRealRatings;
+                if (hasRealRatings && !existingHasRatings) {
+                    const key = getChemicalKey(c);
+                    matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key, hasRealRatings };
+                }
             }
         }
     });
