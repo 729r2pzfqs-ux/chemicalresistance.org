@@ -99,7 +99,10 @@
                                 <span id="chemNameDe" class="text-gray-500">Aceton</span>
                                 <span id="chemFormula" class="bg-gray-200 px-2 py-0.5 rounded font-mono">C₃H₆O</span>
                                 <span id="chemCas" class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded">CAS: 67-64-1</span>
-                                <span id="chemConc" class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded" style="display:none"></span>
+                                <span id="chemConcWrapper" class="flex items-center gap-1" style="display:none">
+                                    <span class="text-gray-500">Concentration:</span>
+                                    <span id="chemConc" class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded"></span>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -496,6 +499,7 @@
 
         // Show concentration selector if multiple
         const concContainer = document.getElementById('chemConc');
+        const concWrapper = document.getElementById('chemConcWrapper');
         if (indices.length > 1) {
             // Sort by concentration (numeric extraction)
             const sortedIndices = [...indices].sort((a, b) => {
@@ -517,7 +521,7 @@
                     ${options}
                 </select>
             `;
-            concContainer.style.display = 'inline';
+            concWrapper.style.display = 'flex';
             document.getElementById('concSelect').addEventListener('change', (e) => {
                 currentSelectedIdx = parseInt(e.target.value);
                 updateRatingsTable();
@@ -525,7 +529,7 @@
         } else {
             const conc = translateConc(firstChem.concentration);
             concContainer.textContent = conc !== 'Pure / Undiluted' ? conc : '';
-            concContainer.style.display = conc !== 'Pure / Undiluted' ? 'inline' : 'none';
+            concWrapper.style.display = conc !== 'Pure / Undiluted' ? 'flex' : 'none';
         }
 
         updateRatingsTable();
@@ -597,8 +601,9 @@
         document.getElementById('chemFormula').textContent = 'C₃H₆O';
         document.getElementById('chemCas').textContent = 'CAS: 67-64-1';
         const concContainer = document.getElementById('chemConc');
+        const concWrapper = document.getElementById('chemConcWrapper');
         concContainer.textContent = '';
-        concContainer.style.display = 'none';
+        concWrapper.style.display = 'none';
         document.getElementById('recMaterials').textContent = 'HDPE, PA, PP, SS304, EPDM, NBR';
         const recommendation = document.getElementById('recommendation');
         recommendation.className = 'p-4 bg-emerald-50 border-b border-emerald-100';
