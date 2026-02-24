@@ -414,7 +414,17 @@
     }
 
     function updateRatingsTable() {
+        console.log('updateRatingsTable: currentGroupIndices=', currentGroupIndices, 'currentSelectedIdx=', currentSelectedIdx);
         const chem = chemicals[currentGroupIndices[currentSelectedIdx]];
+        console.log('updateRatingsTable: chem=', chem);
+        if (!chem) {
+            console.error('No chemical found!');
+            return;
+        }
+        if (!chem.ratings) {
+            console.error('Chemical has no ratings:', chem);
+            return;
+        }
         const tbody = document.getElementById('ratingsTable');
         const recommended = [];
         
@@ -444,15 +454,31 @@
             `;
         }).join('');
 
-        document.getElementById('recMaterials').textContent = recommended.length > 0 
-            ? recommended.join(', ') 
-            : 'Check ratings below - limited compatibility';
-        document.getElementById('recommendation').className = recommended.length > 0
-            ? 'p-4 bg-emerald-50 border-b border-emerald-100'
-            : 'p-4 bg-amber-50 border-b border-amber-100';
-        document.getElementById('recommendation').querySelector('i').className = recommended.length > 0
-            ? 'w-5 h-5 text-emerald-600'
-            : 'w-5 h-5 text-amber-600';
+        const recMaterials = document.getElementById('recMaterials');
+        const recommendation = document.getElementById('recommendation');
+        
+        console.log('recMaterials element:', recMaterials);
+        console.log('recommendation element:', recommendation);
+        
+        if (recMaterials) {
+            recMaterials.textContent = recommended.length > 0 
+                ? recommended.join(', ') 
+                : 'Check ratings below - limited compatibility';
+        }
+        
+        if (recommendation) {
+            recommendation.className = recommended.length > 0
+                ? 'p-4 bg-emerald-50 border-b border-emerald-100'
+                : 'p-4 bg-amber-50 border-b border-amber-100';
+            const icon = recommendation.querySelector('i');
+            console.log('icon element:', icon);
+            if (icon) {
+                icon.className = recommended.length > 0
+                    ? 'w-5 h-5 text-emerald-600'
+                    : 'w-5 h-5 text-amber-600';
+            }
+        }
+        console.log('updateRatingsTable complete');
     }
 
     function clearResults() {
