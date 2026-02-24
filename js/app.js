@@ -452,7 +452,7 @@ function showResultsForGroup(indices) {
             </select>
             <span class="text-xs text-amber-600 ml-2">← Select to update table</span>
         `;
-        concWrapper.style.display = 'block';
+        concWrapper.style.display = 'inline-flex';
         
         document.getElementById('concSelect').addEventListener('change', (e) => {
             currentSelectedIdx = parseInt(e.target.value);
@@ -462,7 +462,7 @@ function showResultsForGroup(indices) {
         const conc = translateConc(firstChem.concentration);
         if (conc && conc !== 'Pure / Undiluted') {
             concContainer.innerHTML = `<span class="font-semibold text-amber-800">Concentration:</span> <span class="font-bold text-amber-900">${conc}</span>`;
-            concWrapper.style.display = 'block';
+            concWrapper.style.display = 'inline-flex';
         } else {
             concWrapper.style.display = 'none';
         }

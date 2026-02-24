@@ -158,18 +158,16 @@
                     <div class="flex items-start justify-between">
                         <div>
                             <h2 id="chemName" class="text-2xl font-bold text-gray-900">Lädt...</h2>
-                            <div class="flex flex-wrap gap-3 mt-2 text-sm">
+                            <div class="flex flex-wrap items-center gap-3 mt-2 text-sm">
                                 <span id="chemNameDe" class="text-gray-500"></span>
                                 <span id="chemFormula" class="text-gray-500 font-mono text-sm" style="display:none"></span>
                                 <span id="chemCas" class="text-blue-600 text-sm" style="display:none"></span>
-                                <span id="chemHazard" class="bg-orange-100 text-orange-700 px-2 py-0.5 rounded" style="display:none"></span>
-                                <span id="chemFlammable" class="bg-red-100 text-red-700 px-2 py-0.5 rounded" style="display:none">🔥 Brennbar</span>
-                                <div id="chemConcWrapper" class="mt-3 p-3 bg-amber-50 border-2 border-amber-300 rounded-lg" style="display:none">
-                                    <div class="flex items-center gap-2">
-                                        <span class="text-amber-600 text-lg">⚗️</span>
-                                        <span id="chemConc"></span>
-                                    </div>
-                                </div>
+                                <span id="chemHazard" class="text-base" style="display:none"></span>
+                                <span id="chemFlammable" class="text-base" style="display:none">🔥</span>
+                                <span id="chemConcWrapper" class="inline-flex items-center gap-1 px-2 py-1 bg-amber-50 border border-amber-300 rounded-lg text-sm" style="display:none">
+                                    <span class="text-amber-600">⚗️</span>
+                                    <span id="chemConc"></span>
+                                </span>
                             </div>
                         </div>
                     </div>
