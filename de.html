@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chemical Resistance Guide | 990+ Chemicals | Free Material Compatibility Tool</title>
-    <meta name="description" content="Free chemical resistance chart with 990+ chemicals. Find compatible materials (HDPE, PP, PTFE, Stainless Steel, Viton) for safe chemical storage and handling.">
-    <link rel="canonical" href="https://chemicalresistance.org/">
+    <title>Chemikalienbeständigkeit | 990+ Chemikalien | Kostenlose Materialverträglichkeit</title>
+    <meta name="description" content="Kostenlose Beständigkeitstabelle für 990+ Chemikalien. Finden Sie kompatible Materialien (HDPE, PP, PTFE, Edelstahl, Viton) für sichere Lagerung und Handhabung.">
+    <link rel="canonical" href="https://chemicalresistance.org/de.html">
     
-    <meta property="og:title" content="Chemical Resistance Guide | 990+ Chemicals">
-    <meta property="og:description" content="Free tool to check material compatibility for chemical storage. 990+ chemicals, 12 materials.">
+    <meta property="og:title" content="Chemikalienbeständigkeit | 990+ Chemikalien">
+    <meta property="og:description" content="Kostenloses Tool zur Prüfung der Materialverträglichkeit. 990+ Chemikalien, 12 Materialien.">
     <meta property="og:type" content="website">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,21 +30,21 @@
     <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2">
+            <a href="/de.html" class="flex items-center gap-2">
                 <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
                     <i data-lucide="flask-conical" class="w-5 h-5 text-white"></i>
                 </div>
                 <div>
                     <div class="font-bold text-gray-900">ChemicalResistance.org</div>
-                    <div class="text-xs text-gray-500">990+ chemicals • 12 materials</div>
+                    <div class="text-xs text-gray-500">990+ Chemikalien • 12 Materialien</div>
                 </div>
             </a>
             <div class="flex items-center gap-4 text-sm">
-                <a href="#guide" class="text-gray-600 hover:text-gray-900 hidden sm:block">Material Guide</a>
-                <a href="#about" class="text-gray-600 hover:text-gray-900 hidden sm:block">About</a>
+                <a href="#guide" class="text-gray-600 hover:text-gray-900 hidden sm:block">Materialübersicht</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900 hidden sm:block">Über uns</a>
                 <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
                     <option value="en">🇬🇧 EN</option>
-                    <option value="de">🇩🇪 DE</option>
+                    <option value="de" selected>🇩🇪 DE</option>
                 </select>
             </div>
         </div>
@@ -54,10 +54,10 @@
     <section class="bg-gradient-to-b from-gray-50 to-white px-4 py-8 md:py-12">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-                Chemical Resistance Lookup
+                Chemikalienbeständigkeit
             </h1>
             <p class="text-gray-600 mb-6">
-                Find the right material for your chemical. Search by name, CAS number, or formula.
+                Finden Sie das richtige Material für Ihre Chemikalie. Suchen Sie nach Name, CAS-Nummer oder Formel.
             </p>
             
             <!-- Search Box -->
@@ -68,7 +68,7 @@
                 <input 
                     type="text" 
                     id="searchInput" 
-                    placeholder="Search: Sulfuric Acid, Acetone, 7664-93-9..."
+                    placeholder="Suche: Schwefelsäure, Aceton, 7664-93-9..."
                     class="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 outline-none transition-all"
                     autocomplete="off"
                 >
@@ -77,11 +77,11 @@
             </div>
             
             <div class="mt-4 flex flex-wrap justify-center gap-2 text-sm">
-                <span class="text-gray-500">Popular:</span>
-                <button onclick="searchFor('Sulfuric Acid')" class="text-emerald-600 hover:underline">Sulfuric Acid</button>
-                <button onclick="searchFor('Sodium Hydroxide')" class="text-emerald-600 hover:underline">Sodium Hydroxide</button>
-                <button onclick="searchFor('Acetone')" class="text-emerald-600 hover:underline">Acetone</button>
-                <button onclick="searchFor('Hydrochloric')" class="text-emerald-600 hover:underline">Hydrochloric Acid</button>
+                <span class="text-gray-500">Beliebte:</span>
+                <button onclick="searchFor('Schwefelsäure')" class="text-emerald-600 hover:underline">Schwefelsäure</button>
+                <button onclick="searchFor('Natriumhydroxid')" class="text-emerald-600 hover:underline">Natriumhydroxid</button>
+                <button onclick="searchFor('Aceton')" class="text-emerald-600 hover:underline">Aceton</button>
+                <button onclick="searchFor('Salzsäure')" class="text-emerald-600 hover:underline">Salzsäure</button>
             </div>
         </div>
     </section>
@@ -112,7 +112,7 @@
                 <div id="recommendation" class="p-4 bg-emerald-50 border-b border-emerald-100">
                     <div class="flex items-center gap-2">
                         <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600"></i>
-                        <span class="font-medium text-emerald-800">Recommended materials:</span>
+                        <span class="font-medium text-emerald-800">Empfohlene Materialien:</span>
                         <span id="recMaterials" class="text-emerald-700"></span>
                     </div>
                 </div>
@@ -123,9 +123,9 @@
                         <thead>
                             <tr class="bg-gray-50 text-left text-sm">
                                 <th class="py-3 px-4 font-semibold text-gray-600">Material</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C<br><span class="font-normal text-gray-400">(68°F)</span></th>
-                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C<br><span class="font-normal text-gray-400">(122°F)</span></th>
-                                <th class="py-3 px-4 font-semibold text-gray-600">Material Type</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">Materialart</th>
                             </tr>
                         </thead>
                         <tbody id="ratingsTable"></tbody>
@@ -135,12 +135,12 @@
                 <!-- Legend -->
                 <div class="p-4 bg-gray-50 border-t border-gray-200">
                     <div class="flex flex-wrap items-center gap-4 text-sm">
-                        <span class="font-medium text-gray-700">Ratings:</span>
-                        <span class="flex items-center gap-1"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> Excellent</span>
-                        <span class="flex items-center gap-1"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> Good</span>
-                        <span class="flex items-center gap-1"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> Limited</span>
-                        <span class="flex items-center gap-1"><span class="rating-D px-2 py-0.5 rounded text-xs font-bold">D</span> Not Recommended</span>
-                        <span class="flex items-center gap-1"><span class="rating-NR px-2 py-0.5 rounded text-xs font-bold">NR</span> No Data</span>
+                        <span class="font-medium text-gray-700">Bewertung:</span>
+                        <span class="flex items-center gap-1"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> Sehr gut</span>
+                        <span class="flex items-center gap-1"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> Gut</span>
+                        <span class="flex items-center gap-1"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> Eingeschränkt</span>
+                        <span class="flex items-center gap-1"><span class="rating-D px-2 py-0.5 rounded text-xs font-bold">D</span> Nicht empfohlen</span>
+                        <span class="flex items-center gap-1"><span class="rating-NR px-2 py-0.5 rounded text-xs font-bold">NR</span> Keine Daten</span>
                     </div>
                 </div>
             </div>
@@ -153,19 +153,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-white rounded-xl p-5 border border-gray-200 text-center">
                     <div class="text-3xl font-bold text-emerald-600">990+</div>
-                    <div class="text-gray-500 text-sm">Chemicals</div>
+                    <div class="text-gray-500 text-sm">Chemikalien</div>
                 </div>
                 <div class="bg-white rounded-xl p-5 border border-gray-200 text-center">
                     <div class="text-3xl font-bold text-blue-600">12</div>
-                    <div class="text-gray-500 text-sm">Materials</div>
+                    <div class="text-gray-500 text-sm">Materialien</div>
                 </div>
                 <div class="bg-white rounded-xl p-5 border border-gray-200 text-center">
                     <div class="text-3xl font-bold text-purple-600">2</div>
-                    <div class="text-gray-500 text-sm">Temperatures</div>
+                    <div class="text-gray-500 text-sm">Temperaturen</div>
                 </div>
                 <div class="bg-white rounded-xl p-5 border border-gray-200 text-center">
                     <div class="text-3xl font-bold text-amber-600">100%</div>
-                    <div class="text-gray-500 text-sm">Free</div>
+                    <div class="text-gray-500 text-sm">Kostenlos</div>
                 </div>
             </div>
         </div>
@@ -174,37 +174,37 @@
     <!-- Material Guide -->
     <section id="guide" class="px-4 py-12 bg-white border-y border-gray-200">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Material Quick Guide</h2>
+            <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Materialübersicht</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 transition-colors">
                     <div class="font-bold text-gray-900">HDPE</div>
-                    <div class="text-sm text-gray-500 mb-2">High-Density Polyethylene</div>
-                    <div class="text-sm text-gray-600">Best for: Acids, bases, alcohols. Common for drums & containers.</div>
+                    <div class="text-sm text-gray-500 mb-2">Polyethylen hoher Dichte</div>
+                    <div class="text-sm text-gray-600">Geeignet für: Säuren, Laugen, Alkohole. Häufig für Fässer & Behälter.</div>
                 </div>
                 <div class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 transition-colors">
                     <div class="font-bold text-gray-900">PP</div>
-                    <div class="text-sm text-gray-500 mb-2">Polypropylene</div>
-                    <div class="text-sm text-gray-600">Best for: Strong acids & bases. Higher temp resistance than PE.</div>
+                    <div class="text-sm text-gray-500 mb-2">Polypropylen</div>
+                    <div class="text-sm text-gray-600">Geeignet für: Starke Säuren & Laugen. Höhere Temperaturbeständigkeit als PE.</div>
                 </div>
                 <div class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 transition-colors">
                     <div class="font-bold text-gray-900">PTFE</div>
                     <div class="text-sm text-gray-500 mb-2">Teflon®</div>
-                    <div class="text-sm text-gray-600">Best for: Nearly all chemicals. Premium choice for seals & gaskets.</div>
+                    <div class="text-sm text-gray-600">Geeignet für: Fast alle Chemikalien. Premium-Wahl für Dichtungen.</div>
                 </div>
                 <div class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 transition-colors">
                     <div class="font-bold text-gray-900">SS 316</div>
-                    <div class="text-sm text-gray-500 mb-2">Stainless Steel (1.4401)</div>
-                    <div class="text-sm text-gray-600">Best for: Corrosive environments. Better than 304 for chlorides.</div>
+                    <div class="text-sm text-gray-500 mb-2">Edelstahl (1.4401)</div>
+                    <div class="text-sm text-gray-600">Geeignet für: Korrosive Umgebungen. Besser als 304 bei Chloriden.</div>
                 </div>
                 <div class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 transition-colors">
                     <div class="font-bold text-gray-900">Viton® (FKM)</div>
-                    <div class="text-sm text-gray-500 mb-2">Fluoroelastomer</div>
-                    <div class="text-sm text-gray-600">Best for: Oils, fuels, acids. Premium seal material.</div>
+                    <div class="text-sm text-gray-500 mb-2">Fluorkautschuk</div>
+                    <div class="text-sm text-gray-600">Geeignet für: Öle, Kraftstoffe, Säuren. Premium-Dichtungsmaterial.</div>
                 </div>
                 <div class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 transition-colors">
                     <div class="font-bold text-gray-900">EPDM</div>
-                    <div class="text-sm text-gray-500 mb-2">Ethylene Propylene</div>
-                    <div class="text-sm text-gray-600">Best for: Water, steam, bases. NOT for oils/fuels.</div>
+                    <div class="text-sm text-gray-500 mb-2">Ethylen-Propylen-Kautschuk</div>
+                    <div class="text-sm text-gray-600">Geeignet für: Wasser, Dampf, Laugen. NICHT für Öle/Kraftstoffe.</div>
                 </div>
             </div>
         </div>
@@ -213,16 +213,16 @@
     <!-- About -->
     <section id="about" class="px-4 py-12">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">About This Tool</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Über dieses Tool</h2>
             <p class="text-gray-600 mb-6">
-                ChemicalResistance.org helps engineers, safety professionals, and anyone handling chemicals 
-                find the right materials for safe storage and handling. Our database includes 990+ chemicals 
-                with resistance ratings for 12 common materials at two temperatures.
+                ChemicalResistance.org hilft Ingenieuren, Sicherheitsfachleuten und allen, die mit Chemikalien 
+                arbeiten, die richtigen Materialien für sichere Lagerung und Handhabung zu finden. Unsere Datenbank 
+                enthält über 990 Chemikalien mit Beständigkeitsbewertungen für 12 gängige Materialien bei zwei Temperaturen.
             </p>
             <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
-                <strong>⚠️ Disclaimer:</strong> This information is a general guide only. Always verify 
-                compatibility with equipment manufacturers and conduct testing for critical applications. 
-                Factors like concentration, temperature, and pressure can affect performance.
+                <strong>⚠️ Haftungsausschluss:</strong> Diese Informationen dienen nur als allgemeiner Leitfaden. 
+                Überprüfen Sie die Kompatibilität immer mit den Geräteherstellern und führen Sie Tests für kritische 
+                Anwendungen durch. Faktoren wie Konzentration, Temperatur und Druck können die Leistung beeinflussen.
             </div>
         </div>
     </section>
@@ -230,8 +230,8 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
-            <p>© 2026 ChemicalResistance.org — Free Chemical Compatibility Tool</p>
-            <p class="mt-2">Data sources: Bürkle, INEOS, industry standards</p>
+            <p>© 2026 ChemicalResistance.org — Kostenloses Chemikalienbeständigkeits-Tool</p>
+            <p class="mt-2">Datenquellen: Bürkle, INEOS, Industriestandards</p>
         </div>
     </footer>
 
@@ -255,15 +255,15 @@
 
     // Language handling
     const langSelect = document.getElementById('langSelect');
-    let currentLang = localStorage.getItem('chemLang') || 'en';
+    let currentLang = 'de'; // German page defaults to German
     langSelect.value = currentLang;
     
     langSelect.addEventListener('change', () => {
         // Redirect to correct language page
-        if (langSelect.value === 'de') {
-            window.location.href = '/de.html';
-        } else {
+        if (langSelect.value === 'en') {
             window.location.href = '/';
+        } else {
+            window.location.href = '/de.html';
         }
         // Refresh display if results are showing
         if (currentGroupIndices.length > 0) {
@@ -404,37 +404,9 @@
         
         searchInput.value = displayName;
 
-        // Translate German concentration terms to English
+        // German page - show original German concentration terms
         function translateConc(conc) {
-            if (!conc) return 'Pure / Undiluted';
-            const translations = {
-                'jede': 'Any',
-                'konz.': 'Concentrated',
-                'konz': 'Concentrated',
-                'wässrig': 'Aqueous',
-                'rauchend': 'Fuming',
-                'gesättigt': 'Saturated',
-                'verdünnt': 'Diluted',
-                'techn. rein': 'Technical Grade',
-                'techn. üblich': 'Technical Grade',
-                'rein': 'Pure',
-                'flüssig': 'Liquid',
-                'gasförmig': 'Gaseous',
-                'fest': 'Solid',
-                'Pulver': 'Powder',
-                'gemahlen': 'Ground',
-                'geschmolzen': 'Molten',
-                'feucht': 'Moist',
-                'gering': 'Low'
-            };
-            // Check exact match first
-            if (translations[conc]) return translations[conc];
-            // Check if conc contains a translated term
-            for (const [de, en] of Object.entries(translations)) {
-                if (conc.includes(de)) {
-                    return conc.replace(de, en);
-                }
-            }
+            if (!conc) return 'rein';
             return conc;
         }
 
