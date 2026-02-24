@@ -685,7 +685,7 @@
   },
   {
     "name": "Acetonitril",
-    "name_en": "Acetone",
+    "name_en": "Acetonitrile",
     "formula": "C2H3N",
     "cas": "000075-05-8",
     "concentration": "",
@@ -11283,7 +11283,7 @@
   },
   {
     "name": "Chloraceton",
-    "name_en": "Acetone",
+    "name_en": "Chloroacetone",
     "formula": "C3H5ClO",
     "cas": "000078-95-5",
     "concentration": "",
@@ -14353,7 +14353,7 @@
   },
   {
     "name": "Diacetonalkohol",
-    "name_en": "Acetone",
+    "name_en": "Diacetone Alcohol",
     "formula": "C6H12O2",
     "cas": "000123-42-2",
     "concentration": "",
