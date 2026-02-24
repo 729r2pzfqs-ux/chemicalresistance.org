@@ -403,9 +403,19 @@
         // Show concentration selector if multiple
         const concContainer = document.getElementById('chemConc');
         if (indices.length > 1) {
-            const options = indices.map((idx, i) => {
+            // Sort by concentration (numeric extraction)
+            const sortedIndices = [...indices].sort((a, b) => {
+                const concA = chemicals[a].concentration || '';
+                const concB = chemicals[b].concentration || '';
+                const numA = parseFloat(concA.match(/[\d.]+/)?.[0]) || 999;
+                const numB = parseFloat(concB.match(/[\d.]+/)?.[0]) || 999;
+                return numA - numB;
+            });
+            currentGroupIndices = sortedIndices; // Update group with sorted order
+            
+            const options = sortedIndices.map((idx, i) => {
                 const c = chemicals[idx];
-                const label = c.concentration || 'General';
+                const label = c.concentration || 'Pure / Undiluted';
                 return `<option value="${i}" ${i === 0 ? 'selected' : ''}>${label}</option>`;
             }).join('');
             concContainer.innerHTML = `
