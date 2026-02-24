@@ -400,6 +400,40 @@
         
         searchInput.value = displayName;
 
+        // Translate German concentration terms to English
+        function translateConc(conc) {
+            if (!conc) return 'Pure / Undiluted';
+            const translations = {
+                'jede': 'Any',
+                'konz.': 'Concentrated',
+                'konz': 'Concentrated',
+                'wässrig': 'Aqueous',
+                'rauchend': 'Fuming',
+                'gesättigt': 'Saturated',
+                'verdünnt': 'Diluted',
+                'techn. rein': 'Technical Grade',
+                'techn. üblich': 'Technical Grade',
+                'rein': 'Pure',
+                'flüssig': 'Liquid',
+                'gasförmig': 'Gaseous',
+                'fest': 'Solid',
+                'Pulver': 'Powder',
+                'gemahlen': 'Ground',
+                'geschmolzen': 'Molten',
+                'feucht': 'Moist',
+                'gering': 'Low'
+            };
+            // Check exact match first
+            if (translations[conc]) return translations[conc];
+            // Check if conc contains a translated term
+            for (const [de, en] of Object.entries(translations)) {
+                if (conc.includes(de)) {
+                    return conc.replace(de, en);
+                }
+            }
+            return conc;
+        }
+
         // Show concentration selector if multiple
         const concContainer = document.getElementById('chemConc');
         if (indices.length > 1) {
@@ -415,7 +449,7 @@
             
             const options = sortedIndices.map((idx, i) => {
                 const c = chemicals[idx];
-                const label = c.concentration || 'Pure / Undiluted';
+                const label = translateConc(c.concentration);
                 return `<option value="${i}" ${i === 0 ? 'selected' : ''}>${label}</option>`;
             }).join('');
             concContainer.innerHTML = `
@@ -429,9 +463,9 @@
                 updateRatingsTable();
             });
         } else {
-            const conc = firstChem.concentration;
-            concContainer.textContent = conc || '';
-            concContainer.style.display = conc ? 'inline' : 'none';
+            const conc = translateConc(firstChem.concentration);
+            concContainer.textContent = conc !== 'Pure / Undiluted' ? conc : '';
+            concContainer.style.display = conc !== 'Pure / Undiluted' ? 'inline' : 'none';
         }
 
         updateRatingsTable();
