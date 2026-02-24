@@ -960,7 +960,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethanal"
+    ]
   },
   {
     "name": "Acetaldehyd",
@@ -1067,7 +1070,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethanal"
+    ]
   },
   {
     "name": "Acetamid",
@@ -1174,7 +1180,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäureamid"
+    ]
   },
   {
     "name": "Aceton",
@@ -1281,7 +1290,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dimethylketon",
+      "Propanon, 2-"
+    ]
   },
   {
     "name": "Acetonitril",
@@ -1388,7 +1401,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methylcyanid"
+    ]
   },
   {
     "name": "Acetophenon",
@@ -1495,7 +1511,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methylphenylketon"
+    ]
   },
   {
     "name": "Acetylchlorid",
@@ -1602,7 +1621,10 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäurechlorid"
+    ]
   },
   {
     "name": "Acetylen",
@@ -1709,7 +1731,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethin"
+    ]
   },
   {
     "name": "Acetylsalicylsäure",
@@ -1816,7 +1841,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Acetoxybenzoesäure, 2-"
+    ]
   },
   {
     "name": "Acrylnitril",
@@ -1923,7 +1951,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Acrylsäurenitril",
+      "Vinylcyanid"
+    ]
   },
   {
     "name": "Adipinsäure",
@@ -2030,7 +2062,10 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Hexandisäure"
+    ]
   },
   {
     "name": "Akkusäure",
@@ -2351,7 +2386,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäureallylester",
+      "Prop-2-enylacetat"
+    ]
   },
   {
     "name": "Allylalkohol",
@@ -2458,7 +2497,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Propen-1-ol, 2-",
+      "Vinylcarbinol"
+    ]
   },
   {
     "name": "Allylchlorid",
@@ -2565,7 +2608,11 @@
         "c20": "1L",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Chlor-1-propen, 3-",
+      "Chlorpropylen, 3-"
+    ]
   },
   {
     "name": "Allylsenföl",
@@ -2672,7 +2719,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Allylisothiocyanat",
+      "Senföl"
+    ]
   },
   {
     "name": "Aluminium(hydroxid)acetat",
@@ -2886,7 +2937,11 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumalaun",
+      "Ammoniumaluminiumsulfat"
+    ]
   },
   {
     "name": "Aluminiumchlorid",
@@ -2993,7 +3048,10 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Salzsäure-Aluminiumsalz, wasserfrei"
+    ]
   },
   {
     "name": "Aluminiumchlorid",
@@ -3100,7 +3158,10 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Salzsäure-Aluminiumsalz, wasserfrei"
+    ]
   },
   {
     "name": "Aluminiumchlorid",
@@ -3207,7 +3268,10 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Salzsäure-Aluminiumsalz, wasserfrei"
+    ]
   },
   {
     "name": "Aluminiumfluorid",
@@ -3314,7 +3378,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Aluminiumtrifluorid"
+    ]
   },
   {
     "name": "Aluminiumhydroxid",
@@ -3421,7 +3488,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydrargillit"
+    ]
   },
   {
     "name": "Aluminiumnitrat",
@@ -3956,7 +4026,11 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Formylsäure",
+      "Methansäure"
+    ]
   },
   {
     "name": "Ameisensäure",
@@ -4063,7 +4137,11 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Formylsäure",
+      "Methansäure"
+    ]
   },
   {
     "name": "Ameisensäure",
@@ -4170,7 +4248,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Formylsäure",
+      "Methansäure"
+    ]
   },
   {
     "name": "Aminoessigsäure",
@@ -4277,7 +4359,12 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Aminoethansäure",
+      "Glycin",
+      "Glykokoll"
+    ]
   },
   {
     "name": "Ammoniumacetat",
@@ -4491,7 +4578,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hirschhornsalz"
+    ]
   },
   {
     "name": "Ammoniumcarbonat",
@@ -4598,7 +4688,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hirschhornsalz"
+    ]
   },
   {
     "name": "Ammoniumchlorid",
@@ -4705,7 +4798,10 @@
         "c20": "1",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Salmiak"
+    ]
   },
   {
     "name": "Ammoniumchlorid",
@@ -4812,7 +4908,10 @@
         "c20": "1",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Salmiak"
+    ]
   },
   {
     "name": "Ammoniumdihydrogenphosphat",
@@ -4919,7 +5018,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniummonophosphat, monobasisch",
+      "Ammoniumphosphat, prim."
+    ]
   },
   {
     "name": "Ammoniumeisen-(II)-sulfat",
@@ -5026,7 +5129,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisen-(II)-ammoniumsulfat",
+      "Mohrsches Salz"
+    ]
   },
   {
     "name": "Ammoniumeisen-(III)-sulfat",
@@ -5133,7 +5240,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Eisenalaun",
+      "Eisenammoniumalaun"
+    ]
   },
   {
     "name": "Ammoniumfluorid",
@@ -5240,7 +5351,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Fluorammonium"
+    ]
   },
   {
     "name": "Ammoniumfluorid",
@@ -5347,7 +5461,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Fluorammonium"
+    ]
   },
   {
     "name": "Ammoniumglycolat",
@@ -5454,7 +5571,10 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Ammonium-2-hydroxyacetat"
+    ]
   },
   {
     "name": "Ammoniumheptamolybdat",
@@ -5561,7 +5681,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniummolybdat"
+    ]
   },
   {
     "name": "Ammoniumhydrogencarbonat",
@@ -5668,7 +5791,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumbicarbonat"
+    ]
   },
   {
     "name": "Ammoniumhydrogendifluorid",
@@ -5775,7 +5901,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumbifluorid"
+    ]
   },
   {
     "name": "Ammoniumhydrosulfid",
@@ -5882,7 +6011,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumhydrogensulfid"
+    ]
   },
   {
     "name": "Ammoniumhydroxid",
@@ -5989,7 +6121,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniak",
+      "Ammoniakwasser",
+      "Salmiakgeist"
+    ]
   },
   {
     "name": "Ammoniumhydroxid",
@@ -6096,7 +6233,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniak",
+      "Ammoniakwasser",
+      "Salmiakgeist"
+    ]
   },
   {
     "name": "Ammoniumhydroxid",
@@ -6203,7 +6345,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniak",
+      "Ammoniakwasser",
+      "Salmiakgeist"
+    ]
   },
   {
     "name": "Ammoniummetaphosphat",
@@ -6310,7 +6457,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumpolyphosphat"
+    ]
   },
   {
     "name": "Ammoniumnitrat",
@@ -6417,7 +6567,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammonsalpeter"
+    ]
   },
   {
     "name": "Ammoniumnitrat",
@@ -6524,7 +6677,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammonsalpeter"
+    ]
   },
   {
     "name": "Ammoniumnitrit",
@@ -6738,7 +6894,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Oxalsäure-Ammoniumsalz"
+    ]
   },
   {
     "name": "Ammoniumperoxodisulfat",
@@ -6845,7 +7004,10 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumpersulfat"
+    ]
   },
   {
     "name": "Ammoniumperoxodisulfat",
@@ -6952,7 +7114,10 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumpersulfat"
+    ]
   },
   {
     "name": "Ammoniumsulfat",
@@ -7059,7 +7224,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniak, schwefelsaures"
+    ]
   },
   {
     "name": "Ammoniumsulfat",
@@ -7166,7 +7334,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniak, schwefelsaures"
+    ]
   },
   {
     "name": "Ammoniumsulfid",
@@ -7487,7 +7658,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ammoniumrhodanid",
+      "Ammoniumsulfocyanid"
+    ]
   },
   {
     "name": "Amylacetat, n-",
@@ -7594,7 +7769,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäure-n-amylester",
+      "Essigsäurepentylester",
+      "Pentylacetat, n-"
+    ]
   },
   {
     "name": "Amylalkohol, n-",
@@ -7701,7 +7881,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butylcarbinol",
+      "Pentylalkohol"
+    ]
   },
   {
     "name": "Amylchlorid",
@@ -7808,7 +7992,11 @@
         "c20": "3",
         "c50": "4L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorpentan, 1-",
+      "Pentylchlorid"
+    ]
   },
   {
     "name": "Amylzimtaldehyd",
@@ -7915,7 +8103,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Jasminaldehyd",
+      "Pentylzimtaldehyd, a-"
+    ]
   },
   {
     "name": "Ananassaft",
@@ -8129,7 +8321,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Aminobenzol",
+      "Phenylamin"
+    ]
   },
   {
     "name": "Anilinchlorhydrat",
@@ -8236,7 +8432,11 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Anilinhydrochlorid",
+      "Aniliniumchlorid"
+    ]
   },
   {
     "name": "Anis",
@@ -8450,7 +8650,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methoxybenzol",
+      "Methylphenylether"
+    ]
   },
   {
     "name": "Anisöl",
@@ -8664,7 +8868,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Antimon-(V)-chlorid"
+    ]
   },
   {
     "name": "Antimontrichlorid",
@@ -8771,7 +8978,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Antimon-(III)-chlorid"
+    ]
   },
   {
     "name": "Antimontrichlorid",
@@ -8878,7 +9088,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Antimon-(III)-chlorid"
+    ]
   },
   {
     "name": "Antimontrichlorid",
@@ -8985,7 +9198,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Antimon-(III)-chlorid"
+    ]
   },
   {
     "name": "Apfelsaft",
@@ -9199,7 +9415,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Orangensaft"
+    ]
   },
   {
     "name": "Apfelsinenschalenöl",
@@ -9306,7 +9525,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Orangenschalenöl"
+    ]
   },
   {
     "name": "Arsenpentoxid",
@@ -9413,7 +9635,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Arsenanhydrid",
+      "Arsensäureanhydrid"
+    ]
   },
   {
     "name": "Arsensäure",
@@ -9841,7 +10067,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Tropasäure-tropylester-sulfat"
+    ]
   },
   {
     "name": "Baldriantropfen",
@@ -10483,7 +10712,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ätzbaryt"
+    ]
   },
   {
     "name": "Bariumhydroxid",
@@ -10590,7 +10822,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ätzbaryt"
+    ]
   },
   {
     "name": "Bariumsulfid",
@@ -10911,7 +11146,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzoesäurealdehyd"
+    ]
   },
   {
     "name": "Benzin",
@@ -11125,7 +11363,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzolcarbonsäure"
+    ]
   },
   {
     "name": "Benzoesäure",
@@ -11232,7 +11473,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzolcarbonsäure"
+    ]
   },
   {
     "name": "Benzoesäureethylester",
@@ -11339,7 +11583,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylbenzoat"
+    ]
   },
   {
     "name": "Benzol",
@@ -11446,7 +11693,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzen"
+    ]
   },
   {
     "name": "Benzolsulfonsäure",
@@ -11553,7 +11803,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Phenylsulfonsäure"
+    ]
   },
   {
     "name": "Benzoylchlorid",
@@ -11660,7 +11913,10 @@
         "c20": "2L",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Benzoesäurechlorid"
+    ]
   },
   {
     "name": "Benzylacetat",
@@ -11767,7 +12023,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäurebenzylester"
+    ]
   },
   {
     "name": "Benzylalkohol",
@@ -11874,7 +12133,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Phenylcarbinol"
+    ]
   },
   {
     "name": "Benzylbenzoat",
@@ -11981,7 +12243,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzoesäurebenzylester"
+    ]
   },
   {
     "name": "Benzylchlorid",
@@ -12088,7 +12353,11 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Chlormethylbenzol",
+      "Chlortoluol, alpha-"
+    ]
   },
   {
     "name": "Bernsteinsäure",
@@ -12195,7 +12464,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Butandisäure",
+      "Ethandicarbonsäure"
+    ]
   },
   {
     "name": "Bernsteinsäure",
@@ -12302,7 +12575,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Butandisäure",
+      "Ethandicarbonsäure"
+    ]
   },
   {
     "name": "Bernsteinsäurediethylester",
@@ -12409,7 +12686,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Diethylsuccinat"
+    ]
   },
   {
     "name": "Bienenwachs",
@@ -13372,7 +13652,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Cyanwasserstoff(säure)"
+    ]
   },
   {
     "name": "Blausäure",
@@ -13479,7 +13762,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Cyanwasserstoff(säure)"
+    ]
   },
   {
     "name": "Blei-(II)-acetat",
@@ -13586,7 +13872,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Bleizucker"
+    ]
   },
   {
     "name": "Blei-(II)-acetat",
@@ -13693,7 +13982,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Bleizucker"
+    ]
   },
   {
     "name": "Blei-(II)-nitrat",
@@ -13800,7 +14092,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Bleisalpeter"
+    ]
   },
   {
     "name": "Blei-(II)-nitrat",
@@ -13907,7 +14202,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Bleisalpeter"
+    ]
   },
   {
     "name": "Bleistearat",
@@ -14656,7 +14954,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Brombenzen",
+      "Monobrombenzol",
+      "Phenylbromid"
+    ]
   },
   {
     "name": "Bromchlormethan",
@@ -14763,7 +15066,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chlorbrommethan",
+      "Methylenchlorbromid"
+    ]
   },
   {
     "name": "Bromdämpfe",
@@ -14977,7 +15284,10 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Methylbromid"
+    ]
   },
   {
     "name": "Bromoform",
@@ -15084,7 +15394,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Tribrommethan"
+    ]
   },
   {
     "name": "Brompentafluorid",
@@ -15512,7 +15825,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 13 B1"
+    ]
   },
   {
     "name": "Bromwasser",
@@ -16047,7 +16363,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Vinylethylen"
+    ]
   },
   {
     "name": "Butan",
@@ -16261,7 +16580,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butylalkohol"
+    ]
   },
   {
     "name": "Butantriol",
@@ -16368,7 +16690,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Trihydroxybutan"
+    ]
   },
   {
     "name": "Buten",
@@ -16475,7 +16800,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butylen"
+    ]
   },
   {
     "name": "Butter",
@@ -16689,7 +17017,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butansäure"
+    ]
   },
   {
     "name": "Butylacrylat",
@@ -16796,7 +17127,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Acrylsäurebutylester"
+    ]
   },
   {
     "name": "Butylalkohol, sekundär",
@@ -16903,7 +17237,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butanol, sek-",
+      "Butanol-2"
+    ]
   },
   {
     "name": "Butylalkohol, tertiär",
@@ -17010,7 +17348,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butanol, tert-",
+      "Methylpropanol-2, 2-"
+    ]
   },
   {
     "name": "Butylamin",
@@ -17117,7 +17459,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Aminobutan"
+    ]
   },
   {
     "name": "Butylenglycol",
@@ -17224,7 +17569,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butandiol"
+    ]
   },
   {
     "name": "Butylglycol",
@@ -17331,7 +17679,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butoxyethanol, 2-",
+      "Butylcellosolve",
+      "Ethylenglycolmonobutylether"
+    ]
   },
   {
     "name": "Butylphenol",
@@ -17652,7 +18005,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butanal"
+    ]
   },
   {
     "name": "Cadmiumbromid",
@@ -17973,7 +18329,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Calciumhydrogencarbonat"
+    ]
   },
   {
     "name": "Calciumbisulfit",
@@ -18080,7 +18439,11 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Calciumhydrogensulfit",
+      "Sulfitlauge"
+    ]
   },
   {
     "name": "Calciumbisulfit",
@@ -18187,7 +18550,11 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Calciumhydrogensulfit",
+      "Sulfitlauge"
+    ]
   },
   {
     "name": "Calciumbromid",
@@ -18722,7 +19089,10 @@
         "c20": "1",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorcalcium"
+    ]
   },
   {
     "name": "Calciumchlorid",
@@ -18829,7 +19199,10 @@
         "c20": "1",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorcalcium"
+    ]
   },
   {
     "name": "Calciumhydroxid",
@@ -18936,7 +19309,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Calciumhydrat",
+      "Kalkhydrat",
+      "Kalkwasser"
+    ]
   },
   {
     "name": "Calciumhydroxid",
@@ -19043,7 +19421,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Calciumhydrat",
+      "Kalkhydrat",
+      "Kalkwasser"
+    ]
   },
   {
     "name": "Calciumhypochlorit",
@@ -19364,7 +19747,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalksalpeter"
+    ]
   },
   {
     "name": "Calciumnitrat",
@@ -19471,7 +19857,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalksalpeter"
+    ]
   },
   {
     "name": "Calciumoxid",
@@ -19578,7 +19967,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ätzkalk",
+      "Kalk, gebrannt"
+    ]
   },
   {
     "name": "Calciumphosphat",
@@ -19899,7 +20292,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Gips"
+    ]
   },
   {
     "name": "Calciumsulfid",
@@ -20434,7 +20830,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Azafluoren, 9-",
+      "Diphenylenimin"
+    ]
   },
   {
     "name": "Carbolineum",
@@ -20862,7 +21262,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hexadecanol",
+      "Hexadecylalkohol",
+      "Palmitylalkohol"
+    ]
   },
   {
     "name": "Chinin",
@@ -21290,7 +21695,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chlor-2-propanon, 1-"
+    ]
   },
   {
     "name": "Chloracetophenon, p-",
@@ -21504,7 +21912,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Trichloracetaldehyd-hydrat",
+      "Trichloraldehydhydrat"
+    ]
   },
   {
     "name": "Chloramin T",
@@ -21611,7 +22023,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Toluolsulfonchloramid-Natrium, p-"
+    ]
   },
   {
     "name": "Chlorbenzol",
@@ -21718,7 +22133,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Chlorbenzen",
+      "Monochlorbenzol",
+      "Phenylchlorid"
+    ]
   },
   {
     "name": "Chlorbutadien",
@@ -21825,7 +22245,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chloropren"
+    ]
   },
   {
     "name": "Chlordifluormethan",
@@ -21932,7 +22355,12 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Arcton 22",
+      "Freon 22",
+      "Frigen 22"
+    ]
   },
   {
     "name": "Chlordioxid",
@@ -22146,7 +22574,10 @@
         "c20": "2",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Monochloressigsäure"
+    ]
   },
   {
     "name": "Chloressigsäure",
@@ -22253,7 +22684,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Monochloressigsäure"
+    ]
   },
   {
     "name": "Chlorethan",
@@ -22360,7 +22794,10 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Ethylchlorid"
+    ]
   },
   {
     "name": "Chlorethanol",
@@ -22467,7 +22904,12 @@
         "c20": "1",
         "c50": "0L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorethylalkohol, 2-",
+      "Ethylenchlorhydrin",
+      "Glykolchlorhydrin"
+    ]
   },
   {
     "name": "Chlorethylen",
@@ -22574,7 +23016,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Vinylchlorid"
+    ]
   },
   {
     "name": "Chlorfluormethan",
@@ -22681,7 +23126,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 31"
+    ]
   },
   {
     "name": "Chlorgas",
@@ -23109,7 +23557,11 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Chlormethyl",
+      "Methylchlorid"
+    ]
   },
   {
     "name": "Chlornaphthalin, 1-",
@@ -23323,7 +23775,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Trichlormethan"
+    ]
   },
   {
     "name": "Chlorpentafluorethan",
@@ -23430,7 +23885,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 115"
+    ]
   },
   {
     "name": "Chlorsäure",
@@ -23858,7 +24316,10 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Chlor(o)schwefelsäure"
+    ]
   },
   {
     "name": "Chlortoluol",
@@ -24179,7 +24640,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 13"
+    ]
   },
   {
     "name": "Chlorwasser",
@@ -24500,7 +24964,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Chrom-(III)-Kaliumsulfat-Dodecahydrat"
+    ]
   },
   {
     "name": "Chromsalze",
@@ -24714,7 +25181,11 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Chrom-(VI)-oxid",
+      "Chromtrioxid"
+    ]
   },
   {
     "name": "Chromsäure",
@@ -24821,7 +25292,11 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Chrom-(VI)-oxid",
+      "Chromtrioxid"
+    ]
   },
   {
     "name": "Chromsäure",
@@ -24928,7 +25403,11 @@
         "c20": "2",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Chrom-(VI)-oxid",
+      "Chromtrioxid"
+    ]
   },
   {
     "name": "Chromschwefelsäure",
@@ -25035,7 +25514,10 @@
         "c20": "2",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Bichromat-Schwefelsäure"
+    ]
   },
   {
     "name": "Clophen A60",
@@ -25249,7 +25731,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Cobaltdichlorid"
+    ]
   },
   {
     "name": "Crotonaldehyd",
@@ -25356,7 +25841,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butenal, trans-2-",
+      "Methylacrolein"
+    ]
   },
   {
     "name": "Cumol",
@@ -25463,7 +25952,13 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Cumen",
+      "Isopropylbenzen",
+      "Isopropylbenzol",
+      "Phenylpropan"
+    ]
   },
   {
     "name": "Curry",
@@ -25784,7 +26279,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hexahydrobenzol",
+      "Naphthen"
+    ]
   },
   {
     "name": "Cyclohexanol",
@@ -25891,7 +26390,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hexahydrophenol"
+    ]
   },
   {
     "name": "Cyclohexanon",
@@ -25998,7 +26500,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Anon"
+    ]
   },
   {
     "name": "Cymol, p-",
@@ -26105,7 +26610,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Camphogen",
+      "Dolcymen",
+      "Isopropyl-4-methylbenzol, 1-"
+    ]
   },
   {
     "name": "Dampf",
@@ -26319,7 +26829,10 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Dichlordiphenyltrichlorethan"
+    ]
   },
   {
     "name": "Decahydronaphtalin",
@@ -26426,7 +26939,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Decalin"
+    ]
   },
   {
     "name": "Decan",
@@ -26640,7 +27156,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Acetyl-5-methyl-2,3-dihydropyran-2,4-dion, 2-"
+    ]
   },
   {
     "name": "Densodrin W",
@@ -26854,7 +27373,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Diphenylmethandiisocyanat (MDI)"
+    ]
   },
   {
     "name": "Dextrin",
@@ -26961,7 +27483,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Stärkegummi"
+    ]
   },
   {
     "name": "Diacetonalkohol",
@@ -27068,7 +27593,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxy-4-methyl-2-pentanon, 4-"
+    ]
   },
   {
     "name": "Dibenzylether",
@@ -27175,7 +27703,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzylether"
+    ]
   },
   {
     "name": "Dibenzylsebacat",
@@ -27282,7 +27813,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Decandisäuredibenzylester",
+      "Sebacinsäuredibenzylester"
+    ]
   },
   {
     "name": "Dibromethan-1,2",
@@ -27389,7 +27924,10 @@
         "c20": "1",
         "c50": "0L"
       }
-    }
+    },
+    "aliases": [
+      "Ethylen(di)bromid"
+    ]
   },
   {
     "name": "Dibromtetrafluormethan",
@@ -27496,7 +28034,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 114 B2"
+    ]
   },
   {
     "name": "Dibutylamin",
@@ -27710,7 +28251,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butylether"
+    ]
   },
   {
     "name": "Dibutylphthalat",
@@ -27817,7 +28361,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Elaol",
+      "Phthalsäuredibutylester"
+    ]
   },
   {
     "name": "Dibutylphthalat",
@@ -27924,7 +28472,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Elaol",
+      "Phthalsäuredibutylester"
+    ]
   },
   {
     "name": "Dibutylsebacat",
@@ -28031,7 +28583,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Decandisäuredibutylester",
+      "Sebacinsäuredibutylester"
+    ]
   },
   {
     "name": "Dichlorbenzol, 1,2-",
@@ -28138,7 +28694,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dichlorbenzen, 1,2-",
+      "Dichlorbenzol, o-"
+    ]
   },
   {
     "name": "Dichlorbenzol, 1,4-",
@@ -28245,7 +28805,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dichlorbenzen, 1,4-",
+      "Dichlorbenzol, p-"
+    ]
   },
   {
     "name": "Dichlordifluormethan",
@@ -28352,7 +28916,12 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Arcton 12",
+      "Freon 12",
+      "Frigen 12"
+    ]
   },
   {
     "name": "Dichlordifluormethan",
@@ -28459,7 +29028,12 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Arcton 12",
+      "Freon 12",
+      "Frigen 12"
+    ]
   },
   {
     "name": "Dichloressigsäure",
@@ -28887,7 +29461,13 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Arcton 21",
+      "Freon 21",
+      "Frigen 21",
+      "Monofluordichlormethan"
+    ]
   },
   {
     "name": "Dichlor-hexafluorcyclobutan",
@@ -28994,7 +29574,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon C316"
+    ]
   },
   {
     "name": "Dichlorisopropylether",
@@ -29101,7 +29684,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Bis(2-Chlor-1-methylethyl)ether"
+    ]
   },
   {
     "name": "Dichlormethan",
@@ -29208,7 +29794,10 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Methylen(di)chlorid"
+    ]
   },
   {
     "name": "Dichlorpropan",
@@ -29315,7 +29904,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Propylen(di)chlorid"
+    ]
   },
   {
     "name": "Dichlortetrafluorethan",
@@ -29422,7 +30014,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 114"
+    ]
   },
   {
     "name": "Dicyclohexylamin (DCHA)",
@@ -29636,7 +30231,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dihexylphthalat",
+      "Phthalsäuredicyclohexylester"
+    ]
   },
   {
     "name": "Dieselkraftstoff",
@@ -30064,7 +30663,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylethanamin, N-"
+    ]
   },
   {
     "name": "Diethylbenzol",
@@ -30278,7 +30880,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Diglycol"
+    ]
   },
   {
     "name": "Diethylenglycolether",
@@ -30492,7 +31097,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Pentanon, 3-"
+    ]
   },
   {
     "name": "Diethylmalonat",
@@ -30599,7 +31207,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylmalonat",
+      "Malonester",
+      "Malonsäurediethylester"
+    ]
   },
   {
     "name": "Diethylsebacat",
@@ -30706,7 +31319,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Decandisäurediethylester",
+      "Sebacinsäurediethylester"
+    ]
   },
   {
     "name": "Difluorchlorethan",
@@ -30813,7 +31430,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 142b"
+    ]
   },
   {
     "name": "Difluorethan",
@@ -30920,7 +31540,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 152a"
+    ]
   },
   {
     "name": "Difluormethan",
@@ -31027,7 +31650,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 32"
+    ]
   },
   {
     "name": "Difluortetrachlorethan",
@@ -31134,7 +31760,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 112"
+    ]
   },
   {
     "name": "Diglycolsäure",
@@ -31241,7 +31870,10 @@
         "c20": "1",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Oxydiessigsäure"
+    ]
   },
   {
     "name": "Diglycolsäure",
@@ -31348,7 +31980,10 @@
         "c20": "1",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Oxydiessigsäure"
+    ]
   },
   {
     "name": "Diisobutylen (DIB)",
@@ -31562,7 +32197,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Isobutylketon"
+    ]
   },
   {
     "name": "Diisooctylphthalat (DOP)",
@@ -31776,7 +32414,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dimethylpentanon-3, 2,4-"
+    ]
   },
   {
     "name": "Dimethylamin",
@@ -32097,7 +32738,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methylether"
+    ]
   },
   {
     "name": "Dimethylformamid (DMF)",
@@ -32525,7 +33169,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dinatriumhydrogenphosphat",
+      "Natriumphosphat, sekundär"
+    ]
   },
   {
     "name": "Dinonylphthalat (DNP)",
@@ -32739,7 +33387,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Adipinsäuredioctylester",
+      "Bis(2-ethylhexyl)-adipat"
+    ]
   },
   {
     "name": "Dioctylsebacat",
@@ -32846,7 +33498,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Bis(2-ethylhexyl)-sebacat, Sebacinsäure-bis(2-ethylhexylester)"
+    ]
   },
   {
     "name": "Dioxan",
@@ -32953,7 +33608,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dioxan, 1,4-"
+    ]
   },
   {
     "name": "Diphenylamin",
@@ -33060,7 +33718,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Phenylanilin, N-"
+    ]
   },
   {
     "name": "Diphenylether",
@@ -33167,7 +33828,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Diphenyloxid",
+      "Phenylether"
+    ]
   },
   {
     "name": "Diphyl",
@@ -33488,7 +34153,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Heptanon-4"
+    ]
   },
   {
     "name": "Eisen-(II)-chlorid",
@@ -33595,7 +34263,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ferrochlorid"
+    ]
   },
   {
     "name": "Eisen-(II)-sulfat",
@@ -33702,7 +34373,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisenvitriol"
+    ]
   },
   {
     "name": "Eisen-(II)-sulfat",
@@ -33809,7 +34483,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisenvitriol"
+    ]
   },
   {
     "name": "Eisen-(II)-sulfat",
@@ -33916,7 +34593,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisenvitriol"
+    ]
   },
   {
     "name": "Eisen-(III)-chlorid",
@@ -34023,7 +34703,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Ferrichlorid"
+    ]
   },
   {
     "name": "Eisen-(III)-sulfat",
@@ -34237,7 +34920,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisen-(III)-nitrat"
+    ]
   },
   {
     "name": "Eisennitrat",
@@ -34344,7 +35030,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisen-(III)-nitrat"
+    ]
   },
   {
     "name": "Emulgatoren",
@@ -34772,7 +35461,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chlormethyloxiran"
+    ]
   },
   {
     "name": "Erdgas",
@@ -35307,7 +35999,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisessig",
+      "Ethansäure",
+      "Methancarbonsäure"
+    ]
   },
   {
     "name": "Essigsäure",
@@ -35414,7 +36111,12 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Eisessig",
+      "Ethansäure",
+      "Methancarbonsäure"
+    ]
   },
   {
     "name": "Essigsäure",
@@ -35521,7 +36223,12 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Eisessig",
+      "Ethansäure",
+      "Methancarbonsäure"
+    ]
   },
   {
     "name": "Essigsäure",
@@ -35628,7 +36335,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisessig",
+      "Ethansäure",
+      "Methancarbonsäure"
+    ]
   },
   {
     "name": "Essigsäure",
@@ -35735,7 +36447,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Eisessig",
+      "Ethansäure",
+      "Methancarbonsäure"
+    ]
   },
   {
     "name": "Essigsaure Tonerde",
@@ -35842,7 +36559,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Aluminiumhydroxiddiacetat"
+    ]
   },
   {
     "name": "Essigsäureanhydrid",
@@ -35949,7 +36669,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Acetanhydrid"
+    ]
   },
   {
     "name": "Essigsäurebutylester",
@@ -36056,7 +36779,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butylacetat"
+    ]
   },
   {
     "name": "Essigsäuremethylester",
@@ -36163,7 +36889,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methylacetat"
+    ]
   },
   {
     "name": "Ethanol",
@@ -36270,7 +36999,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Alkohol",
+      "Ethylalkohol"
+    ]
   },
   {
     "name": "Ethanol",
@@ -36377,7 +37110,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Alkohol",
+      "Ethylalkohol"
+    ]
   },
   {
     "name": "Ethanol",
@@ -36484,7 +37221,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Alkohol",
+      "Ethylalkohol"
+    ]
   },
   {
     "name": "Ethanolamin",
@@ -36591,7 +37332,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Aminoethanol, 2-",
+      "Colamin",
+      "Monoethanolamin"
+    ]
   },
   {
     "name": "Ethanthiol",
@@ -36698,7 +37444,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylmercaptan"
+    ]
   },
   {
     "name": "Ethylacetat",
@@ -36805,7 +37554,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigester",
+      "Essigsäureethylester"
+    ]
   },
   {
     "name": "Ethylacrylat",
@@ -36912,7 +37665,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Acrylsäureethylester",
+      "Propensäureethylester"
+    ]
   },
   {
     "name": "Ethylbenzol",
@@ -37019,7 +37776,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylbenzen"
+    ]
   },
   {
     "name": "Ethylbutyrat",
@@ -37126,7 +37886,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Buttersäureethylester"
+    ]
   },
   {
     "name": "Ethylchloracetat",
@@ -37233,7 +37996,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chloressigsäureethylester",
+      "Monochloressigsäureethylester"
+    ]
   },
   {
     "name": "Ethylcyanacetat",
@@ -37340,7 +38107,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Cyanessigsäureethylester"
+    ]
   },
   {
     "name": "Ethylen",
@@ -37447,7 +38217,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethen"
+    ]
   },
   {
     "name": "Ethylenchlorid",
@@ -37554,7 +38327,11 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Dichlorethan, 1,2-",
+      "Ethylendichlorid"
+    ]
   },
   {
     "name": "Ethylendiamin",
@@ -37661,7 +38438,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Diaminoethan",
+      "Ethandiamin"
+    ]
   },
   {
     "name": "Ethylendiamintetraessigsäure (EDTA)",
@@ -37875,7 +38656,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethandiol",
+      "Glycol"
+    ]
   },
   {
     "name": "Ethylenglycolmonoethyletheracetat",
@@ -37982,7 +38767,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Cellosolveacetat",
+      "Ethoxyethylacetat, 2-",
+      "Ethylglycolacetat"
+    ]
   },
   {
     "name": "Ethylenoxid",
@@ -38089,7 +38879,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Oxiran"
+    ]
   },
   {
     "name": "Ethylether",
@@ -38196,7 +38989,13 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Äther",
+      "Diethylether",
+      "Ether",
+      "Schwefelether"
+    ]
   },
   {
     "name": "Ethylformiat",
@@ -38303,7 +39102,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ameisensäureethylester"
+    ]
   },
   {
     "name": "Ethylglycol",
@@ -38410,7 +39212,14 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Cellosolve",
+      "Ethoxyethanol",
+      "Ethyl-Cellosolve",
+      "Ethylenglycolethylether",
+      "Ethylenglycolmonoethylether"
+    ]
   },
   {
     "name": "Ethylhexanol-1",
@@ -38517,7 +39326,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Isooctanol",
+      "Isooctylalkohol"
+    ]
   },
   {
     "name": "Ethyllactat",
@@ -38624,7 +39437,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxypropionsäure-ethylester, 2-",
+      "Milchsäure-ethylester"
+    ]
   },
   {
     "name": "Eukalyptusöl",
@@ -38945,7 +39762,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Blutlaugensalz rot",
+      "Kalium(hexa)cyanoferrat-(III)",
+      "Kaliumeisen-(III)-cyanid"
+    ]
   },
   {
     "name": "Ferrocyankalium",
@@ -39052,7 +39874,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Blutlaugensalz gelb",
+      "Kalium(hexa)cyanoferrat-(II)",
+      "Kaliumeisen-(II)-cyanid"
+    ]
   },
   {
     "name": "Ferrocyankalium",
@@ -39159,7 +39986,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Blutlaugensalz gelb",
+      "Kalium(hexa)cyanoferrat-(II)",
+      "Kaliumeisen-(II)-cyanid"
+    ]
   },
   {
     "name": "Fett, mineralisch",
@@ -40764,7 +41596,10 @@
         "c20": "3",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Flusssäure, wasserfrei"
+    ]
   },
   {
     "name": "Flüssigseifen",
@@ -40978,7 +41813,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Fluorwasserstofflösung",
+      "Fluorwasserstoffsäure"
+    ]
   },
   {
     "name": "Flusssäure",
@@ -41085,7 +41924,11 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Fluorwasserstofflösung",
+      "Fluorwasserstoffsäure"
+    ]
   },
   {
     "name": "Flusssäure",
@@ -41192,7 +42035,11 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Fluorwasserstofflösung",
+      "Fluorwasserstoffsäure"
+    ]
   },
   {
     "name": "Flusssäure",
@@ -41299,7 +42146,11 @@
         "c20": "3",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Fluorwasserstofflösung",
+      "Fluorwasserstoffsäure"
+    ]
   },
   {
     "name": "Formaldehydlösung",
@@ -41406,7 +42257,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Formalin",
+      "Methanallösung"
+    ]
   },
   {
     "name": "Formaldehydlösung",
@@ -41513,7 +42368,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Formalin",
+      "Methanallösung"
+    ]
   },
   {
     "name": "Formaldehydlösung",
@@ -41620,7 +42479,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Formalin",
+      "Methanallösung"
+    ]
   },
   {
     "name": "Formamid",
@@ -41727,7 +42590,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ameisensäureamid"
+    ]
   },
   {
     "name": "Fotoemulsionen",
@@ -42369,7 +43235,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Fruchtzucker"
+    ]
   },
   {
     "name": "Furan",
@@ -42476,7 +43345,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Furfuran"
+    ]
   },
   {
     "name": "Furfurol",
@@ -42583,7 +43455,13 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Furanal",
+      "Furfural",
+      "Furylaldehyd, 2-",
+      "Furylmethanal, 2-"
+    ]
   },
   {
     "name": "Furfurylalkohol",
@@ -42690,7 +43568,13 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Furancarbinol, 2-",
+      "Furanmethanol, 2-",
+      "Furfuralkohol",
+      "Hydroxymethylfuran, 2-"
+    ]
   },
   {
     "name": "Gallussäure",
@@ -42797,7 +43681,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Trihydroxybenzoesäure, 3,4,5-"
+    ]
   },
   {
     "name": "Gärungsmaische",
@@ -43867,7 +44754,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dextrose",
+      "Traubenzucker"
+    ]
   },
   {
     "name": "Glycerin",
@@ -43974,7 +44865,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Propantriol"
+    ]
   },
   {
     "name": "Glycolsäure",
@@ -44081,7 +44975,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxyessigsäure"
+    ]
   },
   {
     "name": "Glycolsäure",
@@ -44188,7 +45085,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxyessigsäure"
+    ]
   },
   {
     "name": "Glysantin",
@@ -44509,7 +45409,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Trihydroxypurin, 2,6,8-"
+    ]
   },
   {
     "name": "Harnstoff",
@@ -45365,7 +46268,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dipropylmethan, n-"
+    ]
   },
   {
     "name": "Heptanol, 1-",
@@ -45472,7 +46378,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Heptylalkohol"
+    ]
   },
   {
     "name": "Heptanon",
@@ -46007,7 +46916,13 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Formin",
+      "Hexamin",
+      "Methenamin",
+      "Urotropin"
+    ]
   },
   {
     "name": "Hexan, n-",
@@ -46221,7 +47136,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Capronaldehyd",
+      "Hexaldehyd",
+      "Hexylaldehyd"
+    ]
   },
   {
     "name": "Hexanol, (1-)",
@@ -46328,7 +47248,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hexylalkohol"
+    ]
   },
   {
     "name": "Hexantriol",
@@ -46542,7 +47465,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butylethylen",
+      "Hexylen"
+    ]
   },
   {
     "name": "Holzöl",
@@ -46649,7 +47576,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Tungöl"
+    ]
   },
   {
     "name": "Honig",
@@ -47505,7 +48435,11 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Diamid",
+      "Diazan"
+    ]
   },
   {
     "name": "Hydrazinhydrat",
@@ -47612,7 +48546,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Hydraziniumhydroxid"
+    ]
   },
   {
     "name": "Hydrochinon",
@@ -47719,7 +48656,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dihydroxybenzol, 1,4-"
+    ]
   },
   {
     "name": "Hydroxylammoniumsulfat",
@@ -47826,7 +48766,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxylaminsulfat"
+    ]
   },
   {
     "name": "Hydroxylammoniumsulfat",
@@ -47933,7 +48876,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxylaminsulfat"
+    ]
   },
   {
     "name": "Ingwer",
@@ -48147,7 +49093,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Gärungsamylalkohol",
+      "Methylbutanol, 3-"
+    ]
   },
   {
     "name": "Isobutanol",
@@ -48254,7 +49204,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Isobutylalkohol",
+      "Methylpropanol-1, 2-"
+    ]
   },
   {
     "name": "Isobutylacetat",
@@ -48361,7 +49315,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäureisobutylester"
+    ]
   },
   {
     "name": "Isobutylmethylketon",
@@ -48468,7 +49425,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Isopropylaceton",
+      "Methylisobutylketon (MIBK)",
+      "Methylpentan-2-on, 4-"
+    ]
   },
   {
     "name": "Isooctan",
@@ -48575,7 +49537,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Isobutyltrimethylmethan",
+      "Trimethylpentan, 2,2,4-"
+    ]
   },
   {
     "name": "Isopropanol",
@@ -48682,7 +49648,13 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dimethylcarbinol",
+      "Hydroxypropan, 2-",
+      "Isopropylalkohol",
+      "Propanol, 2-"
+    ]
   },
   {
     "name": "Isopropylacetat",
@@ -48789,7 +49761,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäureisopropylester"
+    ]
   },
   {
     "name": "Isopropylchlorid",
@@ -48896,7 +49871,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chlorpropan, 2-"
+    ]
   },
   {
     "name": "Isopropylether",
@@ -49003,7 +49981,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Diisopropylether"
+    ]
   },
   {
     "name": "Isopropylmethylketon",
@@ -49110,7 +50091,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methylbutanon-2, 3-",
+      "Methylisopropylketon"
+    ]
   },
   {
     "name": "Jodoform",
@@ -49217,7 +50202,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Triiodmethan"
+    ]
   },
   {
     "name": "Jodpentafluorid",
@@ -49859,7 +50847,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Alaune",
+      "Kalialaune"
+    ]
   },
   {
     "name": "Kaliumaluminiumsulfat",
@@ -49966,7 +50958,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Alaune",
+      "Kalialaune"
+    ]
   },
   {
     "name": "Kaliumborat",
@@ -50501,7 +51497,10 @@
         "c20": "1",
         "c50": "0L"
       }
-    }
+    },
+    "aliases": [
+      "Bromkalium"
+    ]
   },
   {
     "name": "Kaliumcarbonat",
@@ -50608,7 +51607,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Pottasche"
+    ]
   },
   {
     "name": "Kaliumcarbonat",
@@ -50715,7 +51717,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Pottasche"
+    ]
   },
   {
     "name": "Kaliumchlorat",
@@ -51036,7 +52041,10 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorkalium"
+    ]
   },
   {
     "name": "Kaliumchromat",
@@ -51143,7 +52151,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Chromsäure-Kaliumsalz"
+    ]
   },
   {
     "name": "Kaliumchromat",
@@ -51250,7 +52261,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Chromsäure-Kaliumsalz"
+    ]
   },
   {
     "name": "Kaliumcyanid",
@@ -51357,7 +52371,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Cyankali",
+      "Cyankalium"
+    ]
   },
   {
     "name": "Kaliumcyanid",
@@ -51464,7 +52482,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Cyankali",
+      "Cyankalium"
+    ]
   },
   {
     "name": "Kaliumdichromat",
@@ -51571,7 +52593,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kaliumbichromat"
+    ]
   },
   {
     "name": "Kaliumdichromat",
@@ -51678,7 +52703,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kaliumbichromat"
+    ]
   },
   {
     "name": "Kaliumfluorid",
@@ -51785,7 +52813,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Fluorkalium"
+    ]
   },
   {
     "name": "Kaliumhydrogencarbonat",
@@ -51892,7 +52923,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kaliumbicarbonat"
+    ]
   },
   {
     "name": "Kaliumhydrogensulfat",
@@ -51999,7 +53033,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Kaliumbisulfat"
+    ]
   },
   {
     "name": "Kaliumhydrogensulfat",
@@ -52106,7 +53143,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Kaliumbisulfat"
+    ]
   },
   {
     "name": "Kaliumhydrogentartat",
@@ -52213,7 +53253,12 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Kaliumbitartrat",
+      "Monokaliumtartrat",
+      "Weinstein"
+    ]
   },
   {
     "name": "Kaliumhydroxid",
@@ -52323,7 +53368,8 @@
     },
     "aliases": [
       "Kalilauge",
-      "Caustic Potash"
+      "Caustic Potash",
+      "Ätzkali"
     ]
   },
   {
@@ -52434,7 +53480,8 @@
     },
     "aliases": [
       "Kalilauge",
-      "Caustic Potash"
+      "Caustic Potash",
+      "Ätzkali"
     ]
   },
   {
@@ -52545,7 +53592,8 @@
     },
     "aliases": [
       "Kalilauge",
-      "Caustic Potash"
+      "Caustic Potash",
+      "Ätzkali"
     ]
   },
   {
@@ -52656,7 +53704,8 @@
     },
     "aliases": [
       "Kalilauge",
-      "Caustic Potash"
+      "Caustic Potash",
+      "Ätzkali"
     ]
   },
   {
@@ -52767,7 +53816,8 @@
     },
     "aliases": [
       "Kalilauge",
-      "Caustic Potash"
+      "Caustic Potash",
+      "Ätzkali"
     ]
   },
   {
@@ -53089,7 +54139,10 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Jodkalium"
+    ]
   },
   {
     "name": "Kaliumjodid",
@@ -53196,7 +54249,10 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Jodkalium"
+    ]
   },
   {
     "name": "Kaliumnitrat",
@@ -53303,7 +54359,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalisalpeter"
+    ]
   },
   {
     "name": "Kaliumnitrat",
@@ -53410,7 +54469,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalisalpeter"
+    ]
   },
   {
     "name": "Kaliumperchlorat",
@@ -53945,7 +55007,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Kalioumperoxodisulfat"
+    ]
   },
   {
     "name": "Kaliumsulfat",
@@ -54908,7 +55973,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Fluorkieselsäure",
+      "Fluorsiliziumsäure"
+    ]
   },
   {
     "name": "Kieselsäure",
@@ -55015,7 +56084,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Siliciumdioxid"
+    ]
   },
   {
     "name": "Knochenöl",
@@ -55229,7 +56301,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kohlensäure"
+    ]
   },
   {
     "name": "Kohlendioxid, feucht",
@@ -56513,7 +57588,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Holzteeröl"
+    ]
   },
   {
     "name": "Kresol (-Gemische)",
@@ -56620,7 +57698,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxytoluol",
+      "Methylphenol"
+    ]
   },
   {
     "name": "Kümmel",
@@ -57369,7 +58451,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kupfer-(I)-cyanid",
+      "Kupfercyanür"
+    ]
   },
   {
     "name": "Kupfervitriol",
@@ -57476,7 +58562,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kupfersulfat, wässrig"
+    ]
   },
   {
     "name": "Lachgas",
@@ -57797,7 +58886,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Lactobiose",
+      "Milchzucker"
+    ]
   },
   {
     "name": "Lanolin",
@@ -57904,7 +58997,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Wollfett"
+    ]
   },
   {
     "name": "Latex",
@@ -58118,7 +59214,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dodecanol",
+      "Dodecylalkohol"
+    ]
   },
   {
     "name": "Laurylchlorid",
@@ -58225,7 +59325,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chlordodecan",
+      "Dodecylchlorid"
+    ]
   },
   {
     "name": "Lavendelöl",
@@ -59188,7 +60292,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dipenten",
+      "Menthadien-1,8, p-"
+    ]
   },
   {
     "name": "Lithiumbromid",
@@ -59723,7 +60831,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Magnesit"
+    ]
   },
   {
     "name": "Magnesiumchlorid",
@@ -60365,7 +61476,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Bittersalz",
+      "Epsom-Salz"
+    ]
   },
   {
     "name": "Maiskeimöl",
@@ -60579,7 +61694,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butendisäure, cis-"
+    ]
   },
   {
     "name": "Maleinsäure",
@@ -60686,7 +61804,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butendisäure, cis-"
+    ]
   },
   {
     "name": "Mandelöl",
@@ -61435,7 +62556,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Isopropyl-5-methylcyclohexanol, 2-"
+    ]
   },
   {
     "name": "Mesityloxid",
@@ -61542,7 +62666,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Isopropylidenaceton",
+      "Methylisobutenylketon",
+      "Methylpent-4-en-2-on, 5-"
+    ]
   },
   {
     "name": "Methacrylsäure",
@@ -61649,7 +62778,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Methylacrylsäure",
+      "Methylpropensäure, 2-"
+    ]
   },
   {
     "name": "Methan",
@@ -61863,7 +62996,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Carbinol",
+      "Holzgeist",
+      "Methylalkohol"
+    ]
   },
   {
     "name": "Methoxybutanol",
@@ -61970,7 +63108,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxymethoxybutan"
+    ]
   },
   {
     "name": "Methoxyethyloleat",
@@ -62077,7 +63218,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ölsäuremethoxyethylester"
+    ]
   },
   {
     "name": "Methyethylether",
@@ -62291,7 +63435,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Acrylsäuremethylester",
+      "Methylpropenoat"
+    ]
   },
   {
     "name": "Methylamin, (Mono-)",
@@ -62398,7 +63546,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Aminomethan",
+      "Methanamin"
+    ]
   },
   {
     "name": "Methylbenzol",
@@ -62505,7 +63657,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Toluen",
+      "Toluol"
+    ]
   },
   {
     "name": "Methylbutanol",
@@ -62612,7 +63768,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methylbutylalkohol"
+    ]
   },
   {
     "name": "Methylbutylketon",
@@ -62719,7 +63878,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hexanon-2"
+    ]
   },
   {
     "name": "Methylchloracetat",
@@ -62826,7 +63988,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chloressigsäuremethylester",
+      "Monochloressigsäuremethylester"
+    ]
   },
   {
     "name": "Methylcyclohexan",
@@ -62933,7 +64099,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Cyclohexylmethan",
+      "Hexahydrotoluol"
+    ]
   },
   {
     "name": "Methylcyclopentan",
@@ -63147,7 +64317,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dichloressigsäuremethylester"
+    ]
   },
   {
     "name": "Methylethylketon (MEK)",
@@ -63361,7 +64534,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ameisensäuremethylester",
+      "Methylmethanoat"
+    ]
   },
   {
     "name": "Methylglycol",
@@ -63468,7 +64645,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylenglycolmonomethylether",
+      "Methoxyethanol",
+      "Methylcellosolve"
+    ]
   },
   {
     "name": "Methylglycolacetat",
@@ -63575,7 +64757,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methoxyethylacetat",
+      "Oxabutylacetat"
+    ]
   },
   {
     "name": "Methylmethacrylat",
@@ -63682,7 +64868,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methacrylsäuremethylester",
+      "Methyl-2-methylpropionat"
+    ]
   },
   {
     "name": "Methyloleat",
@@ -63789,7 +64979,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ölsäuremethylester"
+    ]
   },
   {
     "name": "Methylpropylketon",
@@ -63896,7 +65089,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Pentanon, 2-"
+    ]
   },
   {
     "name": "Methylsalicylat",
@@ -64003,7 +65199,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methyl-2-hydroxybenzoat",
+      "Salicylsäuremethylester"
+    ]
   },
   {
     "name": "Methylschwefelsäure",
@@ -64110,7 +65310,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Schwefelsäuremonomethylester"
+    ]
   },
   {
     "name": "Methylschwefelsäure",
@@ -64217,7 +65420,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Schwefelsäuremonomethylester"
+    ]
   },
   {
     "name": "Milch",
@@ -64431,7 +65637,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxypropionsäure, 2-"
+    ]
   },
   {
     "name": "Milchsäure",
@@ -64538,7 +65747,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxypropionsäure, 2-"
+    ]
   },
   {
     "name": "Milchsäure",
@@ -64645,7 +65857,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxypropionsäure, 2-"
+    ]
   },
   {
     "name": "Mineralöl",
@@ -65073,7 +66288,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Tetrahydro-1,4-oxazin"
+    ]
   },
   {
     "name": "Motorenöl",
@@ -66250,7 +67468,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzoesäure Natriumsalz"
+    ]
   },
   {
     "name": "Natriumbenzoat",
@@ -66357,7 +67578,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Benzoesäure Natriumsalz"
+    ]
   },
   {
     "name": "Natriumbenzoat",
@@ -66464,7 +67688,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Benzoesäure Natriumsalz"
+    ]
   },
   {
     "name": "Natriumbicarbonat",
@@ -66571,7 +67798,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natriumhydrogencarbonat"
+    ]
   },
   {
     "name": "Natriumbisulfat",
@@ -66678,7 +67908,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natriumhydrogensulfat"
+    ]
   },
   {
     "name": "Natriumbisulfat",
@@ -66785,7 +68018,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natriumhydrogensulfat"
+    ]
   },
   {
     "name": "Natriumbisulfit",
@@ -66892,7 +68128,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Bisulfit",
+      "Natriumhydrogensulfit"
+    ]
   },
   {
     "name": "Natriumborat",
@@ -66999,7 +68239,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Borax",
+      "Natriumtetraborat"
+    ]
   },
   {
     "name": "Natriumborat",
@@ -67106,7 +68350,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Borax",
+      "Natriumtetraborat"
+    ]
   },
   {
     "name": "Natriumbromat",
@@ -67427,7 +68675,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Soda"
+    ]
   },
   {
     "name": "Natriumcarbonat",
@@ -67534,7 +68785,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Soda"
+    ]
   },
   {
     "name": "Natriumcarbonat",
@@ -67641,7 +68895,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Soda"
+    ]
   },
   {
     "name": "Natriumchlorat",
@@ -67962,7 +69219,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Kochsalz"
+    ]
   },
   {
     "name": "Natriumchlorid",
@@ -68069,7 +69329,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Kochsalz"
+    ]
   },
   {
     "name": "Natriumchlorit",
@@ -68390,7 +69653,10 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Cyannatrium"
+    ]
   },
   {
     "name": "Natriumcyanid",
@@ -68497,7 +69763,10 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Cyannatrium"
+    ]
   },
   {
     "name": "Natriumdichromat",
@@ -68604,7 +69873,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Matriumpyrochromat",
+      "Natriumbichromat"
+    ]
   },
   {
     "name": "Natriumdisulfit",
@@ -68711,7 +69984,13 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Disulfit",
+      "Matriummetabisulfit",
+      "Natriumpyrosulfit",
+      "Pyrosulfit"
+    ]
   },
   {
     "name": "Natriumdithionit",
@@ -68818,7 +70097,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydrosulfit",
+      "Natriumhydrosulfit",
+      "Natriumhypodisulfit"
+    ]
   },
   {
     "name": "Natriumdithionit",
@@ -68925,7 +70209,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydrosulfit",
+      "Natriumhydrosulfit",
+      "Natriumhypodisulfit"
+    ]
   },
   {
     "name": "Natriumdodecylbenzolsulfonat",
@@ -69464,7 +70753,8 @@
     "aliases": [
       "Natronlauge",
       "Caustic Soda",
-      "Lye"
+      "Lye",
+      "Ätznatron"
     ]
   },
   {
@@ -69576,7 +70866,8 @@
     "aliases": [
       "Natronlauge",
       "Caustic Soda",
-      "Lye"
+      "Lye",
+      "Ätznatron"
     ]
   },
   {
@@ -69688,7 +70979,8 @@
     "aliases": [
       "Natronlauge",
       "Caustic Soda",
-      "Lye"
+      "Lye",
+      "Ätznatron"
     ]
   },
   {
@@ -69800,7 +71092,8 @@
     "aliases": [
       "Natronlauge",
       "Caustic Soda",
-      "Lye"
+      "Lye",
+      "Ätznatron"
     ]
   },
   {
@@ -69912,7 +71205,8 @@
     "aliases": [
       "Natronlauge",
       "Caustic Soda",
-      "Lye"
+      "Lye",
+      "Ätznatron"
     ]
   },
   {
@@ -70024,7 +71318,8 @@
     "aliases": [
       "Natronlauge",
       "Caustic Soda",
-      "Lye"
+      "Lye",
+      "Ätznatron"
     ]
   },
   {
@@ -70132,7 +71427,12 @@
         "c20": "2",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorbleichlauge",
+      "Eau de Labarraque",
+      "Natronbleichlauge"
+    ]
   },
   {
     "name": "Natriumhypochlorit",
@@ -70239,7 +71539,12 @@
         "c20": "2",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorbleichlauge",
+      "Eau de Labarraque",
+      "Natronbleichlauge"
+    ]
   },
   {
     "name": "Natriumhypochlorit",
@@ -70346,7 +71651,12 @@
         "c20": "2",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorbleichlauge",
+      "Eau de Labarraque",
+      "Natronbleichlauge"
+    ]
   },
   {
     "name": "Natriumhypochlorit",
@@ -70453,7 +71763,12 @@
         "c20": "2",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorbleichlauge",
+      "Eau de Labarraque",
+      "Natronbleichlauge"
+    ]
   },
   {
     "name": "Natriumjodid",
@@ -70667,7 +71982,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natronsalpeter"
+    ]
   },
   {
     "name": "Natriumnitrat",
@@ -70774,7 +72092,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natronsalpeter"
+    ]
   },
   {
     "name": "Natriumnitrit",
@@ -71095,7 +72416,10 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Oxalsäure Natriumsalz"
+    ]
   },
   {
     "name": "Natriumperborat",
@@ -71202,7 +72526,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Natriummetaboratperoxid"
+    ]
   },
   {
     "name": "Natriumperborat",
@@ -71309,7 +72636,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Natriummetaboratperoxid"
+    ]
   },
   {
     "name": "Natriumperchlorat",
@@ -71737,7 +73067,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Natriumperoxodisulfat"
+    ]
   },
   {
     "name": "Natriumphosphat",
@@ -71844,7 +73177,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natriumphosphat-Dodecahydrat",
+      "Trinatriumphosphat, tribasisch"
+    ]
   },
   {
     "name": "Natriumphosphat",
@@ -71951,7 +73288,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natriumphosphat-Dodecahydrat",
+      "Trinatriumphosphat, tribasisch"
+    ]
   },
   {
     "name": "Natriumsilicat",
@@ -72058,7 +73399,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natronwasserglas"
+    ]
   },
   {
     "name": "Natriumstearat",
@@ -72272,7 +73616,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dinatriumsulfat",
+      "Glaubersalz"
+    ]
   },
   {
     "name": "Natriumsulfat",
@@ -72379,7 +73727,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dinatriumsulfat",
+      "Glaubersalz"
+    ]
   },
   {
     "name": "Natriumsulfat",
@@ -72486,7 +73838,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dinatriumsulfat",
+      "Glaubersalz"
+    ]
   },
   {
     "name": "Natriumsulfid",
@@ -72593,7 +73949,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Schwefelnatrium"
+    ]
   },
   {
     "name": "Natriumsulfid",
@@ -72700,7 +74059,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Schwefelnatrium"
+    ]
   },
   {
     "name": "Natriumsulfit",
@@ -72914,7 +74276,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Fixiersalz",
+      "Natriumthiosulfat-5-hydrat"
+    ]
   },
   {
     "name": "Natriumthiosulfat",
@@ -73021,7 +74387,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Fixiersalz",
+      "Natriumthiosulfat-5-hydrat"
+    ]
   },
   {
     "name": "Natriumthiosulfat",
@@ -73128,7 +74498,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Fixiersalz",
+      "Natriumthiosulfat-5-hydrat"
+    ]
   },
   {
     "name": "Nelken",
@@ -73449,7 +74823,10 @@
         "c20": "K",
         "c50": "K"
       }
-    }
+    },
+    "aliases": [
+      "Tenside"
+    ]
   },
   {
     "name": "Nickel-(II)-chlorid",
@@ -73556,7 +74933,10 @@
         "c20": "2",
         "c50": "0L"
       }
-    }
+    },
+    "aliases": [
+      "Chlornickel"
+    ]
   },
   {
     "name": "Nickel-(II)-chlorid",
@@ -73663,7 +75043,10 @@
         "c20": "2",
         "c50": "0L"
       }
-    }
+    },
+    "aliases": [
+      "Chlornickel"
+    ]
   },
   {
     "name": "Nickelacetat",
@@ -74305,7 +75688,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Niacin",
+      "Pyridin-3-carbonsäure"
+    ]
   },
   {
     "name": "Nitrobenzoesäure",
@@ -74733,7 +76120,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Glycerintrinitrat"
+    ]
   },
   {
     "name": "Nitroglycol",
@@ -74840,7 +76230,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Glycoldinitrat"
+    ]
   },
   {
     "name": "Nitropropan",
@@ -75375,7 +76768,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Nonylalkohol"
+    ]
   },
   {
     "name": "Obstpulp",
@@ -75696,7 +77092,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon C 318"
+    ]
   },
   {
     "name": "Octan, n-",
@@ -75910,7 +77309,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Octanol, 1-"
+    ]
   },
   {
     "name": "Octylkresol",
@@ -76659,7 +78061,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Octadec-9-ensäure, cis-",
+      "Olein"
+    ]
   },
   {
     "name": "Oxalsäure",
@@ -76766,7 +78172,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Ethandisäure"
+    ]
   },
   {
     "name": "Oxalsäure",
@@ -76873,7 +78282,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Ethandisäure"
+    ]
   },
   {
     "name": "Oxymethylfurfurol, 5-",
@@ -76980,7 +78392,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxymethylfurfural, 5-"
+    ]
   },
   {
     "name": "Ozon",
@@ -77301,7 +78716,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Cetylsäure",
+      "Fettsäure C16",
+      "Hexadecansäure"
+    ]
   },
   {
     "name": "Palmkernöl",
@@ -77943,7 +79363,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Paraform",
+      "Polyoxymethylen"
+    ]
   },
   {
     "name": "Parfüms",
@@ -78585,7 +80009,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Diethylmethan",
+      "Dimethylpropan"
+    ]
   },
   {
     "name": "Pentanthiol, 1-",
@@ -78692,7 +80120,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Amylhydrosulfid",
+      "Amylmercaptan"
+    ]
   },
   {
     "name": "Perchlorethylen (PER)",
@@ -78906,7 +80338,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Überchlorsäure"
+    ]
   },
   {
     "name": "Perchlorsäure",
@@ -79013,7 +80448,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Überchlorsäure"
+    ]
   },
   {
     "name": "Perfluorpropan",
@@ -79120,7 +80558,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 218"
+    ]
   },
   {
     "name": "Petrolether",
@@ -79655,7 +81096,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Acetamino-4-ethoxybenzol, 1-",
+      "Ethoxyacetanilid, 4-"
+    ]
   },
   {
     "name": "Phenol",
@@ -79762,7 +81207,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Carbolsäure",
+      "Hydroxybenzol"
+    ]
   },
   {
     "name": "Phenol",
@@ -79869,7 +81318,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Carbolsäure",
+      "Hydroxybenzol"
+    ]
   },
   {
     "name": "Phenolharzformmasse",
@@ -80083,7 +81536,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzylcarbinol",
+      "Phenylethylalkohol"
+    ]
   },
   {
     "name": "Phenylethylether",
@@ -80190,7 +81647,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Phenetol"
+    ]
   },
   {
     "name": "Phenylhydrazin",
@@ -80297,7 +81757,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Hydrazinobenzol"
+    ]
   },
   {
     "name": "Phenylhydrazin-HCl",
@@ -80404,7 +81867,10 @@
         "c20": "4L",
         "c50": "4L"
       }
-    }
+    },
+    "aliases": [
+      "Phenylhydrazinchlorhydrat"
+    ]
   },
   {
     "name": "Phenylsulfonat",
@@ -80618,7 +82084,11 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Carbonylchlorid",
+      "Kohlensäuredichlorid"
+    ]
   },
   {
     "name": "Phosgen",
@@ -80725,7 +82195,11 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Carbonylchlorid",
+      "Kohlensäuredichlorid"
+    ]
   },
   {
     "name": "Phosphate",
@@ -80939,7 +82413,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Phosphorwasserstoff"
+    ]
   },
   {
     "name": "Phosphoroxychlorid",
@@ -81046,7 +82523,12 @@
         "c20": "1",
         "c50": "3L"
       }
-    }
+    },
+    "aliases": [
+      "Phosphorylchlorid",
+      "Trichlorphosphinoxid",
+      "Trichlorphosphoroxid"
+    ]
   },
   {
     "name": "Phosphoroxychlorid",
@@ -81153,7 +82635,12 @@
         "c20": "1",
         "c50": "3L"
       }
-    }
+    },
+    "aliases": [
+      "Phosphorylchlorid",
+      "Trichlorphosphinoxid",
+      "Trichlorphosphoroxid"
+    ]
   },
   {
     "name": "Phosphorpentachlorid",
@@ -81260,7 +82747,11 @@
         "c20": "1",
         "c50": "3L"
       }
-    }
+    },
+    "aliases": [
+      "Phosphorperchlorid",
+      "Phosphorsäurechlorid"
+    ]
   },
   {
     "name": "Phosphorpentoxid",
@@ -81367,7 +82858,12 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Diphosphorpentoxid",
+      "Phosphorsäureanhydrid",
+      "Tetraphosphordecaoxid"
+    ]
   },
   {
     "name": "Phosphorsäure",
@@ -81474,7 +82970,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Orthophosphorsäure"
+    ]
   },
   {
     "name": "Phosphorsäure",
@@ -81581,7 +83080,10 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Orthophosphorsäure"
+    ]
   },
   {
     "name": "Phosphorsäure",
@@ -81688,7 +83190,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Orthophosphorsäure"
+    ]
   },
   {
     "name": "Phosphorsäure",
@@ -81795,7 +83300,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Orthophosphorsäure"
+    ]
   },
   {
     "name": "Phosphortrichlorid",
@@ -81902,7 +83410,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Phosphor-(III)-chlorid",
+      "Trichlorphosphin"
+    ]
   },
   {
     "name": "Phthalsäure",
@@ -82009,7 +83521,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Benzol-1,2-dicarbonsäure"
+    ]
   },
   {
     "name": "Phthalsäureamylester",
@@ -82116,7 +83631,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dipentylphthalat"
+    ]
   },
   {
     "name": "Phthalsäuremonoamylester",
@@ -82223,7 +83741,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Monopentylphthalat"
+    ]
   },
   {
     "name": "Pikrinsäure",
@@ -82330,7 +83851,10 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Trinitrophenol, 2,4,6-"
+    ]
   },
   {
     "name": "Piment",
@@ -82544,7 +84068,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hexahydropyridin",
+      "Pentamethylenimin"
+    ]
   },
   {
     "name": "Polyesterharze",
@@ -82758,7 +84286,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Polyglycol",
+      "Polyoxyethylen"
+    ]
   },
   {
     "name": "Polyran M25 N",
@@ -83721,7 +85253,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylcarbinol",
+      "Hydroxypropan",
+      "Propylalkohol"
+    ]
   },
   {
     "name": "Propargylalkohol",
@@ -83828,7 +85365,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethinylcarbiol",
+      "Propin-1-ol, 2-"
+    ]
   },
   {
     "name": "Propen",
@@ -83935,7 +85476,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Propylen"
+    ]
   },
   {
     "name": "Propionsäure",
@@ -84042,7 +85586,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethancarbonsäure",
+      "Propansäure"
+    ]
   },
   {
     "name": "Propionsäure",
@@ -84149,7 +85697,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethancarbonsäure",
+      "Propansäure"
+    ]
   },
   {
     "name": "Propylacetat",
@@ -84256,7 +85808,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäurepropylester"
+    ]
   },
   {
     "name": "Propylamin, n-",
@@ -84363,7 +85918,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Aminopropan"
+    ]
   },
   {
     "name": "Propylenglycol",
@@ -84470,7 +86028,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Propandiol, 1,2-"
+    ]
   },
   {
     "name": "Propylenglycolmethylether",
@@ -84577,7 +86138,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Methoxypropanol"
+    ]
   },
   {
     "name": "Propylenoxid",
@@ -84684,7 +86248,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Epoxypropan",
+      "Methyloxiran"
+    ]
   },
   {
     "name": "Propylnitrat",
@@ -84898,7 +86466,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Trimethylbenzol, 1,3,4-"
+    ]
   },
   {
     "name": "Pydraul C (312, 540)",
@@ -85326,7 +86897,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Trihydroxybenzol, 1,2,3-"
+    ]
   },
   {
     "name": "Pyrrol",
@@ -85861,7 +87435,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Quecksilber-(II)-nitrat",
+      "Quecksilberpernitrat"
+    ]
   },
   {
     "name": "Ramasit",
@@ -86075,7 +87653,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dihydroxybenzol, 1,3-"
+    ]
   },
   {
     "name": "Resorcin",
@@ -86182,7 +87763,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dihydroxybenzol, 1,3-"
+    ]
   },
   {
     "name": "Rindertalg",
@@ -87252,7 +88836,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxybenzaldehyd, 2-"
+    ]
   },
   {
     "name": "Salicylsäure",
@@ -87359,7 +88946,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxybenzoesäure, 2-",
+      "Hydroxybenzolcarbonsäure, 2-"
+    ]
   },
   {
     "name": "Salicylsäure",
@@ -87466,7 +89057,11 @@
         "c20": "1",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxybenzoesäure, 2-",
+      "Hydroxybenzolcarbonsäure, 2-"
+    ]
   },
   {
     "name": "Salpetersäure",
@@ -88108,7 +89703,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Chlorwasserstoffsäure"
+    ]
   },
   {
     "name": "Salzsäure",
@@ -88215,7 +89813,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Chlorwasserstoffsäure"
+    ]
   },
   {
     "name": "Salzsäure",
@@ -88322,7 +89923,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Chlorwasserstoffsäure"
+    ]
   },
   {
     "name": "Salzsäure",
@@ -88429,7 +90033,10 @@
         "c20": "4",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Chlorwasserstoffsäure"
+    ]
   },
   {
     "name": "Salzsole",
@@ -88643,7 +90250,11 @@
         "c20": "1",
         "c50": "2L"
       }
-    }
+    },
+    "aliases": [
+      "Meerwasser",
+      "Seewasser, Meerwasser"
+    ]
   },
   {
     "name": "Sattdampfkondensat",
@@ -89392,7 +91003,11 @@
         "c20": "1",
         "c50": "1L"
       }
-    }
+    },
+    "aliases": [
+      "Dischwefeldichlorid",
+      "Schwefelmonochlorid"
+    ]
   },
   {
     "name": "Schwefeldioxid",
@@ -89820,7 +91435,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Carbondisulfid",
+      "Kohlen(stoff)disulfid"
+    ]
   },
   {
     "name": "Schwefelsäure",
@@ -90890,7 +92509,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Schwefeldioxid, wässrige Lösung"
+    ]
   },
   {
     "name": "Schweinefett",
@@ -91318,7 +92940,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäure Silbersalz"
+    ]
   },
   {
     "name": "Silbercyanid",
@@ -91853,7 +93478,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Polysiloxan"
+    ]
   },
   {
     "name": "Skydrol 500 (B4)",
@@ -92602,7 +94230,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Branntweine"
+    ]
   },
   {
     "name": "Spiritus",
@@ -93030,7 +94661,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Glucosesirup"
+    ]
   },
   {
     "name": "Staufferfett",
@@ -93244,7 +94878,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Octadecansäure"
+    ]
   },
   {
     "name": "Stearinsäurebutylester",
@@ -93351,7 +94988,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Butylstearat"
+    ]
   },
   {
     "name": "Steinkohlenteeröl",
@@ -93672,7 +95312,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Distickstofftetroxid"
+    ]
   },
   {
     "name": "Strontiumbromid",
@@ -93993,7 +95636,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Phenyethylen",
+      "Vinylbenzol"
+    ]
   },
   {
     "name": "Sulfurylchlorid",
@@ -94314,7 +95961,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Gallotannin",
+      "Gerbsäure"
+    ]
   },
   {
     "name": "Tannin",
@@ -94421,7 +96072,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Gallotannin",
+      "Gerbsäure"
+    ]
   },
   {
     "name": "Teer",
@@ -95491,7 +97146,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Kohlenstofftetrabromid",
+      "Tetrabrommethan"
+    ]
   },
   {
     "name": "Tetrachlorethan",
@@ -95919,7 +97578,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethylsilicat",
+      "Kieselsäuretetraethylester",
+      "Ortho-Kieselsäuretetraethylester"
+    ]
   },
   {
     "name": "Tetrafluormethan",
@@ -96026,7 +97690,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 14"
+    ]
   },
   {
     "name": "Tetrahydrofuran (THF)",
@@ -96240,7 +97907,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hydroxymethyltetrahydrofuran, 2-"
+    ]
   },
   {
     "name": "Tetrahydronaphthalin",
@@ -96347,7 +98017,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Tetralin"
+    ]
   },
   {
     "name": "Thioglycolsäure",
@@ -96454,7 +98127,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Mercaptoessigsäure",
+      "Mercaptoethansäure, 2-"
+    ]
   },
   {
     "name": "Thionylchlorid",
@@ -96561,7 +98238,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Schwefligsäuredichlorid"
+    ]
   },
   {
     "name": "Thiophen",
@@ -96668,7 +98348,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Divinylensulfid",
+      "Thiacyclopentadien",
+      "Thiofuran"
+    ]
   },
   {
     "name": "Thymol",
@@ -96775,7 +98460,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Isopropyl-5-methylphenol, 2-"
+    ]
   },
   {
     "name": "Titantetrachlorid",
@@ -96882,7 +98570,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Tetrachlortitan",
+      "Titanchlorid"
+    ]
   },
   {
     "name": "Traganth",
@@ -97203,7 +98895,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Glyzerintriacetat"
+    ]
   },
   {
     "name": "Tributylcitrat",
@@ -97310,7 +99005,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Citronensäuretributylester"
+    ]
   },
   {
     "name": "Tributylphosphat (TBP)",
@@ -97524,7 +99222,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Chloral"
+    ]
   },
   {
     "name": "Trichlorbenzol",
@@ -98059,7 +99760,12 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Fluortrichlormethan",
+      "Freon 11",
+      "Trichlormonofluormethan"
+    ]
   },
   {
     "name": "Trichlorphenol",
@@ -98273,7 +99979,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Freon 113"
+    ]
   },
   {
     "name": "Triethanolamin (TEA)",
@@ -98701,7 +100410,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Triethylenglycol"
+    ]
   },
   {
     "name": "Triglycolacetat",
@@ -98808,7 +100520,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Triethylenglykoldiacetat"
+    ]
   },
   {
     "name": "Triisopropylbenzol",
@@ -99129,7 +100844,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Ethyl(hydroxymethyl)-propandiol",
+      "Propylidintris(methanol)",
+      "Tris(hydroxymethyl)-propan"
+    ]
   },
   {
     "name": "Trinatriumphosphat",
@@ -99236,7 +100956,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natriumphosphat, tertiär"
+    ]
   },
   {
     "name": "Trioctylphosphat",
@@ -99343,7 +101066,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Tris(2-ethylhexyl)-phosphat"
+    ]
   },
   {
     "name": "Tripropylenglycol (TPG)",
@@ -99664,7 +101390,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Hendecanol",
+      "Undecanol"
+    ]
   },
   {
     "name": "Urin",
@@ -99878,7 +101608,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Petrolatum"
+    ]
   },
   {
     "name": "Vaselinöl",
@@ -100199,7 +101932,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Essigsäurevinylester"
+    ]
   },
   {
     "name": "Vinylidenchlorid",
@@ -100306,7 +102042,11 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Dichlorethen, 1,1-",
+      "Dichlorethylen, 1,1-"
+    ]
   },
   {
     "name": "Vitamin C",
@@ -101483,7 +103223,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Wasserstoffsuperoxid"
+    ]
   },
   {
     "name": "Wasserstoffperoxid",
@@ -101590,7 +103333,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Wasserstoffsuperoxid"
+    ]
   },
   {
     "name": "Wasserstoffperoxid",
@@ -101697,7 +103443,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Wasserstoffsuperoxid"
+    ]
   },
   {
     "name": "Wasserstoffperoxid",
@@ -101804,7 +103553,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Wasserstoffsuperoxid"
+    ]
   },
   {
     "name": "Weichmacher",
@@ -102339,7 +104091,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Dihydroxybernsteinsäure"
+    ]
   },
   {
     "name": "Weinsäure",
@@ -102446,7 +104201,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Dihydroxybernsteinsäure"
+    ]
   },
   {
     "name": "Whiskey",
@@ -102874,7 +104632,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Dimethylbenzol",
+      "Xylen"
+    ]
   },
   {
     "name": "Zedernöl",
@@ -103195,7 +104957,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Phenyl-2-propenal, trans-3-"
+    ]
   },
   {
     "name": "Zimtöl",
@@ -103730,7 +105495,10 @@
         "c20": "1",
         "c50": "3L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorzink"
+    ]
   },
   {
     "name": "Zinkchlorid",
@@ -103837,7 +105605,10 @@
         "c20": "1",
         "c50": "3L"
       }
-    }
+    },
+    "aliases": [
+      "Chlorzink"
+    ]
   },
   {
     "name": "Zinknitrat",
@@ -104479,7 +106250,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Stearinsäure Zinksalz"
+    ]
   },
   {
     "name": "Zinksulfat",
@@ -104586,7 +106360,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Zinkvitriol"
+    ]
   },
   {
     "name": "Zinn-(II)-chlorid",
@@ -104693,7 +106470,11 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Zinndichlorid",
+      "Zinnprotochlorid"
+    ]
   },
   {
     "name": "Zinn-(II)-chlorid",
@@ -104800,7 +106581,11 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Zinndichlorid",
+      "Zinnprotochlorid"
+    ]
   },
   {
     "name": "Zinn-(IV)-chlorid",
@@ -104907,7 +106692,10 @@
         "c20": "3",
         "c50": "4"
       }
-    }
+    },
+    "aliases": [
+      "Zinntetrachlorid"
+    ]
   },
   {
     "name": "Zitronensaft",
@@ -105121,7 +106909,10 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Citronensäure"
+    ]
   },
   {
     "name": "Zitronensäure",
@@ -105228,7 +107019,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Citronensäure"
+    ]
   },
   {
     "name": "Zitronensäure",
@@ -105335,7 +107129,10 @@
         "c20": "1",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Citronensäure"
+    ]
   },
   {
     "name": "Zitronenschalenöl",
@@ -105763,7 +107560,10 @@
         "c20": "0",
         "c50": "0"
       }
-    }
+    },
+    "aliases": [
+      "Glucarsäure"
+    ]
   },
   {
     "name": "Zuckersirup",

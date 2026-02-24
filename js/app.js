@@ -1,5 +1,5 @@
 // Chemical Resistance App v2 - External data loading
-// 990 chemicals × 24 materials
+// 835 chemicals × 24 materials
 
 // Common German → English translations
 const translations = {
