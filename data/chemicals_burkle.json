@@ -457,7 +457,7 @@
   },
   {
     "name": "Acetaldehyd",
-    "name_en": "",
+    "name_en": "Acetaldehyde",
     "formula": "C2H4O",
     "cas": "000075-07-0",
     "concentration": "40 %",
@@ -514,7 +514,7 @@
   },
   {
     "name": "Acetaldehyd",
-    "name_en": "",
+    "name_en": "Acetaldehyde",
     "formula": "C2H4O",
     "cas": "000075-07-0",
     "concentration": "techn. rein",
@@ -571,7 +571,7 @@
   },
   {
     "name": "Acetamid",
-    "name_en": "",
+    "name_en": "Acetamide",
     "formula": "C2H5NO",
     "cas": "000060-35-5",
     "concentration": "gesättigt",
@@ -856,7 +856,7 @@
   },
   {
     "name": "Acetylen",
-    "name_en": "",
+    "name_en": "Acetylene",
     "formula": "C2H2",
     "cas": "000074-86-2",
     "concentration": "100 %",
@@ -970,7 +970,7 @@
   },
   {
     "name": "Acrylnitril",
-    "name_en": "",
+    "name_en": "Acrylonitrile",
     "formula": "C3H3N",
     "cas": "000107-13-1",
     "concentration": "",
@@ -1027,7 +1027,7 @@
   },
   {
     "name": "Adipinsäure",
-    "name_en": "",
+    "name_en": "Adipic Acid",
     "formula": "C6H10O4",
     "cas": "000124-04-9",
     "concentration": "gesättigt",
@@ -1141,7 +1141,7 @@
   },
   {
     "name": "Alanin",
-    "name_en": "",
+    "name_en": "Alanine",
     "formula": "C3H7NO2",
     "cas": "000056-41-7",
     "concentration": "",
@@ -1255,7 +1255,7 @@
   },
   {
     "name": "Allylalkohol",
-    "name_en": "",
+    "name_en": "Allyl Alcohol",
     "formula": "C3H6O",
     "cas": "000107-18-6",
     "concentration": "96 %",
@@ -1711,7 +1711,7 @@
   },
   {
     "name": "Aluminiumfluorid",
-    "name_en": "",
+    "name_en": "Aluminum Fluoride",
     "formula": "AlF3",
     "cas": "007789-18-1",
     "concentration": "wässrig",
@@ -1768,7 +1768,7 @@
   },
   {
     "name": "Aluminiumhydroxid",
-    "name_en": "",
+    "name_en": "Aluminum Hydroxide",
     "formula": "Al(HO)3",
     "cas": "021645-51-2",
     "concentration": "",
@@ -1825,7 +1825,7 @@
   },
   {
     "name": "Aluminiumnitrat",
-    "name_en": "",
+    "name_en": "Aluminum Nitrate",
     "formula": "Al(NO3)3",
     "cas": "013473-90-0",
     "concentration": "wässrig",
@@ -1882,7 +1882,7 @@
   },
   {
     "name": "Aluminiumoxid",
-    "name_en": "",
+    "name_en": "Aluminum Oxide",
     "formula": "Al2O3",
     "cas": "001344-28-1",
     "concentration": "fest",
@@ -1939,7 +1939,7 @@
   },
   {
     "name": "Aluminiumsulfat",
-    "name_en": "",
+    "name_en": "Aluminum Sulfate",
     "formula": "Al2(SO4)3",
     "cas": "010043-01-3",
     "concentration": "10 %",
@@ -1996,7 +1996,7 @@
   },
   {
     "name": "Aluminiumsulfat",
-    "name_en": "",
+    "name_en": "Aluminum Sulfate",
     "formula": "Al2(SO4)3",
     "cas": "010043-01-3",
     "concentration": "gesättigt",
@@ -2281,7 +2281,7 @@
   },
   {
     "name": "Ammoniumacetat",
-    "name_en": "",
+    "name_en": "Ammonium Acetate",
     "formula": "C2H7NO2",
     "cas": "000631-61-8",
     "concentration": "gesättigt",
@@ -2338,7 +2338,7 @@
   },
   {
     "name": "Ammoniumcarbonat",
-    "name_en": "",
+    "name_en": "Ammonium Carbonate",
     "formula": "(NH4)2CO3",
     "cas": "010361-29-2",
     "concentration": "50 %",
@@ -2395,7 +2395,7 @@
   },
   {
     "name": "Ammoniumcarbonat",
-    "name_en": "",
+    "name_en": "Ammonium Carbonate",
     "formula": "(NH4)2CO3",
     "cas": "010361-29-2",
     "concentration": "wässrig",
@@ -2737,7 +2737,7 @@
   },
   {
     "name": "Ammoniumfluorid",
-    "name_en": "",
+    "name_en": "Ammonium Fluoride",
     "formula": "(NH4)F",
     "cas": "012125-01-8",
     "concentration": "gesättigt",
@@ -2794,7 +2794,7 @@
   },
   {
     "name": "Ammoniumfluorid",
-    "name_en": "",
+    "name_en": "Ammonium Fluoride",
     "formula": "(NH4)F",
     "cas": "012125-01-8",
     "concentration": "wässrig",
@@ -3474,7 +3474,7 @@
   },
   {
     "name": "Ammoniumnitrit",
-    "name_en": "",
+    "name_en": "Ammonium Nitrite",
     "formula": "(NH4)NO2",
     "cas": "013446-48-5",
     "concentration": "wässrig",
@@ -3531,7 +3531,7 @@
   },
   {
     "name": "Ammoniumoxalat",
-    "name_en": "",
+    "name_en": "Ammonium Oxalate",
     "formula": "C2H8N2O4",
     "cas": "014258-49-2",
     "concentration": "",
@@ -3816,7 +3816,7 @@
   },
   {
     "name": "Ammoniumsulfid",
-    "name_en": "",
+    "name_en": "Ammonium Sulfide",
     "formula": "(NH4)2S",
     "cas": "012135-76-1",
     "concentration": "jede",
@@ -3873,7 +3873,7 @@
   },
   {
     "name": "Ammoniumsulfid",
-    "name_en": "",
+    "name_en": "Ammonium Sulfide",
     "formula": "(NH4)2S",
     "cas": "012135-76-1",
     "concentration": "wässrig",
@@ -3987,7 +3987,7 @@
   },
   {
     "name": "Amylacetat, n-",
-    "name_en": "",
+    "name_en": "Amyl Acetate",
     "formula": "C7H11O2",
     "cas": "000628-63-7",
     "concentration": "",
@@ -4044,7 +4044,7 @@
   },
   {
     "name": "Amylalkohol, n-",
-    "name_en": "",
+    "name_en": "Amyl Alcohol",
     "formula": "C5H12O",
     "cas": "000071-41-0",
     "concentration": "",
@@ -4272,7 +4272,7 @@
   },
   {
     "name": "Anilin",
-    "name_en": "",
+    "name_en": "Aniline",
     "formula": "C6H7N",
     "cas": "000062-53-3",
     "concentration": "",
@@ -5298,7 +5298,7 @@
   },
   {
     "name": "Bariumbromid",
-    "name_en": "",
+    "name_en": "Barium Bromide",
     "formula": "BaBr2",
     "cas": "010553-31-8",
     "concentration": "",
@@ -5355,7 +5355,7 @@
   },
   {
     "name": "Bariumcarbonat",
-    "name_en": "",
+    "name_en": "Barium Carbonate",
     "formula": "BaCO3",
     "cas": "000513-77-9",
     "concentration": "gesättigt",
@@ -5526,7 +5526,7 @@
   },
   {
     "name": "Bariumhydroxid",
-    "name_en": "",
+    "name_en": "Barium Hydroxide",
     "formula": "Ba(HO)2",
     "cas": "012230-71-6",
     "concentration": "gesättigt",
@@ -5583,7 +5583,7 @@
   },
   {
     "name": "Bariumhydroxid",
-    "name_en": "",
+    "name_en": "Barium Hydroxide",
     "formula": "Ba(HO)2",
     "cas": "012230-71-6",
     "concentration": "wässrig",
@@ -5640,7 +5640,7 @@
   },
   {
     "name": "Bariumsulfid",
-    "name_en": "",
+    "name_en": "Barium Sulfide",
     "formula": "BaS",
     "cas": "021109-95-5",
     "concentration": "gesättigt",
@@ -5754,7 +5754,7 @@
   },
   {
     "name": "Benzaldehyd",
-    "name_en": "",
+    "name_en": "Benzaldehyde",
     "formula": "C7H6O",
     "cas": "000100-52-7",
     "concentration": "",
@@ -5868,7 +5868,7 @@
   },
   {
     "name": "Benzoesäure",
-    "name_en": "",
+    "name_en": "Benzoic Acid",
     "formula": "C7H6O2",
     "cas": "000065-85-0",
     "concentration": "gesättigt",
@@ -5925,7 +5925,7 @@
   },
   {
     "name": "Benzoesäure",
-    "name_en": "",
+    "name_en": "Benzoic Acid",
     "formula": "C7H6O2",
     "cas": "000065-85-0",
     "concentration": "wässrig",
@@ -6438,7 +6438,7 @@
   },
   {
     "name": "Bernsteinsäure",
-    "name_en": "",
+    "name_en": "Succinic Acid",
     "formula": "C4H6O4",
     "cas": "000110-15-6",
     "concentration": "50 %",
@@ -6495,7 +6495,7 @@
   },
   {
     "name": "Bernsteinsäure",
-    "name_en": "",
+    "name_en": "Succinic Acid",
     "formula": "C4H6O4",
     "cas": "000110-15-6",
     "concentration": "gesättigt",
@@ -7464,7 +7464,7 @@
   },
   {
     "name": "Bleisulfat",
-    "name_en": "",
+    "name_en": "Lead Sulfate",
     "formula": "PbSO4",
     "cas": "007446-14-2",
     "concentration": "",
@@ -7692,7 +7692,7 @@
   },
   {
     "name": "Brom",
-    "name_en": "",
+    "name_en": "Bromine",
     "formula": "Br2",
     "cas": "007726-95-6",
     "concentration": "",
@@ -8832,7 +8832,7 @@
   },
   {
     "name": "Buttersäure",
-    "name_en": "",
+    "name_en": "Butyric Acid",
     "formula": "C4H8O2",
     "cas": "000107-92-6",
     "concentration": "",
@@ -9060,7 +9060,7 @@
   },
   {
     "name": "Butylamin",
-    "name_en": "",
+    "name_en": "Butylamine",
     "formula": "C4H11N",
     "cas": "000109-73-9",
     "concentration": "",
@@ -9174,7 +9174,7 @@
   },
   {
     "name": "Butylglycol",
-    "name_en": "",
+    "name_en": "Butyl Glycol",
     "formula": "C4H14O2",
     "cas": "000111-76-2",
     "concentration": "100 %",
@@ -9459,7 +9459,7 @@
   },
   {
     "name": "Calciumacetat",
-    "name_en": "",
+    "name_en": "Calcium Acetate",
     "formula": "C4H6CaO4",
     "cas": "000062-54-4",
     "concentration": "wässrig",
@@ -9516,7 +9516,7 @@
   },
   {
     "name": "Calciumbicarbonat",
-    "name_en": "",
+    "name_en": "Calcium Bicarbonate",
     "formula": "Ca(HCO3)2",
     "cas": "",
     "concentration": "gesättigt",
@@ -9687,7 +9687,7 @@
   },
   {
     "name": "Calciumbromid",
-    "name_en": "",
+    "name_en": "Calcium Bromide",
     "formula": "CaBr2",
     "cas": "007789-41-5",
     "concentration": "",
@@ -9801,7 +9801,7 @@
   },
   {
     "name": "Calciumcarbonat",
-    "name_en": "",
+    "name_en": "Calcium Carbonate",
     "formula": "CaCO3",
     "cas": "000471-34-1",
     "concentration": "gesättigt",
@@ -10257,7 +10257,7 @@
   },
   {
     "name": "Calciumnitrat",
-    "name_en": "",
+    "name_en": "Calcium Nitrate",
     "formula": "Ca(NO3)2",
     "cas": "010124-37-5",
     "concentration": "50 %",
@@ -10314,7 +10314,7 @@
   },
   {
     "name": "Calciumnitrat",
-    "name_en": "",
+    "name_en": "Calcium Nitrate",
     "formula": "Ca(NO3)2",
     "cas": "010124-37-5",
     "concentration": "wässrig",
@@ -10371,7 +10371,7 @@
   },
   {
     "name": "Calciumoxid",
-    "name_en": "",
+    "name_en": "Calcium Oxide",
     "formula": "CaO",
     "cas": "001305-78-8",
     "concentration": "Pulver",
@@ -10428,7 +10428,7 @@
   },
   {
     "name": "Calciumphosphat",
-    "name_en": "",
+    "name_en": "Calcium Phosphate",
     "formula": "Ca3(PO4)2",
     "cas": "007758-87-4",
     "concentration": "wässrig",
@@ -10485,7 +10485,7 @@
   },
   {
     "name": "Calciumphosphat",
-    "name_en": "",
+    "name_en": "Calcium Phosphate",
     "formula": "Ca3(PO4)2",
     "cas": "007758-87-4",
     "concentration": "",
@@ -10542,7 +10542,7 @@
   },
   {
     "name": "Calciumsulfat",
-    "name_en": "",
+    "name_en": "Calcium Sulfate",
     "formula": "CaSO4",
     "cas": "007778-18-9",
     "concentration": "gesättigt",
@@ -10599,7 +10599,7 @@
   },
   {
     "name": "Calciumsulfid",
-    "name_en": "",
+    "name_en": "Calcium Sulfide",
     "formula": "CaS",
     "cas": "020548-54-3",
     "concentration": "wässrig",
@@ -10656,7 +10656,7 @@
   },
   {
     "name": "Calciumsulfid",
-    "name_en": "",
+    "name_en": "Calcium Sulfide",
     "formula": "CaS",
     "cas": "020548-54-3",
     "concentration": "",
@@ -13669,7 +13669,7 @@
   },
   {
     "name": "Cyclohexan",
-    "name_en": "",
+    "name_en": "Cyclohexane",
     "formula": "C6H12",
     "cas": "000110-82-7",
     "concentration": "",
@@ -13726,7 +13726,7 @@
   },
   {
     "name": "Cyclohexanol",
-    "name_en": "",
+    "name_en": "Cyclohexanol",
     "formula": "C6H12O",
     "cas": "000108-93-0",
     "concentration": "techn. rein",
@@ -13783,7 +13783,7 @@
   },
   {
     "name": "Cyclohexanon",
-    "name_en": "",
+    "name_en": "Cyclohexanone",
     "formula": "C6H10O",
     "cas": "000108-94-1",
     "concentration": "techn. rein",
@@ -14296,7 +14296,7 @@
   },
   {
     "name": "Dextrin",
-    "name_en": "",
+    "name_en": "Dextrin",
     "formula": "(C6H10O5)n x H2O",
     "cas": "009004-53-9",
     "concentration": "wässrig",
@@ -17085,7 +17085,7 @@
   },
   {
     "name": "Dimethylformamid (DMF)",
-    "name_en": "",
+    "name_en": "Dimethylformamide",
     "formula": "C3D7NO",
     "cas": "000068-12-2",
     "concentration": "",
@@ -17199,7 +17199,7 @@
   },
   {
     "name": "Dimethylsulfoxid (DMSO)",
-    "name_en": "",
+    "name_en": "Dimethyl Sulfoxide",
     "formula": "C2H6SO",
     "cas": "000067-68-5",
     "concentration": "",
@@ -17484,7 +17484,7 @@
   },
   {
     "name": "Dioxan",
-    "name_en": "",
+    "name_en": "Dioxane",
     "formula": "C4H8O2",
     "cas": "000123-91-1",
     "concentration": "",
@@ -18168,7 +18168,7 @@
   },
   {
     "name": "Eisennitrat",
-    "name_en": "",
+    "name_en": "Iron Nitrate",
     "formula": "Fe(NO3)3",
     "cas": "010421-48-4",
     "concentration": "wässrig",
@@ -18225,7 +18225,7 @@
   },
   {
     "name": "Eisennitrat",
-    "name_en": "",
+    "name_en": "Iron Nitrate",
     "formula": "Fe(NO3)3",
     "cas": "010421-48-4",
     "concentration": "gesättigt",
@@ -18677,7 +18677,7 @@
   },
   {
     "name": "Essig",
-    "name_en": "",
+    "name_en": "Vinegar",
     "formula": "C2H4O2",
     "cas": "000064-19-7",
     "concentration": "",
@@ -19532,7 +19532,7 @@
   },
   {
     "name": "Ethylacetat",
-    "name_en": "",
+    "name_en": "Ethyl Acetate",
     "formula": "C4H8O2",
     "cas": "000141-78-6",
     "concentration": "100 %",
@@ -20102,7 +20102,7 @@
   },
   {
     "name": "Ethylenglycol",
-    "name_en": "",
+    "name_en": "Ethylene Glycol",
     "formula": "C2H6O2",
     "cas": "000107-21-1",
     "concentration": "",
@@ -20216,7 +20216,7 @@
   },
   {
     "name": "Ethylenoxid",
-    "name_en": "",
+    "name_en": "Ethylene Oxide",
     "formula": "C2H4O",
     "cas": "000075-21-8",
     "concentration": "",
@@ -20843,7 +20843,7 @@
   },
   {
     "name": "Fett, mineralisch",
-    "name_en": "",
+    "name_en": "Grease",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -20900,7 +20900,7 @@
   },
   {
     "name": "Fett, pflanzlich",
-    "name_en": "",
+    "name_en": "Grease",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -20957,7 +20957,7 @@
   },
   {
     "name": "Fett, tierisch",
-    "name_en": "",
+    "name_en": "Grease",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -21356,7 +21356,7 @@
   },
   {
     "name": "Fluor",
-    "name_en": "",
+    "name_en": "Fluorine",
     "formula": "F2",
     "cas": "007782-41-4",
     "concentration": "",
@@ -21751,7 +21751,7 @@
   },
   {
     "name": "Flusssäure",
-    "name_en": "",
+    "name_en": "Hydrofluoric Acid",
     "formula": "HF",
     "cas": "007664-39-3",
     "concentration": "4 %",
@@ -21808,7 +21808,7 @@
   },
   {
     "name": "Flusssäure",
-    "name_en": "",
+    "name_en": "Hydrofluoric Acid",
     "formula": "HF",
     "cas": "007664-39-3",
     "concentration": "50 %",
@@ -21865,7 +21865,7 @@
   },
   {
     "name": "Flusssäure",
-    "name_en": "",
+    "name_en": "Hydrofluoric Acid",
     "formula": "HF",
     "cas": "007664-39-3",
     "concentration": "70 %",
@@ -21922,7 +21922,7 @@
   },
   {
     "name": "Flusssäure",
-    "name_en": "",
+    "name_en": "Hydrofluoric Acid",
     "formula": "HF",
     "cas": "007664-39-3",
     "concentration": "100 %",
@@ -23005,7 +23005,7 @@
   },
   {
     "name": "Gelatine",
-    "name_en": "",
+    "name_en": "Gelatin",
     "formula": "",
     "cas": "009000-70-8",
     "concentration": "jede",
@@ -23347,7 +23347,7 @@
   },
   {
     "name": "Glycerin",
-    "name_en": "",
+    "name_en": "Glycerin",
     "formula": "C3H8O3",
     "cas": "000056-81-5",
     "concentration": "jede",
@@ -23974,7 +23974,7 @@
   },
   {
     "name": "Helium",
-    "name_en": "",
+    "name_en": "Helium",
     "formula": "He",
     "cas": "007440-59-7",
     "concentration": "",
@@ -24088,7 +24088,7 @@
   },
   {
     "name": "Heptan, n-",
-    "name_en": "",
+    "name_en": "Heptane",
     "formula": "C7H16",
     "cas": "000142-82-5",
     "concentration": "",
@@ -24487,7 +24487,7 @@
   },
   {
     "name": "Hexan, n-",
-    "name_en": "",
+    "name_en": "Hexane",
     "formula": "C6H14",
     "cas": "000110-54-3",
     "concentration": "",
@@ -25228,7 +25228,7 @@
   },
   {
     "name": "Hydrazin",
-    "name_en": "",
+    "name_en": "Hydrazine",
     "formula": "N2H4",
     "cas": "000302-01-2",
     "concentration": "10 %",
@@ -26425,7 +26425,7 @@
   },
   {
     "name": "Kaliumacetat",
-    "name_en": "",
+    "name_en": "Potassium Acetate",
     "formula": "C2H3KO2",
     "cas": "000127-08-2",
     "concentration": "wässrig",
@@ -26596,7 +26596,7 @@
   },
   {
     "name": "Kaliumborat",
-    "name_en": "",
+    "name_en": "Potassium Borate",
     "formula": "KBO2",
     "cas": "012228-88-5",
     "concentration": "10 %",
@@ -26653,7 +26653,7 @@
   },
   {
     "name": "Kaliumborat",
-    "name_en": "",
+    "name_en": "Potassium Borate",
     "formula": "KBO2",
     "cas": "012228-88-5",
     "concentration": "wässrig",
@@ -26824,7 +26824,7 @@
   },
   {
     "name": "Kaliumbromid",
-    "name_en": "",
+    "name_en": "Potassium Bromide",
     "formula": "KBr",
     "cas": "007758-02-3",
     "concentration": "jede",
@@ -26881,7 +26881,7 @@
   },
   {
     "name": "Kaliumcarbonat",
-    "name_en": "",
+    "name_en": "Potassium Carbonate",
     "formula": "K2CO3",
     "cas": "000584-08-7",
     "concentration": "gesättigt",
@@ -26938,7 +26938,7 @@
   },
   {
     "name": "Kaliumcarbonat",
-    "name_en": "",
+    "name_en": "Potassium Carbonate",
     "formula": "K2CO3",
     "cas": "000584-08-7",
     "concentration": "wässrig",
@@ -27166,7 +27166,7 @@
   },
   {
     "name": "Kaliumchromat",
-    "name_en": "",
+    "name_en": "Potassium Chromate",
     "formula": "K2CrO4",
     "cas": "007789-00-6",
     "concentration": "gesättigt",
@@ -27223,7 +27223,7 @@
   },
   {
     "name": "Kaliumchromat",
-    "name_en": "",
+    "name_en": "Potassium Chromate",
     "formula": "K2CrO4",
     "cas": "007789-00-6",
     "concentration": "wässrig",
@@ -27280,7 +27280,7 @@
   },
   {
     "name": "Kaliumcyanid",
-    "name_en": "",
+    "name_en": "Potassium Cyanide",
     "formula": "KCN",
     "cas": "000151-50-8",
     "concentration": "gesättigt",
@@ -27337,7 +27337,7 @@
   },
   {
     "name": "Kaliumcyanid",
-    "name_en": "",
+    "name_en": "Potassium Cyanide",
     "formula": "KCN",
     "cas": "000151-50-8",
     "concentration": "wässrig",
@@ -27394,7 +27394,7 @@
   },
   {
     "name": "Kaliumdichromat",
-    "name_en": "",
+    "name_en": "Potassium Dichromate",
     "formula": "K2Cr2O7",
     "cas": "007778-50-9",
     "concentration": "gesättigt",
@@ -27451,7 +27451,7 @@
   },
   {
     "name": "Kaliumdichromat",
-    "name_en": "",
+    "name_en": "Potassium Dichromate",
     "formula": "K2Cr2O7",
     "cas": "007778-50-9",
     "concentration": "wässrig",
@@ -27508,7 +27508,7 @@
   },
   {
     "name": "Kaliumfluorid",
-    "name_en": "",
+    "name_en": "Potassium Fluoride",
     "formula": "KF",
     "cas": "007789-23-3",
     "concentration": "",
@@ -28192,7 +28192,7 @@
   },
   {
     "name": "Kaliumjodid",
-    "name_en": "",
+    "name_en": "Potassium Iodide",
     "formula": "KJ",
     "cas": "007681-11-0",
     "concentration": "gesättigt",
@@ -28249,7 +28249,7 @@
   },
   {
     "name": "Kaliumjodid",
-    "name_en": "",
+    "name_en": "Potassium Iodide",
     "formula": "KJ",
     "cas": "007681-11-0",
     "concentration": "wässrig",
@@ -28306,7 +28306,7 @@
   },
   {
     "name": "Kaliumnitrat",
-    "name_en": "",
+    "name_en": "Potassium Nitrate",
     "formula": "KNO3",
     "cas": "007757-79-1",
     "concentration": "50 %",
@@ -28363,7 +28363,7 @@
   },
   {
     "name": "Kaliumnitrat",
-    "name_en": "",
+    "name_en": "Potassium Nitrate",
     "formula": "KNO3",
     "cas": "007757-79-1",
     "concentration": "wässrig",
@@ -28705,7 +28705,7 @@
   },
   {
     "name": "Kaliumsulfat",
-    "name_en": "",
+    "name_en": "Potassium Sulfate",
     "formula": "K2SO4",
     "cas": "007778-80-5",
     "concentration": "wässrig",
@@ -28762,7 +28762,7 @@
   },
   {
     "name": "Kaliumsulfid",
-    "name_en": "",
+    "name_en": "Potassium Sulfide",
     "formula": "K2S",
     "cas": "001312-73-8",
     "concentration": "verdünnt",
@@ -28819,7 +28819,7 @@
   },
   {
     "name": "Kaliumsulfit",
-    "name_en": "",
+    "name_en": "Potassium Sulfite",
     "formula": "K2SO3",
     "cas": "010117-38-1",
     "concentration": "gesättigt",
@@ -28876,7 +28876,7 @@
   },
   {
     "name": "Kaliumthiosulfat",
-    "name_en": "",
+    "name_en": "Potassium Thiosulfate",
     "formula": "K2S2O3",
     "cas": "010233-00-8",
     "concentration": "gesättigt",
@@ -29047,7 +29047,7 @@
   },
   {
     "name": "Kerosin",
-    "name_en": "",
+    "name_en": "Kerosene",
     "formula": "",
     "cas": "008008-20-6",
     "concentration": "",
@@ -29218,7 +29218,7 @@
   },
   {
     "name": "Kieselsäure",
-    "name_en": "",
+    "name_en": "Silicic Acid",
     "formula": "SiO2",
     "cas": "001343-98-2",
     "concentration": "jede",
@@ -29332,7 +29332,7 @@
   },
   {
     "name": "Kohlendioxid",
-    "name_en": "",
+    "name_en": "Carbon Dioxide",
     "formula": "CO2",
     "cas": "000124-38-9",
     "concentration": "gesättigt",
@@ -29389,7 +29389,7 @@
   },
   {
     "name": "Kohlendioxid, feucht",
-    "name_en": "",
+    "name_en": "Carbon Dioxide",
     "formula": "CO2",
     "cas": "000124-38-9",
     "concentration": "techn. rein",
@@ -29446,7 +29446,7 @@
   },
   {
     "name": "Kohlendioxid, trocken",
-    "name_en": "",
+    "name_en": "Carbon Dioxide",
     "formula": "CO2",
     "cas": "000124-38-9",
     "concentration": "techn. rein",
@@ -30016,7 +30016,7 @@
   },
   {
     "name": "Kreosot",
-    "name_en": "",
+    "name_en": "Creosote",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -30073,7 +30073,7 @@
   },
   {
     "name": "Kresol (-Gemische)",
-    "name_en": "",
+    "name_en": "Cresol",
     "formula": "C7H8O",
     "cas": "001319-77-3",
     "concentration": "",
@@ -30415,7 +30415,7 @@
   },
   {
     "name": "Kupferacetat",
-    "name_en": "",
+    "name_en": "Copper Acetate",
     "formula": "C4H6CuO4",
     "cas": "004180-12-5",
     "concentration": "wässrig",
@@ -30472,7 +30472,7 @@
   },
   {
     "name": "Kupfercyanid",
-    "name_en": "",
+    "name_en": "Copper Cyanide",
     "formula": "CCuN",
     "cas": "000544-92-3",
     "concentration": "gesättigt",
@@ -30814,7 +30814,7 @@
   },
   {
     "name": "Latex",
-    "name_en": "",
+    "name_en": "Latex",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -31498,7 +31498,7 @@
   },
   {
     "name": "Lithiumbromid",
-    "name_en": "",
+    "name_en": "Lithium Bromide",
     "formula": "LiBr",
     "cas": "007550-35-8",
     "concentration": "",
@@ -31669,7 +31669,7 @@
   },
   {
     "name": "Magnesiumbromid",
-    "name_en": "",
+    "name_en": "Magnesium Bromide",
     "formula": "MgBr2",
     "cas": "007789-48-2",
     "concentration": "",
@@ -31726,7 +31726,7 @@
   },
   {
     "name": "Magnesiumcarbonat",
-    "name_en": "",
+    "name_en": "Magnesium Carbonate",
     "formula": "MgCO3",
     "cas": "000546-93-0",
     "concentration": "gesättigt",
@@ -31897,7 +31897,7 @@
   },
   {
     "name": "Magnesiumhydroxid",
-    "name_en": "",
+    "name_en": "Magnesium Hydroxide",
     "formula": "Mg(HO)2",
     "cas": "001309-42-8",
     "concentration": "gesättigt",
@@ -31954,7 +31954,7 @@
   },
   {
     "name": "Magnesiumjodid",
-    "name_en": "",
+    "name_en": "Magnesium Iodide",
     "formula": "MgJ2",
     "cas": "010377-58-9",
     "concentration": "",
@@ -32011,7 +32011,7 @@
   },
   {
     "name": "Magnesiumnitrat",
-    "name_en": "",
+    "name_en": "Magnesium Nitrate",
     "formula": "Mg(NO3)2",
     "cas": "010377-60-3",
     "concentration": "gesättigt",
@@ -32068,7 +32068,7 @@
   },
   {
     "name": "Magnesiumsulfat",
-    "name_en": "",
+    "name_en": "Magnesium Sulfate",
     "formula": "MgSO4",
     "cas": "007487-88-9",
     "concentration": "jede",
@@ -32182,7 +32182,7 @@
   },
   {
     "name": "Maleinsäure",
-    "name_en": "",
+    "name_en": "Maleic Acid",
     "formula": "C4H4O4",
     "cas": "000110-16-7",
     "concentration": "gesättigt",
@@ -32239,7 +32239,7 @@
   },
   {
     "name": "Maleinsäure",
-    "name_en": "",
+    "name_en": "Maleic Acid",
     "formula": "C4H4O4",
     "cas": "000110-16-7",
     "concentration": "wässrig",
@@ -32524,7 +32524,7 @@
   },
   {
     "name": "Melasse",
-    "name_en": "",
+    "name_en": "Molasses",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -32638,7 +32638,7 @@
   },
   {
     "name": "Menthol",
-    "name_en": "",
+    "name_en": "Menthol",
     "formula": "C10H20O",
     "cas": "000089-78-1",
     "concentration": "fest",
@@ -32809,7 +32809,7 @@
   },
   {
     "name": "Methan",
-    "name_en": "",
+    "name_en": "Methane",
     "formula": "CH4",
     "cas": "000074-82-8",
     "concentration": "techn. rein",
@@ -33151,7 +33151,7 @@
   },
   {
     "name": "Methylamin, (Mono-)",
-    "name_en": "",
+    "name_en": "Methylamine",
     "formula": "CH5N",
     "cas": "000074-89-5",
     "concentration": "32 %",
@@ -33607,7 +33607,7 @@
   },
   {
     "name": "Methylethylketon (MEK)",
-    "name_en": "",
+    "name_en": "Methyl Ethyl Ketone",
     "formula": "C4H8O",
     "cas": "000078-93-3",
     "concentration": "",
@@ -34576,7 +34576,7 @@
   },
   {
     "name": "Morpholin",
-    "name_en": "",
+    "name_en": "Morpholine",
     "formula": "C4H9NO",
     "cas": "000110-91-8",
     "concentration": "techn. rein",
@@ -34918,7 +34918,7 @@
   },
   {
     "name": "Naphtha",
-    "name_en": "",
+    "name_en": "Naphtha",
     "formula": "",
     "cas": "008032-32-4",
     "concentration": "",
@@ -34975,7 +34975,7 @@
   },
   {
     "name": "Naphthalin",
-    "name_en": "",
+    "name_en": "Naphthalene",
     "formula": "C10H8",
     "cas": "000091-20-3",
     "concentration": "100 %",
@@ -35032,7 +35032,7 @@
   },
   {
     "name": "Naphthalin (in Alkohol)",
-    "name_en": "",
+    "name_en": "Naphthalene",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -38965,7 +38965,7 @@
   },
   {
     "name": "Neon",
-    "name_en": "",
+    "name_en": "Neon",
     "formula": "Ne",
     "cas": "007440-01-9",
     "concentration": "",
@@ -39189,7 +39189,7 @@
   },
   {
     "name": "Nickelacetat",
-    "name_en": "",
+    "name_en": "Nickel Acetate",
     "formula": "C4H6NiO4",
     "cas": "000373-02-4",
     "concentration": "wässrig",
@@ -39246,7 +39246,7 @@
   },
   {
     "name": "Nickelnitrat",
-    "name_en": "",
+    "name_en": "Nickel Nitrate",
     "formula": "Ni(NO3)2",
     "cas": "013138-45-9",
     "concentration": "gesättigt",
@@ -39303,7 +39303,7 @@
   },
   {
     "name": "Nickelsulfat",
-    "name_en": "",
+    "name_en": "Nickel Sulfate",
     "formula": "NiSO4",
     "cas": "007786-81-4",
     "concentration": "gesättigt",
@@ -39360,7 +39360,7 @@
   },
   {
     "name": "Nickelsulfat",
-    "name_en": "",
+    "name_en": "Nickel Sulfate",
     "formula": "NiSO4",
     "cas": "007786-81-4",
     "concentration": "wässrig",
@@ -40272,7 +40272,7 @@
   },
   {
     "name": "Octan, n-",
-    "name_en": "",
+    "name_en": "Octane",
     "formula": "C8H18",
     "cas": "000111-65-9",
     "concentration": "",
@@ -40728,7 +40728,7 @@
   },
   {
     "name": "Ölsäure",
-    "name_en": "",
+    "name_en": "Oleic Acid",
     "formula": "C18H34O2",
     "cas": "000112-80-1",
     "concentration": "techn. rein",
@@ -40956,7 +40956,7 @@
   },
   {
     "name": "Ozon",
-    "name_en": "",
+    "name_en": "Ozone",
     "formula": "O3",
     "cas": "010028-15-6",
     "concentration": "",
@@ -41070,7 +41070,7 @@
   },
   {
     "name": "Palmitinsäure",
-    "name_en": "",
+    "name_en": "Palmitic Acid",
     "formula": "C16H32O2",
     "cas": "000057-10-3",
     "concentration": "techn. rein",
@@ -41754,7 +41754,7 @@
   },
   {
     "name": "Pentan",
-    "name_en": "",
+    "name_en": "Pentane",
     "formula": "C5H12",
     "cas": "000109-66-0",
     "concentration": "",
@@ -43863,7 +43863,7 @@
   },
   {
     "name": "Piperidin",
-    "name_en": "",
+    "name_en": "Piperidine",
     "formula": "C5H11N",
     "cas": "000110-89-4",
     "concentration": "",
@@ -44376,7 +44376,7 @@
   },
   {
     "name": "Propan",
-    "name_en": "",
+    "name_en": "Propane",
     "formula": "C3H8",
     "cas": "000074-98-6",
     "concentration": "flüssig",
@@ -44433,7 +44433,7 @@
   },
   {
     "name": "Propan",
-    "name_en": "",
+    "name_en": "Propane",
     "formula": "C3H8",
     "cas": "000074-98-6",
     "concentration": "gasförmig",
@@ -44490,7 +44490,7 @@
   },
   {
     "name": "Propanol",
-    "name_en": "",
+    "name_en": "Propanol",
     "formula": "C3H8O",
     "cas": "000071-23-8",
     "concentration": "",
@@ -44661,7 +44661,7 @@
   },
   {
     "name": "Propionsäure",
-    "name_en": "",
+    "name_en": "Propionic Acid",
     "formula": "C3H6O2",
     "cas": "000079-09-4",
     "concentration": "50 %",
@@ -44718,7 +44718,7 @@
   },
   {
     "name": "Propionsäure",
-    "name_en": "",
+    "name_en": "Propionic Acid",
     "formula": "C3H6O2",
     "cas": "000079-09-4",
     "concentration": "",
@@ -44889,7 +44889,7 @@
   },
   {
     "name": "Propylenglycol",
-    "name_en": "",
+    "name_en": "Propylene Glycol",
     "formula": "C3H8O2",
     "cas": "000057-55-6",
     "concentration": "",
@@ -45003,7 +45003,7 @@
   },
   {
     "name": "Propylenoxid",
-    "name_en": "",
+    "name_en": "Propylene Oxide",
     "formula": "C3H6O",
     "cas": "000075-56-9",
     "concentration": "",
@@ -45288,7 +45288,7 @@
   },
   {
     "name": "Pyridin",
-    "name_en": "",
+    "name_en": "Pyridine",
     "formula": "C5H5N",
     "cas": "000110-86-1",
     "concentration": "",
@@ -45402,7 +45402,7 @@
   },
   {
     "name": "Pyrrol",
-    "name_en": "",
+    "name_en": "Pyrrole",
     "formula": "C4H5N",
     "cas": "000109-97-7",
     "concentration": "",
@@ -45744,7 +45744,7 @@
   },
   {
     "name": "Resorcin",
-    "name_en": "",
+    "name_en": "Resorcinol",
     "formula": "C6H6O2",
     "cas": "000108-46-3",
     "concentration": "5 %",
@@ -45801,7 +45801,7 @@
   },
   {
     "name": "Resorcin",
-    "name_en": "",
+    "name_en": "Resorcinol",
     "formula": "C6H6O2",
     "cas": "000108-46-3",
     "concentration": "gesättigt",
@@ -47226,7 +47226,7 @@
   },
   {
     "name": "Sauerstoff",
-    "name_en": "",
+    "name_en": "Oxygen",
     "formula": "O2",
     "cas": "007782-44-7",
     "concentration": "techn. rein",
@@ -47397,7 +47397,7 @@
   },
   {
     "name": "Schwefel",
-    "name_en": "",
+    "name_en": "Sulfur",
     "formula": "S8",
     "cas": "007704-34-9",
     "concentration": "techn. rein",
@@ -47454,7 +47454,7 @@
   },
   {
     "name": "Schwefel, geschmolzen, 121 °C",
-    "name_en": "",
+    "name_en": "Sulfur",
     "formula": "S8",
     "cas": "007704-34-9",
     "concentration": "",
@@ -48309,7 +48309,7 @@
   },
   {
     "name": "Schweflige Säure",
-    "name_en": "",
+    "name_en": "Sulfurous Acid",
     "formula": "H2SO3",
     "cas": "007782-99-2",
     "concentration": "gesättigt",
@@ -48537,7 +48537,7 @@
   },
   {
     "name": "Silberacetat",
-    "name_en": "",
+    "name_en": "Silver Acetate",
     "formula": "C2H3AgO2",
     "cas": "000563-63-3",
     "concentration": "",
@@ -48594,7 +48594,7 @@
   },
   {
     "name": "Silbercyanid",
-    "name_en": "",
+    "name_en": "Silver Cyanide",
     "formula": "CAgN",
     "cas": "000506-64-9",
     "concentration": "",
@@ -49563,7 +49563,7 @@
   },
   {
     "name": "Stearinsäure",
-    "name_en": "",
+    "name_en": "Stearic Acid",
     "formula": "C18H36O2",
     "cas": "000057-11-4",
     "concentration": "Kristalle",
@@ -49734,7 +49734,7 @@
   },
   {
     "name": "Stickstoff",
-    "name_en": "",
+    "name_en": "Nitrogen",
     "formula": "N2",
     "cas": "007727-37-9",
     "concentration": "",
@@ -49962,7 +49962,7 @@
   },
   {
     "name": "Styrol",
-    "name_en": "",
+    "name_en": "Styrene",
     "formula": "C8H8",
     "cas": "000100-42-5",
     "concentration": "100 %",
@@ -50133,7 +50133,7 @@
   },
   {
     "name": "Tannin",
-    "name_en": "",
+    "name_en": "Tannin",
     "formula": "C76H52O46",
     "cas": "001401-55-4",
     "concentration": "10 %",
@@ -50190,7 +50190,7 @@
   },
   {
     "name": "Tannin",
-    "name_en": "",
+    "name_en": "Tannin",
     "formula": "C76H52O46",
     "cas": "001401-55-4",
     "concentration": "",
@@ -50247,7 +50247,7 @@
   },
   {
     "name": "Teer",
-    "name_en": "",
+    "name_en": "Tar",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -51102,7 +51102,7 @@
   },
   {
     "name": "Tetrahydrofuran (THF)",
-    "name_en": "",
+    "name_en": "Tetrahydrofuran",
     "formula": "C4H8O",
     "cas": "000109-99-9",
     "concentration": "",
@@ -51387,7 +51387,7 @@
   },
   {
     "name": "Thiophen",
-    "name_en": "",
+    "name_en": "Thiophene",
     "formula": "C2H4S",
     "cas": "000110-02-1",
     "concentration": "",
@@ -51672,7 +51672,7 @@
   },
   {
     "name": "Triacetin",
-    "name_en": "",
+    "name_en": "Triacetin",
     "formula": "C9H14O6",
     "cas": "000102-76-1",
     "concentration": "",
@@ -51786,7 +51786,7 @@
   },
   {
     "name": "Tributylphosphat (TBP)",
-    "name_en": "",
+    "name_en": "Tributyl Phosphate",
     "formula": "C12H27PO4",
     "cas": "000126-73-8",
     "concentration": "techn. rein",
@@ -52356,7 +52356,7 @@
   },
   {
     "name": "Triethylamin (TEA)",
-    "name_en": "",
+    "name_en": "Triethylamine",
     "formula": "C6H15N",
     "cas": "000121-44-8",
     "concentration": "techn. rein",
@@ -53097,7 +53097,7 @@
   },
   {
     "name": "Vaseline",
-    "name_en": "",
+    "name_en": "Petroleum Jelly",
     "formula": "",
     "cas": "008009-03-8",
     "concentration": "techn. rein",
@@ -53268,7 +53268,7 @@
   },
   {
     "name": "Vinylacetat",
-    "name_en": "",
+    "name_en": "Vinyl Acetate",
     "formula": "C4H6O2",
     "cas": "000108-05-4",
     "concentration": "techn. rein",
@@ -53667,7 +53667,7 @@
   },
   {
     "name": "Waschmittel",
-    "name_en": "",
+    "name_en": "Detergent",
     "formula": "",
     "cas": "",
     "concentration": "",
@@ -54636,7 +54636,7 @@
   },
   {
     "name": "Xenon",
-    "name_en": "",
+    "name_en": "Xenon",
     "formula": "Xe",
     "cas": "007440-63-3",
     "concentration": "",
@@ -54978,7 +54978,7 @@
   },
   {
     "name": "Zinkacetat",
-    "name_en": "",
+    "name_en": "Zinc Acetate",
     "formula": "C4H6ZnO4",
     "cas": "000557-34-6",
     "concentration": "wässrig",
@@ -55035,7 +55035,7 @@
   },
   {
     "name": "Zinkbromid",
-    "name_en": "",
+    "name_en": "Zinc Bromide",
     "formula": "ZnBr2",
     "cas": "007699-45-8",
     "concentration": "",
@@ -55092,7 +55092,7 @@
   },
   {
     "name": "Zinkcarbonat",
-    "name_en": "",
+    "name_en": "Zinc Carbonate",
     "formula": "ZnCO3",
     "cas": "003486-35-9",
     "concentration": "gesättigt",
@@ -55263,7 +55263,7 @@
   },
   {
     "name": "Zinknitrat",
-    "name_en": "",
+    "name_en": "Zinc Nitrate",
     "formula": "Zn(NO3)2",
     "cas": "007779-88-6",
     "concentration": "",
@@ -55320,7 +55320,7 @@
   },
   {
     "name": "Zinkoxid",
-    "name_en": "",
+    "name_en": "Zinc Oxide",
     "formula": "ZnO",
     "cas": "001314-13-2",
     "concentration": "fest",
@@ -55377,7 +55377,7 @@
   },
   {
     "name": "Zinkphosphat",
-    "name_en": "",
+    "name_en": "Zinc Phosphate",
     "formula": "Zn3(PO4)2",
     "cas": "007779-90-0",
     "concentration": "gesättigt",
