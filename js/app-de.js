@@ -42,34 +42,34 @@ const translations = {
 };
 
 const materialInfo = {
-    // Thermoplastics
-    "HDPE": { name: "HDPE", full: "High-Density Polyethylene", type: "Thermoplastic" },
-    "LDPE": { name: "LDPE", full: "Low-Density Polyethylene", type: "Thermoplastic" },
-    "PA": { name: "PA", full: "Polyamide (Nylon)", type: "Thermoplastic" },
-    "PC": { name: "PC", full: "Polycarbonate", type: "Thermoplastic" },
-    "PETG": { name: "PETG", full: "Polyethylene Terephthalate Glycol", type: "Thermoplastic" },
-    "PMP": { name: "PMP", full: "Polymethylpentene (TPX)", type: "Thermoplastic" },
-    "POM": { name: "POM", full: "Polyoxymethylene (Acetal)", type: "Thermoplastic" },
-    "PP": { name: "PP", full: "Polypropylene", type: "Thermoplastic" },
-    "PS": { name: "PS", full: "Polystyrene", type: "Thermoplastic" },
-    "PSU": { name: "PSU", full: "Polysulfone", type: "Thermoplastic" },
-    "PVC_HART": { name: "PVC-U", full: "Unplasticized PVC (Rigid)", type: "Thermoplastic" },
-    "PVC_WEICH": { name: "PVC-P", full: "Plasticized PVC (Flexible)", type: "Thermoplastic" },
-    "SAN": { name: "SAN", full: "Styrene Acrylonitrile", type: "Thermoplastic" },
-    // Fluoropolymers
-    "ECTFE_ETFE": { name: "ECTFE/ETFE", full: "Fluoropolymer (Halar/Tefzel)", type: "Fluoropolymer" },
-    "FEP": { name: "FEP", full: "Fluorinated Ethylene Propylene", type: "Fluoropolymer" },
-    "PTFE": { name: "PTFE", full: "Polytetrafluoroethylene (Teflon®)", type: "Fluoropolymer" },
-    "PVDF": { name: "PVDF", full: "Polyvinylidene Fluoride (Kynar)", type: "Fluoropolymer" },
-    // Elastomers
-    "EPDM": { name: "EPDM", full: "Ethylene Propylene Diene Rubber", type: "Elastomer" },
-    "FPM": { name: "FPM/FKM", full: "Fluoroelastomer (Viton®)", type: "Elastomer" },
-    "NBR": { name: "NBR", full: "Nitrile Rubber (Buna-N)", type: "Elastomer" },
-    "SI": { name: "Silicone", full: "Silicone Rubber (VMQ)", type: "Elastomer" },
+    // Thermoplaste
+    "HDPE": { name: "HDPE", full: "Polyethylen hoher Dichte", type: "Thermoplast" },
+    "LDPE": { name: "LDPE", full: "Polyethylen niedriger Dichte", type: "Thermoplast" },
+    "PA": { name: "PA", full: "Polyamid (Nylon)", type: "Thermoplast" },
+    "PC": { name: "PC", full: "Polycarbonat", type: "Thermoplast" },
+    "PETG": { name: "PETG", full: "Polyethylenterephthalat-Glykol", type: "Thermoplast" },
+    "PMP": { name: "PMP", full: "Polymethylpenten (TPX)", type: "Thermoplast" },
+    "POM": { name: "POM", full: "Polyoxymethylen (Acetal)", type: "Thermoplast" },
+    "PP": { name: "PP", full: "Polypropylen", type: "Thermoplast" },
+    "PS": { name: "PS", full: "Polystyrol", type: "Thermoplast" },
+    "PSU": { name: "PSU", full: "Polysulfon", type: "Thermoplast" },
+    "PVC_HART": { name: "PVC hart", full: "Hart-PVC (unweichmacht)", type: "Thermoplast" },
+    "PVC_WEICH": { name: "PVC weich", full: "Weich-PVC (weichmacht)", type: "Thermoplast" },
+    "SAN": { name: "SAN", full: "Styrol-Acrylnitril", type: "Thermoplast" },
+    // Fluorpolymere
+    "ECTFE_ETFE": { name: "ECTFE/ETFE", full: "Fluorpolymer (Halar/Tefzel)", type: "Fluorpolymer" },
+    "FEP": { name: "FEP", full: "Fluorethylenpropylen", type: "Fluorpolymer" },
+    "PTFE": { name: "PTFE", full: "Polytetrafluorethylen (Teflon®)", type: "Fluorpolymer" },
+    "PVDF": { name: "PVDF", full: "Polyvinylidenfluorid (Kynar)", type: "Fluorpolymer" },
+    // Elastomere
+    "EPDM": { name: "EPDM", full: "Ethylen-Propylen-Dien-Kautschuk", type: "Elastomer" },
+    "FPM": { name: "FPM/FKM", full: "Fluorelastomer (Viton®)", type: "Elastomer" },
+    "NBR": { name: "NBR", full: "Nitrilkautschuk (Buna-N)", type: "Elastomer" },
+    "SI": { name: "Silikon", full: "Silikonkautschuk (VMQ)", type: "Elastomer" },
     // Metals
-    "AL": { name: "Aluminum", full: "Aluminum", type: "Metal" },
-    "V2A": { name: "SS 304", full: "Stainless Steel 1.4301 (304)", type: "Metal" },
-    "V4A": { name: "SS 316", full: "Stainless Steel 1.4401 (316)", type: "Metal" },
+    "AL": { name: "Aluminium", full: "Aluminium", type: "Metall" },
+    "V2A": { name: "V2A / SS 304", full: "Edelstahl 1.4301 (304)", type: "Metall" },
+    "V4A": { name: "V4A / SS 316", full: "Edelstahl 1.4401 (316)", type: "Metall" },
 };
 
 // Rating display order (best to worst)
@@ -86,7 +86,7 @@ let chemicals = [];
 let chemicalGroups = {};
 let currentGroupIndices = [];
 let currentSelectedIdx = 0;
-let currentLang = 'en';
+let currentLang = 'de';
 
 // Initialize app
 async function init() {
@@ -135,35 +135,19 @@ function translateName(germanName) {
 }
 
 function getDisplayName(c) {
-    if (currentLang === 'de') return c.name;
-    return translateName(c.name);
+    // German version - always show German name
+    return c.name;
 }
 
 function getSecondaryName(c) {
-    if (currentLang === 'de') {
-        const en = translateName(c.name);
-        return en !== c.name ? en : '';
-    }
-    // For English, show German as secondary
+    // Show English translation as secondary if available
     const en = translateName(c.name);
-    return en !== c.name ? c.name : '';
+    return en !== c.name ? en : '';
 }
 
-// Translate concentration terms
+// German version - keep German concentration terms
 function translateConc(conc) {
-    if (!conc) return 'Pure / Undiluted';
-    const translations = {
-        'jede': 'Any', 'konz.': 'Concentrated', 'konz': 'Concentrated',
-        'wässrig': 'Aqueous', 'rauchend': 'Fuming', 'gesättigt': 'Saturated',
-        'verdünnt': 'Diluted', 'techn. rein': 'Technical Grade',
-        'rein': 'Pure', 'flüssig': 'Liquid', 'gasförmig': 'Gaseous',
-        'fest': 'Solid', 'Pulver': 'Powder', 'gemahlen': 'Ground',
-        'geschmolzen': 'Molten', 'feucht': 'Moist', 'gering': 'Low'
-    };
-    if (translations[conc]) return translations[conc];
-    for (const [de, en] of Object.entries(translations)) {
-        if (conc.includes(de)) return conc.replace(de, en);
-    }
+    if (!conc) return 'Rein / Unverdünnt';
     return conc;
 }
 
@@ -198,7 +182,7 @@ function setupEventListeners() {
     // Language switch
     langSelect?.addEventListener('change', () => {
         if (langSelect.value === 'de') {
-            window.location.href = 'de.html';
+            window.location.href = 'index.html';
         }
     });
 
@@ -278,7 +262,7 @@ function highlightMatch(text, query) {
 }
 
 function showDefaultChemical() {
-    // Show Acetone as default (key is German 'aceton')
+    // Show Aceton as default (German name)
     const acetoneKey = 'aceton';
     const indices = chemicalGroups[acetoneKey];
     if (indices?.length > 0) {
