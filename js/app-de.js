@@ -75,6 +75,32 @@ const materialInfo = {
 // Rating display order (best to worst)
 const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
+// Hazard code display info (German labels)
+const hazardInfo = {
+    'T+': { label: 'Sehr giftig', color: 'bg-purple-600', icon: '☠️' },
+    'T': { label: 'Giftig', color: 'bg-purple-500', icon: '☠️' },
+    'C+': { label: 'Stark ätzend', color: 'bg-red-600', icon: '🧪' },
+    'C': { label: 'Ätzend', color: 'bg-red-500', icon: '🧪' },
+    'Xn': { label: 'Gesundheitsschädlich', color: 'bg-orange-500', icon: '⚠️' },
+    'Xi': { label: 'Reizend', color: 'bg-yellow-500', icon: '⚠️' },
+    'F+': { label: 'Hochentzündlich', color: 'bg-red-600', icon: '🔥' },
+    'F': { label: 'Leichtentzündlich', color: 'bg-orange-500', icon: '🔥' },
+    'O': { label: 'Brandfördernd', color: 'bg-amber-500', icon: '⭕' },
+    'N': { label: 'Umweltgefährlich', color: 'bg-green-600', icon: '🌿' },
+};
+
+function getHazardBadges(hazardStr) {
+    if (!hazardStr || hazardStr === '—') return '';
+    const codes = hazardStr.replace(/[()]/g, '').split(/[,\s]+/).filter(c => c && c !== '—');
+    return codes.map(code => {
+        const info = hazardInfo[code];
+        if (info) {
+            return `<span class="${info.color} text-white text-xs px-1.5 py-0.5 rounded" title="${info.label}">${info.icon} ${code}</span>`;
+        }
+        return '';
+    }).filter(Boolean).join(' ');
+}
+
 // Convert numeric ratings to letter grades for display
 function ratingToGrade(val) {
     const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
@@ -289,17 +315,20 @@ function showResultsForGroup(indices) {
     casEl.textContent = firstChem.cas ? `CAS: ${firstChem.cas}` : '';
     casEl.style.display = firstChem.cas ? 'inline' : 'none';
 
-    // Hazard indicator
+    // Hazard badges
     const hazardEl = document.getElementById('chemHazard');
     if (hazardEl) {
-        hazardEl.textContent = firstChem.hazard || '';
-        hazardEl.style.display = firstChem.hazard ? 'inline' : 'none';
+        const badges = getHazardBadges(firstChem.hazard);
+        hazardEl.innerHTML = badges;
+        hazardEl.style.display = badges ? 'inline-flex' : 'none';
+        hazardEl.className = 'flex gap-1 items-center';
     }
     
-    // Flammable indicator
+    // Flammable indicator (if not already covered by hazard)
     const flammableEl = document.getElementById('chemFlammable');
     if (flammableEl) {
-        flammableEl.style.display = firstChem.flammable ? 'inline' : 'none';
+        const hasFlammableHazard = firstChem.hazard && (firstChem.hazard.includes('F') || firstChem.hazard.includes('F+'));
+        flammableEl.style.display = (firstChem.flammable && !hasFlammableHazard) ? 'inline' : 'none';
     }
     
     document.getElementById('searchInput').value = displayName;
