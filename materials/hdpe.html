@@ -366,6 +366,25 @@
         renderTable();
     }
 
+    function translateConc(conc) {
+        if (!conc) return '—';
+        const map = {
+            'wässrig': 'Aqueous', 'gesättigt': 'Saturated', 'verdünnt': 'Diluted',
+            'konz.': 'Concentrated', 'konzentriert': 'Concentrated', 'rein': 'Pure',
+            'techn. rein': 'Technical Grade', 'jede': 'Any', 'gering': 'Low',
+            'flüssig': 'Liquid', 'gasförmig': 'Gaseous', 'geschmolzen': 'Molten',
+            'trocken': 'Dry', 'feucht': 'Wet/Moist', 'fest': 'Solid',
+            'Pulver': 'Powder', 'gemahlen': 'Ground', 'ölhaltig': 'Oil-containing',
+            'sulfuriert': 'Sulfurized'
+        };
+        for (const [de, en] of Object.entries(map)) {
+            if (conc.toLowerCase().includes(de.toLowerCase())) {
+                return conc.replace(new RegExp(de, 'gi'), en);
+            }
+        }
+        return conc;
+    }
+
     function renderTable() {
         const tbody = document.getElementById('chemTable');
         const toShow = filteredChemicals.slice(0, displayCount);
@@ -377,7 +396,7 @@
             const name = c.name_en || c.name;
             const r20 = c.ratings.HDPE?.c20 || 'NR';
             const r50 = c.ratings.HDPE?.c50 || 'NR';
-            const conc = c.concentration || '—';
+            const conc = translateConc(c.concentration);
             const cas = c.cas || '—';
 
             return `
