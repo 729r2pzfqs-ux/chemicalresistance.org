@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  
+  <!-- Flask icon -->
+  <g transform="translate(100, 200)">
+    <rect width="120" height="120" rx="20" fill="#10b981"/>
+    <path d="M40 25h40v15l20 55c2 7-3 15-10 15H30c-7 0-12-8-10-15l20-55V25z" fill="white"/>
+    <rect x="40" y="20" width="40" height="8" rx="2" fill="white"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="260" y="250" font-family="system-ui, sans-serif" font-size="64" font-weight="bold" fill="#111827">Chemical Resistance</text>
+  <text x="260" y="320" font-family="system-ui, sans-serif" font-size="36" fill="#6b7280">1650+ Chemicals • 24 Materials</text>
+  
+  <!-- Rating badges -->
+  <g transform="translate(260, 380)">
+    <rect width="60" height="40" rx="8" fill="#22c55e"/>
+    <text x="30" y="28" font-family="system-ui" font-size="20" font-weight="bold" fill="white" text-anchor="middle">A</text>
+  </g>
+  <g transform="translate(340, 380)">
+    <rect width="60" height="40" rx="8" fill="#3b82f6"/>
+    <text x="30" y="28" font-family="system-ui" font-size="20" font-weight="bold" fill="white" text-anchor="middle">B</text>
+  </g>
+  <g transform="translate(420, 380)">
+    <rect width="60" height="40" rx="8" fill="#f59e0b"/>
+    <text x="30" y="28" font-family="system-ui" font-size="20" font-weight="bold" fill="white" text-anchor="middle">C</text>
+  </g>
+  <g transform="translate(500, 380)">
+    <rect width="60" height="40" rx="8" fill="#ef4444"/>
+    <text x="30" y="28" font-family="system-ui" font-size="20" font-weight="bold" fill="white" text-anchor="middle">D</text>
+  </g>
+  
+  <text x="260" y="480" font-family="system-ui, sans-serif" font-size="28" fill="#9ca3af">HDPE • PP • PTFE • Viton • Stainless Steel • EPDM</text>
+  
+  <!-- URL -->
+  <text x="260" y="540" font-family="system-ui, sans-serif" font-size="24" fill="#10b981">chemicalresistance.org</text>
+</svg>
