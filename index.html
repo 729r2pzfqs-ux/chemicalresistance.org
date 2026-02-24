@@ -343,7 +343,11 @@
 
     function searchFor(term) {
         searchInput.value = term;
-        searchInput.dispatchEvent(new Event('input'));
+        // Use setTimeout to let the click event finish bubbling first
+        // This prevents the click-outside handler from immediately hiding results
+        setTimeout(() => {
+            searchInput.dispatchEvent(new Event('input'));
+        }, 0);
     }
 
     let currentGroupIndices = [];
