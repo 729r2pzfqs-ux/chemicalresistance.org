@@ -87,24 +87,24 @@
     </section>
 
     <!-- Results Section -->
-    <section id="results" class="px-4 py-6 hidden">
+    <section id="results" class="px-4 py-6">
         <div class="max-w-7xl mx-auto">
             <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
                 <!-- Chemical Info Header -->
                 <div class="p-6 border-b border-gray-100 bg-gray-50">
                     <div class="flex items-start justify-between">
                         <div>
-                            <h2 id="chemName" class="text-2xl font-bold text-gray-900"></h2>
+                            <h2 id="chemName" class="text-2xl font-bold text-gray-900">Aceton</h2>
                             <div class="flex flex-wrap gap-3 mt-2 text-sm">
-                                <span id="chemNameDe" class="text-gray-500"></span>
-                                <span id="chemFormula" class="bg-gray-200 px-2 py-0.5 rounded font-mono"></span>
-                                <span id="chemCas" class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded"></span>
-                                <span id="chemConc" class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded"></span>
+                                <span id="chemNameDe" class="text-gray-500">(Acetone)</span>
+                                <span id="chemFormula" class="bg-gray-200 px-2 py-0.5 rounded font-mono">C₃H₆O</span>
+                                <span id="chemCas" class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded">CAS: 67-64-1</span>
+                                <span id="chemConcWrapper" class="flex items-center gap-1" style="display:none">
+                                    <span class="text-gray-500">Konzentration:</span>
+                                    <span id="chemConc" class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded"></span>
+                                </span>
                             </div>
                         </div>
-                        <button onclick="clearResults()" class="text-gray-400 hover:text-gray-600">
-                            <i data-lucide="x" class="w-6 h-6"></i>
-                        </button>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@
                     <div class="flex items-center gap-2">
                         <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600"></i>
                         <span class="font-medium text-emerald-800">Empfohlene Materialien:</span>
-                        <span id="recMaterials" class="text-emerald-700"></span>
+                        <span id="recMaterials" class="text-emerald-700">HDPE, PA, PP, SS304, EPDM, NBR</span>
                     </div>
                 </div>
 
@@ -128,7 +128,80 @@
                                 <th class="py-3 px-4 font-semibold text-gray-600">Materialart</th>
                             </tr>
                         </thead>
-                        <tbody id="ratingsTable"></tbody>
+                        <tbody id="ratingsTable">
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">HDPE</div><div class="text-xs text-gray-500">High-Density Polyethylene</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">PA</div><div class="text-xs text-gray-500">Polyamid (Nylon)</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">PP</div><div class="text-xs text-gray-500">Polypropylen</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">SS304</div><div class="text-xs text-gray-500">Edelstahl 304</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Metall</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">EPDM</div><div class="text-xs text-gray-500">Ethylen-Propylen-Dien-Kautschuk</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Elastomer</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">NBR</div><div class="text-xs text-gray-500">Nitril-Butadien-Kautschuk</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Elastomer</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">PVDF</div><div class="text-xs text-gray-500">Polyvinylidenfluorid</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-B px-3 py-1 rounded text-sm font-bold">B</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Fluorpolymer</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">LDPE</div><div class="text-xs text-gray-500">Low-Density Polyethylene</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">PC</div><div class="text-xs text-gray-500">Polycarbonat</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">PTFE</div><div class="text-xs text-gray-500">Polytetrafluorethylen</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Fluorpolymer</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">SS316</div><div class="text-xs text-gray-500">Edelstahl 316</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Metall</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                <td class="py-3 px-4"><div class="font-medium text-gray-900">PVC</div><div class="text-xs text-gray-500">Polyvinylchlorid</div></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
 
@@ -398,6 +471,7 @@
 
         // Show concentration selector if multiple
         const concContainer = document.getElementById('chemConc');
+        const concWrapper = document.getElementById('chemConcWrapper');
         if (indices.length > 1) {
             // Sort by concentration (numeric extraction)
             const sortedIndices = [...indices].sort((a, b) => {
@@ -419,20 +493,19 @@
                     ${options}
                 </select>
             `;
-            concContainer.style.display = 'inline';
+            concWrapper.style.display = 'flex';
             document.getElementById('concSelect').addEventListener('change', (e) => {
                 currentSelectedIdx = parseInt(e.target.value);
                 updateRatingsTable();
             });
         } else {
             const conc = translateConc(firstChem.concentration);
-            concContainer.textContent = conc !== 'Pure / Undiluted' ? conc : '';
-            concContainer.style.display = conc !== 'Pure / Undiluted' ? 'inline' : 'none';
+            concContainer.textContent = conc !== 'rein' ? conc : '';
+            concWrapper.style.display = conc !== 'rein' ? 'flex' : 'none';
         }
 
         updateRatingsTable();
         resultsSection.classList.remove('hidden');
-        resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         lucide.createIcons();
     }
 
@@ -492,8 +565,95 @@
     }
 
     function clearResults() {
-        resultsSection.classList.add('hidden');
+        // Reset to default Aceton
         searchInput.value = '';
+        document.getElementById('chemName').textContent = 'Aceton';
+        document.getElementById('chemNameDe').textContent = '(Acetone)';
+        document.getElementById('chemFormula').textContent = 'C₃H₆O';
+        document.getElementById('chemCas').textContent = 'CAS: 67-64-1';
+        const concContainer = document.getElementById('chemConc');
+        const concWrapper = document.getElementById('chemConcWrapper');
+        concContainer.textContent = '';
+        concWrapper.style.display = 'none';
+        document.getElementById('recMaterials').textContent = 'HDPE, PA, PP, SS304, EPDM, NBR';
+        const recommendation = document.getElementById('recommendation');
+        recommendation.className = 'p-4 bg-emerald-50 border-b border-emerald-100';
+        // Reset table to Aceton data
+        const tbody = document.getElementById('ratingsTable');
+        tbody.innerHTML = `
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">HDPE</div><div class="text-xs text-gray-500">High-Density Polyethylene</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">PA</div><div class="text-xs text-gray-500">Polyamid (Nylon)</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">PP</div><div class="text-xs text-gray-500">Polypropylen</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">SS304</div><div class="text-xs text-gray-500">Edelstahl 304</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Metall</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">EPDM</div><div class="text-xs text-gray-500">Ethylen-Propylen-Dien-Kautschuk</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Elastomer</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">NBR</div><div class="text-xs text-gray-500">Nitril-Butadien-Kautschuk</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-A px-3 py-1 rounded text-sm font-bold">A</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Elastomer</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">PVDF</div><div class="text-xs text-gray-500">Polyvinylidenfluorid</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-B px-3 py-1 rounded text-sm font-bold">B</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Fluorpolymer</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">LDPE</div><div class="text-xs text-gray-500">Low-Density Polyethylene</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-C px-3 py-1 rounded text-sm font-bold">C</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">PC</div><div class="text-xs text-gray-500">Polycarbonat</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">PTFE</div><div class="text-xs text-gray-500">Polytetrafluorethylen</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Fluorpolymer</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">SS316</div><div class="text-xs text-gray-500">Edelstahl 316</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-D px-3 py-1 rounded text-sm font-bold">D</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Metall</td>
+            </tr>
+            <tr class="border-b border-gray-100 hover:bg-gray-50">
+                <td class="py-3 px-4"><div class="font-medium text-gray-900">PVC</div><div class="text-xs text-gray-500">Polyvinylchlorid</div></td>
+                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                <td class="py-3 px-4 text-center"><span class="rating-NR px-3 py-1 rounded text-sm font-bold">NR</span></td>
+                <td class="py-3 px-4 text-gray-500 text-sm">Kunststoff</td>
+            </tr>
+        `;
     }
 
     document.addEventListener('click', (e) => {
