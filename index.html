@@ -72,8 +72,8 @@
     <section id="lookup" class="px-4 -mt-10">
         <div class="max-w-4xl mx-auto">
             <div class="card p-6 md:p-8">
-                <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                    <i data-lucide="search" class="w-5 h-5 text-blue-600"></i>
+                <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <i data-lucide="search" class="w-5 h-5 text-blue-400"></i>
                     Chemical Lookup
                 </h2>
                 
@@ -85,7 +85,7 @@
                         class="input-field w-full px-4 py-4 rounded-lg text-lg"
                         autocomplete="off"
                     >
-                    <div id="searchResults" class="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hidden z-10">
+                    <div id="searchResults" class="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-600 rounded-lg overflow-hidden shadow-lg hidden z-10">
                     </div>
                 </div>
 
@@ -93,19 +93,19 @@
                 <div id="resultsContainer" class="hidden">
                     <div class="flex items-start justify-between mb-4">
                         <div>
-                            <h3 id="chemicalName" class="text-xl font-bold text-gray-900"></h3>
+                            <h3 id="chemicalName" class="text-xl font-bold text-white"></h3>
                             <p id="chemicalFormula" class="text-gray-500"></p>
                         </div>
                     </div>
                     
-                    <div class="overflow-x-auto border border-gray-200 rounded-lg">
+                    <div class="overflow-x-auto border border-gray-600 rounded-lg">
                         <table class="w-full text-left">
-                            <thead class="bg-gray-50">
+                            <thead class="bg-gray-800/50">
                                 <tr>
-                                    <th class="py-3 px-4 text-gray-600 font-semibold text-sm">Material</th>
-                                    <th class="py-3 px-4 text-gray-600 font-semibold text-sm">20°C (68°F)</th>
-                                    <th class="py-3 px-4 text-gray-600 font-semibold text-sm">50°C (122°F)</th>
-                                    <th class="py-3 px-4 text-gray-600 font-semibold text-sm">Notes</th>
+                                    <th class="py-3 px-4 text-gray-400 font-semibold text-sm">Material</th>
+                                    <th class="py-3 px-4 text-gray-400 font-semibold text-sm">20°C (68°F)</th>
+                                    <th class="py-3 px-4 text-gray-400 font-semibold text-sm">50°C (122°F)</th>
+                                    <th class="py-3 px-4 text-gray-400 font-semibold text-sm">Notes</th>
                                 </tr>
                             </thead>
                             <tbody id="resultsBody">
@@ -114,20 +114,20 @@
                     </div>
                     
                     <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <h4 class="font-semibold text-gray-900 mb-3 text-sm">Rating Legend</h4>
+                        <h4 class="font-semibold text-white mb-3 text-sm">Rating Legend</h4>
                         <div class="flex flex-wrap gap-4 text-sm">
-                            <span class="flex items-center gap-2"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> <span class="text-gray-600">Excellent - No effect</span></span>
-                            <span class="flex items-center gap-2"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> <span class="text-gray-600">Good - Minor effect</span></span>
-                            <span class="flex items-center gap-2"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> <span class="text-gray-600">Fair - Moderate effect</span></span>
-                            <span class="flex items-center gap-2"><span class="rating-D px-2 py-0.5 rounded text-xs font-bold">D</span> <span class="text-gray-600">Not Recommended</span></span>
+                            <span class="flex items-center gap-2"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> <span class="text-gray-400">Excellent - No effect</span></span>
+                            <span class="flex items-center gap-2"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> <span class="text-gray-400">Good - Minor effect</span></span>
+                            <span class="flex items-center gap-2"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> <span class="text-gray-400">Fair - Moderate effect</span></span>
+                            <span class="flex items-center gap-2"><span class="rating-D px-2 py-0.5 rounded text-xs font-bold">D</span> <span class="text-gray-400">Not Recommended</span></span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Empty State -->
                 <div id="emptyState" class="text-center py-12">
-                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="beaker" class="w-8 h-8 text-blue-600"></i>
+                    <div class="w-16 h-16 bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="beaker" class="w-8 h-8 text-blue-400"></i>
                     </div>
                     <p class="text-gray-500">Search for a chemical to see material compatibility ratings</p>
                     <p class="text-gray-400 text-sm mt-2">Try: Sulfuric Acid, Acetone, Hydrochloric Acid</p>
@@ -139,28 +139,28 @@
     <!-- Features -->
     <section class="px-4 py-20">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 text-center mb-4">Why Use Our Guide?</h2>
+            <h2 class="text-2xl font-bold text-white text-center mb-4">Why Use Our Guide?</h2>
             <p class="text-gray-500 text-center mb-12 max-w-2xl mx-auto">Proper material selection is critical for safety and equipment longevity</p>
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="card p-6">
-                    <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="shield-check" class="w-6 h-6 text-green-600"></i>
+                    <div class="w-12 h-12 bg-green-900/30 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-green-400"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Safety First</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Safety First</h3>
                     <p class="text-gray-500 text-sm">Proper material selection prevents leaks, spills, and chemical reactions that can harm people and the environment.</p>
                 </div>
                 <div class="card p-6">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
                         <i data-lucide="database" class="w-6 h-6 text-white"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Comprehensive Data</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Comprehensive Data</h3>
                     <p class="text-gray-500 text-sm">Our database covers plastics (PE, PP, PTFE), metals (stainless steel, carbon steel), and elastomers (Viton, EPDM).</p>
                 </div>
                 <div class="card p-6">
-                    <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="zap" class="w-6 h-6 text-purple-600"></i>
+                    <div class="w-12 h-12 bg-purple-900/30 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="zap" class="w-6 h-6 text-purple-400"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Instant Results</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Instant Results</h3>
                     <p class="text-gray-500 text-sm">No more searching through PDFs or outdated charts. Get instant compatibility ratings for your chemical.</p>
                 </div>
             </div>
@@ -168,30 +168,30 @@
     </section>
 
     <!-- Use Cases -->
-    <section id="materials" class="px-4 py-16 bg-white border-y border-gray-200">
+    <section id="materials" class="px-4 py-16">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 text-center mb-4">Common Applications</h2>
+            <h2 class="text-2xl font-bold text-white text-center mb-4">Common Applications</h2>
             <p class="text-gray-500 text-center mb-12 max-w-2xl mx-auto">Choose the right material for your specific application</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="p-5 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
+                <div class="p-5 rounded-xl border border-gray-600 hover:border-blue-500 hover:shadow-md transition-all">
                     <i data-lucide="container" class="w-8 h-8 text-amber-500 mb-3"></i>
-                    <h3 class="font-semibold text-gray-900 mb-1">Secondary Containment</h3>
+                    <h3 class="font-semibold text-white mb-1">Secondary Containment</h3>
                     <p class="text-gray-500 text-sm">Sumps, spill pallets, bunds</p>
                 </div>
-                <div class="p-5 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
+                <div class="p-5 rounded-xl border border-gray-600 hover:border-blue-500 hover:shadow-md transition-all">
                     <i data-lucide="archive" class="w-8 h-8 text-red-500 mb-3"></i>
-                    <h3 class="font-semibold text-gray-900 mb-1">Hazmat Cabinets</h3>
+                    <h3 class="font-semibold text-white mb-1">Hazmat Cabinets</h3>
                     <p class="text-gray-500 text-sm">Flammable, corrosive storage</p>
                 </div>
-                <div class="p-5 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
+                <div class="p-5 rounded-xl border border-gray-600 hover:border-blue-500 hover:shadow-md transition-all">
                     <i data-lucide="pipette" class="w-8 h-8 text-blue-500 mb-3"></i>
-                    <h3 class="font-semibold text-gray-900 mb-1">Drum Pumps</h3>
+                    <h3 class="font-semibold text-white mb-1">Drum Pumps</h3>
                     <p class="text-gray-500 text-sm">Body & seal materials</p>
                 </div>
-                <div class="p-5 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
+                <div class="p-5 rounded-xl border border-gray-600 hover:border-blue-500 hover:shadow-md transition-all">
                     <i data-lucide="package" class="w-8 h-8 text-green-500 mb-3"></i>
-                    <h3 class="font-semibold text-gray-900 mb-1">IBCs & Containers</h3>
+                    <h3 class="font-semibold text-white mb-1">IBCs & Containers</h3>
                     <p class="text-gray-500 text-sm">Bulk storage solutions</p>
                 </div>
             </div>
@@ -201,18 +201,18 @@
     <!-- About -->
     <section id="about" class="px-4 py-16">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">About This Tool</h2>
-            <p class="text-gray-600 mb-6">
+            <h2 class="text-2xl font-bold text-white mb-4">About This Tool</h2>
+            <p class="text-gray-400 mb-6">
                 ChemicalResistance.org provides free, easy-to-use chemical compatibility data for engineers, safety professionals, and anyone working with hazardous materials. Our data is compiled from manufacturer specifications and industry standards.
             </p>
-            <p class="text-gray-400 text-sm bg-amber-50 border border-amber-200 rounded-lg p-4">
-                <strong class="text-amber-700">⚠️ Disclaimer:</strong> <span class="text-amber-600">This information is provided as a general guide only. Always verify compatibility with the specific manufacturer of your equipment and conduct proper testing for critical applications.</span>
+            <p class="text-gray-400 text-sm bg-amber-900/30 border border-amber-700 rounded-lg p-4">
+                <strong class="text-amber-400">⚠️ Disclaimer:</strong> <span class="text-amber-300">This information is provided as a general guide only. Always verify compatibility with the specific manufacturer of your equipment and conduct proper testing for critical applications.</span>
             </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 py-8 px-4">
+    <footer class="bg-gray-800 border-t border-gray-700 py-8 px-4">
         <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
             <p>© 2026 ChemicalResistance.org — Free Chemical Compatibility Guide</p>
         </div>
@@ -366,7 +366,7 @@
 
             if (matches.length > 0) {
                 searchResults.innerHTML = matches.map(c => `
-                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-name="${c.name}">
+                    <div class="px-4 py-3 hover:bg-gray-600 cursor-pointer border-b border-gray-600 last:border-0" data-name="${c.name}">
                         <div class="font-medium text-gray-900">${c.name}</div>
                         <div class="text-sm text-gray-500">${c.formula} • CAS: ${c.cas}</div>
                     </div>
@@ -396,8 +396,8 @@
             chemicalFormulaEl.innerHTML = `Formula: ${chemical.formula} • CAS: ${chemical.cas}`;
             
             resultsBody.innerHTML = Object.entries(chemical.ratings).map(([material, data]) => `
-                <tr class="border-b border-gray-100 hover:bg-gray-50">
-                    <td class="py-3 px-4 font-medium text-gray-900">${material}</td>
+                <tr class="border-b border-gray-600 hover:bg-gray-600">
+                    <td class="py-3 px-4 font-medium text-white">${material}</td>
                     <td class="py-3 px-4"><span class="rating-${data.c20} px-2 py-1 rounded text-xs font-bold">${data.c20}</span></td>
                     <td class="py-3 px-4"><span class="rating-${data.c50} px-2 py-1 rounded text-xs font-bold">${data.c50}</span></td>
                     <td class="py-3 px-4 text-gray-500 text-sm">${data.notes}</td>
