@@ -225,11 +225,16 @@ window.clearMaterialFilters = function() {
     } else {
         showSearchResults(searchInput.value.toLowerCase().trim());
     }
+    // Update table to show all materials again
+    if (currentGroupIndices.length > 0) {
+        updateRatingsTable();
+    }
 };
 
 window.toggleMoreMaterials = function() {
     const more = document.getElementById('moreMaterials');
     const btn = document.getElementById('moreMatBtn');
+    if (!more || !btn) return;
     if (more.classList.contains('hidden')) {
         more.classList.remove('hidden');
         btn.textContent = '−Less';
@@ -257,9 +262,9 @@ function setupEventListeners() {
         searchResults.classList.remove('hidden');
     });
 
-    // Material checkbox changes
-    document.querySelectorAll('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]').forEach(cb => {
-        cb.addEventListener('change', () => {
+    // Material checkbox changes - use event delegation for dynamic elements
+    document.addEventListener('change', (e) => {
+        if (e.target.matches('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]')) {
             const query = searchInput.value.toLowerCase().trim();
             const selectedMaterials = getSelectedMaterials();
             if (selectedMaterials.length > 0 || query.length >= 2) {
@@ -268,7 +273,11 @@ function setupEventListeners() {
             } else {
                 searchResults.classList.add('hidden');
             }
-        });
+            // Also update the results table if showing
+            if (currentGroupIndices.length > 0) {
+                updateRatingsTable();
+            }
+        }
     });
 
     // Rating filter change  
@@ -519,15 +528,25 @@ function updateRatingsTable() {
     
     const tbody = document.getElementById('ratingsTable');
     const recommended = [];
+    const selectedMaterials = getSelectedMaterials();
     
-    // Sort materials by rating (best first)
-    const sortedMaterials = Object.entries(chem.ratings).sort((a, b) => {
-        const orderA = ratingOrder[a[1].c20] ?? 4;
-        const orderB = ratingOrder[b[1].c20] ?? 4;
-        return orderA - orderB;
-    });
+    // Get materials to show - either selected ones or all
+    let materialsToShow;
+    if (selectedMaterials.length > 0) {
+        // Only show selected materials
+        materialsToShow = selectedMaterials
+            .filter(mat => chem.ratings[mat])
+            .map(mat => [mat, chem.ratings[mat]]);
+    } else {
+        // Show all materials, sorted by rating
+        materialsToShow = Object.entries(chem.ratings).sort((a, b) => {
+            const orderA = ratingOrder[a[1].c20] ?? 4;
+            const orderB = ratingOrder[b[1].c20] ?? 4;
+            return orderA - orderB;
+        });
+    }
 
-    tbody.innerHTML = sortedMaterials.map(([mat, rating]) => {
+    tbody.innerHTML = materialsToShow.map(([mat, rating]) => {
         const info = materialInfo[mat] || { name: mat, full: mat, type: '' };
         const grade20 = ratingToGrade(rating.c20);
         const grade50 = ratingToGrade(rating.c50);
