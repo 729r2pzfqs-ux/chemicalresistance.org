@@ -317,9 +317,11 @@ function showSearchResults(query) {
         const displayName = getDisplayName(c);
         const displayNameLower = displayName.toLowerCase();
         
-        // Search ONLY by displayed name (English) or CAS/formula
+        // Search by displayed name (English), aliases, CAS, or formula
+        const aliasMatch = c.aliases && c.aliases.some(a => a.toLowerCase().includes(queryLower));
         const textMatches = 
             displayNameLower.includes(queryLower) ||
+            aliasMatch ||
             (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(queryLower));
         

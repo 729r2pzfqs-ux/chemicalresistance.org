@@ -52320,7 +52320,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalilauge",
+      "Caustic Potash"
+    ]
   },
   {
     "name": "Kaliumhydroxid",
@@ -52427,7 +52431,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalilauge",
+      "Caustic Potash"
+    ]
   },
   {
     "name": "Kaliumhydroxid",
@@ -52534,7 +52542,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalilauge",
+      "Caustic Potash"
+    ]
   },
   {
     "name": "Kaliumhydroxid",
@@ -52641,7 +52653,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalilauge",
+      "Caustic Potash"
+    ]
   },
   {
     "name": "Kaliumhydroxid",
@@ -52748,7 +52764,11 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Kalilauge",
+      "Caustic Potash"
+    ]
   },
   {
     "name": "Kaliumhypochlorit",
@@ -69440,7 +69460,12 @@
         "c20": "2",
         "c50": "2"
       }
-    }
+    },
+    "aliases": [
+      "Natronlauge",
+      "Caustic Soda",
+      "Lye"
+    ]
   },
   {
     "name": "Natriumhydroxid",
@@ -69547,7 +69572,12 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Natronlauge",
+      "Caustic Soda",
+      "Lye"
+    ]
   },
   {
     "name": "Natriumhydroxid",
@@ -69654,7 +69684,12 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Natronlauge",
+      "Caustic Soda",
+      "Lye"
+    ]
   },
   {
     "name": "Natriumhydroxid",
@@ -69761,7 +69796,12 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Natronlauge",
+      "Caustic Soda",
+      "Lye"
+    ]
   },
   {
     "name": "Natriumhydroxid",
@@ -69868,7 +69908,12 @@
         "c20": "1",
         "c50": "3"
       }
-    }
+    },
+    "aliases": [
+      "Natronlauge",
+      "Caustic Soda",
+      "Lye"
+    ]
   },
   {
     "name": "Natriumhydroxid",
@@ -69975,7 +70020,12 @@
         "c20": "1",
         "c50": "1"
       }
-    }
+    },
+    "aliases": [
+      "Natronlauge",
+      "Caustic Soda",
+      "Lye"
+    ]
   },
   {
     "name": "Natriumhypochlorit",

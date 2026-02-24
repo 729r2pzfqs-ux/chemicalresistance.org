@@ -299,9 +299,11 @@ function showSearchResults(query) {
         const displayName = getDisplayName(c); // German name
         const displayNameLower = displayName.toLowerCase();
         
-        // Search ONLY by displayed name (German) or CAS/formula
+        // Search by displayed name (German), aliases, CAS, or formula
+        const aliasMatch = c.aliases && c.aliases.some(a => a.toLowerCase().includes(queryLower));
         const matches = 
             displayNameLower.includes(queryLower) ||
+            aliasMatch ||
             (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(queryLower));
         
