@@ -324,12 +324,20 @@
     });
 
     searchResults.addEventListener('click', (e) => {
+        console.log('searchResults click!', e.target);
         const item = e.target.closest('[data-key]');
+        console.log('item found:', item);
         if (item) {
             const key = item.dataset.key;
+            console.log('key:', key);
             const indices = chemicalGroups[key];
-            showResultsForGroup(indices);
-            searchResults.classList.add('hidden');
+            console.log('indices:', indices);
+            if (indices && indices.length > 0) {
+                showResultsForGroup(indices);
+                searchResults.classList.add('hidden');
+            } else {
+                console.error('No indices found for key:', key);
+            }
         }
     });
 
