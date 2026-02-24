@@ -448,12 +448,13 @@ function showResultsForGroup(indices) {
         }).join('');
         
         concContainer.innerHTML = `
-            <label class="text-xs text-gray-500 mr-1">Concentration:</label>
-            <select id="concSelect" class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded border-0 cursor-pointer">
+            <span class="font-semibold text-amber-800">Concentration:</span>
+            <select id="concSelect" class="ml-2 bg-white text-amber-900 font-bold px-3 py-1 rounded border-2 border-amber-400 cursor-pointer focus:border-amber-500 focus:outline-none">
                 ${options}
             </select>
+            <span class="text-xs text-amber-600 ml-2">← Select to update table</span>
         `;
-        concWrapper.style.display = 'flex';
+        concWrapper.style.display = 'block';
         
         document.getElementById('concSelect').addEventListener('change', (e) => {
             currentSelectedIdx = parseInt(e.target.value);
@@ -461,9 +462,9 @@ function showResultsForGroup(indices) {
         });
     } else {
         const conc = translateConc(firstChem.concentration);
-        if (conc !== 'Pure / Undiluted') {
-            concContainer.innerHTML = `<span class="text-xs text-gray-500 mr-1">Concentration:</span><span>${conc}</span>`;
-            concWrapper.style.display = 'flex';
+        if (conc && conc !== 'Pure / Undiluted') {
+            concContainer.innerHTML = `<span class="font-semibold text-amber-800">Concentration:</span> <span class="font-bold text-amber-900">${conc}</span>`;
+            concWrapper.style.display = 'block';
         } else {
             concWrapper.style.display = 'none';
         }
