@@ -11,12 +11,12 @@
         gtag('js', new Date());
         gtag('config', 'G-LTK6VVHYDW');
     </script>
-    <title>HDPE Chemical Resistance Chart | 600+ Chemicals Tested</title>
+    <title>HDPE Chemical Resistance Chart | 650+ Chemicals Tested</title>
     <meta name="description" content="Complete HDPE chemical resistance chart. Find which chemicals are compatible with High-Density Polyethylene at 20°C and 50°C. Free searchable database.">
     <link rel="canonical" href="https://chemicalresistance.org/materials/hdpe">
     
     <meta property="og:title" content="HDPE Chemical Resistance Chart">
-    <meta property="og:description" content="Complete compatibility data for High-Density Polyethylene. 600+ chemicals tested at multiple temperatures.">
+    <meta property="og:description" content="Complete compatibility data for High-Density Polyethylene. 650+ chemicals tested at multiple temperatures.">
     <meta property="og:type" content="article">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -70,7 +70,7 @@
                 It offers excellent resistance to acids, bases, and alcohols, making it ideal for drums, containers, and secondary containment.
             </p>
             <div class="flex flex-wrap gap-3">
-                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">600+ chemicals tested</span>
+                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">650+ chemicals tested</span>
                 <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
                 <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Free to use</span>
             </div>
@@ -317,7 +317,7 @@
     let displayCount = 50;
 
     // Load data
-    fetch('../data/chemicals_burkle.json')
+    fetch('../data/chemicals_burkle_full.json')
         .then(r => r.json())
         .then(data => {
             chemicals = data.filter(c => c.ratings.HDPE && (c.ratings.HDPE.c20 || c.ratings.HDPE.c50));

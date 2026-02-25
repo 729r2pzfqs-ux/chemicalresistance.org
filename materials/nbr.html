@@ -70,7 +70,7 @@
                 Also known as Buna-N, it's the most widely used elastomer for hydraulic seals, O-rings, and fuel system components.
             </p>
             <div class="flex flex-wrap gap-3">
-                <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">800+ chemicals tested</span>
+                <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">950+ chemicals tested</span>
                 <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
                 <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Oil resistant</span>
             </div>
@@ -321,7 +321,7 @@
     let filteredChemicals = [];
     let displayCount = 50;
 
-    fetch('../data/chemicals_burkle.json')
+    fetch('../data/chemicals_burkle_full.json')
         .then(r => r.json())
         .then(data => {
             chemicals = data.filter(c => c.ratings[MATERIAL] && (c.ratings[MATERIAL].c20 || c.ratings[MATERIAL].c50));

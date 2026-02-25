@@ -11,12 +11,12 @@
         gtag('js', new Date());
         gtag('config', 'G-LTK6VVHYDW');
     </script>
-    <title>Silicone (VMQ) Chemical Resistance Chart | 1600+ Chemicals Tested</title>
+    <title>Silicone (VMQ) Chemical Resistance Chart | Limited Data Available</title>
     <meta name="description" content="Complete Silicone rubber chemical resistance chart. Find which chemicals are compatible with Silicone VMQ at 20°C and 50°C. Free searchable database.">
     <link rel="canonical" href="https://chemicalresistance.org/materials/silicone">
     
     <meta property="og:title" content="Silicone Chemical Resistance Chart">
-    <meta property="og:description" content="Complete compatibility data for Silicone rubber (VMQ). 1600+ chemicals tested at multiple temperatures.">
+    <meta property="og:description" content="Complete compatibility data for Silicone rubber (VMQ). Limited compatibility data available.">
     <meta property="og:type" content="article">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -71,7 +71,7 @@
                 However, it has limited chemical resistance compared to other elastomers.
             </p>
             <div class="flex flex-wrap gap-3">
-                <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">1600+ chemicals tested</span>
+                <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">Limited data</span>
                 <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
                 <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">FDA compliant</span>
             </div>
@@ -246,7 +246,7 @@
 
         async function init() {
             try {
-                const response = await fetch('../data/chemicals.json');
+                const response = await fetch('../data/chemicals_burkle_full.json');
                 chemicals = await response.json();
                 filteredChemicals = chemicals.filter(c => c.ratings && c.ratings[MATERIAL]);
                 updateStats();
