@@ -325,10 +325,16 @@
             applyFilters();
         });
 
+    // Convert numeric ratings to letter grades
+    function ratingToGrade(val) {
+        const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
+        return map[val] || 'NR';
+    }
+
     function updateStats() {
         const stats = { A: 0, B: 0, C: 0, D: 0 };
         chemicals.forEach(c => {
-            const r = c.ratings.HDPE?.c20;
+            const r = ratingToGrade(c.ratings.HDPE?.c20);
             if (stats[r] !== undefined) stats[r]++;
         });
         document.getElementById('statA').textContent = stats.A;
@@ -350,7 +356,7 @@
                 (c.cas && c.cas.includes(query));
             
             // Rating filter
-            const r = c.ratings.HDPE?.[temp];
+            const r = ratingToGrade(c.ratings.HDPE?.[temp]);
             let matchesRating = true;
             if (rating === 'A') matchesRating = r === 'A';
             else if (rating === 'B') matchesRating = r === 'B';
@@ -365,8 +371,8 @@
         const order = { A: 0, B: 1, C: 2, D: 3, NR: 4 };
         const temp2 = document.getElementById('tempFilter').value;
         filteredChemicals.sort((a, b) => {
-            const ra = a.ratings.HDPE?.[temp2] || 'NR';
-            const rb = b.ratings.HDPE?.[temp2] || 'NR';
+            const ra = ratingToGrade(a.ratings.HDPE?.[temp2]);
+            const rb = ratingToGrade(b.ratings.HDPE?.[temp2]);
             return (order[ra] ?? 5) - (order[rb] ?? 5);
         });
 
@@ -402,8 +408,8 @@
 
         tbody.innerHTML = toShow.map(c => {
             const name = c.name_en || c.name;
-            const r20 = c.ratings.HDPE?.c20 || 'NR';
-            const r50 = c.ratings.HDPE?.c50 || 'NR';
+            const r20 = ratingToGrade(c.ratings.HDPE?.c20);
+            const r50 = ratingToGrade(c.ratings.HDPE?.c50);
             const conc = translateConc(c.concentration);
             const cas = c.cas || '—';
 

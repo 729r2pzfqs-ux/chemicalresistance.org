@@ -329,10 +329,16 @@
             applyFilters();
         });
 
+    // Convert numeric ratings to letter grades
+    function ratingToGrade(val) {
+        const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
+        return map[val] || 'NR';
+    }
+
     function updateStats() {
         const stats = { A: 0, B: 0, C: 0, D: 0 };
         chemicals.forEach(c => {
-            const r = c.ratings[MATERIAL]?.c20;
+            const r = ratingToGrade(c.ratings[MATERIAL]?.c20);
             if (stats[r] !== undefined) stats[r]++;
         });
         document.getElementById('statA').textContent = stats.A;
@@ -403,8 +409,8 @@
 
         tbody.innerHTML = toShow.map(c => {
             const name = c.name_en || c.name;
-            const r20 = c.ratings[MATERIAL]?.c20 || 'NR';
-            const r50 = c.ratings[MATERIAL]?.c50 || 'NR';
+            const r20 = ratingToGrade(c.ratings[MATERIAL]?.c20);
+            const r50 = ratingToGrade(c.ratings[MATERIAL]?.c50);
             const conc = translateConc(c.concentration);
             const cas = c.cas || '—';
 
