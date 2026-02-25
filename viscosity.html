@@ -282,7 +282,7 @@
         function renderTable(filter = '') {
             const filtered = viscosityData.filter(item => {
                 if (!filter) return true;
-                const name = translateName(item.medium).toLowerCase();
+                const name = (item.medium_en || translateName(item.medium)).toLowerCase();
                 const german = item.medium.toLowerCase();
                 return name.includes(filter) || german.includes(filter);
             });
@@ -302,7 +302,7 @@
             }
 
             tbody.innerHTML = filtered.map(item => {
-                const name = translateName(item.medium);
+                const name = item.medium_en || translateName(item.medium);
                 const showGerman = name !== item.medium;
                 
                 return `
