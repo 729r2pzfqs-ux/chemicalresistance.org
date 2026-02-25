@@ -1,5 +1,5 @@
 // Chemical Resistance App v2 - External data loading
-// 835 chemicals × 24 materials
+// 1,600+ chemicals × 24 materials
 
 // Common German → English translations
 const translations = {
@@ -134,7 +134,7 @@ let currentLang = 'en';
 // Initialize app
 async function init() {
     try {
-        const response = await fetch('data/chemicals.json');
+        const response = await fetch('data/chemicals_burkle_full.json');
         chemicals = await response.json();
         buildIndex();
         setupEventListeners();
