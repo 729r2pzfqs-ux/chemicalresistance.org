@@ -129,7 +129,7 @@ let chemicals = [];
 let chemicalGroups = {};
 let currentGroupIndices = [];
 let currentSelectedIdx = 0;
-let currentLang = 'en';
+let currentLang = window.pageLang || document.documentElement.lang || 'en';
 
 // Initialize app
 async function init() {
@@ -179,6 +179,7 @@ function translateName(germanName) {
 
 function getDisplayName(c) {
     if (currentLang === 'de') return c.name;
+    if (currentLang === 'es') return c.name_es || c.name;
     return translateName(c.name);
 }
 
@@ -186,6 +187,10 @@ function getSecondaryName(c) {
     if (currentLang === 'de') {
         const en = translateName(c.name);
         return en !== c.name ? en : '';
+    }
+    if (currentLang === 'es') {
+        // For Spanish, show German as secondary
+        return c.name_es && c.name_es !== c.name ? c.name : '';
     }
     // For English, show German as secondary
     const en = translateName(c.name);
@@ -295,6 +300,10 @@ function setupEventListeners() {
     langSelect?.addEventListener('change', () => {
         if (langSelect.value === 'de') {
             window.location.href = 'de.html';
+        } else if (langSelect.value === 'es') {
+            window.location.href = 'es.html';
+        } else if (langSelect.value === 'en') {
+            window.location.href = 'index.html';
         }
     });
 
@@ -317,11 +326,15 @@ function showSearchResults(query) {
         const displayName = getDisplayName(c);
         const displayNameLower = displayName.toLowerCase();
         
-        // Search by displayed name (English), aliases, CAS, or formula
+        // Search by displayed name, aliases, CAS, formula, or Spanish name
         const aliasMatch = c.aliases && c.aliases.some(a => a.toLowerCase().includes(queryLower));
+        const spanishMatch = c.name_es && c.name_es.toLowerCase().includes(queryLower);
+        const germanMatch = c.name.toLowerCase().includes(queryLower);
         const textMatches = 
             displayNameLower.includes(queryLower) ||
             aliasMatch ||
+            spanishMatch ||
+            germanMatch ||
             (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(queryLower));
         
