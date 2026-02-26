@@ -8181,7 +8181,7 @@
       "Jasminaldehyd",
       "Pentylzimtaldehyd, a-"
     ],
-    "name_es": "Amylzimtaldehyd"
+    "name_es": "Aldehído amilcinámico"
   },
   {
     "name": "Ananassaft",
@@ -16846,7 +16846,7 @@
     "aliases": [
       "Trihydroxybutan"
     ],
-    "name_es": "Butantriol"
+    "name_es": "Butanotriol"
   },
   {
     "name": "Buten",
@@ -17287,7 +17287,7 @@
     "aliases": [
       "Acrylsäurebutylester"
     ],
-    "name_es": "Butylacrylat"
+    "name_es": "Acrilato de butilo"
   },
   {
     "name": "Butylalkohol, sekundär",
@@ -17622,7 +17622,7 @@
     "aliases": [
       "Aminobutan"
     ],
-    "name_es": "Butylamin"
+    "name_es": "Butilamina"
   },
   {
     "name": "Butylenglycol",
@@ -17733,7 +17733,7 @@
     "aliases": [
       "Butandiol"
     ],
-    "name_es": "Butylenglycol"
+    "name_es": "Butilenglicol"
   },
   {
     "name": "Butylglycol",
@@ -17846,7 +17846,7 @@
       "Butylcellosolve",
       "Ethylenglycolmonobutylether"
     ],
-    "name_es": "Butylglycol"
+    "name_es": "Butilglicol"
   },
   {
     "name": "Butylphenol",
@@ -17954,7 +17954,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Butylphenol"
+    "name_es": "Butilfenol"
   },
   {
     "name": "Butylphenol, p-tertiär",
@@ -18062,7 +18062,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Butylphenol, p-tertiär"
+    "name_es": "Butilfenol, p-terciario"
   },
   {
     "name": "Butyraldehyd",
@@ -18173,7 +18173,7 @@
     "aliases": [
       "Butanal"
     ],
-    "name_es": "Butyraldehyd"
+    "name_es": "Butiraldehído"
   },
   {
     "name": "Cadmiumbromid",
@@ -21133,7 +21133,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Carbolineum"
+    "name_es": "Carbolineo"
   },
   {
     "name": "Carnaubawachs",
@@ -25859,7 +25859,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Clophen A60"
+    "name_es": "Clophen A60 (PCB)"
   },
   {
     "name": "Cobalt-(II)-chlorid",
@@ -26082,7 +26082,7 @@
       "Butenal, trans-2-",
       "Methylacrolein"
     ],
-    "name_es": "Crotonaldehyd"
+    "name_es": "Crotonaldehído"
   },
   {
     "name": "Cumol",
@@ -26196,7 +26196,7 @@
       "Isopropylbenzol",
       "Phenylpropan"
     ],
-    "name_es": "Cumol"
+    "name_es": "Cumeno"
   },
   {
     "name": "Curry",
@@ -26412,7 +26412,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Cyclanon"
+    "name_es": "Ciclanona"
   },
   {
     "name": "Cyclohexan",
@@ -26859,7 +26859,7 @@
       "Dolcymen",
       "Isopropyl-4-methylbenzol, 1-"
     ],
-    "name_es": "Cymol, p-"
+    "name_es": "p-Cimeno"
   },
   {
     "name": "Dampf",
@@ -27078,7 +27078,7 @@
     "aliases": [
       "Dichlordiphenyltrichlorethan"
     ],
-    "name_es": "DDT (Emulsion)"
+    "name_es": "DDT (Emulsión)"
   },
   {
     "name": "Decahydronaphtalin",
@@ -27189,7 +27189,7 @@
     "aliases": [
       "Decalin"
     ],
-    "name_es": "Decahydronaphtalin"
+    "name_es": "Decahidronaftaleno"
   },
   {
     "name": "Decan",
@@ -27297,7 +27297,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Decan"
+    "name_es": "Decano"
   },
   {
     "name": "Dehydracetsäure",
@@ -27960,7 +27960,7 @@
     "aliases": [
       "Benzylether"
     ],
-    "name_es": "Dibenzylether"
+    "name_es": "Éter dibencílico"
   },
   {
     "name": "Dibenzylsebacat",
@@ -28072,7 +28072,7 @@
       "Decandisäuredibenzylester",
       "Sebacinsäuredibenzylester"
     ],
-    "name_es": "Dibenzylsebacat"
+    "name_es": "Sebacato de dibencilo"
   },
   {
     "name": "Dibromethan-1,2",
@@ -28183,7 +28183,7 @@
     "aliases": [
       "Ethylen(di)bromid"
     ],
-    "name_es": "Dibromethan-1,2"
+    "name_es": "1,2-Dibromoetano"
   },
   {
     "name": "Dibromtetrafluormethan",
@@ -28294,7 +28294,7 @@
     "aliases": [
       "Freon 114 B2"
     ],
-    "name_es": "Dibromtetrafluormethan"
+    "name_es": "Dibromtetrafluorometano"
   },
   {
     "name": "Dibutylamin",
@@ -28402,7 +28402,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dibutylamin"
+    "name_es": "Dibutilamina"
   },
   {
     "name": "Dibutylether",
@@ -28513,7 +28513,7 @@
     "aliases": [
       "Butylether"
     ],
-    "name_es": "Dibutylether"
+    "name_es": "Éter dibutílico"
   },
   {
     "name": "Dibutylphthalat",
@@ -28625,7 +28625,7 @@
       "Elaol",
       "Phthalsäuredibutylester"
     ],
-    "name_es": "Dibutylphthalat"
+    "name_es": "Ftalato de dibutilo"
   },
   {
     "name": "Dibutylphthalat",
@@ -28737,7 +28737,7 @@
       "Elaol",
       "Phthalsäuredibutylester"
     ],
-    "name_es": "Dibutylphthalat"
+    "name_es": "Ftalato de dibutilo"
   },
   {
     "name": "Dibutylsebacat",
@@ -28849,7 +28849,7 @@
       "Decandisäuredibutylester",
       "Sebacinsäuredibutylester"
     ],
-    "name_es": "Dibutylsebacat"
+    "name_es": "Sebacato de dibutilo"
   },
   {
     "name": "Dichlorbenzol, 1,2-",
@@ -28961,7 +28961,7 @@
       "Dichlorbenzen, 1,2-",
       "Dichlorbenzol, o-"
     ],
-    "name_es": "Dichlorbenzol, 1,2-"
+    "name_es": "1,2-Diclorobenceno"
   },
   {
     "name": "Dichlorbenzol, 1,4-",
@@ -29073,7 +29073,7 @@
       "Dichlorbenzen, 1,4-",
       "Dichlorbenzol, p-"
     ],
-    "name_es": "Dichlorbenzol, 1,4-"
+    "name_es": "1,4-Diclorobenceno"
   },
   {
     "name": "Dichlordifluormethan",
@@ -29186,7 +29186,7 @@
       "Freon 12",
       "Frigen 12"
     ],
-    "name_es": "Dichlordifluormethan"
+    "name_es": "Diclorodifluorometano"
   },
   {
     "name": "Dichlordifluormethan",
@@ -29299,7 +29299,7 @@
       "Freon 12",
       "Frigen 12"
     ],
-    "name_es": "Dichlordifluormethan"
+    "name_es": "Diclorodifluorometano"
   },
   {
     "name": "Dichloressigsäure",
@@ -29623,7 +29623,7 @@
         "c50": "1L"
       }
     },
-    "name_es": "Dichlorethylen"
+    "name_es": "Dicloroetileno"
   },
   {
     "name": "Dichlorfluormethan",
@@ -29737,7 +29737,7 @@
       "Frigen 21",
       "Monofluordichlormethan"
     ],
-    "name_es": "Dichlorfluormethan"
+    "name_es": "Diclorofluorometano"
   },
   {
     "name": "Dichlor-hexafluorcyclobutan",
@@ -29848,7 +29848,7 @@
     "aliases": [
       "Freon C316"
     ],
-    "name_es": "Dichlor-hexafluorcyclobutan"
+    "name_es": "Dicloro-hexafluorociclobutano"
   },
   {
     "name": "Dichlorisopropylether",
@@ -29959,7 +29959,7 @@
     "aliases": [
       "Bis(2-Chlor-1-methylethyl)ether"
     ],
-    "name_es": "Dichlorisopropylether"
+    "name_es": "Éter dicloroisopropílico"
   },
   {
     "name": "Dichlormethan",
@@ -30181,7 +30181,7 @@
     "aliases": [
       "Propylen(di)chlorid"
     ],
-    "name_es": "Dichlorpropan"
+    "name_es": "Dicloropropano"
   },
   {
     "name": "Dichlortetrafluorethan",
@@ -30292,7 +30292,7 @@
     "aliases": [
       "Freon 114"
     ],
-    "name_es": "Dichlortetrafluorethan"
+    "name_es": "Diclorotetrafluoroetano"
   },
   {
     "name": "Dicyclohexylamin (DCHA)",
@@ -30400,7 +30400,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dicyclohexylamin (DCHA)"
+    "name_es": "Diciclohexilamina (DCHA)"
   },
   {
     "name": "Dicyclohexylphthalat",
@@ -30512,7 +30512,7 @@
       "Dihexylphthalat",
       "Phthalsäuredicyclohexylester"
     ],
-    "name_es": "Dicyclohexylphthalat"
+    "name_es": "Ftalato de diciclohexilo"
   },
   {
     "name": "Dieselkraftstoff",
@@ -30836,7 +30836,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diethanolamin (DEA)"
+    "name_es": "Dietanolamina (DEA)"
   },
   {
     "name": "Diethylamin",
@@ -30947,7 +30947,7 @@
     "aliases": [
       "Ethylethanamin, N-"
     ],
-    "name_es": "Diethylamin"
+    "name_es": "Dietilamina"
   },
   {
     "name": "Diethylbenzol",
@@ -31055,7 +31055,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diethylbenzol"
+    "name_es": "Dietilbenceno"
   },
   {
     "name": "Diethylenglycol",
@@ -31166,7 +31166,7 @@
     "aliases": [
       "Diglycol"
     ],
-    "name_es": "Diethylenglycol"
+    "name_es": "Dietilenglicol"
   },
   {
     "name": "Diethylenglycolether",
@@ -31274,7 +31274,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diethylenglycolether"
+    "name_es": "Éter de dietilenglicol"
   },
   {
     "name": "Diethylketon",
@@ -31385,7 +31385,7 @@
     "aliases": [
       "Pentanon, 3-"
     ],
-    "name_es": "Diethylketon"
+    "name_es": "Dietilcetona"
   },
   {
     "name": "Diethylmalonat",
@@ -31498,7 +31498,7 @@
       "Malonester",
       "Malonsäurediethylester"
     ],
-    "name_es": "Diethylmalonat"
+    "name_es": "Malonato de dietilo"
   },
   {
     "name": "Diethylsebacat",
@@ -31610,7 +31610,7 @@
       "Decandisäurediethylester",
       "Sebacinsäurediethylester"
     ],
-    "name_es": "Diethylsebacat"
+    "name_es": "Sebacato de dietilo"
   },
   {
     "name": "Difluorchlorethan",
@@ -31721,7 +31721,7 @@
     "aliases": [
       "Freon 142b"
     ],
-    "name_es": "Difluorchlorethan"
+    "name_es": "Difluorocloroetano"
   },
   {
     "name": "Difluorethan",
@@ -31832,7 +31832,7 @@
     "aliases": [
       "Freon 152a"
     ],
-    "name_es": "Difluorethan"
+    "name_es": "Difluoroetano"
   },
   {
     "name": "Difluormethan",
@@ -31943,7 +31943,7 @@
     "aliases": [
       "Freon 32"
     ],
-    "name_es": "Difluormethan"
+    "name_es": "Difluorometano"
   },
   {
     "name": "Difluortetrachlorethan",
@@ -32054,7 +32054,7 @@
     "aliases": [
       "Freon 112"
     ],
-    "name_es": "Difluortetrachlorethan"
+    "name_es": "Difluorotetracloroetano"
   },
   {
     "name": "Diglycolsäure",
@@ -32384,7 +32384,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diisobutylen (DIB)"
+    "name_es": "Diisobutileno (DIB)"
   },
   {
     "name": "Diisobutylketon",
@@ -32495,7 +32495,7 @@
     "aliases": [
       "Isobutylketon"
     ],
-    "name_es": "Diisobutylketon"
+    "name_es": "Diisobutilcetona"
   },
   {
     "name": "Diisooctylphthalat (DOP)",
@@ -32603,7 +32603,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diisooctylphthalat (DOP)"
+    "name_es": "Ftalato de diisooctilo (DOP)"
   },
   {
     "name": "Diisopropylketon",
@@ -32714,7 +32714,7 @@
     "aliases": [
       "Dimethylpentanon-3, 2,4-"
     ],
-    "name_es": "Diisopropylketon"
+    "name_es": "Diisopropilcetona"
   },
   {
     "name": "Dimethylamin",
@@ -32822,7 +32822,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dimethylamin"
+    "name_es": "Dimetilamina"
   },
   {
     "name": "Dimethylanilin",
@@ -32930,7 +32930,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dimethylanilin"
+    "name_es": "Dimetilanilina"
   },
   {
     "name": "Dimethylether",
@@ -33041,7 +33041,7 @@
     "aliases": [
       "Methylether"
     ],
-    "name_es": "Dimethylether"
+    "name_es": "Éter dimetílico"
   },
   {
     "name": "Dimethylformamid (DMF)",
@@ -33257,7 +33257,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dimethylphthalat (DMP)"
+    "name_es": "Ftalato de dimetilo (DMP)"
   },
   {
     "name": "Dimethylsulfoxid (DMSO)",
@@ -33585,7 +33585,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dinonylphthalat (DNP)"
+    "name_es": "Ftalato de dinonilo (DNP)"
   },
   {
     "name": "Dioctyladipat",
@@ -33697,7 +33697,7 @@
       "Adipinsäuredioctylester",
       "Bis(2-ethylhexyl)-adipat"
     ],
-    "name_es": "Dioctyladipat"
+    "name_es": "Adipato de dioctilo"
   },
   {
     "name": "Dioctylsebacat",
@@ -33808,7 +33808,7 @@
     "aliases": [
       "Bis(2-ethylhexyl)-sebacat, Sebacinsäure-bis(2-ethylhexylester)"
     ],
-    "name_es": "Dioctylsebacat"
+    "name_es": "Sebacato de dioctilo"
   },
   {
     "name": "Dioxan",
@@ -34030,7 +34030,7 @@
     "aliases": [
       "Phenylanilin, N-"
     ],
-    "name_es": "Diphenylamin"
+    "name_es": "Difenilamina"
   },
   {
     "name": "Diphenylether",
@@ -34142,7 +34142,7 @@
       "Diphenyloxid",
       "Phenylether"
     ],
-    "name_es": "Diphenylether"
+    "name_es": "Éter difenílico"
   },
   {
     "name": "Diphyl",
@@ -34250,7 +34250,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diphyl"
+    "name_es": "Difilo"
   },
   {
     "name": "Dipropylenglycol",
@@ -34358,7 +34358,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dipropylenglycol"
+    "name_es": "Dipropilenglicol"
   },
   {
     "name": "Dipropylketon",
@@ -34469,7 +34469,7 @@
     "aliases": [
       "Heptanon-4"
     ],
-    "name_es": "Dipropylketon"
+    "name_es": "Dipropilcetona"
   },
   {
     "name": "Eisen-(II)-chlorid",
@@ -35462,7 +35462,7 @@
         "c50": "K"
       }
     },
-    "name_es": "Emulgatoren"
+    "name_es": "Emulsionantes"
   },
   {
     "name": "Entwicklerflüssigkeiten",
@@ -35678,7 +35678,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Ephetin"
+    "name_es": "Efetina"
   },
   {
     "name": "Epichlorhydrin",
@@ -35789,7 +35789,7 @@
     "aliases": [
       "Chlormethyloxiran"
     ],
-    "name_es": "Epichlorhydrin"
+    "name_es": "Epiclorhidrina"
   },
   {
     "name": "Erdgas",
@@ -35897,7 +35897,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Erdgas"
+    "name_es": "Gas natural"
   },
   {
     "name": "Erdnußöl",
@@ -37790,7 +37790,7 @@
     "aliases": [
       "Ethylmercaptan"
     ],
-    "name_es": "Ethanthiol"
+    "name_es": "Etanotiol"
   },
   {
     "name": "Ethylacetat",
@@ -38014,7 +38014,7 @@
       "Acrylsäureethylester",
       "Propensäureethylester"
     ],
-    "name_es": "Ethylacrylat"
+    "name_es": "Acrilato de etilo"
   },
   {
     "name": "Ethylbenzol",
@@ -38125,7 +38125,7 @@
     "aliases": [
       "Ethylbenzen"
     ],
-    "name_es": "Ethylbenzol"
+    "name_es": "Etilbenceno"
   },
   {
     "name": "Ethylbutyrat",
@@ -38236,7 +38236,7 @@
     "aliases": [
       "Buttersäureethylester"
     ],
-    "name_es": "Ethylbutyrat"
+    "name_es": "Butirato de etilo"
   },
   {
     "name": "Ethylchloracetat",
@@ -38570,7 +38570,7 @@
     "aliases": [
       "Ethen"
     ],
-    "name_es": "Ethylen"
+    "name_es": "Etileno"
   },
   {
     "name": "Ethylenchlorid",
@@ -38794,7 +38794,7 @@
       "Diaminoethan",
       "Ethandiamin"
     ],
-    "name_es": "Ethylendiamin"
+    "name_es": "Etilendiamina"
   },
   {
     "name": "Ethylendiamintetraessigsäure (EDTA)",
@@ -39014,7 +39014,7 @@
       "Ethandiol",
       "Glycol"
     ],
-    "name_es": "Ethylenglycol"
+    "name_es": "Etilenglicol"
   },
   {
     "name": "Ethylenglycolmonoethyletheracetat",
@@ -39352,7 +39352,7 @@
       "Ether",
       "Schwefelether"
     ],
-    "name_es": "Ethylether"
+    "name_es": "Éter etílico"
   },
   {
     "name": "Ethylformiat",
@@ -39463,7 +39463,7 @@
     "aliases": [
       "Ameisensäureethylester"
     ],
-    "name_es": "Ethylformiat"
+    "name_es": "Formiato de etilo"
   },
   {
     "name": "Ethylglycol",
@@ -39578,7 +39578,7 @@
       "Ethylenglycolethylether",
       "Ethylenglycolmonoethylether"
     ],
-    "name_es": "Ethylglycol"
+    "name_es": "Etilglicol"
   },
   {
     "name": "Ethylhexanol-1",
@@ -39690,7 +39690,7 @@
       "Isooctanol",
       "Isooctylalkohol"
     ],
-    "name_es": "Ethylhexanol-1"
+    "name_es": "1-Etilhexanol"
   },
   {
     "name": "Ethyllactat",
@@ -39802,7 +39802,7 @@
       "Hydroxypropionsäure-ethylester, 2-",
       "Milchsäure-ethylester"
     ],
-    "name_es": "Ethyllactat"
+    "name_es": "Lactato de etilo"
   },
   {
     "name": "Eukalyptusöl",
@@ -40131,7 +40131,7 @@
       "Kalium(hexa)cyanoferrat-(III)",
       "Kaliumeisen-(III)-cyanid"
     ],
-    "name_es": "Ferricyankalium"
+    "name_es": "Ferricianuro de potasio"
   },
   {
     "name": "Ferrocyankalium",
@@ -40244,7 +40244,7 @@
       "Kalium(hexa)cyanoferrat-(II)",
       "Kaliumeisen-(II)-cyanid"
     ],
-    "name_es": "Ferrocyankalium"
+    "name_es": "Ferrocianuro de potasio"
   },
   {
     "name": "Ferrocyankalium",
@@ -40357,7 +40357,7 @@
       "Kalium(hexa)cyanoferrat-(II)",
       "Kaliumeisen-(II)-cyanid"
     ],
-    "name_es": "Ferrocyankalium"
+    "name_es": "Ferrocianuro de potasio"
   },
   {
     "name": "Fett, mineralisch",
@@ -41113,7 +41113,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Fischtran"
+    "name_es": "Aceite de pescado"
   },
   {
     "name": "Flugmotorenkraftstoffe (JP)",
@@ -41221,7 +41221,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Flugmotorenkraftstoffe (JP)"
+    "name_es": "Combustible de aviación (JP)"
   },
   {
     "name": "Fluid 101, 100°C",
@@ -41329,7 +41329,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Fluid 101, 100°C"
+    "name_es": "Fluido 101, 100°C"
   },
   {
     "name": "Fluor",
@@ -42088,7 +42088,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Flüssigseifen"
+    "name_es": "Jabones líquidos"
   },
   {
     "name": "Flusssäure",
@@ -42983,7 +42983,7 @@
     "aliases": [
       "Ameisensäureamid"
     ],
-    "name_es": "Formamid"
+    "name_es": "Formamida"
   },
   {
     "name": "Fotoemulsionen",
@@ -43091,7 +43091,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Fotoemulsionen"
+    "name_es": "Emulsiones fotográficas"
   },
   {
     "name": "Fotoentwickler",
@@ -43199,7 +43199,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Fotoentwickler"
+    "name_es": "Revelador fotográfico"
   },
   {
     "name": "Fotofixierbäder",
@@ -43307,7 +43307,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Fotofixierbäder"
+    "name_es": "Baños fijadores fotográficos"
   },
   {
     "name": "Frostschutzmittel (KFZ)",
@@ -43415,7 +43415,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Frostschutzmittel (KFZ)"
+    "name_es": "Anticongelante (automóvil)"
   },
   {
     "name": "Fruchtsäfte",
@@ -43523,7 +43523,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Fruchtsäfte"
+    "name_es": "Jugos de frutas"
   },
   {
     "name": "Fructose",
@@ -43745,7 +43745,7 @@
     "aliases": [
       "Furfuran"
     ],
-    "name_es": "Furan"
+    "name_es": "Furano"
   },
   {
     "name": "Furfurol",
@@ -44192,7 +44192,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gärungsmaische"
+    "name_es": "Mosto de fermentación"
   },
   {
     "name": "Gasöl",
@@ -44408,7 +44408,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gasoline"
+    "name_es": "Gasolina"
   },
   {
     "name": "Gaswasser",
@@ -44732,7 +44732,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Genantin"
+    "name_es": "Genantina"
   },
   {
     "name": "Gerbeextrakte, pflanzlich",
@@ -44840,7 +44840,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gerbeextrakte, pflanzlich"
+    "name_es": "Extractos de curtido, vegetales"
   },
   {
     "name": "Gerbextrakte",
@@ -44948,7 +44948,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gerbextrakte"
+    "name_es": "Extractos de curtido"
   },
   {
     "name": "Getriebeöl, EP (Hypoid), 110°C",
@@ -45609,7 +45609,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Glysantin"
+    "name_es": "Glisantina"
   },
   {
     "name": "Grubengas",
@@ -45717,7 +45717,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Grubengas"
+    "name_es": "Grisú"
   },
   {
     "name": "Harnsäure",
@@ -46260,7 +46260,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Hefe"
+    "name_es": "Levadura"
   },
   {
     "name": "Heizöl",
@@ -47022,7 +47022,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Hexachlorbenzol (HCB)"
+    "name_es": "Hexaclorobenceno (HCB)"
   },
   {
     "name": "Hexachlorbutadien (HCBD)",
@@ -47130,7 +47130,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Hexachlorbutadien (HCBD)"
+    "name_es": "Hexaclorobutadieno (HCBD)"
   },
   {
     "name": "Hexachlorcyclohexan (HCH)",
@@ -47238,7 +47238,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Hexachlorcyclohexan (HCH)"
+    "name_es": "Hexaclorociclohexano (HCH)"
   },
   {
     "name": "Hexamethylentetramin",
@@ -47352,7 +47352,7 @@
       "Methenamin",
       "Urotropin"
     ],
-    "name_es": "Hexamethylentetramin"
+    "name_es": "Hexametilentetramina"
   },
   {
     "name": "Hexan, n-",
@@ -47904,7 +47904,7 @@
       "Butylethylen",
       "Hexylen"
     ],
-    "name_es": "Hexen, 1-"
+    "name_es": "1-Hexeno"
   },
   {
     "name": "Holzöl",
@@ -48994,7 +48994,7 @@
     "aliases": [
       "Hydraziniumhydroxid"
     ],
-    "name_es": "Hydrazinhydrat"
+    "name_es": "Hidrato de hidracina"
   },
   {
     "name": "Hydrochinon",
@@ -49105,7 +49105,7 @@
     "aliases": [
       "Dihydroxybenzol, 1,4-"
     ],
-    "name_es": "Hydrochinon"
+    "name_es": "Hidroquinona"
   },
   {
     "name": "Hydroxylammoniumsulfat",
@@ -49435,7 +49435,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Ingwer"
+    "name_es": "Jengibre"
   },
   {
     "name": "Isoamylalkohol",
@@ -49883,7 +49883,7 @@
       "Methylisobutylketon (MIBK)",
       "Methylpentan-2-on, 4-"
     ],
-    "name_es": "Isobutylmethylketon"
+    "name_es": "Isobutilmetilcetona"
   },
   {
     "name": "Isooctan",
@@ -49995,7 +49995,7 @@
       "Isobutyltrimethylmethan",
       "Trimethylpentan, 2,2,4-"
     ],
-    "name_es": "Isooctan"
+    "name_es": "Isooctano"
   },
   {
     "name": "Isopropanol",
@@ -50109,7 +50109,7 @@
       "Isopropylalkohol",
       "Propanol, 2-"
     ],
-    "name_es": "Isopropanol"
+    "name_es": "Alcohol isopropílico"
   },
   {
     "name": "Isopropylacetat",
@@ -50442,7 +50442,7 @@
     "aliases": [
       "Diisopropylether"
     ],
-    "name_es": "Isopropylether"
+    "name_es": "Éter isopropílico"
   },
   {
     "name": "Isopropylmethylketon",
@@ -50554,7 +50554,7 @@
       "Methylbutanon-2, 3-",
       "Methylisopropylketon"
     ],
-    "name_es": "Isopropylmethylketon"
+    "name_es": "Isopropilmetilcetona"
   },
   {
     "name": "Jodoform",
@@ -50989,7 +50989,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kakao"
+    "name_es": "Cacao"
   },
   {
     "name": "Kakaobutter",
@@ -51097,7 +51097,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kakaobutter"
+    "name_es": "Manteca de cacao"
   },
   {
     "name": "Kaliumacetat",
@@ -56054,7 +56054,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kardamom"
+    "name_es": "Cardamomo"
   },
   {
     "name": "Kautschukdispersion",
@@ -56162,7 +56162,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kautschukdispersion"
+    "name_es": "Dispersión de caucho"
   },
   {
     "name": "Kerosin",
@@ -57792,7 +57792,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kraftstoff, Normal"
+    "name_es": "Combustible, normal"
   },
   {
     "name": "Kraftstoff, Super",
@@ -57900,7 +57900,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kraftstoff, Super"
+    "name_es": "Combustible, súper"
   },
   {
     "name": "Kreide",
@@ -58008,7 +58008,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kreide"
+    "name_es": "Tiza"
   },
   {
     "name": "Kreosot",
@@ -58231,7 +58231,7 @@
       "Hydroxytoluol",
       "Methylphenol"
     ],
-    "name_es": "Kresol (-Gemische)"
+    "name_es": "Cresol (mezclas)"
   },
   {
     "name": "Kümmel",
@@ -58339,7 +58339,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kümmel"
+    "name_es": "Comino"
   },
   {
     "name": "Kupfer-(I)-chlorid",
@@ -59210,7 +59210,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Lachgas"
+    "name_es": "Gas de la risa (óxido nitroso)"
   },
   {
     "name": "Lactame",
@@ -59318,7 +59318,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Lactame"
+    "name_es": "Lactamas"
   },
   {
     "name": "Lactose",
@@ -59430,7 +59430,7 @@
       "Lactobiose",
       "Milchzucker"
     ],
-    "name_es": "Lactose"
+    "name_es": "Lactosa"
   },
   {
     "name": "Lanolin",
@@ -59541,7 +59541,7 @@
     "aliases": [
       "Wollfett"
     ],
-    "name_es": "Lanolin"
+    "name_es": "Lanolina"
   },
   {
     "name": "Latex",
@@ -60629,7 +60629,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Ligroin"
+    "name_es": "Ligroína"
   },
   {
     "name": "Liköre",
@@ -60737,7 +60737,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Liköre"
+    "name_es": "Licores"
   },
   {
     "name": "Limonen, DL-",
@@ -60849,7 +60849,7 @@
       "Dipenten",
       "Menthadien-1,8, p-"
     ],
-    "name_es": "Limonen, DL-"
+    "name_es": "DL-Limoneno"
   },
   {
     "name": "Lithiumbromid",
@@ -61065,7 +61065,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Lorbeer"
+    "name_es": "Laurel"
   },
   {
     "name": "Lysol",
@@ -61173,7 +61173,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Lysol"
+    "name_es": "Lisol"
   },
   {
     "name": "Magnesiumbromid",
@@ -63022,7 +63022,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Melassewürze"
+    "name_es": "Mosto de melaza"
   },
   {
     "name": "Menthol",
@@ -63690,7 +63690,7 @@
     "aliases": [
       "Hydroxymethoxybutan"
     ],
-    "name_es": "Methoxybutanol"
+    "name_es": "Metoxibutanol"
   },
   {
     "name": "Methoxyethyloleat",
@@ -63801,7 +63801,7 @@
     "aliases": [
       "Ölsäuremethoxyethylester"
     ],
-    "name_es": "Methoxyethyloleat"
+    "name_es": "Oleato de metoxietilo"
   },
   {
     "name": "Methyethylether",
@@ -63909,7 +63909,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Methyethylether"
+    "name_es": "Éter metil etílico"
   },
   {
     "name": "Methylacrylat",
@@ -64021,7 +64021,7 @@
       "Acrylsäuremethylester",
       "Methylpropenoat"
     ],
-    "name_es": "Methylacrylat"
+    "name_es": "Acrilato de metilo"
   },
   {
     "name": "Methylamin, (Mono-)",
@@ -64133,7 +64133,7 @@
       "Aminomethan",
       "Methanamin"
     ],
-    "name_es": "Methylamin, (Mono-)"
+    "name_es": "Metilamina (mono-)"
   },
   {
     "name": "Methylbenzol",
@@ -64245,7 +64245,7 @@
       "Toluen",
       "Toluol"
     ],
-    "name_es": "Methylbenzol"
+    "name_es": "Metilbenceno (tolueno)"
   },
   {
     "name": "Methylbutanol",
@@ -64356,7 +64356,7 @@
     "aliases": [
       "Methylbutylalkohol"
     ],
-    "name_es": "Methylbutanol"
+    "name_es": "Metilbutanol"
   },
   {
     "name": "Methylbutylketon",
@@ -64467,7 +64467,7 @@
     "aliases": [
       "Hexanon-2"
     ],
-    "name_es": "Methylbutylketon"
+    "name_es": "Metilbutilcetona"
   },
   {
     "name": "Methylchloracetat",
@@ -64691,7 +64691,7 @@
       "Cyclohexylmethan",
       "Hexahydrotoluol"
     ],
-    "name_es": "Methylcyclohexan"
+    "name_es": "Metilciclohexano"
   },
   {
     "name": "Methylcyclopentan",
@@ -64799,7 +64799,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Methylcyclopentan"
+    "name_es": "Metilciclopentano"
   },
   {
     "name": "Methyldichloracetat",
@@ -65018,7 +65018,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Methylethylketon (MEK)"
+    "name_es": "Metiletilcetona (MEK)"
   },
   {
     "name": "Methylformiat",
@@ -65130,7 +65130,7 @@
       "Ameisensäuremethylester",
       "Methylmethanoat"
     ],
-    "name_es": "Methylformiat"
+    "name_es": "Formiato de metilo"
   },
   {
     "name": "Methylglycol",
@@ -65243,7 +65243,7 @@
       "Methoxyethanol",
       "Methylcellosolve"
     ],
-    "name_es": "Methylglycol"
+    "name_es": "Metilglicol"
   },
   {
     "name": "Methylglycolacetat",
@@ -65467,7 +65467,7 @@
       "Methacrylsäuremethylester",
       "Methyl-2-methylpropionat"
     ],
-    "name_es": "Methylmethacrylat"
+    "name_es": "Metacrilato de metilo"
   },
   {
     "name": "Methyloleat",
@@ -65578,7 +65578,7 @@
     "aliases": [
       "Ölsäuremethylester"
     ],
-    "name_es": "Methyloleat"
+    "name_es": "Oleato de metilo"
   },
   {
     "name": "Methylpropylketon",
@@ -65689,7 +65689,7 @@
     "aliases": [
       "Pentanon, 2-"
     ],
-    "name_es": "Methylpropylketon"
+    "name_es": "Metilpropilcetona"
   },
   {
     "name": "Methylsalicylat",
@@ -65801,7 +65801,7 @@
       "Methyl-2-hydroxybenzoat",
       "Salicylsäuremethylester"
     ],
-    "name_es": "Methylsalicylat"
+    "name_es": "Salicilato de metilo"
   },
   {
     "name": "Methylschwefelsäure",
@@ -67223,7 +67223,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Muskat"
+    "name_es": "Nuez moscada"
   },
   {
     "name": "Muskatnussöl",
@@ -67439,7 +67439,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nagellackentferner"
+    "name_es": "Quitaesmalte"
   },
   {
     "name": "Naphtha",
@@ -75293,7 +75293,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nelken"
+    "name_es": "Clavos de olor"
   },
   {
     "name": "Neon",
@@ -75512,7 +75512,7 @@
     "aliases": [
       "Tenside"
     ],
-    "name_es": "Netzmittel"
+    "name_es": "Agentes humectantes"
   },
   {
     "name": "Nickel-(II)-chlorid",
@@ -76274,7 +76274,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nicotin"
+    "name_es": "Nicotina"
   },
   {
     "name": "Nicotinsäure",
@@ -76710,7 +76710,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nitroethan"
+    "name_es": "Nitroetano"
   },
   {
     "name": "Nitroglycerin",
@@ -76932,7 +76932,7 @@
     "aliases": [
       "Glycoldinitrat"
     ],
-    "name_es": "Nitroglycol"
+    "name_es": "Nitroglicol"
   },
   {
     "name": "Nitropropan",
@@ -77040,7 +77040,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nitropropan"
+    "name_es": "Nitropropano"
   },
   {
     "name": "Nitrose Gase",
@@ -77148,7 +77148,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nitrose Gase"
+    "name_es": "Gases nitrosos"
   },
   {
     "name": "Nitrotoluole",
@@ -77256,7 +77256,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nitrotoluole"
+    "name_es": "Nitrotoluenos"
   },
   {
     "name": "Nitroverdünnung",
@@ -77364,7 +77364,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nitroverdünnung"
+    "name_es": "Diluyente nitro"
   },
   {
     "name": "Nonanol",
@@ -77583,7 +77583,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Obstpulp"
+    "name_es": "Pulpa de fruta"
   },
   {
     "name": "Obstwein",
@@ -77691,7 +77691,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Obstwein"
+    "name_es": "Vino de frutas"
   },
   {
     "name": "Octafluor-cyclobutan",
@@ -77802,7 +77802,7 @@
     "aliases": [
       "Freon C 318"
     ],
-    "name_es": "Octafluor-cyclobutan"
+    "name_es": "Octafluorociclobutano"
   },
   {
     "name": "Octan, n-",
@@ -77910,7 +77910,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Octan, n-"
+    "name_es": "n-Octano"
   },
   {
     "name": "Octylalkohol, -n",
@@ -78129,7 +78129,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Octylkresol"
+    "name_es": "Octilcresol"
   },
   {
     "name": "Öle und Fette, pflanzlich",
@@ -78561,7 +78561,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Oleumdämpfe"
+    "name_es": "Vapores de óleum"
   },
   {
     "name": "Olivenöl",
@@ -79114,7 +79114,7 @@
     "aliases": [
       "Hydroxymethylfurfural, 5-"
     ],
-    "name_es": "Oxymethylfurfurol, 5-"
+    "name_es": "5-Oximetilfurfural"
   },
   {
     "name": "Ozon",
@@ -79767,7 +79767,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Paraffine"
+    "name_es": "Parafinas"
   },
   {
     "name": "Paraffinemulsion",
@@ -79875,7 +79875,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Paraffinemulsion"
+    "name_es": "Emulsión de parafina"
   },
   {
     "name": "Paraffinwachs",
@@ -79983,7 +79983,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Paraffinwachs"
+    "name_es": "Cera de parafina"
   },
   {
     "name": "Paraformaldehyd",
@@ -80095,7 +80095,7 @@
       "Paraform",
       "Polyoxymethylen"
     ],
-    "name_es": "Paraformaldehyd"
+    "name_es": "Paraformaldehído"
   },
   {
     "name": "Parfüms",
@@ -80203,7 +80203,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Parfüms"
+    "name_es": "Perfumes"
   },
   {
     "name": "Pectin",
@@ -80311,7 +80311,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Pectin"
+    "name_es": "Pectina"
   },
   {
     "name": "Pectin",
@@ -80419,7 +80419,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Pectin"
+    "name_es": "Pectina"
   },
   {
     "name": "Penicillin",
@@ -80527,7 +80527,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Penicillin"
+    "name_es": "Penicilina"
   },
   {
     "name": "Pentachlordiphenyl",
@@ -80635,7 +80635,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Pentachlordiphenyl"
+    "name_es": "Pentaclorodifenilo"
   },
   {
     "name": "Pentan",
@@ -80859,7 +80859,7 @@
       "Amylhydrosulfid",
       "Amylmercaptan"
     ],
-    "name_es": "Pentanthiol, 1-"
+    "name_es": "1-Pentanotiol"
   },
   {
     "name": "Perchlorethylen (PER)",
@@ -81300,7 +81300,7 @@
     "aliases": [
       "Freon 218"
     ],
-    "name_es": "Perfluorpropan"
+    "name_es": "Perfluoropropano"
   },
   {
     "name": "Petrolether",
@@ -81408,7 +81408,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Petrolether"
+    "name_es": "Éter de petróleo"
   },
   {
     "name": "Petroleum",
@@ -81624,7 +81624,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Pfeffer"
+    "name_es": "Pimienta"
   },
   {
     "name": "Pflanzliche Öle",
@@ -81844,7 +81844,7 @@
       "Acetamino-4-ethoxybenzol, 1-",
       "Ethoxyacetanilid, 4-"
     ],
-    "name_es": "Phenacetin"
+    "name_es": "Fenacetina"
   },
   {
     "name": "Phenol",
@@ -82288,7 +82288,7 @@
       "Benzylcarbinol",
       "Phenylethylalkohol"
     ],
-    "name_es": "Phenylethanol"
+    "name_es": "Feniletanol"
   },
   {
     "name": "Phenylethylether",
@@ -82399,7 +82399,7 @@
     "aliases": [
       "Phenetol"
     ],
-    "name_es": "Phenylethylether"
+    "name_es": "Éter feniletílico"
   },
   {
     "name": "Phenylhydrazin",
@@ -82510,7 +82510,7 @@
     "aliases": [
       "Hydrazinobenzol"
     ],
-    "name_es": "Phenylhydrazin"
+    "name_es": "Fenilhidracina"
   },
   {
     "name": "Phenylhydrazin-HCl",
@@ -82621,7 +82621,7 @@
     "aliases": [
       "Phenylhydrazinchlorhydrat"
     ],
-    "name_es": "Phenylhydrazin-HCl"
+    "name_es": "Fenilhidracina-HCl"
   },
   {
     "name": "Phenylsulfonat",
@@ -82729,7 +82729,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Phenylsulfonat"
+    "name_es": "Fenilsulfonato"
   },
   {
     "name": "Phosgen",
@@ -83172,7 +83172,7 @@
     "aliases": [
       "Phosphorwasserstoff"
     ],
-    "name_es": "Phosphin"
+    "name_es": "Fosfina"
   },
   {
     "name": "Phosphoroxychlorid",
@@ -84731,7 +84731,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Piment"
+    "name_es": "Pimienta de Jamaica"
   },
   {
     "name": "Piperidin",
@@ -84843,7 +84843,7 @@
       "Hexahydropyridin",
       "Pentamethylenimin"
     ],
-    "name_es": "Piperidin"
+    "name_es": "Piperidina"
   },
   {
     "name": "Polyesterharze",
@@ -84951,7 +84951,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Polyesterharze"
+    "name_es": "Resinas de poliéster"
   },
   {
     "name": "Polyethylenglycol",
@@ -85063,7 +85063,7 @@
       "Polyglycol",
       "Polyoxyethylen"
     ],
-    "name_es": "Polyethylenglycol"
+    "name_es": "Polietilenglicol"
   },
   {
     "name": "Polyran M25 N",
@@ -85603,7 +85603,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Pressluft"
+    "name_es": "Aire comprimido"
   },
   {
     "name": "Prontosil",
@@ -86709,7 +86709,7 @@
     "aliases": [
       "Aminopropan"
     ],
-    "name_es": "Propylamin, n-"
+    "name_es": "n-Propilamina"
   },
   {
     "name": "Propylenglycol",
@@ -86820,7 +86820,7 @@
     "aliases": [
       "Propandiol, 1,2-"
     ],
-    "name_es": "Propylenglycol"
+    "name_es": "Propilenglicol"
   },
   {
     "name": "Propylenglycolmethylether",
@@ -86931,7 +86931,7 @@
     "aliases": [
       "Methoxypropanol"
     ],
-    "name_es": "Propylenglycolmethylether"
+    "name_es": "Éter metílico de propilenglicol"
   },
   {
     "name": "Propylenoxid",
@@ -87262,7 +87262,7 @@
     "aliases": [
       "Trimethylbenzol, 1,3,4-"
     ],
-    "name_es": "Pseudocumol"
+    "name_es": "Pseudocumeno"
   },
   {
     "name": "Pydraul C (312, 540)",
@@ -87697,7 +87697,7 @@
     "aliases": [
       "Trihydroxybenzol, 1,2,3-"
     ],
-    "name_es": "Pyrogallol"
+    "name_es": "Pirogalol"
   },
   {
     "name": "Pyrrol",
@@ -87805,7 +87805,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Pyrrol"
+    "name_es": "Pirrol"
   },
   {
     "name": "Quecksilber",
@@ -88460,7 +88460,7 @@
     "aliases": [
       "Dihydroxybenzol, 1,3-"
     ],
-    "name_es": "Resorcin"
+    "name_es": "Resorcinol"
   },
   {
     "name": "Resorcin",
@@ -88571,7 +88571,7 @@
     "aliases": [
       "Dihydroxybenzol, 1,3-"
     ],
-    "name_es": "Resorcin"
+    "name_es": "Resorcinol"
   },
   {
     "name": "Rindertalg",
@@ -88679,7 +88679,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Rindertalg"
+    "name_es": "Sebo de res"
   },
   {
     "name": "Rindertalg-Emulsion",
@@ -88787,7 +88787,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Rindertalg-Emulsion"
+    "name_es": "Emulsión de sebo de res"
   },
   {
     "name": "Rizinusöl",
@@ -89219,7 +89219,7 @@
         "c50": "2"
       }
     },
-    "name_es": "Röstgase"
+    "name_es": "Gases de tostado"
   },
   {
     "name": "Rüböl",
@@ -89435,7 +89435,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Rumaroma"
+    "name_es": "Aroma de ron"
   },
   {
     "name": "Sagrotan",
@@ -89543,7 +89543,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Sagrotan"
+    "name_es": "Sagrotan (desinfectante)"
   },
   {
     "name": "Salicylaldehyd",
@@ -89654,7 +89654,7 @@
     "aliases": [
       "Hydroxybenzaldehyd, 2-"
     ],
-    "name_es": "Salicylaldehyd"
+    "name_es": "Salicilaldehído"
   },
   {
     "name": "Salicylsäure",
@@ -91190,7 +91190,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Sattdampfkondensat"
+    "name_es": "Condensado de vapor saturado"
   },
   {
     "name": "Sauerstoff",
@@ -91514,7 +91514,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Schmierseife"
+    "name_es": "Jabón blando"
   },
   {
     "name": "Schwefel",
@@ -93685,7 +93685,7 @@
         "c50": "0L"
       }
     },
-    "name_es": "Senf"
+    "name_es": "Mostaza"
   },
   {
     "name": "Silberacetat",
@@ -95098,7 +95098,7 @@
     "aliases": [
       "Branntweine"
     ],
-    "name_es": "Spirituosen"
+    "name_es": "Bebidas espirituosas"
   },
   {
     "name": "Spiritus",
@@ -96406,7 +96406,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Strychnin"
+    "name_es": "Estricnina"
   },
   {
     "name": "Styrol",
@@ -96846,7 +96846,7 @@
       "Gallotannin",
       "Gerbsäure"
     ],
-    "name_es": "Tannin"
+    "name_es": "Tanino"
   },
   {
     "name": "Tannin",
@@ -96958,7 +96958,7 @@
       "Gallotannin",
       "Gerbsäure"
     ],
-    "name_es": "Tannin"
+    "name_es": "Tanino"
   },
   {
     "name": "Teer",
@@ -97390,7 +97390,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Testbenzin"
+    "name_es": "Bencina de prueba"
   },
   {
     "name": "Testkraftstoff A (ISO-Fluid A)",
@@ -97498,7 +97498,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Testkraftstoff A (ISO-Fluid A)"
+    "name_es": "Combustible de prueba A (ISO-Fluid A)"
   },
   {
     "name": "Testkraftstoff B (ISO-Fluid B)",
@@ -97606,7 +97606,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Testkraftstoff B (ISO-Fluid B)"
+    "name_es": "Combustible de prueba B (ISO-Fluid B)"
   },
   {
     "name": "Testkraftstoff C (ISO-Fluid C)",
@@ -97714,7 +97714,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Testkraftstoff C (ISO-Fluid C)"
+    "name_es": "Combustible de prueba C (ISO-Fluid C)"
   },
   {
     "name": "Testkraftstoff D (ISO-Fluid D)",
@@ -97822,7 +97822,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Testkraftstoff D (ISO-Fluid D)"
+    "name_es": "Combustible de prueba D (ISO-Fluid D)"
   },
   {
     "name": "Tetrabromethan (TBE)",
@@ -97930,7 +97930,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Tetrabromethan (TBE)"
+    "name_es": "Tetrabromoetano (TBE)"
   },
   {
     "name": "Tetrabromkohlenstoff",
@@ -98042,7 +98042,7 @@
       "Kohlenstofftetrabromid",
       "Tetrabrommethan"
     ],
-    "name_es": "Tetrabromkohlenstoff"
+    "name_es": "Tetrabromuro de carbono"
   },
   {
     "name": "Tetrachlorethan",
@@ -98150,7 +98150,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Tetrachlorethan"
+    "name_es": "Tetracloroetano"
   },
   {
     "name": "Tetrachlorkohlenstoff (TETRA)",
@@ -98366,7 +98366,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Tetraethylblei (TEL)"
+    "name_es": "Tetraetilplomo (TEL)"
   },
   {
     "name": "Tetraethylorthosilicat",
@@ -98479,7 +98479,7 @@
       "Kieselsäuretetraethylester",
       "Ortho-Kieselsäuretetraethylester"
     ],
-    "name_es": "Tetraethylorthosilicat"
+    "name_es": "Ortosilicato de tetraetilo"
   },
   {
     "name": "Tetrafluormethan",
@@ -98590,7 +98590,7 @@
     "aliases": [
       "Freon 14"
     ],
-    "name_es": "Tetrafluormethan"
+    "name_es": "Tetrafluorometano"
   },
   {
     "name": "Tetrahydrofuran (THF)",
@@ -98920,7 +98920,7 @@
     "aliases": [
       "Tetralin"
     ],
-    "name_es": "Tetrahydronaphthalin"
+    "name_es": "Tetrahidronaftaleno"
   },
   {
     "name": "Thioglycolsäure",
@@ -99256,7 +99256,7 @@
       "Thiacyclopentadien",
       "Thiofuran"
     ],
-    "name_es": "Thiophen"
+    "name_es": "Tiofeno"
   },
   {
     "name": "Thymol",
@@ -99367,7 +99367,7 @@
     "aliases": [
       "Isopropyl-5-methylphenol, 2-"
     ],
-    "name_es": "Thymol"
+    "name_es": "Timol"
   },
   {
     "name": "Titantetrachlorid",
@@ -99587,7 +99587,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Traganth"
+    "name_es": "Tragacanto"
   },
   {
     "name": "Transformatorenöl",
@@ -99806,7 +99806,7 @@
     "aliases": [
       "Glyzerintriacetat"
     ],
-    "name_es": "Triacetin"
+    "name_es": "Triacetina"
   },
   {
     "name": "Tributylcitrat",
@@ -99917,7 +99917,7 @@
     "aliases": [
       "Citronensäuretributylester"
     ],
-    "name_es": "Tributylcitrat"
+    "name_es": "Citrato de tributilo"
   },
   {
     "name": "Tributylphosphat (TBP)",
@@ -100136,7 +100136,7 @@
     "aliases": [
       "Chloral"
     ],
-    "name_es": "Trichloracetaldehyd"
+    "name_es": "Tricloroacetaldehído"
   },
   {
     "name": "Trichlorbenzol",
@@ -100244,7 +100244,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Trichlorbenzol"
+    "name_es": "Triclorobenceno"
   },
   {
     "name": "Trichloressigsäure (TCA)",
@@ -100460,7 +100460,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Trichlorethan"
+    "name_es": "Tricloroetano"
   },
   {
     "name": "Trichlorethylen (TRI)",
@@ -100681,7 +100681,7 @@
       "Freon 11",
       "Trichlormonofluormethan"
     ],
-    "name_es": "Trichlorfluormethan"
+    "name_es": "Triclorofluorometano"
   },
   {
     "name": "Trichlorphenol",
@@ -100789,7 +100789,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Trichlorphenol"
+    "name_es": "Triclorofenol"
   },
   {
     "name": "Trichlortrifluorethan",
@@ -100900,7 +100900,7 @@
     "aliases": [
       "Freon 113"
     ],
-    "name_es": "Trichlortrifluorethan"
+    "name_es": "Triclorotrifluoroetano"
   },
   {
     "name": "Triethanolamin (TEA)",
@@ -101008,7 +101008,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Triethanolamin (TEA)"
+    "name_es": "Trietanolamina (TEA)"
   },
   {
     "name": "Triethylamin (TEA)",
@@ -101116,7 +101116,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Triethylamin (TEA)"
+    "name_es": "Trietilamina (TEA)"
   },
   {
     "name": "Trifluortrichlorethan",
@@ -101224,7 +101224,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Trifluortrichlorethan"
+    "name_es": "Trifluorotricloroetano"
   },
   {
     "name": "Triglycol",
@@ -101335,7 +101335,7 @@
     "aliases": [
       "Triethylenglycol"
     ],
-    "name_es": "Triglycol"
+    "name_es": "Triglicol"
   },
   {
     "name": "Triglycolacetat",
@@ -101554,7 +101554,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Triisopropylbenzol"
+    "name_es": "Triisopropilbenceno"
   },
   {
     "name": "Trikresylphosphat (TCF)",
@@ -101775,7 +101775,7 @@
       "Propylidintris(methanol)",
       "Tris(hydroxymethyl)-propan"
     ],
-    "name_es": "Trimethylolpropan"
+    "name_es": "Trimetilolpropano"
   },
   {
     "name": "Trinatriumphosphat",
@@ -102105,7 +102105,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Tripropylenglycol (TPG)"
+    "name_es": "Tripropilenglicol (TPG)"
   },
   {
     "name": "Turbinenöl (Mineralölbasis)",
@@ -103091,7 +103091,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Vitamin C"
+    "name_es": "Vitamina C"
   },
   {
     "name": "Wachsalkohol",
@@ -103307,7 +103307,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Wachse"
+    "name_es": "Ceras"
   },
   {
     "name": "Walnussöl",
@@ -103523,7 +103523,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Walrat"
+    "name_es": "Esperma de ballena"
   },
   {
     "name": "Waschmittel",
@@ -105269,7 +105269,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Whiskey"
+    "name_es": "Whisky"
   },
   {
     "name": "White Spirit",
@@ -105377,7 +105377,7 @@
         "c50": "1"
       }
     },
-    "name_es": "White Spirit"
+    "name_es": "Aguarrás mineral"
   },
   {
     "name": "Xenon",
@@ -105485,7 +105485,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Xenon"
+    "name_es": "Xenón"
   },
   {
     "name": "Xylol",
@@ -105813,7 +105813,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Zimt"
+    "name_es": "Canela"
   },
   {
     "name": "Zimtaldehyd",
@@ -105924,7 +105924,7 @@
     "aliases": [
       "Phenyl-2-propenal, trans-3-"
     ],
-    "name_es": "Zimtaldehyd"
+    "name_es": "Cinamaldehído"
   },
   {
     "name": "Zimtöl",
@@ -108332,7 +108332,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Zitrussäfte"
+    "name_es": "Jugos cítricos"
   },
   {
     "name": "Zuckerrübensaft",
