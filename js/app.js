@@ -43,33 +43,33 @@ const translations = {
 
 const materialInfo = {
     // Thermoplastics
-    "HDPE": { name: "HDPE", full: "High-Density Polyethylene", type: "Thermoplastic" },
-    "LDPE": { name: "LDPE", full: "Low-Density Polyethylene", type: "Thermoplastic" },
-    "PA": { name: "PA", full: "Polyamide (Nylon)", type: "Thermoplastic" },
-    "PC": { name: "PC", full: "Polycarbonate", type: "Thermoplastic" },
-    "PETG": { name: "PETG", full: "Polyethylene Terephthalate Glycol", type: "Thermoplastic" },
-    "PMP": { name: "PMP", full: "Polymethylpentene (TPX)", type: "Thermoplastic" },
-    "POM": { name: "POM", full: "Polyoxymethylene (Acetal)", type: "Thermoplastic" },
-    "PP": { name: "PP", full: "Polypropylene", type: "Thermoplastic" },
-    "PS": { name: "PS", full: "Polystyrene", type: "Thermoplastic" },
-    "PSU": { name: "PSU", full: "Polysulfone", type: "Thermoplastic" },
-    "PVC_HART": { name: "PVC-U", full: "Unplasticized PVC (Rigid)", type: "Thermoplastic" },
-    "PVC_WEICH": { name: "PVC-P", full: "Plasticized PVC (Flexible)", type: "Thermoplastic" },
-    "SAN": { name: "SAN", full: "Styrene Acrylonitrile", type: "Thermoplastic" },
+    "HDPE": { name: "HDPE", full: "High-Density Polyethylene", full_es: "Polietileno de Alta Densidad", type: "Thermoplastic", type_es: "Termoplástico" },
+    "LDPE": { name: "LDPE", full: "Low-Density Polyethylene", full_es: "Polietileno de Baja Densidad", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PA": { name: "PA", full: "Polyamide (Nylon)", full_es: "Poliamida (Nylon)", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PC": { name: "PC", full: "Polycarbonate", full_es: "Policarbonato", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PETG": { name: "PETG", full: "Polyethylene Terephthalate Glycol", full_es: "Tereftalato de Polietileno Glicol", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PMP": { name: "PMP", full: "Polymethylpentene (TPX)", full_es: "Polimetilpenteno (TPX)", type: "Thermoplastic", type_es: "Termoplástico" },
+    "POM": { name: "POM", full: "Polyoxymethylene (Acetal)", full_es: "Polioximetileno (Acetal)", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PP": { name: "PP", full: "Polypropylene", full_es: "Polipropileno", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PS": { name: "PS", full: "Polystyrene", full_es: "Poliestireno", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PSU": { name: "PSU", full: "Polysulfone", full_es: "Polisulfona", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PVC_HART": { name: "PVC-U", full: "Unplasticized PVC (Rigid)", full_es: "PVC Rígido (Sin Plastificante)", type: "Thermoplastic", type_es: "Termoplástico" },
+    "PVC_WEICH": { name: "PVC-P", full: "Plasticized PVC (Flexible)", full_es: "PVC Flexible (Plastificado)", type: "Thermoplastic", type_es: "Termoplástico" },
+    "SAN": { name: "SAN", full: "Styrene Acrylonitrile", full_es: "Estireno Acrilonitrilo", type: "Thermoplastic", type_es: "Termoplástico" },
     // Fluoropolymers
-    "ECTFE_ETFE": { name: "ECTFE/ETFE", full: "Fluoropolymer (Halar/Tefzel)", type: "Fluoropolymer" },
-    "FEP": { name: "FEP", full: "Fluorinated Ethylene Propylene", type: "Fluoropolymer" },
-    "PTFE": { name: "PTFE", full: "Polytetrafluoroethylene (Teflon®)", type: "Fluoropolymer" },
-    "PVDF": { name: "PVDF", full: "Polyvinylidene Fluoride (Kynar)", type: "Fluoropolymer" },
+    "ECTFE_ETFE": { name: "ECTFE/ETFE", full: "Fluoropolymer (Halar/Tefzel)", full_es: "Fluoropolímero (Halar/Tefzel)", type: "Fluoropolymer", type_es: "Fluoropolímero" },
+    "FEP": { name: "FEP", full: "Fluorinated Ethylene Propylene", full_es: "Etileno Propileno Fluorado", type: "Fluoropolymer", type_es: "Fluoropolímero" },
+    "PTFE": { name: "PTFE", full: "Polytetrafluoroethylene (Teflon®)", full_es: "Politetrafluoroetileno (Teflón®)", type: "Fluoropolymer", type_es: "Fluoropolímero" },
+    "PVDF": { name: "PVDF", full: "Polyvinylidene Fluoride (Kynar)", full_es: "Fluoruro de Polivinilideno (Kynar)", type: "Fluoropolymer", type_es: "Fluoropolímero" },
     // Elastomers
-    "EPDM": { name: "EPDM", full: "Ethylene Propylene Diene Rubber", type: "Elastomer" },
-    "FPM": { name: "FPM/FKM", full: "Fluoroelastomer (Viton®)", type: "Elastomer" },
-    "NBR": { name: "NBR", full: "Nitrile Rubber (Buna-N)", type: "Elastomer" },
-    "SI": { name: "Silicone", full: "Silicone Rubber (VMQ)", type: "Elastomer" },
+    "EPDM": { name: "EPDM", full: "Ethylene Propylene Diene Rubber", full_es: "Caucho de Etileno Propileno Dieno", type: "Elastomer", type_es: "Elastómero" },
+    "FPM": { name: "FPM/FKM", full: "Fluoroelastomer (Viton®)", full_es: "Fluoroelastómero (Viton®)", type: "Elastomer", type_es: "Elastómero" },
+    "NBR": { name: "NBR", full: "Nitrile Rubber (Buna-N)", full_es: "Caucho Nitrilo (Buna-N)", type: "Elastomer", type_es: "Elastómero" },
+    "SI": { name: "Silicone", name_es: "Silicona", full: "Silicone Rubber (VMQ)", full_es: "Caucho de Silicona (VMQ)", type: "Elastomer", type_es: "Elastómero" },
     // Metals
-    "AL": { name: "Aluminum", full: "Aluminum", type: "Metal" },
-    "V2A": { name: "SS 304", full: "Stainless Steel 1.4301 (304)", type: "Metal" },
-    "V4A": { name: "SS 316", full: "Stainless Steel 1.4401 (316)", type: "Metal" },
+    "AL": { name: "Aluminum", name_es: "Aluminio", full: "Aluminum", full_es: "Aluminio", type: "Metal", type_es: "Metal" },
+    "V2A": { name: "SS 304", full: "Stainless Steel 1.4301 (304)", full_es: "Acero Inoxidable 1.4301 (304)", type: "Metal", type_es: "Metal" },
+    "V4A": { name: "SS 316", full: "Stainless Steel 1.4401 (316)", full_es: "Acero Inoxidable 1.4401 (316)", type: "Metal", type_es: "Metal" },
 };
 
 // Rating display order (best to worst)
@@ -519,20 +519,28 @@ function updateRatingsTable() {
     }
 
     if (materialsToShow.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-500">No materials with ${minRating === '1' ? 'A' : 'A/B'} rating for this chemical. Try changing the filter.</td></tr>`;
+        const noMaterialsMsg = currentLang === 'es' 
+            ? `No hay materiales con clasificación ${minRating === '1' ? 'A' : 'A/B'} para este químico. Intenta cambiar el filtro.`
+            : `No materials with ${minRating === '1' ? 'A' : 'A/B'} rating for this chemical. Try changing the filter.`;
+        tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-500">${noMaterialsMsg}</td></tr>`;
     } else {
         tbody.innerHTML = materialsToShow.map(([mat, rating]) => {
             const info = materialInfo[mat] || { name: mat, full: mat, type: '' };
             const grade20 = ratingToGrade(rating.c20);
             const grade50 = ratingToGrade(rating.c50);
             
-            if (grade20 === 'A') recommended.push(info.name);
+            // Use Spanish translations if available and lang is es
+            const displayName = (currentLang === 'es' && info.name_es) ? info.name_es : info.name;
+            const displayFull = (currentLang === 'es' && info.full_es) ? info.full_es : info.full;
+            const displayType = (currentLang === 'es' && info.type_es) ? info.type_es : info.type;
+            
+            if (grade20 === 'A') recommended.push(displayName);
             
             return `
                 <tr class="border-b border-gray-100 hover:bg-gray-50">
                     <td class="py-3 px-4">
-                        <div class="font-medium text-gray-900">${info.name}</div>
-                        <div class="text-xs text-gray-500">${info.full}</div>
+                        <div class="font-medium text-gray-900">${displayName}</div>
+                        <div class="text-xs text-gray-500">${displayFull}</div>
                     </td>
                     <td class="py-3 px-4 text-center">
                         <span class="rating-${grade20} px-3 py-1 rounded text-sm font-bold">${grade20}</span>
@@ -540,7 +548,7 @@ function updateRatingsTable() {
                     <td class="py-3 px-4 text-center">
                         <span class="rating-${grade50} px-3 py-1 rounded text-sm font-bold">${grade50}</span>
                     </td>
-                    <td class="py-3 px-4 text-gray-500 text-sm">${info.type}</td>
+                    <td class="py-3 px-4 text-gray-500 text-sm">${displayType}</td>
                 </tr>
             `;
         }).join('');
