@@ -12,7 +12,7 @@
         gtag('config', 'G-LTK6VVHYDW');
     </script>
     <title>PP Tabla de Resistencia Química | Polipropileno Compatibility Guide</title>
-    <meta name="description" content="Complete PP (Polipropileno) chemical resistance chart. Find which chemicals are compatible with PP a 20°C and 50°C. Free searchable database.">
+    <meta name="description" content="Complete PP (Polipropileno) chemical resistance chart. Find which chemicals are compatible with PP a 20°C and 50°C. Base de datos gratuita.">
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -24,7 +24,7 @@
     <link rel="canonical" href="https://chemicalresistance.org/materials/es/pp">
     
     <meta property="og:title" content="PP Tabla de Resistencia Química">
-    <meta property="og:description" content="Complete compatibility data for Polipropileno. 950+ químicos probados at multiple temperatures.">
+    <meta property="og:description" content="Complete compatibility data for Polipropileno. 950+ químicos probados a múltiples temperaturas.">
     <meta property="og:type" content="article">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -79,8 +79,8 @@
             </p>
             <div class="flex flex-wrap gap-3">
                 <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">950+ químicos probados</span>
-                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
-                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Free to use</span>
+                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">Datos a 20°C y 50°C</span>
+                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Uso gratuito</span>
             </div>
         </div>
     </section>
@@ -90,15 +90,15 @@
         <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
                 <div class="text-2xl font-bold text-emerald-600" id="statA">—</div>
-                <div class="text-sm text-gray-500">Excellent (A)</div>
+                <div class="text-sm text-gray-500">Excelente (A)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-blue-600" id="statB">—</div>
-                <div class="text-sm text-gray-500">Good (B)</div>
+                <div class="text-sm text-gray-500">Bueno (B)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-amber-600" id="statC">—</div>
-                <div class="text-sm text-gray-500">Limited (C)</div>
+                <div class="text-sm text-gray-500">Limitado (C)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-red-600" id="statD">—</div>
@@ -114,23 +114,23 @@
             <div class="bg-white rounded-xl border border-gray-200 p-4 mb-6">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Search chemicals</label>
-                        <input type="text" id="searchInput" placeholder="e.g. Sulfuric acid, Acetone..." 
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Buscar químicos</label>
+                        <input type="text" id="searchInput" placeholder="ej. Ácido sulfúrico, Acetona..." 
                             class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Rating filter</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Filtrar por clasificación</label>
                         <select id="ratingFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-blue-500 outline-none">
                             <option value="all">Todas las clasificaciones</option>
-                            <option value="A">A - Excellent</option>
-                            <option value="B">B - Good</option>
-                            <option value="AB">A & B (Compatible)</option>
-                            <option value="C">C - Limited</option>
-                            <option value="D">D - Not recommended</option>
+                            <option value="A">A - Excelente</option>
+                            <option value="B">B - Bueno</option>
+                            <option value="AB">A y B (Compatible)</option>
+                            <option value="C">C - Limitado</option>
+                            <option value="D">D - No recomendado</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Temperature</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Temperatura</label>
                         <select id="tempFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-blue-500 outline-none">
                             <option value="c20">20°C</option>
                             <option value="c50">50°C</option>
@@ -141,7 +141,7 @@
 
             <!-- Results count -->
             <div class="mb-4 text-sm text-gray-500">
-                Showing <span id="resultCount" class="font-semibold text-gray-700">0</span> chemicals
+                Mostrando <span id="resultCount" class="font-semibold text-gray-700">0</span> chemicals
             </div>
 
             <!-- Table -->
@@ -150,8 +150,8 @@
                     <table class="w-full">
                         <thead>
                             <tr class="bg-gray-50 text-left text-sm">
-                                <th class="py-3 px-4 font-semibold text-gray-600">Chemical</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600">Concentration</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">Químico</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">Concentración</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600">CAS</th>
@@ -166,7 +166,7 @@
             <!-- Load more -->
             <div id="loadMore" class="mt-4 text-center hidden">
                 <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 transition-colors">
-                    Load more chemicals
+                    Cargar más químicos
                 </button>
             </div>
         </div>
@@ -175,19 +175,19 @@
     <!-- Material Properties -->
     <section class="px-4 py-12 bg-white border-t border-gray-200">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">PP Properties</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Propiedades del PP</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Full Name</span>
+                        <span class="text-gray-600">Nombre Completo</span>
                         <span class="font-medium text-gray-900">Polipropileno</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
                         <span class="text-gray-600">Temperatura Máxima</span>
-                        <span class="font-medium text-gray-900">100°C (212°F) continuous</span>
+                        <span class="font-medium text-gray-900">100°C (212°F) continuo</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Min Temperature</span>
+                        <span class="text-gray-600">Temperatura Mínima</span>
                         <span class="font-medium text-gray-900">0°C (32°F)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
@@ -198,18 +198,18 @@
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
                         <span class="text-gray-600">Resistencia UV</span>
-                        <span class="font-medium text-gray-900">Poor (needs stabilizers)</span>
+                        <span class="font-medium text-gray-900">Pobre (necesita estabilizadores)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
                         <span class="text-gray-600">Aprobado FDA</span>
-                        <span class="font-medium text-gray-900">Yes (food grades)</span>
+                        <span class="font-medium text-gray-900">Sí (grados alimenticios)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Weldable</span>
-                        <span class="font-medium text-gray-900">Yes</span>
+                        <span class="text-gray-600">Soldable</span>
+                        <span class="font-medium text-gray-900">Sí</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Cost</span>
+                        <span class="text-gray-600">Costo</span>
                         <span class="font-medium text-gray-900">Low (economical)</span>
                     </div>
                 </div>
@@ -226,14 +226,14 @@
                     <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="database" class="w-5 h-5 text-blue-600"></i>
                     </div>
-                    <h3 class="font-bold text-gray-900 mb-1">Tanks & Vessels</h3>
-                    <p class="text-sm text-gray-600">Chemical storage tanks, process vessels, scrubbers</p>
+                    <h3 class="font-bold text-gray-900 mb-1">Tanques y Recipientes</h3>
+                    <p class="text-sm text-gray-600">Tanques de almacenamiento químico, recipientes de proceso, scrubbers</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
                     <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="flask-round" class="w-5 h-5 text-emerald-600"></i>
                     </div>
-                    <h3 class="font-bold text-gray-900 mb-1">Laboratory Equipment</h3>
+                    <h3 class="font-bold text-gray-900 mb-1">Equipos de Laboratorio</h3>
                     <p class="text-sm text-gray-600">Beakers, trays, fume hoods, lab furniture</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
@@ -251,26 +251,26 @@
     <section class="px-4 py-12 bg-red-50 border-t border-red-100">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">⚠️ No Recomendado For</h2>
-            <p class="text-gray-600 mb-4">PP has poor resistance to these chemical types:</p>
+            <p class="text-gray-600 mb-4">El PP tiene poca resistencia a estos tipos de químicos:</p>
             <div class="grid md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Aromatic hydrocarbons (benzene, toluene)
+                        Hidrocarburos aromáticos (benzene, toluene)
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Chlorinated solvents
+                        Disolventes clorados
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Strong oxidizing acids (fuming nitric)
+                        Ácidos oxidantes fuertes (fuming nitric)
                     </li>
                 </ul>
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Concentrated halogens
+                        Concentrado halogens
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
@@ -288,7 +288,7 @@
     <!-- Compare -->
     <section class="px-4 py-12 bg-white border-t border-gray-200">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Compare Materials</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Comparar Materiales</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <a href="hdpe.html" class="p-4 rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">HDPE</div>
@@ -386,8 +386,8 @@
     function translateConc(conc) {
         if (!conc) return '—';
         const map = {
-            'wässrig': 'Aqueous', 'gesättigt': 'Saturated', 'verdünnt': 'Diluted',
-            'konz.': 'Concentrated', 'konzentriert': 'Concentrated', 'rein': 'Pure',
+            'wässrig': 'Acuoso', 'gesättigt': 'Saturated', 'verdünnt': 'Diluidod',
+            'konz.': 'Concentrado', 'konzentriert': 'Concentrado', 'rein': 'Puro',
             'techn. rein': 'Technical Grade', 'jede': 'Any', 'gering': 'Low',
             'flüssig': 'Liquid', 'gasförmig': 'Gaseous', 'geschmolzen': 'Molten',
             'trocken': 'Dry', 'feucht': 'Wet/Moist', 'fest': 'Solid',
