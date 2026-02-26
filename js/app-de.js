@@ -278,6 +278,8 @@ function setupEventListeners() {
     langSelect?.addEventListener('change', () => {
         if (langSelect.value === 'en') {
             window.location.href = 'index.html';
+        } else if (langSelect.value === 'es') {
+            window.location.href = 'es.html';
         }
     });
 
