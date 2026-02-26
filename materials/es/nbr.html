@@ -365,6 +365,7 @@
             const matchesSearch = !query || 
                 c.name.toLowerCase().includes(query) ||
                 (c.name_es && c.name_es.toLowerCase().includes(query)) ||
+                (c.name_es && c.name_es.toLowerCase().includes(query)) ||
                 (c.name_en && c.name_en.toLowerCase().includes(query)) ||
                 (c.cas && c.cas.includes(query));
             
