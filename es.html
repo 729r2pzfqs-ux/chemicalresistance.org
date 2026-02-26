@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,13 @@
         gtag('js', new Date());
         gtag('config', 'G-LTK6VVHYDW');
     </script>
-    <title>Chemikalienbeständigkeit | 1.600+ Chemikalien | Kostenlose Beständigkeitstabelle</title>
-    <meta name="description" content="Kostenlose Beständigkeitstabelle für 1.600+ Chemikalien und 24 Materialien. Prüfen Sie die Verträglichkeit von HDPE, PP, PTFE, Viton, Edelstahl für sichere Chemikalienlagerung.">
-    <meta name="keywords" content="Chemikalienbeständigkeit, Materialverträglichkeit, HDPE Beständigkeit, PTFE Verträglichkeit, Chemikalienlagerung, Korrosionsbeständigkeit">
-    <link rel="canonical" href="https://chemicalresistance.org/de.html">
-    <link rel="alternate" hreflang="en" href="https://chemicalresistance.org/">
-    <link rel="alternate" hreflang="es" href="https://chemicalresistance.org/es.html">
+    <title>Tabla de Resistencia Química | 1.600+ Químicos | Guía de Compatibilidad Gratuita</title>
+    <meta name="description" content="Tabla de resistencia química gratuita con 1.600+ químicos y 24 materiales. Consulta la compatibilidad para HDPE, PP, PTFE, Viton, Acero Inoxidable. Esencial para el almacenamiento seguro de químicos.">
+    <meta name="keywords" content="tabla de resistencia química, compatibilidad de materiales, resistencia química HDPE, compatibilidad PTFE, almacenamiento de químicos, resistencia a la corrosión">
+    <link rel="canonical" href="https://chemicalresistance.org/es.html">
+    <link rel="alternate" hreflang="es" href="https://chemicalresistance.org/">
     <link rel="alternate" hreflang="de" href="https://chemicalresistance.org/de.html">
+    <link rel="alternate" hreflang="es" href="https://chemicalresistance.org/es.html">
     
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -30,18 +30,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Chemikalienbeständigkeit | 1.600+ Chemikalien">
-    <meta property="og:description" content="Kostenloses Tool zur Prüfung der Materialverträglichkeit. 1.600+ Chemikalien, 24 Materialien inkl. HDPE, PTFE, Viton, V4A.">
+    <meta property="og:title" content="Chemical Resistance Chart | 1,600+ Chemicals">
+    <meta property="og:description" content="Free tool to check material compatibility for chemical storage. 1,600+ chemicals, 24 materials including HDPE, PTFE, Viton, SS316.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chemicalresistance.org/de.html">
+    <meta property="og:url" content="https://chemicalresistance.org/es.html">
     <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
-    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="ChemicalResistance.org">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chemikalienbeständigkeit | 1.600+ Chemikalien">
-    <meta name="twitter:description" content="Kostenlose Beständigkeitstabelle. Prüfen Sie HDPE, PP, PTFE, Viton, Edelstahl und mehr.">
+    <meta name="twitter:title" content="Chemical Resistance Chart | 1,600+ Chemicals">
+    <meta name="twitter:description" content="Free chemical compatibility tool. Check resistance ratings for HDPE, PP, PTFE, Viton, Stainless Steel and more.">
     <meta name="twitter:image" content="https://chemicalresistance.org/og-image.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -58,27 +58,50 @@
         .rating-NR { background: #d1d5db; color: #374151; }
         .search-highlight { background: #fef08a; }
     </style>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Chemical Resistance Chart",
+        "description": "Herramienta gratuita de consulta de resistencia química con 1.600+ químicos y 24 materiales",
+        "url": "https://chemicalresistance.org/es.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "ChemicalResistance.org"
+        }
+    }
+    </script>
 </head>
 <body class="text-gray-700 min-h-screen">
     <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="de.html" class="flex items-center gap-2">
+            <a href="index.html" class="flex items-center gap-2">
                 <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
                     <i data-lucide="flask-conical" class="w-5 h-5 text-white"></i>
                 </div>
                 <div>
                     <div class="font-bold text-gray-900">ChemicalResistance.org</div>
-                    <div class="text-xs text-gray-500">Chemikalienbeständigkeits-Datenbank</div>
+                    <div class="text-xs text-gray-500">Base de datos de compatibilidad química</div>
                 </div>
             </a>
             <div class="flex items-center gap-4 text-sm">
-                <a href="#guide" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Materialübersicht</a>
-                <a href="#about" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Über uns</a>
-                <select id="langSelect" aria-label="Sprache wählen" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                <a href="#guide" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Guía de Materiales</a>
+                <a href="viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Viscosidad</a>
+                <a href="about.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Acerca de</a>
+                <select id="langSelect" aria-label="Select language" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
                     <option value="en">🇬🇧 EN</option>
-                    <option value="es">🇪🇸 ES</option>
-                    <option value="de" selected>🇩🇪 DE</option>
+                    <option value="es" selected>🇪🇸 ES</option>
+                    <option value="de">🇩🇪 DE</option>
                 </select>
             </div>
         </div>
@@ -89,10 +112,10 @@
     <section class="bg-gradient-to-b from-gray-50 to-white px-4 py-8 md:py-12">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-                Chemikalienbeständigkeit
+                Consulta de Resistencia Química
             </h1>
             <p class="text-gray-600 mb-6">
-                Finden Sie das richtige Material für Ihre Chemikalie. Suche nach Name, CAS-Nummer oder Formel.
+                Encuentra el material adecuado para tu químico. Busca por nombre, número CAS o fórmula.
             </p>
             
             <!-- Search Box -->
@@ -103,7 +126,7 @@
                 <input 
                     type="text" 
                     id="searchInput" 
-                    placeholder="Suche: Schwefelsäure, Aceton, 7664-93-9..."
+                    placeholder="Buscar: Ácido Sulfúrico, Acetona, 7664-93-9..."
                     class="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 outline-none transition-all"
                     autocomplete="off"
                 >
@@ -114,23 +137,23 @@
             <!-- Material Filter - directly under search -->
             <div class="mt-3 max-w-2xl mx-auto">
                 <div class="flex items-center justify-center gap-2 mb-2">
-                    <span class="text-xs text-gray-400">Tabelle filtern:</span>
-                    <select id="ratingFilter" aria-label="Nach Bewertung filtern" class="bg-gray-100 border-0 rounded px-2 py-0.5 text-xs cursor-pointer focus:ring-1 focus:ring-emerald-500 outline-none">
-                        <option value="12">A/B bewertet</option>
-                        <option value="1">Nur A</option>
+                    <span class="text-xs text-gray-500">Filtrar tabla por:</span>
+                    <select id="ratingFilter" aria-label="Filter by rating" class="bg-gray-100 border-0 rounded px-2 py-0.5 text-xs cursor-pointer focus:ring-1 focus:ring-emerald-500 outline-none">
+                        <option value="12">Clasificación A/B</option>
+                        <option value="1">Solo A</option>
                     </select>
-                    <button onclick="clearMaterialFilters()" class="text-xs text-gray-400 hover:text-emerald-600">Löschen</button>
+                    <button onclick="clearMaterialFilters()" class="text-xs text-gray-400 hover:text-emerald-600">Limpiar</button>
                 </div>
                 <div id="materialFilters" class="flex flex-wrap gap-1.5 justify-center">
                     <label><input type="checkbox" value="HDPE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">HDPE</span></label>
                     <label><input type="checkbox" value="PP" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PP</span></label>
                     <label><input type="checkbox" value="PTFE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PTFE</span></label>
                     <label><input type="checkbox" value="PVDF" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PVDF</span></label>
-                    <label><input type="checkbox" value="V4A" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">V4A</span></label>
+                    <label><input type="checkbox" value="V4A" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">SS316</span></label>
                     <label><input type="checkbox" value="FPM" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Viton</span></label>
                     <label><input type="checkbox" value="EPDM" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">EPDM</span></label>
                     <label><input type="checkbox" value="NBR" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">NBR</span></label>
-                    <button onclick="toggleMoreMaterials()" id="moreMatBtn" class="px-2.5 py-1 rounded-full border border-dashed border-gray-200 text-xs text-gray-400 hover:border-emerald-300 hover:text-emerald-600">+mehr</button>
+                    <button onclick="toggleMoreMaterials()" id="moreMatBtn" class="px-2.5 py-1 rounded-full border border-dashed border-gray-200 text-xs text-gray-400 hover:border-emerald-300 hover:text-emerald-600">+más</button>
                 </div>
                 <div id="moreMaterials" class="hidden flex flex-wrap gap-1.5 justify-center mt-1.5">
                     <label><input type="checkbox" value="LDPE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">LDPE</span></label>
@@ -140,19 +163,40 @@
                     <label><input type="checkbox" value="PVC_HART" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">PVC</span></label>
                     <label><input type="checkbox" value="FEP" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">FEP</span></label>
                     <label><input type="checkbox" value="ECTFE_ETFE" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">ECTFE</span></label>
-                    <label><input type="checkbox" value="SI" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Silikon</span></label>
-                    <label><input type="checkbox" value="V2A" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">V2A</span></label>
-                    <label><input type="checkbox" value="AL" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Alu</span></label>
+                    <label><input type="checkbox" value="SI" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Silicone</span></label>
+                    <label><input type="checkbox" value="V2A" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">SS304</span></label>
+                    <label><input type="checkbox" value="AL" class="hidden peer"><span class="px-2.5 py-1 rounded-full border border-gray-200 text-xs cursor-pointer peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 hover:border-emerald-300 transition-colors">Aluminum</span></label>
                 </div>
             </div>
             
             <div class="mt-4 flex flex-wrap justify-center gap-2 text-sm">
-                <span class="text-gray-400">Versuchen:</span>
-                <button onclick="searchFor('Schwefelsäure')" class="text-emerald-600 hover:underline">Schwefelsäure</button>
-                <button onclick="searchFor('Salzsäure')" class="text-emerald-600 hover:underline">Salzsäure</button>
-                <button onclick="searchFor('Aceton')" class="text-emerald-600 hover:underline">Aceton</button>
+                <span class="text-gray-400">Prueba:</span>
+                <button onclick="searchFor('Sulfuric Acid')" class="text-emerald-600 hover:underline">Sulfuric Acid</button>
+                <button onclick="searchFor('Hydrochloric Acid')" class="text-emerald-600 hover:underline">Hydrochloric Acid</button>
+                <button onclick="searchFor('Acetone')" class="text-emerald-600 hover:underline">Acetone</button>
             </div>
         </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="px-4 py-4">
+        <div class="max-w-2xl mx-auto flex items-center justify-center gap-6 md:gap-10 text-center">
+            <div>
+                <span class="text-xl md:text-2xl font-bold text-emerald-700">1,600+</span>
+                <span class="text-sm text-gray-600 ml-1">químicos</span>
+            </div>
+            <div class="text-gray-300">|</div>
+            <div>
+                <span class="text-xl md:text-2xl font-bold text-emerald-700">24</span>
+                <span class="text-sm text-gray-600 ml-1">materiales</span>
+            </div>
+            <div class="text-gray-300">|</div>
+            <div>
+                <span class="text-xl md:text-2xl font-bold text-emerald-700">2</span>
+                <span class="text-sm text-gray-600 ml-1">temperaturas</span>
+            </div>
+        </div>
+        <p class="text-center text-gray-400 text-xs mt-2">Gratis · Sin registro</p>
     </section>
 
     <!-- Results Section -->
@@ -163,7 +207,7 @@
                 <div class="p-6 border-b border-gray-100 bg-gray-50">
                     <div class="flex items-start justify-between">
                         <div>
-                            <h2 id="chemName" class="text-2xl font-bold text-gray-900">Lädt...</h2>
+                            <h2 id="chemName" class="text-2xl font-bold text-gray-900">Cargando...</h2>
                             <div class="flex flex-wrap items-center gap-3 mt-2 text-sm">
                                 <span id="chemNameDe" class="text-gray-500"></span>
                                 <span id="chemFormula" class="text-gray-500 font-mono text-sm" style="display:none"></span>
@@ -183,8 +227,8 @@
                 <div id="recommendation" class="p-4 bg-emerald-50 border-b border-emerald-100">
                     <div class="flex items-center gap-2">
                         <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600"></i>
-                        <span class="font-medium text-emerald-800">Empfohlene Materialien:</span>
-                        <span id="recMaterials" class="text-emerald-700">Lädt...</span>
+                        <span class="font-medium text-emerald-800">Materiales recomendados:</span>
+                        <span id="recMaterials" class="text-emerald-700">Cargando...</span>
                     </div>
                 </div>
 
@@ -194,13 +238,13 @@
                         <thead>
                             <tr class="bg-gray-50 text-left text-sm">
                                 <th class="py-3 px-4 font-semibold text-gray-600">Material</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600">Typ</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C<br><span class="font-normal text-gray-500">(68°F)</span></th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C<br><span class="font-normal text-gray-500">(122°F)</span></th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">Tipo</th>
                             </tr>
                         </thead>
                         <tbody id="ratingsTable">
-                            <tr><td colspan="4" class="py-8 text-center text-gray-500">Lädt Chemikalien-Daten...</td></tr>
+                            <tr><td colspan="4" class="py-8 text-center text-gray-500">Cargando datos químicos...</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -208,68 +252,62 @@
                 <!-- Legend -->
                 <div class="p-4 bg-gray-50 border-t border-gray-200">
                     <div class="flex flex-wrap items-center gap-4 text-sm">
-                        <span class="font-medium text-gray-700">Bewertungen:</span>
-                        <span class="flex items-center gap-1"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> Ausgezeichnet</span>
-                        <span class="flex items-center gap-1"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> Gut</span>
-                        <span class="flex items-center gap-1"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> Eingeschränkt</span>
-                        <span class="flex items-center gap-1"><span class="rating-D px-2 py-0.5 rounded text-xs font-bold">D</span> Nicht empfohlen</span>
-                        <span class="flex items-center gap-1"><span class="rating-NR px-2 py-0.5 rounded text-xs font-bold">NR</span> Keine Daten</span>
+                        <span class="font-medium text-gray-700">Clasificaciones:</span>
+                        <span class="flex items-center gap-1"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> Excelente</span>
+                        <span class="flex items-center gap-1"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> Bueno</span>
+                        <span class="flex items-center gap-1"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> Limitado</span>
+                        <span class="flex items-center gap-1"><span class="rating-D px-2 py-0.5 rounded text-xs font-bold">D</span> No Recomendado</span>
+                        <span class="flex items-center gap-1"><span class="rating-NR px-2 py-0.5 rounded text-xs font-bold">NR</span> Sin Datos</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Value Proposition -->
-    <section class="px-4 py-12">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Das richtige Material für jede Chemikalie finden</h2>
-            <p class="text-gray-600 text-lg leading-relaxed">
-                Unsere Datenbank umfasst <strong>über 1.600 Industriechemikalien</strong> — von gängigen Säuren und Lösungsmitteln 
-                bis hin zu Spezialverbindungen. Prüfen Sie die Verträglichkeit mit <strong>24 Materialien</strong> inklusive 
-                Kunststoffen wie HDPE, PP und PTFE, Fluorpolymeren, Elastomeren wie Viton® und EPDM sowie Edelstahl. 
-                Sofortige Empfehlungen basierend auf realen Beständigkeitsdaten bei verschiedenen Temperaturen.
-            </p>
-            <p class="text-gray-500 mt-4">
-                Kostenlos nutzbar. Keine Registrierung erforderlich.
-            </p>
-        </div>
-    </section>
-
     <!-- Material Guide -->
     <section id="guide" class="px-4 py-12 bg-white border-y border-gray-200">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Material-Schnellübersicht</h2>
+            <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Guía Rápida de Materiales</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <a href="materials/hdpe.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">HDPE →</div>
-                    <div class="text-sm text-gray-500 mb-2">Polyethylen hoher Dichte</div>
-                    <div class="text-sm text-gray-600">Geeignet für: Säuren, Laugen, Alkohole. Üblich für Fässer & Behälter.</div>
+                    <div class="text-sm text-gray-500 mb-2">Polietileno de Alta Densidad</div>
+                    <div class="text-sm text-gray-600">Best for: Acids, bases, alcohols. Common for drums & containers.</div>
                 </a>
                 <a href="materials/pp.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">PP →</div>
-                    <div class="text-sm text-gray-500 mb-2">Polypropylen</div>
-                    <div class="text-sm text-gray-600">Geeignet für: Starke Säuren & Laugen. Höhere Temperaturbeständigkeit als PE.</div>
+                    <div class="text-sm text-gray-500 mb-2">Polipropileno</div>
+                    <div class="text-sm text-gray-600">Best for: Strong acids & bases. Higher temp resistance than PE.</div>
                 </a>
                 <a href="materials/ptfe.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">PTFE →</div>
                     <div class="text-sm text-gray-500 mb-2">Teflon®</div>
-                    <div class="text-sm text-gray-600">Geeignet für: Fast alle Chemikalien. Premium-Wahl für Dichtungen.</div>
+                    <div class="text-sm text-gray-600">Best for: Nearly all chemicals. Premium choice for seals & gaskets.</div>
                 </a>
                 <a href="materials/ss316.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
-                    <div class="font-bold text-gray-900">V4A / SS 316 →</div>
-                    <div class="text-sm text-gray-500 mb-2">Edelstahl 1.4401</div>
-                    <div class="text-sm text-gray-600">Geeignet für: Korrosive Umgebungen. Besser als V2A für Chloride.</div>
+                    <div class="font-bold text-gray-900">SS 316 →</div>
+                    <div class="text-sm text-gray-500 mb-2">Acero Inoxidable (1.4401)</div>
+                    <div class="text-sm text-gray-600">Ideal para: Ambientes corrosivos. Mejor que el 304 para cloruros.</div>
                 </a>
                 <a href="materials/viton.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">Viton® (FPM) →</div>
-                    <div class="text-sm text-gray-500 mb-2">Fluorelastomer</div>
-                    <div class="text-sm text-gray-600">Geeignet für: Kraftstoffe, Öle, Säuren. Premium-Dichtungsmaterial.</div>
+                    <div class="text-sm text-gray-500 mb-2">Fluoroelastómero</div>
+                    <div class="text-sm text-gray-600">Ideal para: Combustibles, aceites, ácidos. Material de sello premium.</div>
                 </a>
                 <a href="materials/epdm.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">EPDM →</div>
-                    <div class="text-sm text-gray-500 mb-2">Ethylen-Propylen-Kautschuk</div>
-                    <div class="text-sm text-gray-600">Geeignet für: Wasser, Dampf, Laugen. NICHT für Öle/Kraftstoffe.</div>
+                    <div class="text-sm text-gray-500 mb-2">Etileno Propileno</div>
+                    <div class="text-sm text-gray-600">Ideal para: Agua, vapor, bases. NO para aceites/combustibles.</div>
+                </a>
+                <a href="materials/silicone.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                    <div class="font-bold text-gray-900">Silicone (VMQ) →</div>
+                    <div class="text-sm text-gray-500 mb-2">Caucho de Silicona</div>
+                    <div class="text-sm text-gray-600">Ideal para: Contacto alimentario, temperaturas extremas. Aprobado FDA.</div>
+                </a>
+                <a href="materials/nbr.html" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                    <div class="font-bold text-gray-900">NBR (Nitrile) →</div>
+                    <div class="text-sm text-gray-500 mb-2">Caucho Buna-N</div>
+                    <div class="text-sm text-gray-600">Ideal para: Aceites, combustibles, hidráulicos. Sello más común.</div>
                 </a>
             </div>
         </div>
@@ -278,19 +316,19 @@
     <!-- About -->
     <section id="about" class="px-4 py-12">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Über dieses Tool</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Acerca de Esta Herramienta</h2>
             <p class="text-gray-600 mb-6">
-                ChemicalResistance.org hilft Ingenieuren, Sicherheitsfachleuten und allen, die mit Chemikalien arbeiten, 
-                die richtigen Materialien für sichere Lagerung und Handhabung zu finden. Unsere Datenbank enthält 
-                über 1.600 Chemikalien mit Beständigkeitsbewertungen für 24 Materialien bei zwei Temperaturen (20°C und 50°C).
+                ChemicalResistance.org ayuda a ingenieros, profesionales de seguridad y cualquier persona que manipule químicos 
+                a encontrar los materiales adecuados para el almacenamiento y manipulación seguros. Nuestra base de datos incluye más de 1.600 químicos 
+                con clasificaciones de resistencia para 24 materiales a dos temperaturas (20°C y 50°C).
             </p>
             <p class="text-gray-500 text-sm mb-6">
-                Chemikalienbeständigkeitsdaten basieren auf <a href="https://buerkle.de" class="text-emerald-600 underline">Bürkle GmbH (buerkle.de)</a>
+                Datos de resistencia química basados en <a href="https://buerkle.de" class="text-emerald-600 underline">Bürkle GmbH (buerkle.de)</a>
             </p>
             <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
-                <strong>⚠️ Hinweis:</strong> Diese Informationen dienen nur als allgemeine Orientierung. Überprüfen Sie 
-                die Verträglichkeit immer mit den Geräteherstellern und führen Sie Tests für kritische Anwendungen durch. 
-                Faktoren wie Konzentration, Temperatur und Druck können die Leistung beeinflussen.
+                <strong>⚠️ Aviso:</strong> Esta información es solo una guía general. Siempre verifique 
+                compatibility with equipment manufacturers and conduct testing for critical applications. 
+                Factors like concentration, temperature, and pressure can affect performance.
             </div>
         </div>
     </section>
@@ -300,13 +338,14 @@
 
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
-            <p>© 2026 ChemicalResistance.org — Kostenlose Chemikalienverträglichkeits-Tool</p>
-            <p class="mt-2">Chemikalienbeständigkeitsdaten basieren auf <a href="https://buerkle.de" class="text-emerald-500 underline">Bürkle GmbH (buerkle.de)</a></p>
+            <p>© 2026 ChemicalResistance.org — Free Chemical Compatibility Tool</p>
+            <p class="mt-2">Datos de resistencia química basados en <a href="https://buerkle.de" class="text-emerald-500 underline">Bürkle GmbH (buerkle.de)</a></p>
         </div>
     </footer>
 
-    <script src="js/app-de.js"></script>
+    <script src="js/app.js"></script>
     <script>
+        // Initialize Lucide icons
         lucide.createIcons();
     </script>
 </body>
