@@ -4,6 +4,7 @@ Translate all German chemical names to French for chemicalresistance.org
 """
 import json
 import re
+from additional_translations import ADDITIONAL_TRANSLATIONS
 
 # Comprehensive German → French chemical term translations
 # Order matters - more specific terms first
@@ -1028,7 +1029,11 @@ def translate_chemical_name(german_name):
     """Translate a German chemical name to French."""
     result = german_name.lower()
     
-    # Try exact match first
+    # Try exact match in additional translations first (manually curated)
+    if result in ADDITIONAL_TRANSLATIONS:
+        return ADDITIONAL_TRANSLATIONS[result].title()
+    
+    # Try exact match in term translations
     if result in TERM_TRANSLATIONS:
         return TERM_TRANSLATIONS[result].title()
     
@@ -1067,8 +1072,8 @@ def main():
     translations = {}
     for name in names:
         translated = translate_chemical_name(name)
-        # Only add if translation is different from original
-        if translated.lower() != name.lower():
+        # Include translation if it exists (even if same word - it confirms it's valid French)
+        if translated:
             translations[name.lower()] = translated
     
     print(f"Translated {len(translations)} of {len(names)} chemical names")
