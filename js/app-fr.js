@@ -1,45 +1,6 @@
 // Chemical Resistance App v2 - French Version
 // 1,600+ chemicals × 24 materials
-
-// German → French translations for common chemicals
-const translations = {
-    'aceton': 'Acétone', 'schwefelsäure': 'Acide sulfurique', 'salzsäure': 'Acide chlorhydrique',
-    'natronlauge': 'Hydroxyde de sodium', 'natriumhydroxid': 'Hydroxyde de sodium',
-    'salpetersäure': 'Acide nitrique', 'phosphorsäure': 'Acide phosphorique',
-    'essigsäure': 'Acide acétique', 'ammoniak': 'Ammoniac', 'benzin': 'Essence',
-    'diesel': 'Diesel', 'methanol': 'Méthanol', 'ethanol': 'Éthanol',
-    'isopropanol': 'Isopropanol', 'toluol': 'Toluène', 'xylol': 'Xylène',
-    'formaldehyd': 'Formaldéhyde', 'wasserstoffperoxid': 'Peroxyde d\'hydrogène',
-    'natriumhypochlorit': 'Hypochlorite de sodium', 'chlor': 'Chlore',
-    'fluor': 'Fluor', 'brom': 'Brome', 'iod': 'Iode',
-    'kalilauge': 'Hydroxyde de potassium', 'kaliumhydroxid': 'Hydroxyde de potassium',
-    'zitronensäure': 'Acide citrique', 'milchsäure': 'Acide lactique',
-    'ameisensäure': 'Acide formique', 'oxalsäure': 'Acide oxalique',
-    'chromsäure': 'Acide chromique', 'flusssäure': 'Acide fluorhydrique',
-    'wasser': 'Eau', 'meerwasser': 'Eau de mer', 'sole': 'Saumure',
-    'glycerin': 'Glycérine', 'glykol': 'Glycol', 'öl': 'Huile',
-    'hydrauliköl': 'Huile hydraulique', 'motoröl': 'Huile moteur', 'heizöl': 'Fioul',
-    'benzol': 'Benzène', 'cyclohexan': 'Cyclohexane', 'heptan': 'Heptane',
-    'hexan': 'Hexane', 'pentan': 'Pentane', 'oktan': 'Octane',
-    'chloroform': 'Chloroforme', 'dichlormethan': 'Dichlorométhane',
-    'tetrachlorkohlenstoff': 'Tétrachlorure de carbone', 'perchlorethylen': 'Perchloroéthylène',
-    'trichlorethylen': 'Trichloroéthylène', 'butanol': 'Butanol',
-    'propanol': 'Propanol', 'phenol': 'Phénol', 'anilin': 'Aniline',
-    'pyridin': 'Pyridine', 'acrolein': 'Acroléine', 'harnstoff': 'Urée',
-    'natriumchlorid': 'Chlorure de sodium', 'natriumcarbonat': 'Carbonate de sodium',
-    'natriumsulfat': 'Sulfate de sodium', 'natriumnitrat': 'Nitrate de sodium',
-    'kaliumchlorid': 'Chlorure de potassium', 'calciumchlorid': 'Chlorure de calcium',
-    'magnesiumchlorid': 'Chlorure de magnésium', 'eisenchlorid': 'Chlorure de fer',
-    'kupfersulfat': 'Sulfate de cuivre', 'zinksulfat': 'Sulfate de zinc',
-    'aluminiuimchlorid': 'Chlorure d\'aluminium', 'bariumchlorid': 'Chlorure de baryum',
-    'bleiche': 'Eau de Javel', 'seife': 'Savon', 'waschmittel': 'Détergent',
-    'bier': 'Bière', 'wein': 'Vin', 'milch': 'Lait', 'fruchtsaft': 'Jus de fruit',
-    'blut': 'Sang', 'urin': 'Urine', 'kot': 'Matières fécales',
-    'natrium': 'Sodium', 'kalium': 'Potassium', 'calcium': 'Calcium',
-    'magnesium': 'Magnésium', 'aluminium': 'Aluminium', 'eisen': 'Fer',
-    'kupfer': 'Cuivre', 'zink': 'Zinc', 'blei': 'Plomb', 'quecksilber': 'Mercure',
-    'silber': 'Argent', 'gold': 'Or', 'platin': 'Platine', 'nickel': 'Nickel',
-};
+// Uses chemicalTranslations from chemical_translations_fr.js (1,228 translations)
 
 const materialInfo = {
     // Thermoplastes
@@ -197,13 +158,9 @@ function getChemicalKey(c) {
 
 function translateName(germanName) {
     const lower = germanName.toLowerCase();
-    for (const [de, fr] of Object.entries(translations)) {
-        if (lower === de || lower.startsWith(de + ' ') || lower.startsWith(de + ',')) {
-            return germanName.replace(new RegExp(de, 'i'), fr);
-        }
-        if (lower.includes(de)) {
-            return germanName.replace(new RegExp(de, 'i'), fr);
-        }
+    // Use comprehensive translations from chemical_translations_fr.js
+    if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) {
+        return chemicalTranslations[lower];
     }
     return germanName;
 }
