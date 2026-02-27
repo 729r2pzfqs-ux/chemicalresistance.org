@@ -164,17 +164,12 @@ function getChemicalKey(c) {
 }
 
 function translateName(germanName) {
-    // Try to find an English translation
     const lower = germanName.toLowerCase();
-    for (const [de, en] of Object.entries(translations)) {
-        if (lower === de || lower.startsWith(de + ' ') || lower.startsWith(de + ',')) {
-            return germanName.replace(new RegExp(de, 'i'), en);
-        }
-        if (lower.includes(de)) {
-            return germanName.replace(new RegExp(de, 'i'), en);
-        }
+    // Use comprehensive translations from chemical_translations_en.js
+    if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) {
+        return chemicalTranslations[lower];
     }
-    return germanName; // Return German if no translation
+    return germanName;
 }
 
 function getDisplayName(c) {
