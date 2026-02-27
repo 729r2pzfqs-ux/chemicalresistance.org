@@ -299,6 +299,8 @@ function setupEventListeners() {
             window.location.href = 'es.html';
         } else if (langSelect.value === 'fr') {
             window.location.href = 'fr.html';
+        } else if (langSelect.value === 'pt') {
+            window.location.href = 'pt.html';
         } else if (langSelect.value === 'en') {
             window.location.href = 'index.html';
         }
