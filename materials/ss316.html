@@ -341,7 +341,9 @@
 
     // Convert numeric ratings to letter grades
     function ratingToGrade(val) {
-        const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' }
+        const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
+        return map[val] || 'NR';
+    }
 
     function translateName(germanName) {
         const lower = germanName.toLowerCase();
@@ -349,9 +351,6 @@
             return chemicalTranslations[lower];
         }
         return germanName;
-    }
-;
-        return map[val] || 'NR';
     }
 
     function updateStats() {
