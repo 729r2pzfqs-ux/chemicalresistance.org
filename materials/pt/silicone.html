@@ -51,7 +51,7 @@
                 </div>
                 <div>
                     <div class="font-bold text-gray-900">ChemicalResistance.org</div>
-                    <div class="text-xs text-gray-500">Banco de dados de compatibilidade química</div>
+                    <div class="text-xs text-gray-500">Base de dados de compatibilidade química</div>
                 </div>
             </a>
             <div class="flex items-center gap-4 text-sm">
@@ -75,7 +75,7 @@
             </h1>
             <p class="text-lg text-gray-600 mb-4">
                 A borracha de silicone (VMQ) é conhecida por sua faixa de temperatura excepcional e flexibilidade. 
-                É aprovada para contato com alimentos e amplamente usada em aplicações médicas, alimentícias e de alta temperatura.
+                É aprovada para contato com alimentos e amplamente utilizada em aplicações médicas, alimentícias e de alta temperatura.
                 No entanto, tem resistência química limitada em comparação com outros elastômeros.
             </p>
             <div class="flex flex-wrap gap-3">
@@ -128,7 +128,7 @@
                     <h3 class="font-semibold text-red-800 mb-2">❌ Evitar com</h3>
                     <ul class="text-sm text-red-700 space-y-1">
                         <li>• Ácidos e bases concentrados</li>
-                        <li>• Maioria dos solventes (acetona, tolueno, etc.)</li>
+                        <li>• A maioria dos solventes (acetona, tolueno, etc.)</li>
                         <li>• Combustíveis e óleos</li>
                         <li>• Vapor (causa reversão)</li>
                         <li>• Ambientes abrasivos (baixa resistência ao rasgo)</li>
@@ -154,7 +154,7 @@
                     </div>
                     <div>
                         <select id="ratingFilter" class="px-4 py-2 border border-gray-200 rounded-lg bg-white">
-                            <option value="all">Todas as classificações</option>
+                            <option value="all">Todas as notas</option>
                             <option value="A">Excelente (A)</option>
                             <option value="B">Bom (B)</option>
                             <option value="C">Limitado (C)</option>
@@ -184,7 +184,7 @@
 
             <div class="mt-4 p-4 bg-gray-50 rounded-xl text-sm">
                 <div class="flex flex-wrap items-center gap-4">
-                    <span class="font-medium text-gray-700">Classificações:</span>
+                    <span class="font-medium text-gray-700">Notas:</span>
                     <span class="flex items-center gap-1"><span class="rating-A px-2 py-0.5 rounded text-xs font-bold">A</span> Excelente</span>
                     <span class="flex items-center gap-1"><span class="rating-B px-2 py-0.5 rounded text-xs font-bold">B</span> Bom</span>
                     <span class="flex items-center gap-1"><span class="rating-C px-2 py-0.5 rounded text-xs font-bold">C</span> Limitado</span>
@@ -201,9 +201,9 @@
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Sobre a borracha de Silicone (VMQ)</h2>
             <div class="prose prose-gray max-w-none">
                 <p>
-                    <strong>A borracha de silicone</strong> (VMQ - Vinil Metil Silicone) é um elastômero sintético composto de silício, oxigênio, 
+                    <strong>A borracha de silicone</strong> (VMQ - Vinil Metil Silicone) é um elastômero sintético composto por silício, oxigênio, 
                     carbono e hidrogênio. É valorizada por sua biocompatibilidade, estabilidade térmica e natureza não reativa 
-                    em aplicações alimentares e médicas.
+                    em aplicações alimentícias e médicas.
                 </p>
                 
                 <h3 class="text-lg font-semibold mt-6 mb-3">Propriedades principais</h3>
@@ -211,7 +211,7 @@
                     <li><strong>Faixa de temperatura:</strong> -60°C a +230°C (-76°F a +446°F)</li>
                     <li><strong>Densidade:</strong> 1,1–1,6 g/cm³</li>
                     <li><strong>Dureza:</strong> 10-80 Shore A</li>
-                    <li><strong>Conformidade FDA 21 CFR 177.2600</strong></li>
+                    <li><strong>Conforme FDA 21 CFR 177.2600</strong></li>
                     <li><strong>Graus biocompatíveis USP Classe VI disponíveis</strong></li>
                 </ul>
 
@@ -219,7 +219,7 @@
                 <ul class="list-disc list-inside space-y-1 text-gray-600">
                     <li>Vedações de equipamentos alimentícios</li>
                     <li>Dispositivos médicos e implantes</li>
-                    <li>Bicos de mamadeira e utensílios de cozinha</li>
+                    <li>Bicos de mamadeiras e utensílios de cozinha</li>
                     <li>Vedações de alta temperatura (fornos, HVAC)</li>
                     <li>Isolamento elétrico</li>
                 </ul>
@@ -227,8 +227,8 @@
                 <h3 class="text-lg font-semibold mt-6 mb-3">Silicone vs Viton® vs EPDM</h3>
                 <p class="text-gray-600">
                     <strong>O Silicone</strong> vence em faixa de temperatura e segurança alimentar, mas perde em resistência química.<br>
-                    <strong>O Viton®</strong> suporta combustíveis e óleos, mas é mais caro e não é alimentício.<br>
-                    <strong>O EPDM</strong> é excelente com água e vapor, mas não consegue igualar a faixa de temperatura do silicone.
+                    <strong>O Viton®</strong> suporta combustíveis e óleos, mas custa mais e não é alimentício.<br>
+                    <strong>O EPDM</strong> é excelente com água e vapor, mas não pode igualar a faixa de temperatura do silicone.
                 </p>
             </div>
         </div>
@@ -356,7 +356,7 @@
             }).join('');
 
             if (filtered.length > 200) {
-                tbody.innerHTML += `<tr><td colspan="4" class="py-4 text-center text-gray-500 text-sm">Exibindo 200 de ${filtered.length} resultados. Use a pesquisa para refinar.</td></tr>`;
+                tbody.innerHTML += `<tr><td colspan="4" class="py-4 text-center text-gray-500 text-sm">Mostrando 200 de ${filtered.length} resultados. Use a pesquisa para refinar.</td></tr>`;
             }
         }
 
