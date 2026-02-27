@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LTK6VVHYDW');
+    </script>
+    <title>Resistência Química PTFE | Guia de Compatibilidade Teflon®</title>
+    <meta name="description" content="Tabela completa de resistência química do PTFE (Teflon®). A referência em resistência química. Dados de compatibilidade a 20°C e 50°C.">
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="../../favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    
+    <link rel="canonical" href="https://chemicalresistance.org/materials/pt/ptfe.html">
+    
+    <meta property="og:title" content="Resistência Química PTFE">
+    <meta property="og:description" content="Dados completos de compatibilidade para PTFE/Teflon®. O material de referência para vedações e gaxetas resistentes a produtos químicos.">
+    <meta property="og:type" content="article">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .rating-A { background: #22c55e; color: white; }
+        .rating-B { background: #3b82f6; color: white; }
+        .rating-C { background: #f59e0b; color: white; }
+        .rating-D { background: #ef4444; color: white; }
+        .rating-NR { background: #e5e7eb; color: #9ca3af; }
+    </style>
+</head>
+<body class="text-gray-700 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="../../pt.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+                    <i data-lucide="flask-conical" class="w-5 h-5 text-white"></i>
+                </div>
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500">Banco de dados de compatibilidade química</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-4 text-sm">
+                <a href="../../pt.html" class="text-gray-600 hover:text-gray-900">← Voltar à pesquisa</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-purple-50 to-white px-4 py-8 md:py-12">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-2 text-sm text-purple-600 mb-3">
+                <a href="../../pt.html" class="hover:underline">Início</a>
+                <span>›</span>
+                <span>Materiais</span>
+                <span>›</span>
+                <span class="text-gray-600">PTFE</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                Resistência Química do PTFE
+            </h1>
+            <p class="text-lg text-gray-600 mb-4">
+                O PTFE (Teflon®) é a referência em resistência química. Suporta quase todos os produtos químicos, 
+                temperaturas extremas, e é a escolha premium para vedações, gaxetas e revestimentos em aplicações exigentes.
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">950+ produtos testados</span>
+                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">Dados 20°C & 50°C</span>
+                <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">Material premium</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="px-4 py-6 border-b border-gray-200 bg-white">
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div>
+                <div class="text-2xl font-bold text-emerald-600" id="statA">—</div>
+                <div class="text-sm text-gray-500">Excelente (A)</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-blue-600" id="statB">—</div>
+                <div class="text-sm text-gray-500">Bom (B)</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-amber-600" id="statC">—</div>
+                <div class="text-sm text-gray-500">Limitado (C)</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-red-600" id="statD">—</div>
+                <div class="text-sm text-gray-500">Não recomendado (D)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Table -->
+    <section class="px-4 py-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Filters -->
+            <div class="bg-white rounded-xl border border-gray-200 p-4 mb-6">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Pesquisar produtos químicos</label>
+                        <input type="text" id="searchInput" placeholder="ex: Ácido sulfúrico, Acetona..." 
+                            class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-100 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Filtrar por classificação</label>
+                        <select id="ratingFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-purple-500 outline-none">
+                            <option value="all">Todas as classificações</option>
+                            <option value="A">A - Excelente</option>
+                            <option value="B">B - Bom</option>
+                            <option value="AB">A & B (Compatível)</option>
+                            <option value="C">C - Limitado</option>
+                            <option value="D">D - Não recomendado</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Temperatura</label>
+                        <select id="tempFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-purple-500 outline-none">
+                            <option value="c20">20°C</option>
+                            <option value="c50">50°C</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results count -->
+            <div class="mb-4 text-sm text-gray-500">
+                Exibindo <span id="resultCount" class="font-semibold text-gray-700">0</span> produtos químicos
+            </div>
+
+            <!-- Table -->
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-gray-50 text-left text-sm">
+                                <th class="py-3 px-4 font-semibold text-gray-600">Produto químico</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">Concentração</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">CAS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="chemTable" class="divide-y divide-gray-100">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Load more -->
+            <div id="loadMore" class="mt-4 text-center hidden">
+                <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 transition-colors">
+                    Carregar mais produtos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Properties -->
+    <section class="px-4 py-12 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Propriedades do PTFE</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Nome completo</span>
+                        <span class="font-medium text-gray-900">Politetrafluoretileno</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Nome comercial</span>
+                        <span class="font-medium text-gray-900">Teflon® (DuPont/Chemours)</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Temperatura máx.</span>
+                        <span class="font-medium text-gray-900">260°C (500°F) contínua</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Temperatura mín.</span>
+                        <span class="font-medium text-gray-900">-200°C (-328°F)</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Densidade</span>
+                        <span class="font-medium text-gray-900">2,1–2,3 g/cm³</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Grau alimentício</span>
+                        <span class="font-medium text-gray-900">Sim</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Atrito</span>
+                        <span class="font-medium text-gray-900">O mais baixo de todos os sólidos</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Custo</span>
+                        <span class="font-medium text-gray-900">Alto (premium)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Uses -->
+    <section class="px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Aplicações comuns</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3">
+                        <i data-lucide="circle-dot" class="w-5 h-5 text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Vedações e gaxetas</h3>
+                    <p class="text-sm text-gray-600">O-rings, juntas de flange, assentos de válvula, gaxetas de bomba</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
+                        <i data-lucide="layers" class="w-5 h-5 text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Revestimentos e forros</h3>
+                    <p class="text-sm text-gray-600">Forros de tanques, tubulações, revestimentos antiaderentes</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-3">
+                        <i data-lucide="plug" class="w-5 h-5 text-emerald-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Isolamento elétrico</h3>
+                    <p class="text-sm text-gray-600">Isolamento de cabos, conectores, aplicações de alta frequência</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Avoid -->
+    <section class="px-4 py-12 bg-red-50 border-t border-red-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">⚠️ Limitações</h2>
+            <p class="text-gray-600 mb-4">Embora o PTFE resista à maioria dos produtos químicos, apresenta algumas limitações:</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Metais alcalinos fundidos (sódio, potássio)
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Flúor gasoso em alta temperatura
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        Alguns solventes fluorados
+                    </li>
+                </ul>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                        Fluência a frio sob carga
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                        Baixa resistência ao desgaste (material macio)
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                        Alto custo comparado às alternativas
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare -->
+    <section class="px-4 py-12 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Comparar materiais</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <a href="pvdf.html" class="p-4 rounded-xl border border-gray-200 hover:border-purple-300 hover:bg-purple-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">PVDF</div>
+                    <div class="text-xs text-gray-500">Melhor resistência</div>
+                </a>
+                <a href="viton.html" class="p-4 rounded-xl border border-gray-200 hover:border-purple-300 hover:bg-purple-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">Viton®</div>
+                    <div class="text-xs text-gray-500">Opção elastômero</div>
+                </a>
+                <a href="pp.html" class="p-4 rounded-xl border border-gray-200 hover:border-purple-300 hover:bg-purple-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">PP</div>
+                    <div class="text-xs text-gray-500">Opção econômica</div>
+                </a>
+                <a href="ss316.html" class="p-4 rounded-xl border border-gray-200 hover:border-purple-300 hover:bg-purple-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900">Inox 316</div>
+                    <div class="text-xs text-gray-500">Alternativa em metal</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>© 2026 ChemicalResistance.org — Ferramenta gratuita de compatibilidade química</p>
+            <p class="mt-2">Fontes de dados: Bürkle, INEOS, padrões industriais</p>
+        </div>
+    </footer>
+
+    <script src="../../js/chemical_translations_pt.js"></script>
+    <script>
+    const MATERIAL = 'PTFE';
+    let chemicals = [];
+    let filteredChemicals = [];
+    let displayCount = 50;
+
+    fetch('../../data/chemicals_burkle_full.json')
+        .then(r => r.json())
+        .then(data => {
+            chemicals = data.filter(c => c.ratings[MATERIAL] && (c.ratings[MATERIAL].c20 || c.ratings[MATERIAL].c50));
+            updateStats();
+            applyFilters();
+        });
+
+    function ratingToGrade(val) {
+        const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
+        return map[val] || 'NR';
+    }
+
+    function translateName(germanName) {
+        const lower = germanName.toLowerCase();
+        if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) {
+            return chemicalTranslations[lower];
+        }
+        return germanName;
+    }
+
+    function updateStats() {
+        const stats = { A: 0, B: 0, C: 0, D: 0 };
+        chemicals.forEach(c => {
+            const r = ratingToGrade(c.ratings[MATERIAL]?.c20);
+            if (stats[r] !== undefined) stats[r]++;
+        });
+        document.getElementById('statA').textContent = stats.A;
+        document.getElementById('statB').textContent = stats.B;
+        document.getElementById('statC').textContent = stats.C;
+        document.getElementById('statD').textContent = stats.D;
+    }
+
+    function applyFilters() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const rating = document.getElementById('ratingFilter').value;
+        const temp = document.getElementById('tempFilter').value;
+
+        filteredChemicals = chemicals.filter(c => {
+            const ptName = translateName(c.name);
+            const matchesSearch = !query || 
+                c.name.toLowerCase().includes(query) ||
+                ptName.toLowerCase().includes(query) ||
+                (c.cas && c.cas.includes(query));
+            
+            const r = ratingToGrade(c.ratings[MATERIAL]?.[temp]);
+            let matchesRating = true;
+            if (rating === 'A') matchesRating = r === 'A';
+            else if (rating === 'B') matchesRating = r === 'B';
+            else if (rating === 'AB') matchesRating = r === 'A' || r === 'B';
+            else if (rating === 'C') matchesRating = r === 'C';
+            else if (rating === 'D') matchesRating = r === 'D';
+
+            return matchesSearch && matchesRating;
+        });
+
+        const order = { A: 0, B: 1, C: 2, D: 3, NR: 4 };
+        filteredChemicals.sort((a, b) => {
+            const ra = ratingToGrade(a.ratings[MATERIAL]?.[temp]);
+            const rb = ratingToGrade(b.ratings[MATERIAL]?.[temp]);
+            return (order[ra] ?? 5) - (order[rb] ?? 5);
+        });
+
+        displayCount = 50;
+        renderTable();
+    }
+
+    function translateConc(conc) {
+        if (!conc) return '—';
+        const map = {
+            'wässrig': 'Aquoso', 'gesättigt': 'Saturado', 'verdünnt': 'Diluído',
+            'konz.': 'Concentrado', 'konzentriert': 'Concentrado', 'rein': 'Puro',
+            'techn. rein': 'Grau técnico', 'jede': 'Qualquer', 'gering': 'Baixo',
+            'flüssig': 'Líquido', 'gasförmig': 'Gasoso', 'geschmolzen': 'Fundido',
+            'trocken': 'Seco', 'feucht': 'Úmido', 'fest': 'Sólido',
+            'Pulver': 'Pó', 'gemahlen': 'Moído', 'ölhaltig': 'Contendo óleo',
+            'sulfuriert': 'Sulfurado'
+        };
+        let result = conc;
+        for (const [de, pt] of Object.entries(map)) {
+            if (conc.toLowerCase().includes(de.toLowerCase())) {
+                result = result.replace(new RegExp(de, 'gi'), pt);
+            }
+        }
+        return result;
+    }
+
+    function renderTable() {
+        const tbody = document.getElementById('chemTable');
+        const toShow = filteredChemicals.slice(0, displayCount);
+        
+        document.getElementById('resultCount').textContent = filteredChemicals.length;
+        document.getElementById('loadMore').classList.toggle('hidden', displayCount >= filteredChemicals.length);
+
+        tbody.innerHTML = toShow.map(c => {
+            const name = translateName(c.name);
+            const r20 = ratingToGrade(c.ratings[MATERIAL]?.c20);
+            const r50 = ratingToGrade(c.ratings[MATERIAL]?.c50);
+            const conc = translateConc(c.concentration);
+            const cas = c.cas || '—';
+
+            return `
+                <tr class="hover:bg-gray-50">
+                    <td class="py-3 px-4">
+                        <div class="font-medium text-gray-900">${name}</div>
+                        ${name !== c.name ? `<div class="text-xs text-gray-500">${c.name}</div>` : ''}
+                    </td>
+                    <td class="py-3 px-4 text-sm text-gray-600">${conc}</td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${r20} px-2 py-1 rounded text-xs font-bold">${r20}</span>
+                    </td>
+                    <td class="py-3 px-4 text-center">
+                        <span class="rating-${r50} px-2 py-1 rounded text-xs font-bold">${r50}</span>
+                    </td>
+                    <td class="py-3 px-4 text-sm text-gray-500 font-mono">${cas}</td>
+                </tr>
+            `;
+        }).join('');
+    }
+
+    function loadMore() {
+        displayCount += 50;
+        renderTable();
+    }
+
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+    document.getElementById('ratingFilter').addEventListener('change', applyFilters);
+    document.getElementById('tempFilter').addEventListener('change', applyFilters);
+
+    lucide.createIcons();
+    </script>
+</body>
+</html>
