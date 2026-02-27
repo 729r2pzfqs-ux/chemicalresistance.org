@@ -242,13 +242,23 @@
         </div>
     </footer>
 
+    <script src="../js/chemical_translations_en.js"></script>
     <script>
         const MATERIAL = 'SI';
         let chemicals = [];
         let filteredChemicals = [];
         
         function ratingToGrade(val) {
-            const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
+            const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' }
+
+    function translateName(germanName) {
+        const lower = germanName.toLowerCase();
+        if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) {
+            return chemicalTranslations[lower];
+        }
+        return germanName;
+    }
+;
             return map[val] || 'NR';
         }
 

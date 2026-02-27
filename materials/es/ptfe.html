@@ -318,6 +318,7 @@
         </div>
     </footer>
 
+    <script src="../../js/chemical_translations_es.js"></script>
     <script>
     const MATERIAL = 'PTFE';
     let chemicals = [];
@@ -334,7 +335,16 @@
 
     // Convert numeric ratings to letter grades
     function ratingToGrade(val) {
-        const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
+        const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' }
+
+    function translateName(germanName) {
+        const lower = germanName.toLowerCase();
+        if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) {
+            return chemicalTranslations[lower];
+        }
+        return germanName;
+    }
+;
         return map[val] || 'NR';
     }
 
@@ -412,7 +422,7 @@
         document.getElementById('loadMore').classList.toggle('hidden', displayCount >= filteredChemicals.length);
 
         tbody.innerHTML = toShow.map(c => {
-            const name = c.name_es || c.name_en || c.name;
+            const name = translateName(c.name);
             const r20 = ratingToGrade(c.ratings[MATERIAL]?.c20);
             const r50 = ratingToGrade(c.ratings[MATERIAL]?.c50);
             const conc = translateConc(c.concentration);
@@ -422,7 +432,7 @@
                 <tr class="hover:bg-gray-50">
                     <td class="py-3 px-4">
                         <div class="font-medium text-gray-900">${name}</div>
-                        ${c.name_es ? `<div class="text-xs text-gray-500">${c.name}</div>` : ''}
+                        ${name !== c.name ? `<div class="text-xs text-gray-500">${c.name}</div>` : ''}
                     </td>
                     <td class="py-3 px-4 text-sm text-gray-600">${conc}</td>
                     <td class="py-3 px-4 text-center">
