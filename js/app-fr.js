@@ -1,105 +1,105 @@
-// Chemical Resistance App v2 - External data loading
+// Chemical Resistance App v2 - French Version
 // 1,600+ chemicals × 24 materials
 
-// Common German → English translations
+// German → French translations for common chemicals
 const translations = {
-    'aceton': 'Acetone', 'schwefelsäure': 'Sulfuric Acid', 'salzsäure': 'Hydrochloric Acid',
-    'natronlauge': 'Sodium Hydroxide', 'natriumhydroxid': 'Sodium Hydroxide',
-    'salpetersäure': 'Nitric Acid', 'phosphorsäure': 'Phosphoric Acid',
-    'essigsäure': 'Acetic Acid', 'ammoniak': 'Ammonia', 'benzin': 'Gasoline',
-    'diesel': 'Diesel', 'methanol': 'Methanol', 'ethanol': 'Ethanol',
-    'isopropanol': 'Isopropanol', 'toluol': 'Toluene', 'xylol': 'Xylene',
-    'formaldehyd': 'Formaldehyde', 'wasserstoffperoxid': 'Hydrogen Peroxide',
-    'natriumhypochlorit': 'Sodium Hypochlorite', 'chlor': 'Chlorine',
-    'fluor': 'Fluorine', 'brom': 'Bromine', 'iod': 'Iodine',
-    'kalilauge': 'Potassium Hydroxide', 'kaliumhydroxid': 'Potassium Hydroxide',
-    'zitronensäure': 'Citric Acid', 'milchsäure': 'Lactic Acid',
-    'ameisensäure': 'Formic Acid', 'oxalsäure': 'Oxalic Acid',
-    'chromsäure': 'Chromic Acid', 'flusssäure': 'Hydrofluoric Acid',
-    'wasser': 'Water', 'meerwasser': 'Seawater', 'sole': 'Brine',
-    'glycerin': 'Glycerin', 'glykol': 'Glycol', 'öl': 'Oil',
-    'hydrauliköl': 'Hydraulic Oil', 'motoröl': 'Motor Oil', 'heizöl': 'Fuel Oil',
-    'benzol': 'Benzene', 'cyclohexan': 'Cyclohexane', 'heptan': 'Heptane',
+    'aceton': 'Acétone', 'schwefelsäure': 'Acide sulfurique', 'salzsäure': 'Acide chlorhydrique',
+    'natronlauge': 'Hydroxyde de sodium', 'natriumhydroxid': 'Hydroxyde de sodium',
+    'salpetersäure': 'Acide nitrique', 'phosphorsäure': 'Acide phosphorique',
+    'essigsäure': 'Acide acétique', 'ammoniak': 'Ammoniac', 'benzin': 'Essence',
+    'diesel': 'Diesel', 'methanol': 'Méthanol', 'ethanol': 'Éthanol',
+    'isopropanol': 'Isopropanol', 'toluol': 'Toluène', 'xylol': 'Xylène',
+    'formaldehyd': 'Formaldéhyde', 'wasserstoffperoxid': 'Peroxyde d\'hydrogène',
+    'natriumhypochlorit': 'Hypochlorite de sodium', 'chlor': 'Chlore',
+    'fluor': 'Fluor', 'brom': 'Brome', 'iod': 'Iode',
+    'kalilauge': 'Hydroxyde de potassium', 'kaliumhydroxid': 'Hydroxyde de potassium',
+    'zitronensäure': 'Acide citrique', 'milchsäure': 'Acide lactique',
+    'ameisensäure': 'Acide formique', 'oxalsäure': 'Acide oxalique',
+    'chromsäure': 'Acide chromique', 'flusssäure': 'Acide fluorhydrique',
+    'wasser': 'Eau', 'meerwasser': 'Eau de mer', 'sole': 'Saumure',
+    'glycerin': 'Glycérine', 'glykol': 'Glycol', 'öl': 'Huile',
+    'hydrauliköl': 'Huile hydraulique', 'motoröl': 'Huile moteur', 'heizöl': 'Fioul',
+    'benzol': 'Benzène', 'cyclohexan': 'Cyclohexane', 'heptan': 'Heptane',
     'hexan': 'Hexane', 'pentan': 'Pentane', 'oktan': 'Octane',
-    'chloroform': 'Chloroform', 'dichlormethan': 'Dichloromethane',
-    'tetrachlorkohlenstoff': 'Carbon Tetrachloride', 'perchlorethylen': 'Perchloroethylene',
-    'trichlorethylen': 'Trichloroethylene', 'butanol': 'Butanol',
-    'propanol': 'Propanol', 'phenol': 'Phenol', 'anilin': 'Aniline',
-    'pyridin': 'Pyridine', 'acrolein': 'Acrolein', 'harnstoff': 'Urea',
-    'natriumchlorid': 'Sodium Chloride', 'natriumcarbonat': 'Sodium Carbonate',
-    'natriumsulfat': 'Sodium Sulfate', 'natriumnitrat': 'Sodium Nitrate',
-    'kaliumchlorid': 'Potassium Chloride', 'calciumchlorid': 'Calcium Chloride',
-    'magnesiumchlorid': 'Magnesium Chloride', 'eisenchlorid': 'Iron Chloride',
-    'kupfersulfat': 'Copper Sulfate', 'zinksulfat': 'Zinc Sulfate',
-    'aluminiuimchlorid': 'Aluminum Chloride', 'bariumchlorid': 'Barium Chloride',
-    'bleiche': 'Bleach', 'seife': 'Soap', 'waschmittel': 'Detergent',
-    'bier': 'Beer', 'wein': 'Wine', 'milch': 'Milk', 'fruchtsaft': 'Fruit Juice',
-    'blut': 'Blood', 'urin': 'Urine', 'kot': 'Feces',
+    'chloroform': 'Chloroforme', 'dichlormethan': 'Dichlorométhane',
+    'tetrachlorkohlenstoff': 'Tétrachlorure de carbone', 'perchlorethylen': 'Perchloroéthylène',
+    'trichlorethylen': 'Trichloroéthylène', 'butanol': 'Butanol',
+    'propanol': 'Propanol', 'phenol': 'Phénol', 'anilin': 'Aniline',
+    'pyridin': 'Pyridine', 'acrolein': 'Acroléine', 'harnstoff': 'Urée',
+    'natriumchlorid': 'Chlorure de sodium', 'natriumcarbonat': 'Carbonate de sodium',
+    'natriumsulfat': 'Sulfate de sodium', 'natriumnitrat': 'Nitrate de sodium',
+    'kaliumchlorid': 'Chlorure de potassium', 'calciumchlorid': 'Chlorure de calcium',
+    'magnesiumchlorid': 'Chlorure de magnésium', 'eisenchlorid': 'Chlorure de fer',
+    'kupfersulfat': 'Sulfate de cuivre', 'zinksulfat': 'Sulfate de zinc',
+    'aluminiuimchlorid': 'Chlorure d\'aluminium', 'bariumchlorid': 'Chlorure de baryum',
+    'bleiche': 'Eau de Javel', 'seife': 'Savon', 'waschmittel': 'Détergent',
+    'bier': 'Bière', 'wein': 'Vin', 'milch': 'Lait', 'fruchtsaft': 'Jus de fruit',
+    'blut': 'Sang', 'urin': 'Urine', 'kot': 'Matières fécales',
     'natrium': 'Sodium', 'kalium': 'Potassium', 'calcium': 'Calcium',
-    'magnesium': 'Magnesium', 'aluminium': 'Aluminum', 'eisen': 'Iron',
-    'kupfer': 'Copper', 'zink': 'Zinc', 'blei': 'Lead', 'quecksilber': 'Mercury',
-    'silber': 'Silver', 'gold': 'Gold', 'platin': 'Platinum', 'nickel': 'Nickel',
+    'magnesium': 'Magnésium', 'aluminium': 'Aluminium', 'eisen': 'Fer',
+    'kupfer': 'Cuivre', 'zink': 'Zinc', 'blei': 'Plomb', 'quecksilber': 'Mercure',
+    'silber': 'Argent', 'gold': 'Or', 'platin': 'Platine', 'nickel': 'Nickel',
 };
 
 const materialInfo = {
-    // Thermoplaste
-    "HDPE": { name: "HDPE", full: "Polyethylen hoher Dichte", type: "Thermoplast" },
-    "LDPE": { name: "LDPE", full: "Polyethylen niedriger Dichte", type: "Thermoplast" },
-    "PA": { name: "PA", full: "Polyamid (Nylon)", type: "Thermoplast" },
-    "PC": { name: "PC", full: "Polycarbonat", type: "Thermoplast" },
-    "PETG": { name: "PETG", full: "Polyethylenterephthalat-Glykol", type: "Thermoplast" },
-    "PMP": { name: "PMP", full: "Polymethylpenten (TPX)", type: "Thermoplast" },
-    "POM": { name: "POM", full: "Polyoxymethylen (Acetal)", type: "Thermoplast" },
-    "PP": { name: "PP", full: "Polypropylen", type: "Thermoplast" },
-    "PS": { name: "PS", full: "Polystyrol", type: "Thermoplast" },
-    "PSU": { name: "PSU", full: "Polysulfon", type: "Thermoplast" },
-    "PVC_HART": { name: "PVC hart", full: "Hart-PVC (unweichmacht)", type: "Thermoplast" },
-    "PVC_WEICH": { name: "PVC weich", full: "Weich-PVC (weichmacht)", type: "Thermoplast" },
-    "SAN": { name: "SAN", full: "Styrol-Acrylnitril", type: "Thermoplast" },
-    // Fluorpolymere
-    "ECTFE_ETFE": { name: "ECTFE/ETFE", full: "Fluorpolymer (Halar/Tefzel)", type: "Fluorpolymer" },
-    "FEP": { name: "FEP", full: "Fluorethylenpropylen", type: "Fluorpolymer" },
-    "PTFE": { name: "PTFE", full: "Polytetrafluorethylen (Teflon®)", type: "Fluorpolymer" },
-    "PVDF": { name: "PVDF", full: "Polyvinylidenfluorid (Kynar)", type: "Fluorpolymer" },
-    // Elastomere
-    "EPDM": { name: "EPDM", full: "Ethylen-Propylen-Dien-Kautschuk", type: "Elastomer" },
-    "FPM": { name: "FPM/FKM", full: "Fluorelastomer (Viton®)", type: "Elastomer" },
-    "NBR": { name: "NBR", full: "Nitrilkautschuk (Buna-N)", type: "Elastomer" },
-    "SI": { name: "Silikon", full: "Silikonkautschuk (VMQ)", type: "Elastomer" },
-    // Metals
-    "AL": { name: "Aluminium", full: "Aluminium", type: "Metall" },
-    "V2A": { name: "V2A / SS 304", full: "Edelstahl 1.4301 (304)", type: "Metall" },
-    "V4A": { name: "V4A / SS 316", full: "Edelstahl 1.4401 (316)", type: "Metall" },
+    // Thermoplastes
+    "HDPE": { name: "HDPE", full: "Polyéthylène haute densité", type: "Thermoplaste" },
+    "LDPE": { name: "LDPE", full: "Polyéthylène basse densité", type: "Thermoplaste" },
+    "PA": { name: "PA", full: "Polyamide (Nylon)", type: "Thermoplaste" },
+    "PC": { name: "PC", full: "Polycarbonate", type: "Thermoplaste" },
+    "PETG": { name: "PETG", full: "Polyéthylène téréphtalate glycol", type: "Thermoplaste" },
+    "PMP": { name: "PMP", full: "Polyméthylpentène (TPX)", type: "Thermoplaste" },
+    "POM": { name: "POM", full: "Polyoxyméthylène (Acétal)", type: "Thermoplaste" },
+    "PP": { name: "PP", full: "Polypropylène", type: "Thermoplaste" },
+    "PS": { name: "PS", full: "Polystyrène", type: "Thermoplaste" },
+    "PSU": { name: "PSU", full: "Polysulfone", type: "Thermoplaste" },
+    "PVC_HART": { name: "PVC rigide", full: "PVC rigide (non plastifié)", type: "Thermoplaste" },
+    "PVC_WEICH": { name: "PVC souple", full: "PVC souple (plastifié)", type: "Thermoplaste" },
+    "SAN": { name: "SAN", full: "Styrène-Acrylonitrile", type: "Thermoplaste" },
+    // Fluoropolymères
+    "ECTFE_ETFE": { name: "ECTFE/ETFE", full: "Fluoropolymère (Halar/Tefzel)", type: "Fluoropolymère" },
+    "FEP": { name: "FEP", full: "Éthylène propylène fluoré", type: "Fluoropolymère" },
+    "PTFE": { name: "PTFE", full: "Polytétrafluoroéthylène (Téflon®)", type: "Fluoropolymère" },
+    "PVDF": { name: "PVDF", full: "Polyfluorure de vinylidène (Kynar)", type: "Fluoropolymère" },
+    // Élastomères
+    "EPDM": { name: "EPDM", full: "Éthylène-Propylène-Diène Monomère", type: "Élastomère" },
+    "FPM": { name: "FPM/FKM", full: "Fluoroélastomère (Viton®)", type: "Élastomère" },
+    "NBR": { name: "NBR", full: "Caoutchouc nitrile (Buna-N)", type: "Élastomère" },
+    "SI": { name: "Silicone", full: "Caoutchouc silicone (VMQ)", type: "Élastomère" },
+    // Métaux
+    "AL": { name: "Aluminium", full: "Aluminium", type: "Métal" },
+    "V2A": { name: "Inox 304", full: "Acier Inoxydable 1.4301 (304)", type: "Métal" },
+    "V4A": { name: "Inox 316", full: "Acier Inoxydable 1.4401 (316)", type: "Métal" },
 };
 
 // Rating display order (best to worst)
 const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
-// GHS pictogram emojis (fallback - always works)
+// GHS pictogram emojis
 const ghsEmoji = {
-    'GHS01': '💥', // Explosiv
-    'GHS02': '🔥', // Brennbar
-    'GHS03': '⭕', // Oxidierend
-    'GHS04': '🔵', // Gasflasche
-    'GHS05': '🧪', // Ätzend
-    'GHS06': '☠️', // Giftig
-    'GHS07': '⚠️', // Gesundheitsschädlich
-    'GHS08': '🫁', // Gesundheitsgefahr
-    'GHS09': '🌿', // Umweltgefährlich
+    'GHS01': '💥', // Explosif
+    'GHS02': '🔥', // Inflammable
+    'GHS03': '⭕', // Comburant
+    'GHS04': '🔵', // Gaz sous pression
+    'GHS05': '🧪', // Corrosif
+    'GHS06': '☠️', // Toxique
+    'GHS07': '⚠️', // Nocif
+    'GHS08': '🫁', // Danger pour la santé
+    'GHS09': '🌿', // Dangereux pour l'environnement
 };
 
-// Map old EU hazard codes to GHS pictograms (German labels)
+// Map old EU hazard codes to GHS pictograms (French labels)
 const euToGhs = {
-    'T+': { ghs: 'GHS06', label: 'Sehr giftig' },
-    'T': { ghs: 'GHS06', label: 'Giftig' },
-    'C+': { ghs: 'GHS05', label: 'Stark ätzend' },
-    'C': { ghs: 'GHS05', label: 'Ätzend' },
-    'Xn': { ghs: 'GHS07', label: 'Gesundheitsschädlich' },
-    'Xi': { ghs: 'GHS07', label: 'Reizend' },
-    'F+': { ghs: 'GHS02', label: 'Hochentzündlich' },
-    'F': { ghs: 'GHS02', label: 'Leichtentzündlich' },
-    'O': { ghs: 'GHS03', label: 'Brandfördernd' },
-    'N': { ghs: 'GHS09', label: 'Umweltgefährlich' },
+    'T+': { ghs: 'GHS06', label: 'Très toxique' },
+    'T': { ghs: 'GHS06', label: 'Toxique' },
+    'C+': { ghs: 'GHS05', label: 'Très corrosif' },
+    'C': { ghs: 'GHS05', label: 'Corrosif' },
+    'Xn': { ghs: 'GHS07', label: 'Nocif' },
+    'Xi': { ghs: 'GHS07', label: 'Irritant' },
+    'F+': { ghs: 'GHS02', label: 'Extrêmement inflammable' },
+    'F': { ghs: 'GHS02', label: 'Facilement inflammable' },
+    'O': { ghs: 'GHS03', label: 'Comburant' },
+    'N': { ghs: 'GHS09', label: 'Dangereux pour l\'environnement' },
 };
 
 function getHazardBadges(hazardStr) {
@@ -129,7 +129,7 @@ let chemicals = [];
 let chemicalGroups = {};
 let currentGroupIndices = [];
 let currentSelectedIdx = 0;
-let currentLang = 'de';
+let currentLang = 'fr';
 
 // Helper functions for material filters
 function getSelectedMaterials() {
@@ -146,7 +146,6 @@ window.clearMaterialFilters = function() {
     } else {
         showSearchResults(searchInput.value.toLowerCase().trim());
     }
-    // Update table to show all materials again
     if (currentGroupIndices.length > 0) {
         updateRatingsTable();
     }
@@ -158,10 +157,10 @@ window.toggleMoreMaterials = function() {
     if (!more || !btn) return;
     if (more.classList.contains('hidden')) {
         more.classList.remove('hidden');
-        btn.textContent = '−Weniger';
+        btn.textContent = '−moins';
     } else {
         more.classList.add('hidden');
-        btn.textContent = '+Mehr';
+        btn.textContent = '+plus';
     }
 };
 
@@ -176,7 +175,7 @@ async function init() {
         console.log(`Loaded ${chemicals.length} chemicals with ${Object.keys(materialInfo).length} materials`);
     } catch (err) {
         console.error('Failed to load chemical data:', err);
-        document.getElementById('searchInput').placeholder = 'Error loading data...';
+        document.getElementById('searchInput').placeholder = 'Erreur de chargement...';
     }
 }
 
@@ -193,39 +192,45 @@ function buildIndex() {
 }
 
 function getChemicalKey(c) {
-    // Use German name as canonical key (all data is German)
     return c.name.toLowerCase();
 }
 
 function translateName(germanName) {
-    // Try to find an English translation
     const lower = germanName.toLowerCase();
-    for (const [de, en] of Object.entries(translations)) {
+    for (const [de, fr] of Object.entries(translations)) {
         if (lower === de || lower.startsWith(de + ' ') || lower.startsWith(de + ',')) {
-            return germanName.replace(new RegExp(de, 'i'), en);
+            return germanName.replace(new RegExp(de, 'i'), fr);
         }
         if (lower.includes(de)) {
-            return germanName.replace(new RegExp(de, 'i'), en);
+            return germanName.replace(new RegExp(de, 'i'), fr);
         }
     }
-    return germanName; // Return German if no translation
+    return germanName;
 }
 
 function getDisplayName(c) {
-    // German version - always show German name
-    return c.name;
+    // French version - try to show French name
+    return translateName(c.name);
 }
 
 function getSecondaryName(c) {
-    // Show English translation as secondary if available
-    const en = translateName(c.name);
-    return en !== c.name ? en : '';
+    const fr = translateName(c.name);
+    // Show original German name as secondary if translated
+    return fr !== c.name ? c.name : '';
 }
 
-// German version - keep German concentration terms
+// French concentration terms
 function translateConc(conc) {
-    if (!conc) return 'Rein / Unverdünnt';
-    return conc;
+    if (!conc) return 'Pur / Non dilué';
+    // Translate common German concentration terms to French
+    return conc
+        .replace(/rein/gi, 'pur')
+        .replace(/unverdünnt/gi, 'non dilué')
+        .replace(/konzentriert/gi, 'concentré')
+        .replace(/verdünnt/gi, 'dilué')
+        .replace(/gesättigt/gi, 'saturé')
+        .replace(/wässrig/gi, 'aqueux')
+        .replace(/technisch/gi, 'technique');
 }
 
 function setupEventListeners() {
@@ -234,7 +239,6 @@ function setupEventListeners() {
     const langSelect = document.getElementById('langSelect');
     const ratingFilter = document.getElementById('ratingFilter');
 
-    // Search input - only trigger on text search
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
         if (query.length < 2) {
@@ -245,7 +249,6 @@ function setupEventListeners() {
         searchResults.classList.remove('hidden');
     });
 
-    // Material checkbox changes - only update the results TABLE
     document.addEventListener('change', (e) => {
         if (e.target.matches('#materialFilters input[type="checkbox"], #moreMaterials input[type="checkbox"]')) {
             if (currentGroupIndices.length > 0) {
@@ -254,14 +257,12 @@ function setupEventListeners() {
         }
     });
 
-    // Rating filter change - update the table
     ratingFilter?.addEventListener('change', () => {
         if (currentGroupIndices.length > 0) {
             updateRatingsTable();
         }
     });
 
-    // Click on search result
     searchResults.addEventListener('click', (e) => {
         const item = e.target.closest('[data-key]');
         if (item) {
@@ -274,18 +275,17 @@ function setupEventListeners() {
         }
     });
 
-    // Language switch
     langSelect?.addEventListener('change', () => {
-        if (langSelect.value === 'en') {
+        const lang = langSelect.value;
+        if (lang === 'en') {
             window.location.href = 'index.html';
-        } else if (langSelect.value === 'es') {
+        } else if (lang === 'es') {
             window.location.href = 'es.html';
-        } else if (langSelect.value === 'fr') {
-            window.location.href = 'fr.html';
+        } else if (lang === 'de') {
+            window.location.href = 'de.html';
         }
     });
 
-    // Close search on click outside
     document.addEventListener('click', (e) => {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
             searchResults.classList.add('hidden');
@@ -300,13 +300,14 @@ function showSearchResults(query) {
     const queryLower = query.toLowerCase();
 
     chemicals.forEach((c, idx) => {
-        const displayName = getDisplayName(c); // German name
+        const displayName = getDisplayName(c);
         const displayNameLower = displayName.toLowerCase();
+        const originalNameLower = c.name.toLowerCase();
         
-        // Search by displayed name (German), aliases, CAS, or formula
         const aliasMatch = c.aliases && c.aliases.some(a => a.toLowerCase().includes(queryLower));
         const matches = 
             displayNameLower.includes(queryLower) ||
+            originalNameLower.includes(queryLower) ||
             aliasMatch ||
             (c.cas && c.cas.includes(query)) ||
             (c.formula && c.formula.toLowerCase().includes(queryLower));
@@ -321,7 +322,6 @@ function showSearchResults(query) {
         }
     });
 
-    // Sort: exact matches first, then starts-with, then contains
     const sortedMatches = Array.from(seenDisplayNames).sort((a, b) => {
         const aExact = a === queryLower;
         const bExact = b === queryLower;
@@ -350,7 +350,7 @@ function showSearchResults(query) {
         }).join('');
         searchResults.classList.remove('hidden');
     } else {
-        searchResults.innerHTML = '<div class="px-4 py-3 text-gray-500">Keine Chemikalien gefunden</div>';
+        searchResults.innerHTML = '<div class="px-4 py-3 text-gray-500">Aucun produit chimique trouvé</div>';
         searchResults.classList.remove('hidden');
     }
 }
@@ -364,7 +364,6 @@ function highlightMatch(text, query) {
 }
 
 function showDefaultChemical() {
-    // Show Aceton as default (German name)
     const acetoneKey = 'aceton';
     const indices = chemicalGroups[acetoneKey];
     if (indices?.length > 0) {
@@ -391,7 +390,6 @@ function showResultsForGroup(indices) {
     casEl.textContent = firstChem.cas ? `CAS: ${firstChem.cas}` : '';
     casEl.style.display = firstChem.cas ? 'inline' : 'none';
 
-    // Hazard badges
     const hazardEl = document.getElementById('chemHazard');
     if (hazardEl) {
         const badges = getHazardBadges(firstChem.hazard);
@@ -400,7 +398,6 @@ function showResultsForGroup(indices) {
         hazardEl.className = 'flex gap-1 items-center';
     }
     
-    // Flammable indicator (if not already covered by hazard)
     const flammableEl = document.getElementById('chemFlammable');
     if (flammableEl) {
         const hasFlammableHazard = firstChem.hazard && (firstChem.hazard.includes('F') || firstChem.hazard.includes('F+'));
@@ -409,7 +406,6 @@ function showResultsForGroup(indices) {
     
     document.getElementById('searchInput').value = displayName;
 
-    // Concentration selector
     const concContainer = document.getElementById('chemConc');
     const concWrapper = document.getElementById('chemConcWrapper');
     
@@ -430,11 +426,11 @@ function showResultsForGroup(indices) {
         }).join('');
         
         concContainer.innerHTML = `
-            <span class="font-semibold text-amber-800">Konzentration:</span>
+            <span class="font-semibold text-amber-800">Concentration :</span>
             <select id="concSelect" class="ml-2 bg-white text-amber-900 font-bold px-3 py-1 rounded border-2 border-amber-400 cursor-pointer focus:border-amber-500 focus:outline-none">
                 ${options}
             </select>
-            <span class="text-xs text-amber-600 ml-2">← Auswählen für Tabelle</span>
+            <span class="text-xs text-amber-600 ml-2">← Sélectionner pour le tableau</span>
         `;
         concWrapper.style.display = 'inline-flex';
         
@@ -444,8 +440,8 @@ function showResultsForGroup(indices) {
         });
     } else {
         const conc = translateConc(firstChem.concentration);
-        if (conc && conc !== 'Rein / Unverdünnt') {
-            concContainer.innerHTML = `<span class="font-semibold text-amber-800">Konzentration:</span> <span class="font-bold text-amber-900">${conc}</span>`;
+        if (conc && conc !== 'Pur / Non dilué') {
+            concContainer.innerHTML = `<span class="font-semibold text-amber-800">Concentration :</span> <span class="font-bold text-amber-900">${conc}</span>`;
             concWrapper.style.display = 'inline-flex';
         } else {
             concWrapper.style.display = 'none';
@@ -465,17 +461,14 @@ function updateRatingsTable() {
     const recommended = [];
     const selectedMaterials = getSelectedMaterials();
     const ratingFilter = document.getElementById('ratingFilter');
-    const minRating = ratingFilter?.value || '12'; // '1' = nur A, '12' = A oder B
+    const minRating = ratingFilter?.value || '12';
     
-    // Get materials to show - either selected ones or all
     let materialsToShow;
     if (selectedMaterials.length > 0) {
-        // Only show selected materials
         materialsToShow = selectedMaterials
             .filter(mat => chem.ratings[mat])
             .map(mat => [mat, chem.ratings[mat]]);
     } else {
-        // Show all materials, sorted by rating, filtered by rating preference
         materialsToShow = Object.entries(chem.ratings)
             .filter(([mat, rating]) => {
                 if (minRating === '1') return rating.c20 === '1';
@@ -490,7 +483,7 @@ function updateRatingsTable() {
     }
 
     if (materialsToShow.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-500">Keine Materialien mit ${minRating === '1' ? 'A' : 'A/B'}-Bewertung für diese Chemikalie. Versuchen Sie, den Filter zu ändern.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-500">Aucun matériau avec note ${minRating === '1' ? 'A' : 'A/B'} pour ce produit chimique. Essayez de modifier le filtre.</td></tr>`;
     } else {
         tbody.innerHTML = materialsToShow.map(([mat, rating]) => {
             const info = materialInfo[mat] || { name: mat, full: mat, type: '' };
@@ -517,14 +510,13 @@ function updateRatingsTable() {
         }).join('');
     }
 
-    // Update recommendations
     const recMaterials = document.getElementById('recMaterials');
     const recommendation = document.getElementById('recommendation');
     
     if (recMaterials) {
         recMaterials.textContent = recommended.length > 0 
             ? recommended.join(', ') 
-            : 'Bewertungen unten prüfen - eingeschränkte Kompatibilität';
+            : 'Voir les notes ci-dessous - compatibilité limitée';
     }
     
     if (recommendation) {
@@ -534,7 +526,6 @@ function updateRatingsTable() {
     }
 }
 
-// Global search function
 window.searchFor = function(term) {
     const searchInput = document.getElementById('searchInput');
     searchInput.value = term;
@@ -543,5 +534,4 @@ window.searchFor = function(term) {
     }, 0);
 };
 
-// Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', init);
