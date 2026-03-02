@@ -75,6 +75,56 @@ const materialInfo = {
 // Rating display order (best to worst)
 const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
+// Fuzzy search - Levenshtein distance
+function levenshtein(a, b) {
+    if (a.length === 0) return b.length;
+    if (b.length === 0) return a.length;
+    const matrix = [];
+    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+    for (let i = 1; i <= b.length; i++) {
+        for (let j = 1; j <= a.length; j++) {
+            matrix[i][j] = b[i-1] === a[j-1] 
+                ? matrix[i-1][j-1]
+                : Math.min(matrix[i-1][j-1] + 1, matrix[i][j-1] + 1, matrix[i-1][j] + 1);
+        }
+    }
+    return matrix[b.length][a.length];
+}
+
+// Fuzzy match score (lower is better, -1 = no match)
+function fuzzyScore(query, text) {
+    query = query.toLowerCase();
+    text = text.toLowerCase();
+    
+    // Exact match
+    if (text === query) return 0;
+    // Starts with
+    if (text.startsWith(query)) return 1;
+    // Contains
+    if (text.includes(query)) return 2;
+    
+    // Fuzzy: check if query is close to any word in text
+    const words = text.split(/[\s\-\/,]+/);
+    for (const word of words) {
+        if (word.length >= 3 && query.length >= 3) {
+            const dist = levenshtein(query, word.substring(0, query.length + 2));
+            // Allow 1 typo per 4 chars
+            const maxDist = Math.max(1, Math.floor(query.length / 4));
+            if (dist <= maxDist) return 3 + dist;
+        }
+    }
+    
+    // Check if all query chars appear in order (subsequence)
+    let qi = 0;
+    for (let i = 0; i < text.length && qi < query.length; i++) {
+        if (text[i] === query[qi]) qi++;
+    }
+    if (qi === query.length) return 5;
+    
+    return -1; // No match
+}
+
 // GHS pictogram emojis (fallback - always works)
 // GHS pictogram images
 const ghsImages = {
@@ -326,40 +376,53 @@ function showSearchResults(query) {
         const displayName = getDisplayName(c);
         const displayNameLower = displayName.toLowerCase();
         
-        // Search by displayed name, aliases, CAS, formula, or Spanish name
-        const aliasMatch = c.aliases && c.aliases.some(a => a.toLowerCase().includes(queryLower));
-        const spanishMatch = c.name_es && c.name_es.toLowerCase().includes(queryLower);
-        const germanMatch = c.name.toLowerCase().includes(queryLower);
-        const textMatches = 
-            displayNameLower.includes(queryLower) ||
-            aliasMatch ||
-            spanishMatch ||
-            germanMatch ||
-            (c.cas && c.cas.includes(query)) ||
-            (c.formula && c.formula.toLowerCase().includes(queryLower));
+        // Get best fuzzy score across all searchable fields
+        let bestScore = fuzzyScore(queryLower, displayNameLower);
         
-        if (textMatches) {
+        // Check aliases
+        if (c.aliases) {
+            for (const alias of c.aliases) {
+                const score = fuzzyScore(queryLower, alias);
+                if (score >= 0 && (bestScore < 0 || score < bestScore)) bestScore = score;
+            }
+        }
+        
+        // Check other names
+        if (c.name_es) {
+            const score = fuzzyScore(queryLower, c.name_es);
+            if (score >= 0 && (bestScore < 0 || score < bestScore)) bestScore = score;
+        }
+        if (c.name) {
+            const score = fuzzyScore(queryLower, c.name);
+            if (score >= 0 && (bestScore < 0 || score < bestScore)) bestScore = score;
+        }
+        
+        // CAS exact/partial match
+        if (c.cas && c.cas.includes(query)) bestScore = bestScore < 0 ? 2 : Math.min(bestScore, 2);
+        
+        // Formula match
+        if (c.formula) {
+            const score = fuzzyScore(queryLower, c.formula);
+            if (score >= 0 && (bestScore < 0 || score < bestScore)) bestScore = score;
+        }
+        
+        if (bestScore >= 0) {
             const displayKey = displayNameLower;
             if (!seenDisplayNames.has(displayKey)) {
                 seenDisplayNames.add(displayKey);
                 const key = getChemicalKey(c);
-                matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key };
+                matchInfo[displayKey] = { chem: c, indices: chemicalGroups[key], key, score: bestScore };
+            } else if (matchInfo[displayKey].score > bestScore) {
+                matchInfo[displayKey].score = bestScore;
             }
         }
     });
 
-    // Sort: exact matches first, then starts-with, then contains
+    // Sort by fuzzy score (lower = better match)
     const sortedMatches = Array.from(seenDisplayNames).sort((a, b) => {
-        const aExact = a === query;
-        const bExact = b === query;
-        if (aExact && !bExact) return -1;
-        if (bExact && !aExact) return 1;
-        
-        const aStarts = a.startsWith(query);
-        const bStarts = b.startsWith(query);
-        if (aStarts && !bStarts) return -1;
-        if (bStarts && !aStarts) return 1;
-        
+        const scoreA = matchInfo[a].score;
+        const scoreB = matchInfo[b].score;
+        if (scoreA !== scoreB) return scoreA - scoreB;
         return a.localeCompare(b);
     }).slice(0, 20);
 
@@ -370,15 +433,17 @@ function showSearchResults(query) {
             const displayName = getDisplayName(c);
             const chemKey = info.key; // Use original chemical key for lookup
             
+            const isFuzzy = info.score >= 3;
+            const fuzzyBadge = isFuzzy ? '<span class="ml-2 text-xs text-blue-500 bg-blue-50 px-1 rounded">~similar</span>' : '';
             return `
                 <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${chemKey}">
-                    <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}</div>
+                    <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}${fuzzyBadge}</div>
                 </div>
             `;
         }).join('');
         searchResults.classList.remove('hidden');
     } else {
-        searchResults.innerHTML = `<div class="px-4 py-3 text-gray-500">No chemicals found</div>`;
+        searchResults.innerHTML = `<div class="px-4 py-3 text-gray-500">No chemicals found for "${query}"<br><span class="text-xs">Try: acetone, sulfuric acid, sodium hydroxide</span></div>`;
         searchResults.classList.remove('hidden');
     }
 }
