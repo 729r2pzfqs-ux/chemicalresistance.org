@@ -263,58 +263,13 @@
         </div>
     </footer>
 
+    <!-- External chemical database -->
+    <script src="js/chemicals_hazard_data.js"></script>
+    
     <script>
-    // Chemical database with hazard classes
-    const chemicalDatabase = {
-        "Sulfuric Acid": { classes: ["acid", "corrosive"], cas: "7664-93-9", de: "Schwefelsäure", es: "Ácido sulfúrico", fr: "Acide sulfurique", pt: "Ácido sulfúrico" },
-        "Hydrochloric Acid": { classes: ["acid", "corrosive"], cas: "7647-01-0", de: "Salzsäure", es: "Ácido clorhídrico", fr: "Acide chlorhydrique", pt: "Ácido clorídrico" },
-        "Nitric Acid": { classes: ["acid", "corrosive", "oxidizer"], cas: "7697-37-2", de: "Salpetersäure", es: "Ácido nítrico", fr: "Acide nitrique", pt: "Ácido nítrico" },
-        "Phosphoric Acid": { classes: ["acid", "corrosive"], cas: "7664-38-2", de: "Phosphorsäure", es: "Ácido fosfórico", fr: "Acide phosphorique", pt: "Ácido fosfórico" },
-        "Acetic Acid": { classes: ["acid", "corrosive", "flammable"], cas: "64-19-7", de: "Essigsäure", es: "Ácido acético", fr: "Acide acétique", pt: "Ácido acético" },
-        "Formic Acid": { classes: ["acid", "corrosive", "flammable"], cas: "64-18-6", de: "Ameisensäure", es: "Ácido fórmico", fr: "Acide formique", pt: "Ácido fórmico" },
-        "Sodium Hydroxide": { classes: ["base", "corrosive"], cas: "1310-73-2", de: "Natriumhydroxid", es: "Hidróxido de sodio", fr: "Hydroxyde de sodium", pt: "Hidróxido de sódio" },
-        "Potassium Hydroxide": { classes: ["base", "corrosive"], cas: "1310-58-3", de: "Kaliumhydroxid", es: "Hidróxido de potasio", fr: "Hydroxyde de potassium", pt: "Hidróxido de potássio" },
-        "Ammonia": { classes: ["base", "corrosive", "toxic"], cas: "7664-41-7", de: "Ammoniak", es: "Amoníaco", fr: "Ammoniac", pt: "Amoníaco" },
-        "Acetone": { classes: ["flammable"], cas: "67-64-1", de: "Aceton", es: "Acetona", fr: "Acétone", pt: "Acetona" },
-        "Ethanol": { classes: ["flammable"], cas: "64-17-5", de: "Ethanol", es: "Etanol", fr: "Éthanol", pt: "Etanol" },
-        "Methanol": { classes: ["flammable", "toxic"], cas: "67-56-1", de: "Methanol", es: "Metanol", fr: "Méthanol", pt: "Metanol" },
-        "Isopropanol": { classes: ["flammable"], cas: "67-63-0", de: "Isopropanol", es: "Isopropanol", fr: "Isopropanol", pt: "Isopropanol" },
-        "Toluene": { classes: ["flammable", "toxic"], cas: "108-88-3", de: "Toluol", es: "Tolueno", fr: "Toluène", pt: "Tolueno" },
-        "Xylene": { classes: ["flammable", "toxic"], cas: "1330-20-7", de: "Xylol", es: "Xileno", fr: "Xylène", pt: "Xileno" },
-        "Benzene": { classes: ["flammable", "toxic"], cas: "71-43-2", de: "Benzol", es: "Benceno", fr: "Benzène", pt: "Benzeno" },
-        "Hexane": { classes: ["flammable", "toxic"], cas: "110-54-3", de: "Hexan", es: "Hexano", fr: "Hexane", pt: "Hexano" },
-        "Hydrogen Peroxide": { classes: ["oxidizer", "corrosive"], cas: "7722-84-1", de: "Wasserstoffperoxid", es: "Peróxido de hidrógeno", fr: "Peroxyde d'hydrogène", pt: "Peróxido de hidrogênio" },
-        "Sodium Hypochlorite": { classes: ["oxidizer", "corrosive"], cas: "7681-52-9", de: "Natriumhypochlorit", es: "Hipoclorito de sodio", fr: "Hypochlorite de sodium", pt: "Hipoclorito de sódio" },
-        "Bleach": { classes: ["oxidizer", "corrosive"], cas: "7681-52-9", de: "Bleichmittel", es: "Lejía", fr: "Eau de Javel", pt: "Água sanitária" },
-        "Potassium Permanganate": { classes: ["oxidizer", "toxic"], cas: "7722-64-7", de: "Kaliumpermanganat", es: "Permanganato de potasio", fr: "Permanganate de potassium", pt: "Permanganato de potássio" },
-        "Formaldehyde": { classes: ["flammable", "toxic", "corrosive"], cas: "50-00-0", de: "Formaldehyd", es: "Formaldehído", fr: "Formaldéhyde", pt: "Formaldeído" },
-        "Chlorine": { classes: ["oxidizer", "toxic", "corrosive"], cas: "7782-50-5", de: "Chlor", es: "Cloro", fr: "Chlore", pt: "Cloro" },
-        "Acetonitrile": { classes: ["flammable", "toxic"], cas: "75-05-8", de: "Acetonitril", es: "Acetonitrilo", fr: "Acétonitrile", pt: "Acetonitrila" },
-        "Dichloromethane": { classes: ["toxic"], cas: "75-09-2", de: "Dichlormethan", es: "Diclorometano", fr: "Dichlorométhane", pt: "Diclorometano" },
-        "Chloroform": { classes: ["toxic"], cas: "67-66-3", de: "Chloroform", es: "Cloroformo", fr: "Chloroforme", pt: "Clorofórmio" },
-        "Diethyl Ether": { classes: ["flammable"], cas: "60-29-7", de: "Diethylether", es: "Éter dietílico", fr: "Éther diéthylique", pt: "Éter dietílico" },
-        "Tetrahydrofuran": { classes: ["flammable"], cas: "109-99-9", de: "Tetrahydrofuran", es: "Tetrahidrofurano", fr: "Tétrahydrofurane", pt: "Tetrahidrofurano" }
-    };
-
-    // Compatibility rules
-    const compatibilityRules = {
-        "acid+base": { rating: "never", reason: "Violent exothermic reaction - NEVER store together" },
-        "acid+flammable": { rating: "separate", reason: "Store in separate cabinets" },
-        "acid+oxidizer": { rating: "separate", reason: "May produce toxic gases - separate storage required" },
-        "base+flammable": { rating: "separate", reason: "Store in separate cabinets" },
-        "base+oxidizer": { rating: "caution", reason: "Check specific chemicals for compatibility" },
-        "flammable+oxidizer": { rating: "never", reason: "Fire and explosion hazard - NEVER store together" },
-        "flammable+flammable": { rating: "ok", reason: "Can store together in flammable safety cabinet" },
-        "oxidizer+toxic": { rating: "separate", reason: "May release toxic fumes - separate storage" },
-        "acid+acid": { rating: "ok", reason: "Can store together in acid cabinet" },
-        "base+base": { rating: "ok", reason: "Can store together in base cabinet" },
-        "toxic+toxic": { rating: "caution", reason: "Check specific chemicals for reactions" },
-        "corrosive+flammable": { rating: "separate", reason: "Store in separate areas" },
-        "acid+toxic": { rating: "caution", reason: "Check specific chemicals - may release toxic gases" },
-        "base+toxic": { rating: "caution", reason: "Check specific chemicals for compatibility" },
-        "flammable+toxic": { rating: "separate", reason: "Store in separate ventilated areas" },
-        "oxidizer+oxidizer": { rating: "caution", reason: "Check specific chemicals - some oxidizers are incompatible" }
-    };
+    // Use the external database
+    const chemicalDatabase = window.chemicalHazardDB;
+    const compatibilityRules = window.storageCompatibility;
 
     const classColors = {
         acid: { bg: "bg-red-100", border: "border-red-400", text: "text-red-700" },
@@ -345,25 +300,27 @@
             return;
         }
 
-        const matches = Object.keys(chemicalDatabase).filter(name => 
-            name.toLowerCase().includes(query) || 
-            chemicalDatabase[name].cas.includes(query) ||
-            (chemicalDatabase[name].de && chemicalDatabase[name].de.toLowerCase().includes(query)) ||
-            (chemicalDatabase[name].es && chemicalDatabase[name].es.toLowerCase().includes(query))
-        ).slice(0, 8);
+        const matches = Object.keys(chemicalDatabase).filter(name => {
+            const chem = chemicalDatabase[name];
+            return name.toLowerCase().includes(query) || 
+                chem.cas?.includes(query) ||
+                chem.de?.toLowerCase().includes(query) ||
+                chem.es?.toLowerCase().includes(query) ||
+                chem.synonyms?.some(s => s.toLowerCase().includes(query));
+        }).slice(0, 10);
 
         if (matches.length === 0) {
             searchResults.innerHTML = '<div class="p-3 text-gray-500">No chemicals found</div>';
         } else {
             searchResults.innerHTML = matches.map(name => {
                 const chem = chemicalDatabase[name];
-                const classLabels = chem.classes.map(c => 
+                const classLabels = (chem.classes || []).map(c => 
                     `<span class="text-xs px-1.5 py-0.5 rounded ${classColors[c]?.bg || 'bg-gray-100'} ${classColors[c]?.text || 'text-gray-700'}">${classNames[c] || c}</span>`
                 ).join(' ');
                 return `
                     <div class="p-3 hover:bg-blue-50 cursor-pointer border-b last:border-b-0" onclick="addChemical('${name}')">
                         <div class="font-medium text-gray-900">${name}</div>
-                        <div class="text-xs text-gray-500 mt-1">CAS: ${chem.cas} · ${classLabels}</div>
+                        <div class="text-xs text-gray-500 mt-1">CAS: ${chem.cas || 'N/A'} · ${classLabels || 'Non-hazardous'}</div>
                     </div>
                 `;
             }).join('');
@@ -371,7 +328,6 @@
         searchResults.classList.remove('hidden');
     });
 
-    // Hide search results when clicking outside
     document.addEventListener('click', function(e) {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
             searchResults.classList.add('hidden');
@@ -384,7 +340,6 @@
             alert('Maximum 10 chemicals can be compared at once');
             return;
         }
-
         selectedChemicals.push(name);
         searchInput.value = '';
         searchResults.classList.add('hidden');
@@ -400,15 +355,14 @@
 
     function updateSelectedDisplay() {
         if (selectedChemicals.length === 0) {
-            emptyState.classList.remove('hidden');
-            selectedContainer.innerHTML = '<span class="text-gray-400 text-sm" id="emptyState">No chemicals selected. Search and add chemicals above.</span>';
+            selectedContainer.innerHTML = '<span class="text-gray-400 text-sm">No chemicals selected. Search and add chemicals above.</span>';
             resultsSection.classList.add('hidden');
             return;
         }
 
         selectedContainer.innerHTML = selectedChemicals.map(name => {
             const chem = chemicalDatabase[name];
-            const mainClass = chem.classes[0];
+            const mainClass = (chem.classes || [])[0];
             const colors = classColors[mainClass] || { bg: 'bg-gray-100', border: 'border-gray-300', text: 'text-gray-700' };
             return `
                 <div class="chemical-tag flex items-center gap-2 px-3 py-2 rounded-lg border-2 ${colors.bg} ${colors.border}">
@@ -419,7 +373,6 @@
                 </div>
             `;
         }).join('');
-
         lucide.createIcons();
     }
 
@@ -434,10 +387,8 @@
             resultsSection.classList.add('hidden');
             return;
         }
-
         resultsSection.classList.remove('hidden');
 
-        // Check all pairs
         const pairs = [];
         for (let i = 0; i < selectedChemicals.length; i++) {
             for (let j = i + 1; j < selectedChemicals.length; j++) {
@@ -447,8 +398,8 @@
                 let worstRating = "ok";
                 let worstReason = "Compatible for storage";
                 
-                for (const c1 of chem1.classes) {
-                    for (const c2 of chem2.classes) {
+                for (const c1 of (chem1.classes || [])) {
+                    for (const c2 of (chem2.classes || [])) {
                         const compat = getCompatibility(c1, c2);
                         if (compat.rating === "never" || (compat.rating === "separate" && worstRating !== "never") || 
                             (compat.rating === "caution" && worstRating === "ok")) {
@@ -467,21 +418,15 @@
             }
         }
 
-        // Sort by severity
         const severity = { never: 0, separate: 1, caution: 2, ok: 3 };
         pairs.sort((a, b) => severity[a.rating] - severity[b.rating]);
 
-        // Display results
-        const ratingIcons = {
-            ok: '✓', caution: '⚠️', separate: '↔️', never: '✗'
-        };
-        const ratingLabels = {
-            ok: 'OK', caution: 'Caution', separate: 'Separate', never: 'NEVER'
-        };
+        const ratingIcons = { ok: '✓', caution: '⚠️', separate: '↔️', never: '✗' };
+        const ratingLabels = { ok: 'OK', caution: 'Caution', separate: 'Separate', never: 'NEVER' };
 
         document.getElementById('compatibilityResults').innerHTML = pairs.map(p => `
-            <div class="flex items-center justify-between p-3 border-b last:border-b-0 ${p.rating === 'never' ? 'bg-red-50' : ''}">
-                <div class="flex items-center gap-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-3 border-b last:border-b-0 ${p.rating === 'never' ? 'bg-red-50' : ''}">
+                <div class="flex items-center gap-3 mb-2 md:mb-0">
                     <span class="font-medium">${p.chem1}</span>
                     <span class="text-gray-400">+</span>
                     <span class="font-medium">${p.chem2}</span>
@@ -498,11 +443,12 @@
         
         for (const name of selectedChemicals) {
             const chem = chemicalDatabase[name];
-            if (chem.classes.includes('acid')) cabinets.acid.push(name);
-            else if (chem.classes.includes('base')) cabinets.base.push(name);
-            else if (chem.classes.includes('flammable')) cabinets.flammable.push(name);
-            else if (chem.classes.includes('oxidizer')) cabinets.oxidizer.push(name);
-            else if (chem.classes.includes('toxic')) cabinets.toxic.push(name);
+            const classes = chem.classes || [];
+            if (classes.includes('acid')) cabinets.acid.push(name);
+            else if (classes.includes('base')) cabinets.base.push(name);
+            else if (classes.includes('flammable')) cabinets.flammable.push(name);
+            else if (classes.includes('oxidizer')) cabinets.oxidizer.push(name);
+            else if (classes.includes('toxic')) cabinets.toxic.push(name);
             else cabinets.general.push(name);
         }
 
@@ -546,7 +492,6 @@
         window.location.href = urls[lang] || urls.en;
     }
 
-    // Initialize icons
     lucide.createIcons();
     </script>
 </body>

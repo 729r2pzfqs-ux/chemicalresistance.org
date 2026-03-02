@@ -315,265 +315,13 @@
     </footer>
 
     <script>
-    // SDS Database with detailed information
-    const sdsDatabase = {
-        "Sulfuric Acid": {
-            cas: "7664-93-9",
-            formula: "H₂SO₄",
-            synonyms: ["Battery acid", "Oil of vitriol"],
-            ghs: ["GHS05", "GHS07"],
-            hazardStatements: [
-                { code: "H314", text: "Causes severe skin burns and eye damage" },
-                { code: "H290", text: "May be corrosive to metals" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Chemical splash goggles + face shield" },
-                skin: { required: true, type: "Butyl or neoprene gloves, chemical-resistant suit" },
-                respiratory: { required: true, type: "Acid gas respirator if ventilation inadequate" },
-                other: "Chemical-resistant boots, emergency shower access"
-            },
-            storage: {
-                cabinet: "Acid cabinet (separate from bases and oxidizers)",
-                temp: "Store below 35°C (95°F)",
-                ventilation: "Store in well-ventilated area",
-                incompatible: ["Bases", "Organic materials", "Metals", "Water (add acid to water, never reverse)"]
-            },
-            transport: {
-                un: "1830",
-                class: "8",
-                packingGroup: "II",
-                properShipping: "Sulfuric acid"
-            },
-            firstAid: {
-                inhalation: "Move to fresh air. If breathing difficult, give oxygen. Seek medical attention.",
-                skin: "Remove contaminated clothing. Flush with water for 15+ minutes. Seek medical attention.",
-                eyes: "Flush with water for 15+ minutes, lifting eyelids. Seek immediate medical attention.",
-                ingestion: "Do NOT induce vomiting. Rinse mouth. Drink water if conscious. Seek immediate medical attention."
-            }
-        },
-        "Hydrochloric Acid": {
-            cas: "7647-01-0",
-            formula: "HCl",
-            synonyms: ["Muriatic acid", "Hydrogen chloride"],
-            ghs: ["GHS05", "GHS07"],
-            hazardStatements: [
-                { code: "H314", text: "Causes severe skin burns and eye damage" },
-                { code: "H335", text: "May cause respiratory irritation" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Chemical splash goggles + face shield" },
-                skin: { required: true, type: "PVC or neoprene gloves, chemical-resistant apron" },
-                respiratory: { required: true, type: "Acid gas respirator in confined spaces" },
-                other: "Emergency shower and eyewash access"
-            },
-            storage: {
-                cabinet: "Acid cabinet (corrosion-resistant)",
-                temp: "Store below 25°C (77°F)",
-                ventilation: "Well-ventilated area, away from heat",
-                incompatible: ["Bases", "Metals", "Oxidizers", "Amines"]
-            },
-            transport: { un: "1789", class: "8", packingGroup: "II", properShipping: "Hydrochloric acid" },
-            firstAid: {
-                inhalation: "Move to fresh air. Give oxygen if breathing difficult. Seek medical help.",
-                skin: "Remove clothing. Flush skin with water for 15+ minutes.",
-                eyes: "Flush with water for 15-20 minutes. Seek immediate medical attention.",
-                ingestion: "Do NOT induce vomiting. Rinse mouth. Drink milk or water if conscious."
-            }
-        },
-        "Sodium Hydroxide": {
-            cas: "1310-73-2",
-            formula: "NaOH",
-            synonyms: ["Caustic soda", "Lye"],
-            ghs: ["GHS05"],
-            hazardStatements: [
-                { code: "H314", text: "Causes severe skin burns and eye damage" },
-                { code: "H290", text: "May be corrosive to metals" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Chemical splash goggles + face shield" },
-                skin: { required: true, type: "Nitrile or neoprene gloves, chemical-resistant suit" },
-                respiratory: { required: false, type: "Not typically required with good ventilation" },
-                other: "Chemical-resistant boots"
-            },
-            storage: {
-                cabinet: "Base/alkali cabinet (separate from acids)",
-                temp: "Store at room temperature",
-                ventilation: "Keep container tightly closed",
-                incompatible: ["Acids", "Aluminum", "Zinc", "Tin", "Water (dissolving is exothermic)"]
-            },
-            transport: { un: "1823", class: "8", packingGroup: "II", properShipping: "Sodium hydroxide, solid" },
-            firstAid: {
-                inhalation: "Move to fresh air. Seek medical attention if symptoms persist.",
-                skin: "Brush off solid. Flush with water for 15+ minutes. Remove contaminated clothing.",
-                eyes: "Flush with water for 30+ minutes. Seek immediate medical attention.",
-                ingestion: "Do NOT induce vomiting. Rinse mouth. Drink water or milk. Seek medical help."
-            }
-        },
-        "Acetone": {
-            cas: "67-64-1",
-            formula: "C₃H₆O",
-            synonyms: ["Propanone", "Dimethyl ketone"],
-            ghs: ["GHS02", "GHS07"],
-            hazardStatements: [
-                { code: "H225", text: "Highly flammable liquid and vapor" },
-                { code: "H319", text: "Causes serious eye irritation" },
-                { code: "H336", text: "May cause drowsiness or dizziness" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Safety glasses or goggles" },
-                skin: { required: true, type: "Nitrile gloves (limited protection), butyl rubber for extended contact" },
-                respiratory: { required: false, type: "Use in well-ventilated area; organic vapor respirator if needed" },
-                other: "No smoking, no open flames"
-            },
-            storage: {
-                cabinet: "Flammable safety cabinet",
-                temp: "Store below 25°C (77°F), away from heat/ignition sources",
-                ventilation: "Well-ventilated area",
-                incompatible: ["Oxidizers", "Strong acids", "Strong bases"]
-            },
-            transport: { un: "1090", class: "3", packingGroup: "II", properShipping: "Acetone" },
-            firstAid: {
-                inhalation: "Move to fresh air. Rest. Seek medical attention if symptoms persist.",
-                skin: "Wash with soap and water. Remove contaminated clothing.",
-                eyes: "Flush with water for 15 minutes. Seek medical attention if irritation persists.",
-                ingestion: "Rinse mouth. Do NOT induce vomiting. Seek medical attention."
-            }
-        },
-        "Methanol": {
-            cas: "67-56-1",
-            formula: "CH₃OH",
-            synonyms: ["Methyl alcohol", "Wood alcohol"],
-            ghs: ["GHS02", "GHS06", "GHS08"],
-            hazardStatements: [
-                { code: "H225", text: "Highly flammable liquid and vapor" },
-                { code: "H301", text: "Toxic if swallowed" },
-                { code: "H311", text: "Toxic in contact with skin" },
-                { code: "H331", text: "Toxic if inhaled" },
-                { code: "H370", text: "Causes damage to organs (eyes, nervous system)" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Chemical splash goggles + face shield" },
-                skin: { required: true, type: "Butyl rubber gloves, full body protection for large quantities" },
-                respiratory: { required: true, type: "Organic vapor respirator; SCBA for high concentrations" },
-                other: "No open flames, no smoking"
-            },
-            storage: {
-                cabinet: "Flammable safety cabinet",
-                temp: "Store cool, away from heat sources",
-                ventilation: "Well-ventilated area, ground containers",
-                incompatible: ["Oxidizers", "Strong acids", "Alkali metals"]
-            },
-            transport: { un: "1230", class: "3 (6.1)", packingGroup: "II", properShipping: "Methanol" },
-            firstAid: {
-                inhalation: "Move to fresh air. Give artificial respiration if needed. Seek immediate medical attention.",
-                skin: "Remove clothing. Wash thoroughly with soap and water. Seek medical attention.",
-                eyes: "Flush with water for 15-20 minutes. Seek immediate medical attention.",
-                ingestion: "POISON - Seek immediate medical attention. Do NOT induce vomiting."
-            }
-        },
-        "Hydrogen Peroxide": {
-            cas: "7722-84-1",
-            formula: "H₂O₂",
-            synonyms: ["Peroxide"],
-            ghs: ["GHS03", "GHS05", "GHS07"],
-            hazardStatements: [
-                { code: "H271", text: "May cause fire or explosion; strong oxidizer" },
-                { code: "H302", text: "Harmful if swallowed" },
-                { code: "H314", text: "Causes severe skin burns and eye damage" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Chemical splash goggles + face shield" },
-                skin: { required: true, type: "Neoprene or PVC gloves, chemical-resistant suit" },
-                respiratory: { required: false, type: "Not required with good ventilation" },
-                other: "Keep away from combustibles"
-            },
-            storage: {
-                cabinet: "Oxidizer storage (separate from flammables and organics)",
-                temp: "Store cool, in original container",
-                ventilation: "Well-ventilated, vented container",
-                incompatible: ["Flammables", "Organic materials", "Metals", "Reducing agents"]
-            },
-            transport: { un: "2014", class: "5.1 (8)", packingGroup: "II", properShipping: "Hydrogen peroxide, aqueous solution" },
-            firstAid: {
-                inhalation: "Move to fresh air. Seek medical attention.",
-                skin: "Flush with water for 15+ minutes. Remove contaminated clothing.",
-                eyes: "Flush with water for 15-20 minutes. Seek immediate medical attention.",
-                ingestion: "Rinse mouth. Do NOT induce vomiting. Seek medical attention."
-            }
-        },
-        "Ethanol": {
-            cas: "64-17-5",
-            formula: "C₂H₅OH",
-            synonyms: ["Ethyl alcohol", "Alcohol"],
-            ghs: ["GHS02"],
-            hazardStatements: [
-                { code: "H225", text: "Highly flammable liquid and vapor" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Safety glasses" },
-                skin: { required: false, type: "Nitrile gloves for prolonged contact" },
-                respiratory: { required: false, type: "Not required with good ventilation" },
-                other: "No open flames"
-            },
-            storage: {
-                cabinet: "Flammable safety cabinet",
-                temp: "Store cool, away from heat/ignition sources",
-                ventilation: "Well-ventilated area",
-                incompatible: ["Strong oxidizers", "Peroxides", "Strong acids"]
-            },
-            transport: { un: "1170", class: "3", packingGroup: "II", properShipping: "Ethanol" },
-            firstAid: {
-                inhalation: "Move to fresh air.",
-                skin: "Wash with soap and water.",
-                eyes: "Flush with water for several minutes.",
-                ingestion: "Rinse mouth. Drink water."
-            }
-        },
-        "Ammonia": {
-            cas: "7664-41-7",
-            formula: "NH₃",
-            synonyms: ["Ammonia gas", "Ammonia solution"],
-            ghs: ["GHS04", "GHS05", "GHS06", "GHS09"],
-            hazardStatements: [
-                { code: "H221", text: "Flammable gas" },
-                { code: "H280", text: "Contains gas under pressure" },
-                { code: "H314", text: "Causes severe skin burns and eye damage" },
-                { code: "H331", text: "Toxic if inhaled" },
-                { code: "H400", text: "Very toxic to aquatic life" }
-            ],
-            ppe: {
-                eyes: { required: true, type: "Chemical splash goggles + face shield" },
-                skin: { required: true, type: "Butyl rubber gloves, chemical suit for liquid" },
-                respiratory: { required: true, type: "Ammonia-rated respirator or SCBA" },
-                other: "Emergency shower required"
-            },
-            storage: {
-                cabinet: "Base storage, away from acids",
-                temp: "Store cool, in ventilated area",
-                ventilation: "Excellent ventilation required",
-                incompatible: ["Acids", "Halogens", "Oxidizers", "Mercury"]
-            },
-            transport: { un: "1005", class: "2.3 (8)", packingGroup: "-", properShipping: "Ammonia, anhydrous" },
-            firstAid: {
-                inhalation: "Move to fresh air immediately. Give oxygen if available. Seek immediate medical attention.",
-                skin: "Flush with water for 15+ minutes. Remove contaminated clothing.",
-                eyes: "Flush with water for 30+ minutes. Seek immediate medical attention.",
-                ingestion: "Rinse mouth. Do NOT induce vomiting. Seek immediate medical attention."
-            }
-        }
-    };
-
-    const ghsIcons = {
-        "GHS01": { emoji: "💥", name: "Explosive", desc: "Explosives, self-reactive" },
-        "GHS02": { emoji: "🔥", name: "Flammable", desc: "Flammable materials" },
-        "GHS03": { emoji: "⭕", name: "Oxidizer", desc: "May intensify fire" },
-        "GHS04": { emoji: "🫧", name: "Gas Cylinder", desc: "Compressed gas" },
-        "GHS05": { emoji: "⚗️", name: "Corrosive", desc: "Causes burns" },
-        "GHS06": { emoji: "☠️", name: "Toxic", desc: "Acute toxicity" },
-        "GHS07": { emoji: "⚠️", name: "Irritant", desc: "Harmful/irritant" },
-        "GHS08": { emoji: "🫁", name: "Health Hazard", desc: "Serious health hazard" },
-        "GHS09": { emoji: "🌿", name: "Environment", desc: "Environmental hazard" }
-    };
+    <!-- External chemical database -->
+    <script src="js/chemicals_hazard_data.js"></script>
+    
+    <script>
+    // Use the external database
+    const sdsDatabase = window.chemicalHazardDB;
+    const ghsIcons = window.ghsInfo;
 
     const searchInput = document.getElementById('chemicalSearch');
     const searchResults = document.getElementById('searchResults');
@@ -589,22 +337,26 @@
             return;
         }
 
-        const matches = Object.keys(sdsDatabase).filter(name => 
-            name.toLowerCase().includes(query) || 
-            sdsDatabase[name].cas.includes(query) ||
-            sdsDatabase[name].synonyms?.some(s => s.toLowerCase().includes(query))
-        ).slice(0, 8);
+        const matches = Object.keys(sdsDatabase).filter(name => {
+            const chem = sdsDatabase[name];
+            return name.toLowerCase().includes(query) || 
+                chem.cas?.includes(query) ||
+                chem.de?.toLowerCase().includes(query) ||
+                chem.es?.toLowerCase().includes(query) ||
+                chem.synonyms?.some(s => s.toLowerCase().includes(query));
+        }).slice(0, 10);
 
         if (matches.length === 0) {
             searchResults.innerHTML = '<div class="p-3 text-gray-500">No chemicals found in database</div>';
         } else {
             searchResults.innerHTML = matches.map(name => {
                 const chem = sdsDatabase[name];
+                const ghsEmojis = (chem.ghs || []).map(g => ghsIcons[g]?.emoji || g).join(' ');
                 return `
                     <div class="p-3 hover:bg-green-50 cursor-pointer border-b last:border-b-0" onclick="showSDS('${name}')">
                         <div class="font-medium text-gray-900">${name}</div>
                         <div class="text-xs text-gray-500 mt-1">
-                            CAS: ${chem.cas} · ${chem.ghs.map(g => ghsIcons[g]?.emoji || g).join(' ')}
+                            CAS: ${chem.cas || 'N/A'} · ${ghsEmojis || 'Non-hazardous'}
                         </div>
                     </div>
                 `;
@@ -630,62 +382,69 @@
         sdsExplainer.classList.add('hidden');
 
         // Header
+        const ghsEmojis = (chem.ghs || []).map(g => ghsIcons[g]?.emoji || '').join(' ');
         document.getElementById('chemicalHeader').innerHTML = `
             <div class="flex justify-between items-start">
                 <div>
                     <h2 class="text-2xl font-bold mb-1">${name}</h2>
                     <div class="text-green-100">
-                        <span class="font-mono">${chem.formula}</span> · CAS: ${chem.cas}
+                        <span class="font-mono">${chem.formula || ''}</span> · CAS: ${chem.cas || 'N/A'}
                     </div>
                     ${chem.synonyms?.length ? `<div class="text-green-200 text-sm mt-1">Also: ${chem.synonyms.join(', ')}</div>` : ''}
                 </div>
-                <div class="text-4xl">${chem.ghs.map(g => ghsIcons[g]?.emoji || '').join(' ')}</div>
+                <div class="text-4xl">${ghsEmojis}</div>
             </div>
         `;
 
         // GHS Pictograms
-        document.getElementById('ghsPictograms').innerHTML = chem.ghs.map(g => {
-            const icon = ghsIcons[g];
-            return `
-                <div class="flex items-center gap-3 p-3 bg-red-50 rounded-lg border border-red-200">
-                    <span class="text-4xl">${icon?.emoji || '❓'}</span>
-                    <div>
-                        <div class="font-medium text-gray-900">${g} - ${icon?.name || 'Unknown'}</div>
-                        <div class="text-sm text-gray-600">${icon?.desc || ''}</div>
+        const ghsSection = document.getElementById('ghsSection');
+        if (chem.ghs && chem.ghs.length > 0) {
+            ghsSection.classList.remove('hidden');
+            document.getElementById('ghsPictograms').innerHTML = chem.ghs.map(g => {
+                const icon = ghsIcons[g];
+                return `
+                    <div class="flex items-center gap-3 p-3 bg-red-50 rounded-lg border border-red-200">
+                        <span class="text-4xl">${icon?.emoji || '❓'}</span>
+                        <div>
+                            <div class="font-medium text-gray-900">${g} - ${icon?.name || 'Unknown'}</div>
+                            <div class="text-sm text-gray-600">${icon?.desc || ''}</div>
+                        </div>
                     </div>
-                </div>
-            `;
-        }).join('');
+                `;
+            }).join('');
+        } else {
+            ghsSection.classList.add('hidden');
+        }
 
         // PPE
-        const ppe = chem.ppe;
+        const ppe = chem.ppe || { eyes: {type: 'Safety glasses'}, skin: {type: 'Gloves if needed'}, respiratory: {type: 'Not required'} };
         document.getElementById('ppeList').innerHTML = `
-            <div class="flex items-center gap-3 ${ppe.eyes.required ? 'text-gray-900' : 'text-gray-400'}">
+            <div class="flex items-center gap-3 ${ppe.eyes?.required ? 'text-gray-900' : 'text-gray-400'}">
                 <i data-lucide="eye" class="w-5 h-5"></i>
                 <div>
                     <div class="font-medium">Eye Protection</div>
-                    <div class="text-sm text-gray-600">${ppe.eyes.type}</div>
+                    <div class="text-sm text-gray-600">${ppe.eyes?.type || 'Safety glasses recommended'}</div>
                 </div>
             </div>
-            <div class="flex items-center gap-3 ${ppe.skin.required ? 'text-gray-900' : 'text-gray-400'}">
+            <div class="flex items-center gap-3 ${ppe.skin?.required ? 'text-gray-900' : 'text-gray-400'}">
                 <i data-lucide="hand" class="w-5 h-5"></i>
                 <div>
                     <div class="font-medium">Skin Protection</div>
-                    <div class="text-sm text-gray-600">${ppe.skin.type}</div>
+                    <div class="text-sm text-gray-600">${ppe.skin?.type || 'Gloves if prolonged contact'}</div>
                 </div>
             </div>
-            <div class="flex items-center gap-3 ${ppe.respiratory.required ? 'text-gray-900' : 'text-gray-400'}">
+            <div class="flex items-center gap-3 ${ppe.respiratory?.required ? 'text-gray-900' : 'text-gray-400'}">
                 <i data-lucide="wind" class="w-5 h-5"></i>
                 <div>
                     <div class="font-medium">Respiratory Protection</div>
-                    <div class="text-sm text-gray-600">${ppe.respiratory.type}</div>
+                    <div class="text-sm text-gray-600">${ppe.respiratory?.type || 'Not typically required'}</div>
                 </div>
             </div>
             ${ppe.other ? `<div class="text-sm text-gray-600 mt-2 pt-2 border-t">ℹ️ ${ppe.other}</div>` : ''}
         `;
 
         // Storage
-        const storage = chem.storage;
+        const storage = chem.storage || { cabinet: 'General storage', temp: 'Room temperature', ventilation: 'Normal', incompatible: [] };
         document.getElementById('storageInfo').innerHTML = `
             <div class="flex items-center gap-3">
                 <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
@@ -699,22 +458,29 @@
                 <i data-lucide="wind" class="w-5 h-5 text-cyan-500"></i>
                 <div>${storage.ventilation}</div>
             </div>
+            ${storage.incompatible?.length ? `
             <div class="mt-2 pt-2 border-t">
                 <div class="text-sm font-medium text-red-600 mb-1">⚠️ Keep away from:</div>
                 <div class="text-sm text-gray-600">${storage.incompatible.join(', ')}</div>
-            </div>
+            </div>` : ''}
         `;
 
         // Hazard statements
-        document.getElementById('hazardStatements').innerHTML = chem.hazardStatements.map(h => `
-            <div class="flex gap-3 p-2 bg-red-50 rounded">
-                <span class="font-mono text-red-600 font-medium">${h.code}</span>
-                <span class="text-gray-700">${h.text}</span>
-            </div>
-        `).join('');
+        const hazardSection = document.getElementById('hazardStatements');
+        if (chem.hazardStatements && chem.hazardStatements.length > 0) {
+            hazardSection.parentElement.classList.remove('hidden');
+            hazardSection.innerHTML = chem.hazardStatements.map(h => `
+                <div class="flex gap-3 p-2 bg-red-50 rounded">
+                    <span class="font-mono text-red-600 font-medium">${h.code}</span>
+                    <span class="text-gray-700">${h.text}</span>
+                </div>
+            `).join('');
+        } else {
+            hazardSection.parentElement.classList.add('hidden');
+        }
 
         // First aid
-        const fa = chem.firstAid;
+        const fa = chem.firstAid || { inhalation: 'Move to fresh air.', skin: 'Wash with water.', eyes: 'Flush with water.', ingestion: 'Rinse mouth.' };
         document.getElementById('firstAid').innerHTML = `
             <div class="p-3 bg-blue-50 rounded-lg">
                 <div class="font-medium text-blue-700 mb-1">💨 Inhalation</div>
@@ -735,7 +501,7 @@
         `;
 
         // Transport
-        const tr = chem.transport;
+        const tr = chem.transport || { un: '-', class: '-', packingGroup: '-', properShipping: 'Not regulated' };
         document.getElementById('transportInfo').innerHTML = `
             <div class="p-3 bg-gray-50 rounded-lg text-center">
                 <div class="text-2xl font-bold text-gray-900">${tr.un}</div>
@@ -749,7 +515,7 @@
                 <div class="text-2xl font-bold text-gray-900">${tr.packingGroup}</div>
                 <div class="text-xs text-gray-500">Packing Group</div>
             </div>
-            <div class="p-3 bg-gray-50 rounded-lg text-center col-span-2 md:col-span-1">
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
                 <div class="text-sm font-medium text-gray-900">${tr.properShipping}</div>
                 <div class="text-xs text-gray-500">Proper Shipping Name</div>
             </div>
@@ -759,8 +525,6 @@
         document.getElementById('resistanceLink').href = `/?search=${encodeURIComponent(name)}`;
 
         lucide.createIcons();
-        
-        // Scroll to results
         sdsResults.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
@@ -775,7 +539,6 @@
         window.location.href = urls[lang] || urls.en;
     }
 
-    // Initialize icons
     lucide.createIcons();
     </script>
 </body>
