@@ -50,14 +50,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <style>
+        <style>
         * { font-family: 'Inter', sans-serif; }
         body { background: #f8fafc; }
-        .rating-A { background: #22c55e; color: white; }
-        .rating-B { background: #3b82f6; color: white; }
-        .rating-C { background: #f59e0b; color: white; }
-        .rating-D { background: #ef4444; color: white; }
-        .rating-NR { background: #d1d5db; color: #374151; }
+        .rating-A { background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); color: white; box-shadow: 0 2px 4px rgba(34, 197, 94, 0.3); }
+        .rating-B { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3); }
+        .rating-C { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3); }
+        .rating-D { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3); }
+        .rating-NR { background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%); color: #374151; }
+        
+        /* Table row hover */
+        #ratingsTable tr:hover { background-color: #f0fdf4; }
         .search-highlight { background: #fef08a; }
     </style>
 </head>
@@ -92,8 +95,25 @@
 
     <main>
     <!-- Hero + Search -->
-    <section class="bg-gradient-to-b from-gray-50 to-white px-4 py-8 md:py-12">
+    <section class="bg-gradient-to-br from-emerald-50 via-white to-blue-50 px-4 py-8 md:py-12">
         <div class="max-w-4xl mx-auto text-center">
+            <!-- Stats Banner -->
+            <div class="flex justify-center gap-6 md:gap-10 mb-6">
+                <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-emerald-600">1 600+</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Produits chimiques</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-emerald-600">24</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Matériaux</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-emerald-600">738</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Codes SGH</div>
+                </div>
+            </div>
+
+
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                 Résistance Chimique
             </h1>
@@ -209,7 +229,7 @@
                                 <th class="py-3 px-4 font-semibold text-gray-600">Type</th>
                             </tr>
                         </thead>
-                        <tbody id="ratingsTable">
+                        <tbody id="ratingsTable" class="w-full">
                             <tr><td colspan="4" class="py-8 text-center text-gray-500">Chargement des données chimiques...</td></tr>
                         </tbody>
                     </table>
