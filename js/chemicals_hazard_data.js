@@ -1329,17 +1329,17 @@ const storageCompatibility = {
   "corrosive+corrosive": { rating: "caution", reason: "Separate acids from bases even though both corrosive" }
 };
 
-// GHS pictogram info
+// GHS pictogram info with image paths
 const ghsInfo = {
-  "GHS01": { emoji: "💥", name: "Explosive", desc: "Explosives, self-reactive substances" },
-  "GHS02": { emoji: "🔥", name: "Flammable", desc: "Flammable materials" },
-  "GHS03": { emoji: "⭕", name: "Oxidizer", desc: "May cause or intensify fire" },
-  "GHS04": { emoji: "🫧", name: "Gas Cylinder", desc: "Gases under pressure" },
-  "GHS05": { emoji: "⚗️", name: "Corrosive", desc: "Causes burns" },
-  "GHS06": { emoji: "☠️", name: "Toxic", desc: "Acute toxicity (fatal or toxic)" },
-  "GHS07": { emoji: "⚠️", name: "Irritant", desc: "Harmful/irritant" },
-  "GHS08": { emoji: "🫁", name: "Health Hazard", desc: "Serious health hazard" },
-  "GHS09": { emoji: "🌿", name: "Environment", desc: "Environmental hazard" }
+  "GHS01": { img: "img/ghs/ghs01.svg", emoji: "💥", name: "Explosive", desc: "Explosives, self-reactive substances" },
+  "GHS02": { img: "img/ghs/ghs02.svg", emoji: "🔥", name: "Flammable", desc: "Flammable materials" },
+  "GHS03": { img: "img/ghs/ghs03.svg", emoji: "⭕", name: "Oxidizer", desc: "May cause or intensify fire" },
+  "GHS04": { img: "img/ghs/ghs04.svg", emoji: "🫧", name: "Gas Cylinder", desc: "Gases under pressure" },
+  "GHS05": { img: "img/ghs/ghs05.svg", emoji: "⚗️", name: "Corrosive", desc: "Causes burns" },
+  "GHS06": { img: "img/ghs/ghs06.svg", emoji: "☠️", name: "Toxic", desc: "Acute toxicity (fatal or toxic)" },
+  "GHS07": { img: "img/ghs/ghs07.svg", emoji: "⚠️", name: "Irritant", desc: "Harmful/irritant" },
+  "GHS08": { img: "img/ghs/ghs08.svg", emoji: "🫁", name: "Health Hazard", desc: "Serious health hazard" },
+  "GHS09": { img: "img/ghs/ghs09.svg", emoji: "🌿", name: "Environment", desc: "Environmental hazard" }
 };
 
 // Class information
