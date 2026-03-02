@@ -269,6 +269,7 @@ function setupEventListeners() {
             const indices = chemicalGroups[key];
             if (indices?.length > 0) {
                 showResultsForGroup(indices);
+                document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 searchResults.classList.add('hidden');
             }
         }
@@ -369,6 +370,7 @@ function showDefaultChemical() {
     const indices = chemicalGroups[acetoneKey];
     if (indices?.length > 0) {
         showResultsForGroup(indices);
+                document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
 
@@ -549,6 +551,7 @@ window.searchFor = function(term) {
     searchInput.value = term;
     setTimeout(() => {
         searchInput.dispatchEvent(new Event('input'));
+        setTimeout(() => { const firstResult = document.querySelector('#searchResults [data-key]'); if (firstResult) firstResult.click(); }, 100);
     }, 0);
 };
 

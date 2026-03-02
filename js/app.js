@@ -342,6 +342,8 @@ function setupEventListeners() {
             if (indices?.length > 0) {
                 showResultsForGroup(indices);
                 searchResults.classList.add('hidden');
+                // Scroll to results
+                document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
     });
@@ -654,6 +656,13 @@ window.searchFor = function(term) {
     searchInput.value = term;
     setTimeout(() => {
         searchInput.dispatchEvent(new Event('input'));
+        // Auto-select first result and scroll
+        setTimeout(() => {
+            const firstResult = document.querySelector('#searchResults [data-key]');
+            if (firstResult) {
+                firstResult.click();
+            }
+        }, 100);
     }, 0);
 };
 
