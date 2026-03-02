@@ -112,7 +112,7 @@ function getHazardBadges(hazardStr) {
         if (info && !seenGhs.has(info.ghs)) {
             seenGhs.add(info.ghs);
             const imgSrc = ghsImages[info.ghs];
-            return `<img src="${imgSrc}" alt="${info.label}" title="${info.label} (${code})" class="w-8 h-8 inline-block">`;
+            return `<img src="${imgSrc}" alt="${info.label}" title="${info.label} (${code})" class="w-10 h-10 inline-block">`;
         }
         return '';
     }).filter(Boolean).join(' ');

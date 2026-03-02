@@ -151,6 +151,10 @@ const euToGhs = {
     'F': { ghs: 'GHS02', label: 'Flammable' },
     'O': { ghs: 'GHS03', label: 'Oxidizing' },
     'N': { ghs: 'GHS09', label: 'Environmental Hazard' },
+    'E': { ghs: 'GHS01', label: 'Explosive' },
+    'Carc': { ghs: 'GHS08', label: 'Carcinogenic' },
+    'Mut': { ghs: 'GHS08', label: 'Mutagenic' },
+    'Rep': { ghs: 'GHS08', label: 'Reproductive Toxin' },
 };
 
 function getHazardBadges(hazardStr) {
@@ -163,7 +167,7 @@ function getHazardBadges(hazardStr) {
         if (info && !seenGhs.has(info.ghs)) {
             seenGhs.add(info.ghs);
             const imgSrc = ghsImages[info.ghs];
-            return `<img src="${imgSrc}" alt="${info.label}" title="${info.label} (${code})" class="w-8 h-8 inline-block">`;
+            return `<img src="${imgSrc}" alt="${info.label}" title="${info.label} (${code})" class="w-10 h-10 inline-block">`;
         }
         return '';
     }).filter(Boolean).join('');
