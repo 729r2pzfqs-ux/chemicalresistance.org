@@ -79,30 +79,31 @@
 <body class="min-h-screen">
     <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-3">
-            <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <i data-lucide="flask-round" class="w-5 h-5 text-white"></i>
-                    </div>
-                    <span class="font-bold text-gray-900">ChemicalResistance<span class="text-blue-600">.org</span></span>
-                </a>
-                <nav class="hidden md:flex items-center gap-6 text-sm">
-                    <a href="/" class="text-gray-600 hover:text-gray-900">Resistance Chart</a>
-                    <a href="/storage-compatibility.html" class="text-blue-600 font-medium">Storage Compatibility</a>
-                    <a href="/sds-decoder.html" class="text-gray-600 hover:text-gray-900">SDS Decoder</a>
-                    <a href="/viscosity.html" class="text-gray-600 hover:text-gray-900">Viscosity</a>
-                    <a href="/about.html" class="text-gray-600 hover:text-gray-900">About</a>
-                </nav>
-                <!-- Language selector -->
-                <select id="langSelect" class="text-sm border border-gray-300 rounded-md px-2 py-1" onchange="changeLanguage(this.value)">
-                    <option value="en" selected>🇺🇸 EN</option>
-                    <option value="de">🇩🇪 DE</option>
-                    <option value="es">🇪🇸 ES</option>
-                    <option value="fr">🇫🇷 FR</option>
-                    <option value="pt">🇧🇷 PT</option>
-                </select>
-            </div>
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+                    <i data-lucide="flask-conical" class="w-5 h-5 text-white"></i>
+                </div>
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500">Chemical compatibility database</div>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a href="/" class="text-gray-600 hover:text-gray-900 hover:underline">Resistance Chart</a>
+                <a href="/storage-compatibility.html" class="text-emerald-600 font-medium">Storage Compatibility</a>
+                <a href="/sds-decoder.html" class="text-gray-600 hover:text-gray-900 hover:underline">SDS Decoder</a>
+                <a href="/viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosity</a>
+                <a href="/about.html" class="text-gray-600 hover:text-gray-900 hover:underline">About</a>
+            </nav>
+            <!-- Language selector -->
+            <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer" onchange="changeLanguage(this.value)">
+                <option value="en" selected>🇬🇧 EN</option>
+                <option value="de">🇩🇪 DE</option>
+                <option value="es">🇪🇸 ES</option>
+                <option value="fr">🇫🇷 FR</option>
+                <option value="pt">🇧🇷 PT</option>
+            </select>
         </div>
     </header>
 
