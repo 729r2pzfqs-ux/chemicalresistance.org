@@ -358,7 +358,8 @@
             if (source !== 'cP') cP.value = baseMPas ? baseMPas.toFixed(4).replace(/\.?0+$/, '') : '';
         }
 
-        document.addEventListener('DOMContentLoaded', init);
+        // Initialize - DOM is already ready since script is at end of body
+        init();
         lucide.createIcons();
     </script>
 </body>
