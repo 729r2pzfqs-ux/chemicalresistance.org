@@ -37,16 +37,16 @@ const materialInfo = {
 const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
 // GHS pictogram emojis
-const ghsEmoji = {
-    'GHS01': '💥', // Explosif
-    'GHS02': '🔥', // Inflammable
-    'GHS03': '⭕', // Comburant
-    'GHS04': '🔵', // Gaz sous pression
-    'GHS05': '🧪', // Corrosif
-    'GHS06': '☠️', // Toxique
-    'GHS07': '⚠️', // Nocif
-    'GHS08': '🫁', // Danger pour la santé
-    'GHS09': '🌿', // Dangereux pour l'environnement
+const ghsImages = {
+    'GHS01': 'img/ghs/ghs01.svg', // Explosif
+    'GHS02': 'img/ghs/ghs02.svg', // Inflammable
+    'GHS03': 'img/ghs/ghs03.svg', // Comburant
+    'GHS04': 'img/ghs/ghs04.svg', // Gaz sous pression
+    'GHS05': 'img/ghs/ghs05.svg', // Corrosif
+    'GHS06': 'img/ghs/ghs06.svg', // Toxique
+    'GHS07': 'img/ghs/ghs07.svg', // Nocif
+    'GHS08': 'img/ghs/ghs08.svg', // Danger pour la santé
+    'GHS09': 'img/ghs/ghs09.svg', // Dangereux pour l'environnement
 };
 
 // Map old EU hazard codes to GHS pictograms (French labels)
@@ -72,8 +72,8 @@ function getHazardBadges(hazardStr) {
         const info = euToGhs[code];
         if (info && !seenGhs.has(info.ghs)) {
             seenGhs.add(info.ghs);
-            const emoji = ghsEmoji[info.ghs];
-            return `<span title="${info.label} (${code})" class="text-base">${emoji}</span>`;
+            const imgSrc = ghsImages[info.ghs];
+            return `<img src="${imgSrc}" alt="${info.label}" title="${info.label} (${code})" class="w-6 h-6 inline-block">`;
         }
         return '';
     }).filter(Boolean).join(' ');
