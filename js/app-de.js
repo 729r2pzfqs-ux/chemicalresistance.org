@@ -112,7 +112,7 @@ function getHazardBadges(hazardStr) {
         if (info && !seenGhs.has(info.ghs)) {
             seenGhs.add(info.ghs);
             const imgSrc = ghsImages[info.ghs];
-            return `<img src="${imgSrc}" alt="${info.label}" title="${info.label} (${code})" class="w-6 h-6 inline-block">`;
+            return `<img src="${imgSrc}" alt="${info.label}" title="${info.label} (${code})" class="w-8 h-8 inline-block">`;
         }
         return '';
     }).filter(Boolean).join(' ');
@@ -405,6 +405,15 @@ function showResultsForGroup(indices) {
     if (flammableEl) {
         const hasFlammableHazard = firstChem.hazard && (firstChem.hazard.includes('F') || firstChem.hazard.includes('F+'));
         flammableEl.style.display = (firstChem.flammable && !hasFlammableHazard) ? 'inline' : 'none';
+    }
+    
+    // SDS Link
+    const sdsLink = document.getElementById('sdsLink');
+    if (sdsLink) {
+        const searchTerm = encodeURIComponent(displayName);
+        sdsLink.href = `sds-decoder.html?search=${searchTerm}`;
+        sdsLink.style.display = 'inline-flex';
+
     }
     
     document.getElementById('searchInput').value = displayName;

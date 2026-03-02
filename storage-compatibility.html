@@ -160,65 +160,149 @@
             </div>
         </div>
 
-        <!-- Segregation Chart -->
+        <!-- Interactive Segregation Chart -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
             <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <i data-lucide="table" class="w-5 h-5 text-blue-600"></i>
+                <i data-lucide="grid-3x3" class="w-5 h-5 text-blue-600"></i>
                 Chemical Segregation Chart
             </h2>
-            <p class="text-gray-600 text-sm mb-4">General guidelines based on OSHA 29 CFR 1910.106 and NFPA 400</p>
+            <p class="text-gray-600 text-sm mb-4">Click any cell to see details. Based on OSHA 29 CFR 1910.106 and NFPA 400</p>
+            
+            <!-- Visual Legend -->
+            <div class="flex flex-wrap gap-3 mb-6 p-3 bg-gray-50 rounded-lg">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-green-500 rounded"></div><span class="text-sm">OK to store together</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-yellow-500 rounded"></div><span class="text-sm">Check specific chemicals</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-orange-500 rounded"></div><span class="text-sm">Separate cabinets</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-red-600 rounded"></div><span class="text-sm">NEVER store together</span></div>
+            </div>
+
             <div class="overflow-x-auto">
-                <table class="w-full text-sm">
+                <table class="w-full text-sm border-collapse">
                     <thead>
-                        <tr class="bg-gray-50">
-                            <th class="p-3 text-left font-medium text-gray-700"></th>
-                            <th class="p-3 text-center font-medium text-gray-700">Acids</th>
-                            <th class="p-3 text-center font-medium text-gray-700">Bases</th>
-                            <th class="p-3 text-center font-medium text-gray-700">Flammables</th>
-                            <th class="p-3 text-center font-medium text-gray-700">Oxidizers</th>
-                            <th class="p-3 text-center font-medium text-gray-700">Toxics</th>
+                        <tr>
+                            <th class="p-2 bg-gray-100 border border-gray-200"></th>
+                            <th class="p-3 bg-red-50 border border-gray-200 text-center">
+                                <img src="img/ghs/ghs05.svg" alt="Acid" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-red-700">Acids</div>
+                            </th>
+                            <th class="p-3 bg-blue-50 border border-gray-200 text-center">
+                                <img src="img/ghs/ghs05.svg" alt="Base" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-blue-700">Bases</div>
+                            </th>
+                            <th class="p-3 bg-orange-50 border border-gray-200 text-center">
+                                <img src="img/ghs/ghs02.svg" alt="Flammable" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-orange-700">Flammables</div>
+                            </th>
+                            <th class="p-3 bg-yellow-50 border border-gray-200 text-center">
+                                <img src="img/ghs/ghs03.svg" alt="Oxidizer" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-yellow-700">Oxidizers</div>
+                            </th>
+                            <th class="p-3 bg-purple-50 border border-gray-200 text-center">
+                                <img src="img/ghs/ghs06.svg" alt="Toxic" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-purple-700">Toxics</div>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="border-t">
-                            <td class="p-3 font-medium text-gray-700">Acids</td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-ok">✓ OK</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-never">✗ NEVER</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-caution">⚠ Check</span></td>
+                        <tr>
+                            <td class="p-3 bg-red-50 border border-gray-200 font-bold text-red-700">
+                                <img src="img/ghs/ghs05.svg" alt="Acid" class="w-8 h-8 inline mr-2">Acids
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('acid','acid')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('acid','base')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','oxidizer')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('acid','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
                         </tr>
-                        <tr class="border-t">
-                            <td class="p-3 font-medium text-gray-700">Bases</td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-never">✗ NEVER</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-ok">✓ OK</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-caution">⚠ Check</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-caution">⚠ Check</span></td>
+                        <tr>
+                            <td class="p-3 bg-blue-50 border border-gray-200 font-bold text-blue-700">
+                                <img src="img/ghs/ghs05.svg" alt="Base" class="w-8 h-8 inline mr-2">Bases
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('base','acid')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('base','base')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('base','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','oxidizer')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
                         </tr>
-                        <tr class="border-t">
-                            <td class="p-3 font-medium text-gray-700">Flammables</td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-ok">✓ OK</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-never">✗ NEVER</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
+                        <tr>
+                            <td class="p-3 bg-orange-50 border border-gray-200 font-bold text-orange-700">
+                                <img src="img/ghs/ghs02.svg" alt="Flammable" class="w-8 h-8 inline mr-2">Flammables
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','acid')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','base')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('flammable','flammable')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('flammable','oxidizer')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','toxic')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
                         </tr>
-                        <tr class="border-t">
-                            <td class="p-3 font-medium text-gray-700">Oxidizers</td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-caution">⚠ Check</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-never">✗ NEVER</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-ok">✓ OK</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
+                        <tr>
+                            <td class="p-3 bg-yellow-50 border border-gray-200 font-bold text-yellow-700">
+                                <img src="img/ghs/ghs03.svg" alt="Oxidizer" class="w-8 h-8 inline mr-2">Oxidizers
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','acid')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('oxidizer','base')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('oxidizer','flammable')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('oxidizer','oxidizer')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','toxic')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
                         </tr>
-                        <tr class="border-t">
-                            <td class="p-3 font-medium text-gray-700">Toxics</td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-caution">⚠ Check</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-caution">⚠ Check</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-separate">Separate</span></td>
-                            <td class="p-3 text-center"><span class="px-2 py-1 rounded text-xs rating-caution">⚠ Check</span></td>
+                        <tr>
+                            <td class="p-3 bg-purple-50 border border-gray-200 font-bold text-purple-700">
+                                <img src="img/ghs/ghs06.svg" alt="Toxic" class="w-8 h-8 inline mr-2">Toxics
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','acid')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','base')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','oxidizer')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -490,6 +574,41 @@
             pt: '/pt/storage-compatibility.html'
         };
         window.location.href = urls[lang] || urls.en;
+    }
+
+    // Compatibility info popup
+    const compatDetails = {
+        'acid+acid': { title: '✅ Acids Together', msg: 'Acids can generally be stored together in an acid-resistant cabinet. Keep away from metals and bases.' },
+        'acid+base': { title: '❌ NEVER: Acids + Bases', msg: 'VIOLENT REACTION! Mixing acids and bases causes exothermic neutralization. Can boil, splash, release heat and toxic fumes.' },
+        'base+acid': { title: '❌ NEVER: Bases + Acids', msg: 'VIOLENT REACTION! Mixing bases and acids causes exothermic neutralization. Can boil, splash, release heat and toxic fumes.' },
+        'acid+flammable': { title: '↔ Separate: Acids + Flammables', msg: 'Store in separate cabinets. Acids can generate heat and may ignite flammables. Some acids react with organics.' },
+        'flammable+acid': { title: '↔ Separate: Flammables + Acids', msg: 'Store in separate cabinets. Acids can generate heat and may ignite flammables.' },
+        'acid+oxidizer': { title: '↔ Separate: Acids + Oxidizers', msg: 'Store separately. Some combinations produce toxic gases (e.g., chlorine from bleach + acid).' },
+        'oxidizer+acid': { title: '↔ Separate: Oxidizers + Acids', msg: 'Store separately. Some combinations produce toxic gases (e.g., chlorine from bleach + acid).' },
+        'acid+toxic': { title: '⚠ Check: Acids + Toxics', msg: 'Check specific chemicals. Some toxic compounds release dangerous gases when acidified (e.g., cyanides → HCN).' },
+        'toxic+acid': { title: '⚠ Check: Toxics + Acids', msg: 'Check specific chemicals. Some toxic compounds release dangerous gases when acidified (e.g., cyanides → HCN).' },
+        'base+base': { title: '✅ Bases Together', msg: 'Bases can be stored together. Keep away from acids and reactive metals (aluminum, zinc).' },
+        'base+flammable': { title: '↔ Separate: Bases + Flammables', msg: 'Store in separate cabinets. Strong bases can react with some organic compounds.' },
+        'flammable+base': { title: '↔ Separate: Flammables + Bases', msg: 'Store in separate cabinets.' },
+        'base+oxidizer': { title: '⚠ Check: Bases + Oxidizers', msg: 'Check specific chemicals. Generally less reactive than acids + oxidizers, but some combinations are hazardous.' },
+        'oxidizer+base': { title: '⚠ Check: Oxidizers + Bases', msg: 'Check specific chemicals.' },
+        'base+toxic': { title: '⚠ Check: Bases + Toxics', msg: 'Check specific chemicals. Some reactions possible.' },
+        'toxic+base': { title: '⚠ Check: Toxics + Bases', msg: 'Check specific chemicals.' },
+        'flammable+flammable': { title: '✅ Flammables Together', msg: 'Store together in approved flammable safety cabinet. Ground containers, keep away from ignition sources.' },
+        'flammable+oxidizer': { title: '❌ NEVER: Flammables + Oxidizers', msg: 'EXTREME FIRE/EXPLOSION HAZARD! Oxidizers intensify fires and can cause spontaneous ignition of flammables.' },
+        'oxidizer+flammable': { title: '❌ NEVER: Oxidizers + Flammables', msg: 'EXTREME FIRE/EXPLOSION HAZARD! Oxidizers intensify fires and can cause spontaneous ignition of flammables.' },
+        'flammable+toxic': { title: '↔ Separate: Flammables + Toxics', msg: 'Store in separate ventilated areas. Fire involving toxics creates extremely hazardous conditions.' },
+        'toxic+flammable': { title: '↔ Separate: Toxics + Flammables', msg: 'Store in separate ventilated areas.' },
+        'oxidizer+oxidizer': { title: '✅ Oxidizers Together', msg: 'Generally OK, but check specific chemicals. Some oxidizers are incompatible with each other.' },
+        'oxidizer+toxic': { title: '↔ Separate: Oxidizers + Toxics', msg: 'Store separately. Oxidizers can react with toxic compounds to release hazardous fumes.' },
+        'toxic+oxidizer': { title: '↔ Separate: Toxics + Oxidizers', msg: 'Store separately.' },
+        'toxic+toxic': { title: '⚠ Check: Toxics Together', msg: 'Check specific chemicals. Many toxics can be stored together, but verify no reactions occur.' }
+    };
+
+    function showCompatInfo(class1, class2) {
+        const key = `${class1}+${class2}`;
+        const info = compatDetails[key] || { title: 'Check Compatibility', msg: 'Consult safety data sheets for these specific chemicals.' };
+        alert(`${info.title}\n\n${info.msg}`);
     }
 
     lucide.createIcons();

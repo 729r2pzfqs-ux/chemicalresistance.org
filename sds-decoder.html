@@ -539,6 +539,20 @@
     }
 
     lucide.createIcons();
+    
+    // Auto-search from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParam = urlParams.get('search');
+    if (searchParam) {
+        searchInput.value = searchParam;
+        // Find best match and show it
+        const matches = Object.keys(sdsDatabase).filter(name => 
+            name.toLowerCase().includes(searchParam.toLowerCase())
+        );
+        if (matches.length > 0) {
+            showSDS(matches[0]);
+        }
+    }
     </script>
 </body>
 </html>
