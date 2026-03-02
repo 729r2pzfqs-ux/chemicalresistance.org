@@ -1,0 +1,94 @@
+{
+  "classes": {
+    "acid": {
+      "name": { "en": "Acid", "de": "Säure", "es": "Ácido", "fr": "Acide", "pt": "Ácido" },
+      "cabinet": "acid",
+      "color": "#ef4444",
+      "icon": "flask-round"
+    },
+    "base": {
+      "name": { "en": "Base/Alkali", "de": "Base/Lauge", "es": "Base/Álcali", "fr": "Base/Alcalin", "pt": "Base/Álcali" },
+      "cabinet": "base",
+      "color": "#3b82f6",
+      "icon": "droplets"
+    },
+    "flammable": {
+      "name": { "en": "Flammable", "de": "Brennbar", "es": "Inflamable", "fr": "Inflammable", "pt": "Inflamável" },
+      "cabinet": "flammable",
+      "color": "#f97316",
+      "icon": "flame"
+    },
+    "oxidizer": {
+      "name": { "en": "Oxidizer", "de": "Oxidationsmittel", "es": "Oxidante", "fr": "Oxydant", "pt": "Oxidante" },
+      "cabinet": "oxidizer",
+      "color": "#eab308",
+      "icon": "circle-dot"
+    },
+    "toxic": {
+      "name": { "en": "Toxic", "de": "Giftig", "es": "Tóxico", "fr": "Toxique", "pt": "Tóxico" },
+      "cabinet": "toxic",
+      "color": "#7c3aed",
+      "icon": "skull"
+    },
+    "corrosive": {
+      "name": { "en": "Corrosive", "de": "Ätzend", "es": "Corrosivo", "fr": "Corrosif", "pt": "Corrosivo" },
+      "cabinet": "corrosive",
+      "color": "#dc2626",
+      "icon": "test-tubes"
+    }
+  },
+  "compatibility": {
+    "acid+base": { "rating": "never", "reason": { "en": "Violent exothermic reaction", "de": "Heftige exotherme Reaktion", "es": "Reacción exotérmica violenta", "fr": "Réaction exothermique violente", "pt": "Reação exotérmica violenta" }},
+    "acid+flammable": { "rating": "separate", "reason": { "en": "Store in separate cabinets", "de": "In getrennten Schränken lagern", "es": "Almacenar en armarios separados", "fr": "Stocker dans des armoires séparées", "pt": "Armazenar em armários separados" }},
+    "acid+oxidizer": { "rating": "separate", "reason": { "en": "May produce toxic gases", "de": "Kann giftige Gase erzeugen", "es": "Puede producir gases tóxicos", "fr": "Peut produire des gaz toxiques", "pt": "Pode produzir gases tóxicos" }},
+    "base+flammable": { "rating": "separate", "reason": { "en": "Store in separate cabinets", "de": "In getrennten Schränken lagern", "es": "Almacenar en armarios separados", "fr": "Stocker dans des armoires séparées", "pt": "Armazenar em armários separados" }},
+    "base+oxidizer": { "rating": "caution", "reason": { "en": "Check specific chemicals", "de": "Spezifische Chemikalien prüfen", "es": "Verificar químicos específicos", "fr": "Vérifier les produits chimiques", "pt": "Verificar químicos específicos" }},
+    "flammable+oxidizer": { "rating": "never", "reason": { "en": "Fire/explosion hazard", "de": "Brand-/Explosionsgefahr", "es": "Riesgo de incendio/explosión", "fr": "Risque d'incendie/explosion", "pt": "Risco de incêndio/explosão" }},
+    "flammable+flammable": { "rating": "ok", "reason": { "en": "Can store together in flammable cabinet", "de": "Zusammen im Sicherheitsschrank lagern", "es": "Se puede almacenar junto en armario inflamable", "fr": "Peut stocker ensemble dans une armoire inflammable", "pt": "Pode armazenar junto em armário inflamável" }},
+    "oxidizer+toxic": { "rating": "separate", "reason": { "en": "May release toxic fumes", "de": "Kann giftige Dämpfe freisetzen", "es": "Puede liberar vapores tóxicos", "fr": "Peut libérer des vapeurs toxiques", "pt": "Pode liberar vapores tóxicos" }},
+    "acid+acid": { "rating": "ok", "reason": { "en": "Can store together in acid cabinet", "de": "Zusammen im Säureschrank lagern", "es": "Se puede almacenar junto en armario de ácidos", "fr": "Peut stocker ensemble dans une armoire à acides", "pt": "Pode armazenar junto em armário de ácidos" }},
+    "base+base": { "rating": "ok", "reason": { "en": "Can store together in base cabinet", "de": "Zusammen im Laugenschrank lagern", "es": "Se puede almacenar junto en armario de bases", "fr": "Peut stocker ensemble dans une armoire à bases", "pt": "Pode armazenar junto em armário de bases" }},
+    "toxic+toxic": { "rating": "caution", "reason": { "en": "Check specific chemicals for reactions", "de": "Spezifische Reaktionen prüfen", "es": "Verificar reacciones específicas", "fr": "Vérifier les réactions spécifiques", "pt": "Verificar reações específicas" }},
+    "corrosive+flammable": { "rating": "separate", "reason": { "en": "Store in separate areas", "de": "In getrennten Bereichen lagern", "es": "Almacenar en áreas separadas", "fr": "Stocker dans des zones séparées", "pt": "Armazenar em áreas separadas" }}
+  },
+  "chemicals": {
+    "sulfuric-acid": { "cas": "7664-93-9", "classes": ["acid", "corrosive"], "ghs": ["GHS05", "GHS07"] },
+    "hydrochloric-acid": { "cas": "7647-01-0", "classes": ["acid", "corrosive"], "ghs": ["GHS05", "GHS07"] },
+    "nitric-acid": { "cas": "7697-37-2", "classes": ["acid", "corrosive", "oxidizer"], "ghs": ["GHS03", "GHS05", "GHS07"] },
+    "phosphoric-acid": { "cas": "7664-38-2", "classes": ["acid", "corrosive"], "ghs": ["GHS05"] },
+    "acetic-acid": { "cas": "64-19-7", "classes": ["acid", "corrosive", "flammable"], "ghs": ["GHS02", "GHS05"] },
+    "formic-acid": { "cas": "64-18-6", "classes": ["acid", "corrosive", "flammable"], "ghs": ["GHS02", "GHS05", "GHS06"] },
+    "sodium-hydroxide": { "cas": "1310-73-2", "classes": ["base", "corrosive"], "ghs": ["GHS05"] },
+    "potassium-hydroxide": { "cas": "1310-58-3", "classes": ["base", "corrosive"], "ghs": ["GHS05", "GHS07"] },
+    "ammonia": { "cas": "7664-41-7", "classes": ["base", "corrosive", "toxic"], "ghs": ["GHS04", "GHS05", "GHS06", "GHS09"] },
+    "acetone": { "cas": "67-64-1", "classes": ["flammable"], "ghs": ["GHS02", "GHS07"] },
+    "ethanol": { "cas": "64-17-5", "classes": ["flammable"], "ghs": ["GHS02"] },
+    "methanol": { "cas": "67-56-1", "classes": ["flammable", "toxic"], "ghs": ["GHS02", "GHS06", "GHS08"] },
+    "isopropanol": { "cas": "67-63-0", "classes": ["flammable"], "ghs": ["GHS02", "GHS07"] },
+    "toluene": { "cas": "108-88-3", "classes": ["flammable", "toxic"], "ghs": ["GHS02", "GHS07", "GHS08"] },
+    "xylene": { "cas": "1330-20-7", "classes": ["flammable", "toxic"], "ghs": ["GHS02", "GHS07", "GHS08"] },
+    "benzene": { "cas": "71-43-2", "classes": ["flammable", "toxic"], "ghs": ["GHS02", "GHS07", "GHS08"] },
+    "hexane": { "cas": "110-54-3", "classes": ["flammable", "toxic"], "ghs": ["GHS02", "GHS07", "GHS08", "GHS09"] },
+    "hydrogen-peroxide": { "cas": "7722-84-1", "classes": ["oxidizer", "corrosive"], "ghs": ["GHS03", "GHS05", "GHS07"] },
+    "sodium-hypochlorite": { "cas": "7681-52-9", "classes": ["oxidizer", "corrosive"], "ghs": ["GHS05", "GHS09"] },
+    "potassium-permanganate": { "cas": "7722-64-7", "classes": ["oxidizer", "toxic"], "ghs": ["GHS03", "GHS05", "GHS07", "GHS09"] },
+    "formaldehyde": { "cas": "50-00-0", "classes": ["flammable", "toxic", "corrosive"], "ghs": ["GHS02", "GHS05", "GHS06", "GHS08"] },
+    "chlorine": { "cas": "7782-50-5", "classes": ["oxidizer", "toxic", "corrosive"], "ghs": ["GHS03", "GHS04", "GHS05", "GHS06", "GHS09"] },
+    "bleach": { "cas": "7681-52-9", "classes": ["oxidizer", "corrosive"], "ghs": ["GHS05", "GHS09"] },
+    "acetonitrile": { "cas": "75-05-8", "classes": ["flammable", "toxic"], "ghs": ["GHS02", "GHS07"] },
+    "dichloromethane": { "cas": "75-09-2", "classes": ["toxic"], "ghs": ["GHS07", "GHS08"] },
+    "chloroform": { "cas": "67-66-3", "classes": ["toxic"], "ghs": ["GHS06", "GHS08"] },
+    "diethyl-ether": { "cas": "60-29-7", "classes": ["flammable"], "ghs": ["GHS02", "GHS07"] },
+    "tetrahydrofuran": { "cas": "109-99-9", "classes": ["flammable"], "ghs": ["GHS02", "GHS07"] },
+    "dimethyl-sulfoxide": { "cas": "67-68-5", "classes": [], "ghs": [] },
+    "glycerol": { "cas": "56-81-5", "classes": [], "ghs": [] },
+    "sodium-chloride": { "cas": "7647-14-5", "classes": [], "ghs": [] }
+  },
+  "name_patterns": {
+    "acid": ["säure", "acid", "ácido", "acide"],
+    "base": ["hydroxid", "hydroxide", "lauge", "alkali", "hidróxido"],
+    "flammable": ["alkohol", "alcohol", "ether", "éter", "benzin", "keton", "ketone", "aceton"],
+    "oxidizer": ["peroxid", "peroxide", "permanganat", "hypochlorit", "chlorat", "nitrat"],
+    "toxic": ["cyanid", "cyanide", "arsenat", "arsenic", "quecksilber", "mercury", "blei", "lead"]
+  }
+}

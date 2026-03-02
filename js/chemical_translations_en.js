@@ -283,7 +283,7 @@ const chemicalTranslations = {
     'chloracetophenon, p-': 'Chlorineacetophenone, p-',
     'chloral': 'Chlorineal',
     'chloralhydrat': 'Chlorinealhydrat',
-    'chloramin t': 'Chloramin T',
+    'chloramin t': 'Chlorineamine T',
     'chlorbenzen': 'Chlorinebenzen',
     'chlorbenzol': 'Chlorobenzene',
     'chlorbleichlauge': 'Chlorineleadchlye',
