@@ -108,7 +108,7 @@
             
             <!-- Search Box -->
             <div class="relative max-w-xl mx-auto">
-                <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+                <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none z-10">
                     <i data-lucide="search" class="w-5 h-5 text-gray-400"></i>
                 </div>
                 <input 
@@ -116,7 +116,8 @@
                     id="searchInput" 
                     placeholder="Rechercher : Miel, Huile moteur, Glycérine..."
                     class="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all"
-                    autocomplete="off"
+                    autocomplete="off">
+                <div id="searchResults" class="absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-xl shadow-xl max-h-64 overflow-y-auto hidden z-50"></div
                 >
             </div>
         </div>
@@ -354,8 +355,63 @@
 
         function setupSearch() {
             const searchInput = document.getElementById('searchInput');
+            const resultsDiv = document.getElementById('searchResults');
+            
             searchInput.addEventListener('input', () => {
-                renderTable(searchInput.value.toLowerCase());
+                const query = searchInput.value.toLowerCase();
+                if (query.length < 2) {
+                    resultsDiv.classList.add('hidden');
+                    return;
+                }
+                
+                const matches = viscosityData.filter(item => {
+                    const nameEn = (item.medium_en || item.medium).toLowerCase();
+                    const nameDE = item.medium.toLowerCase();
+                    return nameEn.includes(query) || nameDE.includes(query);
+                }).slice(0, 8);
+                
+                if (matches.length === 0) {
+                    resultsDiv.classList.add('hidden');
+                    return;
+                }
+                
+                resultsDiv.innerHTML = matches.map((item, idx) => {
+                    const name = item.medium_en || item.medium;
+                    return `<div class="px-4 py-3 hover:bg-blue-50 cursor-pointer border-b border-gray-100 last:border-0" data-name="${name}">
+                        <div class="font-medium text-gray-900">${name}</div>
+                        <div class="text-sm text-gray-500">${item.viscosity_mPas} @ ${item.temperature_c}°C</div>
+                    </div>`;
+                }).join('');
+                
+                resultsDiv.classList.remove('hidden');
+                
+                resultsDiv.querySelectorAll('[data-name]').forEach(el => {
+                    el.addEventListener('click', () => {
+                        const name = el.dataset.name;
+                        searchInput.value = name;
+                        resultsDiv.classList.add('hidden');
+                        renderTable(name.toLowerCase());
+                        setTimeout(() => {
+                            document.getElementById('viscosityTable').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    });
+                });
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!searchInput.contains(e.target) && !resultsDiv.contains(e.target)) {
+                    resultsDiv.classList.add('hidden');
+                }
+            });
+            
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    resultsDiv.classList.add('hidden');
+                    renderTable(searchInput.value.toLowerCase());
+                    setTimeout(() => {
+                        document.getElementById('viscosityTable').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
             });
         }
 
