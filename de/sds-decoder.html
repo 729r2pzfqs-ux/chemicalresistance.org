@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LTK6VVHYDW');
+    </script>
+    
+    <title>SDB-Decoder | Sicherheitsdatenblatt verständlich erklärt | PSA & Lagerung</title>
+    <meta name="description" content="Kostenloses Tool zum Entschlüsseln von Sicherheitsdatenblättern (SDB). Erhalten Sie verständliche Zusammenfassungen von Gefahren, PSA-Anforderungen, Lagerhinweisen und Transportinformationen.">
+    <meta name="keywords" content="SDB Decoder, Sicherheitsdatenblatt, GHS Piktogramme, PSA Anforderungen, Chemikaliengefahren, H-Sätze">
+    <link rel="canonical" href="https://chemicalresistance.org/de/sds-decoder.html">
+    
+    <link rel="alternate" hreflang="en" href="https://chemicalresistance.org/sds-decoder.html">
+    <link rel="alternate" hreflang="de" href="https://chemicalresistance.org/de/sds-decoder.html">
+    <link rel="alternate" hreflang="es" href="https://chemicalresistance.org/es/sds-decoder.html">
+    <link rel="alternate" hreflang="fr" href="https://chemicalresistance.org/fr/sds-decoder.html">
+    <link rel="alternate" hreflang="pt" href="https://chemicalresistance.org/pt/sds-decoder.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SDB-Decoder | Sicherheitsdatenblatt verständlich erklärt">
+    <meta property="og:description" content="Sicherheitsdatenblätter sofort entschlüsseln. PSA-Anforderungen, Lagerhinweise und Gefahreninformationen verständlich erklärt.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemicalresistance.org/de/sds-decoder.html">
+    <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .ghs-icon { width: 48px; height: 48px; }
+        .section-card { transition: all 0.2s; }
+        .section-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SDB-Decoder",
+        "description": "Sicherheitsdatenblätter verständlich entschlüsseln",
+        "url": "https://chemicalresistance.org/de/sds-decoder.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="../de.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+                    <i data-lucide="flask-conical" class="w-5 h-5 text-white"></i>
+                </div>
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Chemikalienbeständigkeitsdatenbank</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="../de.html" class="text-gray-600 hover:text-gray-900 hover:underline">Beständigkeitstabelle</a>
+                    <a href="storage-compatibility.html" class="text-gray-600 hover:text-gray-900 hover:underline">Lagerkompatibilität</a>
+                    <a href="sds-decoder.html" class="text-emerald-600 font-medium">SDB-Decoder</a>
+                    <a href="../viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline">Viskosität</a>
+                    <a href="../de-about.html" class="text-gray-600 hover:text-gray-900 hover:underline">Über uns</a>
+                </nav>
+                <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer" onchange="changeLanguage(this.value)">
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="de" selected>🇩🇪 DE</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="pt">🇧🇷 PT</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menü">
+                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="../de.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Beständigkeitstabelle</a>
+                <a href="storage-compatibility.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Lagerkompatibilität</a>
+                <a href="sds-decoder.html" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">SDB-Decoder</a>
+                <a href="../viscosity.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viskosität</a>
+                <a href="../de-about.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Über uns</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Hero -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <i data-lucide="file-text" class="w-8 h-8 inline-block text-green-600 mr-2"></i>
+                SDB-Decoder
+            </h1>
+            <p class="text-gray-600 text-lg">Sicherheitsdatenblätter verständlich erklärt. PSA, Lagerung und Gefahrenhinweise sofort verfügbar.</p>
+        </div>
+
+        <!-- Search -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Chemikalie suchen:</label>
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                <input 
+                    type="text" 
+                    id="chemicalSearch" 
+                    placeholder="Nach Name oder CAS-Nummer suchen (z.B. Schwefelsäure, 7664-93-9...)"
+                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 text-lg"
+                    autocomplete="off"
+                >
+                <div id="searchResults" class="absolute w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden max-h-64 overflow-y-auto z-10"></div>
+            </div>
+        </div>
+
+        <!-- SDS Results (hidden initially) -->
+        <div id="sdsResults" class="hidden">
+            <div id="chemicalHeader" class="bg-gradient-to-r from-green-600 to-green-700 rounded-xl p-6 mb-6 text-white"></div>
+
+            <div id="ghsSection" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="alert-triangle" class="w-5 h-5 text-red-500"></i>
+                    Gefahrenpiktogramme (GHS)
+                </h2>
+                <div id="ghsPictograms" class="flex flex-wrap gap-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="section-card bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="hard-hat" class="w-5 h-5 text-blue-500"></i>
+                        Erforderliche PSA
+                    </h2>
+                    <div id="ppeList" class="space-y-3"></div>
+                </div>
+
+                <div class="section-card bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
+                        Lagerung
+                    </h2>
+                    <div id="storageInfo" class="space-y-3"></div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="alert-circle" class="w-5 h-5 text-red-500"></i>
+                    Gefahrenhinweise (H-Sätze)
+                </h2>
+                <div id="hazardStatements" class="space-y-2"></div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="heart-pulse" class="w-5 h-5 text-red-500"></i>
+                    Erste-Hilfe-Maßnahmen
+                </h2>
+                <div id="firstAid" class="grid md:grid-cols-2 gap-4"></div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="truck" class="w-5 h-5 text-purple-500"></i>
+                    Transportinformationen
+                </h2>
+                <div id="transportInfo" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+            </div>
+
+            <div class="bg-green-50 rounded-xl p-6 border border-green-100">
+                <h3 class="font-bold text-gray-900 mb-3">Nächste Schritte</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="../de.html" id="resistanceLink" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                        <i data-lucide="flask-round" class="w-8 h-8 text-blue-600"></i>
+                        <div>
+                            <div class="font-medium text-gray-900">Materialkompatibilität prüfen</div>
+                            <div class="text-sm text-gray-600">Beständige Materialien für diese Chemikalie finden</div>
+                        </div>
+                    </a>
+                    <a href="storage-compatibility.html" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                        <i data-lucide="box" class="w-8 h-8 text-orange-600"></i>
+                        <div>
+                            <div class="font-medium text-gray-900">Lagerkompatibilität</div>
+                            <div class="text-sm text-gray-600">Kann ich das mit anderen Chemikalien lagern?</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GHS Reference -->
+        <div id="ghsReference" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <i data-lucide="info" class="w-5 h-5 text-blue-600"></i>
+                GHS-Piktogramm-Übersicht
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">Das Global Harmonisierte System (GHS) verwendet diese Piktogramme zur Kennzeichnung von Gefahren:</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs01.svg" alt="GHS01" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS01 - Explosiv</div>
+                    <div class="text-sm text-gray-600 text-center">Explosivstoffe, selbstzersetzliche Stoffe</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs02.svg" alt="GHS02" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS02 - Entzündlich</div>
+                    <div class="text-sm text-gray-600 text-center">Entzündliche Gase, Flüssigkeiten, Feststoffe</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs03.svg" alt="GHS03" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS03 - Brandfördernd</div>
+                    <div class="text-sm text-gray-600 text-center">Kann Brand verursachen oder verstärken</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs04.svg" alt="GHS04" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS04 - Gasflasche</div>
+                    <div class="text-sm text-gray-600 text-center">Gase unter Druck</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs05.svg" alt="GHS05" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS05 - Ätzend</div>
+                    <div class="text-sm text-gray-600 text-center">Hautverätzung, Augenschädigung</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs06.svg" alt="GHS06" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS06 - Giftig</div>
+                    <div class="text-sm text-gray-600 text-center">Akute Toxizität (tödlich oder giftig)</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs07.svg" alt="GHS07" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS07 - Reizend</div>
+                    <div class="text-sm text-gray-600 text-center">Reizend, Sensibilisator, narkotisch</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs08.svg" alt="GHS08" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS08 - Gesundheitsgefahr</div>
+                    <div class="text-sm text-gray-600 text-center">Karzinogen, Mutagen, Organschäden</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../img/ghs/ghs09.svg" alt="GHS09" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS09 - Umweltgefahr</div>
+                    <div class="text-sm text-gray-600 text-center">Gewässergefährdend</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What is an SDS -->
+        <div id="sdsExplainer" class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">Was ist ein Sicherheitsdatenblatt (SDB)?</h2>
+            <p class="text-gray-600 mb-4">Ein Sicherheitsdatenblatt ist ein Dokument, das umfassende Informationen über einen chemischen Stoff oder ein Gemisch enthält. Es ist für Gefahrstoffe vorgeschrieben und enthält 16 standardisierte Abschnitte:</p>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+                <div class="flex gap-2"><span class="font-medium text-gray-700">1.</span> Bezeichnung des Stoffes</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">2.</span> Mögliche Gefahren</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">3.</span> Zusammensetzung/Inhaltsstoffe</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">4.</span> Erste-Hilfe-Maßnahmen</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">5.</span> Brandbekämpfungsmaßnahmen</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">6.</span> Unbeabsichtigte Freisetzung</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">7.</span> Handhabung und Lagerung</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">8.</span> Expositionskontrolle/PSA</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">9.</span> Physikalische/chemische Eigenschaften</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">10.</span> Stabilität und Reaktivität</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">11.</span> Toxikologische Angaben</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">12.</span> Umweltbezogene Angaben</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">13.</span> Entsorgung</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">14.</span> Transportvorschriften</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">15.</span> Rechtsvorschriften</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">16.</span> Sonstige Angaben</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center text-gray-400 text-sm">
+                <p>⚠️ Dieses Tool liefert nur Zusammenfassungen. Konsultieren Sie immer das vollständige Sicherheitsdatenblatt für vollständige Informationen.</p>
+                <p class="mt-2">© 2026 ChemicalResistance.org — <a href="../de-about.html" class="underline hover:text-white">Über uns</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/chemicals_hazard_data.js"></script>
+    
+    <script>
+    const sdsDatabase = window.chemicalHazardDB;
+    const ghsIcons = window.ghsInfo;
+
+    const searchInput = document.getElementById('chemicalSearch');
+    const searchResults = document.getElementById('searchResults');
+    const sdsResults = document.getElementById('sdsResults');
+    const ghsReference = document.getElementById('ghsReference');
+    const sdsExplainer = document.getElementById('sdsExplainer');
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        if (query.length < 2) {
+            searchResults.classList.add('hidden');
+            return;
+        }
+
+        const matches = Object.keys(sdsDatabase).filter(name => {
+            const chem = sdsDatabase[name];
+            return name.toLowerCase().includes(query) || 
+                chem.cas?.includes(query) ||
+                chem.de?.toLowerCase().includes(query) ||
+                chem.synonyms?.some(s => s.toLowerCase().includes(query));
+        }).slice(0, 10);
+
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="p-3 text-gray-500">Keine Chemikalien in der Datenbank gefunden</div>';
+        } else {
+            searchResults.innerHTML = matches.map(name => {
+                const chem = sdsDatabase[name];
+                const displayName = chem.de || name;
+                const ghsImages = (chem.ghs || []).map(g => `<img src="../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-10 h-10 inline-block">`).join('');
+                return `
+                    <div class="p-3 hover:bg-green-50 cursor-pointer border-b last:border-b-0" onclick="showSDS('${name}')">
+                        <div class="font-medium text-gray-900">${displayName}</div>
+                        <div class="text-xs text-gray-500 mt-1">
+                            CAS: ${chem.cas || 'N/V'} · ${ghsImages || 'Ungefährlich'}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        searchResults.classList.remove('hidden');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.add('hidden');
+        }
+    });
+
+    function showSDS(name) {
+        const chem = sdsDatabase[name];
+        if (!chem) return;
+
+        const displayName = chem.de || name;
+        searchInput.value = displayName;
+        searchResults.classList.add('hidden');
+        sdsResults.classList.remove('hidden');
+        ghsReference.classList.add('hidden');
+        sdsExplainer.classList.add('hidden');
+
+        const ghsImagesHeader = (chem.ghs || []).map(g => `<img src="../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-12 h-12 inline-block">`).join('');
+        document.getElementById('chemicalHeader').innerHTML = `
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-2xl font-bold mb-1">${displayName}</h2>
+                    <div class="text-green-100">
+                        <span class="font-mono">${chem.formula || ''}</span> · CAS: ${chem.cas || 'N/V'}
+                    </div>
+                    ${chem.synonyms?.length ? `<div class="text-green-200 text-sm mt-1">Auch: ${chem.synonyms.join(', ')}</div>` : ''}
+                </div>
+                <div class="flex gap-1">${ghsImagesHeader}</div>
+            </div>
+        `;
+
+        const ghsSection = document.getElementById('ghsSection');
+        if (chem.ghs && chem.ghs.length > 0) {
+            ghsSection.classList.remove('hidden');
+            document.getElementById('ghsPictograms').innerHTML = chem.ghs.map(g => {
+                const icon = ghsIcons[g];
+                return `
+                    <div class="flex items-center gap-3 p-3 bg-red-50 rounded-lg border border-red-200">
+                        <img src="../${icon?.img || ''}" alt="${g}" class="w-12 h-12">
+                        <div>
+                            <div class="font-medium text-gray-900">${g} - ${icon?.name || 'Unbekannt'}</div>
+                            <div class="text-sm text-gray-600">${icon?.desc || ''}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        } else {
+            ghsSection.classList.add('hidden');
+        }
+
+        const ppe = chem.ppe || { eyes: {type: 'Schutzbrille'}, skin: {type: 'Handschuhe bei Bedarf'}, respiratory: {type: 'Nicht erforderlich'} };
+        document.getElementById('ppeList').innerHTML = `
+            <div class="flex items-center gap-3 ${ppe.eyes?.required ? 'text-gray-900' : 'text-gray-400'}">
+                <i data-lucide="eye" class="w-5 h-5"></i>
+                <div>
+                    <div class="font-medium">Augenschutz</div>
+                    <div class="text-sm text-gray-600">${ppe.eyes?.type || 'Schutzbrille empfohlen'}</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 ${ppe.skin?.required ? 'text-gray-900' : 'text-gray-400'}">
+                <i data-lucide="hand" class="w-5 h-5"></i>
+                <div>
+                    <div class="font-medium">Hautschutz</div>
+                    <div class="text-sm text-gray-600">${ppe.skin?.type || 'Handschuhe bei längerem Kontakt'}</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 ${ppe.respiratory?.required ? 'text-gray-900' : 'text-gray-400'}">
+                <i data-lucide="wind" class="w-5 h-5"></i>
+                <div>
+                    <div class="font-medium">Atemschutz</div>
+                    <div class="text-sm text-gray-600">${ppe.respiratory?.type || 'Normalerweise nicht erforderlich'}</div>
+                </div>
+            </div>
+            ${ppe.other ? `<div class="text-sm text-gray-600 mt-2 pt-2 border-t">ℹ️ ${ppe.other}</div>` : ''}
+        `;
+
+        const storage = chem.storage || { cabinet: 'Allgemeine Lagerung', temp: 'Raumtemperatur', ventilation: 'Normal', incompatible: [] };
+        document.getElementById('storageInfo').innerHTML = `
+            <div class="flex items-center gap-3">
+                <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
+                <div class="font-medium">${storage.cabinet}</div>
+            </div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="thermometer" class="w-5 h-5 text-blue-500"></i>
+                <div>${storage.temp}</div>
+            </div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="wind" class="w-5 h-5 text-cyan-500"></i>
+                <div>${storage.ventilation}</div>
+            </div>
+            ${storage.incompatible?.length ? `
+            <div class="mt-2 pt-2 border-t">
+                <div class="text-sm font-medium text-red-600 mb-1">⚠️ Fernhalten von:</div>
+                <div class="text-sm text-gray-600">${storage.incompatible.join(', ')}</div>
+            </div>` : ''}
+        `;
+
+        const hazardSection = document.getElementById('hazardStatements');
+        if (chem.hazardStatements && chem.hazardStatements.length > 0) {
+            hazardSection.parentElement.classList.remove('hidden');
+            hazardSection.innerHTML = chem.hazardStatements.map(h => `
+                <div class="flex gap-3 p-2 bg-red-50 rounded">
+                    <span class="font-mono text-red-600 font-medium">${h.code}</span>
+                    <span class="text-gray-700">${h.text}</span>
+                </div>
+            `).join('');
+        } else {
+            hazardSection.parentElement.classList.add('hidden');
+        }
+
+        const fa = chem.firstAid || { inhalation: 'An frische Luft bringen.', skin: 'Mit Wasser waschen.', eyes: 'Mit Wasser spülen.', ingestion: 'Mund ausspülen.' };
+        document.getElementById('firstAid').innerHTML = `
+            <div class="p-3 bg-blue-50 rounded-lg">
+                <div class="font-medium text-blue-700 mb-1">💨 Einatmen</div>
+                <div class="text-sm text-gray-600">${fa.inhalation}</div>
+            </div>
+            <div class="p-3 bg-orange-50 rounded-lg">
+                <div class="font-medium text-orange-700 mb-1">🖐️ Hautkontakt</div>
+                <div class="text-sm text-gray-600">${fa.skin}</div>
+            </div>
+            <div class="p-3 bg-purple-50 rounded-lg">
+                <div class="font-medium text-purple-700 mb-1">👁️ Augenkontakt</div>
+                <div class="text-sm text-gray-600">${fa.eyes}</div>
+            </div>
+            <div class="p-3 bg-red-50 rounded-lg">
+                <div class="font-medium text-red-700 mb-1">🍽️ Verschlucken</div>
+                <div class="text-sm text-gray-600">${fa.ingestion}</div>
+            </div>
+        `;
+
+        const tr = chem.transport || { un: '-', class: '-', packingGroup: '-', properShipping: 'Nicht reguliert' };
+        document.getElementById('transportInfo').innerHTML = `
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-2xl font-bold text-gray-900">${tr.un}</div>
+                <div class="text-xs text-gray-500">UN-Nummer</div>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-2xl font-bold text-gray-900">${tr.class}</div>
+                <div class="text-xs text-gray-500">Klasse</div>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-2xl font-bold text-gray-900">${tr.packingGroup}</div>
+                <div class="text-xs text-gray-500">Verpackungsgruppe</div>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-sm font-medium text-gray-900">${tr.properShipping}</div>
+                <div class="text-xs text-gray-500">Versandbezeichnung</div>
+            </div>
+        `;
+
+        document.getElementById('resistanceLink').href = `../de.html?search=${encodeURIComponent(name)}`;
+
+        lucide.createIcons();
+        sdsResults.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function changeLanguage(lang) {
+        const urls = {
+            en: '/sds-decoder.html',
+            de: '/de/sds-decoder.html',
+            es: '/es/sds-decoder.html',
+            fr: '/fr/sds-decoder.html',
+            pt: '/pt/sds-decoder.html'
+        };
+        window.location.href = urls[lang] || urls.en;
+    }
+
+    lucide.createIcons();
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParam = urlParams.get('search');
+    if (searchParam) {
+        searchInput.value = searchParam;
+        const matches = Object.keys(sdsDatabase).filter(name => 
+            name.toLowerCase().includes(searchParam.toLowerCase()) ||
+            sdsDatabase[name].de?.toLowerCase().includes(searchParam.toLowerCase())
+        );
+        if (matches.length > 0) {
+            showSDS(matches[0]);
+        }
+    }
+    </script>
+</body>
+</html>
