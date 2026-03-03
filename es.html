@@ -90,23 +90,23 @@
     <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2">
+            <a href="es.html" class="flex items-center gap-2">
                 <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
                     <i data-lucide="flask-conical" class="w-5 h-5 text-white"></i>
                 </div>
                 <div>
                     <div class="font-bold text-gray-900">ChemicalResistance.org</div>
-                    <div class="text-xs text-gray-500">Base de datos de compatibilidad química</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Base de datos de compatibilidad química</div>
                 </div>
             </a>
-            <div class="flex items-center gap-4 text-sm">
-                <a href="#guide" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Guía de Materiales</a>
-                <a href="storage-compatibility.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Storage</a>
-                <a href="sds-decoder.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">SDS</a>
-                <a href="storage-compatibility.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Almacenamiento</a>
-                <a href="sds-decoder.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">SDS</a>
-                <a href="viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Viscosidad</a>
-                <a href="about.html" class="text-gray-600 hover:text-gray-900 hover:underline hidden sm:block">Acerca de</a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="#guide" class="text-gray-600 hover:text-gray-900 hover:underline">Guía de Materiales</a>
+                    <a href="storage-compatibility.html" class="text-gray-600 hover:text-gray-900 hover:underline">Almacenamiento</a>
+                    <a href="sds-decoder.html" class="text-gray-600 hover:text-gray-900 hover:underline">FDS</a>
+                    <a href="viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosidad</a>
+                    <a href="es-about.html" class="text-gray-600 hover:text-gray-900 hover:underline">Acerca de</a>
+                </nav>
                 <select id="langSelect" aria-label="Seleccionar idioma" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
                     <option value="en">🇬🇧 EN</option>
                     <option value="es" selected>🇪🇸 ES</option>
@@ -114,9 +114,27 @@
                     <option value="fr">🇫🇷 FR</option>
                     <option value="pt">🇧🇷 PT</option>
                 </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menú">
+                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+                </button>
             </div>
         </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="es.html" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Tabla de Resistencia</a>
+                <a href="storage-compatibility.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compatibilidad de Almacenamiento</a>
+                <a href="sds-decoder.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Decodificador FDS</a>
+                <a href="viscosity.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosidad</a>
+                <a href="#guide" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Guía de Materiales</a>
+                <a href="es-about.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Acerca de</a>
+            </nav>
+        </div>
     </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
 
     <main>
     <!-- Hero + Search -->
