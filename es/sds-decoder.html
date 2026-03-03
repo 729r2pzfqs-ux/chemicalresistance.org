@@ -307,6 +307,112 @@
     
     <script>
     const sdsDatabase = window.chemicalHazardDB;
+    
+    // Translation helper
+    function t(text) {
+        if (!text) return text;
+        const translations = {
+            // PPE
+            "Chemical splash goggles": "Gafas antisalpicaduras",
+            "Chemical splash goggles + face shield": "Gafas antisalpicaduras + pantalla facial",
+            "Safety glasses": "Gafas de seguridad",
+            "Face shield": "Pantalla facial",
+            "Safety goggles": "Gafas de protección",
+            "Butyl or neoprene gloves": "Guantes de butilo o neopreno",
+            "Butyl or neoprene gloves, chemical-resistant suit": "Guantes de butilo o neopreno, traje resistente a químicos",
+            "Nitrile gloves": "Guantes de nitrilo",
+            "Chemical-resistant gloves": "Guantes resistentes a químicos",
+            "Rubber gloves": "Guantes de goma",
+            "PVC gloves": "Guantes de PVC",
+            "Acid gas respirator": "Respirador para gases ácidos",
+            "Acid gas respirator if ventilation inadequate": "Respirador para gases ácidos si la ventilación es inadecuada",
+            "Organic vapor respirator": "Respirador para vapores orgánicos",
+            "Full-face respirator": "Respirador de cara completa",
+            "Self-contained breathing apparatus": "Equipo de respiración autónomo",
+            "SCBA": "ERA (Equipo de Respiración Autónomo)",
+            "Not typically required": "Normalmente no requerido",
+            "Chemical-resistant boots": "Botas resistentes a químicos",
+            "Chemical-resistant boots, emergency shower access": "Botas resistentes a químicos, acceso a ducha de emergencia",
+            "Lab coat": "Bata de laboratorio",
+            "Apron": "Delantal",
+            // Storage
+            "Acid cabinet": "Armario para ácidos",
+            "Acid cabinet (separate from bases and oxidizers)": "Armario para ácidos (separado de bases y oxidantes)",
+            "Base cabinet": "Armario para bases",
+            "Flammable cabinet": "Armario para inflamables",
+            "Flammable storage cabinet": "Armario de almacenamiento para inflamables",
+            "Oxidizer cabinet": "Armario para oxidantes",
+            "Toxic cabinet": "Armario para tóxicos",
+            "General storage": "Almacenamiento general",
+            "Cool, dry place": "Lugar fresco y seco",
+            "Store below": "Almacenar por debajo de",
+            "Room temperature": "Temperatura ambiente",
+            "Store in well-ventilated area": "Almacenar en área bien ventilada",
+            "Well-ventilated area": "Área bien ventilada",
+            "Keep away from heat": "Mantener alejado del calor",
+            "Keep away from ignition sources": "Mantener alejado de fuentes de ignición",
+            "Normal ventilation": "Ventilación normal",
+            // Incompatibles
+            "Bases": "Bases",
+            "Acids": "Ácidos",
+            "Oxidizers": "Oxidantes",
+            "Organic materials": "Materiales orgánicos",
+            "Metals": "Metales",
+            "Water": "Agua",
+            "Heat": "Calor",
+            "Flammables": "Inflamables",
+            // First aid
+            "Move to fresh air": "Trasladar al aire libre",
+            "Move to fresh air.": "Trasladar al aire libre.",
+            "Get medical attention if symptoms persist": "Buscar atención médica si los síntomas persisten",
+            "Wash with soap and water": "Lavar con agua y jabón",
+            "Wash with water": "Lavar con agua",
+            "Wash with water.": "Lavar con agua.",
+            "Remove contaminated clothing": "Retirar la ropa contaminada",
+            "Flush with water for 15 minutes": "Enjuagar con agua durante 15 minutos",
+            "Flush with water": "Enjuagar con agua",
+            "Flush with water.": "Enjuagar con agua.",
+            "Rinse mouth": "Enjuagar la boca",
+            "Rinse mouth.": "Enjuagar la boca.",
+            "Do not induce vomiting": "No provocar el vómito",
+            "Seek medical attention": "Buscar atención médica",
+            "Call poison control": "Llamar al centro de toxicología",
+            // Hazard statements
+            "Causes severe skin burns and eye damage": "Provoca quemaduras graves en la piel y lesiones oculares graves",
+            "May be corrosive to metals": "Puede ser corrosivo para los metales",
+            "Highly flammable liquid and vapour": "Líquido y vapores muy inflamables",
+            "Causes serious eye irritation": "Provoca irritación ocular grave",
+            "May cause drowsiness or dizziness": "Puede provocar somnolencia o vértigo",
+            "Harmful if swallowed": "Nocivo en caso de ingestión",
+            "Harmful if inhaled": "Nocivo en caso de inhalación",
+            "Harmful in contact with skin": "Nocivo en contacto con la piel",
+            "Toxic if swallowed": "Tóxico en caso de ingestión",
+            "Toxic if inhaled": "Tóxico en caso de inhalación",
+            "Fatal if swallowed": "Mortal en caso de ingestión",
+            "Fatal if inhaled": "Mortal en caso de inhalación",
+            "Causes skin irritation": "Provoca irritación cutánea",
+            "May cause an allergic skin reaction": "Puede provocar una reacción alérgica en la piel",
+            "Causes eye irritation": "Provoca irritación ocular",
+            "May cause respiratory irritation": "Puede irritar las vías respiratorias",
+            "Suspected of causing cancer": "Se sospecha que provoca cáncer",
+            "May cause cancer": "Puede provocar cáncer",
+            "Very toxic to aquatic life": "Muy tóxico para los organismos acuáticos",
+            // Transport
+            "Not regulated": "No regulado",
+            "Proper Shipping Name": "Designación oficial de transporte"
+        };
+        
+        // Direct match
+        if (translations[text]) return translations[text];
+        
+        // Partial match for longer strings
+        let result = text;
+        for (const [en, es] of Object.entries(translations)) {
+            result = result.replace(new RegExp(en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), es);
+        }
+        return result;
+    }
+    
     // Spanish GHS descriptions
     const ghsIcons = {
         "GHS01": { img: "img/ghs/ghs01.svg", name: "Explosivo", desc: "Explosivos, sustancias autorreactivas" },
@@ -417,44 +523,44 @@
                 <i data-lucide="eye" class="w-5 h-5"></i>
                 <div>
                     <div class="font-medium">Protección Ocular</div>
-                    <div class="text-sm text-gray-600">${ppe.eyes?.type || 'Gafas de seguridad recomendadas'}</div>
+                    <div class="text-sm text-gray-600">${t(ppe.eyes?.type) || 'Gafas de seguridad recomendadas'}</div>
                 </div>
             </div>
             <div class="flex items-center gap-3 ${ppe.skin?.required ? 'text-gray-900' : 'text-gray-400'}">
                 <i data-lucide="hand" class="w-5 h-5"></i>
                 <div>
                     <div class="font-medium">Protección de la Piel</div>
-                    <div class="text-sm text-gray-600">${ppe.skin?.type || 'Guantes en caso de contacto prolongado'}</div>
+                    <div class="text-sm text-gray-600">${t(ppe.skin?.type) || 'Guantes en caso de contacto prolongado'}</div>
                 </div>
             </div>
             <div class="flex items-center gap-3 ${ppe.respiratory?.required ? 'text-gray-900' : 'text-gray-400'}">
                 <i data-lucide="wind" class="w-5 h-5"></i>
                 <div>
                     <div class="font-medium">Protección Respiratoria</div>
-                    <div class="text-sm text-gray-600">${ppe.respiratory?.type || 'Normalmente no requerido'}</div>
+                    <div class="text-sm text-gray-600">${t(ppe.respiratory?.type) || 'Normalmente no requerido'}</div>
                 </div>
             </div>
-            ${ppe.other ? `<div class="text-sm text-gray-600 mt-2 pt-2 border-t">ℹ️ ${ppe.other}</div>` : ''}
+            ${ppe.other ? `<div class="text-sm text-gray-600 mt-2 pt-2 border-t">ℹ️ ${t(ppe.other)}</div>` : ''}
         `;
 
         const storage = chem.storage || { cabinet: 'Almacenamiento general', temp: 'Temperatura ambiente', ventilation: 'Normal', incompatible: [] };
         document.getElementById('storageInfo').innerHTML = `
             <div class="flex items-center gap-3">
                 <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
-                <div class="font-medium">${storage.cabinet}</div>
+                <div class="font-medium">${t(storage.cabinet)}</div>
             </div>
             <div class="flex items-center gap-3">
                 <i data-lucide="thermometer" class="w-5 h-5 text-blue-500"></i>
-                <div>${storage.temp}</div>
+                <div>${t(storage.temp)}</div>
             </div>
             <div class="flex items-center gap-3">
                 <i data-lucide="wind" class="w-5 h-5 text-cyan-500"></i>
-                <div>${storage.ventilation}</div>
+                <div>${t(storage.ventilation)}</div>
             </div>
             ${storage.incompatible?.length ? `
             <div class="mt-2 pt-2 border-t">
                 <div class="text-sm font-medium text-red-600 mb-1">⚠️ Mantener alejado de:</div>
-                <div class="text-sm text-gray-600">${storage.incompatible.join(', ')}</div>
+                <div class="text-sm text-gray-600">${storage.incompatible.map(i => t(i)).join(', ')}</div>
             </div>` : ''}
         `;
 
@@ -464,7 +570,7 @@
             hazardSection.innerHTML = chem.hazardStatements.map(h => `
                 <div class="flex gap-3 p-2 bg-red-50 rounded">
                     <span class="font-mono text-red-600 font-medium">${h.code}</span>
-                    <span class="text-gray-700">${h.text}</span>
+                    <span class="text-gray-700">${t(h.text)}</span>
                 </div>
             `).join('');
         } else {
@@ -475,19 +581,19 @@
         document.getElementById('firstAid').innerHTML = `
             <div class="p-3 bg-blue-50 rounded-lg">
                 <div class="font-medium text-blue-700 mb-1">💨 Inhalación</div>
-                <div class="text-sm text-gray-600">${fa.inhalation}</div>
+                <div class="text-sm text-gray-600">${t(fa.inhalation)}</div>
             </div>
             <div class="p-3 bg-orange-50 rounded-lg">
                 <div class="font-medium text-orange-700 mb-1">🖐️ Contacto con la Piel</div>
-                <div class="text-sm text-gray-600">${fa.skin}</div>
+                <div class="text-sm text-gray-600">${t(fa.skin)}</div>
             </div>
             <div class="p-3 bg-purple-50 rounded-lg">
                 <div class="font-medium text-purple-700 mb-1">👁️ Contacto con los Ojos</div>
-                <div class="text-sm text-gray-600">${fa.eyes}</div>
+                <div class="text-sm text-gray-600">${t(fa.eyes)}</div>
             </div>
             <div class="p-3 bg-red-50 rounded-lg">
                 <div class="font-medium text-red-700 mb-1">🍽️ Ingestión</div>
-                <div class="text-sm text-gray-600">${fa.ingestion}</div>
+                <div class="text-sm text-gray-600">${t(fa.ingestion)}</div>
             </div>
         `;
 
@@ -506,7 +612,7 @@
                 <div class="text-xs text-gray-500">Grupo de Embalaje</div>
             </div>
             <div class="p-3 bg-gray-50 rounded-lg text-center">
-                <div class="text-sm font-medium text-gray-900">${tr.properShipping}</div>
+                <div class="text-sm font-medium text-gray-900">${t(tr.properShipping)}</div>
                 <div class="text-xs text-gray-500">Nombre de Envío</div>
             </div>
         `;
