@@ -307,7 +307,18 @@
     
     <script>
     const sdsDatabase = window.chemicalHazardDB;
-    const ghsIcons = window.ghsInfo;
+    // German GHS descriptions
+    const ghsIcons = {
+        "GHS01": { img: "img/ghs/ghs01.svg", name: "Explosiv", desc: "Explosivstoffe, selbstzersetzliche Stoffe" },
+        "GHS02": { img: "img/ghs/ghs02.svg", name: "Entzündlich", desc: "Entzündliche Stoffe" },
+        "GHS03": { img: "img/ghs/ghs03.svg", name: "Brandfördernd", desc: "Kann Brand verursachen oder verstärken" },
+        "GHS04": { img: "img/ghs/ghs04.svg", name: "Gasflasche", desc: "Gase unter Druck" },
+        "GHS05": { img: "img/ghs/ghs05.svg", name: "Ätzend", desc: "Verursacht Verätzungen" },
+        "GHS06": { img: "img/ghs/ghs06.svg", name: "Giftig", desc: "Akute Toxizität" },
+        "GHS07": { img: "img/ghs/ghs07.svg", name: "Reizend", desc: "Reizend, sensibilisierend" },
+        "GHS08": { img: "img/ghs/ghs08.svg", name: "Gesundheitsgefahr", desc: "Karzinogen, Mutagen, Organschäden" },
+        "GHS09": { img: "img/ghs/ghs09.svg", name: "Umweltgefahr", desc: "Gewässergefährdend" }
+    };
 
     const searchInput = document.getElementById('chemicalSearch');
     const searchResults = document.getElementById('searchResults');
