@@ -1,5 +1,5 @@
 // Chemical Hazard Database for Storage Compatibility & SDS Decoder
-// ~500 chemicals with hazard classifications, GHS, PPE, and storage info
+// 430 chemicals with hazard classifications, GHS, PPE, and storage info
 
 const chemicalHazardDB = {
   // ===== ACIDS =====
@@ -3821,19 +3821,6 @@ chemicalHazardDB["Picric Acid"] = {
 
 // === BATCH 3: More Industrial Chemicals (50 more) ===
 
-chemicalHazardDB["Propylene Glycol"] = {
-  cas: "57-55-6", formula: "C₃H₈O₂",
-  de: "Propylenglykol", es: "Propilenglicol", fr: "Propylène glycol", pt: "Propilenoglicol",
-  synonyms: ["1,2-Propanediol", "PG", "MPG"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional gloves" }, respiratory: { required: false, type: "None" }, other: "Generally regarded as safe (GRAS)" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Propylene glycol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with water.", eyes: "Flush with water.", ingestion: "Rinse mouth. Drink water." }
-};
-
 chemicalHazardDB["Glycerol"] = {
   cas: "56-81-5", formula: "C₃H₈O₃",
   de: "Glycerin", es: "Glicerol", fr: "Glycérol", pt: "Glicerol",
@@ -3875,25 +3862,6 @@ chemicalHazardDB["Tetrahydrofuran"] = {
   storage: { cabinet: "Flammable liquids", temp: "Cool, dark", ventilation: "Good", incompatible: ["Oxidizers", "Peroxide formation on standing"] },
   transport: { un: "2056", class: "3", packingGroup: "II", properShipping: "Tetrahydrofuran" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash with water.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Cyclohexane"] = {
-  cas: "110-82-7", formula: "C₆H₁₂",
-  de: "Cyclohexan", es: "Ciclohexano", fr: "Cyclohexane", pt: "Ciclo-hexano",
-  synonyms: ["Hexamethylene", "Hexanaphthene"],
-  classes: ["flammable", "irritant", "environmental"],
-  ghs: ["GHS02", "GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapour" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Extremely flammable" },
-  storage: { cabinet: "Flammable liquids", temp: "Cool", ventilation: "Excellent", incompatible: ["Oxidizers"] },
-  transport: { un: "1145", class: "3", packingGroup: "II", properShipping: "Cyclohexane" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Do NOT vomit. Medical attention." }
 };
 
 chemicalHazardDB["Hexane"] = {
@@ -3974,27 +3942,6 @@ chemicalHazardDB["Chloroform"] = {
   firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash thoroughly.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
-chemicalHazardDB["Carbon Tetrachloride"] = {
-  cas: "56-23-5", formula: "CCl₄",
-  de: "Tetrachlorkohlenstoff", es: "Tetracloruro de carbono", fr: "Tétrachlorure de carbone", pt: "Tetracloreto de carbono",
-  synonyms: ["Tetrachloromethane", "CTC"],
-  classes: ["health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H351", text: "Suspected of causing cancer" },
-    { code: "H372", text: "Causes damage to organs (liver, kidneys)" },
-    { code: "H420", text: "Harms public health and the environment by destroying ozone" },
-    { code: "H411", text: "Toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Butyl rubber" }, respiratory: { required: true, type: "Supplied air" }, other: "Ozone depleter - restricted use. Liver toxin." },
-  storage: { cabinet: "Toxic storage", temp: "Cool", ventilation: "Excellent", incompatible: ["Metals", "Flame"] },
-  transport: { un: "1846", class: "6.1", packingGroup: "II", properShipping: "Carbon tetrachloride" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Medical attention.", skin: "Remove clothing. Wash.", eyes: "Flush 20 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
 chemicalHazardDB["Bromine"] = {
   cas: "7726-95-6", formula: "Br₂",
   de: "Brom", es: "Bromo", fr: "Brome", pt: "Bromo",
@@ -4060,49 +4007,6 @@ chemicalHazardDB["Potassium Permanganate"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash with water. May stain.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Do NOT vomit." }
 };
 
-chemicalHazardDB["Boric Acid"] = {
-  cas: "10043-35-3", formula: "H₃BO₃",
-  de: "Borsäure", es: "Ácido bórico", fr: "Acide borique", pt: "Ácido bórico",
-  synonyms: ["Boracic acid", "Orthoboric acid"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H360FD", text: "May damage fertility. May damage the unborn child." }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Reproductive toxin" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong reducing agents"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Boric acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth. Medical attention if large amount." }
-};
-
-chemicalHazardDB["Sodium Bicarbonate"] = {
-  cas: "144-55-8", formula: "NaHCO₃",
-  de: "Natriumhydrogencarbonat", es: "Bicarbonato de sodio", fr: "Bicarbonate de sodium", pt: "Bicarbonato de sódio",
-  synonyms: ["Baking soda", "Sodium hydrogen carbonate"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask for powder" }, other: "Food grade available" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids (evolves CO2)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium bicarbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Drink water." }
-};
-
-chemicalHazardDB["Sodium Carbonate"] = {
-  cas: "497-19-8", formula: "Na₂CO₃",
-  de: "Natriumcarbonat", es: "Carbonato de sodio", fr: "Carbonate de sodium", pt: "Carbonato de sódio",
-  synonyms: ["Soda ash", "Washing soda"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Alkaline - pH ~11.5" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium carbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Drink water." }
-};
-
 chemicalHazardDB["Calcium Carbonate"] = {
   cas: "471-34-1", formula: "CaCO₃",
   de: "Calciumcarbonat", es: "Carbonato de calcio", fr: "Carbonate de calcium", pt: "Carbonato de cálcio",
@@ -4114,19 +4018,6 @@ chemicalHazardDB["Calcium Carbonate"] = {
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids (evolves CO2)"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Calcium carbonate" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Magnesium Sulfate"] = {
-  cas: "7487-88-9", formula: "MgSO₄",
-  de: "Magnesiumsulfat", es: "Sulfato de magnesio", fr: "Sulfate de magnésium", pt: "Sulfato de magnésio",
-  synonyms: ["Epsom salt", "Bitter salt"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Generally safe - bath salts" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: [] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Magnesium sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Drink water. Laxative effect." }
 };
 
 chemicalHazardDB["Zinc Sulfate"] = {
@@ -4164,36 +4055,6 @@ chemicalHazardDB["Copper Sulfate"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Do NOT vomit. Medical attention." }
 };
 
-chemicalHazardDB["Ferrous Sulfate"] = {
-  cas: "7720-78-7", formula: "FeSO₄",
-  de: "Eisen(II)-sulfat", es: "Sulfato ferroso", fr: "Sulfate ferreux", pt: "Sulfato ferroso",
-  synonyms: ["Iron(II) sulfate", "Green vitriol", "Copperas"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Iron supplement, moss killer" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ferrous sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Sodium Thiosulfate"] = {
-  cas: "7772-98-7", formula: "Na₂S₂O₃",
-  de: "Natriumthiosulfat", es: "Tiosulfato de sodio", fr: "Thiosulfate de sodium", pt: "Tiossulfato de sódio",
-  synonyms: ["Hypo", "Sodium hyposulfite"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Photography fixer, dechlorinator" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids (releases SO2)", "Oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium thiosulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Sodium Metabisulfite"] = {
   cas: "7681-57-4", formula: "Na₂S₂O₅",
   de: "Natriumdisulfit", es: "Metabisulfito de sodio", fr: "Métabisulfite de sodium", pt: "Metabissulfito de sódio",
@@ -4223,21 +4084,6 @@ chemicalHazardDB["Citric Acid Anhydrous"] = {
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Metals"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Citric acid" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Lactic Acid"] = {
-  cas: "50-21-5", formula: "C₃H₆O₃",
-  de: "Milchsäure", es: "Ácido láctico", fr: "Acide lactique", pt: "Ácido láctico",
-  synonyms: ["2-Hydroxypropanoic acid"],
-  classes: ["corrosive"],
-  ghs: ["GHS05"],
-  hazardStatements: [
-    { code: "H314", text: "Causes severe skin burns and eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "None" }, other: "Concentrated form is corrosive" },
-  storage: { cabinet: "Acid storage", temp: "Room temperature", ventilation: "Good", incompatible: ["Strong oxidizers", "Bases"] },
-  transport: { un: "Not regulated below 80%", class: "8", packingGroup: "III", properShipping: "Lactic acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with water.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Drink water." }
 };
 
 chemicalHazardDB["Acetic Anhydride"] = {
@@ -4292,26 +4138,6 @@ chemicalHazardDB["Cumene Hydroperoxide"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Flush 20 min.", eyes: "Flush 20 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
-chemicalHazardDB["Styrene"] = {
-  cas: "100-42-5", formula: "C₈H₈",
-  de: "Styrol", es: "Estireno", fr: "Styrène", pt: "Estireno",
-  synonyms: ["Vinylbenzene", "Ethenylbenzene", "Phenylethylene"],
-  classes: ["flammable", "health", "irritant"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapour" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H361d", text: "Suspected of damaging the unborn child" },
-    { code: "H372", text: "Causes damage to organs through prolonged exposure" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Polymerizes - inhibitor required" },
-  storage: { cabinet: "Flammable liquids", temp: "Cool", ventilation: "Good", incompatible: ["Oxidizers", "Peroxides", "Heat"] },
-  transport: { un: "2055", class: "3", packingGroup: "III", properShipping: "Styrene monomer, stabilized" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Vinyl Acetate"] = {
   cas: "108-05-4", formula: "C₄H₆O₂",
   de: "Vinylacetat", es: "Acetato de vinilo", fr: "Acétate de vinyle", pt: "Acetato de vinila",
@@ -4328,110 +4154,6 @@ chemicalHazardDB["Vinyl Acetate"] = {
   storage: { cabinet: "Flammable liquids", temp: "Cool", ventilation: "Excellent", incompatible: ["Oxidizers", "Peroxides", "Acids", "Bases"] },
   transport: { un: "1301", class: "3", packingGroup: "II", properShipping: "Vinyl acetate, stabilized" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Acrylonitrile"] = {
-  cas: "107-13-1", formula: "C₃H₃N",
-  de: "Acrylnitril", es: "Acrilonitrilo", fr: "Acrylonitrile", pt: "Acrilonitrila",
-  synonyms: ["VCN", "Vinyl cyanide", "Propenenitrile"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapour" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber, full coverage" }, respiratory: { required: true, type: "Supplied air" }, other: "CARCINOGEN. Releases HCN on burning." },
-  storage: { cabinet: "Flammable/Toxic storage", temp: "Cool", ventilation: "Excellent", incompatible: ["Oxidizers", "Acids", "Bases", "Amines"] },
-  transport: { un: "1093", class: "3", packingGroup: "I", properShipping: "Acrylonitrile, stabilized" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Remove clothing. Wash. Medical attention.", eyes: "Flush 20 min.", ingestion: "Do NOT vomit. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Epichlorohydrin"] = {
-  cas: "106-89-8", formula: "C₃H₅ClO",
-  de: "Epichlorhydrin", es: "Epiclorhidrina", fr: "Épichlorhydrine", pt: "Epicloridrina",
-  synonyms: ["ECH", "Chloropropylene oxide"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS05", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapour" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber, full coverage" }, respiratory: { required: true, type: "Supplied air" }, other: "CARCINOGEN. Epoxy resin precursor." },
-  storage: { cabinet: "Flammable/Toxic storage", temp: "Cool", ventilation: "Excellent", incompatible: ["Water", "Acids", "Bases", "Oxidizers"] },
-  transport: { un: "2023", class: "6.1", packingGroup: "II", properShipping: "Epichlorohydrin" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Medical attention.", skin: "Remove clothing. Flush 20 min. Medical attention.", eyes: "Flush 20 min. Medical attention.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
-chemicalHazardDB["Propylene Oxide"] = {
-  cas: "75-56-9", formula: "C₃H₆O",
-  de: "Propylenoxid", es: "Óxido de propileno", fr: "Oxyde de propylène", pt: "Óxido de propileno",
-  synonyms: ["PO", "1,2-Propylene oxide", "Methyloxirane"],
-  classes: ["flammable", "health"],
-  ghs: ["GHS02", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H224", text: "Extremely flammable liquid and vapour" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H340", text: "May cause genetic defects" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Butyl rubber" }, respiratory: { required: true, type: "Supplied air" }, other: "CARCINOGEN. Used in polyurethane production." },
-  storage: { cabinet: "Flammable liquids", temp: "Cool", ventilation: "Excellent", incompatible: ["Acids", "Bases", "Oxidizers"] },
-  transport: { un: "1280", class: "3", packingGroup: "I", properShipping: "Propylene oxide" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Ethylene Oxide"] = {
-  cas: "75-21-8", formula: "C₂H₄O",
-  de: "Ethylenoxid", es: "Óxido de etileno", fr: "Oxyde d'éthylène", pt: "Óxido de etileno",
-  synonyms: ["EO", "EtO", "Oxirane"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS04", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H340", text: "May cause genetic defects" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Butyl rubber" }, respiratory: { required: true, type: "SCBA" }, other: "CARCINOGEN. Sterilization gas. Explosive range 3-100%." },
-  storage: { cabinet: "Flammable gas cylinder storage", temp: "Cool", ventilation: "Excellent", incompatible: ["Acids", "Bases", "Oxidizers", "Copper"] },
-  transport: { un: "1040", class: "2.3", packingGroup: "N/A", properShipping: "Ethylene oxide" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Wash thoroughly.", eyes: "Flush 20 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Glutaraldehyde"] = {
-  cas: "111-30-8", formula: "C₅H₈O₂",
-  de: "Glutaraldehyd", es: "Glutaraldehído", fr: "Glutaraldéhyde", pt: "Glutaraldeído",
-  synonyms: ["Glutaral", "1,5-Pentanedial"],
-  classes: ["toxic", "corrosive", "environmental"],
-  ghs: ["GHS05", "GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H334", text: "May cause allergy or asthma symptoms" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber" }, respiratory: { required: true, type: "Full face respirator" }, other: "Severe sensitizer. Hospital disinfectant." },
-  storage: { cabinet: "Toxic/Corrosive storage", temp: "Cool", ventilation: "Good", incompatible: ["Strong acids", "Bases", "Amines"] },
-  transport: { un: "2810", class: "6.1", packingGroup: "III", properShipping: "Toxic liquid, organic" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 20 min. Medical attention.", eyes: "Flush 20 min. IMMEDIATE medical attention.", ingestion: "Rinse mouth. Do NOT vomit. Medical attention." }
 };
 
 chemicalHazardDB["Ethylene Glycol Monobutyl Ether"] = {
@@ -4589,26 +4311,6 @@ chemicalHazardDB["Gasoline"] = {
 
 // === BATCH 4: Expanding to 300+ ===
 
-chemicalHazardDB["Butanol"] = {
-  cas: "71-36-3", formula: "C₄H₁₀O",
-  de: "Butanol", es: "Butanol", fr: "Butanol", pt: "Butanol",
-  synonyms: ["n-Butanol", "1-Butanol", "Butyl alcohol"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapour" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "" },
-  storage: { cabinet: "Flammable liquids", temp: "Cool", ventilation: "Good", incompatible: ["Oxidizers", "Strong acids"] },
-  transport: { un: "1120", class: "3", packingGroup: "III", properShipping: "Butanols" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min. Medical attention.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Isobutanol"] = {
   cas: "78-83-1", formula: "C₄H₁₀O",
   de: "Isobutanol", es: "Isobutanol", fr: "Isobutanol", pt: "Isobutanol",
@@ -4698,24 +4400,6 @@ chemicalHazardDB["Morpholine"] = {
   storage: { cabinet: "Flammable/Corrosive", temp: "Cool", ventilation: "Good", incompatible: ["Oxidizers", "Acids"] },
   transport: { un: "2054", class: "8", packingGroup: "I", properShipping: "Morpholine" },
   firstAid: { inhalation: "Fresh air.", skin: "Flush 15 min.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Pyridine"] = {
-  cas: "110-86-1", formula: "C₅H₅N",
-  de: "Pyridin", es: "Piridina", fr: "Pyridine", pt: "Piridina",
-  synonyms: ["Azabenzene", "Azine"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapour" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H332", text: "Harmful if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Strong unpleasant odor" },
-  storage: { cabinet: "Flammable liquids", temp: "Cool", ventilation: "Good", incompatible: ["Oxidizers", "Strong acids"] },
-  transport: { un: "1282", class: "3", packingGroup: "II", properShipping: "Pyridine" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Piperidine"] = {
@@ -5127,25 +4811,6 @@ chemicalHazardDB["Bismuth Subnitrate"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Lead Acetate"] = {
-  cas: "301-04-2", formula: "Pb(CH₃COO)₂",
-  de: "Bleiacetat", es: "Acetato de plomo", fr: "Acétate de plomb", pt: "Acetato de chumbo",
-  synonyms: ["Lead(II) acetate", "Sugar of lead"],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H360Df", text: "May damage the unborn child. Suspected of damaging fertility." },
-    { code: "H373", text: "May cause damage to organs through prolonged exposure" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Particulate respirator" }, other: "Lead compound - reproductive toxin" },
-  storage: { cabinet: "Toxic storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids", "Strong bases"] },
-  transport: { un: "1616", class: "6.1", packingGroup: "III", properShipping: "Lead acetate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Thallium Sulfate"] = {
   cas: "7446-18-6", formula: "Tl₂SO₄",
   de: "Thalliumsulfat", es: "Sulfato de talio", fr: "Sulfate de thallium", pt: "Sulfato de tálio",
@@ -5280,44 +4945,6 @@ chemicalHazardDB["Activated Carbon"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Generally safe - used medically." }
 };
 
-chemicalHazardDB["Sodium Azide"] = {
-  cas: "26628-22-8", formula: "NaN₃",
-  de: "Natriumazid", es: "Azida de sodio", fr: "Azoture de sodium", pt: "Azida de sódio",
-  synonyms: ["Sodium trinitride"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" },
-    { code: "EUH032", text: "Contact with acids liberates very toxic gas" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves, protective clothing" }, respiratory: { required: true, type: "Respirator" }, other: "EXPLOSIVE with metals. Airbag propellant, preservative." },
-  storage: { cabinet: "Toxic storage", temp: "Room temperature", ventilation: "Good", incompatible: ["Acids (releases HN3)", "Metals (forms explosive azides)", "Water"] },
-  transport: { un: "1687", class: "6.1", packingGroup: "II", properShipping: "Sodium azide" },
-  firstAid: { inhalation: "Fresh air. IMMEDIATE medical attention.", skin: "Wash thoroughly. Medical attention.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Potassium Cyanide"] = {
-  cas: "151-50-8", formula: "KCN",
-  de: "Kaliumcyanid", es: "Cianuro de potasio", fr: "Cyanure de potassium", pt: "Cianeto de potássio",
-  synonyms: ["KCN"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" },
-    { code: "EUH032", text: "Contact with acids liberates very toxic gas" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Full protective clothing" }, respiratory: { required: true, type: "SCBA or supplied air" }, other: "EXTREMELY TOXIC. Have cyanide antidote kit ready." },
-  storage: { cabinet: "Highly toxic storage", temp: "Room temperature", ventilation: "Good", incompatible: ["Acids (releases HCN)", "Oxidizers"] },
-  transport: { un: "1680", class: "6.1", packingGroup: "I", properShipping: "Potassium cyanide" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Cyanide antidote. IMMEDIATE medical attention.", skin: "Remove clothing. Wash. Medical attention.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. IMMEDIATE medical attention." }
-};
-
 chemicalHazardDB["Silver Nitrate"] = {
   cas: "7761-88-8", formula: "AgNO₃",
   de: "Silbernitrat", es: "Nitrato de plata", fr: "Nitrate d'argent", pt: "Nitrato de prata",
@@ -5432,61 +5059,6 @@ chemicalHazardDB["Strontium Chloride"] = {
 
 // ===== PETROLEUM & FUEL PRODUCTS =====
 
-chemicalHazardDB["Diesel Fuel"] = {
-  cas: "68476-34-6", formula: "C₁₀-C₂₂",
-  de: "Dieselkraftstoff", es: "Combustible diésel", fr: "Gazole", pt: "Combustível diesel",
-  synonyms: ["Diesel oil", "Gas oil", "DERV"],
-  classes: ["flammable", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H351", text: "Suspected of causing cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Eliminate ignition sources" },
-  storage: { cabinet: "Flammable liquid cabinet", temp: "Cool, away from heat", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Strong acids"] },
-  transport: { un: "1202", class: "3", packingGroup: "III", properShipping: "Diesel fuel" },
-  firstAid: { inhalation: "Fresh air. Medical attention if symptoms.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit (aspiration risk). Medical attention." }
-};
-
-chemicalHazardDB["Gasoline"] = {
-  cas: "8006-61-9", formula: "C₄-C₁₂",
-  de: "Benzin", es: "Gasolina", fr: "Essence", pt: "Gasolina",
-  synonyms: ["Petrol", "Motor spirit", "Mogas"],
-  classes: ["flammable", "health", "irritant"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H224", text: "Extremely flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "H350", text: "May cause cancer (contains benzene)" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "NO sparks, flames, or hot surfaces" },
-  storage: { cabinet: "Flammable liquid cabinet", temp: "Cool", ventilation: "Well-ventilated, away from ignition", incompatible: ["Oxidizers", "Acids"] },
-  transport: { un: "1203", class: "3", packingGroup: "II", properShipping: "Gasoline" },
-  firstAid: { inhalation: "Fresh air. Oxygen if needed.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Kerosene"] = {
-  cas: "8008-20-6", formula: "C₉-C₁₆",
-  de: "Kerosin", es: "Queroseno", fr: "Kérosène", pt: "Querosene",
-  synonyms: ["Jet fuel", "Paraffin oil", "Lamp oil"],
-  classes: ["flammable", "health"],
-  ghs: ["GHS02", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Respirator in confined spaces" }, other: "Away from ignition sources" },
-  storage: { cabinet: "Flammable liquid cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Oxidizers"] },
-  transport: { un: "1223", class: "3", packingGroup: "III", properShipping: "Kerosene" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
 chemicalHazardDB["Lubricating Oil"] = {
   cas: "Various", formula: "Hydrocarbons",
   de: "Schmieröl", es: "Aceite lubricante", fr: "Huile lubrifiante", pt: "Óleo lubrificante",
@@ -5532,32 +5104,6 @@ chemicalHazardDB["Ammonium Nitrate"] = {
   storage: { cabinet: "Oxidizer storage, separate building", temp: "Cool, dry", ventilation: "Good", incompatible: ["Fuels", "Organics", "Acids", "Metals", "Chlorides"] },
   transport: { un: "1942", class: "5.1", packingGroup: "III", properShipping: "Ammonium nitrate" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Drink water." }
-};
-
-chemicalHazardDB["Urea"] = {
-  cas: "57-13-6", formula: "CH₄N₂O",
-  de: "Harnstoff", es: "Urea", fr: "Urée", pt: "Ureia",
-  synonyms: ["Carbamide", "Carbonyl diamide"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Gloves for prolonged contact" }, respiratory: { required: false, type: "Dust mask" }, other: "Fertilizer, cosmetics, diesel exhaust fluid (DEF)" },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong oxidizers", "Nitrates"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Urea" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth. Drink water." }
-};
-
-chemicalHazardDB["Potassium Chloride"] = {
-  cas: "7447-40-7", formula: "KCl",
-  de: "Kaliumchlorid", es: "Cloruro de potasio", fr: "Chlorure de potassium", pt: "Cloreto de potássio",
-  synonyms: ["Muriate of potash", "Sylvite"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Fertilizer, salt substitute, medical uses" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids (releases HCl)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Potassium chloride" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Glyphosate"] = {
@@ -5664,73 +5210,6 @@ chemicalHazardDB["Ethyl Alcohol"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Drink water." }
 };
 
-chemicalHazardDB["Chloroform"] = {
-  cas: "67-66-3", formula: "CHCl₃",
-  de: "Chloroform", es: "Cloroformo", fr: "Chloroforme", pt: "Clorofórmio",
-  synonyms: ["Trichloromethane", "Methyl trichloride"],
-  classes: ["toxic", "health"],
-  ghs: ["GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H351", text: "Suspected of causing cancer" },
-    { code: "H361d", text: "Suspected of damaging the unborn child" },
-    { code: "H372", text: "Causes damage to organs through prolonged exposure" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Work in fume hood. Former anesthetic." },
-  storage: { cabinet: "Toxic/carcinogen storage", temp: "Cool, dark", ventilation: "Fume hood", incompatible: ["Strong bases", "Oxidizers", "Metals", "Light"] },
-  transport: { un: "1888", class: "6.1", packingGroup: "III", properShipping: "Chloroform" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Dimethyl Sulfoxide"] = {
-  cas: "67-68-5", formula: "(CH₃)₂SO",
-  de: "Dimethylsulfoxid", es: "Dimetilsulfóxido", fr: "Diméthylsulfoxyde", pt: "Dimetilsulfóxido",
-  synonyms: ["DMSO"],
-  classes: ["flammable"],
-  ghs: ["GHS02"],
-  hazardStatements: [
-    { code: "H227", text: "Combustible liquid" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Butyl rubber gloves" }, respiratory: { required: false, type: "Not required" }, other: "CAUTION: Penetrates skin rapidly, can carry dissolved substances into body" },
-  storage: { cabinet: "Flammable cabinet", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Acid halides"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Dimethyl sulfoxide" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash immediately (penetrates skin).", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Diethyl Ether"] = {
-  cas: "60-29-7", formula: "(C₂H₅)₂O",
-  de: "Diethylether", es: "Éter dietílico", fr: "Éther diéthylique", pt: "Éter dietílico",
-  synonyms: ["Ether", "Ethyl ether", "Ethoxyethane"],
-  classes: ["flammable"],
-  ghs: ["GHS02"],
-  hazardStatements: [
-    { code: "H224", text: "Extremely flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "EUH019", text: "May form explosive peroxides" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "EXTREMELY FLAMMABLE. Check for peroxides before use. Work in fume hood." },
-  storage: { cabinet: "Flammable cabinet (peroxide-former)", temp: "Cool, dark", ventilation: "Explosion-proof", incompatible: ["Oxidizers", "Halogens", "Peroxides form over time"] },
-  transport: { un: "1155", class: "3", packingGroup: "I", properShipping: "Diethyl ether" },
-  firstAid: { inhalation: "Fresh air. Oxygen.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Glycerol"] = {
-  cas: "56-81-5", formula: "C₃H₈O₃",
-  de: "Glycerin", es: "Glicerol", fr: "Glycérol", pt: "Glicerol",
-  synonyms: ["Glycerin", "Glycerine", "Propane-1,2,3-triol"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Not required" }, other: "Food grade available. Moisturizer, solvent, sweetener." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers (can ignite)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Glycerol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Generally safe." }
-};
-
 // ===== CONSTRUCTION & BUILDING =====
 
 chemicalHazardDB["Portland Cement"] = {
@@ -5818,24 +5297,6 @@ chemicalHazardDB["Zinc Chloride"] = {
   storage: { cabinet: "Corrosive storage", temp: "Dry", ventilation: "Normal", incompatible: ["Bases", "Sulfides"] },
   transport: { un: "2331", class: "8", packingGroup: "III", properShipping: "Zinc chloride" },
   firstAid: { inhalation: "Fresh air.", skin: "Flush 15 min.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Drink water. Medical attention." }
-};
-
-chemicalHazardDB["Copper Sulfate"] = {
-  cas: "7758-98-7", formula: "CuSO₄",
-  de: "Kupfersulfat", es: "Sulfato de cobre", fr: "Sulfate de cuivre", pt: "Sulfato de cobre",
-  synonyms: ["Blue vitriol", "Bluestone", "Copper(II) sulfate"],
-  classes: ["toxic", "irritant", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Fungicide, algaecide, pool treatment" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Metals", "Bases"] },
-  transport: { un: "3077", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
 chemicalHazardDB["Iron(III) Chloride"] = {
@@ -5930,72 +5391,6 @@ chemicalHazardDB["N-Methyl-2-pyrrolidone"] = {
   storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong acids"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "N-Methyl-2-pyrrolidone" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash immediately.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Tetrahydrofuran"] = {
-  cas: "109-99-9", formula: "C₄H₈O",
-  de: "Tetrahydrofuran", es: "Tetrahidrofurano", fr: "Tétrahydrofurane", pt: "Tetra-hidrofurano",
-  synonyms: ["THF", "Oxolane"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "EUH019", text: "May form explosive peroxides" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Butyl gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Peroxide former - check before use. PVC cement solvent." },
-  storage: { cabinet: "Flammable cabinet (peroxide former)", temp: "Cool, dark", ventilation: "Good", incompatible: ["Oxidizers", "Air (peroxides)"] },
-  transport: { un: "2056", class: "3", packingGroup: "II", properShipping: "Tetrahydrofuran" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Cyclohexane"] = {
-  cas: "110-82-7", formula: "C₆H₁₂",
-  de: "Cyclohexan", es: "Ciclohexano", fr: "Cyclohexane", pt: "Ciclo-hexano",
-  synonyms: ["Hexanaphthene", "Hexamethylene"],
-  classes: ["flammable", "irritant", "health", "environmental"],
-  ghs: ["GHS02", "GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Nylon production, solvent" },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Good", incompatible: ["Oxidizers"] },
-  transport: { un: "1145", class: "3", packingGroup: "II", properShipping: "Cyclohexane" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
-chemicalHazardDB["Propylene Glycol"] = {
-  cas: "57-55-6", formula: "C₃H₈O₂",
-  de: "Propylenglykol", es: "Propilenglicol", fr: "Propylène glycol", pt: "Propilenoglicol",
-  synonyms: ["1,2-Propanediol", "PG", "MPG"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Not required" }, other: "Food grade available. Antifreeze (non-toxic), food additive, cosmetics." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Propylene glycol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Generally safe." }
-};
-
-chemicalHazardDB["Ethylene Glycol"] = {
-  cas: "107-21-1", formula: "C₂H₆O₂",
-  de: "Ethylenglykol", es: "Etilenglicol", fr: "Éthylène glycol", pt: "Etilenoglicol",
-  synonyms: ["1,2-Ethanediol", "MEG", "Antifreeze"],
-  classes: ["toxic"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves" }, respiratory: { required: false, type: "Not required" }, other: "TOXIC if ingested (metabolizes to oxalic acid). Automotive antifreeze." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ethylene glycol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "POISON. IMMEDIATE medical attention. Give ethanol as antidote." }
 };
 
 // ===== CLEANING & SANITIZING =====
@@ -6227,88 +5622,6 @@ chemicalHazardDB["Phenol"] = {
   firstAid: { inhalation: "Fresh air. Oxygen. Medical attention.", skin: "Wipe with PEG 300 or glycerol, then wash. Medical attention.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Do NOT vomit. IMMEDIATE medical attention." }
 };
 
-chemicalHazardDB["Aniline"] = {
-  cas: "62-53-3", formula: "C₆H₅NH₂",
-  de: "Anilin", es: "Anilina", fr: "Aniline", pt: "Anilina",
-  synonyms: ["Aminobenzene", "Phenylamine"],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H341", text: "Suspected of causing genetic defects" },
-    { code: "H351", text: "Suspected of causing cancer" },
-    { code: "H372", text: "Causes damage to organs" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber gloves, full suit" }, respiratory: { required: true, type: "Organic vapor/P100 respirator" }, other: "ABSORBS THROUGH SKIN. Causes methemoglobinemia (blue baby syndrome). Dye intermediate." },
-  storage: { cabinet: "Toxic storage", temp: "Cool, dark", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Acids", "Halogens"] },
-  transport: { un: "1547", class: "6.1", packingGroup: "II", properShipping: "Aniline" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Remove clothing. Wash 20 min. Medical attention.", eyes: "Flush 30 min.", ingestion: "Rinse mouth. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Hydrazine"] = {
-  cas: "302-01-2", formula: "N₂H₄",
-  de: "Hydrazin", es: "Hidrazina", fr: "Hydrazine", pt: "Hidrazina",
-  synonyms: ["Diamine", "Diazane"],
-  classes: ["toxic", "corrosive", "flammable", "health", "environmental"],
-  ghs: ["GHS02", "GHS05", "GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "Supplied air" }, other: "CARCINOGEN. Rocket fuel, boiler water treatment. Extremely hazardous." },
-  storage: { cabinet: "Toxic/flammable storage", temp: "Cool", ventilation: "Explosion-proof", incompatible: ["Oxidizers", "Metals", "Acids", "Halogens"] },
-  transport: { un: "2029", class: "8 (6.1)", packingGroup: "I", properShipping: "Hydrazine, anhydrous" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Remove clothing. Flush 30 min. Medical attention.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Rinse mouth. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Acrolein"] = {
-  cas: "107-02-8", formula: "C₃H₄O",
-  de: "Acrolein", es: "Acroleína", fr: "Acroléine", pt: "Acroleína",
-  synonyms: ["Acrylaldehyde", "Propenal", "2-Propenal"],
-  classes: ["toxic", "flammable", "environmental"],
-  ghs: ["GHS02", "GHS05", "GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "Supplied air" }, other: "EXTREMELY TOXIC tear gas. Low odor threshold but causes rapid eye/lung damage." },
-  storage: { cabinet: "Toxic/flammable storage (separate)", temp: "Cool", ventilation: "Explosion-proof", incompatible: ["Oxidizers", "Acids", "Bases", "Amines"] },
-  transport: { un: "1092", class: "6.1 (3)", packingGroup: "I", properShipping: "Acrolein, stabilized" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Remove clothing. Flush 30 min.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Rinse mouth. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Phosgene"] = {
-  cas: "75-44-5", formula: "COCl₂",
-  de: "Phosgen", es: "Fosgeno", fr: "Phosgène", pt: "Fosgênio",
-  synonyms: ["Carbonyl chloride", "Carbon oxychloride"],
-  classes: ["toxic"],
-  ghs: ["GHS04", "GHS06"],
-  hazardStatements: [
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H330", text: "Fatal if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "SCBA" }, other: "WWI chemical weapon. Delayed pulmonary edema (hours after exposure). Pleasant hay-like odor is DANGEROUS." },
-  storage: { cabinet: "Highly toxic gas storage", temp: "Cool", ventilation: "Special ventilation", incompatible: ["Water", "Bases", "Amines", "Alcohols"] },
-  transport: { un: "1076", class: "2.3", packingGroup: "N/A", properShipping: "Phosgene" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE hospitalization (delayed symptoms). Rest for 48 hours minimum.", skin: "Remove clothing. Flush.", eyes: "Flush 30 min.", ingestion: "N/A (gas)." }
-};
-
 // ===== SURFACTANTS & DETERGENTS =====
 
 chemicalHazardDB["Sodium Lauryl Sulfate"] = {
@@ -6347,32 +5660,6 @@ chemicalHazardDB["Triton X-100"] = {
 
 // ===== ELECTROPLATING & METAL FINISHING =====
 
-chemicalHazardDB["Chromic Acid"] = {
-  cas: "7738-94-5", formula: "H₂CrO₄",
-  de: "Chromsäure", es: "Ácido crómico", fr: "Acide chromique", pt: "Ácido crômico",
-  synonyms: ["Chromium trioxide solution", "Chromium(VI) acid"],
-  classes: ["oxidizer", "corrosive", "toxic", "health", "environmental"],
-  ghs: ["GHS03", "GHS05", "GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H271", text: "May cause fire or explosion; strong oxidizer" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H334", text: "May cause allergy or asthma symptoms if inhaled" },
-    { code: "H340", text: "May cause genetic defects" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H361f", text: "Suspected of damaging fertility" },
-    { code: "H372", text: "Causes damage to organs" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Full chemical suit, neoprene gloves" }, respiratory: { required: true, type: "Supplied air or P100 with acid gas" }, other: "CARCINOGEN. Chrome plating. Extremely hazardous." },
-  storage: { cabinet: "Oxidizer/carcinogen storage", temp: "Cool", ventilation: "Local exhaust", incompatible: ["Organics", "Reducing agents", "Flammables", "Bases"] },
-  transport: { un: "1463", class: "5.1", packingGroup: "I", properShipping: "Chromium trioxide, anhydrous" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Remove clothing. Flush 30 min. Ascorbic acid solution may help.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Rinse mouth. Ascorbic acid as antidote. IMMEDIATE medical attention." }
-};
-
 chemicalHazardDB["Nickel Sulfate"] = {
   cas: "7786-81-4", formula: "NiSO₄",
   de: "Nickelsulfat", es: "Sulfato de níquel", fr: "Sulfate de nickel", pt: "Sulfato de níquel",
@@ -6394,44 +5681,6 @@ chemicalHazardDB["Nickel Sulfate"] = {
   storage: { cabinet: "Toxic storage", temp: "Room temperature", ventilation: "Good", incompatible: ["Strong bases"] },
   transport: { un: "3077", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
   firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash. Watch for allergic reaction.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Zinc Sulfate"] = {
-  cas: "7733-02-0", formula: "ZnSO₄",
-  de: "Zinksulfat", es: "Sulfato de zinc", fr: "Sulfate de zinc", pt: "Sulfato de zinco",
-  synonyms: ["White vitriol", "Zinc vitriol"],
-  classes: ["irritant", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Galvanizing, dietary supplement, fertilizer" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases"] },
-  transport: { un: "3077", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Cadmium Chloride"] = {
-  cas: "10108-64-2", formula: "CdCl₂",
-  de: "Cadmiumchlorid", es: "Cloruro de cadmio", fr: "Chlorure de cadmium", pt: "Cloreto de cádmio",
-  synonyms: [],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H340", text: "May cause genetic defects" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H360FD", text: "May damage fertility and unborn child" },
-    { code: "H372", text: "Causes damage to organs" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves, suit" }, respiratory: { required: true, type: "P100 or supplied air" }, other: "CARCINOGEN. Cadmium plating. Extremely toxic cumulative poison." },
-  storage: { cabinet: "Toxic/carcinogen storage", temp: "Room temperature", ventilation: "Good", incompatible: ["Strong oxidizers", "Sulfur"] },
-  transport: { un: "2570", class: "6.1", packingGroup: "II", properShipping: "Cadmium compound" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Wash thoroughly.", eyes: "Flush 20 min.", ingestion: "Rinse mouth. IMMEDIATE medical attention." }
 };
 
 chemicalHazardDB["Tin(II) Chloride"] = {
@@ -6590,21 +5839,6 @@ chemicalHazardDB["Tributyl Phosphate"] = {
 
 // ===== FLAME RETARDANTS =====
 
-chemicalHazardDB["Antimony Trioxide"] = {
-  cas: "1309-64-4", formula: "Sb₂O₃",
-  de: "Antimontrioxid", es: "Trióxido de antimonio", fr: "Trioxyde d'antimoine", pt: "Trióxido de antimônio",
-  synonyms: ["Antimony(III) oxide", "Antimonous oxide"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H351", text: "Suspected of causing cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "P100 respirator" }, other: "Flame retardant synergist. IARC Group 2B carcinogen (inhalation)." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Good", incompatible: ["Strong acids", "Halogens"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Antimony trioxide" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Aluminum Hydroxide"] = {
   cas: "21645-51-2", formula: "Al(OH)₃",
   de: "Aluminiumhydroxid", es: "Hidróxido de aluminio", fr: "Hydroxyde d'aluminium", pt: "Hidróxido de alumínio",
@@ -6653,37 +5887,6 @@ chemicalHazardDB["Oxalic Acid"] = {
   storage: { cabinet: "Acid cabinet", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Silver compounds"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Oxalic acid" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Give calcium (milk, calcium gluconate). Medical attention." }
-};
-
-chemicalHazardDB["Lactic Acid"] = {
-  cas: "50-21-5", formula: "C₃H₆O₃",
-  de: "Milchsäure", es: "Ácido láctico", fr: "Acide lactique", pt: "Ácido lático",
-  synonyms: ["2-Hydroxypropanoic acid", "Milk acid"],
-  classes: ["irritant"],
-  ghs: ["GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H318", text: "Causes serious eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Not required" }, other: "Food additive, cosmetics, biodegradable plastics" },
-  storage: { cabinet: "Acid cabinet", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Bases"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Lactic acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Drink water." }
-};
-
-chemicalHazardDB["Tartaric Acid"] = {
-  cas: "87-69-4", formula: "C₄H₆O₆",
-  de: "Weinsäure", es: "Ácido tartárico", fr: "Acide tartrique", pt: "Ácido tartárico",
-  synonyms: ["2,3-Dihydroxysuccinic acid", "Cream of tartar (potassium salt)"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Wine production, food additive, baking" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Tartaric acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Malic Acid"] = {
@@ -6740,24 +5943,6 @@ chemicalHazardDB["Sodium Sulfide"] = {
 
 // ===== SEMICONDUCTOR & ELECTRONICS =====
 
-chemicalHazardDB["Hydrofluoric Acid"] = {
-  cas: "7664-39-3", formula: "HF",
-  de: "Flusssäure", es: "Ácido fluorhídrico", fr: "Acide fluorhydrique", pt: "Ácido fluorídrico",
-  synonyms: ["Hydrogen fluoride", "Fluoric acid"],
-  classes: ["corrosive", "toxic"],
-  ghs: ["GHS05", "GHS06"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H330", text: "Fatal if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Neoprene or butyl gloves, full suit, apron" }, respiratory: { required: true, type: "Supplied air or HF-rated respirator" }, other: "EXTREMELY DANGEROUS. Burns feel painless initially. Systemic fluoride poisoning. Have calcium gluconate gel on hand." },
-  storage: { cabinet: "Acid cabinet (special - corrodes glass)", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Bases", "Metals", "Glass", "Concrete", "Silica"] },
-  transport: { un: "1790", class: "8", packingGroup: "I", properShipping: "Hydrofluoric acid" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Flush 15 min. Apply calcium gluconate gel. IMMEDIATE medical attention.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Give calcium (milk). IMMEDIATE medical attention." }
-};
-
 chemicalHazardDB["Phosphine"] = {
   cas: "7803-51-2", formula: "PH₃",
   de: "Phosphin", es: "Fosfina", fr: "Phosphine", pt: "Fosfina",
@@ -6813,23 +5998,6 @@ chemicalHazardDB["Silane"] = {
 };
 
 // ===== WATER TREATMENT (MORE) =====
-
-chemicalHazardDB["Ferrous Sulfate"] = {
-  cas: "7720-78-7", formula: "FeSO₄",
-  de: "Eisen(II)-sulfat", es: "Sulfato ferroso", fr: "Sulfate ferreux", pt: "Sulfato ferroso",
-  synonyms: ["Iron(II) sulfate", "Green vitriol", "Copperas"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Water treatment coagulant, iron supplement, moss killer" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases", "Oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ferrous sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention if large amount." }
-};
 
 chemicalHazardDB["Poly(aluminum chloride)"] = {
   cas: "1327-41-9", formula: "Al₂Cl(OH)₅",
@@ -6901,25 +6069,6 @@ chemicalHazardDB["Benzaldehyde"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
-chemicalHazardDB["Acetonitrile"] = {
-  cas: "75-05-8", formula: "CH₃CN",
-  de: "Acetonitril", es: "Acetonitrilo", fr: "Acétonitrile", pt: "Acetonitrila",
-  synonyms: ["Methyl cyanide", "Cyanomethane", "ACN"],
-  classes: ["flammable", "toxic"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "HPLC solvent. Metabolizes to cyanide in body (delayed toxicity)." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Good", incompatible: ["Oxidizers", "Acids", "Bases"] },
-  transport: { un: "1648", class: "3", packingGroup: "II", properShipping: "Acetonitrile" },
-  firstAid: { inhalation: "Fresh air. Medical attention (delayed cyanide toxicity).", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "IMMEDIATE medical attention (cyanide antidote may be needed)." }
-};
-
 chemicalHazardDB["Dichloromethane"] = {
   cas: "75-09-2", formula: "CH₂Cl₂",
   de: "Dichlormethan", es: "Diclorometano", fr: "Dichlorométhane", pt: "Diclorometano",
@@ -6961,26 +6110,6 @@ chemicalHazardDB["Formaldehyde Solution"] = {
   storage: { cabinet: "Toxic storage", temp: "Above 15°C (polymerizes when cold)", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Acids", "Bases", "Phenol"] },
   transport: { un: "2209", class: "8", packingGroup: "III", properShipping: "Formaldehyde solution" },
   firstAid: { inhalation: "Fresh air. Oxygen. Medical attention.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Drink water/milk. Medical attention." }
-};
-
-chemicalHazardDB["Glutaraldehyde"] = {
-  cas: "111-30-8", formula: "C₅H₈O₂",
-  de: "Glutaraldehyd", es: "Glutaraldehído", fr: "Glutaraldéhyde", pt: "Glutaraldeído",
-  synonyms: ["Glutaric dialdehyde", "Cidex", "Pentanedial"],
-  classes: ["toxic", "corrosive", "health", "environmental"],
-  ghs: ["GHS05", "GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H334", text: "May cause allergy or asthma if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Nitrile or butyl gloves, apron" }, respiratory: { required: true, type: "Aldehyde-rated respirator" }, other: "Medical sterilant. Strong sensitizer - many healthcare workers allergic." },
-  storage: { cabinet: "Toxic storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong bases", "Amines"] },
-  transport: { un: "2922", class: "8", packingGroup: "III", properShipping: "Corrosive liquid, toxic" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Drink water. Medical attention." }
 };
 
 chemicalHazardDB["Isothiazolinone"] = {
@@ -7055,19 +6184,6 @@ chemicalHazardDB["Silver Bromide"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash (staining).", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
-chemicalHazardDB["Sodium Thiosulfate"] = {
-  cas: "7772-98-7", formula: "Na₂S₂O₃",
-  de: "Natriumthiosulfat", es: "Tiosulfato de sodio", fr: "Thiosulfate de sodium", pt: "Tiossulfato de sódio",
-  synonyms: ["Hypo", "Sodium hyposulfite", "Fixer"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Photo fixer, dechlorinator, cyanide antidote. Generally safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids (releases SO2)", "Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium thiosulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
-
 // ===== PRINTING & INK CHEMICALS =====
 
 chemicalHazardDB["Isopropyl Alcohol"] = {
@@ -7102,23 +6218,6 @@ chemicalHazardDB["n-Propyl Alcohol"] = {
   storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers"] },
   transport: { un: "1274", class: "3", packingGroup: "II", properShipping: "n-Propanol" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Ethyl Acetate"] = {
-  cas: "141-78-6", formula: "C₄H₈O₂",
-  de: "Ethylacetat", es: "Acetato de etilo", fr: "Acétate d'éthyle", pt: "Acetato de etila",
-  synonyms: ["EtOAc", "Ethyl ethanoate", "Acetic ether"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Nail polish remover, adhesives, coatings solvent" },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Bases", "Acids"] },
-  transport: { un: "1173", class: "3", packingGroup: "II", properShipping: "Ethyl acetate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Butyl Acetate"] = {
@@ -7226,50 +6325,7 @@ chemicalHazardDB["Trisodium Phosphate"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Drink water." }
 };
 
-chemicalHazardDB["Sodium Carbonate"] = {
-  cas: "497-19-8", formula: "Na₂CO₃",
-  de: "Natriumcarbonat", es: "Carbonato de sodio", fr: "Carbonate de sodium", pt: "Carbonato de sódio",
-  synonyms: ["Washing soda", "Soda ash", "Sal soda"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves for prolonged contact" }, respiratory: { required: false, type: "Dust mask" }, other: "Laundry booster, water softener, pH buffer, glass making" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium carbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Drink water." }
-};
-
-chemicalHazardDB["Sodium Bicarbonate"] = {
-  cas: "144-55-8", formula: "NaHCO₃",
-  de: "Natriumhydrogencarbonat", es: "Bicarbonato de sodio", fr: "Bicarbonate de sodium", pt: "Bicarbonato de sódio",
-  synonyms: ["Baking soda", "Sodium hydrogen carbonate", "Bicarb"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Food grade, antacid, fire extinguishing agent, cleaning" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids (fizzes)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium bicarbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Generally safe." }
-};
-
 // ===== MISC INDUSTRIAL =====
-
-chemicalHazardDB["Boric Acid"] = {
-  cas: "10043-35-3", formula: "H₃BO₃",
-  de: "Borsäure", es: "Ácido bórico", fr: "Acide borique", pt: "Ácido bórico",
-  synonyms: ["Orthoboric acid", "Boracic acid"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H360FD", text: "May damage fertility and the unborn child" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "REPRODUCTIVE TOXIN. Pesticide, antiseptic, flame retardant, nuclear industry." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong reducing agents"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Boric acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 chemicalHazardDB["Borax"] = {
   cas: "1303-96-4", formula: "Na₂B₄O₇·10H₂O",
@@ -7329,19 +6385,6 @@ chemicalHazardDB["Calcium Nitrate"] = {
   storage: { cabinet: "Oxidizer storage", temp: "Room temperature (hygroscopic)", ventilation: "Normal", incompatible: ["Reducing agents", "Organics", "Metals"] },
   transport: { un: "1454", class: "5.1", packingGroup: "III", properShipping: "Calcium nitrate" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Magnesium Sulfate"] = {
-  cas: "7487-88-9", formula: "MgSO₄",
-  de: "Magnesiumsulfat", es: "Sulfato de magnesio", fr: "Sulfate de magnésium", pt: "Sulfato de magnésio",
-  synonyms: ["Epsom salt", "Epsom salts"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Bath salts, fertilizer, medical (laxative, IV)" },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: [] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Magnesium sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Laxative effect at high doses." }
 };
 
 chemicalHazardDB["Calcium Sulfate"] = {
@@ -7431,25 +6474,6 @@ chemicalHazardDB["Mineral Spirits"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
 };
 
-chemicalHazardDB["Turpentine"] = {
-  cas: "8006-64-2", formula: "C₁₀H₁₆ (mainly)",
-  de: "Terpentin", es: "Trementina", fr: "Térébenthine", pt: "Terebintina",
-  synonyms: ["Gum turpentine", "Oil of turpentine", "Turps"],
-  classes: ["flammable", "irritant", "health", "environmental"],
-  ghs: ["GHS02", "GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H411", text: "Toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Natural pine solvent, paint thinner, varnishes" },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers"] },
-  transport: { un: "1299", class: "3", packingGroup: "III", properShipping: "Turpentine" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
 chemicalHazardDB["Linseed Oil"] = {
   cas: "8001-26-1", formula: "Triglycerides",
   de: "Leinöl", es: "Aceite de linaza", fr: "Huile de lin", pt: "Óleo de linhaça",
@@ -7465,46 +6489,7 @@ chemicalHazardDB["Linseed Oil"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Generally safe (food grade available)." }
 };
 
-chemicalHazardDB["Naphtha"] = {
-  cas: "8030-30-6", formula: "C₅-C₁₂",
-  de: "Naphtha", es: "Nafta", fr: "Naphta", pt: "Nafta",
-  synonyms: ["Petroleum naphtha", "Ligroin", "Petroleum ether"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Solvent, fuel, chemical feedstock" },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers"] },
-  transport: { un: "1256", class: "3", packingGroup: "II", properShipping: "Naphtha" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
 // ===== FINAL BATCH TO 300 =====
-
-chemicalHazardDB["Carbon Tetrachloride"] = {
-  cas: "56-23-5", formula: "CCl₄",
-  de: "Tetrachlorkohlenstoff", es: "Tetracloruro de carbono", fr: "Tétrachlorure de carbone", pt: "Tetracloreto de carbono",
-  synonyms: ["Tetrachloromethane", "Freon-10", "Halon-104"],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H351", text: "Suspected of causing cancer" },
-    { code: "H372", text: "Causes damage to liver and kidneys" },
-    { code: "H420", text: "Harms public health and environment by destroying ozone" },
-    { code: "H412", text: "Harmful to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "PVA or Viton gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "BANNED in most applications. Ozone depleter. Historic solvent/fire extinguisher." },
-  storage: { cabinet: "Toxic storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Alkali metals", "Aluminum", "Fluorine"] },
-  transport: { un: "1846", class: "6.1", packingGroup: "II", properShipping: "Carbon tetrachloride" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 chemicalHazardDB["1,1,1-Trichloroethane"] = {
   cas: "71-55-6", formula: "C₂H₃Cl₃",
@@ -7538,65 +6523,6 @@ chemicalHazardDB["Perchloroethylene"] = {
   storage: { cabinet: "Toxic storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong bases", "Alkali metals", "Oxidizers"] },
   transport: { un: "1897", class: "6.1", packingGroup: "III", properShipping: "Tetrachloroethylene" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Trichloroethylene"] = {
-  cas: "79-01-6", formula: "C₂HCl₃",
-  de: "Trichlorethylen", es: "Tricloroetileno", fr: "Trichloréthylène", pt: "Tricloroetileno",
-  synonyms: ["TCE", "Trike", "Tri"],
-  classes: ["irritant", "health"],
-  ghs: ["GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "H341", text: "Suspected of causing genetic defects" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H412", text: "Harmful to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Butyl gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "CARCINOGEN. Metal degreaser. Being phased out." },
-  storage: { cabinet: "Carcinogen storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong bases", "Alkali metals"] },
-  transport: { un: "1710", class: "6.1", packingGroup: "III", properShipping: "Trichloroethylene" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Hexane"] = {
-  cas: "110-54-3", formula: "C₆H₁₄",
-  de: "Hexan", es: "Hexano", fr: "Hexane", pt: "Hexano",
-  synonyms: ["n-Hexane"],
-  classes: ["flammable", "irritant", "health", "environmental"],
-  ghs: ["GHS02", "GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "H361f", text: "Suspected of damaging fertility" },
-    { code: "H373", text: "May cause damage to nervous system" },
-    { code: "H411", text: "Toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "NEUROTOXIN (peripheral neuropathy). Solvent, extraction." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers"] },
-  transport: { un: "1208", class: "3", packingGroup: "II", properShipping: "Hexanes" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
-chemicalHazardDB["Heptane"] = {
-  cas: "142-82-5", formula: "C₇H₁₆",
-  de: "Heptan", es: "Heptano", fr: "Heptane", pt: "Heptano",
-  synonyms: ["n-Heptane"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Octane rating reference fuel (0 rating)" },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers"] },
-  transport: { un: "1206", class: "3", packingGroup: "II", properShipping: "Heptanes" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
 };
 
 chemicalHazardDB["Pentane"] = {
@@ -7654,66 +6580,6 @@ chemicalHazardDB["Benzene"] = {
   storage: { cabinet: "Carcinogen storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Halogens"] },
   transport: { un: "1114", class: "3", packingGroup: "II", properShipping: "Benzene" },
   firstAid: { inhalation: "Fresh air. Oxygen.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
-chemicalHazardDB["Styrene"] = {
-  cas: "100-42-5", formula: "C₈H₈",
-  de: "Styrol", es: "Estireno", fr: "Styrène", pt: "Estireno",
-  synonyms: ["Vinylbenzene", "Ethenylbenzene", "Phenylethylene"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H361d", text: "Suspected of damaging the unborn child" },
-    { code: "H372", text: "Causes damage to organs (hearing)" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Fiberglass resin, polystyrene. Sweet smell. Ototoxic (hearing damage)." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Peroxides", "Acids", "Bases"] },
-  transport: { un: "2055", class: "3", packingGroup: "III", properShipping: "Styrene monomer, stabilized" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Vinyl Acetate"] = {
-  cas: "108-05-4", formula: "C₄H₆O₂",
-  de: "Vinylacetat", es: "Acetato de vinilo", fr: "Acétate de vinyle", pt: "Acetato de vinila",
-  synonyms: ["VAM", "Ethenyl acetate"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H335", text: "May cause respiratory irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "PVA glue monomer, coatings. Sweet ester odor." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Acids", "Bases", "Peroxides"] },
-  transport: { un: "1301", class: "3", packingGroup: "II", properShipping: "Vinyl acetate, stabilized" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Acrylonitrile"] = {
-  cas: "107-13-1", formula: "C₃H₃N",
-  de: "Acrylnitril", es: "Acrilonitrilo", fr: "Acrylonitrile", pt: "Acrilonitrila",
-  synonyms: ["Vinyl cyanide", "Propenenitrile", "AN"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber gloves, suit" }, respiratory: { required: true, type: "Supplied air or organic vapor/P100" }, other: "CARCINOGEN. ABS plastic, acrylic fiber. Cyanide-like toxicity." },
-  storage: { cabinet: "Carcinogen/flammable storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Bases", "Acids", "Copper"] },
-  transport: { un: "1093", class: "3 (6.1)", packingGroup: "I", properShipping: "Acrylonitrile, stabilized" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Cyanide antidote may be needed.", skin: "Remove clothing. Wash.", eyes: "Flush 30 min.", ingestion: "Rinse mouth. IMMEDIATE medical attention." }
 };
 
 chemicalHazardDB["Methyl Methacrylate"] = {
@@ -7786,82 +6652,6 @@ chemicalHazardDB["Cyclohexanone"] = {
   storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong acids"] },
   transport: { un: "1915", class: "3", packingGroup: "III", properShipping: "Cyclohexanone" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["N,N-Dimethylformamide"] = {
-  cas: "68-12-2", formula: "C₃H₇NO",
-  de: "N,N-Dimethylformamid", es: "N,N-Dimetilformamida", fr: "N,N-Diméthylformamide", pt: "N,N-Dimetilformamida",
-  synonyms: ["DMF", "Dimethylformamide"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H360D", text: "May damage the unborn child" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Butyl rubber gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "REPRODUCTIVE TOXIN. Penetrates skin rapidly. Universal solvent." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Halogens", "Reducing agents"] },
-  transport: { un: "2265", class: "3", packingGroup: "III", properShipping: "N,N-Dimethylformamide" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash immediately.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Triethylamine"] = {
-  cas: "121-44-8", formula: "(C₂H₅)₃N",
-  de: "Triethylamin", es: "Trietilamina", fr: "Triéthylamine", pt: "Trietilamina",
-  synonyms: ["TEA", "N,N-Diethylethanamine"],
-  classes: ["flammable", "corrosive"],
-  ghs: ["GHS02", "GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H332", text: "Harmful if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber gloves" }, respiratory: { required: true, type: "Organic vapor/ammonia respirator" }, other: "Strong fishy amine odor. Catalyst, curing agent." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong acids"] },
-  transport: { un: "1296", class: "3", packingGroup: "II", properShipping: "Triethylamine" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Morpholine"] = {
-  cas: "110-91-8", formula: "C₄H₉NO",
-  de: "Morpholin", es: "Morfolina", fr: "Morpholine", pt: "Morfolina",
-  synonyms: ["Tetrahydro-1,4-oxazine", "Diethylene oximide"],
-  classes: ["flammable", "corrosive"],
-  ghs: ["GHS02", "GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H332", text: "Harmful if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Boiler water treatment, rubber accelerator, solvent" },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong acids", "Copper"] },
-  transport: { un: "2054", class: "8", packingGroup: "II", properShipping: "Morpholine" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Pyridine"] = {
-  cas: "110-86-1", formula: "C₅H₅N",
-  de: "Pyridin", es: "Piridina", fr: "Pyridine", pt: "Piridina",
-  synonyms: ["Azabenzene", "Azine"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Solvent, pharmaceutical intermediate. Strong unpleasant odor." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong acids"] },
-  transport: { un: "1282", class: "3", packingGroup: "II", properShipping: "Pyridine" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
 chemicalHazardDB["Ethylenediamine"] = {
@@ -8138,60 +6928,6 @@ chemicalHazardDB["Sulfur"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Sulfur Dioxide"] = {
-  cas: "7446-09-5", formula: "SO₂",
-  de: "Schwefeldioxid", es: "Dióxido de azufre", fr: "Dioxyde de soufre", pt: "Dióxido de enxofre",
-  synonyms: ["Sulfurous anhydride"],
-  classes: ["toxic", "corrosive"],
-  ghs: ["GHS04", "GHS05", "GHS06"],
-  hazardStatements: [
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H331", text: "Toxic if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: true, type: "SO2-rated respirator or SCBA" }, other: "Wine/food preservative (E220), bleaching, refrigerant. Strong choking odor." },
-  storage: { cabinet: "Toxic gas storage", temp: "Below 52°C", ventilation: "Well-ventilated", incompatible: ["Water (forms acid)", "Bases", "Oxidizers"] },
-  transport: { un: "1079", class: "2.3", packingGroup: "N/A", properShipping: "Sulfur dioxide" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Medical attention.", skin: "Flush 20 min.", eyes: "Flush 30 min.", ingestion: "N/A (gas)." }
-};
-
-chemicalHazardDB["Hydrogen Sulfide"] = {
-  cas: "7783-06-4", formula: "H₂S",
-  de: "Schwefelwasserstoff", es: "Sulfuro de hidrógeno", fr: "Sulfure d'hydrogène", pt: "Sulfeto de hidrogênio",
-  synonyms: ["Hydrosulfuric acid", "Sewer gas", "Stink damp"],
-  classes: ["flammable", "toxic"],
-  ghs: ["GHS02", "GHS04", "GHS06"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield" }, skin: { required: true, type: "Chemical suit" }, respiratory: { required: true, type: "SCBA (respirators not effective at high concentrations)" }, other: "EXTREMELY TOXIC. Rotten egg smell at low levels but DEADENS SMELL at lethal levels! Sewer/oil/gas industry hazard." },
-  storage: { cabinet: "Toxic gas storage", temp: "Cool", ventilation: "Continuous monitoring", incompatible: ["Oxidizers", "Metals", "Strong bases"] },
-  transport: { un: "1053", class: "2.3", packingGroup: "N/A", properShipping: "Hydrogen sulfide" },
-  firstAid: { inhalation: "Fresh air. Oxygen. CPR if needed. IMMEDIATE medical attention.", skin: "Wash.", eyes: "Flush.", ingestion: "N/A." }
-};
-
-chemicalHazardDB["Carbon Monoxide"] = {
-  cas: "630-08-0", formula: "CO",
-  de: "Kohlenmonoxid", es: "Monóxido de carbono", fr: "Monoxyde de carbone", pt: "Monóxido de carbono",
-  synonyms: ["Carbonic oxide", "Flue gas"],
-  classes: ["flammable", "toxic"],
-  ghs: ["GHS02", "GHS04", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H360D", text: "May damage the unborn child" },
-    { code: "H372", text: "Causes damage to organs" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Not required" }, respiratory: { required: true, type: "SCBA" }, other: "ODORLESS KILLER. Binds to hemoglobin 200x stronger than O2. Use CO detectors!" },
-  storage: { cabinet: "Toxic/flammable gas storage", temp: "Below 52°C", ventilation: "Continuous monitoring", incompatible: ["Oxidizers"] },
-  transport: { un: "1016", class: "2.3", packingGroup: "N/A", properShipping: "Carbon monoxide, compressed" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Hyperbaric O2 for severe cases. IMMEDIATE medical attention.", skin: "N/A.", eyes: "N/A.", ingestion: "N/A." }
-};
-
 chemicalHazardDB["Chlorine Gas"] = {
   cas: "7782-50-5", formula: "Cl₂",
   de: "Chlorgas", es: "Cloro gaseoso", fr: "Chlore gazeux", pt: "Cloro gasoso",
@@ -8214,41 +6950,6 @@ chemicalHazardDB["Chlorine Gas"] = {
 };
 
 // ===== FINAL 6 TO HIT 300 =====
-
-chemicalHazardDB["Bromine"] = {
-  cas: "7726-95-6", formula: "Br₂",
-  de: "Brom", es: "Bromo", fr: "Brome", pt: "Bromo",
-  synonyms: ["Dibromine", "Molecular bromine"],
-  classes: ["toxic", "corrosive", "oxidizer", "environmental"],
-  ghs: ["GHS03", "GHS05", "GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H271", text: "May cause fire or explosion; strong oxidizer" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Full chemical suit, neoprene gloves" }, respiratory: { required: true, type: "Supplied air or halogen respirator" }, other: "Dark red fuming liquid. EXTREMELY CORROSIVE. Painful burns. Flame retardants, water treatment." },
-  storage: { cabinet: "Corrosive/toxic storage", temp: "Cool, dark", ventilation: "Well-ventilated", incompatible: ["Ammonia", "Metals", "Organics", "Reducing agents"] },
-  transport: { un: "1744", class: "8 (6.1)", packingGroup: "I", properShipping: "Bromine" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Flush 30 min. Sodium bicarbonate solution.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Rinse mouth. Drink milk. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Iodine"] = {
-  cas: "7553-56-2", formula: "I₂",
-  de: "Iod", es: "Yodo", fr: "Iode", pt: "Iodo",
-  synonyms: ["Diiodine", "Molecular iodine"],
-  classes: ["irritant", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Halogen respirator" }, other: "Purple/black solid, sublimes. Stains brown. Disinfectant, thyroid supplement." },
-  storage: { cabinet: "General storage (dark)", temp: "Cool", ventilation: "Normal", incompatible: ["Ammonia", "Metals", "Reducing agents"] },
-  transport: { un: "3495", class: "8", packingGroup: "III", properShipping: "Iodine" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash (staining).", eyes: "Flush 15 min.", ingestion: "Give starch solution. Medical attention." }
-};
 
 chemicalHazardDB["Fluorine Gas"] = {
   cas: "7782-41-4", formula: "F₂",
@@ -8523,39 +7224,6 @@ chemicalHazardDB["Sodium Nitrite"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Methylene blue may be needed. IMMEDIATE medical attention." }
 };
 
-chemicalHazardDB["Sodium Sulfite"] = {
-  cas: "7757-83-7", formula: "Na₂SO₃",
-  de: "Natriumsulfit", es: "Sulfito de sodio", fr: "Sulfite de sodium", pt: "Sulfito de sódio",
-  synonyms: ["E221"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "EUH031", text: "Contact with acids liberates toxic gas (SO₂)" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Food preservative, photo fixer, reducing agent" },
-  storage: { cabinet: "General storage (away from acids)", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids (releases SO2)", "Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium sulfite" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Sodium Metabisulfite"] = {
-  cas: "7681-57-4", formula: "Na₂S₂O₅",
-  de: "Natriummetabisulfit", es: "Metabisulfito de sodio", fr: "Métabisulfite de sodium", pt: "Metabissulfito de sódio",
-  synonyms: ["Sodium pyrosulfite", "E223"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "EUH031", text: "Contact with acids liberates toxic gas (SO₂)" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Wine preservative, antioxidant, sanitizer" },
-  storage: { cabinet: "General storage (away from acids)", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids (releases SO2)", "Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium metabisulfite" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Calcium Propionate"] = {
   cas: "4075-81-4", formula: "Ca(C₂H₅COO)₂",
   de: "Calciumpropionat", es: "Propionato de calcio", fr: "Propionate de calcium", pt: "Propionato de cálcio",
@@ -8655,23 +7323,6 @@ chemicalHazardDB["Salicylic Acid"] = {
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong bases"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Salicylic acid" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Benzoyl Peroxide"] = {
-  cas: "94-36-0", formula: "C₁₄H₁₀O₄",
-  de: "Benzoylperoxid", es: "Peróxido de benzoilo", fr: "Peroxyde de benzoyle", pt: "Peróxido de benzoíla",
-  synonyms: ["BPO", "Dibenzoyl peroxide"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS01", "GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H242", text: "Heating may cause a fire" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Acne treatment, flour bleaching, polymerization initiator. ORGANIC PEROXIDE - fire/explosion risk." },
-  storage: { cabinet: "Organic peroxide storage (cool)", temp: "Below 25°C", ventilation: "Good", incompatible: ["Heat", "Friction", "Reducing agents", "Combustibles"] },
-  transport: { un: "3102", class: "5.2", packingGroup: "N/A", properShipping: "Organic peroxide type B, solid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Titanium Dioxide (Cosmetic)"] = {
@@ -8890,23 +7541,6 @@ chemicalHazardDB["2-Hydroxyethyl Methacrylate"] = {
 
 // ===== INORGANIC ACIDS (MORE) =====
 
-chemicalHazardDB["Perchloric Acid"] = {
-  cas: "7601-90-3", formula: "HClO₄",
-  de: "Perchlorsäure", es: "Ácido perclórico", fr: "Acide perchlorique", pt: "Ácido perclórico",
-  synonyms: ["Hyperchloric acid"],
-  classes: ["oxidizer", "corrosive"],
-  ghs: ["GHS03", "GHS05"],
-  hazardStatements: [
-    { code: "H271", text: "May cause fire or explosion; strong oxidizer" },
-    { code: "H290", text: "May be corrosive to metals" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Butyl rubber gloves, acid suit" }, respiratory: { required: true, type: "Acid gas respirator" }, other: "EXTREMELY HAZARDOUS. Can form explosive perchlorates. Use only in special perchloric acid fume hoods." },
-  storage: { cabinet: "Oxidizer/acid cabinet (special)", temp: "Cool", ventilation: "Special perchloric acid hood", incompatible: ["Organics", "Metals", "Reducing agents", "Dehydrating agents", "Wood", "Paper"] },
-  transport: { un: "1873", class: "5.1 (8)", packingGroup: "I", properShipping: "Perchloric acid" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 30 min.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Rinse mouth. Do NOT vomit. IMMEDIATE medical attention." }
-};
-
 chemicalHazardDB["Hydrobromic Acid"] = {
   cas: "10035-10-6", formula: "HBr",
   de: "Bromwasserstoffsäure", es: "Ácido bromhídrico", fr: "Acide bromhydrique", pt: "Ácido bromídrico",
@@ -8942,44 +7576,6 @@ chemicalHazardDB["Hydriodic Acid"] = {
 
 // ===== FINAL BATCH =====
 
-chemicalHazardDB["Sodium Cyanide"] = {
-  cas: "143-33-9", formula: "NaCN",
-  de: "Natriumcyanid", es: "Cianuro de sodio", fr: "Cyanure de sodium", pt: "Cianeto de sódio",
-  synonyms: ["Sodium salt of hydrocyanic acid"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" },
-    { code: "EUH032", text: "Contact with acids liberates very toxic gas" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "SCBA" }, other: "EXTREMELY TOXIC. Gold mining, electroplating. Have cyanide antidote kit available." },
-  storage: { cabinet: "Highly toxic storage (locked)", temp: "Dry", ventilation: "Good", incompatible: ["Acids (releases HCN)", "Oxidizers", "Water (absorbs CO2 from air)"] },
-  transport: { un: "1689", class: "6.1", packingGroup: "I", properShipping: "Sodium cyanide" },
-  firstAid: { inhalation: "Fresh air. Oxygen. Cyanide antidote. IMMEDIATE medical attention.", skin: "Remove clothing. Wash. Medical attention.", eyes: "Flush 20 min.", ingestion: "Do NOT vomit. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Picric Acid"] = {
-  cas: "88-89-1", formula: "C₆H₃N₃O₇",
-  de: "Pikrinsäure", es: "Ácido pícrico", fr: "Acide picrique", pt: "Ácido pícrico",
-  synonyms: ["2,4,6-Trinitrophenol", "TNP"],
-  classes: ["flammable", "toxic", "environmental"],
-  ghs: ["GHS01", "GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H201", text: "Explosive; mass explosion hazard" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: true, type: "Dust respirator" }, other: "EXPLOSIVE when dry. Keep wet (>10% water). Forms shock-sensitive metal picrates. Stains yellow." },
-  storage: { cabinet: "Explosive storage (wet)", temp: "Cool", ventilation: "Normal", incompatible: ["Metals (forms explosive picrates)", "Bases", "Heat", "Shock", "Drying"] },
-  transport: { un: "1344", class: "4.1", packingGroup: "I", properShipping: "Picric acid, wetted" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Ammonium Perchlorate"] = {
   cas: "7790-98-9", formula: "NH₄ClO₄",
   de: "Ammoniumperchlorat", es: "Perclorato de amonio", fr: "Perchlorate d'ammonium", pt: "Perclorato de amônio",
@@ -8999,24 +7595,6 @@ chemicalHazardDB["Ammonium Perchlorate"] = {
 };
 
 // ===== FINAL 21 TO HIT 350 =====
-
-chemicalHazardDB["Potassium Permanganate"] = {
-  cas: "7722-64-7", formula: "KMnO₄",
-  de: "Kaliumpermanganat", es: "Permanganato de potasio", fr: "Permanganate de potassium", pt: "Permanganato de potássio",
-  synonyms: ["Condy's crystals", "Chameleon mineral"],
-  classes: ["oxidizer", "irritant", "environmental"],
-  ghs: ["GHS03", "GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Disinfectant, water treatment. STAINS skin brown. Fire hazard with organics." },
-  storage: { cabinet: "Oxidizer storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids", "Organics", "Reducing agents", "Glycerol", "Ethylene glycol"] },
-  transport: { un: "1490", class: "5.1", packingGroup: "II", properShipping: "Potassium permanganate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash (staining is superficial).", eyes: "Flush 20 min.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 chemicalHazardDB["Sodium Dichromate"] = {
   cas: "10588-01-9", formula: "Na₂Cr₂O₇",
@@ -9063,25 +7641,6 @@ chemicalHazardDB["Lead(II) Acetate"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention (chelation may be needed)." }
 };
 
-chemicalHazardDB["Arsenic Trioxide"] = {
-  cas: "1327-53-3", formula: "As₂O₃",
-  de: "Arsen(III)-oxid", es: "Trióxido de arsénico", fr: "Trioxyde d'arsenic", pt: "Trióxido de arsênio",
-  synonyms: ["White arsenic", "Arsenic(III) oxide", "Arsenious oxide"],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "Supplied air" }, other: "EXTREMELY TOXIC. Historical poison. Used in leukemia treatment (highly controlled)." },
-  storage: { cabinet: "Highly toxic/carcinogen storage (locked)", temp: "Room temperature", ventilation: "Good", incompatible: ["Acids (releases arsine)", "Strong oxidizers"] },
-  transport: { un: "1561", class: "6.1", packingGroup: "I", properShipping: "Arsenic trioxide" },
-  firstAid: { inhalation: "Fresh air. IMMEDIATE medical attention.", skin: "Remove clothing. Wash.", eyes: "Flush 30 min.", ingestion: "IMMEDIATE medical attention. Do NOT vomit." }
-};
-
 chemicalHazardDB["Thallium(I) Sulfate"] = {
   cas: "7446-18-6", formula: "Tl₂SO₄",
   de: "Thallium(I)-sulfat", es: "Sulfato de talio(I)", fr: "Sulfate de thallium(I)", pt: "Sulfato de tálio(I)",
@@ -9119,88 +7678,6 @@ chemicalHazardDB["Methyl Bromide"] = {
   storage: { cabinet: "Toxic gas storage", temp: "Below 52°C", ventilation: "Special", incompatible: ["Aluminum", "Zinc", "Magnesium", "Strong oxidizers"] },
   transport: { un: "1062", class: "2.3", packingGroup: "N/A", properShipping: "Methyl bromide" },
   firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Remove clothing. Wash.", eyes: "Flush 30 min.", ingestion: "IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Ethylene Oxide"] = {
-  cas: "75-21-8", formula: "C₂H₄O",
-  de: "Ethylenoxid", es: "Óxido de etileno", fr: "Oxyde d'éthylène", pt: "Óxido de etileno",
-  synonyms: ["EO", "Oxirane", "1,2-Epoxyethane"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS04", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H340", text: "May cause genetic defects" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "SCBA" }, other: "CARCINOGEN. Medical device sterilization. Sweet ether-like odor." },
-  storage: { cabinet: "Carcinogen/flammable gas storage", temp: "Cool", ventilation: "Special", incompatible: ["Acids", "Bases", "Oxidizers", "Metals"] },
-  transport: { un: "1040", class: "2.3", packingGroup: "N/A", properShipping: "Ethylene oxide" },
-  firstAid: { inhalation: "Fresh air. Oxygen. IMMEDIATE medical attention.", skin: "Remove clothing. Wash.", eyes: "Flush 30 min.", ingestion: "IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Propylene Oxide"] = {
-  cas: "75-56-9", formula: "C₃H₆O",
-  de: "Propylenoxid", es: "Óxido de propileno", fr: "Oxyde de propylène", pt: "Óxido de propileno",
-  synonyms: ["PO", "1,2-Propylene oxide", "Methyloxirane"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H224", text: "Extremely flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Butyl rubber gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "CARCINOGEN. Polyurethane foam production, fumigant." },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Acids", "Bases", "Oxidizers", "Copper"] },
-  transport: { un: "1280", class: "3", packingGroup: "I", properShipping: "Propylene oxide" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Epichlorohydrin"] = {
-  cas: "106-89-8", formula: "C₃H₅ClO",
-  de: "Epichlorhydrin", es: "Epiclorhidrina", fr: "Épichlorhydrine", pt: "Epicloridrina",
-  synonyms: ["ECH", "1-Chloro-2,3-epoxypropane"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS05", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles + face shield" }, skin: { required: true, type: "Butyl rubber gloves, suit" }, respiratory: { required: true, type: "Organic vapor/acid gas respirator" }, other: "CARCINOGEN. Epoxy resin production. Strong lacrimator." },
-  storage: { cabinet: "Carcinogen/flammable storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong acids", "Strong bases", "Strong oxidizers", "Amines"] },
-  transport: { un: "2023", class: "6.1 (3)", packingGroup: "II", properShipping: "Epichlorohydrin" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Remove clothing. Flush 30 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Vinyl Chloride"] = {
-  cas: "75-01-4", formula: "C₂H₃Cl",
-  de: "Vinylchlorid", es: "Cloruro de vinilo", fr: "Chlorure de vinyle", pt: "Cloreto de vinila",
-  synonyms: ["VCM", "Chloroethylene", "Chloroethene"],
-  classes: ["flammable", "health"],
-  ghs: ["GHS02", "GHS04", "GHS08"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H350", text: "May cause cancer (liver angiosarcoma)" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "SCBA" }, other: "KNOWN CARCINOGEN. PVC monomer. Sweet odor at dangerous levels." },
-  storage: { cabinet: "Carcinogen/flammable gas storage", temp: "Cool", ventilation: "Special", incompatible: ["Oxidizers", "Copper", "Aluminum"] },
-  transport: { un: "1086", class: "2.1", packingGroup: "N/A", properShipping: "Vinyl chloride, stabilized" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Warm slowly (frostbite from liquid).", eyes: "Flush.", ingestion: "N/A (gas)." }
 };
 
 chemicalHazardDB["Vinylidene Chloride"] = {
@@ -10062,25 +8539,6 @@ chemicalHazardDB["2-Butanol"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Isobutanol"] = {
-  cas: "78-83-1", formula: "C₄H₉OH",
-  de: "Isobutanol", es: "Isobutanol", fr: "Isobutanol", pt: "Isobutanol",
-  synonyms: ["Isobutyl alcohol", "2-Methyl-1-propanol", "IBA"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Coating solvent, fuel additive" },
-  storage: { cabinet: "Flammable cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers"] },
-  transport: { un: "1212", class: "3", packingGroup: "III", properShipping: "Isobutanol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["tert-Butanol"] = {
   cas: "75-65-0", formula: "C₄H₉OH",
   de: "tert-Butanol", es: "tert-Butanol", fr: "tert-Butanol", pt: "tert-Butanol",
@@ -10135,22 +8593,6 @@ chemicalHazardDB["1-Hexanol"] = {
 };
 
 // ===== FINAL STRETCH =====
-
-chemicalHazardDB["Benzyl Alcohol"] = {
-  cas: "100-51-6", formula: "C₆H₅CH₂OH",
-  de: "Benzylalkohol", es: "Alcohol bencílico", fr: "Alcool benzylique", pt: "Álcool benzílico",
-  synonyms: ["Phenylmethanol", "Benzenemethanol"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "Preservative, solvent, fragrance. Low toxicity." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Benzyl alcohol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
 
 chemicalHazardDB["Furfuryl Alcohol"] = {
   cas: "98-00-0", formula: "C₅H₆O₂",
@@ -10281,24 +8723,6 @@ chemicalHazardDB["Diacetyl"] = {
   firstAid: { inhalation: "Fresh air. Medical attention for respiratory symptoms.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Acetaldehyde"] = {
-  cas: "75-07-0", formula: "CH₃CHO",
-  de: "Acetaldehyd", es: "Acetaldehído", fr: "Acétaldéhyde", pt: "Acetaldeído",
-  synonyms: ["Ethanal", "Acetic aldehyde"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H224", text: "Extremely flammable liquid and vapor" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H351", text: "Suspected of causing cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Alcohol metabolism product, chemical intermediate. Fruity odor." },
-  storage: { cabinet: "Flammable cabinet (cold)", temp: "Below 4°C", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Acids", "Bases", "Amines"] },
-  transport: { un: "1089", class: "3", packingGroup: "I", properShipping: "Acetaldehyde" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Propionaldehyde"] = {
   cas: "123-38-6", formula: "C₂H₅CHO",
   de: "Propionaldehyd", es: "Propionaldehído", fr: "Propionaldéhyde", pt: "Propionaldeído",
@@ -10353,26 +8777,6 @@ chemicalHazardDB["Crotonaldehyde"] = {
   storage: { cabinet: "Toxic/flammable storage", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Acids", "Bases", "Amines"] },
   transport: { un: "1143", class: "6.1 (3)", packingGroup: "I", properShipping: "Crotonaldehyde" },
   firstAid: { inhalation: "Fresh air. IMMEDIATE medical attention.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Furfural"] = {
-  cas: "98-01-1", formula: "C₅H₄O₂",
-  de: "Furfural", es: "Furfural", fr: "Furfural", pt: "Furfural",
-  synonyms: ["2-Furaldehyde", "Furan-2-carbaldehyde", "Fural"],
-  classes: ["flammable", "toxic"],
-  ghs: ["GHS02", "GHS06"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "From agricultural waste. Solvent, resin, furan production." },
-  storage: { cabinet: "Toxic/flammable storage", temp: "Cool, dark", ventilation: "Good", incompatible: ["Strong oxidizers", "Strong acids", "Strong bases"] },
-  transport: { un: "1199", class: "6.1", packingGroup: "II", properShipping: "Furfuraldehydes" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
 chemicalHazardDB["Glyoxal"] = {
@@ -10509,40 +8913,6 @@ chemicalHazardDB["Piperonal"] = {
 
 // ===== DYES & PIGMENTS =====
 
-chemicalHazardDB["Methylene Blue"] = {
-  cas: "61-73-4", formula: "C₁₆H₁₈ClN₃S",
-  de: "Methylenblau", es: "Azul de metileno", fr: "Bleu de méthylène", pt: "Azul de metileno",
-  synonyms: ["Basic Blue 9", "CI 52015", "Methylthioninium chloride"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Biological stain, antidote for cyanide/methemoglobinemia. STAINS EVERYTHING blue." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong reducing agents"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Methylene blue" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash (staining is harmless).", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention if large amount." }
-};
-
-chemicalHazardDB["Crystal Violet"] = {
-  cas: "548-62-9", formula: "C₂₅H₃₀ClN₃",
-  de: "Kristallviolett", es: "Violeta de genciana", fr: "Violet de gentiane", pt: "Violeta de genciana",
-  synonyms: ["Gentian violet", "Basic Violet 3", "CI 42555"],
-  classes: ["irritant", "health"],
-  ghs: ["GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Gram stain, antifungal. SUSPECTED CARCINOGEN. Intense purple stain." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Crystal violet" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Eosin Y"] = {
   cas: "17372-87-1", formula: "C₂₀H₆Br₄Na₂O₅",
   de: "Eosin Y", es: "Eosina Y", fr: "Éosine Y", pt: "Eosina Y",
@@ -10665,21 +9035,6 @@ chemicalHazardDB["Isopropyl Alcohol (Electronic Grade)"] = {
 
 // ===== PLASTICIZERS =====
 
-chemicalHazardDB["Dioctyl Phthalate"] = {
-  cas: "117-81-7", formula: "C₂₄H₃₈O₄",
-  de: "Dioctylphthalat", es: "Ftalato de dioctilo", fr: "Phtalate de dioctyle", pt: "Ftalato de dioctila",
-  synonyms: ["DOP", "DEHP", "Bis(2-ethylhexyl) phthalate"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H360FD", text: "May damage fertility and unborn child" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "PVC plasticizer. REPRODUCTIVE TOXIN. Being phased out of many applications. REACH restricted." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Dioctyl phthalate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Diisononyl Phthalate"] = {
   cas: "28553-12-0", formula: "C₂₆H₄₂O₄",
   de: "Diisononylphthalat", es: "Ftalato de diisononilo", fr: "Phtalate de diisononyle", pt: "Ftalato de diisononila",
@@ -10721,71 +9076,6 @@ chemicalHazardDB["Epoxidized Soybean Oil"] = {
 
 // ===== FOOD INDUSTRY CHEMICALS =====
 
-chemicalHazardDB["Sodium Benzoate"] = {
-  cas: "532-32-1", formula: "C₆H₅COONa",
-  de: "Natriumbenzoat", es: "Benzoato de sodio", fr: "Benzoate de sodium", pt: "Benzoato de sódio",
-  synonyms: ["E211", "Benzoic acid sodium salt"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Food preservative (E211). Can form benzene with vitamin C under certain conditions." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium benzoate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Potassium Sorbate"] = {
-  cas: "24634-61-5", formula: "C₆H₇KO₂",
-  de: "Kaliumsorbat", es: "Sorbato de potasio", fr: "Sorbate de potassium", pt: "Sorbato de potássio",
-  synonyms: ["E202", "Sorbic acid potassium salt"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Food/cosmetic preservative. Antimicrobial. Generally safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Potassium sorbate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Generally safe." }
-};
-
-chemicalHazardDB["Sodium Nitrite"] = {
-  cas: "7632-00-0", formula: "NaNO₂",
-  de: "Natriumnitrit", es: "Nitrito de sodio", fr: "Nitrite de sodium", pt: "Nitrito de sódio",
-  synonyms: ["E250", "Nitrous acid sodium salt"],
-  classes: ["oxidizer", "toxic"],
-  ghs: ["GHS03", "GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Meat curing (pink color, botulism prevention). TOXIC in excess. Can form carcinogenic nitrosamines." },
-  storage: { cabinet: "Oxidizer storage (separate)", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Reducing agents", "Amines", "Acids"] },
-  transport: { un: "1500", class: "5.1 (6.1)", packingGroup: "III", properShipping: "Sodium nitrite" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. IMMEDIATE medical attention (methemoglobinemia risk)." }
-};
-
-chemicalHazardDB["Sodium Metabisulfite"] = {
-  cas: "7681-57-4", formula: "Na₂S₂O₅",
-  de: "Natriummetabisulfit", es: "Metabisulfito de sodio", fr: "Métabisulfite de sodium", pt: "Metabissulfito de sódio",
-  synonyms: ["E223", "Sodium pyrosulfite", "SMBS"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "EUH031", text: "Contact with acids liberates toxic gas (SO₂)" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Dust mask, SO2 respirator if mixing with acids" }, other: "Antioxidant, preservative (E223), dechlorination. Can trigger asthma." },
-  storage: { cabinet: "General storage (away from acids)", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Acids (releases SO2)", "Oxidizers"] },
-  transport: { un: "2693", class: "8", packingGroup: "III", properShipping: "Bisulfites" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Monosodium Glutamate"] = {
   cas: "142-47-2", formula: "C₅H₈NNaO₄",
   de: "Mononatriumglutamat", es: "Glutamato monosódico", fr: "Glutamate monosodique", pt: "Glutamato monossódico",
@@ -10800,42 +9090,6 @@ chemicalHazardDB["Monosodium Glutamate"] = {
 };
 
 // ===== CLEANING & SANITIZING =====
-
-chemicalHazardDB["Quaternary Ammonium Compounds"] = {
-  cas: "Various", formula: "R₄N⁺X⁻",
-  de: "Quartäre Ammoniumverbindungen", es: "Compuestos de amonio cuaternario", fr: "Composés d'ammonium quaternaire", pt: "Compostos de amônio quaternário",
-  synonyms: ["Quats", "Benzalkonium chloride", "ADBAC"],
-  classes: ["corrosive", "environmental"],
-  ghs: ["GHS05", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "Disinfectants, fabric softeners. Do NOT mix with bleach (releases toxic chlorine)." },
-  storage: { cabinet: "General storage (away from bleach)", temp: "Room temperature", ventilation: "Normal", incompatible: ["Anionic surfactants", "Bleach", "Strong acids"] },
-  transport: { un: "1760", class: "8", packingGroup: "II/III", properShipping: "Corrosive liquid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Flush 20 min.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Do NOT vomit. Medical attention." }
-};
-
-chemicalHazardDB["Peracetic Acid"] = {
-  cas: "79-21-0", formula: "CH₃CO₃H",
-  de: "Peressigsäure", es: "Ácido peracético", fr: "Acide peracétique", pt: "Ácido peracético",
-  synonyms: ["PAA", "Peroxyacetic acid", "Ethaneperoxoic acid"],
-  classes: ["oxidizer", "corrosive", "flammable"],
-  ghs: ["GHS02", "GHS03", "GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H242", text: "Heating may cause a fire" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H332", text: "Harmful if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Rubber gloves, apron" }, respiratory: { required: true, type: "Organic vapor + acid gas respirator" }, other: "Powerful sanitizer/sterilant. Decomposes to acetic acid + O2. Used in food/brewing industry." },
-  storage: { cabinet: "Oxidizer storage (cool, vented)", temp: "Below 30°C", ventilation: "Excellent", incompatible: ["Reducing agents", "Metals", "Bases", "Organics"] },
-  transport: { un: "3149", class: "5.2", packingGroup: "II", properShipping: "Hydrogen peroxide and peroxyacetic acid mixture" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 30 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 chemicalHazardDB["Chloramine-T"] = {
   cas: "127-65-1", formula: "C₇H₇ClNNaO₂S",
@@ -10858,24 +9112,6 @@ chemicalHazardDB["Chloramine-T"] = {
 };
 
 // ===== METAL COMPOUNDS =====
-
-chemicalHazardDB["Copper Sulfate Pentahydrate"] = {
-  cas: "7758-99-8", formula: "CuSO₄·5H₂O",
-  de: "Kupfersulfat-Pentahydrat", es: "Sulfato de cobre pentahidratado", fr: "Sulfate de cuivre pentahydraté", pt: "Sulfato de cobre penta-hidratado",
-  synonyms: ["Blue vitriol", "Bluestone", "Bordeaux mixture component"],
-  classes: ["irritant", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Fungicide, algicide, root killer, electroplating. Blue crystals." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Alkalis", "Magnesium", "Zinc", "Ammonia"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Copper sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention (vomiting may occur)." }
-};
 
 chemicalHazardDB["Zinc Sulfate Heptahydrate"] = {
   cas: "7446-20-0", formula: "ZnSO₄·7H₂O",
@@ -10910,23 +9146,6 @@ chemicalHazardDB["Iron(III) Chloride Hexahydrate"] = {
   storage: { cabinet: "Corrosive storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Bases", "Metals (corrodes)", "Strong reducing agents"] },
   transport: { un: "1773", class: "8", packingGroup: "III", properShipping: "Ferric chloride, solid" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Silver Nitrate"] = {
-  cas: "7761-88-8", formula: "AgNO₃",
-  de: "Silbernitrat", es: "Nitrato de plata", fr: "Nitrate d'argent", pt: "Nitrato de prata",
-  synonyms: ["Lunar caustic", "Argentous nitrate"],
-  classes: ["oxidizer", "corrosive", "environmental"],
-  ghs: ["GHS03", "GHS05", "GHS09"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Photography, mirrors, wound cauterization. STAINS skin black (Ag deposits)." },
-  storage: { cabinet: "Oxidizer storage, dark", temp: "Room temperature", ventilation: "Normal", incompatible: ["Reducing agents", "Organics", "Ammonia", "Light (decomposes)"] },
-  transport: { un: "1493", class: "5.1", packingGroup: "II", properShipping: "Silver nitrate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash (staining is permanent).", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
 };
 
 chemicalHazardDB["Chromium(III) Chloride"] = {
@@ -10966,75 +9185,7 @@ chemicalHazardDB["Copper Hydroxide"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Mancozeb"] = {
-  cas: "8018-01-7", formula: "[Zn,Mn]₂[CS₂NHCH₂]₂",
-  de: "Mancozeb", es: "Mancozeb", fr: "Mancozèbe", pt: "Mancozebe",
-  synonyms: ["Dithane", "Penncozeb", "Zinc-manganese ethylenebisdithiocarbamate"],
-  classes: ["irritant", "health", "environmental"],
-  ghs: ["GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H361d", text: "Suspected of damaging the unborn child" },
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves, coveralls" }, respiratory: { required: true, type: "Particulate respirator" }, other: "Broad-spectrum fungicide. Can form ETU (carcinogenic) when heated." },
-  storage: { cabinet: "Pesticide storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong oxidizers", "Acids", "Bases"] },
-  transport: { un: "3077", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Imidacloprid"] = {
-  cas: "138261-41-3", formula: "C₉H₁₀ClN₅O₂",
-  de: "Imidacloprid", es: "Imidacloprid", fr: "Imidaclopride", pt: "Imidacloprido",
-  synonyms: ["Confidor", "Gaucho", "Admire"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Neonicotinoid insecticide. HIGHLY TOXIC TO BEES. Restricted in EU for outdoor use." },
-  storage: { cabinet: "Pesticide storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases"] },
-  transport: { un: "Not regulated (solid)", class: "N/A", packingGroup: "N/A", properShipping: "Imidacloprid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Potassium Permanganate"] = {
-  cas: "7722-64-7", formula: "KMnO₄",
-  de: "Kaliumpermanganat", es: "Permanganato de potasio", fr: "Permanganate de potassium", pt: "Permanganato de potássio",
-  synonyms: ["Condy's crystals", "Chameleon mineral"],
-  classes: ["oxidizer", "corrosive", "environmental"],
-  ghs: ["GHS03", "GHS05", "GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Disinfectant, water treatment, organic synthesis. Purple → brown (MnO₂). Stains skin brown." },
-  storage: { cabinet: "Oxidizer storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Reducing agents", "Acids", "Glycerol (fire!)", "Organics"] },
-  transport: { un: "1490", class: "5.1", packingGroup: "II", properShipping: "Potassium permanganate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash. Staining is temporary.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 // ===== MORE LAB REAGENTS =====
-
-chemicalHazardDB["Boric Acid"] = {
-  cas: "10043-35-3", formula: "H₃BO₃",
-  de: "Borsäure", es: "Ácido bórico", fr: "Acide borique", pt: "Ácido bórico",
-  synonyms: ["Orthoboric acid", "Boracic acid"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H360FD", text: "May damage fertility and unborn child" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Antiseptic, flame retardant, buffer. REPRODUCTIVE TOXIN. Not for use during pregnancy." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong reducing agents", "Alkali metals"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Boric acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 chemicalHazardDB["Sodium Tetraborate Decahydrate"] = {
   cas: "1303-96-4", formula: "Na₂B₄O₇·10H₂O",
@@ -11064,19 +9215,6 @@ chemicalHazardDB["Glycine"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe at reasonable amounts." }
 };
 
-chemicalHazardDB["Urea"] = {
-  cas: "57-13-6", formula: "CO(NH₂)₂",
-  de: "Harnstoff", es: "Urea", fr: "Urée", pt: "Ureia",
-  synonyms: ["Carbamide", "Carbonyldiamide"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Fertilizer, protein denaturant, cosmetics, AdBlue. Generally non-toxic." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids", "Nitrates (explosive mix)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Urea" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe at reasonable amounts." }
-};
-
 chemicalHazardDB["Sodium Thiosulfate Pentahydrate"] = {
   cas: "10102-17-7", formula: "Na₂S₂O₃·5H₂O",
   de: "Natriumthiosulfat-Pentahydrat", es: "Tiosulfato de sodio pentahidratado", fr: "Thiosulfate de sodium pentahydraté", pt: "Tiossulfato de sódio penta-hidratado",
@@ -11088,19 +9226,6 @@ chemicalHazardDB["Sodium Thiosulfate Pentahydrate"] = {
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids (releases SO₂)"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium thiosulfate" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Potassium Iodide"] = {
-  cas: "7681-11-0", formula: "KI",
-  de: "Kaliumiodid", es: "Yoduro de potasio", fr: "Iodure de potassium", pt: "Iodeto de potássio",
-  synonyms: ["KI", "Potassium salt of hydriodic acid"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Nuclear emergency (thyroid protection), expectorant, iodine supplement, photography." },
-  storage: { cabinet: "General storage, dark", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Light (yellows)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Potassium iodide" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe at therapeutic doses. Excess can affect thyroid." }
 };
 
 chemicalHazardDB["Sodium Carbonate Anhydrous"] = {
@@ -11118,19 +9243,6 @@ chemicalHazardDB["Sodium Carbonate Anhydrous"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Drink water." }
 };
 
-chemicalHazardDB["Sodium Bicarbonate"] = {
-  cas: "144-55-8", formula: "NaHCO₃",
-  de: "Natriumhydrogencarbonat", es: "Bicarbonato de sodio", fr: "Bicarbonate de sodium", pt: "Bicarbonato de sódio",
-  synonyms: ["Baking soda", "Sodium hydrogen carbonate", "E500ii"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Baking, antacid, cleaning, fire extinguisher. Very safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong acids (fizzes)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium bicarbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe (it's baking soda)." }
-};
-
 // ===== WATER TREATMENT CHEMICALS =====
 
 chemicalHazardDB["Aluminum Sulfate"] = {
@@ -11146,22 +9258,6 @@ chemicalHazardDB["Aluminum Sulfate"] = {
   storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong bases"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Aluminum sulfate" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Ferric Sulfate"] = {
-  cas: "10028-22-5", formula: "Fe₂(SO₄)₃",
-  de: "Eisen(III)-sulfat", es: "Sulfato férrico", fr: "Sulfate ferrique", pt: "Sulfato férrico",
-  synonyms: ["Iron(III) sulfate", "Ferric sulphate"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Water treatment coagulant, etching, mordant. Yellow-brown." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Bases", "Reducing agents"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ferric sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Polyaluminum Chloride"] = {
@@ -11198,166 +9294,9 @@ chemicalHazardDB["Sodium Hypochlorite 12%"] = {
   firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Do NOT vomit. Medical attention." }
 };
 
-chemicalHazardDB["Calcium Hypochlorite"] = {
-  cas: "7778-54-3", formula: "Ca(OCl)₂",
-  de: "Calciumhypochlorit", es: "Hipoclorito de calcio", fr: "Hypochlorite de calcium", pt: "Hipoclorito de cálcio",
-  synonyms: ["HTH", "Pool shock", "Bleaching powder"],
-  classes: ["oxidizer", "corrosive", "environmental"],
-  ghs: ["GHS03", "GHS05", "GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: true, type: "Dust mask, Cl2 respirator if mixing" }, other: "Solid form of bleach for pools/water treatment. 65-70% available chlorine. Keep DRY!" },
-  storage: { cabinet: "Oxidizer storage (cool, dry)", temp: "Below 30°C", ventilation: "Excellent", incompatible: ["Acids", "Ammonia", "Organics", "Moisture (decomposes)"] },
-  transport: { un: "1748", class: "5.1", packingGroup: "II", properShipping: "Calcium hypochlorite, dry" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Brush off, then flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 // ===== PETROCHEMICALS & FUELS =====
 
-chemicalHazardDB["Diesel Fuel"] = {
-  cas: "68476-34-6", formula: "Mixture",
-  de: "Dieselkraftstoff", es: "Combustible diésel", fr: "Carburant diesel", pt: "Combustível diesel",
-  synonyms: ["Diesel oil", "Gas oil", "DERV"],
-  classes: ["flammable", "health", "environmental"],
-  ghs: ["GHS02", "GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H351", text: "Suspected of causing cancer" },
-    { code: "H411", text: "Toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator at high exposure" }, other: "Aspiration hazard - do NOT induce vomiting if swallowed." },
-  storage: { cabinet: "Flammable liquid storage", temp: "Room temperature", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Ignition sources"] },
-  transport: { un: "1202", class: "3", packingGroup: "III", properShipping: "Diesel fuel" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
-chemicalHazardDB["Kerosene"] = {
-  cas: "8008-20-6", formula: "Mixture",
-  de: "Kerosin", es: "Queroseno", fr: "Kérosène", pt: "Querosene",
-  synonyms: ["Paraffin oil", "Jet fuel", "Lamp oil"],
-  classes: ["flammable", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Aspiration hazard. Used as jet fuel (Jet-A), heating oil, solvent." },
-  storage: { cabinet: "Flammable liquid storage", temp: "Room temperature", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers"] },
-  transport: { un: "1223", class: "3", packingGroup: "III", properShipping: "Kerosene" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
-chemicalHazardDB["Gasoline"] = {
-  cas: "86290-81-5", formula: "Mixture",
-  de: "Benzin", es: "Gasolina", fr: "Essence", pt: "Gasolina",
-  synonyms: ["Petrol", "Motor spirit", "Mogas"],
-  classes: ["flammable", "health", "environmental"],
-  ghs: ["GHS02", "GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H224", text: "Extremely flammable liquid and vapor" },
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" },
-    { code: "H340", text: "May cause genetic defects" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H411", text: "Toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "CARCINOGEN (benzene content). Highly volatile. Aspiration hazard." },
-  storage: { cabinet: "Flammable liquid storage", temp: "Cool", ventilation: "Excellent", incompatible: ["Oxidizers", "Ignition sources", "Static electricity"] },
-  transport: { un: "1203", class: "3", packingGroup: "II", properShipping: "Gasoline" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush 15 min.", ingestion: "Do NOT vomit. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Lubricating Oil"] = {
-  cas: "Various", formula: "Mixture",
-  de: "Schmieröl", es: "Aceite lubricante", fr: "Huile lubrifiante", pt: "Óleo lubrificante",
-  synonyms: ["Motor oil", "Machine oil", "Hydraulic oil"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H304", text: "May be fatal if swallowed and enters airways" },
-    { code: "H315", text: "Causes skin irritation" }
-  ],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "Aspiration hazard. Used oil may contain carcinogens - avoid prolonged skin contact." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Lubricating oil" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash with soap.", eyes: "Flush.", ingestion: "Do NOT vomit. Medical attention." }
-};
-
 // ===== PHARMACEUTICAL INTERMEDIATES =====
-
-chemicalHazardDB["Caffeine"] = {
-  cas: "58-08-2", formula: "C₈H₁₀N₄O₂",
-  de: "Koffein", es: "Cafeína", fr: "Caféine", pt: "Cafeína",
-  synonyms: ["1,3,7-Trimethylxanthine", "Theine", "Guaranine"],
-  classes: ["toxic"],
-  ghs: ["GHS06"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Stimulant. Pure caffeine powder is DANGEROUS - 5-10g can be lethal. Not the same as coffee!" },
-  storage: { cabinet: "General storage, secure", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Caffeine" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Medical attention if large amount. Symptoms: rapid heartbeat, tremors, seizures." }
-};
-
-chemicalHazardDB["Aspirin"] = {
-  cas: "50-78-2", formula: "C₉H₈O₄",
-  de: "Acetylsalicylsäure", es: "Ácido acetilsalicílico", fr: "Acide acétylsalicylique", pt: "Ácido acetilsalicílico",
-  synonyms: ["Acetylsalicylic acid", "ASA", "2-Acetoxybenzoic acid"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves for handling bulk" }, respiratory: { required: false, type: "Dust mask" }, other: "Common analgesic. Bulk powder requires care - not same as tablets." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong bases", "Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Acetylsalicylic acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Medical attention if large amount." }
-};
-
-chemicalHazardDB["Paracetamol"] = {
-  cas: "103-90-2", formula: "C₈H₉NO₂",
-  de: "Paracetamol", es: "Paracetamol", fr: "Paracétamol", pt: "Paracetamol",
-  synonyms: ["Acetaminophen", "APAP", "Tylenol"],
-  classes: ["irritant", "health"],
-  ghs: ["GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H373", text: "May cause damage to organs (liver)" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves for bulk" }, respiratory: { required: false, type: "Dust mask" }, other: "Common analgesic. HEPATOTOXIC in overdose - damages liver. Bulk powder requires caution." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Paracetamol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Medical attention - liver damage possible with overdose." }
-};
-
-chemicalHazardDB["Ibuprofen"] = {
-  cas: "15687-27-1", formula: "C₁₃H₁₈O₂",
-  de: "Ibuprofen", es: "Ibuprofeno", fr: "Ibuprofène", pt: "Ibuprofeno",
-  synonyms: ["Advil", "Motrin", "2-(4-Isobutylphenyl)propionic acid"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "NSAID analgesic. Bulk powder - not same as tablets." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong bases"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ibuprofen" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Medical attention if large amount." }
-};
 
 // ===== POLYMER ADDITIVES =====
 
@@ -11390,32 +9329,6 @@ chemicalHazardDB["Triphenyl Phosphate"] = {
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Triphenyl phosphate" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Zinc Stearate"] = {
-  cas: "557-05-1", formula: "Zn(C₁₈H₃₅O₂)₂",
-  de: "Zinkstearat", es: "Estearato de zinc", fr: "Stéarate de zinc", pt: "Estearato de zinco",
-  synonyms: ["Zinc distearate", "Zinc octadecanoate"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Lubricant, mold release, PVC stabilizer. White powder, hydrophobic. Generally safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Zinc stearate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Calcium Stearate"] = {
-  cas: "1592-23-0", formula: "Ca(C₁₈H₃₅O₂)₂",
-  de: "Calciumstearat", es: "Estearato de calcio", fr: "Stéarate de calcium", pt: "Estearato de cálcio",
-  synonyms: ["Calcium distearate", "E470a"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Lubricant, PVC stabilizer, food additive (anti-caking). White powder. Food-grade available." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Calcium stearate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
 };
 
 // ===== INDUSTRIAL GASES (DISSOLVED/LIQUEFIED) =====
@@ -11468,25 +9381,6 @@ chemicalHazardDB["Argon (Liquid)"] = {
 
 // ===== TEXTILE & LEATHER CHEMICALS =====
 
-chemicalHazardDB["Sodium Sulfide"] = {
-  cas: "1313-82-2", formula: "Na₂S",
-  de: "Natriumsulfid", es: "Sulfuro de sodio", fr: "Sulfure de sodium", pt: "Sulfeto de sódio",
-  synonyms: ["Sodium sulphide", "Sodium monosulfide"],
-  classes: ["corrosive", "environmental", "toxic"],
-  ghs: ["GHS05", "GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H290", text: "May be corrosive to metals" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "EUH031", text: "Contact with acids liberates toxic gas (H₂S)" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Rubber gloves, full protection" }, respiratory: { required: true, type: "H2S-rated respirator" }, other: "Leather dehairing, kraft paper. RELEASES H2S WITH ACIDS - potentially fatal!" },
-  storage: { cabinet: "Corrosive storage (away from acids!)", temp: "Room temperature, dry", ventilation: "Excellent", incompatible: ["Acids", "Water (generates heat)", "Oxidizers"] },
-  transport: { un: "1849", class: "8", packingGroup: "II", properShipping: "Sodium sulfide, hydrated" },
-  firstAid: { inhalation: "Fresh air. IMMEDIATE medical attention.", skin: "Flush 30 min.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Rinse. IMMEDIATE medical attention." }
-};
-
 chemicalHazardDB["Chromium(III) Sulfate"] = {
   cas: "10101-53-8", formula: "Cr₂(SO₄)₃",
   de: "Chrom(III)-sulfat", es: "Sulfato de cromo(III)", fr: "Sulfate de chrome(III)", pt: "Sulfato de cromo(III)",
@@ -11504,144 +9398,11 @@ chemicalHazardDB["Chromium(III) Sulfate"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Sodium Dithionite"] = {
-  cas: "7775-14-6", formula: "Na₂S₂O₄",
-  de: "Natriumdithionit", es: "Ditionito de sodio", fr: "Dithionite de sodium", pt: "Ditionito de sódio",
-  synonyms: ["Sodium hydrosulfite", "Blankit", "Vatrolite"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H251", text: "Self-heating: may catch fire" },
-    { code: "H302", text: "Harmful if swallowed" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Dust mask" }, other: "Powerful reducing agent. Textile bleaching, vat dyeing. Keep DRY - self-heats when wet!" },
-  storage: { cabinet: "Cool, dry storage", temp: "Below 30°C", ventilation: "Dry conditions", incompatible: ["Water/moisture", "Oxidizers", "Acids"] },
-  transport: { un: "1384", class: "4.2", packingGroup: "II", properShipping: "Sodium dithionite" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 // ===== MORE METAL COMPOUNDS =====
-
-chemicalHazardDB["Lead(II) Acetate"] = {
-  cas: "301-04-2", formula: "Pb(CH₃COO)₂",
-  de: "Blei(II)-acetat", es: "Acetato de plomo(II)", fr: "Acétate de plomb(II)", pt: "Acetato de chumbo(II)",
-  synonyms: ["Lead acetate", "Sugar of lead", "Plumbous acetate"],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H360Df", text: "May damage the unborn child and fertility" },
-    { code: "H373", text: "May cause damage to organs (nervous system, kidneys)" },
-    { code: "H410", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Particulate respirator" }, other: "LEAD COMPOUND - neurotoxic, cumulative poison. Historical sweetener (caused lead poisoning)." },
-  storage: { cabinet: "Toxic storage, locked", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids", "Strong bases"] },
-  transport: { un: "1616", class: "6.1", packingGroup: "III", properShipping: "Lead acetate" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash thoroughly.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Barium Chloride"] = {
-  cas: "10361-37-2", formula: "BaCl₂",
-  de: "Bariumchlorid", es: "Cloruro de bario", fr: "Chlorure de baryum", pt: "Cloreto de bário",
-  synonyms: ["Barium dichloride"],
-  classes: ["toxic", "irritant"],
-  ghs: ["GHS06", "GHS07"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H332", text: "Harmful if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Dust mask" }, other: "Soluble barium is TOXIC. Used in lab (sulfate test), heat treatment, pigments." },
-  storage: { cabinet: "Toxic storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Sulfates (precipitates)", "Strong acids"] },
-  transport: { un: "1564", class: "6.1", packingGroup: "II", properShipping: "Barium compound" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Give sodium sulfate solution if conscious. Medical attention." }
-};
-
-chemicalHazardDB["Tin(II) Chloride"] = {
-  cas: "7772-99-8", formula: "SnCl₂",
-  de: "Zinn(II)-chlorid", es: "Cloruro de estaño(II)", fr: "Chlorure d'étain(II)", pt: "Cloreto de estanho(II)",
-  synonyms: ["Stannous chloride", "Tin dichloride"],
-  classes: ["corrosive", "irritant"],
-  ghs: ["GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H290", text: "May be corrosive to metals" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Reducing agent, tin plating, mordant. Acidic in solution." },
-  storage: { cabinet: "Corrosive storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Oxidizers", "Bases", "Moisture (hydrolyzes)"] },
-  transport: { un: "3260", class: "8", packingGroup: "III", properShipping: "Corrosive solid, acidic" },
-  firstAid: { inhalation: "Fresh air.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Antimony Trioxide"] = {
-  cas: "1309-64-4", formula: "Sb₂O₃",
-  de: "Antimon(III)-oxid", es: "Trióxido de antimonio", fr: "Trioxyde d'antimoine", pt: "Trióxido de antimônio",
-  synonyms: ["Antimony(III) oxide", "Antimonous oxide", "Senarmontite"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H351", text: "Suspected of causing cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Particulate respirator" }, other: "Flame retardant synergist, catalyst. SUSPECTED CARCINOGEN. Avoid dust inhalation." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids", "Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Antimony trioxide" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 // ===== CONSTRUCTION CHEMICALS =====
 
-chemicalHazardDB["Portland Cement"] = {
-  cas: "65997-15-1", formula: "Ca-Si-Al-Fe oxides",
-  de: "Portlandzite", es: "Cemento Portland", fr: "Ciment Portland", pt: "Cimento Portland",
-  synonyms: ["Cement", "OPC", "Ordinary Portland cement"],
-  classes: ["irritant", "health"],
-  ghs: ["GHS05", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H317", text: "May cause allergic skin reaction (chromium)" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H335", text: "May cause respiratory irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Waterproof gloves" }, respiratory: { required: true, type: "Dust mask" }, other: "Strongly alkaline when wet. Cement burns are serious - wash immediately. Contains Cr(VI) traces." },
-  storage: { cabinet: "Dry storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Water (sets)", "Acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Cement" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash immediately and thoroughly.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Calcium Oxide"] = {
-  cas: "1305-78-8", formula: "CaO",
-  de: "Calciumoxid", es: "Óxido de calcio", fr: "Oxyde de calcium", pt: "Óxido de cálcio",
-  synonyms: ["Quickite", "Burnt lime", "Unslaked lime"],
-  classes: ["corrosive", "irritant"],
-  ghs: ["GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H335", text: "May cause respiratory irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Dust mask" }, other: "REACTS VIOLENTLY WITH WATER (heat). pH 12-13. Construction, steelmaking, water treatment." },
-  storage: { cabinet: "Dry storage (airtight)", temp: "Room temperature", ventilation: "Dry", incompatible: ["Water (violent reaction)", "Acids"] },
-  transport: { un: "1910", class: "8", packingGroup: "III", properShipping: "Calcium oxide" },
-  firstAid: { inhalation: "Fresh air.", skin: "Brush off, then wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Drink water. Medical attention." }
-};
-
 // ===== ADDITIONAL INDUSTRIAL CHEMICALS =====
-
-chemicalHazardDB["Titanium Dioxide"] = {
-  cas: "13463-67-7", formula: "TiO₂",
-  de: "Titandioxid", es: "Dióxido de titanio", fr: "Dioxyde de titane", pt: "Dióxido de titânio",
-  synonyms: ["Titanium white", "E171", "Titania"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H351", text: "Suspected of causing cancer (inhalation)" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: true, type: "Particulate respirator" }, other: "Most common white pigment. SUSPECTED CARCINOGEN by inhalation (IARC 2B). Avoid dust." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong reducing agents"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Titanium dioxide" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
 
 chemicalHazardDB["Silica (Crystalline)"] = {
   cas: "14808-60-7", formula: "SiO₂",
@@ -11673,21 +9434,6 @@ chemicalHazardDB["Asbestos (Chrysotile)"] = {
   storage: { cabinet: "PROHIBITED - do not store", temp: "N/A", ventilation: "N/A", incompatible: ["Banned substance in most countries"] },
   transport: { un: "2212", class: "9", packingGroup: "II", properShipping: "Asbestos" },
   firstAid: { inhalation: "Remove from exposure. Long-term medical monitoring required.", skin: "Shower, dispose of clothing.", eyes: "Flush.", ingestion: "Medical attention." }
-};
-
-chemicalHazardDB["Carbon Black"] = {
-  cas: "1333-86-4", formula: "C",
-  de: "Ruß", es: "Negro de carbón", fr: "Noir de carbone", pt: "Negro de fumo",
-  synonyms: ["Furnace black", "Channel black", "Lamp black"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H351", text: "Suspected of causing cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Particulate respirator" }, other: "Rubber reinforcement, pigment, toner. IARC 2B carcinogen. Very fine particles." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Carbon black" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Graphite"] = {
@@ -11729,34 +9475,6 @@ chemicalHazardDB["Polyethylene Glycol"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
 };
 
-chemicalHazardDB["Propylene Glycol"] = {
-  cas: "57-55-6", formula: "C₃H₈O₂",
-  de: "Propylenglykol", es: "Propilenglicol", fr: "Propylène glycol", pt: "Propilenoglicol",
-  synonyms: ["1,2-Propanediol", "PG", "E1520"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "N/A" }, other: "Food-safe antifreeze, cosmetics, fog machines. GRAS status. Much safer than ethylene glycol." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Propylene glycol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
-};
-
-chemicalHazardDB["Ethylene Glycol"] = {
-  cas: "107-21-1", formula: "C₂H₆O₂",
-  de: "Ethylenglykol", es: "Etilenglicol", fr: "Éthylène glycol", pt: "Etilenoglicol",
-  synonyms: ["1,2-Ethanediol", "MEG", "Antifreeze"],
-  classes: ["toxic"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves for prolonged contact" }, respiratory: { required: false, type: "Ventilation" }, other: "Antifreeze, coolant. TOXIC if ingested - metabolizes to oxalic acid. Sweet taste attracts pets." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ethylene glycol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Medical attention IMMEDIATELY. Antidote: ethanol or fomepizole." }
-};
-
 chemicalHazardDB["Diethylene Glycol"] = {
   cas: "111-46-6", formula: "C₄H₁₀O₃",
   de: "Diethylenglykol", es: "Dietilenglicol", fr: "Diéthylène glycol", pt: "Dietilenoglicol",
@@ -11772,19 +9490,6 @@ chemicalHazardDB["Diethylene Glycol"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Medical attention IMMEDIATELY." }
 };
 
-chemicalHazardDB["Glycerol"] = {
-  cas: "56-81-5", formula: "C₃H₈O₃",
-  de: "Glycerin", es: "Glicerol", fr: "Glycérol", pt: "Glicerol",
-  synonyms: ["Glycerin", "Glycerine", "E422"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "N/A" }, other: "Food additive, cosmetics, pharmaceutical. Byproduct of biodiesel. Humectant. Very safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Potassium permanganate (fire!)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Glycerol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
-};
-
 chemicalHazardDB["Sorbitol"] = {
   cas: "50-70-4", formula: "C₆H₁₄O₆",
   de: "Sorbit", es: "Sorbitol", fr: "Sorbitol", pt: "Sorbitol",
@@ -11796,51 +9501,6 @@ chemicalHazardDB["Sorbitol"] = {
   storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: [] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sorbitol" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
-};
-
-chemicalHazardDB["Citric Acid"] = {
-  cas: "77-92-9", formula: "C₆H₈O₇",
-  de: "Zitronensäure", es: "Ácido cítrico", fr: "Acide citrique", pt: "Ácido cítrico",
-  synonyms: ["2-Hydroxypropane-1,2,3-tricarboxylic acid", "E330"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Food acidulant, cleaning, descaling. Natural fruit acid. Safe at food levels." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases", "Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Citric acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Tartaric Acid"] = {
-  cas: "87-69-4", formula: "C₄H₆O₆",
-  de: "Weinsäure", es: "Ácido tartárico", fr: "Acide tartrique", pt: "Ácido tartárico",
-  synonyms: ["L-Tartaric acid", "E334", "Cream of tartar (potassium salt)"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Wine, baking, food additive. Natural grape acid. Safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Tartaric acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Lactic Acid"] = {
-  cas: "50-21-5", formula: "C₃H₆O₃",
-  de: "Milchsäure", es: "Ácido láctico", fr: "Acide lactique", pt: "Ácido láctico",
-  synonyms: ["2-Hydroxypropanoic acid", "E270"],
-  classes: ["irritant"],
-  ghs: ["GHS05"],
-  hazardStatements: [
-    { code: "H314", text: "Causes severe skin burns and eye damage (concentrated)" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "Fermentation product, food preservative, cosmetics. Concentrated form is corrosive." },
-  storage: { cabinet: "Acid cabinet (if concentrated)", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases", "Strong oxidizers"] },
-  transport: { un: "Not regulated (dilute)", class: "N/A", packingGroup: "N/A", properShipping: "Lactic acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Flush 20 min.", eyes: "Flush 20 min.", ingestion: "Rinse mouth. Drink water." }
 };
 
 chemicalHazardDB["Acetic Acid (Glacial)"] = {
@@ -11857,41 +9517,6 @@ chemicalHazardDB["Acetic Acid (Glacial)"] = {
   storage: { cabinet: "Flammable/acid cabinet", temp: "Room temperature", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong bases", "Chromic acid"] },
   transport: { un: "2789", class: "8 (3)", packingGroup: "II", properShipping: "Acetic acid, glacial" },
   firstAid: { inhalation: "Fresh air.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Do NOT vomit." }
-};
-
-chemicalHazardDB["Formic Acid"] = {
-  cas: "64-18-6", formula: "HCOOH",
-  de: "Ameisensäure", es: "Ácido fórmico", fr: "Acide formique", pt: "Ácido fórmico",
-  synonyms: ["Methanoic acid", "Ant acid"],
-  classes: ["flammable", "corrosive", "toxic"],
-  ghs: ["GHS02", "GHS05", "GHS06"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H331", text: "Toxic if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: true, type: "Acid vapor respirator" }, other: "Found naturally in ant stings. Leather tanning, textile dyeing, silage additive." },
-  storage: { cabinet: "Acid cabinet", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Strong bases"] },
-  transport: { un: "1779", class: "8", packingGroup: "II", properShipping: "Formic acid" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 30 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Oxalic Acid"] = {
-  cas: "144-62-7", formula: "C₂H₂O₄",
-  de: "Oxalsäure", es: "Ácido oxálico", fr: "Acide oxalique", pt: "Ácido oxálico",
-  synonyms: ["Ethanedioic acid", "Wood bleach"],
-  classes: ["toxic", "irritant"],
-  ghs: ["GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H312", text: "Harmful in contact with skin" },
-    { code: "H318", text: "Causes serious eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Dust mask" }, other: "Wood bleaching, rust removal, beekeeping (varroa mite). Present in rhubarb leaves." },
-  storage: { cabinet: "General/acid storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Silver"] },
-  transport: { un: "Not regulated (solid)", class: "N/A", packingGroup: "N/A", properShipping: "Oxalic acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Give calcium (milk). Medical attention." }
 };
 
 chemicalHazardDB["Maleic Acid"] = {
@@ -11956,22 +9581,6 @@ chemicalHazardDB["Benzoic Acid"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Salicylic Acid"] = {
-  cas: "69-72-7", formula: "C₇H₆O₃",
-  de: "Salicylsäure", es: "Ácido salicílico", fr: "Acide salicylique", pt: "Ácido salicílico",
-  synonyms: ["2-Hydroxybenzoic acid", "ortho-Hydroxybenzoic acid"],
-  classes: ["irritant", "health"],
-  ghs: ["GHS05", "GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H318", text: "Causes serious eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Dust mask" }, other: "Aspirin precursor, acne treatment, keratolytic. Found in willow bark." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong bases"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Salicylic acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Stearic Acid"] = {
   cas: "57-11-4", formula: "C₁₈H₃₆O₂",
   de: "Stearinsäure", es: "Ácido esteárico", fr: "Acide stéarique", pt: "Ácido esteárico",
@@ -12031,24 +9640,6 @@ chemicalHazardDB["Lauric Acid"] = {
 
 // ===== ELECTRONICS & SEMICONDUCTOR CHEMICALS =====
 
-chemicalHazardDB["Hydrofluoric Acid"] = {
-  cas: "7664-39-3", formula: "HF",
-  de: "Flusssäure", es: "Ácido fluorhídrico", fr: "Acide fluorhydrique", pt: "Ácido fluorídrico",
-  synonyms: ["HF", "Fluorhydric acid"],
-  classes: ["toxic", "corrosive"],
-  ghs: ["GHS05", "GHS06"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H330", text: "Fatal if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Full face shield + chemical goggles" }, skin: { required: true, type: "Neoprene or butyl rubber, full coverage" }, respiratory: { required: true, type: "Full-face respirator with HF cartridge" }, other: "EXTREMELY DANGEROUS. Penetrates skin causing systemic fluoride poisoning. Keep calcium gluconate gel on hand. Small exposures can be fatal." },
-  storage: { cabinet: "Dedicated HF cabinet (polyethylene)", temp: "Cool", ventilation: "Excellent", incompatible: ["Glass", "Concrete", "Metals", "Bases", "Silica"] },
-  transport: { un: "1790", class: "8 (6.1)", packingGroup: "I", properShipping: "Hydrofluoric acid" },
-  firstAid: { inhalation: "Remove. CPR. IMMEDIATE medical attention.", skin: "Flush 20 min, apply calcium gluconate gel. IMMEDIATE medical attention.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Give milk/calcium. IMMEDIATE medical attention." }
-};
-
 chemicalHazardDB["Buffered Oxide Etch"] = {
   cas: "Mixture", formula: "NH₄F/HF",
   de: "Gepufferte Oxidätzung", es: "Grabado de óxido tamponado", fr: "Gravure d'oxyde tamponnée", pt: "Ataque de óxido tamponado",
@@ -12083,112 +9674,7 @@ chemicalHazardDB["Piranha Solution"] = {
   firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Flush 30 min. Medical attention.", eyes: "Flush 30 min. Medical attention.", ingestion: "Do NOT vomit. Medical attention." }
 };
 
-chemicalHazardDB["Tetramethylammonium Hydroxide"] = {
-  cas: "75-59-2", formula: "(CH₃)₄NOH",
-  de: "Tetramethylammoniumhydroxid", es: "Hidróxido de tetrametilamonio", fr: "Hydroxyde de tétraméthylammonium", pt: "Hidróxido de tetrametilamônio",
-  synonyms: ["TMAH", "Tetramethyl ammonium hydroxide"],
-  classes: ["toxic", "corrosive"],
-  ghs: ["GHS05", "GHS06"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H331", text: "Toxic if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Butyl rubber gloves, full protection" }, respiratory: { required: true, type: "Organic vapor/ammonia respirator" }, other: "Photoresist developer. Strong base. Neurotoxic - can cause respiratory paralysis. Multiple fatalities in semiconductor industry." },
-  storage: { cabinet: "Corrosive cabinet (base)", temp: "Room temperature", ventilation: "Well-ventilated", incompatible: ["Acids", "Oxidizers"] },
-  transport: { un: "1835", class: "8", packingGroup: "II", properShipping: "Tetramethylammonium hydroxide" },
-  firstAid: { inhalation: "Fresh air. CPR if needed. IMMEDIATE medical attention.", skin: "Flush 30 min. Medical attention.", eyes: "Flush 30 min. Medical attention.", ingestion: "Do NOT vomit. IMMEDIATE medical attention." }
-};
-
-chemicalHazardDB["Isopropyl Alcohol (Electronic Grade)"] = {
-  cas: "67-63-0", formula: "C₃H₈O",
-  de: "Isopropanol (Elektronikqualität)", es: "Alcohol isopropílico (grado electrónico)", fr: "Alcool isopropylique (qualité électronique)", pt: "Álcool isopropílico (grau eletrônico)",
-  synonyms: ["IPA", "2-Propanol", "Isopropanol"],
-  classes: ["flammable", "irritant"],
-  ghs: ["GHS02", "GHS07"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H336", text: "May cause drowsiness or dizziness" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Nitrile gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "Ultra-pure grade for wafer cleaning. Same handling as regular IPA. Static-dissipative containers." },
-  storage: { cabinet: "Flammable cabinet", temp: "Room temperature", ventilation: "Well-ventilated", incompatible: ["Strong oxidizers", "Ignition sources"] },
-  transport: { un: "1219", class: "3", packingGroup: "II", properShipping: "Isopropanol" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
 // ===== AGRICULTURAL CHEMICALS =====
-
-chemicalHazardDB["Glyphosate"] = {
-  cas: "1071-83-6", formula: "C₃H₈NO₅P",
-  de: "Glyphosat", es: "Glifosato", fr: "Glyphosate", pt: "Glifosato",
-  synonyms: ["Roundup (brand)", "N-(phosphonomethyl)glycine"],
-  classes: ["irritant", "health"],
-  ghs: ["GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H411", text: "Toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask for powder" }, other: "Broad-spectrum herbicide. Controversial - IARC classifies as 'probably carcinogenic'. Widely debated." },
-  storage: { cabinet: "Pesticide storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong bases"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Glyphosate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Medical attention if large amount." }
-};
-
-chemicalHazardDB["Malathion"] = {
-  cas: "121-75-5", formula: "C₁₀H₁₉O₆PS₂",
-  de: "Malathion", es: "Malatión", fr: "Malathion", pt: "Malatião",
-  synonyms: ["Carbophos", "Maldison"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Chemical-resistant gloves" }, respiratory: { required: true, type: "Organic vapor respirator when spraying" }, other: "Organophosphate insecticide. Cholinesterase inhibitor. Used for mosquito control." },
-  storage: { cabinet: "Pesticide storage, locked", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong bases"] },
-  transport: { un: "3082", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash thoroughly.", eyes: "Flush 15 min.", ingestion: "Medical attention. Antidote: atropine." }
-};
-
-chemicalHazardDB["Chlorpyrifos"] = {
-  cas: "2921-88-2", formula: "C₉H₁₁Cl₃NO₃PS",
-  de: "Chlorpyrifos", es: "Clorpirifós", fr: "Chlorpyrifos", pt: "Clorpirifós",
-  synonyms: ["Dursban", "Lorsban"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Chemical-resistant suit" }, respiratory: { required: true, type: "Full-face respirator" }, other: "Organophosphate insecticide. Banned for residential use in many countries. Neurodevelopmental concerns." },
-  storage: { cabinet: "Pesticide storage, locked", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong bases"] },
-  transport: { un: "2783", class: "6.1", packingGroup: "III", properShipping: "Organophosphorus pesticide" },
-  firstAid: { inhalation: "Fresh air. CPR if needed. IMMEDIATE medical attention.", skin: "Remove clothing, wash thoroughly.", eyes: "Flush 20 min.", ingestion: "Medical attention. Antidote: atropine." }
-};
-
-chemicalHazardDB["2,4-D"] = {
-  cas: "94-75-7", formula: "C₈H₆Cl₂O₃",
-  de: "2,4-Dichlorphenoxyessigsäure", es: "Ácido 2,4-diclorofenoxiacético", fr: "Acide 2,4-dichlorophénoxyacétique", pt: "Ácido 2,4-diclorofenoxiacético",
-  synonyms: ["2,4-Dichlorophenoxyacetic acid", "Hedonal"],
-  classes: ["toxic", "irritant"],
-  ghs: ["GHS06", "GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H335", text: "May cause respiratory irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Dust/mist respirator" }, other: "Selective herbicide for broadleaf weeds. Component of Agent Orange (with 2,4,5-T). Widely used in lawn care." },
-  storage: { cabinet: "Pesticide storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong bases"] },
-  transport: { un: "3077", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash thoroughly.", eyes: "Flush 20 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 chemicalHazardDB["Paraquat"] = {
   cas: "1910-42-5", formula: "C₁₂H₁₄Cl₂N₂",
@@ -12213,204 +9699,9 @@ chemicalHazardDB["Paraquat"] = {
 
 // ===== MINING & METALLURGY =====
 
-chemicalHazardDB["Sodium Cyanide"] = {
-  cas: "143-33-9", formula: "NaCN",
-  de: "Natriumcyanid", es: "Cianuro de sodio", fr: "Cyanure de sodium", pt: "Cianeto de sódio",
-  synonyms: ["Sodium cyanide", "Cyanogran"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "EUH032", text: "Contact with acids liberates very toxic gas (HCN)" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "SCBA or cyanide-rated full-face respirator" }, other: "EXTREMELY TOXIC. Gold extraction, electroplating. NEVER mix with acids (releases HCN gas). Keep cyanide antidote kit nearby." },
-  storage: { cabinet: "Locked toxic storage (away from acids!)", temp: "Room temperature, dry", ventilation: "Excellent", incompatible: ["Acids (liberates HCN)", "Oxidizers", "Water (slowly hydrolyzes)"] },
-  transport: { un: "1689", class: "6.1", packingGroup: "I", properShipping: "Sodium cyanide" },
-  firstAid: { inhalation: "Fresh air. CPR. Administer amyl nitrite. IMMEDIATE medical attention.", skin: "Remove clothing, wash thoroughly.", eyes: "Flush 30 min.", ingestion: "IMMEDIATE medical attention. Antidote: hydroxocobalamin or cyanide kit." }
-};
-
-chemicalHazardDB["Potassium Cyanide"] = {
-  cas: "151-50-8", formula: "KCN",
-  de: "Kaliumcyanid", es: "Cianuro de potasio", fr: "Cyanure de potassium", pt: "Cianeto de potássio",
-  synonyms: ["Potassium cyanide"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "EUH032", text: "Contact with acids liberates very toxic gas (HCN)" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "SCBA" }, other: "EXTREMELY TOXIC. Same as sodium cyanide. Used in gold plating, photography." },
-  storage: { cabinet: "Locked toxic storage (away from acids!)", temp: "Room temperature, dry", ventilation: "Excellent", incompatible: ["Acids", "Oxidizers"] },
-  transport: { un: "1680", class: "6.1", packingGroup: "I", properShipping: "Potassium cyanide" },
-  firstAid: { inhalation: "Fresh air. CPR. IMMEDIATE medical attention.", skin: "Remove clothing, wash.", eyes: "Flush 30 min.", ingestion: "IMMEDIATE medical attention. Cyanide antidote kit." }
-};
-
-chemicalHazardDB["Mercury"] = {
-  cas: "7439-97-6", formula: "Hg",
-  de: "Quecksilber", es: "Mercurio", fr: "Mercure", pt: "Mercúrio",
-  synonyms: ["Quicksilver", "Liquid silver", "Hydrargyrum"],
-  classes: ["toxic", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H360D", text: "May damage the unborn child" },
-    { code: "H372", text: "Causes damage to organs (nervous system, kidneys)" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Mercury vapor respirator" }, other: "VAPOR IS THE MAIN HAZARD. Spills require special cleanup (mercury vacuum, sulfur powder). Bioaccumulates. Thermometers, amalgams, gold mining." },
-  storage: { cabinet: "Dedicated mercury storage", temp: "Room temperature", ventilation: "Excellent", incompatible: ["Ammonia", "Halogens", "Oxidizers"] },
-  transport: { un: "2809", class: "8", packingGroup: "III", properShipping: "Mercury" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush.", ingestion: "Medical attention (but low absorption)." }
-};
-
-chemicalHazardDB["Arsenic Trioxide"] = {
-  cas: "1327-53-3", formula: "As₂O₃",
-  de: "Arsentrioxid", es: "Trióxido de arsénico", fr: "Trioxyde d'arsenic", pt: "Trióxido de arsênio",
-  synonyms: ["White arsenic", "Arsenious oxide", "Arsenic(III) oxide"],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H300", text: "Fatal if swallowed" },
-    { code: "H310", text: "Fatal in contact with skin" },
-    { code: "H330", text: "Fatal if inhaled" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "Full-face respirator with particulate filter" }, other: "KNOWN CARCINOGEN. Historic poison ('inheritance powder'). Glass making, wood preservation. Also used in leukemia treatment (Trisenox)." },
-  storage: { cabinet: "Locked toxic storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids", "Strong oxidizers"] },
-  transport: { un: "1561", class: "6.1", packingGroup: "I", properShipping: "Arsenic trioxide" },
-  firstAid: { inhalation: "Fresh air. IMMEDIATE medical attention.", skin: "Remove clothing, wash thoroughly.", eyes: "Flush 30 min.", ingestion: "IMMEDIATE medical attention. Chelation therapy may be needed." }
-};
-
-chemicalHazardDB["Selenium Dioxide"] = {
-  cas: "7446-08-4", formula: "SeO₂",
-  de: "Selendioxid", es: "Dióxido de selenio", fr: "Dioxyde de sélénium", pt: "Dióxido de selênio",
-  synonyms: ["Selenious anhydride", "Selenium(IV) oxide"],
-  classes: ["toxic"],
-  ghs: ["GHS06"],
-  hazardStatements: [
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H331", text: "Toxic if inhaled" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Particulate respirator" }, other: "Oxidizing agent in organic synthesis. Glass decolorizer. Garlic breath is sign of selenium exposure." },
-  storage: { cabinet: "Toxic storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Reducing agents", "Strong bases"] },
-  transport: { un: "2811", class: "6.1", packingGroup: "II", properShipping: "Toxic solid, organic" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 // ===== FOOD INDUSTRY =====
 
-chemicalHazardDB["Sodium Nitrite"] = {
-  cas: "7632-00-0", formula: "NaNO₂",
-  de: "Natriumnitrit", es: "Nitrito de sodio", fr: "Nitrite de sodium", pt: "Nitrito de sódio",
-  synonyms: ["E250", "Nitrous acid sodium salt"],
-  classes: ["oxidizer", "toxic"],
-  ghs: ["GHS03", "GHS06"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Curing salt for meat preservation. TOXIC in pure form - do not confuse with table salt. Pink salt mixture is 6.25% nitrite." },
-  storage: { cabinet: "Cool, dry storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Reducing agents", "Acids", "Ammonium salts"] },
-  transport: { un: "1500", class: "5.1 (6.1)", packingGroup: "III", properShipping: "Sodium nitrite" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Medical attention (methemoglobinemia risk)." }
-};
-
-chemicalHazardDB["Sodium Nitrate"] = {
-  cas: "7631-99-4", formula: "NaNO₃",
-  de: "Natriumnitrat", es: "Nitrato de sodio", fr: "Nitrate de sodium", pt: "Nitrato de sódio",
-  synonyms: ["Chile saltpeter", "E251", "Cubic niter"],
-  classes: ["oxidizer"],
-  ghs: ["GHS03"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Food preservative (E251), fertilizer, pyrotechnics. Less toxic than nitrite but still oxidizer." },
-  storage: { cabinet: "Oxidizer storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Reducing agents", "Combustibles", "Organic materials"] },
-  transport: { un: "1498", class: "5.1", packingGroup: "III", properShipping: "Sodium nitrate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Potassium Sorbate"] = {
-  cas: "24634-61-5", formula: "C₆H₇KO₂",
-  de: "Kaliumsorbat", es: "Sorbato de potasio", fr: "Sorbate de potassium", pt: "Sorbato de potássio",
-  synonyms: ["E202", "Potassium (E,E)-hexa-2,4-dienoate"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Common food preservative. Inhibits mold and yeast. GRAS status. Safe for consumption at food levels." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Potassium sorbate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe at food levels." }
-};
-
-chemicalHazardDB["Sodium Benzoate"] = {
-  cas: "532-32-1", formula: "C₇H₅NaO₂",
-  de: "Natriumbenzoat", es: "Benzoato de sodio", fr: "Benzoate de sodium", pt: "Benzoato de sódio",
-  synonyms: ["E211", "Benzoic acid sodium salt"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Food preservative (E211). Antimicrobial. Avoid combining with vitamin C (ascorbic acid) in acidic drinks - may form benzene." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium benzoate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Calcium Propionate"] = {
-  cas: "4075-81-4", formula: "Ca(C₃H₅O₂)₂",
-  de: "Calciumpropionat", es: "Propionato de calcio", fr: "Propionate de calcium", pt: "Propionato de cálcio",
-  synonyms: ["E282", "Calcium dipropionate"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Bread preservative. Inhibits mold. GRAS status. Characteristic slight cheese smell." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Calcium propionate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
-};
-
 // ===== REFRIGERANTS =====
-
-chemicalHazardDB["R-134a"] = {
-  cas: "811-97-2", formula: "C₂H₂F₄",
-  de: "R-134a", es: "R-134a", fr: "R-134a", pt: "R-134a",
-  synonyms: ["1,1,1,2-Tetrafluoroethane", "HFC-134a", "Norflurane"],
-  classes: ["compressed"],
-  ghs: ["GHS04"],
-  hazardStatements: [
-    { code: "H280", text: "Contains gas under pressure; may explode if heated" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Insulated gloves (frostbite)" }, respiratory: { required: true, type: "SCBA in confined spaces" }, other: "Common automotive A/C refrigerant. ASPHYXIANT in high concentrations. Frostbite hazard from liquid. High GWP (1430) - being phased out." },
-  storage: { cabinet: "Cylinder storage", temp: "Below 52°C", ventilation: "Well-ventilated", incompatible: ["Alkali metals", "Finely divided metals"] },
-  transport: { un: "3159", class: "2.2", packingGroup: "N/A", properShipping: "1,1,1,2-Tetrafluoroethane" },
-  firstAid: { inhalation: "Fresh air.", skin: "Warm gradually (frostbite).", eyes: "Flush.", ingestion: "N/A" }
-};
-
-chemicalHazardDB["R-410A"] = {
-  cas: "Mixture", formula: "CHF₂CF₃/CH₂F₂",
-  de: "R-410A", es: "R-410A", fr: "R-410A", pt: "R-410A",
-  synonyms: ["Puron", "AZ-20", "Genetron AZ-20"],
-  classes: ["compressed"],
-  ghs: ["GHS04"],
-  hazardStatements: [
-    { code: "H280", text: "Contains gas under pressure; may explode if heated" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Insulated gloves" }, respiratory: { required: true, type: "SCBA in confined spaces" }, other: "Replaced R-22 in residential A/C. 50/50 mix of R-32 and R-125. High pressure - requires specific equipment. GWP 2088." },
-  storage: { cabinet: "Cylinder storage", temp: "Below 52°C", ventilation: "Well-ventilated", incompatible: ["Alkali metals"] },
-  transport: { un: "3163", class: "2.2", packingGroup: "N/A", properShipping: "Liquefied gas" },
-  firstAid: { inhalation: "Fresh air.", skin: "Warm gradually.", eyes: "Flush.", ingestion: "N/A" }
-};
 
 chemicalHazardDB["R-32"] = {
   cas: "75-10-5", formula: "CH₂F₂",
@@ -12428,42 +9719,7 @@ chemicalHazardDB["R-32"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Warm gradually.", eyes: "Flush.", ingestion: "N/A" }
 };
 
-chemicalHazardDB["Ammonia (Anhydrous)"] = {
-  cas: "7664-41-7", formula: "NH₃",
-  de: "Ammoniak (wasserfrei)", es: "Amoníaco (anhidro)", fr: "Ammoniac (anhydre)", pt: "Amônia (anidra)",
-  synonyms: ["R-717", "Anhydrous ammonia"],
-  classes: ["toxic", "corrosive", "compressed", "flammable"],
-  ghs: ["GHS02", "GHS04", "GHS05", "GHS06", "GHS09"],
-  hazardStatements: [
-    { code: "H221", text: "Flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Full chemical suit" }, respiratory: { required: true, type: "SCBA or ammonia-rated full-face respirator" }, other: "Industrial refrigerant (R-717). ZERO GWP. Very efficient but toxic and flammable. Strong odor is warning." },
-  storage: { cabinet: "Pressure vessel storage", temp: "Below 52°C", ventilation: "Excellent", incompatible: ["Acids", "Halogens", "Oxidizers", "Metals (Cu, Zn)"] },
-  transport: { un: "1005", class: "2.3 (8)", packingGroup: "N/A", properShipping: "Ammonia, anhydrous" },
-  firstAid: { inhalation: "Fresh air. CPR if needed. Medical attention.", skin: "Flush 30 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Drink water. Medical attention." }
-};
-
 // ===== PHOTOGRAPHY =====
-
-chemicalHazardDB["Silver Nitrate"] = {
-  cas: "7761-88-8", formula: "AgNO₃",
-  de: "Silbernitrat", es: "Nitrato de plata", fr: "Nitrate d'argent", pt: "Nitrato de prata",
-  synonyms: ["Lunar caustic", "Silver(I) nitrate"],
-  classes: ["oxidizer", "corrosive"],
-  ghs: ["GHS03", "GHS05"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Photography, silver plating, mirrors. Stains skin black (argyria). Medical use for wound cauterization." },
-  storage: { cabinet: "Oxidizer cabinet (dark)", temp: "Room temperature", ventilation: "Normal", incompatible: ["Reducing agents", "Ammonia", "Organic materials", "Flammables"] },
-  transport: { un: "1493", class: "5.1", packingGroup: "II", properShipping: "Silver nitrate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash thoroughly (staining is permanent).", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
 
 chemicalHazardDB["Potassium Ferricyanide"] = {
   cas: "13746-66-2", formula: "K₃[Fe(CN)₆]",
@@ -12479,19 +9735,6 @@ chemicalHazardDB["Potassium Ferricyanide"] = {
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids (releases HCN)", "Strong bases"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Potassium ferricyanide" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Sodium Thiosulfate"] = {
-  cas: "7772-98-7", formula: "Na₂S₂O₃",
-  de: "Natriumthiosulfat", es: "Tiosulfato de sodio", fr: "Thiosulfate de sodium", pt: "Tiossulfato de sódio",
-  synonyms: ["Hypo", "Sodium hyposulfite", "Antichlor"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Optional" }, other: "Photography fixer. Dechlorination. Cyanide poisoning antidote. Ichthyosis treatment. Very safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium thiosulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
 };
 
 // ===== PAPER & PULP =====
@@ -12547,23 +9790,6 @@ chemicalHazardDB["Tall Oil"] = {
 
 // ===== COSMETICS & PERSONAL CARE =====
 
-chemicalHazardDB["Sodium Lauryl Sulfate"] = {
-  cas: "151-21-3", formula: "C₁₂H₂₅NaO₄S",
-  de: "Natriumlaurylsulfat", es: "Laurilsulfato de sodio", fr: "Laurylsulfate de sodium", pt: "Lauril sulfato de sódio",
-  synonyms: ["SLS", "Sodium dodecyl sulfate", "SDS"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H335", text: "May cause respiratory irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask for powder" }, other: "Surfactant in shampoos, toothpaste, detergents. Skin/eye irritant in concentrated form. Safe at cosmetic levels." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium lauryl sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Cocamidopropyl Betaine"] = {
   cas: "61789-40-0", formula: "C₁₉H₃₈N₂O₃",
   de: "Cocamidopropylbetain", es: "Cocamidopropil betaína", fr: "Cocamidopropyl bétaïne", pt: "Cocamidopropil betaína",
@@ -12577,22 +9803,6 @@ chemicalHazardDB["Cocamidopropyl Betaine"] = {
   ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "N/A" }, other: "Mild surfactant from coconut oil. Baby shampoos, gentle cleansers. Generally well-tolerated." },
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong acids"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Cocamidopropyl betaine" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Triethanolamine"] = {
-  cas: "102-71-6", formula: "C₆H₁₅NO₃",
-  de: "Triethanolamin", es: "Trietanolamina", fr: "Triéthanolamine", pt: "Trietanolamina",
-  synonyms: ["TEA", "2,2',2''-Nitrilotriethanol", "Trolamine"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "pH adjuster, emulsifier. Cosmetics, metalworking fluids, cement. Avoid nitrosating agents (forms nitrosamines)." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Nitrosating agents"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Triethanolamine" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
@@ -12623,98 +9833,6 @@ chemicalHazardDB["Dimethicone"] = {
 };
 
 // ===== MORE INDUSTRIAL CHEMICALS =====
-
-chemicalHazardDB["Ethylene Oxide"] = {
-  cas: "75-21-8", formula: "C₂H₄O",
-  de: "Ethylenoxid", es: "Óxido de etileno", fr: "Oxyde d'éthylène", pt: "Óxido de etileno",
-  synonyms: ["EO", "Oxirane", "1,2-Epoxyethane"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H340", text: "May cause genetic defects" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Butyl rubber gloves" }, respiratory: { required: true, type: "SCBA or EO-rated respirator" }, other: "KNOWN CARCINOGEN. Sterilization of medical equipment. Ethylene glycol production. Gas monitoring required." },
-  storage: { cabinet: "Pressurized gas storage (outdoors)", temp: "Cool", ventilation: "Excellent", incompatible: ["Acids", "Bases", "Oxidizers"] },
-  transport: { un: "1040", class: "2.3 (2.1)", packingGroup: "N/A", properShipping: "Ethylene oxide" },
-  firstAid: { inhalation: "Fresh air. CPR if needed. Medical attention.", skin: "Flush 20 min.", eyes: "Flush 20 min.", ingestion: "N/A (gas)" }
-};
-
-chemicalHazardDB["Propylene Oxide"] = {
-  cas: "75-56-9", formula: "C₃H₆O",
-  de: "Propylenoxid", es: "Óxido de propileno", fr: "Oxyde de propylène", pt: "Óxido de propileno",
-  synonyms: ["PO", "1,2-Epoxypropane", "Methyloxirane"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H224", text: "Extremely flammable liquid and vapor" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H335", text: "May cause respiratory irritation" },
-    { code: "H351", text: "Suspected of causing cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Butyl rubber" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "SUSPECTED CARCINOGEN. Polyol production, fumigant. Similar hazards to ethylene oxide." },
-  storage: { cabinet: "Flammable storage (refrigerated)", temp: "Cold", ventilation: "Excellent", incompatible: ["Acids", "Oxidizers", "Anhydrous metal halides"] },
-  transport: { un: "1280", class: "3", packingGroup: "I", properShipping: "Propylene oxide" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Remove clothing, wash.", eyes: "Flush 20 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Acrylonitrile"] = {
-  cas: "107-13-1", formula: "C₃H₃N",
-  de: "Acrylnitril", es: "Acrilonitrilo", fr: "Acrylonitrile", pt: "Acrilonitrila",
-  synonyms: ["VCN", "Vinyl cyanide", "Propenenitrile"],
-  classes: ["flammable", "toxic", "health"],
-  ghs: ["GHS02", "GHS06", "GHS08"],
-  hazardStatements: [
-    { code: "H225", text: "Highly flammable liquid and vapor" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Butyl rubber, full coverage" }, respiratory: { required: true, type: "Full-face respirator with organic vapor/cyanide" }, other: "KNOWN CARCINOGEN. Acrylic fiber, ABS plastic production. Can release HCN when burned." },
-  storage: { cabinet: "Flammable storage", temp: "Cool", ventilation: "Excellent", incompatible: ["Strong oxidizers", "Strong acids", "Strong bases"] },
-  transport: { un: "1093", class: "3 (6.1)", packingGroup: "I", properShipping: "Acrylonitrile, stabilized" },
-  firstAid: { inhalation: "Fresh air. CPR. Medical attention.", skin: "Remove clothing, wash thoroughly.", eyes: "Flush 20 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
-chemicalHazardDB["Vinyl Chloride"] = {
-  cas: "75-01-4", formula: "C₂H₃Cl",
-  de: "Vinylchlorid", es: "Cloruro de vinilo", fr: "Chlorure de vinyle", pt: "Cloreto de vinila",
-  synonyms: ["VCM", "Chloroethene", "Chloroethylene"],
-  classes: ["flammable", "health"],
-  ghs: ["GHS02", "GHS08"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Cold-resistant gloves (gas is cold)" }, respiratory: { required: true, type: "SCBA" }, other: "KNOWN CARCINOGEN (liver angiosarcoma). PVC production. Gas at room temp. Distinctive sweet odor." },
-  storage: { cabinet: "Pressure vessel (outdoors)", temp: "Pressurized", ventilation: "Excellent", incompatible: ["Oxidizers", "Copper", "Aluminum"] },
-  transport: { un: "1086", class: "2.1", packingGroup: "N/A", properShipping: "Vinyl chloride, stabilized" },
-  firstAid: { inhalation: "Fresh air. CPR if needed.", skin: "Warm gradually (frostbite from gas).", eyes: "Flush.", ingestion: "N/A (gas)" }
-};
-
-chemicalHazardDB["Styrene"] = {
-  cas: "100-42-5", formula: "C₈H₈",
-  de: "Styrol", es: "Estireno", fr: "Styrène", pt: "Estireno",
-  synonyms: ["Vinylbenzene", "Phenylethylene", "Ethenylbenzene"],
-  classes: ["flammable", "irritant", "health"],
-  ghs: ["GHS02", "GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H361d", text: "Suspected of damaging the unborn child" },
-    { code: "H372", text: "Causes damage to organs" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: true, type: "Organic vapor respirator" }, other: "Polystyrene, ABS, fiberglass production. Sweet smell. Can polymerize violently if inhibitor fails." },
-  storage: { cabinet: "Flammable storage (inhibited)", temp: "Cool", ventilation: "Well-ventilated", incompatible: ["Oxidizers", "Peroxides", "Acids", "Heat"] },
-  transport: { un: "2055", class: "3", packingGroup: "III", properShipping: "Styrene monomer, stabilized" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
 
 // ===== LABORATORY REAGENTS =====
 
@@ -12840,52 +9958,7 @@ chemicalHazardDB["Biuret Reagent"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Flush 20 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Do NOT vomit." }
 };
 
-chemicalHazardDB["Sudan III"] = {
-  cas: "85-86-9", formula: "C₂₂H₁₆N₄O",
-  de: "Sudan III", es: "Sudan III", fr: "Soudan III", pt: "Sudão III",
-  synonyms: ["Solvent Red 23", "Fat Ponceau"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H351", text: "Suspected of causing cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Fat/lipid stain - red color with oils. Histology, biology. Azo dye - suspected carcinogen. Stains intensely." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: [] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sudan III" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
 // ===== DYES & STAINS =====
-
-chemicalHazardDB["Methylene Blue"] = {
-  cas: "61-73-4", formula: "C₁₆H₁₈ClN₃S",
-  de: "Methylenblau", es: "Azul de metileno", fr: "Bleu de méthylène", pt: "Azul de metileno",
-  synonyms: ["Basic Blue 9", "Methylthioninium chloride"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves (stains)" }, respiratory: { required: false, type: "N/A" }, other: "Biological stain, methemoglobinemia antidote. STAINS everything blue. Safe at low doses - used medically." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Strong reducing agents"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Methylene blue" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash (staining will fade).", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Crystal Violet"] = {
-  cas: "548-62-9", formula: "C₂₅H₃₀ClN₃",
-  de: "Kristallviolett", es: "Violeta de genciana", fr: "Violet de gentiane", pt: "Violeta de genciana",
-  synonyms: ["Gentian violet", "Basic Violet 3"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H350", text: "May cause cancer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "N/A" }, other: "Gram stain, antifungal (topical). KNOWN CARCINOGEN in animals. Intense purple stain." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: [] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Crystal violet" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
 
 chemicalHazardDB["Safranin O"] = {
   cas: "477-73-6", formula: "C₂₀H₁₉ClN₄",
@@ -12902,22 +9975,6 @@ chemicalHazardDB["Safranin O"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Eosin Y"] = {
-  cas: "17372-87-1", formula: "C₂₀H₆Br₄Na₂O₅",
-  de: "Eosin Y", es: "Eosina Y", fr: "Éosine Y", pt: "Eosina Y",
-  synonyms: ["Acid Red 87", "Eosin yellowish"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "N/A" }, other: "Histology counterstain (H&E staining). Pink/red. Photosensitizer - avoid sun exposure after contact." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: [] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Eosin Y" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash. Avoid sun.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Hematoxylin"] = {
   cas: "517-28-2", formula: "C₁₆H₁₄O₆",
   de: "Hämatoxylin", es: "Hematoxilina", fr: "Hématoxyline", pt: "Hematoxilina",
@@ -12932,27 +9989,6 @@ chemicalHazardDB["Hematoxylin"] = {
 };
 
 // ===== ROCKET PROPELLANTS =====
-
-chemicalHazardDB["Hydrazine"] = {
-  cas: "302-01-2", formula: "N₂H₄",
-  de: "Hydrazin", es: "Hidrazina", fr: "Hydrazine", pt: "Hidrazina",
-  synonyms: ["Diamine", "Diazane"],
-  classes: ["flammable", "toxic", "corrosive", "health", "environmental"],
-  ghs: ["GHS02", "GHS05", "GHS06", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H226", text: "Flammable liquid and vapor" },
-    { code: "H301", text: "Toxic if swallowed" },
-    { code: "H311", text: "Toxic in contact with skin" },
-    { code: "H314", text: "Causes severe skin burns and eye damage" },
-    { code: "H331", text: "Toxic if inhaled" },
-    { code: "H350", text: "May cause cancer" },
-    { code: "H400", text: "Very toxic to aquatic life" }
-  ],
-  ppe: { eyes: { required: true, type: "Face shield + chemical goggles" }, skin: { required: true, type: "Full chemical suit (butyl rubber)" }, respiratory: { required: true, type: "SCBA" }, other: "KNOWN CARCINOGEN. Rocket fuel, boiler treatment, chemical synthesis. Hypergolic with oxidizers. Extremely hazardous." },
-  storage: { cabinet: "Dedicated storage (isolated)", temp: "Cool", ventilation: "Excellent", incompatible: ["Oxidizers (hypergolic!)", "Acids", "Metals", "Porous materials"] },
-  transport: { un: "2029", class: "8 (3, 6.1)", packingGroup: "I", properShipping: "Hydrazine, anhydrous" },
-  firstAid: { inhalation: "Fresh air. CPR. IMMEDIATE medical attention.", skin: "Remove clothing, flush 30 min.", eyes: "Flush 30 min. Medical attention.", ingestion: "IMMEDIATE medical attention." }
-};
 
 chemicalHazardDB["Monomethylhydrazine"] = {
   cas: "60-34-4", formula: "CH₆N₂",
@@ -12993,36 +10029,6 @@ chemicalHazardDB["Nitrogen Tetroxide"] = {
 
 // ===== EXPLOSIVES PRECURSORS =====
 
-chemicalHazardDB["Ammonium Nitrate"] = {
-  cas: "6484-52-2", formula: "NH₄NO₃",
-  de: "Ammoniumnitrat", es: "Nitrato de amonio", fr: "Nitrate d'ammonium", pt: "Nitrato de amônio",
-  synonyms: ["AN", "Ammonium saltite"],
-  classes: ["oxidizer"],
-  ghs: ["GHS03"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Fertilizer, explosive component (ANFO). Can DETONATE if contaminated with fuel and confined. Beirut 2020, Texas City 1947 disasters." },
-  storage: { cabinet: "Dedicated storage (away from fuels!)", temp: "Cool, dry", ventilation: "Normal", incompatible: ["Fuels", "Organics", "Chlorates", "Metal powders", "Sulfur"] },
-  transport: { un: "1942", class: "5.1", packingGroup: "III", properShipping: "Ammonium nitrate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Potassium Nitrate"] = {
-  cas: "7757-79-1", formula: "KNO₃",
-  de: "Kaliumnitrat", es: "Nitrato de potasio", fr: "Nitrate de potassium", pt: "Nitrato de potássio",
-  synonyms: ["Saltpeter", "Niter", "E252"],
-  classes: ["oxidizer"],
-  ghs: ["GHS03"],
-  hazardStatements: [
-    { code: "H272", text: "May intensify fire; oxidizer" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Black powder component, fertilizer, food preservative (E252). Less dangerous than ammonium nitrate but still an oxidizer." },
-  storage: { cabinet: "Oxidizer storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Reducing agents", "Sulfur", "Charcoal", "Metals"] },
-  transport: { un: "1486", class: "5.1", packingGroup: "III", properShipping: "Potassium nitrate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Potassium Perchlorate"] = {
   cas: "7778-74-7", formula: "KClO₄",
   de: "Kaliumperchlorat", es: "Perclorato de potasio", fr: "Perchlorate de potassium", pt: "Perclorato de potássio",
@@ -13056,22 +10062,6 @@ chemicalHazardDB["Nitrocellulose"] = {
 
 // ===== WELDING & CUTTING GASES =====
 
-chemicalHazardDB["Acetylene"] = {
-  cas: "74-86-2", formula: "C₂H₂",
-  de: "Acetylen", es: "Acetileno", fr: "Acétylène", pt: "Acetileno",
-  synonyms: ["Ethyne"],
-  classes: ["flammable"],
-  ghs: ["GHS02", "GHS04"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: true, type: "SCBA in confined spaces" }, other: "Oxy-acetylene welding. Hottest flame (3300°C). UNSTABLE under pressure - stored dissolved in acetone. Cylinders have porous mass inside." },
-  storage: { cabinet: "Cylinder storage (upright)", temp: "Below 52°C", ventilation: "Well-ventilated", incompatible: ["Copper (forms explosive acetylides)", "Silver", "Mercury", "Oxidizers"] },
-  transport: { un: "1001", class: "2.1", packingGroup: "N/A", properShipping: "Acetylene, dissolved" },
-  firstAid: { inhalation: "Fresh air.", skin: "N/A", eyes: "N/A", ingestion: "N/A" }
-};
-
 chemicalHazardDB["Oxygen (Compressed)"] = {
   cas: "7782-44-7", formula: "O₂",
   de: "Sauerstoff (komprimiert)", es: "Oxígeno (comprimido)", fr: "Oxygène (comprimé)", pt: "Oxigênio (comprimido)",
@@ -13086,22 +10076,6 @@ chemicalHazardDB["Oxygen (Compressed)"] = {
   storage: { cabinet: "Cylinder storage (away from fuels)", temp: "Below 52°C", ventilation: "Normal", incompatible: ["Fuels", "Oils", "Grease", "Organics"] },
   transport: { un: "1072", class: "2.2 (5.1)", packingGroup: "N/A", properShipping: "Oxygen, compressed" },
   firstAid: { inhalation: "Fresh air.", skin: "N/A", eyes: "N/A", ingestion: "N/A" }
-};
-
-chemicalHazardDB["Propane"] = {
-  cas: "74-98-6", formula: "C₃H₈",
-  de: "Propan", es: "Propano", fr: "Propane", pt: "Propano",
-  synonyms: ["LPG", "R-290", "n-Propane"],
-  classes: ["flammable"],
-  ghs: ["GHS02", "GHS04"],
-  hazardStatements: [
-    { code: "H220", text: "Extremely flammable gas" },
-    { code: "H280", text: "Contains gas under pressure" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Insulated gloves (frostbite)" }, respiratory: { required: true, type: "SCBA in confined spaces" }, other: "Fuel gas, refrigerant (R-290). ASPHYXIANT. Heavier than air - pools in low areas. Odorant added for leak detection." },
-  storage: { cabinet: "Cylinder storage (outdoors preferred)", temp: "Below 52°C", ventilation: "Excellent", incompatible: ["Oxidizers", "Ignition sources"] },
-  transport: { un: "1978", class: "2.1", packingGroup: "N/A", properShipping: "Propane" },
-  firstAid: { inhalation: "Fresh air.", skin: "Warm gradually (frostbite).", eyes: "N/A", ingestion: "N/A" }
 };
 
 chemicalHazardDB["MAPP Gas"] = {
@@ -13205,84 +10179,6 @@ chemicalHazardDB["Novec 1230"] = {
 
 // ===== ADDITIONAL COMMON CHEMICALS =====
 
-chemicalHazardDB["Calcium Carbonate"] = {
-  cas: "471-34-1", formula: "CaCO₃",
-  de: "Calcite", es: "Carbonato de calcio", fr: "Carbonate de calcium", pt: "Carbonato de cálcio",
-  synonyms: ["Limestone", "Chalk", "Marble", "E170"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Antite, calcium supplement, filler, construction. Very safe. Food additive E170." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Acids (releases CO2)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Calcium carbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
-};
-
-chemicalHazardDB["Magnesium Oxide"] = {
-  cas: "1309-48-4", formula: "MgO",
-  de: "Magnesiumoxid", es: "Óxido de magnesio", fr: "Oxyde de magnésium", pt: "Óxido de magnésio",
-  synonyms: ["Magnesia", "Periclase"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Antite, refractory, supplement. Very safe. Used in climbing chalk (mixed with CaCO3)." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Magnesium oxide" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
-};
-
-chemicalHazardDB["Zinc Oxide"] = {
-  cas: "1314-13-2", formula: "ZnO",
-  de: "Zinkoxid", es: "Óxido de zinc", fr: "Oxyde de zinc", pt: "Óxido de zinco",
-  synonyms: ["Zinc white", "Chinese white", "Calamine"],
-  classes: ["environmental"],
-  ghs: ["GHS09"],
-  hazardStatements: [
-    { code: "H400", text: "Very toxic to aquatic life" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Sunscreen, calamine lotion, rubber vulcanization. Safe for skin. Toxic to aquatic life." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "3077", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Copper Sulfate Pentahydrate"] = {
-  cas: "7758-99-8", formula: "CuSO₄·5H₂O",
-  de: "Kupfersulfat-Pentahydrat", es: "Sulfato de cobre pentahidratado", fr: "Sulfate de cuivre pentahydraté", pt: "Sulfato de cobre penta-hidratado",
-  synonyms: ["Blue vitriol", "Bluestone", "Bordeaux mixture component"],
-  classes: ["toxic", "irritant", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Fungicide, algaecide, electroplating, chemistry demos. Blue crystals. Emetic at low doses." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Metals (reactive)", "Ammonia"] },
-  transport: { un: "3077", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Give milk. Medical attention." }
-};
-
-chemicalHazardDB["Iron(III) Chloride"] = {
-  cas: "7705-08-0", formula: "FeCl₃",
-  de: "Eisen(III)-chlorid", es: "Cloruro de hierro(III)", fr: "Chlorure de fer(III)", pt: "Cloreto de ferro(III)",
-  synonyms: ["Ferric chloride", "Iron trichloride"],
-  classes: ["corrosive"],
-  ghs: ["GHS05"],
-  hazardStatements: [
-    { code: "H290", text: "May be corrosive to metals" },
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H318", text: "Causes serious eye damage" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Rubber gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "PCB etching, water treatment (flocculation), wound styptic. Dark brown/yellow. CORROSIVE TO METALS." },
-  storage: { cabinet: "Corrosive cabinet (non-metallic)", temp: "Room temperature", ventilation: "Normal", incompatible: ["Metals", "Bases"] },
-  transport: { un: "2582", class: "8", packingGroup: "III", properShipping: "Ferric chloride, anhydrous" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Potassium Hydroxide"] = {
   cas: "1310-58-3", formula: "KOH",
   de: "Kaliumhydroxid", es: "Hidróxido de potasio", fr: "Hydroxyde de potassium", pt: "Hidróxido de potássio",
@@ -13300,67 +10196,6 @@ chemicalHazardDB["Potassium Hydroxide"] = {
   firstAid: { inhalation: "Fresh air.", skin: "Flush 30 min.", eyes: "Flush 30 min. IMMEDIATE medical attention.", ingestion: "Drink water. Do NOT vomit. Medical attention." }
 };
 
-chemicalHazardDB["Sodium Carbonate"] = {
-  cas: "497-19-8", formula: "Na₂CO₃",
-  de: "Natriumcarbonat", es: "Carbonato de sodio", fr: "Carbonate de sodium", pt: "Carbonato de sódio",
-  synonyms: ["Soda ash", "Washing soda", "E500"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Water softening, glass making, detergents, food additive (E500). Mild alkali. pH ~11.5 solution." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Sodium carbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Drink water." }
-};
-
-chemicalHazardDB["Potassium Carbonate"] = {
-  cas: "584-08-7", formula: "K₂CO₃",
-  de: "Kaliumcarbonat", es: "Carbonato de potasio", fr: "Carbonate de potassium", pt: "Carbonato de potássio",
-  synonyms: ["Potash", "Pearl ash", "E501"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Glass making, soap making, food additive (E501). Similar to sodium carbonate but more hygroscopic." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Potassium carbonate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Drink water." }
-};
-
-chemicalHazardDB["Boric Acid"] = {
-  cas: "10043-35-3", formula: "H₃BO₃",
-  de: "Borsäure", es: "Ácido bórico", fr: "Acide borique", pt: "Ácido bórico",
-  synonyms: ["Boracic acid", "Orthoboric acid", "E284"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H360FD", text: "May damage fertility and the unborn child" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "REPRODUCTIVE TOXIN. Antiseptic, insecticide, flame retardant. White powder. Restricted in EU cosmetics." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases", "Potassium"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Boric acid" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention if large amount." }
-};
-
-chemicalHazardDB["Borax"] = {
-  cas: "1303-96-4", formula: "Na₂B₄O₇·10H₂O",
-  de: "Borax", es: "Bórax", fr: "Borax", pt: "Bórax",
-  synonyms: ["Sodium tetraborate decahydrate", "E285"],
-  classes: ["health"],
-  ghs: ["GHS08"],
-  hazardStatements: [
-    { code: "H360FD", text: "May damage fertility and the unborn child" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "REPRODUCTIVE TOXIN. Cleaning, slime making, flux. Less toxic than boric acid but still restricted. pH ~9 in solution." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong acids"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Borax" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
-};
-
 chemicalHazardDB["Silicone Sealant"] = {
   cas: "Mixture", formula: "Polydimethylsiloxane",
   de: "Silikonichtmittel", es: "Sellador de silicona", fr: "Mastic silicone", pt: "Selante de silicone",
@@ -13372,23 +10207,6 @@ chemicalHazardDB["Silicone Sealant"] = {
   storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Fully cured is chemically resistant"] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Silicone sealant" },
   firstAid: { inhalation: "Fresh air.", skin: "Wipe off, wash.", eyes: "Flush.", ingestion: "Remove from mouth." }
-};
-
-chemicalHazardDB["Epoxy Resin"] = {
-  cas: "Various", formula: "Bisphenol A/Epichlorohydrin polymer",
-  de: "Epoxidharz", es: "Resina epoxi", fr: "Résine époxy", pt: "Resina epóxi",
-  synonyms: ["Two-part epoxy", "Epoxy adhesive"],
-  classes: ["irritant", "health"],
-  ghs: ["GHS07", "GHS08"],
-  hazardStatements: [
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Nitrile gloves" }, respiratory: { required: false, type: "Ventilation" }, other: "SENSITIZER - can develop allergy with repeated exposure. Fully cured epoxy is inert and safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: [] },
-  transport: { un: "3082", class: "9", packingGroup: "III", properShipping: "Environmentally hazardous substance" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash immediately.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
 chemicalHazardDB["Polyurethane Foam"] = {
@@ -13410,47 +10228,6 @@ chemicalHazardDB["Polyurethane Foam"] = {
   firstAid: { inhalation: "Fresh air. Medical attention if breathing difficulties.", skin: "Remove uncured foam, wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth." }
 };
 
-chemicalHazardDB["Activated Carbon"] = {
-  cas: "7440-44-0", formula: "C",
-  de: "Aktivkohle", es: "Carbón activado", fr: "Charbon actif", pt: "Carvão ativado",
-  synonyms: ["Activated charcoal", "AC"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Poison antidote (oral), water filtration, air purification. Very safe. Black powder - messy." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Activated carbon" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe (it IS the treatment)." }
-};
-
-chemicalHazardDB["Silica Gel"] = {
-  cas: "112926-00-8", formula: "SiO₂·xH₂O",
-  de: "Silikagel", es: "Gel de sílice", fr: "Gel de silice", pt: "Sílica gel",
-  synonyms: ["Desiccant beads", "Amorphous silica"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Desiccant packets. AMORPHOUS silica - safe (unlike crystalline silica). 'Do not eat' is choking hazard, not toxic." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: [] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Silica gel" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe (but packets are choking hazard)." }
-};
-
-chemicalHazardDB["Calcium Chloride"] = {
-  cas: "10043-52-4", formula: "CaCl₂",
-  de: "Calciumchlorid", es: "Cloruro de calcio", fr: "Chlorure de calcium", pt: "Cloreto de cálcio",
-  synonyms: ["E509", "Pickle crisp"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: false, type: "Gloves for prolonged contact" }, respiratory: { required: false, type: "Dust mask" }, other: "Road de-icing, desiccant, food additive (E509 - cheese). EXOTHERMIC when dissolved - gets hot." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Metals (when wet)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Calcium chloride" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Drink water." }
-};
-
 chemicalHazardDB["Magnesium Chloride"] = {
   cas: "7786-30-3", formula: "MgCl₂",
   de: "Magnesiumchlorid", es: "Cloruro de magnesio", fr: "Chlorure de magnésium", pt: "Cloreto de magnésio",
@@ -13462,65 +10239,6 @@ chemicalHazardDB["Magnesium Chloride"] = {
   storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: [] },
   transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Magnesium chloride" },
   firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe in small amounts." }
-};
-
-chemicalHazardDB["Urea"] = {
-  cas: "57-13-6", formula: "CH₄N₂O",
-  de: "Harnstoff", es: "Urea", fr: "Urée", pt: "Ureia",
-  synonyms: ["Carbamide", "E927b"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Nitrogen fertilizer, AdBlue/DEF (diesel exhaust fluid), skincare. Natural metabolite. Very safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong oxidizers", "Hypochlorites"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Urea" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Safe." }
-};
-
-chemicalHazardDB["Ammonium Sulfate"] = {
-  cas: "7783-20-2", formula: "(NH₄)₂SO₄",
-  de: "Ammoniumsulfat", es: "Sulfato de amonio", fr: "Sulfate d'ammonium", pt: "Sulfato de amônio",
-  synonyms: ["Mascagnite", "E517"],
-  classes: [],
-  ghs: [],
-  hazardStatements: [],
-  ppe: { eyes: { required: false, type: "Safety glasses" }, skin: { required: false, type: "Optional" }, respiratory: { required: false, type: "Dust mask" }, other: "Fertilizer, food additive (E517), protein precipitation. Acidifies soil. Safe." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases (releases ammonia)"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ammonium sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush.", ingestion: "Rinse mouth." }
-};
-
-chemicalHazardDB["Ferrous Sulfate"] = {
-  cas: "7720-78-7", formula: "FeSO₄",
-  de: "Eisen(II)-sulfat", es: "Sulfato ferroso", fr: "Sulfate ferreux", pt: "Sulfato ferroso",
-  synonyms: ["Iron(II) sulfate", "Green vitriol", "Copperas"],
-  classes: ["irritant"],
-  ghs: ["GHS07"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H319", text: "Causes serious eye irritation" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Iron supplement, moss killer, water treatment. Green crystals oxidize to brown (rust). Safe at supplement doses." },
-  storage: { cabinet: "General storage", temp: "Room temperature, dry", ventilation: "Normal", incompatible: ["Strong bases", "Oxidizers"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Ferrous sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Give milk. Medical attention if large amount (iron poisoning)." }
-};
-
-chemicalHazardDB["Zinc Sulfate"] = {
-  cas: "7733-02-0", formula: "ZnSO₄",
-  de: "Zinksulfat", es: "Sulfato de zinc", fr: "Sulfate de zinc", pt: "Sulfato de zinco",
-  synonyms: ["White vitriol", "Zinc sulfate monohydrate"],
-  classes: ["irritant", "environmental"],
-  ghs: ["GHS07", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H318", text: "Causes serious eye damage" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Chemical goggles" }, skin: { required: true, type: "Gloves" }, respiratory: { required: false, type: "Dust mask" }, other: "Zinc supplement (low doses), agriculture, rayon production. Emetic at higher doses." },
-  storage: { cabinet: "General storage", temp: "Room temperature", ventilation: "Normal", incompatible: ["Strong bases"] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Zinc sulfate" },
-  firstAid: { inhalation: "Fresh air.", skin: "Wash.", eyes: "Flush 30 min. Medical attention.", ingestion: "Give milk. Medical attention." }
 };
 
 chemicalHazardDB["Manganese Dioxide"] = {
@@ -13561,29 +10279,6 @@ chemicalHazardDB["Cobalt Chloride"] = {
   firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
 };
 
-chemicalHazardDB["Nickel Sulfate"] = {
-  cas: "7786-81-4", formula: "NiSO₄",
-  de: "Nickelsulfat", es: "Sulfato de níquel", fr: "Sulfate de nickel", pt: "Sulfato de níquel",
-  synonyms: ["Nickel(II) sulfate", "Nickelous sulfate"],
-  classes: ["toxic", "health", "environmental"],
-  ghs: ["GHS07", "GHS08", "GHS09"],
-  hazardStatements: [
-    { code: "H302", text: "Harmful if swallowed" },
-    { code: "H315", text: "Causes skin irritation" },
-    { code: "H317", text: "May cause allergic skin reaction" },
-    { code: "H332", text: "Harmful if inhaled" },
-    { code: "H334", text: "May cause allergy or asthma symptoms" },
-    { code: "H341", text: "Suspected of causing genetic defects" },
-    { code: "H350i", text: "May cause cancer by inhalation" },
-    { code: "H360D", text: "May damage the unborn child" },
-    { code: "H410", text: "Very toxic to aquatic life with long lasting effects" }
-  ],
-  ppe: { eyes: { required: true, type: "Safety glasses" }, skin: { required: true, type: "Gloves" }, respiratory: { required: true, type: "Particulate respirator" }, other: "CARCINOGEN (inhalation), REPRODUCTIVE TOXIN, SENSITIZER. Nickel plating, batteries. Green crystals. ~15% of population has Ni allergy." },
-  storage: { cabinet: "Toxic storage", temp: "Room temperature", ventilation: "Normal", incompatible: [] },
-  transport: { un: "Not regulated", class: "N/A", packingGroup: "N/A", properShipping: "Nickel sulfate" },
-  firstAid: { inhalation: "Fresh air. Medical attention.", skin: "Wash thoroughly.", eyes: "Flush 15 min.", ingestion: "Rinse mouth. Medical attention." }
-};
-
 chemicalHazardDB["Sodium Phosphate (Trisodium)"] = {
   cas: "7601-54-9", formula: "Na₃PO₄",
   de: "Trinatriumphosphat", es: "Fosfato trisódico", fr: "Phosphate trisodique", pt: "Fosfato trissódico",
@@ -13601,7 +10296,7 @@ chemicalHazardDB["Sodium Phosphate (Trisodium)"] = {
 };
 
 // ========================================
-// 🎉 CHEMICAL DATABASE COMPLETE: 500 CHEMICALS!
+// 🎉 CHEMICAL DATABASE COMPLETE: 430 CHEMICALS!
 // ========================================
 
 // Print final count
