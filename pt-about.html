@@ -42,14 +42,37 @@
                 </div>
                 <div>
                     <div class="font-bold text-gray-900">ChemicalResistance.org</div>
-                    <div class="text-xs text-gray-500">Base de dados de resistência química</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Base de dados de resistência química</div>
                 </div>
             </a>
-            <div class="flex items-center gap-4 text-sm">
-                <a href="pt.html" class="text-gray-600 hover:text-gray-900">← Voltar à pesquisa</a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="pt.html" class="text-gray-600 hover:text-gray-900 hover:underline">Tabela de Resistência</a>
+                    <a href="storage-compatibility.html" class="text-gray-600 hover:text-gray-900 hover:underline">Armazenamento</a>
+                    <a href="sds-decoder.html" class="text-gray-600 hover:text-gray-900 hover:underline">Decodificador FDS</a>
+                    <a href="viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosidade</a>
+                    <a href="pt-about.html" class="text-emerald-600 font-medium">Sobre</a>
+                </nav>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+                </button>
             </div>
         </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="pt.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tabela de Resistência</a>
+                <a href="storage-compatibility.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compatibilidade de Armazenamento</a>
+                <a href="sds-decoder.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Decodificador FDS</a>
+                <a href="viscosity.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosidade</a>
+                <a href="pt-about.html" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Sobre</a>
+            </nav>
+        </div>
     </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
 
     <!-- Hero -->
     <section class="bg-gradient-to-b from-emerald-50 to-white px-4 py-12 md:py-16">
