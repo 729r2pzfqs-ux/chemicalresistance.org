@@ -57,6 +57,13 @@
                     <a href="viscosity.html" class="text-emerald-600 font-medium">Viscosity</a>
                     <a href="about.html" class="text-gray-600 hover:text-gray-900 hover:underline">About</a>
                 </nav>
+                <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer" onchange="changeLanguage(this.value)">
+                    <option value="en" selected>🇬🇧 EN</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="pt">🇧🇷 PT</option>
+                </select>
                 <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
                     <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
                 </button>
@@ -76,6 +83,17 @@
         document.getElementById('mobileMenuBtn').addEventListener('click', function() {
             document.getElementById('mobileMenu').classList.toggle('hidden');
         });
+        
+        function changeLanguage(lang) {
+            const urls = {
+                en: '/viscosity.html',
+                de: '/de/viscosity.html',
+                es: '/es/viscosity.html',
+                fr: '/fr/viscosity.html',
+                pt: '/pt/viscosity.html'
+            };
+            window.location.href = urls[lang] || urls.en;
+        }
     </script>
 
     <!-- Hero -->
