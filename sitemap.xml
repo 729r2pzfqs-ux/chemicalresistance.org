@@ -80,4 +80,10 @@
   <url><loc>https://chemicalresistance.org/materials/pt/epdm.html</loc><lastmod>2026-03-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://chemicalresistance.org/materials/pt/nbr.html</loc><lastmod>2026-03-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://chemicalresistance.org/materials/pt/silicone.html</loc><lastmod>2026-03-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url>
+    <loc>https://chemicalresistance.org/es/viscosity.html</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
