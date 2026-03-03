@@ -301,7 +301,7 @@
 
         async function init() {
             try {
-                const response = await fetch('../data/viscosity.json');
+                const response = await fetch('/data/viscosity.json');
                 viscosityData = await response.json();
                 renderTable();
                 setupSearch();
