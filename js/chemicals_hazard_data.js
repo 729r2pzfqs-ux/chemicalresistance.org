@@ -1,5 +1,5 @@
 // Chemical Hazard Database for Storage Compatibility & SDS Decoder
-// 100+ chemicals with hazard classifications, GHS, PPE, and storage info
+// 240+ chemicals with hazard classifications, GHS, PPE, and storage info
 
 const chemicalHazardDB = {
   // ===== ACIDS =====
