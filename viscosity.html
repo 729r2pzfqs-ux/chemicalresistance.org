@@ -210,9 +210,9 @@
                     <table class="w-full">
                         <thead>
                             <tr class="bg-gray-50 text-left text-sm">
-                                <th class="py-3 px-4 font-semibold text-gray-600">Substance</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">Temperature</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600 text-right">Viscosity (mPa·s)</th>
+                                <th class="py-3 px-2 sm:px-4 font-semibold text-gray-600">Substance</th>
+                                <th class="py-3 px-2 sm:px-4 font-semibold text-gray-600 text-center whitespace-nowrap">Temp</th>
+                                <th class="py-3 px-2 sm:px-4 font-semibold text-gray-600 text-right whitespace-nowrap">Viscosity</th>
                             </tr>
                         </thead>
                         <tbody id="viscosityTable">
@@ -355,12 +355,12 @@
                 
                 return `
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
-                        <td class="py-3 px-4">
-                            <div class="font-medium text-gray-900">${name}</div>
+                        <td class="py-3 px-2 sm:px-4">
+                            <div class="font-medium text-gray-900 text-sm sm:text-base">${name}</div>
                             ${showGerman ? `<div class="text-xs text-gray-500">${item.medium}</div>` : ''}
                         </td>
-                        <td class="py-3 px-4 text-center text-gray-600">${item.temperature_c}°C</td>
-                        <td class="py-3 px-4 text-right font-mono text-gray-900">${item.viscosity_mPas}</td>
+                        <td class="py-3 px-2 sm:px-4 text-center text-gray-600 text-sm whitespace-nowrap">${item.temperature_c}°C</td>
+                        <td class="py-3 px-2 sm:px-4 text-right font-mono text-gray-900 text-sm whitespace-nowrap">${item.viscosity_mPas}</td>
                     </tr>
                 `;
             }).join('');
