@@ -232,7 +232,11 @@ def main():
     chem_lookup = {}
     for c in chemicals:
         name_en = c.get('name_en', c.get('name', '')).lower()
-        chem_lookup[name_en] = c
+        # Prefer entries with actual data
+        ratings = c.get("ratings", {})
+        has_data = any(r.get("c20", "0") not in ["0", ""] for r in ratings.values())
+        if name_en not in chem_lookup or has_data:
+            chem_lookup[name_en] = c
     
     os.makedirs('chemicals', exist_ok=True)
     
