@@ -337,9 +337,16 @@
 
             // Sort by viscosity (numeric, ascending)
             filtered.sort((a, b) => {
-                const viscA = parseFloat(a.viscosity_mPas.replace(/[^\d.]/g, '')) || 0;
-                const viscB = parseFloat(b.viscosity_mPas.replace(/[^\d.]/g, '')) || 0;
-                return viscA - viscB;
+                // Parse viscosity - handle ranges (use lower bound) and European format (. as thousand separator)
+                const parseVisc = (v) => {
+                    // Get first number (lower bound if range)
+                    const match = v.match(/^[\d.,]+/);
+                    if (!match) return 0;
+                    // Convert European format: 3.000 -> 3000, 1,5 -> 1.5
+                    let num = match[0].replace(/\./g, '').replace(',', '.');
+                    return parseFloat(num) || 0;
+                };
+                return parseVisc(a.viscosity_mPas) - parseVisc(b.viscosity_mPas);
             });
 
             const tbody = document.getElementById('viscosityTable');
