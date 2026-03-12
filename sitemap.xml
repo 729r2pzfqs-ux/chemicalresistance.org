@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://chemicalresistance.org/</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/about.html</loc><lastmod>2026-03-12</lastmod></url>
+  <url><loc>https://chemicalresistance.org/chemicals/</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/chemicals/acetic-acid</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/chemicals/acetone</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/chemicals/acetonitrile</loc><lastmod>2026-03-12</lastmod></url>
@@ -97,6 +98,7 @@
   <url><loc>https://chemicalresistance.org/es.html</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/fr-about.html</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/fr.html</loc><lastmod>2026-03-12</lastmod></url>
+  <url><loc>https://chemicalresistance.org/materials/</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/materials/acetal-pom</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/materials/aluminium</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://chemicalresistance.org/materials/ectfe-etfe</loc><lastmod>2026-03-12</lastmod></url>
