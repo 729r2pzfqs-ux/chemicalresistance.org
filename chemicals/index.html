@@ -38,26 +38,9 @@
                     <a href="/storage-compatibility.html" class="text-gray-600 hover:text-gray-900 hover:underline">Storage</a>
                     <a href="/about.html" class="text-gray-600 hover:text-gray-900 hover:underline">About</a>
                 </nav>
-                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
-                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
-                </button>
             </div>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
-            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
-                <a href="/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Home</a>
-                <a href="/materials/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Materials</a>
-                <a href="/chemicals/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Chemicals</a>
-                <a href="/about.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">About</a>
-            </nav>
-        </div>
     </header>
-    <script>
-        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        });
-        lucide.createIcons();
-    </script>
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-emerald-50 via-white to-blue-50 px-4 py-10">
@@ -69,7 +52,7 @@
                 Chemicals <span class="text-emerald-600">Index</span>
             </h1>
             <p class="text-gray-600 text-lg mb-6">
-                Browse 200+ chemicals with material resistance data at 20°C and 50°C.
+                Browse 200 chemicals with material resistance data at 20°C and 50°C.
             </p>
             
             <!-- Search Box -->
@@ -91,6 +74,339 @@
     <!-- Chemicals List -->
     <section class="px-4 py-8">
         <div class="max-w-4xl mx-auto" id="chemicalsList">
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">A</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="abgase,-alkalisch/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="abgase, alkalisch">Abgase, Alkalisch</a>
+                    <a href="acetaldehyde/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="acetaldehyde">Acetaldehyde</a>
+                    <a href="acetic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="acetic acid">Acetic Acid</a>
+                    <a href="acetic-anhydride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="acetic anhydride">Acetic Anhydride</a>
+                    <a href="acetone/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="acetone">Acetone</a>
+                    <a href="acetonitrile/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="acetonitrile">Acetonitrile</a>
+                    <a href="acetylene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="acetylene">Acetylene</a>
+                    <a href="acrylonitrile/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="acrylonitrile">Acrylonitrile</a>
+                    <a href="adipic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="adipic acid">Adipic Acid</a>
+                    <a href="alum-aluminum-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="alum aluminum sulfate">Alum Aluminum Sulfate</a>
+                    <a href="aluminum-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="aluminum chloride">Aluminum Chloride</a>
+                    <a href="aluminum-oxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="aluminum oxide">Aluminum Oxide</a>
+                    <a href="aluminum-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="aluminum sulfate">Aluminum Sulfate</a>
+                    <a href="ammonia/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ammonia">Ammonia</a>
+                    <a href="ammonium-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ammonium chloride">Ammonium Chloride</a>
+                    <a href="ammonium-hydroxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ammonium hydroxide">Ammonium Hydroxide</a>
+                    <a href="ammonium-nitrate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ammonium nitrate">Ammonium Nitrate</a>
+                    <a href="ammonium-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ammonium sulfate">Ammonium Sulfate</a>
+                    <a href="aniline/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="aniline">Aniline</a>
+                    <a href="arsenic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="arsenic acid">Arsenic Acid</a>
+                    <a href="ascorbic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ascorbic acid">Ascorbic Acid</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">B</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="barium-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="barium chloride">Barium Chloride</a>
+                    <a href="barium-hydroxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="barium hydroxide">Barium Hydroxide</a>
+                    <a href="barium-sulfide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="barium sulfide">Barium Sulfide</a>
+                    <a href="beeswax/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="beeswax">Beeswax</a>
+                    <a href="benzaldehyde/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="benzaldehyde">Benzaldehyde</a>
+                    <a href="benzene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="benzene">Benzene</a>
+                    <a href="benzoic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="benzoic acid">Benzoic Acid</a>
+                    <a href="benzyl-alcohol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="benzyl alcohol">Benzyl Alcohol</a>
+                    <a href="boric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="boric acid">Boric Acid</a>
+                    <a href="bromine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="bromine">Bromine</a>
+                    <a href="butanol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="butanol">Butanol</a>
+                    <a href="butanone-mek/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="butanone mek">Butanone Mek</a>
+                    <a href="butyric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="butyric acid">Butyric Acid</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">C</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="calcium-acetate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium acetate">Calcium Acetate</a>
+                    <a href="calcium-carbonate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium carbonate">Calcium Carbonate</a>
+                    <a href="calcium-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium chloride">Calcium Chloride</a>
+                    <a href="calcium-hydroxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium hydroxide">Calcium Hydroxide</a>
+                    <a href="calcium-hypochlorite/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium hypochlorite">Calcium Hypochlorite</a>
+                    <a href="calcium-nitrate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium nitrate">Calcium Nitrate</a>
+                    <a href="calcium-oxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium oxide">Calcium Oxide</a>
+                    <a href="calcium-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium sulfate">Calcium Sulfate</a>
+                    <a href="calcium-sulfide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="calcium sulfide">Calcium Sulfide</a>
+                    <a href="carbon-disulfide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="carbon disulfide">Carbon Disulfide</a>
+                    <a href="carbon-tetrachloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="carbon tetrachloride">Carbon Tetrachloride</a>
+                    <a href="castor-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="castor oil">Castor Oil</a>
+                    <a href="chlorine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chlorine">Chlorine</a>
+                    <a href="chlorine-bleach-solution/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chlorine bleach solution">Chlorine Bleach Solution</a>
+                    <a href="chlorine-dioxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chlorine dioxide">Chlorine Dioxide</a>
+                    <a href="chlorine-gas/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chlorine gas">Chlorine Gas</a>
+                    <a href="chlorine-water/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chlorine water">Chlorine Water</a>
+                    <a href="chlorobenzene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chlorobenzene">Chlorobenzene</a>
+                    <a href="chloroform/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chloroform">Chloroform</a>
+                    <a href="chromic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="chromic acid">Chromic Acid</a>
+                    <a href="citric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="citric acid">Citric Acid</a>
+                    <a href="cobalt-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="cobalt chloride">Cobalt Chloride</a>
+                    <a href="copper-vitriol-copper-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="copper vitriol copper sulfate">Copper Vitriol Copper Sulfate</a>
+                    <a href="cresol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="cresol">Cresol</a>
+                    <a href="crotonaldehyde/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="crotonaldehyde">Crotonaldehyde</a>
+                    <a href="cumene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="cumene">Cumene</a>
+                    <a href="cyclohexane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="cyclohexane">Cyclohexane</a>
+                    <a href="cyclohexanol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="cyclohexanol">Cyclohexanol</a>
+                    <a href="cyclohexanone/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="cyclohexanone">Cyclohexanone</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">D</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="dichloromethane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="dichloromethane">Dichloromethane</a>
+                    <a href="diesel-fuel/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="diesel fuel">Diesel Fuel</a>
+                    <a href="diethyl-ether/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="diethyl ether">Diethyl Ether</a>
+                    <a href="diethyl-ketone/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="diethyl ketone">Diethyl Ketone</a>
+                    <a href="diethylamine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="diethylamine">Diethylamine</a>
+                    <a href="diisobutylene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="diisobutylene">Diisobutylene</a>
+                    <a href="dioxane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="dioxane">Dioxane</a>
+                    <a href="dmf/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="dmf">Dmf</a>
+                    <a href="dmso/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="dmso">Dmso</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">E</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="epichlorohydrin/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="epichlorohydrin">Epichlorohydrin</a>
+                    <a href="ethanol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ethanol">Ethanol</a>
+                    <a href="ethyl-acetate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ethyl acetate">Ethyl Acetate</a>
+                    <a href="ethylbenzene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ethylbenzene">Ethylbenzene</a>
+                    <a href="ethylene-dichloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ethylene dichloride">Ethylene Dichloride</a>
+                    <a href="ethylene-glycol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ethylene glycol">Ethylene Glycol</a>
+                    <a href="ethylenediamine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ethylenediamine">Ethylenediamine</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">F</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="fluorine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="fluorine">Fluorine</a>
+                    <a href="formaldehyde/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="formaldehyde">Formaldehyde</a>
+                    <a href="formaldehyde-solution/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="formaldehyde solution">Formaldehyde Solution</a>
+                    <a href="formic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="formic acid">Formic Acid</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">G</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="gasoline-petrol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="gasoline petrol">Gasoline Petrol</a>
+                    <a href="glycerin/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="glycerin">Glycerin</a>
+                    <a href="glycolic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="glycolic acid">Glycolic Acid</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">H</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="heating-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="heating oil">Heating Oil</a>
+                    <a href="heptane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="heptane">Heptane</a>
+                    <a href="hexane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hexane">Hexane</a>
+                    <a href="hydraulic-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydraulic oil">Hydraulic Oil</a>
+                    <a href="hydrazine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrazine">Hydrazine</a>
+                    <a href="hydrobromic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrobromic acid">Hydrobromic Acid</a>
+                    <a href="hydrochloric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrochloric acid">Hydrochloric Acid</a>
+                    <a href="hydrofluoric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrofluoric acid">Hydrofluoric Acid</a>
+                    <a href="hydrogen-chloride-gas/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrogen chloride gas">Hydrogen Chloride Gas</a>
+                    <a href="hydrogen-fluoride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrogen fluoride">Hydrogen Fluoride</a>
+                    <a href="hydrogen-peroxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrogen peroxide">Hydrogen Peroxide</a>
+                    <a href="hydrogen-sulfide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="hydrogen sulfide">Hydrogen Sulfide</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">I</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="iodine-pentafluoride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="iodine pentafluoride">Iodine Pentafluoride</a>
+                    <a href="isobutanol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="isobutanol">Isobutanol</a>
+                    <a href="isooctane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="isooctane">Isooctane</a>
+                    <a href="isopropanol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="isopropanol">Isopropanol</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">K</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="kerosene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="kerosene">Kerosene</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">L</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="labarraque-solution-sodium-hypochlorite/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="labarraque solution sodium hypochlorite">Labarraque Solution Sodium Hypochlorite</a>
+                    <a href="lactic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="lactic acid">Lactic Acid</a>
+                    <a href="linseed-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="linseed oil">Linseed Oil</a>
+                    <a href="lithium-bromide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="lithium bromide">Lithium Bromide</a>
+                    <a href="lubricating-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="lubricating oil">Lubricating Oil</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">M</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="magnesium-bromide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="magnesium bromide">Magnesium Bromide</a>
+                    <a href="magnesium-carbonate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="magnesium carbonate">Magnesium Carbonate</a>
+                    <a href="magnesium-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="magnesium chloride">Magnesium Chloride</a>
+                    <a href="magnesium-hydroxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="magnesium hydroxide">Magnesium Hydroxide</a>
+                    <a href="magnesium-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="magnesium sulfate">Magnesium Sulfate</a>
+                    <a href="maleic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="maleic acid">Maleic Acid</a>
+                    <a href="mercury/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="mercury">Mercury</a>
+                    <a href="mercury-nitrate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="mercury nitrate">Mercury Nitrate</a>
+                    <a href="methanol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="methanol">Methanol</a>
+                    <a href="methyl-acrylate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="methyl acrylate">Methyl Acrylate</a>
+                    <a href="methyl-isobutyl-ketone-mibk/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="methyl isobutyl ketone mibk">Methyl Isobutyl Ketone Mibk</a>
+                    <a href="mineral-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="mineral oil">Mineral Oil</a>
+                    <a href="molasses/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="molasses">Molasses</a>
+                    <a href="morpholine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="morpholine">Morpholine</a>
+                    <a href="motor-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="motor oil">Motor Oil</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">N</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="n-heptane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="n heptane">N Heptane</a>
+                    <a href="n-hexane/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="n hexane">N Hexane</a>
+                    <a href="nickel-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="nickel sulfate">Nickel Sulfate</a>
+                    <a href="nitric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="nitric acid">Nitric Acid</a>
+                    <a href="nitrobenzene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="nitrobenzene">Nitrobenzene</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">O</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="oleic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="oleic acid">Oleic Acid</a>
+                    <a href="oxalic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="oxalic acid">Oxalic Acid</a>
+                    <a href="ozone/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="ozone">Ozone</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">P</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="palmitic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="palmitic acid">Palmitic Acid</a>
+                    <a href="perchloric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="perchloric acid">Perchloric Acid</a>
+                    <a href="phenol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="phenol">Phenol</a>
+                    <a href="phosgene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="phosgene">Phosgene</a>
+                    <a href="phosphoric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="phosphoric acid">Phosphoric Acid</a>
+                    <a href="phthalic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="phthalic acid">Phthalic Acid</a>
+                    <a href="picric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="picric acid">Picric Acid</a>
+                    <a href="piperidine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="piperidine">Piperidine</a>
+                    <a href="potassium-acetate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium acetate">Potassium Acetate</a>
+                    <a href="potassium-bromate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium bromate">Potassium Bromate</a>
+                    <a href="potassium-carbonate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium carbonate">Potassium Carbonate</a>
+                    <a href="potassium-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium chloride">Potassium Chloride</a>
+                    <a href="potassium-chromate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium chromate">Potassium Chromate</a>
+                    <a href="potassium-cyanide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium cyanide">Potassium Cyanide</a>
+                    <a href="potassium-dichromate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium dichromate">Potassium Dichromate</a>
+                    <a href="potassium-fluoride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium fluoride">Potassium Fluoride</a>
+                    <a href="potassium-hydroxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium hydroxide">Potassium Hydroxide</a>
+                    <a href="potassium-iodide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium iodide">Potassium Iodide</a>
+                    <a href="potassium-nitrate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium nitrate">Potassium Nitrate</a>
+                    <a href="potassium-permanganate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium permanganate">Potassium Permanganate</a>
+                    <a href="potassium-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium sulfate">Potassium Sulfate</a>
+                    <a href="potassium-sulfide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="potassium sulfide">Potassium Sulfide</a>
+                    <a href="propanol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="propanol">Propanol</a>
+                    <a href="propionic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="propionic acid">Propionic Acid</a>
+                    <a href="propylene-glycol/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="propylene glycol">Propylene Glycol</a>
+                    <a href="pyridine/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="pyridine">Pyridine</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">S</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="salicylic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="salicylic acid">Salicylic Acid</a>
+                    <a href="seawater/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="seawater">Seawater</a>
+                    <a href="silicone-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="silicone oil">Silicone Oil</a>
+                    <a href="silver-nitrate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="silver nitrate">Silver Nitrate</a>
+                    <a href="sodium-acetate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium acetate">Sodium Acetate</a>
+                    <a href="sodium-bicarbonate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium bicarbonate">Sodium Bicarbonate</a>
+                    <a href="sodium-borate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium borate">Sodium Borate</a>
+                    <a href="sodium-bromate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium bromate">Sodium Bromate</a>
+                    <a href="sodium-carbonate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium carbonate">Sodium Carbonate</a>
+                    <a href="sodium-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium chloride">Sodium Chloride</a>
+                    <a href="sodium-cyanide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium cyanide">Sodium Cyanide</a>
+                    <a href="sodium-dichromate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium dichromate">Sodium Dichromate</a>
+                    <a href="sodium-fluoride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium fluoride">Sodium Fluoride</a>
+                    <a href="sodium-hydroxide-caustic-soda/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium hydroxide caustic soda">Sodium Hydroxide Caustic Soda</a>
+                    <a href="sodium-hypochlorite/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium hypochlorite">Sodium Hypochlorite</a>
+                    <a href="sodium-iodide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium iodide">Sodium Iodide</a>
+                    <a href="sodium-nitrate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium nitrate">Sodium Nitrate</a>
+                    <a href="sodium-nitrite/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium nitrite">Sodium Nitrite</a>
+                    <a href="sodium-perborate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium perborate">Sodium Perborate</a>
+                    <a href="sodium-peroxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium peroxide">Sodium Peroxide</a>
+                    <a href="sodium-phosphate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium phosphate">Sodium Phosphate</a>
+                    <a href="sodium-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium sulfate">Sodium Sulfate</a>
+                    <a href="sodium-sulfide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium sulfide">Sodium Sulfide</a>
+                    <a href="sodium-sulfite/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium sulfite">Sodium Sulfite</a>
+                    <a href="sodium-thiosulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sodium thiosulfate">Sodium Thiosulfate</a>
+                    <a href="stearic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="stearic acid">Stearic Acid</a>
+                    <a href="styrene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="styrene">Styrene</a>
+                    <a href="succinic-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="succinic acid">Succinic Acid</a>
+                    <a href="sulfur-dioxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sulfur dioxide">Sulfur Dioxide</a>
+                    <a href="sulfuric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="sulfuric acid">Sulfuric Acid</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">T</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="tartaric-acid/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="tartaric acid">Tartaric Acid</a>
+                    <a href="thf/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="thf">Thf</a>
+                    <a href="toluene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="toluene">Toluene</a>
+                    <a href="transformer-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="transformer oil">Transformer Oil</a>
+                    <a href="turpentine-oil/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="turpentine oil">Turpentine Oil</a>
+                    <a href="turpentine-substitute/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="turpentine substitute">Turpentine Substitute</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">U</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="urea/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="urea">Urea</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">V</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="vinyl-acetate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="vinyl acetate">Vinyl Acetate</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">W</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="water-glass/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="water glass">Water Glass</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">X</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="xylene/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="xylene">Xylene</a>
+                </div>
+            </div>
+
+            <div class="mb-8 letter-section">
+                <h2 class="text-2xl font-bold text-emerald-600 mb-4 border-b pb-2">Z</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <a href="zinc-chloride/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="zinc chloride">Zinc Chloride</a>
+                    <a href="zinc-oxide/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="zinc oxide">Zinc Oxide</a>
+                    <a href="zinc-sulfate/" class="chem-link bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-emerald-500 hover:shadow-md transition-all text-sm" data-name="zinc sulfate">Zinc Sulfate</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -145,11 +461,20 @@
 
     <!-- Search Script -->
     <script>
+        lucide.createIcons();
+        
         document.getElementById('chemSearch').addEventListener('input', function(e) {
             const query = e.target.value.toLowerCase();
+            
             document.querySelectorAll('.chem-link').forEach(link => {
-                const text = link.textContent.toLowerCase();
-                link.style.display = text.includes(query) ? '' : 'none';
+                const name = link.getAttribute('data-name');
+                link.style.display = name.includes(query) ? '' : 'none';
+            });
+            
+            // Hide empty letter sections
+            document.querySelectorAll('.letter-section').forEach(section => {
+                const visibleLinks = section.querySelectorAll('.chem-link:not([style*="display: none"])');
+                section.style.display = visibleLinks.length > 0 ? '' : 'none';
             });
         });
     </script>
