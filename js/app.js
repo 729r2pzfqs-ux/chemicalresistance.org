@@ -303,7 +303,6 @@ function setupEventListeners() {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     const langSelect = document.getElementById('langSelect');
-    const ratingFilter = document.getElementById('ratingFilter');
 
     // Search input - only trigger on text search, not material selection
     searchInput.addEventListener('input', (e) => {
@@ -323,13 +322,6 @@ function setupEventListeners() {
             if (currentGroupIndices.length > 0) {
                 updateRatingsTable();
             }
-        }
-    });
-
-    // Rating filter change - update the table
-    ratingFilter?.addEventListener('change', () => {
-        if (currentGroupIndices.length > 0) {
-            updateRatingsTable();
         }
     });
 
@@ -572,9 +564,6 @@ function updateRatingsTable() {
     const tbody = document.getElementById('ratingsTable');
     const recommended = [];
     const selectedMaterials = getSelectedMaterials();
-    const ratingFilter = document.getElementById('ratingFilter');
-    const minRating = ratingFilter?.value || '12'; // '1' = A only, '12' = A or B
-    
     // Get materials to show - either selected ones or all
     let materialsToShow;
     if (selectedMaterials.length > 0) {
@@ -583,13 +572,8 @@ function updateRatingsTable() {
             .filter(mat => chem.ratings[mat])
             .map(mat => [mat, chem.ratings[mat]]);
     } else {
-        // Show all materials, sorted by rating, filtered by rating preference
+        // Show all materials, sorted by rating (best first)
         materialsToShow = Object.entries(chem.ratings)
-            .filter(([mat, rating]) => {
-                if (minRating === '1') return rating.c20 === '1';
-                if (minRating === '12') return ['1', '2'].includes(rating.c20);
-                return true;
-            })
             .sort((a, b) => {
                 const orderA = ratingOrder[a[1].c20] ?? 4;
                 const orderB = ratingOrder[b[1].c20] ?? 4;
@@ -600,7 +584,7 @@ function updateRatingsTable() {
     if (materialsToShow.length === 0) {
         const noMaterialsMsg = currentLang === 'es' 
             ? `No hay materiales con clasificación ${minRating === '1' ? 'A' : 'A/B'} para este químico. Intenta cambiar el filtro.`
-            : `No materials with ${minRating === '1' ? 'A' : 'A/B'} rating for this chemical. Try changing the filter.`;
+            : `No material data available for this chemical.`;
         tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-500">${noMaterialsMsg}</td></tr>`;
     } else {
         tbody.innerHTML = materialsToShow.map(([mat, rating]) => {
