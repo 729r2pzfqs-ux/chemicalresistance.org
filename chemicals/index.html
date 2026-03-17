@@ -32,15 +32,39 @@
                 </div>
             </a>
             <div class="flex items-center gap-3 text-sm">
+                <!-- Desktop nav -->
                 <nav class="hidden md:flex items-center gap-4">
                     <a href="/materials/" class="text-gray-600 hover:text-gray-900 hover:underline">Materials</a>
                     <a href="/chemicals/" class="text-emerald-600 font-medium">Chemicals</a>
                     <a href="/storage-compatibility.html" class="text-gray-600 hover:text-gray-900 hover:underline">Storage</a>
+                    <a href="/sds-decoder.html" class="text-gray-600 hover:text-gray-900 hover:underline">SDS Decoder</a>
+                    <a href="/viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosity</a>
                     <a href="/about.html" class="text-gray-600 hover:text-gray-900 hover:underline">About</a>
                 </nav>
+                <!-- Mobile menu button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+                </button>
             </div>
         </div>
+        <!-- Mobile menu dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Resistance Chart</a>
+                <a href="/materials/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Materials</a>
+                <a href="/chemicals/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Chemicals</a>
+                <a href="/storage-compatibility.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Storage</a>
+                <a href="/sds-decoder.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDS Decoder</a>
+                <a href="/viscosity.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosity</a>
+                <a href="/about.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">About</a>
+            </nav>
+        </div>
     </header>
+    <script>
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-emerald-50 via-white to-blue-50 px-4 py-10">
