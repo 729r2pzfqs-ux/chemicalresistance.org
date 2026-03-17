@@ -180,6 +180,7 @@
 <url><loc>https://chemicalresistance.org/aluminium/xylene</loc></url>
 <url><loc>https://chemicalresistance.org/aluminium/zinc-chloride</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/abgase,-alkalisch/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/abgase,-alkalisch/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/abgase,-alkalisch/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/abgase,-alkalisch/ectfe-etfe/</loc></url>
@@ -204,6 +205,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/abgase,-alkalisch/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/abgase,-alkalisch/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/abgase,-alkalisch/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/acetaldehyde/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetaldehyde/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetaldehyde/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetaldehyde/ectfe-etfe/</loc></url>
@@ -229,6 +231,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/acetaldehyde/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetaldehyde/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/acetic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-acid/ectfe-etfe/</loc></url>
@@ -253,6 +256,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/acetic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/acetic-anhydride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-anhydride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-anhydride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-anhydride/ectfe-etfe/</loc></url>
@@ -278,6 +282,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/acetic-anhydride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetic-anhydride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetone</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/acetone/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetone/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetone/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetone/ectfe-etfe/</loc></url>
@@ -303,6 +308,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/acetone/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetone/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetonitrile</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/acetonitrile/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetonitrile/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetonitrile/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetonitrile/ectfe-etfe/</loc></url>
@@ -327,6 +333,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/acetonitrile/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetonitrile/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetonitrile/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/acetylene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetylene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetylene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetylene/ectfe-etfe/</loc></url>
@@ -351,6 +358,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/acetylene/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetylene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acetylene/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/acrylonitrile/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acrylonitrile/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acrylonitrile/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acrylonitrile/ectfe-etfe/</loc></url>
@@ -375,6 +383,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/acrylonitrile/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acrylonitrile/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/acrylonitrile/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/adipic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/adipic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/adipic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/adipic-acid/ectfe-etfe/</loc></url>
@@ -399,6 +408,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/adipic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/adipic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/adipic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/alum-aluminum-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/alum-aluminum-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/alum-aluminum-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/alum-aluminum-sulfate/ectfe-etfe/</loc></url>
@@ -423,6 +433,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/alum-aluminum-sulfate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/alum-aluminum-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/alum-aluminum-sulfate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/aluminum-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-chloride/ectfe-etfe/</loc></url>
@@ -447,6 +458,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-chloride/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-chloride/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/aluminum-oxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-oxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-oxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-oxide/ectfe-etfe/</loc></url>
@@ -471,6 +483,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-oxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-oxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-oxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/aluminum-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-sulfate/ectfe-etfe/</loc></url>
@@ -496,6 +509,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aluminum-sulfate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonia</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ammonia/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonia/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonia/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonia/ectfe-etfe/</loc></url>
@@ -521,6 +535,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ammonia/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonia/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-chloride</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ammonium-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-chloride/ectfe-etfe/</loc></url>
@@ -546,6 +561,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-chloride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-hydroxide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ammonium-hydroxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-hydroxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-hydroxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-hydroxide/ectfe-etfe/</loc></url>
@@ -571,6 +587,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-hydroxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-hydroxide/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-nitrate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ammonium-nitrate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-nitrate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-nitrate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-nitrate/ectfe-etfe/</loc></url>
@@ -596,6 +613,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-nitrate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-nitrate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-sulfate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ammonium-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-sulfate/ectfe-etfe/</loc></url>
@@ -621,6 +639,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ammonium-sulfate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aniline</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/aniline/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aniline/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aniline/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aniline/ectfe-etfe/</loc></url>
@@ -645,6 +664,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/aniline/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aniline/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/aniline/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/arsenic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/arsenic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/arsenic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/arsenic-acid/ectfe-etfe/</loc></url>
@@ -669,6 +689,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/arsenic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/arsenic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/arsenic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ascorbic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ascorbic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ascorbic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ascorbic-acid/ectfe-etfe/</loc></url>
@@ -693,6 +714,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ascorbic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ascorbic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ascorbic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/barium-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-chloride/ectfe-etfe/</loc></url>
@@ -717,6 +739,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/barium-chloride/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-chloride/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/barium-hydroxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-hydroxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-hydroxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-hydroxide/ectfe-etfe/</loc></url>
@@ -741,6 +764,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/barium-hydroxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-hydroxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-hydroxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/barium-sulfide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-sulfide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-sulfide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-sulfide/ectfe-etfe/</loc></url>
@@ -765,6 +789,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/barium-sulfide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-sulfide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/barium-sulfide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/beeswax/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/beeswax/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/beeswax/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/beeswax/ectfe-etfe/</loc></url>
@@ -789,6 +814,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/beeswax/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/beeswax/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/beeswax/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/benzaldehyde/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzaldehyde/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzaldehyde/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzaldehyde/ectfe-etfe/</loc></url>
@@ -814,6 +840,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/benzaldehyde/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzaldehyde/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzene</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/benzene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzene/ectfe-etfe/</loc></url>
@@ -838,6 +865,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/benzene/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzene/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/benzoic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzoic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzoic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzoic-acid/ectfe-etfe/</loc></url>
@@ -862,6 +890,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/benzoic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzoic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzoic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/benzyl-alcohol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzyl-alcohol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzyl-alcohol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzyl-alcohol/ectfe-etfe/</loc></url>
@@ -887,6 +916,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/benzyl-alcohol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/benzyl-alcohol/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/boric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/boric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/boric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/boric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/boric-acid/ectfe-etfe/</loc></url>
@@ -912,6 +942,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/boric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/boric-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/bromine</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/bromine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/bromine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/bromine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/bromine/ectfe-etfe/</loc></url>
@@ -937,6 +968,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/bromine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/bromine/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanol</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/butanol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanol/ectfe-etfe/</loc></url>
@@ -962,6 +994,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/butanol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanol/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanone-mek</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/butanone-mek/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanone-mek/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanone-mek/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanone-mek/ectfe-etfe/</loc></url>
@@ -986,6 +1019,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/butanone-mek/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanone-mek/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butanone-mek/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/butyric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butyric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butyric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butyric-acid/ectfe-etfe/</loc></url>
@@ -1010,6 +1044,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/butyric-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butyric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/butyric-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-acetate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-acetate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-acetate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-acetate/ectfe-etfe/</loc></url>
@@ -1034,6 +1069,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-acetate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-acetate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-acetate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-carbonate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-carbonate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-carbonate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-carbonate/ectfe-etfe/</loc></url>
@@ -1059,6 +1095,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-carbonate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-carbonate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-chloride</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-chloride/ectfe-etfe/</loc></url>
@@ -1084,6 +1121,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-chloride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide/ectfe-etfe/</loc></url>
@@ -1108,6 +1146,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hydroxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-hypochlorite/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hypochlorite/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hypochlorite/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hypochlorite/ectfe-etfe/</loc></url>
@@ -1132,6 +1171,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hypochlorite/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hypochlorite/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-hypochlorite/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-nitrate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-nitrate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-nitrate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-nitrate/ectfe-etfe/</loc></url>
@@ -1156,6 +1196,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-nitrate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-nitrate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-nitrate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-oxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-oxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-oxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-oxide/ectfe-etfe/</loc></url>
@@ -1180,6 +1221,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-oxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-oxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-oxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfate/ectfe-etfe/</loc></url>
@@ -1204,6 +1246,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/calcium-sulfide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfide/ectfe-etfe/</loc></url>
@@ -1229,6 +1272,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/calcium-sulfide/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide/ectfe-etfe/</loc></url>
@@ -1253,6 +1297,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-disulfide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/carbon-tetrachloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-tetrachloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-tetrachloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-tetrachloride/ectfe-etfe/</loc></url>
@@ -1277,6 +1322,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/carbon-tetrachloride/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-tetrachloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/carbon-tetrachloride/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/castor-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/castor-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/castor-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/castor-oil/ectfe-etfe/</loc></url>
@@ -1303,6 +1349,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/castor-oil/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution/ectfe-etfe/</loc></url>
@@ -1327,6 +1374,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-bleach-solution/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chlorine-dioxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-dioxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-dioxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-dioxide/ectfe-etfe/</loc></url>
@@ -1351,6 +1399,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-dioxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-dioxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-dioxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chlorine-gas/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-gas/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-gas/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-gas/ectfe-etfe/</loc></url>
@@ -1375,6 +1424,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-gas/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-gas/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-gas/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chlorine-water/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-water/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-water/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-water/ectfe-etfe/</loc></url>
@@ -1399,6 +1449,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-water/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-water/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine-water/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chlorine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine/ectfe-etfe/</loc></url>
@@ -1423,6 +1474,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chlorine/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorine/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chlorobenzene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorobenzene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorobenzene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorobenzene/ectfe-etfe/</loc></url>
@@ -1448,6 +1500,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chlorobenzene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chlorobenzene/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chloroform</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chloroform/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chloroform/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chloroform/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chloroform/ectfe-etfe/</loc></url>
@@ -1473,6 +1526,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chloroform/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chloroform/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chromic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/chromic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chromic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chromic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chromic-acid/ectfe-etfe/</loc></url>
@@ -1498,6 +1552,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/chromic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/chromic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/citric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/citric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/citric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/citric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/citric-acid/ectfe-etfe/</loc></url>
@@ -1522,6 +1577,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/citric-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/citric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/citric-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/cobalt-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cobalt-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cobalt-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cobalt-chloride/ectfe-etfe/</loc></url>
@@ -1547,6 +1603,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/cobalt-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cobalt-chloride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate/ectfe-etfe/</loc></url>
@@ -1571,6 +1628,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/copper-vitriol-copper-sulfate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/cresol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cresol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cresol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cresol/ectfe-etfe/</loc></url>
@@ -1595,6 +1653,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/cresol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cresol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cresol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/crotonaldehyde/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/crotonaldehyde/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/crotonaldehyde/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/crotonaldehyde/ectfe-etfe/</loc></url>
@@ -1619,6 +1678,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/crotonaldehyde/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/crotonaldehyde/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/crotonaldehyde/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/cumene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cumene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cumene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cumene/ectfe-etfe/</loc></url>
@@ -1644,6 +1704,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/cumene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cumene/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexane</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/cyclohexane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexane/ectfe-etfe/</loc></url>
@@ -1668,6 +1729,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexane/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexane/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/cyclohexanol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanol/ectfe-etfe/</loc></url>
@@ -1692,6 +1754,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/cyclohexanone/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanone/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanone/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanone/ectfe-etfe/</loc></url>
@@ -1717,6 +1780,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanone/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/cyclohexanone/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dichloromethane</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/dichloromethane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dichloromethane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dichloromethane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dichloromethane/ectfe-etfe/</loc></url>
@@ -1742,6 +1806,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/dichloromethane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dichloromethane/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diesel-fuel</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/diesel-fuel/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diesel-fuel/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diesel-fuel/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diesel-fuel/ectfe-etfe/</loc></url>
@@ -1767,6 +1832,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/diesel-fuel/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diesel-fuel/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ether</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/diethyl-ether/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ether/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ether/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ether/ectfe-etfe/</loc></url>
@@ -1791,6 +1857,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ether/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ether/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ether/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/diethyl-ketone/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ketone/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ketone/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ketone/ectfe-etfe/</loc></url>
@@ -1815,6 +1882,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ketone/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ketone/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethyl-ketone/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/diethylamine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethylamine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethylamine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethylamine/ectfe-etfe/</loc></url>
@@ -1839,6 +1907,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/diethylamine/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethylamine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diethylamine/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/diisobutylene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diisobutylene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diisobutylene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diisobutylene/ectfe-etfe/</loc></url>
@@ -1863,6 +1932,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/diisobutylene/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diisobutylene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/diisobutylene/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/dioxane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dioxane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dioxane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dioxane/ectfe-etfe/</loc></url>
@@ -1887,6 +1957,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/dioxane/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dioxane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dioxane/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/dmf/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmf/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmf/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmf/ectfe-etfe/</loc></url>
@@ -1911,6 +1982,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/dmf/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmf/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmf/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/dmso/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmso/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmso/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmso/ectfe-etfe/</loc></url>
@@ -1935,6 +2007,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/dmso/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmso/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/dmso/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/epichlorohydrin/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/epichlorohydrin/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/epichlorohydrin/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/epichlorohydrin/ectfe-etfe/</loc></url>
@@ -1960,6 +2033,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/epichlorohydrin/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/epichlorohydrin/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethanol</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ethanol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethanol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethanol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethanol/ectfe-etfe/</loc></url>
@@ -1984,6 +2058,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ethanol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethanol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethanol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ethyl-acetate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethyl-acetate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethyl-acetate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethyl-acetate/ectfe-etfe/</loc></url>
@@ -2008,6 +2083,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ethyl-acetate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethyl-acetate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethyl-acetate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ethylbenzene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylbenzene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylbenzene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylbenzene/ectfe-etfe/</loc></url>
@@ -2032,6 +2108,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ethylbenzene/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylbenzene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylbenzene/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ethylene-dichloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-dichloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-dichloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-dichloride/ectfe-etfe/</loc></url>
@@ -2057,6 +2134,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-dichloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-dichloride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol/ectfe-etfe/</loc></url>
@@ -2081,6 +2159,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylene-glycol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ethylenediamine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylenediamine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylenediamine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylenediamine/ectfe-etfe/</loc></url>
@@ -2106,6 +2185,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ethylenediamine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ethylenediamine/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/fluorine</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/fluorine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/fluorine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/fluorine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/fluorine/ectfe-etfe/</loc></url>
@@ -2131,6 +2211,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/fluorine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/fluorine/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution/ectfe-etfe/</loc></url>
@@ -2155,6 +2236,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde-solution/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/formaldehyde/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde/ectfe-etfe/</loc></url>
@@ -2180,6 +2262,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formaldehyde/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/formic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formic-acid/ectfe-etfe/</loc></url>
@@ -2205,6 +2288,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/formic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/formic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/gasoline</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/gasoline-petrol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/gasoline-petrol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/gasoline-petrol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/gasoline-petrol/ectfe-etfe/</loc></url>
@@ -2230,6 +2314,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/gasoline-petrol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/gasoline-petrol/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycerin</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/glycerin/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycerin/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycerin/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycerin/ectfe-etfe/</loc></url>
@@ -2255,6 +2340,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/glycerin/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycerin/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycolic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/glycolic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycolic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycolic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycolic-acid/ectfe-etfe/</loc></url>
@@ -2279,6 +2365,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/glycolic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycolic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/glycolic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/heating-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heating-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heating-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heating-oil/ectfe-etfe/</loc></url>
@@ -2304,6 +2391,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/heating-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heating-oil/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heptane</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/heptane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heptane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heptane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heptane/ectfe-etfe/</loc></url>
@@ -2329,6 +2417,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/heptane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/heptane/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hexane</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hexane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hexane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hexane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hexane/ectfe-etfe/</loc></url>
@@ -2354,6 +2443,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hexane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hexane/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil/ectfe-etfe/</loc></url>
@@ -2378,6 +2468,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydraulic-oil/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrazine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrazine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrazine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrazine/ectfe-etfe/</loc></url>
@@ -2402,6 +2493,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrazine/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrazine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrazine/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrobromic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrobromic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrobromic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrobromic-acid/ectfe-etfe/</loc></url>
@@ -2427,6 +2519,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrobromic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrobromic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrochloric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrochloric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrochloric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrochloric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrochloric-acid/ectfe-etfe/</loc></url>
@@ -2452,6 +2545,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrochloric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrochloric-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid/ectfe-etfe/</loc></url>
@@ -2476,6 +2570,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrofluoric-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrogen-chloride-gas/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-chloride-gas/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-chloride-gas/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-chloride-gas/ectfe-etfe/</loc></url>
@@ -2500,6 +2595,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-chloride-gas/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-chloride-gas/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-chloride-gas/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrogen-fluoride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-fluoride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-fluoride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-fluoride/ectfe-etfe/</loc></url>
@@ -2525,6 +2621,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-fluoride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-fluoride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-peroxide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrogen-peroxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-peroxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-peroxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-peroxide/ectfe-etfe/</loc></url>
@@ -2550,6 +2647,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-peroxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-peroxide/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-sulfide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/hydrogen-sulfide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-sulfide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-sulfide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-sulfide/ectfe-etfe/</loc></url>
@@ -2575,6 +2673,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-sulfide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/hydrogen-sulfide/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride/ectfe-etfe/</loc></url>
@@ -2599,6 +2698,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/iodine-pentafluoride/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/isobutanol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isobutanol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isobutanol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isobutanol/ectfe-etfe/</loc></url>
@@ -2623,6 +2723,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/isobutanol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isobutanol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isobutanol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/isooctane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isooctane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isooctane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isooctane/ectfe-etfe/</loc></url>
@@ -2648,6 +2749,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/isooctane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isooctane/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isopropanol</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/isopropanol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isopropanol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isopropanol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isopropanol/ectfe-etfe/</loc></url>
@@ -2673,6 +2775,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/isopropanol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/isopropanol/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/kerosene</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/kerosene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/kerosene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/kerosene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/kerosene/ectfe-etfe/</loc></url>
@@ -2698,6 +2801,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/kerosene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/kerosene/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/labarraque-solution-sodium-hypochlorite</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/labarraque-solution-sodium-hypochlorite/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/labarraque-solution-sodium-hypochlorite/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/labarraque-solution-sodium-hypochlorite/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/labarraque-solution-sodium-hypochlorite/ectfe-etfe/</loc></url>
@@ -2723,6 +2827,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/labarraque-solution-sodium-hypochlorite/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/labarraque-solution-sodium-hypochlorite/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lactic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/lactic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lactic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lactic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lactic-acid/ectfe-etfe/</loc></url>
@@ -2747,6 +2852,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/lactic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lactic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lactic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/linseed-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/linseed-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/linseed-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/linseed-oil/ectfe-etfe/</loc></url>
@@ -2771,6 +2877,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/linseed-oil/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/linseed-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/linseed-oil/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/lithium-bromide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lithium-bromide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lithium-bromide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lithium-bromide/ectfe-etfe/</loc></url>
@@ -2795,6 +2902,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/lithium-bromide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lithium-bromide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lithium-bromide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/lubricating-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lubricating-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lubricating-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lubricating-oil/ectfe-etfe/</loc></url>
@@ -2819,6 +2927,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/lubricating-oil/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lubricating-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/lubricating-oil/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/magnesium-bromide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-bromide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-bromide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-bromide/ectfe-etfe/</loc></url>
@@ -2843,6 +2952,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-bromide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-bromide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-bromide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/magnesium-carbonate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-carbonate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-carbonate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-carbonate/ectfe-etfe/</loc></url>
@@ -2868,6 +2978,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-carbonate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-carbonate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride/ectfe-etfe/</loc></url>
@@ -2892,6 +3003,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-chloride/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/magnesium-hydroxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-hydroxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-hydroxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-hydroxide/ectfe-etfe/</loc></url>
@@ -2916,6 +3028,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-hydroxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-hydroxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-hydroxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/magnesium-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-sulfate/ectfe-etfe/</loc></url>
@@ -2940,6 +3053,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-sulfate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/magnesium-sulfate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/maleic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/maleic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/maleic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/maleic-acid/ectfe-etfe/</loc></url>
@@ -2964,6 +3078,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/maleic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/maleic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/maleic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/mercury-nitrate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury-nitrate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury-nitrate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury-nitrate/ectfe-etfe/</loc></url>
@@ -2988,6 +3103,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/mercury-nitrate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury-nitrate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury-nitrate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/mercury/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury/ectfe-etfe/</loc></url>
@@ -3013,6 +3129,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/mercury/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mercury/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methanol</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/methanol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methanol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methanol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methanol/ectfe-etfe/</loc></url>
@@ -3037,6 +3154,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/methanol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methanol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methanol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/methyl-acrylate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-acrylate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-acrylate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-acrylate/ectfe-etfe/</loc></url>
@@ -3062,6 +3180,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/methyl-acrylate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-acrylate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-isobutyl-ketone-mibk</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/methyl-isobutyl-ketone-mibk/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-isobutyl-ketone-mibk/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-isobutyl-ketone-mibk/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-isobutyl-ketone-mibk/ectfe-etfe/</loc></url>
@@ -3087,6 +3206,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/methyl-isobutyl-ketone-mibk/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/methyl-isobutyl-ketone-mibk/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mineral-oil</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/mineral-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mineral-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mineral-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mineral-oil/ectfe-etfe/</loc></url>
@@ -3111,6 +3231,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/mineral-oil/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mineral-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/mineral-oil/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/molasses/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/molasses/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/molasses/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/molasses/ectfe-etfe/</loc></url>
@@ -3135,6 +3256,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/molasses/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/molasses/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/molasses/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/morpholine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/morpholine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/morpholine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/morpholine/ectfe-etfe/</loc></url>
@@ -3160,6 +3282,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/morpholine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/morpholine/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/motor-oil</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/motor-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/motor-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/motor-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/motor-oil/ectfe-etfe/</loc></url>
@@ -3184,6 +3307,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/motor-oil/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/motor-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/motor-oil/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/n-heptane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-heptane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-heptane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-heptane/ectfe-etfe/</loc></url>
@@ -3208,6 +3332,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/n-heptane/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-heptane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-heptane/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/n-hexane/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-hexane/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-hexane/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-hexane/ectfe-etfe/</loc></url>
@@ -3233,6 +3358,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/n-hexane/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/n-hexane/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/naphtha</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/nickel-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nickel-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nickel-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nickel-sulfate/ectfe-etfe/</loc></url>
@@ -3258,6 +3384,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/nickel-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nickel-sulfate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/nitric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitric-acid/ectfe-etfe/</loc></url>
@@ -3282,6 +3409,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/nitric-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitric-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/nitrobenzene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitrobenzene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitrobenzene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitrobenzene/ectfe-etfe/</loc></url>
@@ -3307,6 +3435,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/nitrobenzene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/nitrobenzene/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oleic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/oleic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oleic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oleic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oleic-acid/ectfe-etfe/</loc></url>
@@ -3332,6 +3461,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/oleic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oleic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oxalic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/oxalic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oxalic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oxalic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oxalic-acid/ectfe-etfe/</loc></url>
@@ -3357,6 +3487,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/oxalic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/oxalic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ozone</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/ozone/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ozone/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ozone/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ozone/ectfe-etfe/</loc></url>
@@ -3382,6 +3513,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/ozone/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/ozone/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/palmitic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/palmitic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/palmitic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/palmitic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/palmitic-acid/ectfe-etfe/</loc></url>
@@ -3407,6 +3539,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/palmitic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/palmitic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/perchloric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/perchloric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/perchloric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/perchloric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/perchloric-acid/ectfe-etfe/</loc></url>
@@ -3432,6 +3565,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/perchloric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/perchloric-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phenol</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/phenol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phenol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phenol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phenol/ectfe-etfe/</loc></url>
@@ -3456,6 +3590,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/phenol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phenol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phenol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/phosgene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosgene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosgene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosgene/ectfe-etfe/</loc></url>
@@ -3481,6 +3616,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/phosgene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosgene/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid/ectfe-etfe/</loc></url>
@@ -3505,6 +3641,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phosphoric-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/phthalic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phthalic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phthalic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phthalic-acid/ectfe-etfe/</loc></url>
@@ -3529,6 +3666,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/phthalic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phthalic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/phthalic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/picric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/picric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/picric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/picric-acid/ectfe-etfe/</loc></url>
@@ -3553,6 +3691,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/picric-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/picric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/picric-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/piperidine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/piperidine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/piperidine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/piperidine/ectfe-etfe/</loc></url>
@@ -3577,6 +3716,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/piperidine/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/piperidine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/piperidine/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-acetate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-acetate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-acetate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-acetate/ectfe-etfe/</loc></url>
@@ -3601,6 +3741,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-acetate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-acetate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-acetate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-bromate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-bromate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-bromate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-bromate/ectfe-etfe/</loc></url>
@@ -3625,6 +3766,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-bromate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-bromate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-bromate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-carbonate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-carbonate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-carbonate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-carbonate/ectfe-etfe/</loc></url>
@@ -3650,6 +3792,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-carbonate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-carbonate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chloride</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chloride/ectfe-etfe/</loc></url>
@@ -3674,6 +3817,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chloride/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chloride/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-chromate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chromate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chromate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chromate/ectfe-etfe/</loc></url>
@@ -3699,6 +3843,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chromate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-chromate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide/ectfe-etfe/</loc></url>
@@ -3723,6 +3868,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-cyanide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-dichromate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-dichromate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-dichromate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-dichromate/ectfe-etfe/</loc></url>
@@ -3747,6 +3893,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-dichromate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-dichromate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-dichromate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-fluoride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-fluoride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-fluoride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-fluoride/ectfe-etfe/</loc></url>
@@ -3772,6 +3919,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-fluoride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-fluoride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide/ectfe-etfe/</loc></url>
@@ -3796,6 +3944,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-hydroxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-iodide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-iodide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-iodide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-iodide/ectfe-etfe/</loc></url>
@@ -3820,6 +3969,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-iodide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-iodide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-iodide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-nitrate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-nitrate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-nitrate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-nitrate/ectfe-etfe/</loc></url>
@@ -3845,6 +3995,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-nitrate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-nitrate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate/ectfe-etfe/</loc></url>
@@ -3869,6 +4020,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-permanganate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfate/ectfe-etfe/</loc></url>
@@ -3893,6 +4045,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/potassium-sulfide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfide/ectfe-etfe/</loc></url>
@@ -3917,6 +4070,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/potassium-sulfide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/propanol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propanol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propanol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propanol/ectfe-etfe/</loc></url>
@@ -3941,6 +4095,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/propanol/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propanol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propanol/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/propionic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propionic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propionic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propionic-acid/ectfe-etfe/</loc></url>
@@ -3966,6 +4121,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/propionic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propionic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propylene-glycol</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/propylene-glycol/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propylene-glycol/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propylene-glycol/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propylene-glycol/ectfe-etfe/</loc></url>
@@ -3991,6 +4147,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/propylene-glycol/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/propylene-glycol/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/pyridine</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/pyridine/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/pyridine/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/pyridine/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/pyridine/ectfe-etfe/</loc></url>
@@ -4015,6 +4172,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/pyridine/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/pyridine/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/pyridine/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/salicylic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/salicylic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/salicylic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/salicylic-acid/ectfe-etfe/</loc></url>
@@ -4039,6 +4197,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/salicylic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/salicylic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/salicylic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/seawater/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/seawater/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/seawater/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/seawater/ectfe-etfe/</loc></url>
@@ -4064,6 +4223,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/seawater/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/seawater/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silicone-oil</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/silicone-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silicone-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silicone-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silicone-oil/ectfe-etfe/</loc></url>
@@ -4089,6 +4249,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/silicone-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silicone-oil/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silver-nitrate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/silver-nitrate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silver-nitrate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silver-nitrate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silver-nitrate/ectfe-etfe/</loc></url>
@@ -4113,6 +4274,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/silver-nitrate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silver-nitrate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/silver-nitrate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-acetate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-acetate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-acetate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-acetate/ectfe-etfe/</loc></url>
@@ -4138,6 +4300,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-acetate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-acetate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate/ectfe-etfe/</loc></url>
@@ -4162,6 +4325,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bicarbonate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-borate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-borate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-borate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-borate/ectfe-etfe/</loc></url>
@@ -4186,6 +4350,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-borate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-borate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-borate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-bromate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bromate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bromate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bromate/ectfe-etfe/</loc></url>
@@ -4211,6 +4376,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bromate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-bromate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-carbonate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-carbonate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-carbonate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-carbonate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-carbonate/ectfe-etfe/</loc></url>
@@ -4236,6 +4402,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-carbonate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-carbonate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-chloride</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-chloride/ectfe-etfe/</loc></url>
@@ -4261,6 +4428,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-chloride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide/ectfe-etfe/</loc></url>
@@ -4285,6 +4453,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-cyanide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-dichromate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-dichromate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-dichromate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-dichromate/ectfe-etfe/</loc></url>
@@ -4309,6 +4478,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-dichromate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-dichromate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-dichromate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-fluoride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-fluoride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-fluoride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-fluoride/ectfe-etfe/</loc></url>
@@ -4334,6 +4504,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-fluoride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-fluoride/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda/ectfe-etfe/</loc></url>
@@ -4358,6 +4529,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hydroxide-caustic-soda/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-hypochlorite/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hypochlorite/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hypochlorite/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hypochlorite/ectfe-etfe/</loc></url>
@@ -4382,6 +4554,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hypochlorite/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hypochlorite/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-hypochlorite/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-iodide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-iodide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-iodide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-iodide/ectfe-etfe/</loc></url>
@@ -4407,6 +4580,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-iodide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-iodide/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate/ectfe-etfe/</loc></url>
@@ -4431,6 +4605,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-nitrite/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrite/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrite/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrite/ectfe-etfe/</loc></url>
@@ -4455,6 +4630,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrite/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrite/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-nitrite/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-perborate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-perborate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-perborate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-perborate/ectfe-etfe/</loc></url>
@@ -4479,6 +4655,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-perborate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-perborate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-perborate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-peroxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-peroxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-peroxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-peroxide/ectfe-etfe/</loc></url>
@@ -4503,6 +4680,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-peroxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-peroxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-peroxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-phosphate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-phosphate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-phosphate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-phosphate/ectfe-etfe/</loc></url>
@@ -4528,6 +4706,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-phosphate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-phosphate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfate</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfate/ectfe-etfe/</loc></url>
@@ -4553,6 +4732,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide/ectfe-etfe/</loc></url>
@@ -4577,6 +4757,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-sulfite/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfite/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfite/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfite/ectfe-etfe/</loc></url>
@@ -4601,6 +4782,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfite/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfite/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-sulfite/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sodium-thiosulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-thiosulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-thiosulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-thiosulfate/ectfe-etfe/</loc></url>
@@ -4626,6 +4808,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sodium-thiosulfate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sodium-thiosulfate/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/stearic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/stearic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/stearic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/stearic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/stearic-acid/ectfe-etfe/</loc></url>
@@ -4651,6 +4834,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/stearic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/stearic-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/styrene</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/styrene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/styrene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/styrene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/styrene/ectfe-etfe/</loc></url>
@@ -4676,6 +4860,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/styrene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/styrene/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/succinic-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/succinic-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/succinic-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/succinic-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/succinic-acid/ectfe-etfe/</loc></url>
@@ -4700,6 +4885,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/succinic-acid/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/succinic-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/succinic-acid/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sulfur-dioxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfur-dioxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfur-dioxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfur-dioxide/ectfe-etfe/</loc></url>
@@ -4725,6 +4911,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sulfur-dioxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfur-dioxide/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfuric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/sulfuric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfuric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfuric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfuric-acid/ectfe-etfe/</loc></url>
@@ -4750,6 +4937,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/sulfuric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/sulfuric-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/tartaric-acid</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/tartaric-acid/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/tartaric-acid/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/tartaric-acid/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/tartaric-acid/ectfe-etfe/</loc></url>
@@ -4775,6 +4963,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/tartaric-acid/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/tartaric-acid/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/tetrahydrofuran-thf</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/thf/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/thf/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/thf/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/thf/ectfe-etfe/</loc></url>
@@ -4800,6 +4989,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/thf/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/thf/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/toluene</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/toluene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/toluene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/toluene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/toluene/ectfe-etfe/</loc></url>
@@ -4824,6 +5014,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/toluene/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/toluene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/toluene/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/transformer-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/transformer-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/transformer-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/transformer-oil/ectfe-etfe/</loc></url>
@@ -4848,6 +5039,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/transformer-oil/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/transformer-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/transformer-oil/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/turpentine-oil/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-oil/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-oil/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-oil/ectfe-etfe/</loc></url>
@@ -4873,6 +5065,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-oil/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-oil/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-substitute</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/turpentine-substitute/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-substitute/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-substitute/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-substitute/ectfe-etfe/</loc></url>
@@ -4898,6 +5091,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-substitute/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/turpentine-substitute/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/urea</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/urea/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/urea/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/urea/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/urea/ectfe-etfe/</loc></url>
@@ -4922,6 +5116,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/urea/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/urea/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/urea/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/vinyl-acetate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/vinyl-acetate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/vinyl-acetate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/vinyl-acetate/ectfe-etfe/</loc></url>
@@ -4946,6 +5141,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/vinyl-acetate/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/vinyl-acetate/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/vinyl-acetate/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/water-glass/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/water-glass/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/water-glass/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/water-glass/ectfe-etfe/</loc></url>
@@ -4972,6 +5168,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/water-glass/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/white-spirit</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/xylene</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/xylene/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/xylene/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/xylene/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/xylene/ectfe-etfe/</loc></url>
@@ -4997,6 +5194,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/xylene/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/xylene/viton/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-chloride</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/zinc-chloride/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-chloride/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-chloride/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-chloride/ectfe-etfe/</loc></url>
@@ -5021,6 +5219,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/zinc-chloride/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-chloride/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-chloride/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/zinc-oxide/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-oxide/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-oxide/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-oxide/ectfe-etfe/</loc></url>
@@ -5045,6 +5244,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/zinc-oxide/ss316/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-oxide/stainless-steel-304/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-oxide/viton/</loc></url>
+<url><loc>https://chemicalresistance.org/chemicals/zinc-sulfate/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-sulfate/acetal-pom/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-sulfate/aluminium/</loc></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-sulfate/ectfe-etfe/</loc></url>
