@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Viscosidade de Líquidos | 100+ Substâncias | Consulta Gratuita</title>
+    <meta name="description" content="Consulta gratuita de viscosidade para mais de 100 líquidos e substâncias. Encontre valores de viscosidade em mPa·s (cP) para seleção de bombas e manuseio de fluidos.">
+    <link rel="canonical" href="https://chemicalresistance.org/pt/viscosity">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="../../favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    
+    <meta property="og:title" content="Tabela de Viscosidade de Líquidos | 100+ Substâncias">
+    <meta property="og:description" content="Ferramenta gratuita de consulta de viscosidade. Encontre valores para seleção de bombas e manuseio de fluidos.">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+    </style>
+</head>
+<body class="text-gray-700 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="../../pt" class="flex items-center gap-2">
+                <img src="../../logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Banco de dados de compatibilidade química</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="../../pt" class="text-gray-600 hover:text-gray-900 hover:underline">Tabela de Resistência</a>
+                    <a href="../storage-compatibility" class="text-gray-600 hover:text-gray-900 hover:underline">Armazenamento</a>
+                    <a href="../sds-decoder" class="text-gray-600 hover:text-gray-900 hover:underline">Decodificador FDS</a>
+                    <a href="../viscosity" class="text-emerald-600 font-medium">Viscosidade</a>
+                    <a href="../../pt-about" class="text-gray-600 hover:text-gray-900 hover:underline">Sobre</a>
+                </nav>
+                <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer" onchange="changeLanguage(this.value)">
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="pt" selected>🇧🇷 PT</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="../../pt" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tabela de Resistência</a>
+                <a href="../storage-compatibility" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compatibilidade de Armazenamento</a>
+                <a href="../sds-decoder" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Decodificador FDS</a>
+                <a href="../viscosity" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Viscosidade</a>
+                <a href="../../pt-about" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Sobre</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        
+        function changeLanguage(lang) {
+            const urls = {
+                en: '/viscosity.html',
+                de: '/de/viscosity.html',
+                es: '/es/viscosity.html',
+                fr: '/fr/viscosity.html',
+                pt: '/pt/viscosity.html'
+            };
+            window.location.href = urls[lang] || urls.en;
+        }
+    </script>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-blue-50 to-white px-4 py-8 md:py-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                Consulta de Viscosidade de Líquidos
+            </h1>
+            <p class="text-gray-600 mb-6">
+                Encontre valores de viscosidade para seleção de bombas e manuseio de fluidos. Valores em mPa·s (= cP).
+            </p>
+            
+            <!-- Search Box -->
+            <div class="relative max-w-xl mx-auto">
+                <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none z-10">
+                    <i data-lucide="search" class="w-5 h-5 text-gray-400"></i>
+                </div>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Pesquisar: Mel, Óleo de motor, Glicerina..."
+                    class="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all"
+                    autocomplete="off"
+                >
+                <div id="searchResults" class="absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-xl shadow-xl max-h-64 overflow-y-auto hidden z-50"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Viscosity Scale -->
+    <section class="px-4 py-8 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-lg font-bold text-gray-900 mb-4">Escala de Viscosidade — Como se sente?</h2>
+            
+            <!-- Visual scale bar -->
+            <div class="relative mb-6">
+                <div class="h-4 rounded-full bg-gradient-to-r from-blue-200 via-blue-400 via-amber-400 via-orange-500 to-red-600"></div>
+                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                    <span>1</span>
+                    <span>10</span>
+                    <span>100</span>
+                    <span>1.000</span>
+                    <span>10.000</span>
+                    <span>100.000+</span>
+                </div>
+                <div class="text-center text-xs text-gray-400 mt-0">mPa·s (= cP)</div>
+            </div>
+
+            <!-- Reference cards -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-sm">
+                <div class="bg-blue-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">💧</div>
+                    <div class="font-semibold text-blue-800">Água</div>
+                    <div class="text-blue-600">~1 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Flui instantaneamente</div>
+                </div>
+                <div class="bg-blue-100 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🥛</div>
+                    <div class="font-semibold text-blue-800">Leite</div>
+                    <div class="text-blue-600">~3 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Derrama facilmente</div>
+                </div>
+                <div class="bg-amber-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🫒</div>
+                    <div class="font-semibold text-amber-800">Azeite</div>
+                    <div class="text-amber-600">~80 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Derramamento lento</div>
+                </div>
+                <div class="bg-orange-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🍯</div>
+                    <div class="font-semibold text-orange-800">Mel</div>
+                    <div class="text-orange-600">~2.000 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Espesso, pegajoso</div>
+                </div>
+                <div class="bg-red-50 rounded-lg p-3 text-center">
+                    <div class="text-2xl mb-1">🧴</div>
+                    <div class="font-semibold text-red-800">Pasta de dentes</div>
+                    <div class="text-red-600">~100.000 mPa·s</div>
+                    <div class="text-xs text-gray-500 mt-1">Não flui sozinho</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unit Converter -->
+    <section class="px-4 py-6 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-lg font-bold text-gray-900 mb-4">Conversor de Unidades de Viscosidade</h2>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">mPa·s (= cP)</label>
+                    <input type="number" id="conv_mPas" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="1000" oninput="convertViscosity('mPas')">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Pa·s</label>
+                    <input type="number" id="conv_Pas" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="1" oninput="convertViscosity('Pas')">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Poise (P)</label>
+                    <input type="number" id="conv_P" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="10" oninput="convertViscosity('P')">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">cP (= mPa·s)</label>
+                    <input type="number" id="conv_cP" class="w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="1000" oninput="convertViscosity('cP')">
+                </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-3">1 Pa·s = 1000 mPa·s = 10 Poise = 1000 cP</p>
+        </div>
+    </section>
+
+    <!-- Table -->
+    <section class="px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-gray-50 text-left text-sm">
+                                <th class="py-3 px-4 font-semibold text-gray-600">Substância</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-center">Temperatura</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 text-right">Viscosidade (mPa·s)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="viscosityTable">
+                            <tr><td colspan="3" class="py-8 text-center text-gray-500">Carregando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="mt-4 p-4 bg-gray-50 rounded-xl text-sm text-gray-600">
+                <p><strong>Nota:</strong> 1 mPa·s = 1 cP (centipoise). A viscosidade varia com a temperatura — temperaturas mais altas = viscosidade mais baixa. 
+                Os valores são aproximados e podem variar de acordo com a qualidade e composição.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section class="px-4 py-12 bg-white border-t border-gray-200">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Por Que a Viscosidade é Importante</h2>
+            <div class="prose prose-gray">
+                <p>
+                    A viscosidade é fundamental para selecionar o tipo e tamanho correto de bomba. Líquidos de alta viscosidade requerem 
+                    bombas de deslocamento positivo (engrenagens, lóbulos, cavidade progressiva), enquanto líquidos de baixa viscosidade funcionam bem com bombas centrífugas.
+                </p>
+                <h3 class="text-lg font-semibold mt-6 mb-3">Guia de Seleção de Bombas</h3>
+                <ul class="list-disc list-inside space-y-1 text-gray-600">
+                    <li><strong>&lt; 100 mPa·s:</strong> Bombas centrífugas funcionam bem</li>
+                    <li><strong>100-1000 mPa·s:</strong> Considerar bombas de engrenagens ou lóbulos</li>
+                    <li><strong>&gt; 1000 mPa·s:</strong> Bombas de cavidade progressiva ou peristálticas recomendadas</li>
+                    <li><strong>&gt; 10000 mPa·s:</strong> Linhas aquecidas e bombas especializadas necessárias</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>© 2026 ChemicalResistance.org — Ferramenta Gratuita de Compatibilidade Química</p>
+            <p class="mt-2">Dados de viscosidade baseados em <a href="https://buerkle.de" class="text-blue-400 hover:underline">Bürkle GmbH (buerkle.de)</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Portuguese translations for substances
+        const translations = {
+            'water': 'Água', 'milk': 'Leite', 'honey': 'Mel', 'olive oil': 'Azeite',
+            'motor oil': 'Óleo de motor', 'glycerin': 'Glicerina', 'blood': 'Sangue',
+            'butter': 'Manteiga', 'cream': 'Creme', 'yogurt': 'Iogurte', 'ketchup': 'Ketchup',
+            'mayonnaise': 'Maionese', 'mustard': 'Mostarda', 'chocolate': 'Chocolate',
+            'toothpaste': 'Pasta de dentes', 'shampoo': 'Xampu', 'soap': 'Sabão',
+            'vinegar': 'Vinagre', 'syrup': 'Xarope', 'molasses': 'Melaço', 'jam': 'Geleia',
+            'diesel oil': 'Óleo diesel', 'kerosene': 'Querosene', 'petroleum': 'Petróleo',
+            'lard': 'Banha', 'wax': 'Cera', 'tar': 'Alcatrão', 'resin': 'Resina',
+            'glue': 'Cola', 'paint': 'Tinta', 'ink': 'Tinta', 'varnish': 'Verniz',
+            'alcohol': 'Álcool', 'beer': 'Cerveja', 'wine': 'Vinho', 'juice': 'Suco',
+            'sauce': 'Molho', 'soup': 'Sopa', 'paste': 'Pasta', 'gel': 'Gel',
+            'hydraulic oil': 'Óleo hidráulico', 'gear oil': 'Óleo de engrenagem',
+            'lubricating oil': 'Óleo lubrificante', 'castor oil': 'Óleo de rícino',
+            'coconut oil': 'Óleo de coco', 'palm oil': 'Óleo de palma',
+            'sunflower oil': 'Óleo de girassol', 'corn oil': 'Óleo de milho',
+            'peanut oil': 'Óleo de amendoim', 'soybean oil': 'Óleo de soja',
+            'fish oil': 'Óleo de peixe', 'linseed oil': 'Óleo de linhaça',
+            'cooking oil': 'Óleo de cozinha', 'salad oil': 'Óleo de salada',
+            'fruit juice': 'Suco de frutas', 'apple sauce': 'Purê de maçã',
+            'tomato paste': 'Extrato de tomate', 'baby food': 'Comida de bebê',
+            'pudding': 'Pudim', 'gelatin': 'Gelatina', 'starch': 'Amido',
+            'glucose': 'Glicose', 'sugar solution': 'Solução de açúcar',
+            'sulfuric acid': 'Ácido sulfúrico', 'hydrochloric acid': 'Ácido clorídrico',
+            'caustic soda': 'Soda cáustica', 'potassium hydroxide': 'Hidróxido de potássio',
+        };
+
+        function translateToPortuguese(english) {
+            const lower = english.toLowerCase();
+            for (const [en, pt] of Object.entries(translations)) {
+                if (lower.includes(en)) {
+                    return english.replace(new RegExp(en, 'i'), pt);
+                }
+            }
+            return english;
+        }
+
+        let viscosityData = [];
+
+        async function init() {
+            try {
+                const response = await fetch('/data/viscosity.json');
+                viscosityData = await response.json();
+                renderTable();
+                setupSearch();
+            } catch (err) {
+                console.error('Erro ao carregar dados:', err);
+                document.getElementById('viscosityTable').innerHTML = 
+                    '<tr><td colspan="3" class="py-8 text-center text-red-500">Erro ao carregar os dados</td></tr>';
+            }
+        }
+
+        function renderTable(filter = '') {
+            const filtered = viscosityData.filter(item => {
+                if (!filter) return true;
+                const nameEn = (item.medium_en || item.medium).toLowerCase();
+                const namePt = translateToPortuguese(nameEn).toLowerCase();
+                return nameEn.includes(filter) || namePt.includes(filter) || item.medium.toLowerCase().includes(filter);
+            });
+
+            // Sort by viscosity
+            filtered.sort((a, b) => {
+                const viscA = parseFloat(a.viscosity_mPas.replace(/[^\d.]/g, '')) || 0;
+                const viscB = parseFloat(b.viscosity_mPas.replace(/[^\d.]/g, '')) || 0;
+                return viscA - viscB;
+            });
+
+            const tbody = document.getElementById('viscosityTable');
+            
+            if (filtered.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="3" class="py-8 text-center text-gray-500">Nenhuma substância encontrada</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = filtered.map(item => {
+                const nameEn = item.medium_en || item.medium;
+                const namePt = translateToPortuguese(nameEn);
+                const showOriginal = namePt !== nameEn;
+                
+                return `
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="py-3 px-4">
+                            <div class="font-medium text-gray-900">${namePt}</div>
+                            ${showOriginal ? `<div class="text-xs text-gray-500">${nameEn}</div>` : ''}
+                        </td>
+                        <td class="py-3 px-4 text-center text-gray-600">${item.temperature_c}°C</td>
+                        <td class="py-3 px-4 text-right font-mono text-gray-900">${item.viscosity_mPas}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function setupSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const resultsDiv = document.getElementById('searchResults');
+            
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.toLowerCase();
+                if (query.length < 2) {
+                    resultsDiv.classList.add('hidden');
+                    return;
+                }
+                
+                const matches = viscosityData.filter(item => {
+                    const nameEn = (item.medium_en || item.medium).toLowerCase();
+                    const nameDE = item.medium.toLowerCase();
+                    return nameEn.includes(query) || nameDE.includes(query);
+                }).slice(0, 8);
+                
+                if (matches.length === 0) {
+                    resultsDiv.classList.add('hidden');
+                    return;
+                }
+                
+                resultsDiv.innerHTML = matches.map((item, idx) => {
+                    const name = item.medium_en || item.medium;
+                    return `<div class="px-4 py-3 hover:bg-blue-50 cursor-pointer border-b border-gray-100 last:border-0" data-name="${name}">
+                        <div class="font-medium text-gray-900">${name}</div>
+                        <div class="text-sm text-gray-500">${item.viscosity_mPas} @ ${item.temperature_c}°C</div>
+                    </div>`;
+                }).join('');
+                
+                resultsDiv.classList.remove('hidden');
+                
+                resultsDiv.querySelectorAll('[data-name]').forEach(el => {
+                    el.addEventListener('click', () => {
+                        const name = el.dataset.name;
+                        searchInput.value = name;
+                        resultsDiv.classList.add('hidden');
+                        renderTable(name.toLowerCase());
+                        setTimeout(() => {
+                            document.getElementById('viscosityTable').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    });
+                });
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!searchInput.contains(e.target) && !resultsDiv.contains(e.target)) {
+                    resultsDiv.classList.add('hidden');
+                }
+            });
+            
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    resultsDiv.classList.add('hidden');
+                    renderTable(searchInput.value.toLowerCase());
+                    setTimeout(() => {
+                        document.getElementById('viscosityTable').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            });
+        }
+
+        // Unit converter
+        function convertViscosity(source) {
+            const mPas = document.getElementById('conv_mPas');
+            const Pas = document.getElementById('conv_Pas');
+            const P = document.getElementById('conv_P');
+            const cP = document.getElementById('conv_cP');
+            
+            let baseMPas;
+            
+            if (source === 'mPas') {
+                baseMPas = parseFloat(mPas.value) || 0;
+            } else if (source === 'Pas') {
+                baseMPas = (parseFloat(Pas.value) || 0) * 1000;
+            } else if (source === 'P') {
+                baseMPas = (parseFloat(P.value) || 0) * 100;
+            } else if (source === 'cP') {
+                baseMPas = parseFloat(cP.value) || 0;
+            }
+            
+            if (source !== 'mPas') mPas.value = baseMPas ? baseMPas.toFixed(4).replace(/\.?0+$/, '') : '';
+            if (source !== 'Pas') Pas.value = baseMPas ? (baseMPas / 1000).toFixed(6).replace(/\.?0+$/, '') : '';
+            if (source !== 'P') P.value = baseMPas ? (baseMPas / 100).toFixed(5).replace(/\.?0+$/, '') : '';
+            if (source !== 'cP') cP.value = baseMPas ? baseMPas.toFixed(4).replace(/\.?0+$/, '') : '';
+        }
+
+        init();
+        lucide.createIcons();
+    </script>
+<div id="cookie-consent" style="display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.85);color:#fff;padding:1rem;z-index:10000;font-size:0.9rem;text-align:center;">
+We use cookies for analytics to improve your experience. By clicking Accept, you consent to our use of cookies.
+<button onclick="acceptCookies()" style="margin-left:1rem;padding:0.4rem 1.2rem;background:#22c55e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Accept</button>
+<button onclick="declineCookies()" style="margin-left:0.5rem;padding:0.4rem 1.2rem;background:#666;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Decline</button>
+</div>
+<script>
+function loadGA(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';document.head.appendChild(s);s.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');};}
+function acceptCookies(){localStorage.setItem('cr-consent','accepted');document.getElementById('cookie-consent').style.display='none';loadGA();}
+function declineCookies(){localStorage.setItem('cr-consent','declined');document.getElementById('cookie-consent').style.display='none';}
+(function(){var c=localStorage.getItem('cr-consent');if(c==='accepted'){loadGA();}else if(c!=='declined'){document.getElementById('cookie-consent').style.display='block';}})();
+</script>
+</body>
+</html>

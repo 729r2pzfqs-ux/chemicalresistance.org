@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Chemical Storage Compatibility Checker | Can I Store These Together?</title>
+    <meta name="description" content="Free tool to check if chemicals can be stored together safely. Get cabinet recommendations based on OSHA and NFPA guidelines. Avoid dangerous reactions.">
+    <meta name="keywords" content="chemical storage compatibility, chemical segregation, hazardous storage, OSHA chemical storage, safety cabinet">
+    <link rel="canonical" href="https://chemicalresistance.org/storage-compatibility.html">
+    
+    <link rel="alternate" hreflang="en" href="https://chemicalresistance.org/storage-compatibility.html">
+    <link rel="alternate" hreflang="de" href="https://chemicalresistance.org/de/storage-compatibility.html">
+    <link rel="alternate" hreflang="es" href="https://chemicalresistance.org/es/storage-compatibility.html">
+    <link rel="alternate" hreflang="fr" href="https://chemicalresistance.org/fr/storage-compatibility.html">
+    <link rel="alternate" hreflang="pt" href="https://chemicalresistance.org/pt/storage-compatibility.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chemical Storage Compatibility Checker">
+    <meta property="og:description" content="Check if chemicals can be stored together safely. Free tool with OSHA/NFPA guidelines.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemicalresistance.org/storage-compatibility.html">
+    <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chemical Storage Compatibility Checker">
+    <meta name="twitter:description" content="Check if chemicals can be stored together safely. Free tool with OSHA/NFPA guidelines.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .rating-ok { background: #22c55e; color: white; }
+        .rating-caution { background: #f59e0b; color: white; }
+        .rating-separate { background: #f97316; color: white; }
+        .rating-never { background: #ef4444; color: white; }
+        .class-acid { background: #fef2f2; border-color: #ef4444; }
+        .class-base { background: #eff6ff; border-color: #3b82f6; }
+        .class-flammable { background: #fff7ed; border-color: #f97316; }
+        .class-oxidizer { background: #fefce8; border-color: #eab308; }
+        .class-toxic { background: #f5f3ff; border-color: #7c3aed; }
+        .class-corrosive { background: #fef2f2; border-color: #dc2626; }
+        .chemical-tag { transition: all 0.2s; }
+        .chemical-tag:hover { transform: scale(1.02); }
+    </style>
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Chemical Storage Compatibility Checker",
+        "description": "Check if chemicals can be stored together safely based on OSHA and NFPA guidelines",
+        "url": "https://chemicalresistance.org/storage-compatibility.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <img src="../logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Chemical compatibility database</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/" class="text-gray-600 hover:text-gray-900 hover:underline">Resistance Chart</a>
+                    <a href="/storage-compatibility.html" class="text-emerald-600 font-medium">Storage</a>
+                    <a href="/sds-decoder.html" class="text-gray-600 hover:text-gray-900 hover:underline">SDS Decoder</a>
+                    <a href="/viscosity.html" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosity</a>
+                    <a href="/about.html" class="text-gray-600 hover:text-gray-900 hover:underline">About</a>
+                </nav>
+                <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer" onchange="changeLanguage(this.value)">
+                    <option value="en" selected>🇬🇧 EN</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="pt">🇧🇷 PT</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Resistance Chart</a>
+                <a href="/storage-compatibility.html" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Storage Compatibility</a>
+                <a href="/sds-decoder.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDS Decoder</a>
+                <a href="/viscosity.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosity</a>
+                <a href="/about.html" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">About</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Hero -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <i data-lucide="box" class="w-8 h-8 inline-block text-blue-600 mr-2"></i>
+                Chemical Storage Compatibility
+            </h1>
+            <p class="text-gray-600 text-lg">Check if chemicals can be stored together safely. Based on OSHA & NFPA guidelines.</p>
+        </div>
+
+        <!-- Search & Add Chemicals -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Add chemicals to check compatibility:</label>
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                <input 
+                    type="text" 
+                    id="chemicalSearch" 
+                    placeholder="Search chemicals (e.g., sulfuric acid, acetone, sodium hydroxide...)"
+                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg"
+                    autocomplete="off"
+                >
+                <div id="searchResults" class="absolute w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden max-h-64 overflow-y-auto z-10"></div>
+            </div>
+            
+            <!-- Selected Chemicals -->
+            <div id="selectedChemicals" class="flex flex-wrap gap-2 mt-4 min-h-[48px]">
+                <span class="text-gray-400 text-sm" id="emptyState">No chemicals selected. Search and add chemicals above.</span>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="hidden">
+            <!-- Compatibility Matrix -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="git-compare" class="w-5 h-5 text-blue-600"></i>
+                    Compatibility Results
+                </h2>
+                <div id="compatibilityResults"></div>
+            </div>
+
+            <!-- Cabinet Recommendations -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="archive" class="w-5 h-5 text-blue-600"></i>
+                    Storage Recommendations
+                </h2>
+                <div id="cabinetRecommendations"></div>
+            </div>
+        </div>
+
+        <!-- Interactive Segregation Chart -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <i data-lucide="grid-3x3" class="w-5 h-5 text-blue-600"></i>
+                Chemical Segregation Chart
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">Click any cell to see details. Based on OSHA 29 CFR 1910.106 and NFPA 400</p>
+            
+            <!-- Visual Legend -->
+            <div class="flex flex-wrap gap-3 mb-6 p-3 bg-gray-50 rounded-lg">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-green-500 rounded"></div><span class="text-sm">OK to store together</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-yellow-500 rounded"></div><span class="text-sm">Check specific chemicals</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-orange-500 rounded"></div><span class="text-sm">Separate cabinets</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-red-600 rounded"></div><span class="text-sm">NEVER store together</span></div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="p-2 bg-gray-100 border border-gray-200"></th>
+                            <th class="p-3 bg-red-50 border border-gray-200 text-center">
+                                <img src="../img/ghs/ghs05.svg" alt="Acid" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-red-700">Acids</div>
+                            </th>
+                            <th class="p-3 bg-blue-50 border border-gray-200 text-center">
+                                <img src="../img/ghs/ghs05.svg" alt="Base" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-blue-700">Bases</div>
+                            </th>
+                            <th class="p-3 bg-orange-50 border border-gray-200 text-center">
+                                <img src="../img/ghs/ghs02.svg" alt="Flammable" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-orange-700">Flammables</div>
+                            </th>
+                            <th class="p-3 bg-yellow-50 border border-gray-200 text-center">
+                                <img src="../img/ghs/ghs03.svg" alt="Oxidizer" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-yellow-700">Oxidizers</div>
+                            </th>
+                            <th class="p-3 bg-purple-50 border border-gray-200 text-center">
+                                <img src="../img/ghs/ghs06.svg" alt="Toxic" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-purple-700">Toxics</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-3 bg-red-50 border border-gray-200 font-bold text-red-700">
+                                <img src="../img/ghs/ghs05.svg" alt="Acid" class="w-8 h-8 inline mr-2">Acids
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('acid','acid')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('acid','base')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','oxidizer')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('acid','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-blue-50 border border-gray-200 font-bold text-blue-700">
+                                <img src="../img/ghs/ghs05.svg" alt="Base" class="w-8 h-8 inline mr-2">Bases
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('base','acid')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('base','base')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('base','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','oxidizer')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-orange-50 border border-gray-200 font-bold text-orange-700">
+                                <img src="../img/ghs/ghs02.svg" alt="Flammable" class="w-8 h-8 inline mr-2">Flammables
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','acid')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','base')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('flammable','flammable')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('flammable','oxidizer')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','toxic')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-yellow-50 border border-gray-200 font-bold text-yellow-700">
+                                <img src="../img/ghs/ghs03.svg" alt="Oxidizer" class="w-8 h-8 inline mr-2">Oxidizers
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','acid')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('oxidizer','base')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('oxidizer','flammable')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('oxidizer','oxidizer')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','toxic')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-purple-50 border border-gray-200 font-bold text-purple-700">
+                                <img src="../img/ghs/ghs06.svg" alt="Toxic" class="w-8 h-8 inline mr-2">Toxics
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','acid')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','base')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','oxidizer')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-4 text-xs text-gray-600">
+                <span><span class="inline-block w-3 h-3 rounded rating-ok mr-1"></span> Can store together</span>
+                <span><span class="inline-block w-3 h-3 rounded rating-caution mr-1"></span> Check specific chemicals</span>
+                <span><span class="inline-block w-3 h-3 rounded rating-separate mr-1"></span> Separate cabinets/areas</span>
+                <span><span class="inline-block w-3 h-3 rounded rating-never mr-1"></span> Never store together</span>
+            </div>
+        </div>
+
+        <!-- Related Tools -->
+        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+            <h3 class="font-bold text-gray-900 mb-3">Related Tools</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                    <i data-lucide="flask-round" class="w-8 h-8 text-blue-600"></i>
+                    <div>
+                        <div class="font-medium text-gray-900">Chemical Resistance Chart</div>
+                        <div class="text-sm text-gray-600">Check material compatibility</div>
+                    </div>
+                </a>
+                <a href="/sds-decoder.html" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                    <i data-lucide="file-text" class="w-8 h-8 text-green-600"></i>
+                    <div>
+                        <div class="font-medium text-gray-900">SDS Decoder</div>
+                        <div class="text-sm text-gray-600">Plain-English safety data</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center text-gray-400 text-sm">
+                <p>⚠️ This tool provides general guidance only. Always consult Safety Data Sheets and local regulations.</p>
+                <p class="mt-2">© 2026 ChemicalResistance.org — <a href="/about.html" class="underline hover:text-white">About</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External chemical database -->
+    <script src="../js/chemicals_hazard_data.js"></script>
+    
+    <script>
+    // Use the external database
+    const chemicalDatabase = window.chemicalHazardDB;
+    const compatibilityRules = window.storageCompatibility;
+
+    const classColors = {
+        acid: { bg: "bg-red-100", border: "border-red-400", text: "text-red-700" },
+        base: { bg: "bg-blue-100", border: "border-blue-400", text: "text-blue-700" },
+        flammable: { bg: "bg-orange-100", border: "border-orange-400", text: "text-orange-700" },
+        oxidizer: { bg: "bg-yellow-100", border: "border-yellow-400", text: "text-yellow-700" },
+        toxic: { bg: "bg-purple-100", border: "border-purple-400", text: "text-purple-700" },
+        corrosive: { bg: "bg-red-100", border: "border-red-500", text: "text-red-800" }
+    };
+
+    const classNames = {
+        acid: "Acid", base: "Base", flammable: "Flammable", 
+        oxidizer: "Oxidizer", toxic: "Toxic", corrosive: "Corrosive"
+    };
+
+    let selectedChemicals = [];
+    const searchInput = document.getElementById('chemicalSearch');
+    const searchResults = document.getElementById('searchResults');
+    const selectedContainer = document.getElementById('selectedChemicals');
+    const emptyState = document.getElementById('emptyState');
+    const resultsSection = document.getElementById('results');
+
+    // Search functionality
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        if (query.length < 2) {
+            searchResults.classList.add('hidden');
+            return;
+        }
+
+        const matches = Object.keys(chemicalDatabase).filter(name => {
+            const chem = chemicalDatabase[name];
+            return name.toLowerCase().includes(query) || 
+                chem.cas?.includes(query) ||
+                chem.de?.toLowerCase().includes(query) ||
+                chem.es?.toLowerCase().includes(query) ||
+                chem.synonyms?.some(s => s.toLowerCase().includes(query));
+        }).slice(0, 10);
+
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="p-3 text-gray-500">No chemicals found</div>';
+        } else {
+            searchResults.innerHTML = matches.map(name => {
+                const chem = chemicalDatabase[name];
+                const classLabels = (chem.classes || []).map(c => 
+                    `<span class="text-xs px-1.5 py-0.5 rounded ${classColors[c]?.bg || 'bg-gray-100'} ${classColors[c]?.text || 'text-gray-700'}">${classNames[c] || c}</span>`
+                ).join(' ');
+                return `
+                    <div class="p-3 hover:bg-blue-50 cursor-pointer border-b last:border-b-0" onclick="addChemical('${name}')">
+                        <div class="font-medium text-gray-900">${name}</div>
+                        <div class="text-xs text-gray-500 mt-1">CAS: ${chem.cas || 'N/A'} · ${classLabels || 'Non-hazardous'}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+        searchResults.classList.remove('hidden');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.add('hidden');
+        }
+    });
+
+    function addChemical(name) {
+        if (selectedChemicals.includes(name)) return;
+        if (selectedChemicals.length >= 10) {
+            alert('Maximum 10 chemicals can be compared at once');
+            return;
+        }
+        selectedChemicals.push(name);
+        searchInput.value = '';
+        searchResults.classList.add('hidden');
+        updateSelectedDisplay();
+        updateResults();
+    }
+
+    function removeChemical(name) {
+        selectedChemicals = selectedChemicals.filter(c => c !== name);
+        updateSelectedDisplay();
+        updateResults();
+    }
+
+    function updateSelectedDisplay() {
+        if (selectedChemicals.length === 0) {
+            selectedContainer.innerHTML = '<span class="text-gray-400 text-sm">No chemicals selected. Search and add chemicals above.</span>';
+            resultsSection.classList.add('hidden');
+            return;
+        }
+
+        selectedContainer.innerHTML = selectedChemicals.map(name => {
+            const chem = chemicalDatabase[name];
+            const mainClass = (chem.classes || [])[0];
+            const colors = classColors[mainClass] || { bg: 'bg-gray-100', border: 'border-gray-300', text: 'text-gray-700' };
+            return `
+                <div class="chemical-tag flex items-center gap-2 px-3 py-2 rounded-lg border-2 ${colors.bg} ${colors.border}">
+                    <span class="font-medium ${colors.text}">${name}</span>
+                    <button onclick="removeChemical('${name}')" class="text-gray-400 hover:text-red-500">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            `;
+        }).join('');
+        lucide.createIcons();
+    }
+
+    function getCompatibility(class1, class2) {
+        const key1 = `${class1}+${class2}`;
+        const key2 = `${class2}+${class1}`;
+        return compatibilityRules[key1] || compatibilityRules[key2] || { rating: "caution", reason: "Check specific chemicals" };
+    }
+
+    function updateResults() {
+        if (selectedChemicals.length < 2) {
+            resultsSection.classList.add('hidden');
+            return;
+        }
+        resultsSection.classList.remove('hidden');
+
+        const pairs = [];
+        for (let i = 0; i < selectedChemicals.length; i++) {
+            for (let j = i + 1; j < selectedChemicals.length; j++) {
+                const chem1 = chemicalDatabase[selectedChemicals[i]];
+                const chem2 = chemicalDatabase[selectedChemicals[j]];
+                
+                let worstRating = "ok";
+                let worstReason = "Compatible for storage";
+                
+                for (const c1 of (chem1.classes || [])) {
+                    for (const c2 of (chem2.classes || [])) {
+                        const compat = getCompatibility(c1, c2);
+                        if (compat.rating === "never" || (compat.rating === "separate" && worstRating !== "never") || 
+                            (compat.rating === "caution" && worstRating === "ok")) {
+                            worstRating = compat.rating;
+                            worstReason = compat.reason;
+                        }
+                    }
+                }
+                
+                pairs.push({
+                    chem1: selectedChemicals[i],
+                    chem2: selectedChemicals[j],
+                    rating: worstRating,
+                    reason: worstReason
+                });
+            }
+        }
+
+        const severity = { never: 0, separate: 1, caution: 2, ok: 3 };
+        pairs.sort((a, b) => severity[a.rating] - severity[b.rating]);
+
+        const ratingIcons = { ok: '✓', caution: '⚠️', separate: '↔️', never: '✗' };
+        const ratingLabels = { ok: 'OK', caution: 'Caution', separate: 'Separate', never: 'NEVER' };
+
+        document.getElementById('compatibilityResults').innerHTML = pairs.map(p => `
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-3 border-b last:border-b-0 ${p.rating === 'never' ? 'bg-red-50' : ''}">
+                <div class="flex items-center gap-3 mb-2 md:mb-0">
+                    <span class="font-medium">${p.chem1}</span>
+                    <span class="text-gray-400">+</span>
+                    <span class="font-medium">${p.chem2}</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm text-gray-600">${p.reason}</span>
+                    <span class="px-2 py-1 rounded text-xs font-medium rating-${p.rating}">${ratingIcons[p.rating]} ${ratingLabels[p.rating]}</span>
+                </div>
+            </div>
+        `).join('');
+
+        // Cabinet recommendations
+        const cabinets = { acid: [], base: [], flammable: [], oxidizer: [], toxic: [], general: [] };
+        
+        for (const name of selectedChemicals) {
+            const chem = chemicalDatabase[name];
+            const classes = chem.classes || [];
+            if (classes.includes('acid')) cabinets.acid.push(name);
+            else if (classes.includes('base')) cabinets.base.push(name);
+            else if (classes.includes('flammable')) cabinets.flammable.push(name);
+            else if (classes.includes('oxidizer')) cabinets.oxidizer.push(name);
+            else if (classes.includes('toxic')) cabinets.toxic.push(name);
+            else cabinets.general.push(name);
+        }
+
+        const cabinetLabels = {
+            acid: { name: 'Acid Cabinet', icon: 'flask-round', color: 'red' },
+            base: { name: 'Base/Alkali Cabinet', icon: 'droplets', color: 'blue' },
+            flammable: { name: 'Flammable Safety Cabinet', icon: 'flame', color: 'orange' },
+            oxidizer: { name: 'Oxidizer Cabinet', icon: 'zap', color: 'yellow' },
+            toxic: { name: 'Toxic Storage', icon: 'skull', color: 'purple' },
+            general: { name: 'General Storage', icon: 'box', color: 'gray' }
+        };
+
+        document.getElementById('cabinetRecommendations').innerHTML = Object.entries(cabinets)
+            .filter(([_, chems]) => chems.length > 0)
+            .map(([cab, chems]) => {
+                const info = cabinetLabels[cab];
+                return `
+                    <div class="p-4 rounded-lg border-2 border-${info.color}-200 bg-${info.color}-50 mb-3 last:mb-0">
+                        <div class="flex items-center gap-2 font-medium text-${info.color}-700 mb-2">
+                            <i data-lucide="${info.icon}" class="w-5 h-5"></i>
+                            ${info.name}
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            ${chems.map(c => `<span class="px-2 py-1 bg-white rounded text-sm">${c}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+        lucide.createIcons();
+    }
+
+    function changeLanguage(lang) {
+        const urls = {
+            en: '/storage-compatibility.html',
+            de: '/de/storage-compatibility.html',
+            es: '/es/storage-compatibility.html',
+            fr: '/fr/storage-compatibility.html',
+            pt: '/pt/storage-compatibility.html'
+        };
+        window.location.href = urls[lang] || urls.en;
+    }
+
+    // Compatibility info popup
+    const compatDetails = {
+        'acid+acid': { title: '✅ Acids Together', msg: 'Acids can generally be stored together in an acid-resistant cabinet. Keep away from metals and bases.' },
+        'acid+base': { title: '❌ NEVER: Acids + Bases', msg: 'VIOLENT REACTION! Mixing acids and bases causes exothermic neutralization. Can boil, splash, release heat and toxic fumes.' },
+        'base+acid': { title: '❌ NEVER: Bases + Acids', msg: 'VIOLENT REACTION! Mixing bases and acids causes exothermic neutralization. Can boil, splash, release heat and toxic fumes.' },
+        'acid+flammable': { title: '↔ Separate: Acids + Flammables', msg: 'Store in separate cabinets. Acids can generate heat and may ignite flammables. Some acids react with organics.' },
+        'flammable+acid': { title: '↔ Separate: Flammables + Acids', msg: 'Store in separate cabinets. Acids can generate heat and may ignite flammables.' },
+        'acid+oxidizer': { title: '↔ Separate: Acids + Oxidizers', msg: 'Store separately. Some combinations produce toxic gases (e.g., chlorine from bleach + acid).' },
+        'oxidizer+acid': { title: '↔ Separate: Oxidizers + Acids', msg: 'Store separately. Some combinations produce toxic gases (e.g., chlorine from bleach + acid).' },
+        'acid+toxic': { title: '⚠ Check: Acids + Toxics', msg: 'Check specific chemicals. Some toxic compounds release dangerous gases when acidified (e.g., cyanides → HCN).' },
+        'toxic+acid': { title: '⚠ Check: Toxics + Acids', msg: 'Check specific chemicals. Some toxic compounds release dangerous gases when acidified (e.g., cyanides → HCN).' },
+        'base+base': { title: '✅ Bases Together', msg: 'Bases can be stored together. Keep away from acids and reactive metals (aluminum, zinc).' },
+        'base+flammable': { title: '↔ Separate: Bases + Flammables', msg: 'Store in separate cabinets. Strong bases can react with some organic compounds.' },
+        'flammable+base': { title: '↔ Separate: Flammables + Bases', msg: 'Store in separate cabinets.' },
+        'base+oxidizer': { title: '⚠ Check: Bases + Oxidizers', msg: 'Check specific chemicals. Generally less reactive than acids + oxidizers, but some combinations are hazardous.' },
+        'oxidizer+base': { title: '⚠ Check: Oxidizers + Bases', msg: 'Check specific chemicals.' },
+        'base+toxic': { title: '⚠ Check: Bases + Toxics', msg: 'Check specific chemicals. Some reactions possible.' },
+        'toxic+base': { title: '⚠ Check: Toxics + Bases', msg: 'Check specific chemicals.' },
+        'flammable+flammable': { title: '✅ Flammables Together', msg: 'Store together in approved flammable safety cabinet. Ground containers, keep away from ignition sources.' },
+        'flammable+oxidizer': { title: '❌ NEVER: Flammables + Oxidizers', msg: 'EXTREME FIRE/EXPLOSION HAZARD! Oxidizers intensify fires and can cause spontaneous ignition of flammables.' },
+        'oxidizer+flammable': { title: '❌ NEVER: Oxidizers + Flammables', msg: 'EXTREME FIRE/EXPLOSION HAZARD! Oxidizers intensify fires and can cause spontaneous ignition of flammables.' },
+        'flammable+toxic': { title: '↔ Separate: Flammables + Toxics', msg: 'Store in separate ventilated areas. Fire involving toxics creates extremely hazardous conditions.' },
+        'toxic+flammable': { title: '↔ Separate: Toxics + Flammables', msg: 'Store in separate ventilated areas.' },
+        'oxidizer+oxidizer': { title: '✅ Oxidizers Together', msg: 'Generally OK, but check specific chemicals. Some oxidizers are incompatible with each other.' },
+        'oxidizer+toxic': { title: '↔ Separate: Oxidizers + Toxics', msg: 'Store separately. Oxidizers can react with toxic compounds to release hazardous fumes.' },
+        'toxic+oxidizer': { title: '↔ Separate: Toxics + Oxidizers', msg: 'Store separately.' },
+        'toxic+toxic': { title: '⚠ Check: Toxics Together', msg: 'Check specific chemicals. Many toxics can be stored together, but verify no reactions occur.' }
+    };
+
+    function showCompatInfo(class1, class2) {
+        const key = `${class1}+${class2}`;
+        const info = compatDetails[key] || { title: 'Check Compatibility', msg: 'Consult safety data sheets for these specific chemicals.' };
+        alert(`${info.title}\n\n${info.msg}`);
+    }
+
+    lucide.createIcons();
+    </script>
+<div id="cookie-consent" style="display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.85);color:#fff;padding:1rem;z-index:10000;font-size:0.9rem;text-align:center;">
+We use cookies for analytics to improve your experience. By clicking Accept, you consent to our use of cookies.
+<button onclick="acceptCookies()" style="margin-left:1rem;padding:0.4rem 1.2rem;background:#22c55e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Accept</button>
+<button onclick="declineCookies()" style="margin-left:0.5rem;padding:0.4rem 1.2rem;background:#666;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Decline</button>
+</div>
+<script>
+function loadGA(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';document.head.appendChild(s);s.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');};}
+function acceptCookies(){localStorage.setItem('cr-consent','accepted');document.getElementById('cookie-consent').style.display='none';loadGA();}
+function declineCookies(){localStorage.setItem('cr-consent','declined');document.getElementById('cookie-consent').style.display='none';}
+(function(){var c=localStorage.getItem('cr-consent');if(c==='accepted'){loadGA();}else if(c!=='declined'){document.getElementById('cookie-consent').style.display='block';}})();
+</script>
+</body>
+</html>

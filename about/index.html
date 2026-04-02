@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ChemicalResistance.org | Free Chemical Compatibility Database</title>
+    <meta name="description" content="Learn about ChemicalResistance.org - a free tool for engineers and safety professionals to check material compatibility with chemicals.">
+    <link rel="canonical" href="https://chemicalresistance.org/about">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+    </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "About ChemicalResistance.org", "description": "Learn about our chemical compatibility database, data sources, rating system, and methodology.", "url": "https://chemicalresistance.org/about", "dateModified": "2026-03-27"}</script>
+
+    <meta property="og:title" content="About ChemicalResistance.org | Free Chemical Compatibility Database">
+    <meta property="og:description" content="Learn about ChemicalResistance.org - a free tool for engineers and safety professionals to check material compatibility with chemicals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemicalresistance.org/about">
+    <meta property="og:site_name" content="ChemicalResistance.org">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About ChemicalResistance.org | Free Chemical Compatibility Database">
+    <meta name="twitter:description" content="Learn about ChemicalResistance.org - a free tool for engineers and safety professionals to check material compatibility with chemicals.">
+</head>
+<body class="text-gray-700 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="../index" class="flex items-center gap-2">
+                <img src="../logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Chemical compatibility database</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="../index" class="text-gray-600 hover:text-gray-900 hover:underline">Resistance Chart</a>
+                    <a href="../storage-compatibility" class="text-gray-600 hover:text-gray-900 hover:underline">Storage</a>
+                    <a href="../sds-decoder" class="text-gray-600 hover:text-gray-900 hover:underline">SDS Decoder</a>
+                    <a href="../viscosity" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosity</a>
+                    <a href="../about" class="text-emerald-600 font-medium">About</a>
+                </nav>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="../index" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Resistance Chart</a>
+                <a href="../storage-compatibility" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Storage Compatibility</a>
+                <a href="../sds-decoder" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDS Decoder</a>
+                <a href="../viscosity" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosity</a>
+                <a href="../about" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">About</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-emerald-50 to-white px-4 py-12 md:py-16">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                About ChemicalResistance.org
+            </h1>
+            <p class="text-lg text-gray-600">
+                A free, modern tool for finding compatible materials for chemical storage and handling.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="px-4 py-12">
+        <div class="max-w-3xl mx-auto">
+            
+            <!-- Mission -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Choosing the wrong material for chemical storage can lead to container failure, leaks, 
+                    environmental damage, and workplace injuries. Yet finding reliable compatibility data 
+                    has traditionally meant digging through scattered PDF charts or expensive proprietary databases.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    <strong>ChemicalResistance.org</strong> was created to change that. We've built a fast, 
+                    searchable database covering <strong>1,650+ chemicals</strong> and <strong>24 materials</strong> — 
+                    completely free, with no registration required.
+                </p>
+            </div>
+
+            <!-- Who It's For -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Who Is This For?</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="text-2xl mb-2">🏭</div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Chemical Engineers</h3>
+                        <p class="text-sm text-gray-600">Selecting materials for process equipment, piping, and storage tanks.</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="text-2xl mb-2">🦺</div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Safety Professionals</h3>
+                        <p class="text-sm text-gray-600">Ensuring proper secondary containment and spill response equipment.</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="text-2xl mb-2">🔧</div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Maintenance Teams</h3>
+                        <p class="text-sm text-gray-600">Choosing compatible seals, gaskets, and replacement parts.</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="text-2xl mb-2">🛒</div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Procurement Managers</h3>
+                        <p class="text-sm text-gray-600">Specifying the right drums, IBCs, and storage containers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What We Cover -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">What We Cover</h2>
+                <div class="bg-white rounded-xl border border-gray-200 p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-3">1,650+ Chemicals</h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Acids (sulfuric, hydrochloric, nitric, etc.)</li>
+                                <li>• Bases (sodium hydroxide, ammonia, etc.)</li>
+                                <li>• Solvents (acetone, toluene, alcohols)</li>
+                                <li>• Fuels (gasoline, diesel, biodiesel)</li>
+                                <li>• Oils (hydraulic, motor, silicone)</li>
+                                <li>• Salts and aqueous solutions</li>
+                                <li>• Food-grade substances</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-3">24 Materials</h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• <strong>Plastics:</strong> HDPE, LDPE, PP, PVC, PA, PC, POM</li>
+                                <li>• <strong>Fluoropolymers:</strong> PTFE, PVDF, FEP, ECTFE</li>
+                                <li>• <strong>Elastomers:</strong> EPDM, Viton (FPM), NBR, Silicone</li>
+                                <li>• <strong>Metals:</strong> SS 304, SS 316, Aluminum</li>
+                            </ul>
+                            <p class="text-sm text-gray-500 mt-3">
+                                Ratings at both 20°C and 50°C where available.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Source -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Data Source</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Our chemical resistance data is based on the comprehensive compatibility charts published by 
+                    <a href="https://buerkle.de" class="text-emerald-600 hover:underline font-medium">Bürkle GmbH</a>, 
+                    a German manufacturer of laboratory and industrial equipment with decades of expertise in 
+                    chemical handling.
+                </p>
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                    <p class="text-sm text-amber-800">
+                        <strong>Important:</strong> Bürkle generously allows this data to be "freely passed on and copied" 
+                        with attribution. We maintain this attribution throughout our site and encourage users to 
+                        visit <a href="https://buerkle.de" class="underline">buerkle.de</a> for their original materials.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Rating System -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Rating System</h2>
+                <p class="text-gray-600 mb-4">We use a simple A-D rating scale:</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-emerald-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">A</span>
+                        <span class="text-gray-700"><strong>Excellent</strong> — Fully resistant. Recommended for long-term use.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">B</span>
+                        <span class="text-gray-700"><strong>Good</strong> — Minor effect possible. Suitable for most applications.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-amber-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">C</span>
+                        <span class="text-gray-700"><strong>Limited</strong> — Some degradation expected. Short-term use only.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">D</span>
+                        <span class="text-gray-700"><strong>Not Recommended</strong> — Significant attack. Do not use.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-gray-300 text-gray-600 px-3 py-1 rounded font-bold text-sm w-12 text-center">NR</span>
+                        <span class="text-gray-700"><strong>No Data</strong> — Not tested or data unavailable.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Disclaimer</h2>
+                <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+                    <p class="text-red-800 mb-3">
+                        <strong>⚠️ This tool is for guidance only.</strong>
+                    </p>
+                    <p class="text-sm text-red-700 mb-3">
+                        Chemical resistance depends on many factors beyond what a single database can capture:
+                    </p>
+                    <ul class="text-sm text-red-700 list-disc list-inside space-y-1 mb-3">
+                        <li>Actual concentration and purity</li>
+                        <li>Temperature and pressure conditions</li>
+                        <li>Exposure time and cycling</li>
+                        <li>Mechanical stress and UV exposure</li>
+                        <li>Presence of other chemicals (mixtures)</li>
+                        <li>Material grade and manufacturer variations</li>
+                    </ul>
+                    <p class="text-sm text-red-700">
+                        <strong>Always verify compatibility with your equipment manufacturer and conduct testing 
+                        for critical applications.</strong> We accept no liability for decisions made based on 
+                        this information.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Additional Tools -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Additional Tools</h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="../viscosity" class="bg-white rounded-xl border border-gray-200 p-5 hover:border-emerald-300 transition-colors block">
+                        <div class="text-2xl mb-2">💧</div>
+                        <h3 class="font-semibold text-gray-900">Viscosity Lookup</h3>
+                        <p class="text-sm text-gray-600">100+ liquids with mPa·s values for pump selection.</p>
+                    </a>
+                    <a href="../index#guide" class="bg-white rounded-xl border border-gray-200 p-5 hover:border-emerald-300 transition-colors block">
+                        <div class="text-2xl mb-2">📚</div>
+                        <h3 class="font-semibold text-gray-900">Material Guides</h3>
+                        <p class="text-sm text-gray-600">Detailed pages for HDPE, PP, PTFE, Viton, and more.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact</h2>
+                <p class="text-gray-600">
+                    Found an error? Have a suggestion? We'd love to hear from you.
+                </p>
+                <p class="text-gray-600 mt-2">
+                    Email: <a href="mailto:hello@chemicalresistance.org" class="text-emerald-600 hover:underline">hello@chemicalresistance.org</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>© 2026 ChemicalResistance.org — Free Chemical Compatibility Tool</p>
+            <p class="mt-2">Chemical resistance data based on <a href="https://buerkle.de" class="text-emerald-400 hover:underline">Bürkle GmbH (buerkle.de)</a></p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+<div id="cookie-consent" style="display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.85);color:#fff;padding:1rem;z-index:10000;font-size:0.9rem;text-align:center;">
+We use cookies for analytics to improve your experience. By clicking Accept, you consent to our use of cookies.
+<button onclick="acceptCookies()" style="margin-left:1rem;padding:0.4rem 1.2rem;background:#22c55e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Accept</button>
+<button onclick="declineCookies()" style="margin-left:0.5rem;padding:0.4rem 1.2rem;background:#666;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Decline</button>
+</div>
+<script>
+function loadGA(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';document.head.appendChild(s);s.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');};}
+function acceptCookies(){localStorage.setItem('cr-consent','accepted');document.getElementById('cookie-consent').style.display='none';loadGA();}
+function declineCookies(){localStorage.setItem('cr-consent','declined');document.getElementById('cookie-consent').style.display='none';}
+(function(){var c=localStorage.getItem('cr-consent');if(c==='accepted'){loadGA();}else if(c!=='declined'){document.getElementById('cookie-consent').style.display='block';}})();
+</script>
+</body>
+</html>
