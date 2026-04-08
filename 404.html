@@ -4,60 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Page Not Found | ChemicalResistance.org</title>
-    <link rel="icon" href="/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:title" content="404 - Page Not Found | ChemicalResistance.org">
+    <title>404 - Page Not Found | ChemicalResistance.org</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>*{font-family:'Inter',sans-serif}body{background:#f8fafc}</style>
-
-    <meta property="og:title" content="Page Not Found | ChemicalResistance.org">
-    <meta property="og:description" content="Chemical resistance and compatibility guide">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chemicalresistance.org/">
-    <meta property="og:site_name" content="ChemicalResistance.org">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Page Not Found | ChemicalResistance.org">
-    <meta name="twitter:description" content="Chemical resistance and compatibility guide">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; display: flex; flex-direction: column; color: #333; }
+        header { background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem 2rem; }
+        header img { height: 40px; width: auto; }
+        main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+        .container { text-align: center; background: white; padding: 3rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); max-width: 600px; width: 100%; }
+        h1 { font-size: 4rem; color: #10b981; margin-bottom: 1rem; font-weight: 700; }
+        .message { font-size: 1.25rem; color: #666; margin-bottom: 2rem; line-height: 1.6; }
+        .redirect-info { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; font-size: 0.95rem; color: #047857; display: none; }
+        .button-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem; }
+        button, a { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; font-weight: 500; }
+        .btn-primary { background: #10b981; color: white; }
+        .btn-primary:hover { background: #059669; transform: translateY(-2px); }
+        .btn-secondary { background: #e5e7eb; color: #374151; }
+        .btn-secondary:hover { background: #d1d5db; }
+        footer { background: white; border-top: 1px solid #e5e7eb; padding: 1.5rem; text-align: center; color: #999; font-size: 0.875rem; }
+        @media (max-width: 600px) { .container { padding: 2rem; } h1 { font-size: 3rem; } .button-group { flex-direction: column; } button, a { width: 100%; } }
+    </style>
 </head>
-<body class="text-gray-700 min-h-screen">
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2">
-                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
-                <div>
-                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
-                    <div class="text-xs text-gray-500">Chemical compatibility database</div>
-                </div>
-            </a>
-        </div>
-    </header>
-
-    <main class="flex items-center justify-center" style="min-height:60vh;">
-        <div class="text-center px-4">
-            <div class="text-8xl font-bold text-gray-200 mb-4">404</div>
-            <h1 class="text-2xl font-bold text-gray-900 mb-3">Page Not Found</h1>
-            <p class="text-gray-500 mb-8 max-w-md mx-auto">The page you're looking for doesn't exist or may have moved. Try searching for a chemical or browse our materials.</p>
-            <div class="flex gap-3 justify-center flex-wrap">
-                <a href="/" class="bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700">Search Chemicals</a>
-                <a href="/materials/" class="border border-gray-300 px-6 py-3 rounded-lg font-medium hover:border-emerald-500">Browse Materials</a>
-                <a href="/about" class="border border-gray-300 px-6 py-3 rounded-lg font-medium hover:border-emerald-500">About</a>
+<body>
+    <header><img src="/logo-192.png" alt="ChemicalResistance.org"></header>
+    <main>
+        <div class="container">
+            <h1>404</h1>
+            <div class="message">The page you're looking for doesn't exist or may have moved.</div>
+            <div class="redirect-info" id="redirectInfo"></div>
+            <div class="button-group">
+                <button class="btn-primary" onclick="goToSearch()">Search Chemicals</button>
+                <a href="/materials/" class="btn-secondary">Browse Materials</a>
+                <a href="/about/" class="btn-secondary">About</a>
             </div>
         </div>
     </main>
-
-    <footer class="bg-gray-900 text-gray-400 py-6 px-4 text-center text-sm">
-        <p>© 2026 ChemicalResistance.org</p>
-    </footer>
-<div id="cookie-consent" style="display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.85);color:#fff;padding:1rem;z-index:10000;font-size:0.9rem;text-align:center;">
-We use cookies for analytics to improve your experience. By clicking Accept, you consent to our use of cookies.
-<button onclick="acceptCookies()" style="margin-left:1rem;padding:0.4rem 1.2rem;background:#22c55e;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Accept</button>
-<button onclick="declineCookies()" style="margin-left:0.5rem;padding:0.4rem 1.2rem;background:#666;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">Decline</button>
-</div>
-<script>
-function loadGA(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';document.head.appendChild(s);s.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');};}
-function acceptCookies(){localStorage.setItem('cr-consent','accepted');document.getElementById('cookie-consent').style.display='none';loadGA();}
-function declineCookies(){localStorage.setItem('cr-consent','declined');document.getElementById('cookie-consent').style.display='none';}
-(function(){var c=localStorage.getItem('cr-consent');if(c==='accepted'){loadGA();}else if(c!=='declined'){document.getElementById('cookie-consent').style.display='block';}})();
-</script>
+    <footer><p>&copy; 2026 ChemicalResistance.org. All rights reserved.</p></footer>
+    <script>
+        var germanToEnglishChemicals = {
+            "maiskeim-l": "corn-oil",
+            "chlorwasserstoff-gas": "hydrochloric-acid-gas",
+            "chlorwasserstoff-l": "hydrochloric-acid",
+            "mineral-l": "mineral-oil",
+            "schmier-le": "lubricating-oils",
+            "phthals-ure": "phthalic-acid",
+            "salzs-ure": "hydrochloric-acid",
+            "schwefels-ure": "sulfuric-acid",
+            "salpeters-ure": "nitric-acid",
+            "k-mmel": "caraway",
+            "roh-l": "crude-oil",
+            "essigs-ure": "acetic-acid",
+            "ameisens-ure": "formic-acid",
+            "milchs-ure": "lactic-acid",
+            "oxals-ure": "oxalic-acid",
+            "weins-ure": "tartaric-acid",
+            "boraxs-ure": "boric-acid",
+            "zitronens-ure": "citric-acid"
+        };
+        var knownMaterials = ["pp","hdpe","ldpe","petg","pvc-rigid","pvc-flexible","ptfe","pvdf","epdm","silicone","viton","nylon-pa","polycarbonate","polystyrene","polysulfone","san","acetal-pom","ectfe-etfe","fep","pmp","stainless-steel-304","ss316","aluminium"];
+        function parseUrl() {
+            var pathname = window.location.pathname;
+            var parts = pathname.split('/').filter(function(p) { return p; });
+            return {
+                pathname: pathname,
+                parts: parts,
+                isChemicalPath: parts[0] === 'chemicals',
+                isOldMaterialPath: parts[0] === 'materials' && pathname.endsWith('.html'),
+                isOldViscosityPath: pathname === '/viscosity.html'
+            };
+        }
+        function attemptRedirect() {
+            var url = parseUrl();
+            var redirectUrl = null;
+            var redirectReason = '';
+            if (url.isChemicalPath && url.parts.length >= 2) {
+                var slug = url.parts[1].toLowerCase();
+                var material = url.parts[2] ? url.parts[2].toLowerCase() : null;
+                var englishSlug = germanToEnglishChemicals[slug] || slug;
+                if (material && knownMaterials.includes(material)) {
+                    redirectUrl = '/chemicals/' + englishSlug + '/' + material + '/';
+                    redirectReason = 'Redirecting from German chemical name to English equivalent';
+                } else if (slug !== englishSlug) {
+                    redirectUrl = '/chemicals/' + englishSlug + '/';
+                    redirectReason = 'Redirecting to English chemical name';
+                }
+            }
+            if (url.isOldMaterialPath && url.parts.length === 2) {
+                var materialName = url.parts[1].replace('.html', '');
+                redirectUrl = '/materials/' + materialName + '/';
+                redirectReason = 'Redirecting from old HTML format';
+            }
+            if (url.isOldViscosityPath) {
+                redirectUrl = '/viscosity/';
+                redirectReason = 'Redirecting from old viscosity page format';
+            }
+            if (redirectUrl) {
+                showRedirectInfo(redirectReason, redirectUrl);
+                setTimeout(function() { window.location.href = redirectUrl; }, 3000);
+            }
+        }
+        function showRedirectInfo(reason, redirectUrl) {
+            var infoDiv = document.getElementById('redirectInfo');
+            infoDiv.innerHTML = '<strong>Redirect:</strong> ' + reason + '<br>Redirecting to <a href="' + redirectUrl + '" style="color: #047857; text-decoration: underline;">' + redirectUrl + '</a> in 3 seconds...';
+            infoDiv.style.display = 'block';
+        }
+        function goToSearch() { window.location.href = '/'; }
+        window.addEventListener('load', attemptRedirect);
+    </script>
+    <div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.9); color: white; padding: 1rem; text-align: center; z-index: 9999; display: none;">
+        <p style="margin-bottom: 1rem;">We use cookies to improve your experience.</p>
+        <button onclick="acceptCookies()" style="background: #10b981; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; margin-right: 0.5rem; cursor: pointer;">Accept</button>
+        <button onclick="declineCookies()" style="background: #6b7280; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Decline</button>
+    </div>
+    <script>
+        function showCookieConsent() {
+            var consent = localStorage.getItem('cookieConsent');
+            if (consent === null) {
+                document.getElementById('cookieConsent').style.display = 'block';
+            } else if (consent === 'accepted') {
+                loadGoogleAnalytics();
+            }
+        }
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieConsent').style.display = 'none';
+            loadGoogleAnalytics();
+        }
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieConsent').style.display = 'none';
+        }
+        function loadGoogleAnalytics() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';
+            document.head.appendChild(script);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LTK6VVHYDW');
+        }
+        showCookieConsent();
+    </script>
 </body>
 </html>
