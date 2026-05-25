@@ -19,13 +19,13 @@
         .message { font-size: 1.25rem; color: #666; margin-bottom: 2rem; line-height: 1.6; }
         .redirect-info { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; font-size: 0.95rem; color: #047857; display: none; }
         .button-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem; }
-        button, a { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; font-weight: 500; }
+        button, a.btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; font-weight: 500; }
         .btn-primary { background: #10b981; color: white; }
         .btn-primary:hover { background: #059669; transform: translateY(-2px); }
         .btn-secondary { background: #e5e7eb; color: #374151; }
         .btn-secondary:hover { background: #d1d5db; }
         footer { background: white; border-top: 1px solid #e5e7eb; padding: 1.5rem; text-align: center; color: #999; font-size: 0.875rem; }
-        @media (max-width: 600px) { .container { padding: 2rem; } h1 { font-size: 3rem; } .button-group { flex-direction: column; } button, a { width: 100%; } }
+        @media (max-width: 600px) { .container { padding: 2rem; } h1 { font-size: 3rem; } .button-group { flex-direction: column; } button, a.btn { width: 100%; } }
     </style>
 </head>
 <body>
@@ -37,117 +37,184 @@
             <div class="redirect-info" id="redirectInfo"></div>
             <div class="button-group">
                 <button class="btn-primary" onclick="goToSearch()">Search Chemicals</button>
-                <a href="/materials/" class="btn-secondary">Browse Materials</a>
-                <a href="/about/" class="btn-secondary">About</a>
+                <a href="/materials/" class="btn btn-secondary">Browse Materials</a>
+                <a href="/about/" class="btn btn-secondary">About</a>
             </div>
         </div>
     </main>
     <footer><p>&copy; 2026 ChemicalResistance.org. All rights reserved.</p></footer>
     <script>
-        var germanToEnglishChemicals = {
-            "maiskeim-l": "corn-oil",
-            "chlorwasserstoff-gas": "hydrochloric-acid-gas",
-            "chlorwasserstoff-l": "hydrochloric-acid",
-            "mineral-l": "mineral-oil",
-            "schmier-le": "lubricating-oils",
-            "phthals-ure": "phthalic-acid",
-            "salzs-ure": "hydrochloric-acid",
-            "schwefels-ure": "sulfuric-acid",
-            "salpeters-ure": "nitric-acid",
-            "k-mmel": "caraway",
-            "roh-l": "crude-oil",
-            "essigs-ure": "acetic-acid",
-            "ameisens-ure": "formic-acid",
-            "milchs-ure": "lactic-acid",
-            "oxals-ure": "oxalic-acid",
-            "weins-ure": "tartaric-acid",
-            "boraxs-ure": "boric-acid",
-            "zitronens-ure": "citric-acid"
+    (function() {
+        var germanToEnglish = {
+            "maiskeim-l": "corn-oil", "chlorwasserstoff-gas": "hydrochloric-acid-gas",
+            "chlorwasserstoff-l": "hydrochloric-acid", "mineral-l": "mineral-oil",
+            "schmier-le": "lubricating-oils", "phthals-ure": "phthalic-acid",
+            "salzs-ure": "hydrochloric-acid", "schwefels-ure": "sulfuric-acid",
+            "salpeters-ure": "nitric-acid", "k-mmel": "caraway", "roh-l": "crude-oil",
+            "essigs-ure": "acetic-acid", "ameisens-ure": "formic-acid",
+            "milchs-ure": "lactic-acid", "oxals-ure": "oxalic-acid",
+            "weins-ure": "tartaric-acid", "boraxs-ure": "boric-acid",
+            "zitronens-ure": "citric-acid", "butters-ure": "butyric-acid",
+            "blaus-ure": "hydrocyanic-acid", "bors-ure": "boric-acid",
+            "broms-ure": "hydrobromic-acid", "bromwasserstoffs-ure": "hydrobromic-acid",
+            "bernsteins-ure": "succinic-acid", "benzoes-ure": "benzoic-acid",
+            "benzolsulfons-ure": "benzenesulfonic-acid", "arsens-ure": "arsenic-acid",
+            "ascorbins-ure": "ascorbic-acid", "adipins-ure": "adipic-acid",
+            "akkus-ure": "battery-acid", "aminoessigs-ure": "glycine",
+            "acetylsalicyls-ure": "acetylsalicylic-acid", "chromsaeure": "chromic-acid",
+            "chroms-ure": "chromic-acid", "flusss-ure": "hydrofluoric-acid",
+            "glycols-ure": "glycolic-acid", "harns-ure": "uric-acid",
+            "jodwasserstoffs-ure": "hydroiodic-acid", "kieselflusss-ure": "fluorosilicic-acid",
+            "kohlens-ure": "carbonic-acid", "linolens-ure": "linolenic-acid",
+            "linols-ure": "linoleic-acid", "maleins-ure": "maleic-acid",
+            "malons-ure": "malonic-acid", "mandels-ure": "mandelic-acid",
+            "methansulfons-ure": "methanesulfonic-acid", "oels-ure": "oleic-acid",
+            "perchlors-ure": "perchloric-acid", "phosphors-ure": "phosphoric-acid",
+            "pikrinsa-ure": "picric-acid", "propions-ure": "propionic-acid",
+            "salpetrige-s-ure": "nitrous-acid", "stearins-ure": "stearic-acid",
+            "sulfamins-ure": "sulfamic-acid", "tannins-ure": "tannic-acid",
+            "toluolsulfons-ure": "toluenesulfonic-acid", "trifluoressigs-ure": "trifluoroacetic-acid",
+            "wolframsaeure": "tungstic-acid",
+            /* Common German chemical names */
+            "aceton": "acetone", "acetaldehyd": "acetaldehyde", "acetamid": "acetamide",
+            "anilin": "aniline", "benzin": "gasoline", "benzol": "benzene",
+            "bleichmittel": "bleach", "brom": "bromine", "chlor": "chlorine",
+            "chloroform": "chloroform", "dieselkraftstoff": "diesel-fuel",
+            "essigsaeureanhydrid": "acetic-anhydride", "ethanol": "ethanol",
+            "ethylenglykol": "ethylene-glycol", "formaldehyd": "formaldehyde",
+            "glycerin": "glycerol", "harnstoff": "urea", "heizoel": "fuel-oil",
+            "isopropanol": "isopropanol", "kalilauge": "potassium-hydroxide",
+            "kaliumchlorid": "potassium-chloride", "kerosin": "kerosene",
+            "methanol": "methanol", "natriumchlorid": "sodium-chloride",
+            "natriumhydroxid": "sodium-hydroxide", "natriumhypochlorit": "sodium-hypochlorite",
+            "natronlauge": "sodium-hydroxide", "phenol": "phenol",
+            "quecksilber": "mercury", "salzsaeure": "hydrochloric-acid",
+            "schwefelsaeure": "sulfuric-acid", "silbernitrat": "silver-nitrate",
+            "terpentin": "turpentine", "toluol": "toluene",
+            "wasserstoffperoxid": "hydrogen-peroxide", "xylol": "xylene",
+            "zinkchlorid": "zinc-chloride", "zinksulfat": "zinc-sulfate"
         };
-        var knownMaterials = ["pp","hdpe","ldpe","petg","pvc-rigid","pvc-flexible","ptfe","pvdf","epdm","silicone","viton","nylon-pa","polycarbonate","polystyrene","polysulfone","san","acetal-pom","ectfe-etfe","fep","pmp","stainless-steel-304","ss316","aluminium"];
-        function parseUrl() {
-            var pathname = window.location.pathname;
-            var parts = pathname.split('/').filter(function(p) { return p; });
-            return {
-                pathname: pathname,
-                parts: parts,
-                isChemicalPath: parts[0] === 'chemicals',
-                isOldMaterialPath: parts[0] === 'materials' && pathname.endsWith('.html'),
-                isOldViscosityPath: pathname === '/viscosity.html'
-            };
+        var knownMaterials = ["pp","hdpe","ldpe","petg","pvc-rigid","pvc-flexible","ptfe","pvdf","epdm","silicone","viton","nylon-pa","polycarbonate","polystyrene","polysulfone","san","acetal-pom","ectfe-etfe","fep","pmp","stainless-steel-304","ss316","aluminium","nbr"];
+
+        function normalizeUmlauts(s) {
+            return s.replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
+                    .replace(/Ä/g,'Ae').replace(/Ö/g,'Oe').replace(/Ü/g,'Ue');
         }
+
+        function stripUmlautEncoding(s) {
+            return s.replace(/s-ure/g, 'saeure').replace(/-l$/,'ol').replace(/-le$/,'ole')
+                    .replace(/-ure/g,'ure');
+        }
+
         function attemptRedirect() {
-            var url = parseUrl();
+            var pathname = window.location.pathname.toLowerCase().replace(/\/+$/,'');
+            var parts = pathname.split('/').filter(function(p){return p;});
+            if (parts.length === 0) return;
+
             var redirectUrl = null;
-            var redirectReason = '';
-            if (url.isChemicalPath && url.parts.length >= 2) {
-                var slug = url.parts[1].toLowerCase();
-                var material = url.parts[2] ? url.parts[2].toLowerCase() : null;
-                var englishSlug = germanToEnglishChemicals[slug] || slug;
-                if (material && knownMaterials.includes(material)) {
-                    redirectUrl = '/chemicals/' + englishSlug + '/' + material + '/';
-                    redirectReason = 'Redirecting from German chemical name to English equivalent';
-                } else if (slug !== englishSlug) {
-                    redirectUrl = '/chemicals/' + englishSlug + '/';
-                    redirectReason = 'Redirecting to English chemical name';
+            var reason = '';
+
+            // Pattern 1: /chemicals/{german-slug} or /chemicals/{german-slug}/{material}
+            if (parts[0] === 'chemicals' && parts.length >= 2) {
+                var slug = parts[1];
+                var material = parts[2] || null;
+                var normalized = normalizeUmlauts(decodeURIComponent(slug));
+                var stripped = stripUmlautEncoding(normalized);
+                var englishSlug = germanToEnglish[slug] || germanToEnglish[normalized] || germanToEnglish[stripped] || null;
+                if (englishSlug) {
+                    redirectUrl = material && knownMaterials.indexOf(material) !== -1
+                        ? '/chemicals/' + englishSlug + '/' + material + '/'
+                        : '/chemicals/' + englishSlug + '/';
+                    reason = 'Redirecting translated chemical name to English';
+                } else if (slug !== normalized) {
+                    redirectUrl = material
+                        ? '/chemicals/' + normalized + '/' + material + '/'
+                        : '/chemicals/' + normalized + '/';
+                    reason = 'Normalizing special characters in URL';
                 }
             }
-            if (url.isOldMaterialPath && url.parts.length === 2) {
-                var materialName = url.parts[1].replace('.html', '');
-                redirectUrl = '/materials/' + materialName + '/';
-                redirectReason = 'Redirecting from old HTML format';
+
+            // Pattern 2: /{material}/{chemical} - material page with German chemical
+            if (!redirectUrl && knownMaterials.indexOf(parts[0]) !== -1 && parts.length >= 2) {
+                var chemSlug = parts[1];
+                var normChem = normalizeUmlauts(decodeURIComponent(chemSlug));
+                var strippedChem = stripUmlautEncoding(normChem);
+                var engChem = germanToEnglish[chemSlug] || germanToEnglish[normChem] || germanToEnglish[strippedChem] || null;
+                if (engChem) {
+                    redirectUrl = '/' + parts[0] + '/' + engChem + '/';
+                    reason = 'Redirecting to English chemical name';
+                } else if (chemSlug !== normChem) {
+                    redirectUrl = '/' + parts[0] + '/' + normChem + '/';
+                    reason = 'Normalizing special characters';
+                }
             }
-            if (url.isOldViscosityPath) {
+
+            // Pattern 3: /materials/{material}.html → /materials/{material}/
+            if (!redirectUrl && parts[0] === 'materials' && parts.length === 2 && parts[1].match(/\.html$/)) {
+                var matName = parts[1].replace('.html','');
+                redirectUrl = '/materials/' + matName + '/';
+                reason = 'Redirecting from old .html format';
+            }
+
+            // Pattern 4: /viscosity.html → /viscosity/
+            if (!redirectUrl && pathname === '/viscosity.html') {
                 redirectUrl = '/viscosity/';
-                redirectReason = 'Redirecting from old viscosity page format';
+                reason = 'Redirecting from old page format';
             }
-            if (redirectUrl) {
-                showRedirectInfo(redirectReason, redirectUrl);
-                setTimeout(function() { window.location.href = redirectUrl; }, 3000);
+
+            // Pattern 5: /storage-compatibility.html → /storage-compatibility/
+            if (!redirectUrl && pathname === '/storage-compatibility.html') {
+                redirectUrl = '/storage-compatibility/';
+                reason = 'Redirecting from old page format';
+            }
+
+            // Pattern 6: /sds-decoder.html → /sds-decoder/
+            if (!redirectUrl && pathname === '/sds-decoder.html') {
+                redirectUrl = '/sds-decoder/';
+                reason = 'Redirecting from old page format';
+            }
+
+            // Pattern 7: German language paths - /de/chemicals/... redirect to /chemicals/...
+            if (!redirectUrl && (parts[0] === 'de' || parts[0] === 'es' || parts[0] === 'fr' || parts[0] === 'pt') && parts.length >= 3 && parts[1] === 'chemicals') {
+                var langChemSlug = parts[2];
+                var engFromLang = germanToEnglish[langChemSlug] || langChemSlug;
+                redirectUrl = '/chemicals/' + engFromLang + '/';
+                reason = 'Redirecting from translated path to English';
+            }
+
+            // Pattern 8: Try adding trailing slash
+            if (!redirectUrl && !pathname.match(/\.\w+$/) && !pathname.match(/\/$/)) {
+                redirectUrl = pathname + '/';
+                reason = 'Adding trailing slash';
+            }
+
+            if (redirectUrl && redirectUrl !== pathname && redirectUrl !== pathname + '/') {
+                showRedirect(reason, redirectUrl);
+                setTimeout(function(){ window.location.href = redirectUrl; }, 2000);
             }
         }
-        function showRedirectInfo(reason, redirectUrl) {
-            var infoDiv = document.getElementById('redirectInfo');
-            infoDiv.innerHTML = '<strong>Redirect:</strong> ' + reason + '<br>Redirecting to <a href="' + redirectUrl + '" style="color: #047857; text-decoration: underline;">' + redirectUrl + '</a> in 3 seconds...';
-            infoDiv.style.display = 'block';
+
+        function showRedirect(reason, url) {
+            var el = document.getElementById('redirectInfo');
+            el.innerHTML = '<strong>Redirect:</strong> ' + reason + '<br>Taking you to <a href="' + url + '" style="color:#047857;text-decoration:underline;">' + url + '</a>...';
+            el.style.display = 'block';
         }
-        function goToSearch() { window.location.href = '/'; }
+
         window.addEventListener('load', attemptRedirect);
+    })();
+    function goToSearch() { window.location.href = '/'; }
     </script>
-    <div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.9); color: white; padding: 1rem; text-align: center; z-index: 9999; display: none;">
-        <p style="margin-bottom: 1rem;">We use cookies to improve your experience.</p>
-        <button onclick="acceptCookies()" style="background: #10b981; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; margin-right: 0.5rem; cursor: pointer;">Accept</button>
-        <button onclick="declineCookies()" style="background: #6b7280; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Decline</button>
+    <div id="cookieConsent" style="position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.9);color:white;padding:1rem;text-align:center;z-index:9999;display:none;">
+        <p style="margin-bottom:1rem;">We use cookies to improve your experience.</p>
+        <button onclick="acceptCookies()" style="background:#10b981;color:white;border:none;padding:0.5rem 1rem;border-radius:4px;margin-right:0.5rem;cursor:pointer;">Accept</button>
+        <button onclick="declineCookies()" style="background:#6b7280;color:white;border:none;padding:0.5rem 1rem;border-radius:4px;cursor:pointer;">Decline</button>
     </div>
     <script>
-        function showCookieConsent() {
-            var consent = localStorage.getItem('cookieConsent');
-            if (consent === null) {
-                document.getElementById('cookieConsent').style.display = 'block';
-            } else if (consent === 'accepted') {
-                loadGoogleAnalytics();
-            }
-        }
-        function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            document.getElementById('cookieConsent').style.display = 'none';
-            loadGoogleAnalytics();
-        }
-        function declineCookies() {
-            localStorage.setItem('cookieConsent', 'declined');
-            document.getElementById('cookieConsent').style.display = 'none';
-        }
-        function loadGoogleAnalytics() {
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';
-            document.head.appendChild(script);
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-LTK6VVHYDW');
-        }
-        showCookieConsent();
+    function showCookieConsent(){var c=localStorage.getItem('cookieConsent');if(c===null){document.getElementById('cookieConsent').style.display='block';}else if(c==='accepted'){loadGoogleAnalytics();}}
+    function acceptCookies(){localStorage.setItem('cookieConsent','accepted');document.getElementById('cookieConsent').style.display='none';loadGoogleAnalytics();}
+    function declineCookies(){localStorage.setItem('cookieConsent','declined');document.getElementById('cookieConsent').style.display='none';}
+    function loadGoogleAnalytics(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');}
+    showCookieConsent();
     </script>
 </body>
 </html>
