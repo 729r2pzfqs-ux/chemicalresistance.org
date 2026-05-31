@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
@@ -203,19 +205,6 @@
         window.addEventListener('load', attemptRedirect);
     })();
     function goToSearch() { window.location.href = '/'; }
-    </script>
-    <div id="cookieConsent" style="position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.9);color:white;padding:1rem;text-align:center;z-index:9999;display:none;">
-        <p style="margin-bottom:1rem;">We use cookies to improve your experience.</p>
-        <button onclick="acceptCookies()" style="background:#10b981;color:white;border:none;padding:0.5rem 1rem;border-radius:4px;margin-right:0.5rem;cursor:pointer;">Accept</button>
-        <button onclick="declineCookies()" style="background:#6b7280;color:white;border:none;padding:0.5rem 1rem;border-radius:4px;cursor:pointer;">Decline</button>
-    </div>
-    <script>
-    function showCookieConsent(){var c=localStorage.getItem('cookieConsent');if(c===null){document.getElementById('cookieConsent').style.display='block';}else if(c==='accepted'){loadGoogleAnalytics();}}
-    function acceptCookies(){localStorage.setItem('cookieConsent','accepted');document.getElementById('cookieConsent').style.display='none';loadGoogleAnalytics();}
-    function declineCookies(){localStorage.setItem('cookieConsent','declined');document.getElementById('cookieConsent').style.display='none';}
-    function loadGoogleAnalytics(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');}
-    showCookieConsent();
-    </script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
+    </script><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
 </body>
 </html>
