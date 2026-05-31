@@ -1172,5 +1172,6 @@ function acceptCookies(){localStorage.setItem('cr-consent','accepted');document.
 function declineCookies(){localStorage.setItem('cr-consent','declined');document.getElementById('cookie-consent').style.display='none';}
 (function(){var c=localStorage.getItem('cr-consent');if(c==='accepted'){loadGA();}else if(c!=='declined'){document.getElementById('cookie-consent').style.display='block';}})();
 </script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
 </body>
 </html>
