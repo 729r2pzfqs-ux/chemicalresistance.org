@@ -47,6 +47,12 @@
     <footer><p>&copy; 2026 ChemicalResistance.org. All rights reserved.</p></footer>
     <script>
     (function() {
+        // Skip redirect for language root paths
+        var path = window.location.pathname;
+        if (path === '/de/' || path === '/es/' || path === '/fr/' || path === '/pt/' || path === '/de' || path === '/es' || path === '/fr' || path === '/pt') {
+            return;
+        }
+
         var germanToEnglish = {
             "maiskeim-l": "corn-oil", "chlorwasserstoff-gas": "hydrochloric-acid-gas",
             "chlorwasserstoff-l": "hydrochloric-acid", "mineral-l": "mineral-oil",
