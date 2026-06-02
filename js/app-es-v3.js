@@ -38,15 +38,15 @@ const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
 // GHS pictogram emojis
 const ghsImages = {
-    'GHS01': 'img/ghs/ghs01.svg', // Explosivo
-    'GHS02': 'img/ghs/ghs02.svg', // Inflamable
-    'GHS03': 'img/ghs/ghs03.svg', // Comburente
-    'GHS04': 'img/ghs/ghs04.svg', // Gas a presión
-    'GHS05': 'img/ghs/ghs05.svg', // Corrosivo
-    'GHS06': 'img/ghs/ghs06.svg', // Tóxico
-    'GHS07': 'img/ghs/ghs07.svg', // Nocivo
-    'GHS08': 'img/ghs/ghs08.svg', // Peligro para la salud
-    'GHS09': 'img/ghs/ghs09.svg', // Peligroso para el medio ambiente
+    'GHS01': '/img/ghs/ghs01.svg', // Explosivo
+    'GHS02': '/img/ghs/ghs02.svg', // Inflamable
+    'GHS03': '/img/ghs/ghs03.svg', // Comburente
+    'GHS04': '/img/ghs/ghs04.svg', // Gas a presión
+    'GHS05': '/img/ghs/ghs05.svg', // Corrosivo
+    'GHS06': '/img/ghs/ghs06.svg', // Tóxico
+    'GHS07': '/img/ghs/ghs07.svg', // Nocivo
+    'GHS08': '/img/ghs/ghs08.svg', // Peligro para la salud
+    'GHS09': '/img/ghs/ghs09.svg', // Peligroso para el medio ambiente
 };
 
 // Map old EU hazard codes to GHS pictograms (Spanish labels)
