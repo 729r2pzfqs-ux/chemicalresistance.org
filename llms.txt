@@ -1,0 +1,23 @@
+# chemicalresistance.org
+
+## About
+ChemicalResistance.org is a free chemical resistance reference tool. It provides compatibility data for 1,600+ chemicals against 24 materials including HDPE, PTFE, Viton, Stainless Steel, and more.
+
+## Features
+- Chemical resistance chart with 1,600+ chemicals and 24 materials
+- SDS (Safety Data Sheet) decoder tool
+- Chemical storage compatibility guide
+- Available in English, Spanish, German, French, and Portuguese
+
+## Content
+- ~1,600 individual chemical pages with full material compatibility data
+- 24 material-specific pages showing all chemical resistances
+- Chemical storage compatibility recommendations
+- SDS decoder for safety data sheet interpretation
+
+## URLs
+- Homepage: https://chemicalresistance.org/
+- Chemicals index: https://chemicalresistance.org/chemicals/
+- SDS Decoder: https://chemicalresistance.org/sds-decoder/
+- Storage Guide: https://chemicalresistance.org/storage-compatibility/
+- About: https://chemicalresistance.org/about/
