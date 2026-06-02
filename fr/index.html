@@ -372,16 +372,15 @@
 <a href="/fr/about/" style="color:#6b7280;text-decoration:none;margin:0 8px">About</a>
 </nav>
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var sel = document.getElementById('langSelect');
   if (sel) {
     sel.addEventListener('change', function() {
       var v = this.value;
-      var a = document.createElement('a');
-      a.href = v === 'en' ? '/' : '/' + v + '/';
-      document.body.appendChild(a);
-      a.click();
+      var url = v === 'en' ? 'https://chemicalresistance.org/' : 'https://chemicalresistance.org/' + v + '/';
+      window.location.replace(url);
     });
   }
 });
