@@ -109,7 +109,7 @@
                     <a href="viscosity" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosity</a>
                     <a href="about" class="text-gray-600 hover:text-gray-900 hover:underline">About</a>
                 </nav>
-                <select id="langSelect" onchange="var v=this.value;if(v==='en')window.location.href='/';else window.location.href='/'+v+'/';" aria-label="Select language" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                <select id="langSelect" aria-label="Select language" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
                     <option value="en" selected>🇬🇧 EN</option>
                     <option value="es">🇪🇸 ES</option>
                     <option value="de">🇩🇪 DE</option>
@@ -473,5 +473,17 @@
         lucide.createIcons();
     </script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var sel = document.getElementById('langSelect');
+  if (sel) {
+    sel.addEventListener('change', function() {
+      var v = this.value;
+      if (v === 'en') { window.location.href = '/'; }
+      else { window.location.href = '/' + v + '/'; }
+    });
+  }
+});
+</script>
 </body>
 </html>

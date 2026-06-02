@@ -360,5 +360,17 @@
 <a href="/viscosity/" style="color:#6b7280;text-decoration:none;margin:0 8px">Viscosity</a>&middot;
 <a href="/about/" style="color:#6b7280;text-decoration:none;margin:0 8px">About</a>
 </nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var sel = document.getElementById('langSelect');
+  if (sel) {
+    sel.addEventListener('change', function() {
+      var v = this.value;
+      if (v === 'en') { window.location.href = '/'; }
+      else { window.location.href = '/' + v + '/'; }
+    });
+  }
+});
+</script>
 </body>
 </html>
