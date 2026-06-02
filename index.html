@@ -391,42 +391,42 @@
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Material Quick Guide</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a href="materials/hdpe" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=hdpe" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">HDPE →</div>
                     <div class="text-sm text-gray-500 mb-2">High-Density Polyethylene</div>
                     <div class="text-sm text-gray-600">Best for: Acids, bases, alcohols. Common for drums & containers.</div>
                 </a>
-                <a href="materials/pp" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=pp" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">PP →</div>
                     <div class="text-sm text-gray-500 mb-2">Polypropylene</div>
                     <div class="text-sm text-gray-600">Best for: Strong acids & bases. Higher temp resistance than PE.</div>
                 </a>
-                <a href="materials/ptfe" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=ptfe" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">PTFE →</div>
                     <div class="text-sm text-gray-500 mb-2">Teflon®</div>
                     <div class="text-sm text-gray-600">Best for: Nearly all chemicals. Premium choice for seals & gaskets.</div>
                 </a>
-                <a href="materials/ss316" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=ss316" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">SS 316 →</div>
                     <div class="text-sm text-gray-500 mb-2">Stainless Steel (1.4401)</div>
                     <div class="text-sm text-gray-600">Best for: Corrosive environments. Better than 304 for chlorides.</div>
                 </a>
-                <a href="materials/viton" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=viton" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">Viton® (FPM) →</div>
                     <div class="text-sm text-gray-500 mb-2">Fluoroelastomer</div>
                     <div class="text-sm text-gray-600">Best for: Fuels, oils, acids. Premium seal material.</div>
                 </a>
-                <a href="materials/epdm" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=epdm" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">EPDM →</div>
                     <div class="text-sm text-gray-500 mb-2">Ethylene Propylene</div>
                     <div class="text-sm text-gray-600">Best for: Water, steam, bases. NOT for oils/fuels.</div>
                 </a>
-                <a href="materials/silicone" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=silicone" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">Silicone (VMQ) →</div>
                     <div class="text-sm text-gray-500 mb-2">Silicone Rubber</div>
                     <div class="text-sm text-gray-600">Best for: Food contact, extreme temps. FDA compliant.</div>
                 </a>
-                <a href="materials/nbr" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
+                <a href="/?material=nbr" class="p-4 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors block">
                     <div class="font-bold text-gray-900">NBR (Nitrile) →</div>
                     <div class="text-sm text-gray-500 mb-2">Buna-N Rubber</div>
                     <div class="text-sm text-gray-600">Best for: Oils, fuels, hydraulics. Most common seal.</div>
@@ -485,6 +485,26 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.appendChild(a);
       a.click();
     });
+  }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var params = new URLSearchParams(window.location.search);
+  var mat = params.get('material');
+  if (mat) {
+    // Map URL names to checkbox values
+    var matMap = {"hdpe":"HDPE","pp":"PP","ptfe":"PTFE","pvdf":"PVDF","ss316":"V4A","viton":"FKM","epdm":"EPDM","nbr":"NBR","silicone":"Silikon","ldpe":"LDPE","nylon-pa":"PA","fep":"FEP","petg":"PETG","pmp":"PMP","polycarbonate":"PC","polystyrene":"PS","acetal-pom":"POM","aluminium":"Alu","ectfe-etfe":"ECTFE","ss304":"1.4301","titanium":"Titan","pvc-rigid":"PVC-U","pvc-flexible":"PVC-P","san":"SAN","polysulfone":"PSU"};
+    var val = matMap[mat];
+    if (val) {
+      setTimeout(function() {
+        var cb = document.querySelector('input[type="checkbox"][value="' + val + '"]');
+        if (cb && !cb.checked) { cb.click(); }
+        // Scroll to results
+        var results = document.getElementById('searchResults') || document.querySelector('.overflow-x-auto');
+        if (results) results.scrollIntoView({behavior:'smooth'});
+      }, 500);
+    }
   }
 });
 </script>
