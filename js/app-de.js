@@ -168,7 +168,7 @@ window.toggleMoreMaterials = function() {
 // Initialize app
 async function init() {
     try {
-        const response = await fetch('data/chemicals_burkle_full.json');
+        const response = await fetch('/data/chemicals_burkle_full.json');
         chemicals = await response.json();
         buildIndex();
         setupEventListeners();
