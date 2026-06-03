@@ -255,7 +255,7 @@
 
         async function init() {
             try {
-                const response = await fetch('../data/chemicals_burkle_full.json');
+                const response = await fetch('/data/chemicals_burkle_full.json');
                 chemicals = await response.json();
                 filteredChemicals = chemicals.filter(c => c.ratings && c.ratings[MATERIAL]);
                 updateStats();

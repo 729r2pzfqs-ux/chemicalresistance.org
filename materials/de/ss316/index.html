@@ -325,7 +325,7 @@
     let filteredChemicals = [];
     let displayCount = 50;
 
-    fetch('../data/chemicals_burkle_full.json')
+    fetch('/data/chemicals_burkle_full.json')
         .then(r => r.json())
         .then(data => {
             chemicals = data.filter(c => c.ratings[MATERIAL] && (c.ratings[MATERIAL].c20 || c.ratings[MATERIAL].c50));
