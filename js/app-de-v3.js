@@ -277,12 +277,11 @@ function setupEventListeners() {
 
     // Language switch
     langSelect?.addEventListener('change', () => {
-        if (langSelect.value === 'en') {
-            window.location.href = 'index.html';
-        } else if (langSelect.value === 'es') {
-            window.location.href = 'es.html';
-        } else if (langSelect.value === 'fr') {
-            window.location.href = 'fr.html';
+        const lang = langSelect.value;
+        if (lang === 'en') {
+            window.location.replace('https://chemicalresistance.org/');
+        } else {
+            window.location.replace('https://chemicalresistance.org/' + lang + '/');
         }
     });
 

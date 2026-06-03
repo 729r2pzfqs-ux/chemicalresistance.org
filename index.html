@@ -475,38 +475,6 @@
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var params = new URLSearchParams(window.location.search);
-  var mat = params.get('material');
-  if (mat) {
-    // Map URL names to checkbox values
-    var matMap = {"hdpe":"HDPE","pp":"PP","ptfe":"PTFE","pvdf":"PVDF","ss316":"V4A","viton":"FKM","epdm":"EPDM","nbr":"NBR","silicone":"Silikon","ldpe":"LDPE","nylon-pa":"PA","fep":"FEP","petg":"PETG","pmp":"PMP","polycarbonate":"PC","polystyrene":"PS","acetal-pom":"POM","aluminium":"Alu","ectfe-etfe":"ECTFE","ss304":"1.4301","titanium":"Titan","pvc-rigid":"PVC-U","pvc-flexible":"PVC-P","san":"SAN","polysulfone":"PSU"};
-    var val = matMap[mat];
-    if (val) {
-      setTimeout(function() {
-        var cb = document.querySelector('input[type="checkbox"][value="' + val + '"]');
-        if (cb && !cb.checked) { cb.click(); }
-        // Scroll to results
-        var results = document.getElementById('searchResults') || document.querySelector('.overflow-x-auto');
-        if (results) results.scrollIntoView({behavior:'smooth'});
-      }, 500);
-    }
-  }
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var sel = document.getElementById('langSelect');
-  if (sel) {
-    sel.addEventListener('change', function() {
-      var v = this.value;
-      var url = v === 'en' ? 'https://chemicalresistance.org/' : 'https://chemicalresistance.org/' + v + '/';
-      window.location.replace(url);
-    });
-  }
-});
-</script>
 </body>
 <!-- cb:1780463963 -->
 </html>
