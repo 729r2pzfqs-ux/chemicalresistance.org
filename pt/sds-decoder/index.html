@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -18,9 +17,9 @@
     <link rel="alternate" hreflang="pt" href="https://chemicalresistance.org/pt/sds-decoder">
     
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Decodificador FDS | Ficha de Dados de Segurança Explicada">
@@ -53,20 +52,13 @@
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
     }
     </script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "x1emzgmkzd");
-</script>
 </head>
 <body class="min-h-screen">
     <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="/pt" class="flex items-center gap-2">
-                <img src="/../logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+            <a href="../../pt" class="flex items-center gap-2">
+                <img src="../../logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
                 <div>
                     <div class="font-bold text-gray-900">ChemicalResistance.org</div>
                     <div class="text-xs text-gray-500 hidden sm:block">Banco de dados de compatibilidade química</div>
@@ -74,11 +66,12 @@
             </a>
             <div class="flex items-center gap-3 text-sm">
                 <nav class="hidden md:flex items-center gap-4">
-                    <a href="/pt" class="text-gray-600 hover:text-gray-900 hover:underline">Tabela de Resistência</a>
-                    <a href="/pt/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">Armazenamento</a>
-                    <a href="/pt/sds-decoder/" class="text-emerald-600 font-medium">Decodificador FDS</a>
-                    <a href="/pt/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosidade</a>
-                    <a href="/pt/about/" class="text-gray-600 hover:text-gray-900 hover:underline">Sobre</a>
+                    <a href="../../pt" class="text-gray-600 hover:text-gray-900 hover:underline">Tabela de Resistência</a>
+                    <a href="../../storage-compatibility" class="text-gray-600 hover:text-gray-900 hover:underline">Armazenamento</a>
+                    <a href="../sds-decoder" class="text-emerald-600 font-medium">Decodificador FDS</a>
+                    <a href="../viscosity" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosidade</a>
+                    <a href="/chemicals/pt/" class="text-gray-600 hover:text-gray-900 hover:underline">Produtos Químicos</a>
+                    <a href="../../pt-about" class="text-gray-600 hover:text-gray-900 hover:underline">Sobre</a>
                 </nav>
                 <select id="langSelect" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer" onchange="changeLanguage(this.value)">
                     <option value="en">🇬🇧 EN</option>
@@ -94,11 +87,12 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
             <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
-                <a href="/pt" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tabela de Resistência</a>
-                <a href="/pt/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compatibilidad de Armazenamento</a>
-                <a href="/pt/sds-decoder/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Decodificador FDS</a>
-                <a href="/pt/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosidade</a>
-                <a href="/pt/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Sobre</a>
+                <a href="../../pt" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tabela de Resistência</a>
+                <a href="../../storage-compatibility" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compatibilidade de Armazenamento</a>
+                <a href="../sds-decoder" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Decodificador FDS</a>
+                <a href="../viscosity" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosidade</a>
+                <a href="/chemicals/pt/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Produtos Químicos</a>
+                <a href="../../pt-about" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Sobre</a>
             </nav>
         </div>
     </header>
@@ -192,17 +186,17 @@
             <div class="bg-green-50 rounded-xl p-6 border border-green-100">
                 <h3 class="font-bold text-gray-900 mb-3">Próximos Passos</h3>
                 <div class="grid md:grid-cols-2 gap-4">
-                    <a href="/pt" id="resistanceLink" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                    <a href="../../pt" id="resistanceLink" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
                         <i data-lucide="flask-round" class="w-8 h-8 text-blue-600"></i>
                         <div>
                             <div class="font-medium text-gray-900">Verificar Compatibilidade de Materiais</div>
                             <div class="text-sm text-gray-600">Encontrar materiais resistentes para este produto químico</div>
                         </div>
                     </a>
-                    <a href="/pt/storage-compatibility/" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                    <a href="../../storage-compatibility" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
                         <i data-lucide="box" class="w-8 h-8 text-orange-600"></i>
                         <div>
-                            <div class="font-medium text-gray-900">Compatibilidad de Armazenamento</div>
+                            <div class="font-medium text-gray-900">Compatibilidade de Armazenamento</div>
                             <div class="text-sm text-gray-600">Posso armazenar isto com outros produtos químicos?</div>
                         </div>
                     </a>
@@ -219,47 +213,47 @@
             <p class="text-gray-600 text-sm mb-4">O Sistema Globalmente Harmonizado (GHS) utiliza estes pictogramas para identificar perigos:</p>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs01.svg" alt="GHS01" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs01.svg" alt="GHS01" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS01 - Explosivo</div>
                     <div class="text-sm text-gray-600 text-center">Explosivos, sustancias autorreactivas</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs02.svg" alt="GHS02" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs02.svg" alt="GHS02" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS02 - Inflamável</div>
                     <div class="text-sm text-gray-600 text-center">Gaz, liquides, solides inflammables</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs03.svg" alt="GHS03" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs03.svg" alt="GHS03" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS03 - Comburente</div>
                     <div class="text-sm text-gray-600 text-center">Pode provocar ou agravar incêndios</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs04.svg" alt="GHS04" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs04.svg" alt="GHS04" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS04 - Gás sob Pressão</div>
                     <div class="text-sm text-gray-600 text-center">Gases sob pressão</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs05.svg" alt="GHS05" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs05.svg" alt="GHS05" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS05 - Corrosivo</div>
                     <div class="text-sm text-gray-600 text-center">Corrosion cutanée, lésions oculaires</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs06.svg" alt="GHS06" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs06.svg" alt="GHS06" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS06 - Tóxico</div>
                     <div class="text-sm text-gray-600 text-center">Toxicidade aguda (mortal o tóxico)</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs07.svg" alt="GHS07" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs07.svg" alt="GHS07" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS07 - Irritante</div>
                     <div class="text-sm text-gray-600 text-center">Irritante, sensibilizante, narcotique</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs08.svg" alt="GHS08" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs08.svg" alt="GHS08" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS08 - Perigo para a Saúde</div>
                     <div class="text-sm text-gray-600 text-center">Cancerígeno, mutagênico, lesões em órgãos</div>
                 </div>
                 <div class="p-4 border rounded-lg flex flex-col items-center">
-                    <img src="/../img/ghs/ghs09.svg" alt="GHS09" class="w-16 h-16 mb-2">
+                    <img src="../../img/ghs/ghs09.svg" alt="GHS09" class="w-16 h-16 mb-2">
                     <div class="font-medium text-center">GHS09 - Perigo Ambiental</div>
                     <div class="text-sm text-gray-600 text-center">Perigoso para o meio aquático</div>
                 </div>
@@ -296,12 +290,12 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center text-gray-400 text-sm">
                 <p>⚠️ Esta ferramenta fornece apenas resumos. Consulte siempre la Ficha de Dados de Segurança completa para información detallada.</p>
-                <p class="mt-2">© 2026 ChemicalResistance.org — <a href="/pt/about/" class="underline hover:text-white">Sobre</a></p>
+                <p class="mt-2">© 2026 ChemicalResistance.org — <a href="../../pt-about" class="underline hover:text-white">Sobre</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="/../js/chemicals_hazard_data.js"></script>
+    <script src="../../js/chemicals_hazard_data.js"></script>
     
     <script>
     const sdsDatabase = window.chemicalHazardDB;
@@ -566,7 +560,7 @@
             searchResults.innerHTML = matches.map(name => {
                 const chem = sdsDatabase[name];
                 const displayName = chem.pt || name;
-                const ghsImages = (chem.ghs || []).map(g => `<img src="/../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-10 h-10 inline-block">`).join('');
+                const ghsImages = (chem.ghs || []).map(g => `<img src="../../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-10 h-10 inline-block">`).join('');
                 return `
                     <div class="p-3 hover:bg-green-50 cursor-pointer border-b last:border-b-0" onclick="showSDS('${name}')">
                         <div class="font-medium text-gray-900">${displayName}</div>
@@ -597,7 +591,7 @@
         ghsReference.classList.add('hidden');
         sdsExplainer.classList.add('hidden');
 
-        const ghsImagesHeader = (chem.ghs || []).map(g => `<img src="/../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-12 h-12 inline-block">`).join('');
+        const ghsImagesHeader = (chem.ghs || []).map(g => `<img src="../../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-12 h-12 inline-block">`).join('');
         document.getElementById('chemicalHeader').innerHTML = `
             <div class="flex justify-between items-start">
                 <div>
@@ -618,7 +612,7 @@
                 const icon = ghsIcons[g];
                 return `
                     <div class="flex items-center gap-3 p-3 bg-red-50 rounded-lg border border-red-200">
-                        <img src="/../${icon?.img || ''}" alt="${g}" class="w-12 h-12">
+                        <img src="../../${icon?.img || ''}" alt="${g}" class="w-12 h-12">
                         <div>
                             <div class="font-medium text-gray-900">${g} - ${icon?.name || 'Desconhecido'}</div>
                             <div class="text-sm text-gray-600">${icon?.desc || ''}</div>
@@ -738,11 +732,11 @@
 
     function changeLanguage(lang) {
         const urls = {
-            en: '/',
-            de: '/de/sds-decoder/',
-            es: '/es/sds-decoder/',
-            fr: '/fr/sds-decoder/',
-            pt: '/pt/sds-decoder/'
+            en: '/sds-decoder.html',
+            de: '/de/sds-decoder.html',
+            es: '/es/sds-decoder.html',
+            fr: '/fr/sds-decoder.html',
+            pt: '/pt/sds-decoder.html'
         };
         window.location.href = urls[lang] || urls.en;
     }
@@ -762,13 +756,6 @@
         }
     }
     </script>
-<nav style="max-width:900px;margin:2rem auto;padding:1rem;border-top:1px solid #e5e7eb;text-align:center;font-size:0.875rem;color:#6b7280">
-<a href="/pt/" style="color:#6b7280;text-decoration:none;margin:0 8px">Home</a>&middot;
-<a href="/pt/" style="color:#6b7280;text-decoration:none;margin:0 8px">Chemicals</a>&middot;
-<a href="/pt/sds-decoder/" style="color:#6b7280;text-decoration:none;margin:0 8px">SDS Decoder</a>&middot;
-<a href="/pt/storage-compatibility/" style="color:#6b7280;text-decoration:none;margin:0 8px">Storage</a>&middot;
-<a href="/pt/viscosity/" style="color:#6b7280;text-decoration:none;margin:0 8px">Viscosity</a>&middot;
-<a href="/pt/about/" style="color:#6b7280;text-decoration:none;margin:0 8px">About</a>
-</nav>
+<nav style="max-width:900px;margin:2rem auto;padding:1rem;border-top:1px solid #e5e7eb;text-align:center;font-size:0.875rem;color:#6b7280"><a href="/" style="color:#6b7280;text-decoration:none;margin:0 8px">Home</a>&middot;<a href="/chemicals/" style="color:#6b7280;text-decoration:none;margin:0 8px">Chemicals</a>&middot;<a href="/sds-decoder/" style="color:#6b7280;text-decoration:none;margin:0 8px">SDS Decoder</a>&middot;<a href="/storage-compatibility/" style="color:#6b7280;text-decoration:none;margin:0 8px">Storage</a>&middot;<a href="/about/" style="color:#6b7280;text-decoration:none;margin:0 8px">About</a>&middot;<a href="/privacy.html" style="color:#6b7280;text-decoration:none;margin:0 8px">Privacy</a></nav>
 </body>
 </html>
