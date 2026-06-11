@@ -122,23 +122,54 @@
             var redirectUrl = null;
             var reason = '';
 
-            // Pattern 1: /chemicals/{german-slug} or /chemicals/{german-slug}/{material}
+            // Pattern 1: /chemicals/... paths (handles swapped material/chemical and .html extensions)
             if (parts[0] === 'chemicals' && parts.length >= 2) {
-                var slug = parts[1];
-                var material = parts[2] || null;
-                var normalized = normalizeUmlauts(decodeURIComponent(slug));
-                var stripped = stripUmlautEncoding(normalized);
-                var englishSlug = germanToEnglish[slug] || germanToEnglish[normalized] || germanToEnglish[stripped] || null;
-                if (englishSlug) {
-                    redirectUrl = material && knownMaterials.indexOf(material) !== -1
-                        ? '/chemicals/' + englishSlug + '/' + material + '/'
-                        : '/chemicals/' + englishSlug + '/';
-                    reason = 'Redirecting translated chemical name to English';
-                } else if (slug !== normalized) {
-                    redirectUrl = material
-                        ? '/chemicals/' + normalized + '/' + material + '/'
-                        : '/chemicals/' + normalized + '/';
-                    reason = 'Normalizing special characters in URL';
+                var part1 = parts[1].replace(/\.html$/, '');
+                var part2 = parts.length >= 3 ? parts[2].replace(/\.html$/, '') : null;
+                var hadHtml = parts[1].match(/\.html$/) || (parts.length >= 3 && parts[2].match(/\.html$/));
+
+                // Pattern 1a: /chemicals/{material}/{chemical}(.html) → swap to /chemicals/{chemical}/{material}/
+                if (part2 && knownMaterials.indexOf(part1) !== -1) {
+                    var chemSlug = part2;
+                    var matSlug = part1;
+                    var normChem = normalizeUmlauts(decodeURIComponent(chemSlug));
+                    var strippedChem = stripUmlautEncoding(normChem);
+                    var engChem = germanToEnglish[chemSlug] || germanToEnglish[normChem] || germanToEnglish[strippedChem] || chemSlug;
+                    redirectUrl = '/chemicals/' + engChem + '/' + matSlug + '/';
+                    reason = 'Redirecting to correct chemical/material URL order';
+                }
+                // Pattern 1b: /chemicals/{chemical}/{material}(.html) → strip .html, add trailing slash
+                else if (part2 && knownMaterials.indexOf(part2) !== -1 && hadHtml) {
+                    var slug1b = part1;
+                    var norm1b = normalizeUmlauts(decodeURIComponent(slug1b));
+                    var strip1b = stripUmlautEncoding(norm1b);
+                    var eng1b = germanToEnglish[slug1b] || germanToEnglish[norm1b] || germanToEnglish[strip1b] || slug1b;
+                    redirectUrl = '/chemicals/' + eng1b + '/' + part2 + '/';
+                    reason = 'Redirecting from .html to directory format';
+                }
+                // Pattern 1c: /chemicals/{german-slug} or /chemicals/{german-slug}/{material} (original)
+                else {
+                    var slug = part1;
+                    var material = part2;
+                    var normalized = normalizeUmlauts(decodeURIComponent(slug));
+                    var stripped = stripUmlautEncoding(normalized);
+                    var englishSlug = germanToEnglish[slug] || germanToEnglish[normalized] || germanToEnglish[stripped] || null;
+                    if (englishSlug) {
+                        redirectUrl = material && knownMaterials.indexOf(material) !== -1
+                            ? '/chemicals/' + englishSlug + '/' + material + '/'
+                            : '/chemicals/' + englishSlug + '/';
+                        reason = 'Redirecting translated chemical name to English';
+                    } else if (slug !== normalized) {
+                        redirectUrl = material
+                            ? '/chemicals/' + normalized + '/' + material + '/'
+                            : '/chemicals/' + normalized + '/';
+                        reason = 'Normalizing special characters in URL';
+                    } else if (hadHtml) {
+                        redirectUrl = material
+                            ? '/chemicals/' + slug + '/' + material + '/'
+                            : '/chemicals/' + slug + '/';
+                        reason = 'Redirecting from .html to directory format';
+                    }
                 }
             }
 
@@ -182,12 +213,19 @@
                 reason = 'Redirecting from old page format';
             }
 
-            // Pattern 7: German language paths - /de/chemicals/... redirect to /chemicals/...
+            // Pattern 7: Language paths - /de/chemicals/... redirect to /chemicals/...
             if (!redirectUrl && (parts[0] === 'de' || parts[0] === 'es' || parts[0] === 'fr' || parts[0] === 'pt') && parts.length >= 3 && parts[1] === 'chemicals') {
                 var langChemSlug = parts[2];
                 var engFromLang = germanToEnglish[langChemSlug] || langChemSlug;
                 redirectUrl = '/chemicals/' + engFromLang + '/';
                 reason = 'Redirecting from translated path to English';
+            }
+
+            // Pattern 7b: /{lang}/{page}.html → /{lang}/ or /{page}/
+            if (!redirectUrl && (parts[0] === 'de' || parts[0] === 'es' || parts[0] === 'fr' || parts[0] === 'pt') && parts.length === 2 && parts[1].match(/\.html$/)) {
+                var pageName = parts[1].replace('.html','');
+                redirectUrl = '/' + pageName + '/';
+                reason = 'Redirecting from language .html path';
             }
 
             // Pattern 8: Try adding trailing slash
