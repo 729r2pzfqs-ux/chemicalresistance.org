@@ -135,6 +135,11 @@
         document.getElementById('mobileMenuBtn').addEventListener('click', function() {
             document.getElementById('mobileMenu').classList.toggle('hidden');
         });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
     </script>
 
     <main>
