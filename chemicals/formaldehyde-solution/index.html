@@ -24,15 +24,50 @@
     <meta name="twitter:description" content="Find the best materials for storing Formaldehyde Solution. Chemical resistance ratings for HDPE, PTFE, Viton, Stainless Steel and 20+ materials.">
 </head>
 <body class="text-gray-700 min-h-screen">
-    <header class="bg-white border-b sticky top-0 z-50">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/" class="flex items-center gap-2">
-                <img src="/logos/logo-icon-128x128.png" class="w-10 h-10 rounded-xl">
-                <span class="font-bold text-gray-900">ChemicalResistance.org</span>
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Chemical compatibility database</div>
+                </div>
             </a>
-            <a href="/chemicals/" class="text-gray-600 text-sm">← All Chemicals</a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/" class="text-gray-600 hover:text-gray-900 hover:underline">Materials</a>
+                    <a href="/chemicals/" class="text-emerald-600 font-medium">Chemicals</a>
+                    <a href="/compare/" class="text-gray-600 hover:text-gray-900 hover:underline">Compare</a>
+                    <a href="/charts/" class="text-gray-600 hover:text-gray-900 hover:underline">Charts</a>
+                    <a href="/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">Storage</a>
+                    <a href="/sds-decoder/" class="text-gray-600 hover:text-gray-900 hover:underline">SDS Decoder</a>
+                    <a href="/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosity</a>
+                    <a href="/about/" class="text-gray-600 hover:text-gray-900 hover:underline">About</a>
+                </nav>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Resistance Chart</a>
+                <a href="/materials/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">All Materials</a>
+                <a href="/chemicals/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">All Chemicals</a>
+                <a href="/compare/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compare Materials</a>
+                <a href="/charts/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Comparison Charts</a>
+                <a href="/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Storage Compatibility</a>
+                <a href="/sds-decoder/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDS Decoder</a>
+                <a href="/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosity Lookup</a>
+                <a href="/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">About</a>
+            </nav>
         </div>
     </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
     
     <section class="bg-gradient-to-b from-emerald-50 to-white px-4 py-8">
         <div class="max-w-4xl mx-auto">
