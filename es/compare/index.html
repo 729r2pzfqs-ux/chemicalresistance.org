@@ -273,6 +273,7 @@
         </div>
     </footer>
 
+    <script src="/js/chemical_translations_es.js"></script>
     <script>
     var ALL_MATS = [
         { key: 'AL',         name: 'Aluminio',               short: 'Al',       dir: 'aluminium',       group: 'Metales' },
@@ -307,6 +308,12 @@
         if (!conc) return '&mdash;';
         return conc;
     }
+    function translateName(n) {
+        var lower = n.toLowerCase();
+        if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) return chemicalTranslations[lower];
+        return n;
+    }
+
 
     function getRating(c, matKey, temp) {
         return ratingMap[c.ratings[matKey]?.[temp]] || 'NR';
@@ -425,7 +432,7 @@
 
         filtered = relevant.filter(function(c) {
             if (query) {
-                if (!c.name.toLowerCase().includes(query) && !(c.cas && c.cas.includes(query))) return false;
+                if (!c.name.toLowerCase().includes(query) && !translateName(c.name).toLowerCase().includes(query) && !(c.cas && c.cas.includes(query))) return false;
             }
             if (filter === 'diff') return hasDiff(c, temp);
             if (filter === 'any-A') return activeMats.some(function(m) { return getRating(c, m.key, temp) === 'A'; });
@@ -441,7 +448,7 @@
             var aDiff = hasDiff(a, temp) ? 0 : 1;
             var bDiff = hasDiff(b, temp) ? 0 : 1;
             if (aDiff !== bDiff) return aDiff - bDiff;
-            return a.name.localeCompare(b.name, 'es');
+            return translateName(a.name).localeCompare(translateName(b.name), 'es');
         });
 
         displayCount = 80;
@@ -469,7 +476,7 @@
             }
 
             return '<tr class="' + rowClass + '">'
-                + '<td class="py-2 px-4 text-sm"><div class="font-medium text-gray-900">' + c.name + '</div></td>'
+                + '<td class="py-2 px-4 text-sm"><div class="font-medium text-gray-900">' + translateName(c.name) + '</div></td>'
                 + '<td class="py-2 px-3 text-xs text-gray-500">' + conc + '</td>'
                 + cells + '</tr>';
         }).join('');

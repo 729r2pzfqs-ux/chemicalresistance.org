@@ -202,6 +202,7 @@
         </div>
     </footer>
 
+    <script src="/js/chemical_translations_pt.js"></script>
     <script>
     var MAT_A = 'HDPE';
     var MAT_B = 'PVDF';
@@ -214,6 +215,12 @@
         if (!conc) return '&mdash;';
         return conc;
     }
+    function translateName(n) {
+        var lower = n.toLowerCase();
+        if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) return chemicalTranslations[lower];
+        return n;
+    }
+
 
     function getRating(c, matKey, temp) {
         return ratingMap[c.ratings[matKey]?.[temp]] || 'NR';
@@ -230,7 +237,7 @@
                 if (rA.c20 === '0' && rB.c20 === '0') return false;
                 return rA.c20 !== rB.c20;
             });
-            allDiffs.sort(function(a, b) { return a.name.localeCompare(b.name, 'pt'); });
+            allDiffs.sort(function(a, b) { return translateName(a.name).localeCompare(translateName(b.name), 'pt'); });
             renderTable();
         });
 
@@ -243,7 +250,7 @@
             var rA = getRating(c, MAT_A, 'c20');
             var rB = getRating(c, MAT_B, 'c20');
             return '<tr class="hover:bg-gray-50">'
-                + '<td class="py-2 px-4 text-sm font-medium text-gray-900">' + c.name + '</td>'
+                + '<td class="py-2 px-4 text-sm font-medium text-gray-900">' + translateName(c.name) + '</td>'
                 + '<td class="py-2 px-4 text-center"><span class="rating-' + rA + ' px-2 py-0.5 rounded text-xs font-bold">' + rA + '</span></td>'
                 + '<td class="py-2 px-4 text-center"><span class="rating-' + rB + ' px-2 py-0.5 rounded text-xs font-bold">' + rB + '</span></td>'
                 + '</tr>';
