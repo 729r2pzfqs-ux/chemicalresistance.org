@@ -5,13 +5,31 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Material Comparison Tool | Chemical Resistance Side-by-Side</title>
-    <meta name="description" content="Compare chemical resistance of different materials side-by-side. ETFE vs ECTFE, PTFE vs FEP, NBR vs EPDM and more.">
+    <title>Compare Any Materials Side-by-Side | Chemical Resistance Tool</title>
+    <meta name="description" content="Build your own chemical resistance comparison. Pick any 2-3 materials from 24 options and see side-by-side ratings for 1,600+ chemicals at 20°C and 50°C.">
     <link rel="canonical" href="https://chemicalresistance.org/compare/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta property="og:title" content="Compare Any Materials Side-by-Side | Chemical Resistance Tool">
+    <meta property="og:description" content="Build your own chemical resistance comparison. Pick any 2-3 materials from 24 options and see side-by-side ratings for 1,600+ chemicals.">
+    <meta property="og:type" content="website">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>* { font-family: 'Inter', sans-serif; } body { background: #f8fafc; }</style>
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .rating-A { background: #22c55e; color: white; }
+        .rating-B { background: #3b82f6; color: white; }
+        .rating-C { background: #f59e0b; color: white; }
+        .rating-D { background: #ef4444; color: white; }
+        .rating-NR { background: #e5e7eb; color: #9ca3af; }
+        .diff-row { background: #fffbeb; }
+        @media print { header, footer, .no-print { display: none !important; } body { background: white; } }
+    </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I compare chemical resistance of different materials?","acceptedAnswer":{"@type":"Answer","text":"Use the comparison tool above to select 2 or 3 materials from the dropdown menus. The tool will show side-by-side chemical resistance ratings (A through D) for over 1,600 chemicals at both 20°C and 50°C. You can search for specific chemicals, filter by rating, and highlight differences between materials."}},{"@type":"Question","name":"What do the chemical resistance ratings A, B, C, D mean?","acceptedAnswer":{"@type":"Answer","text":"A (Excellent) means the material has outstanding resistance and is suitable for continuous contact. B (Good) means limited resistance — suitable for intermittent contact. C (Limited) means the material may swell, lose strength, or degrade over time. D (Not Recommended) means the material is not suitable for use with that chemical."}},{"@type":"Question","name":"Which materials can I compare?","acceptedAnswer":{"@type":"Answer","text":"You can compare any combination of 24 materials including: fluoropolymers (PTFE, FEP, PVDF, ECTFE/ETFE), elastomers (NBR, EPDM, Viton, Silicone), commodity plastics (HDPE, LDPE, PP, PVC), engineering plastics (Nylon, POM, Polycarbonate, PETG), and metals (Stainless Steel 304, Stainless Steel 316, Aluminium)."}}]}
+</script>
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -65,41 +83,486 @@
             document.getElementById('mobileMenu').classList.toggle('hidden');
         });
     </script>
+
+    <!-- Hero -->
     <section class="bg-gradient-to-b from-blue-50 to-white px-4 py-8 md:py-12">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-3xl font-bold text-gray-900 mb-3">Material Comparisons</h1>
-            <p class="text-lg text-gray-600">Side-by-side chemical resistance comparisons to help you choose the right material.</p>
+            <h1 class="text-3xl font-bold text-gray-900 mb-3">Build Your Own Material Comparison</h1>
+            <p class="text-lg text-gray-600">Pick any 2 or 3 materials and instantly compare their chemical resistance side-by-side across 1,600+ chemicals.</p>
         </div>
     </section>
+
+    <!-- Material Selector -->
+    <section class="px-4 py-6 no-print">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-xl border border-gray-200 p-5">
+                <div class="flex flex-col gap-4">
+                    <div class="text-sm font-semibold text-gray-700 mb-1">Select materials to compare:</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">Material 1</label>
+                            <select id="mat1" class="w-full px-3 py-2.5 border border-gray-200 rounded-lg bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm font-medium"></select>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">Material 2</label>
+                            <select id="mat2" class="w-full px-3 py-2.5 border border-gray-200 rounded-lg bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm font-medium"></select>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">Material 3 <span class="text-gray-400">(optional)</span></label>
+                            <select id="mat3" class="w-full px-3 py-2.5 border border-gray-200 rounded-lg bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm font-medium"></select>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 mt-1">
+                        <button id="compareBtn" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium text-sm transition-colors">Compare Now</button>
+                        <button id="resetBtn" class="px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm transition-colors">Reset</button>
+                        <span id="statusMsg" class="text-sm text-gray-500 ml-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Legend -->
+    <section id="legendSection" class="px-4 hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-wrap gap-4 text-sm text-gray-600 mb-2">
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-A"></span> A = Excellent</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-B"></span> B = Good</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-C"></span> C = Limited</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-D"></span> D = Not Recommended</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Bar -->
+    <section id="filterSection" class="px-4 py-4 hidden no-print">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-xl border border-gray-200 p-4">
+                <div class="flex flex-col md:flex-row gap-3">
+                    <div class="flex-1">
+                        <input type="text" id="searchInput" placeholder="Search chemicals..." class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm">
+                    </div>
+                    <select id="ratingFilter" class="px-3 py-2 border border-gray-200 rounded-lg text-sm">
+                        <option value="all">All ratings</option>
+                        <option value="any-A">Any material rated A</option>
+                        <option value="any-D">Any material rated D</option>
+                        <option value="diff">Ratings differ (most useful!)</option>
+                        <option value="all-A">All materials rated A</option>
+                    </select>
+                    <select id="tempFilter" class="px-3 py-2 border border-gray-200 rounded-lg text-sm">
+                        <option value="c20">20°C</option>
+                        <option value="c50">50°C</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Table -->
+    <section id="resultsSection" class="px-4 py-4 hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-3 flex items-center justify-between text-sm text-gray-500">
+                <span>Showing <span id="resultCount" class="font-semibold text-gray-700">0</span> chemicals</span>
+                <label class="flex items-center gap-2 cursor-pointer no-print">
+                    <input type="checkbox" id="highlightDiffs" checked class="rounded">
+                    <span>Highlight differences</span>
+                </label>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full" style="min-width:500px">
+                        <thead class="sticky top-0 z-10">
+                            <tr id="tableHead" class="bg-gray-50 text-left text-sm"></tr>
+                        </thead>
+                        <tbody id="tableBody" class="divide-y divide-gray-100"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="loadMore" class="mt-4 text-center hidden">
+                <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 text-sm">Load more chemicals</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="px-4 py-8 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <div class="space-y-3">
+                <details class="border border-gray-200 rounded-xl overflow-hidden">
+                    <summary class="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">How do I compare chemical resistance of different materials?</summary>
+                    <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">Use the comparison tool above to select 2 or 3 materials from the dropdown menus. The tool will show side-by-side chemical resistance ratings (A through D) for over 1,600 chemicals at both 20°C and 50°C. You can search for specific chemicals, filter by rating, and highlight differences between materials.</div>
+                </details>
+                <details class="border border-gray-200 rounded-xl overflow-hidden">
+                    <summary class="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">What do the chemical resistance ratings A, B, C, D mean?</summary>
+                    <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">A (Excellent) means the material has outstanding resistance and is suitable for continuous contact. B (Good) means limited resistance — suitable for intermittent contact. C (Limited) means the material may swell, lose strength, or degrade over time. D (Not Recommended) means the material is not suitable for use with that chemical.</div>
+                </details>
+                <details class="border border-gray-200 rounded-xl overflow-hidden">
+                    <summary class="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">Which materials can I compare?</summary>
+                    <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">You can compare any combination of 24 materials including fluoropolymers (PTFE, FEP, PVDF, ECTFE/ETFE), elastomers (NBR, EPDM, Viton, Silicone), commodity plastics (HDPE, LDPE, PP, PVC), engineering plastics (Nylon, POM, Polycarbonate, PETG), and metals (Stainless Steel 304, Stainless Steel 316, Aluminium).</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-built Comparisons -->
     <section class="px-4 py-8">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-4">
-            <a href="/compare/etfe-vs-ectfe/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
-                <h2 class="text-lg font-bold text-gray-900 mb-1">ETFE vs ECTFE</h2>
-                <p class="text-sm text-gray-600">Ethylene Tetrafluoroethylene vs Ethylene Chlorotrifluoroethylene</p>
-            </a>
-            <a href="/compare/ptfe-vs-fep/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
-                <h2 class="text-lg font-bold text-gray-900 mb-1">PTFE vs FEP</h2>
-                <p class="text-sm text-gray-600">Polytetrafluoroethylene (Teflon) vs Fluorinated Ethylene Propylene</p>
-            </a>
-            <a href="/compare/nbr-vs-epdm/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
-                <h2 class="text-lg font-bold text-gray-900 mb-1">NBR vs EPDM</h2>
-                <p class="text-sm text-gray-600">Nitrile Butadiene Rubber (Buna-N) vs Ethylene Propylene Diene Monomer</p>
-            </a>
-            <a href="/compare/hdpe-vs-pvdf/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
-                <h2 class="text-lg font-bold text-gray-900 mb-1">HDPE vs PVDF</h2>
-                <p class="text-sm text-gray-600">High-Density Polyethylene vs Polyvinylidene Fluoride</p>
-            </a>
-            <a href="/compare/polysulfone-vs-pvdf/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
-                <h2 class="text-lg font-bold text-gray-900 mb-1">Polysulfone vs PVDF</h2>
-                <p class="text-sm text-gray-600">Polysulfone (PSU) vs Polyvinylidene Fluoride</p>
-            </a>
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Popular Comparisons</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/compare/etfe-vs-ectfe/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">ETFE vs ECTFE</h3>
+                    <p class="text-sm text-gray-600">Ethylene Tetrafluoroethylene vs Ethylene Chlorotrifluoroethylene</p>
+                </a>
+                <a href="/compare/ptfe-vs-fep/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">PTFE vs FEP</h3>
+                    <p class="text-sm text-gray-600">Polytetrafluoroethylene (Teflon) vs Fluorinated Ethylene Propylene</p>
+                </a>
+                <a href="/compare/nbr-vs-epdm/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">NBR vs EPDM</h3>
+                    <p class="text-sm text-gray-600">Nitrile Butadiene Rubber (Buna-N) vs Ethylene Propylene Diene Monomer</p>
+                </a>
+                <a href="/compare/hdpe-vs-pvdf/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">HDPE vs PVDF</h3>
+                    <p class="text-sm text-gray-600">High-Density Polyethylene vs Polyvinylidene Fluoride</p>
+                </a>
+                <a href="/compare/polysulfone-vs-pvdf/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Polysulfone vs PVDF</h3>
+                    <p class="text-sm text-gray-600">Polysulfone (PSU) vs Polyvinylidene Fluoride</p>
+                </a>
+            </div>
         </div>
     </section>
+
+    <!-- Chart Links -->
+    <section class="px-4 py-8 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Group Comparison Charts</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                <a href="/charts/fluoropolymers/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">Fluoropolymers</div>
+                    <div class="text-xs text-gray-500">PTFE, FEP, PVDF, ECTFE</div>
+                </a>
+                <a href="/charts/elastomers/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">Elastomers</div>
+                    <div class="text-xs text-gray-500">NBR, EPDM, Viton, Silicone</div>
+                </a>
+                <a href="/charts/metals/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">Metals</div>
+                    <div class="text-xs text-gray-500">SS304, SS316, Aluminium</div>
+                </a>
+                <a href="/charts/commodity-plastics/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">Commodity Plastics</div>
+                    <div class="text-xs text-gray-500">HDPE, LDPE, PP, PVC</div>
+                </a>
+                <a href="/charts/transparent-plastics/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">Transparent Plastics</div>
+                    <div class="text-xs text-gray-500">PC, PETG, PMP, PSU, SAN</div>
+                </a>
+                <a href="/charts/engineering-plastics/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">Engineering Plastics</div>
+                    <div class="text-xs text-gray-500">Nylon, POM, PS</div>
+                </a>
+                <a href="/charts/all-materials/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">All 24 Materials</div>
+                    <div class="text-xs text-gray-500">Complete overview</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
-            <p>&copy; 2026 ChemicalResistance.org</p>
+            <p>&copy; 2026 ChemicalResistance.org &mdash; Free chemical compatibility tool</p>
+            <p class="mt-2">Data sources: B&uuml;rkle, INEOS, industry standards</p>
         </div>
     </footer>
+
+    <script src="/js/chemical_translations_en.js"></script>
+    <script>
+    // All 24 materials with JSON key, display name, and directory slug
+    const ALL_MATS = [
+        { key: 'AL',         name: 'Aluminium',              short: 'Al',       dir: 'aluminium',       group: 'Metals' },
+        { key: 'ECTFE_ETFE', name: 'ECTFE / ETFE',           short: 'ECTFE',    dir: 'ectfe-etfe',      group: 'Fluoropolymers' },
+        { key: 'EPDM',       name: 'EPDM',                   short: 'EPDM',     dir: 'epdm',            group: 'Elastomers' },
+        { key: 'FEP',        name: 'FEP',                    short: 'FEP',      dir: 'fep',             group: 'Fluoropolymers' },
+        { key: 'FPM',        name: 'Viton (FPM/FKM)',        short: 'Viton',    dir: 'viton',           group: 'Elastomers' },
+        { key: 'HDPE',       name: 'HDPE',                   short: 'HDPE',     dir: 'hdpe',            group: 'Commodity Plastics' },
+        { key: 'LDPE',       name: 'LDPE',                   short: 'LDPE',     dir: 'ldpe',            group: 'Commodity Plastics' },
+        { key: 'NBR',        name: 'NBR (Nitrile)',          short: 'NBR',      dir: 'nbr',             group: 'Elastomers' },
+        { key: 'PA',         name: 'Nylon (PA)',             short: 'Nylon',    dir: 'nylon-pa',        group: 'Engineering Plastics' },
+        { key: 'PC',         name: 'Polycarbonate (PC)',     short: 'PC',       dir: 'polycarbonate',   group: 'Transparent Plastics' },
+        { key: 'PETG',       name: 'PETG',                   short: 'PETG',     dir: 'petg',            group: 'Transparent Plastics' },
+        { key: 'PMP',        name: 'PMP',                    short: 'PMP',      dir: 'pmp',             group: 'Transparent Plastics' },
+        { key: 'POM',        name: 'Acetal (POM)',           short: 'POM',      dir: 'acetal-pom',      group: 'Engineering Plastics' },
+        { key: 'PP',         name: 'Polypropylene (PP)',     short: 'PP',       dir: 'pp',              group: 'Commodity Plastics' },
+        { key: 'PS',         name: 'Polystyrene (PS)',       short: 'PS',       dir: 'polystyrene',     group: 'Engineering Plastics' },
+        { key: 'PSU',        name: 'Polysulfone (PSU)',      short: 'PSU',      dir: 'polysulfone',     group: 'Transparent Plastics' },
+        { key: 'PTFE',       name: 'PTFE (Teflon)',          short: 'PTFE',     dir: 'ptfe',            group: 'Fluoropolymers' },
+        { key: 'PVC_HART',   name: 'PVC Rigid (uPVC)',      short: 'uPVC',     dir: 'pvc-rigid',       group: 'Commodity Plastics' },
+        { key: 'PVC_WEICH',  name: 'PVC Flexible (pPVC)',   short: 'pPVC',     dir: 'pvc-flexible',    group: 'Commodity Plastics' },
+        { key: 'PVDF',       name: 'PVDF',                   short: 'PVDF',     dir: 'pvdf',            group: 'Fluoropolymers' },
+        { key: 'SAN',        name: 'SAN',                    short: 'SAN',      dir: 'san',             group: 'Transparent Plastics' },
+        { key: 'SI',         name: 'Silicone',               short: 'Silicone', dir: 'silicone',        group: 'Elastomers' },
+        { key: 'V2A',        name: 'Stainless Steel 304',   short: 'SS304',    dir: 'stainless-steel-304', group: 'Metals' },
+        { key: 'V4A',        name: 'Stainless Steel 316',   short: 'SS316',    dir: 'ss316',           group: 'Metals' },
+    ];
+
+    const ratingMap = { '1':'A', '2':'B', '3':'C', '4':'D', '0':'NR' };
+    let allData = [];
+    let filtered = [];
+    let displayCount = 80;
+    let activeMats = [];
+    let dataLoaded = false;
+
+    // --- Populate dropdowns with optgroups ---
+    function populateSelects() {
+        const groups = {};
+        ALL_MATS.forEach(m => {
+            if (!groups[m.group]) groups[m.group] = [];
+            groups[m.group].push(m);
+        });
+
+        const groupOrder = ['Fluoropolymers', 'Elastomers', 'Metals', 'Commodity Plastics', 'Transparent Plastics', 'Engineering Plastics'];
+
+        ['mat1', 'mat2', 'mat3'].forEach((id, i) => {
+            const sel = document.getElementById(id);
+            if (i === 2) {
+                const opt = document.createElement('option');
+                opt.value = '';
+                opt.textContent = '— None —';
+                sel.appendChild(opt);
+            }
+            groupOrder.forEach(gName => {
+                const og = document.createElement('optgroup');
+                og.label = gName;
+                (groups[gName] || []).forEach(m => {
+                    const opt = document.createElement('option');
+                    opt.value = m.key;
+                    opt.textContent = m.name;
+                    og.appendChild(opt);
+                });
+                sel.appendChild(og);
+            });
+        });
+
+        document.getElementById('mat1').value = 'PTFE';
+        document.getElementById('mat2').value = 'HDPE';
+        document.getElementById('mat3').value = '';
+    }
+
+    function translateConc(conc) {
+        if (!conc) return '&mdash;';
+        const map = {
+            'wässrig':'Aqueous','gesättigt':'Saturated','verdünnt':'Diluted',
+            'konz.':'Concentrated','konzentriert':'Concentrated','rein':'Pure',
+            'techn. rein':'Technical Grade','jede':'Any','gering':'Low',
+            'flüssig':'Liquid','gasförmig':'Gaseous','geschmolzen':'Molten',
+            'trocken':'Dry','feucht':'Wet/Moist','fest':'Solid',
+            'Pulver':'Powder','gemahlen':'Ground','ölhaltig':'Oil-containing',
+            'sulfuriert':'Sulfurized','kalt':'Cold','heiß':'Hot','heiss':'Hot',
+            'siedend':'Boiling','handelsüblich':'Commercial Grade'
+        };
+        for (const [de, en] of Object.entries(map)) {
+            if (conc.toLowerCase().includes(de.toLowerCase())) {
+                conc = conc.replace(new RegExp(de, 'gi'), en);
+            }
+        }
+        return conc;
+    }
+
+    function translateName(n) {
+        const lower = n.toLowerCase();
+        if (typeof chemicalTranslations !== 'undefined' && chemicalTranslations[lower]) return chemicalTranslations[lower];
+        return n;
+    }
+
+    function getRating(c, matKey, temp) {
+        return ratingMap[c.ratings[matKey]?.[temp]] || 'NR';
+    }
+
+    function hasDiff(c, temp) {
+        const ratings = new Set();
+        for (const m of activeMats) {
+            const r = c.ratings[m.key]?.[temp];
+            if (r && r !== '0') ratings.add(r);
+        }
+        return ratings.size > 1;
+    }
+
+    function loadData() {
+        if (dataLoaded) return Promise.resolve();
+        document.getElementById('statusMsg').textContent = 'Loading data...';
+        return fetch('/data/chemicals_burkle_full.json')
+            .then(r => r.json())
+            .then(data => {
+                allData = data;
+                dataLoaded = true;
+                document.getElementById('statusMsg').textContent = '';
+            })
+            .catch(() => {
+                document.getElementById('statusMsg').textContent = 'Failed to load data. Please try again.';
+            });
+    }
+
+    function runComparison() {
+        const k1 = document.getElementById('mat1').value;
+        const k2 = document.getElementById('mat2').value;
+        const k3 = document.getElementById('mat3').value;
+
+        if (k1 === k2 || (k3 && (k3 === k1 || k3 === k2))) {
+            document.getElementById('statusMsg').textContent = 'Please select different materials.';
+            return;
+        }
+
+        activeMats = [ALL_MATS.find(m => m.key === k1), ALL_MATS.find(m => m.key === k2)];
+        if (k3) activeMats.push(ALL_MATS.find(m => m.key === k3));
+
+        loadData().then(() => {
+            const thead = document.getElementById('tableHead');
+            thead.innerHTML = '<th class="py-3 px-4 font-semibold text-gray-600">Chemical</th>'
+                + '<th class="py-3 px-3 font-semibold text-gray-600 text-sm">Conc.</th>'
+                + activeMats.map(m =>
+                    '<th class="py-3 px-2 font-semibold text-gray-600 text-center whitespace-nowrap"><a href="/materials/' + m.dir + '/" class="hover:text-emerald-600 hover:underline">' + m.short + '</a></th>'
+                ).join('');
+
+            document.getElementById('legendSection').classList.remove('hidden');
+            document.getElementById('filterSection').classList.remove('hidden');
+            document.getElementById('resultsSection').classList.remove('hidden');
+
+            var params = new URLSearchParams();
+            params.set('m1', k1);
+            params.set('m2', k2);
+            if (k3) params.set('m3', k3);
+            history.replaceState(null, '', '?' + params.toString());
+
+            applyFilters();
+
+            // Scroll to results
+            document.getElementById('legendSection').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
+    function applyFilters() {
+        if (!activeMats.length) return;
+
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const filter = document.getElementById('ratingFilter').value;
+        const temp = document.getElementById('tempFilter').value;
+
+        var relevant = allData.filter(function(c) {
+            var count = 0;
+            for (var i = 0; i < activeMats.length; i++) {
+                var m = activeMats[i];
+                if (c.ratings[m.key] && c.ratings[m.key].c20 && c.ratings[m.key].c20 !== '0') count++;
+                if (count >= 2) return true;
+            }
+            return false;
+        });
+
+        filtered = relevant.filter(function(c) {
+            if (query) {
+                var name = (c.name_en || c.name).toLowerCase();
+                if (!name.includes(query) && !c.name.toLowerCase().includes(query) && !(c.cas && c.cas.includes(query))) return false;
+            }
+            if (filter === 'diff') return hasDiff(c, temp);
+            if (filter === 'any-A') return activeMats.some(function(m) { return getRating(c, m.key, temp) === 'A'; });
+            if (filter === 'any-D') return activeMats.some(function(m) { return getRating(c, m.key, temp) === 'D'; });
+            if (filter === 'all-A') return activeMats.every(function(m) {
+                var r = getRating(c, m.key, temp);
+                return r === 'A' || r === 'NR';
+            });
+            return true;
+        });
+
+        filtered.sort(function(a, b) {
+            var aDiff = hasDiff(a, temp) ? 0 : 1;
+            var bDiff = hasDiff(b, temp) ? 0 : 1;
+            if (aDiff !== bDiff) return aDiff - bDiff;
+            var nameA = (a.name_en || a.name).toLowerCase();
+            var nameB = (b.name_en || b.name).toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        displayCount = 80;
+        renderTable();
+    }
+
+    function renderTable() {
+        var tbody = document.getElementById('tableBody');
+        var temp = document.getElementById('tempFilter').value;
+        var highlight = document.getElementById('highlightDiffs').checked;
+        var toShow = filtered.slice(0, displayCount);
+
+        document.getElementById('resultCount').textContent = filtered.length;
+        document.getElementById('loadMore').classList.toggle('hidden', displayCount >= filtered.length);
+
+        tbody.innerHTML = toShow.map(function(c) {
+            var name = c.name_en ? translateName(c.name) : c.name;
+            var displayName = c.name_en || name;
+            var conc = translateConc(c.concentration);
+            var isDiff = hasDiff(c, temp);
+            var rowClass = (highlight && isDiff) ? 'diff-row hover:bg-amber-100' : 'hover:bg-gray-50';
+
+            var cells = '';
+            for (var i = 0; i < activeMats.length; i++) {
+                var m = activeMats[i];
+                var r = getRating(c, m.key, temp);
+                cells += '<td class="py-2 px-2 text-center"><span class="rating-' + r + ' px-1.5 py-0.5 rounded text-xs font-bold">' + r + '</span></td>';
+            }
+
+            return '<tr class="' + rowClass + '">'
+                + '<td class="py-2 px-4 text-sm">'
+                + '<div class="font-medium text-gray-900">' + displayName + '</div>'
+                + (displayName !== c.name ? '<div class="text-xs text-gray-400">' + c.name + '</div>' : '')
+                + '</td>'
+                + '<td class="py-2 px-3 text-xs text-gray-500">' + conc + '</td>'
+                + cells
+                + '</tr>';
+        }).join('');
+    }
+
+    function loadMore() { displayCount += 80; renderTable(); }
+
+    // --- Event listeners ---
+    document.getElementById('compareBtn').addEventListener('click', runComparison);
+    document.getElementById('resetBtn').addEventListener('click', function() {
+        document.getElementById('mat1').value = 'PTFE';
+        document.getElementById('mat2').value = 'HDPE';
+        document.getElementById('mat3').value = '';
+        document.getElementById('legendSection').classList.add('hidden');
+        document.getElementById('filterSection').classList.add('hidden');
+        document.getElementById('resultsSection').classList.add('hidden');
+        document.getElementById('searchInput').value = '';
+        document.getElementById('ratingFilter').value = 'all';
+        document.getElementById('tempFilter').value = 'c20';
+        history.replaceState(null, '', '/compare/');
+        activeMats = [];
+    });
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+    document.getElementById('ratingFilter').addEventListener('change', applyFilters);
+    document.getElementById('tempFilter').addEventListener('change', applyFilters);
+    document.getElementById('highlightDiffs').addEventListener('change', renderTable);
+
+    // --- Init ---
+    populateSelects();
+
+    // Check URL params for pre-selected materials (shareable links)
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('m1') && params.get('m2')) {
+        var m1 = params.get('m1');
+        var m2 = params.get('m2');
+        var m3 = params.get('m3') || '';
+        if (ALL_MATS.find(function(m) { return m.key === m1; }) && ALL_MATS.find(function(m) { return m.key === m2; })) {
+            document.getElementById('mat1').value = m1;
+            document.getElementById('mat2').value = m2;
+            if (m3 && ALL_MATS.find(function(m) { return m.key === m3; })) {
+                document.getElementById('mat3').value = m3;
+            }
+            runComparison();
+        }
+    }
+    </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
 </body>
 </html>
