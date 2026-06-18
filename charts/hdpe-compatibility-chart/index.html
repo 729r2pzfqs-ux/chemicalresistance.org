@@ -181,6 +181,27 @@
     let displayCount = 100;
     const ratingMap = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
 
+
+    function translateConc(conc) {
+        if (!conc) return '—';
+        const map = {
+            'wässrig': 'Aqueous', 'gesättigt': 'Saturated', 'verdünnt': 'Diluted',
+            'konz.': 'Concentrated', 'konzentriert': 'Concentrated', 'rein': 'Pure',
+            'techn. rein': 'Technical Grade', 'jede': 'Any', 'gering': 'Low',
+            'flüssig': 'Liquid', 'gasförmig': 'Gaseous', 'geschmolzen': 'Molten',
+            'trocken': 'Dry', 'feucht': 'Wet/Moist', 'fest': 'Solid',
+            'Pulver': 'Powder', 'gemahlen': 'Ground', 'ölhaltig': 'Oil-containing',
+            'sulfuriert': 'Sulfurized', 'kalt': 'Cold', 'heiß': 'Hot', 'heiss': 'Hot',
+            'siedend': 'Boiling', 'handelsüblich': 'Commercial Grade'
+        };
+        for (const [de, en] of Object.entries(map)) {
+            if (conc.toLowerCase().includes(de.toLowerCase())) {
+                conc = conc.replace(new RegExp(de, 'gi'), en);
+            }
+        }
+        return conc;
+    }
+
     fetch('/data/chemicals_burkle_full.json')
         .then(r => r.json())
         .then(data => {
@@ -216,7 +237,7 @@
             const r50 = ratingMap[c.ratings[MATERIAL]?.c50] || 'NR';
             return `<tr class="hover:bg-gray-50">
                 <td class="py-2 px-4 text-sm"><div class="font-medium text-gray-900">${name}</div></td>
-                <td class="py-2 px-4 text-sm text-gray-600">${c.concentration || '—'}</td>
+                <td class="py-2 px-4 text-sm text-gray-600">${translateConc(c.concentration)}</td>
                 <td class="py-2 px-4 text-center"><span class="rating-${r20} px-2 py-0.5 rounded text-xs font-bold">${r20}</span></td>
                 <td class="py-2 px-4 text-center"><span class="rating-${r50} px-2 py-0.5 rounded text-xs font-bold">${r50}</span></td>
                 <td class="py-2 px-4 text-sm text-gray-500 font-mono">${c.cas || '—'}</td>
