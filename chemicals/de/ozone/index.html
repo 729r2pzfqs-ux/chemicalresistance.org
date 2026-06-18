@@ -31,15 +31,62 @@
     <meta name="twitter:description" content="Finden Sie die besten Materialien für die Lagerung von Ozone. Chemikalienbeständigkeitsbewertungen für HDPE, PTFE, Viton, Edelstahl und über 20 weitere Materialien.">
 </head>
 <body class="text-gray-700 min-h-screen">
-    <header class="bg-white border-b sticky top-0 z-50">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/de/" class="flex items-center gap-2">
-                <img src="/logos/logo-icon-128x128.png" class="w-10 h-10 rounded-xl">
-                <span class="font-bold text-gray-900">ChemicalResistance.org</span>
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Chemische Beständigkeitsdatenbank</div>
+                </div>
             </a>
-            <a href="/chemicals/de/" class="text-gray-600 text-sm">← Alle Chemikalien</a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/de/" class="text-gray-600 hover:text-gray-900 hover:underline">Materialien</a>
+                    <a href="/chemicals/de/" class="text-emerald-600 font-medium">Chemikalien</a>
+                    <a href="/de/compare/" class="text-gray-600 hover:text-gray-900 hover:underline">Vergleich</a>
+                    <a href="/de/charts/" class="text-gray-600 hover:text-gray-900 hover:underline">Tabellen</a>
+                    <a href="/de/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">Lagerung</a>
+                    <a href="/de/sds-decoder/" class="text-gray-600 hover:text-gray-900 hover:underline">SDB</a>
+                    <a href="/de/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">Viskosität</a>
+                    <a href="/de/about/" class="text-gray-600 hover:text-gray-900 hover:underline">Über uns</a>
+                </nav>
+                <select id="langSelect" aria-label="Sprache wählen" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="de" selected>🇩🇪 DE</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="pt">🇧🇷 PT</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menü">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/de/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Beständigkeitstabelle</a>
+                <a href="/materials/de/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Alle Materialien</a>
+                <a href="/chemicals/de/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Alle Chemikalien</a>
+                <a href="/de/compare/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Materialvergleich</a>
+                <a href="/de/charts/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Vergleichstabellen</a>
+                <a href="/de/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Lagerkompatibilität</a>
+                <a href="/de/sds-decoder/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDB-Decoder</a>
+                <a href="/de/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viskosität</a>
+                <a href="/de/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Über uns</a>
+            </nav>
         </div>
     </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
+    </script>
     
     <section class="bg-gradient-to-b from-emerald-50 to-white px-4 py-8">
         <div class="max-w-4xl mx-auto">
