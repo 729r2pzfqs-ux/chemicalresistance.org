@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableaux comparatifs &mdash; Résistance chimique</title>
+    <meta name="description" content="Tableaux comparatifs de r&eacute;sistance chimique : fluoropolym&egrave;res, &eacute;lastom&egrave;res, m&eacute;taux et plastiques c&ocirc;te &agrave; c&ocirc;te.">
+    <link rel="canonical" href="https://chemicalresistance.org/fr/charts/">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>* { font-family: 'Inter', sans-serif; } body { background: #f8fafc; }</style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x1emzgmkzd");
+</script>
+</head>
+<body class="text-gray-700 min-h-screen">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/fr/" class="flex items-center gap-2">
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Base de données de résistance chimique</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/fr/" class="text-gray-600 hover:text-gray-900 hover:underline">Matériaux</a>
+                    <a href="/chemicals/fr/" class="text-gray-600 hover:text-gray-900 hover:underline">Produits chimiques</a>
+                    <a href="/fr/compare/" class="text-gray-600 hover:text-gray-900 hover:underline">Comparer</a>
+                    <a href="/fr/charts/" class="text-emerald-600 font-medium">Tableaux</a>
+                    <a href="/fr/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">Stockage</a>
+                    <a href="/fr/sds-decoder/" class="text-gray-600 hover:text-gray-900 hover:underline">FDS</a>
+                    <a href="/fr/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosité</a>
+                    <a href="/fr/about/" class="text-gray-600 hover:text-gray-900 hover:underline">À propos</a>
+                </nav>
+                <select id="langSelect" aria-label="Choisir la langue" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="fr" selected>🇫🇷 FR</option>
+                    <option value="pt">🇧🇷 PT</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/fr/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tableau de résistance</a>
+                <a href="/materials/fr/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tous les matériaux</a>
+                <a href="/chemicals/fr/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tous les produits chimiques</a>
+                <a href="/fr/compare/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Comparer les matériaux</a>
+                <a href="/fr/charts/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Tableaux comparatifs</a>
+                <a href="/fr/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compatibilité de stockage</a>
+                <a href="/fr/sds-decoder/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Décodeur FDS</a>
+                <a href="/fr/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosité</a>
+                <a href="/fr/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">À propos</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
+    </script>
+
+    <section class="bg-gradient-to-b from-emerald-50 to-white px-4 py-8 md:py-12">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-gray-900 mb-3">Tableaux comparatifs</h1>
+            <p class="text-lg text-gray-600">Comparez les groupes de matériaux côte à côte &mdash; fluoropolymères, élastomères, métaux et plastiques.</p>
+        </div>
+    </section>
+
+    <section class="px-4 py-8">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-4">
+            <a href="/fr/charts/fluoropolymeres/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-300 hover:shadow-sm transition-all">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">Fluoropolymères</h2>
+                <p class="text-sm text-gray-600">PTFE, FEP, PVDF, ECTFE</p>
+                <p class="text-xs text-gray-400 mt-2">4 matériaux à comparer &rarr;</p>
+            </a>
+            <a href="/fr/charts/elastomeres/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-300 hover:shadow-sm transition-all">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">Élastomères</h2>
+                <p class="text-sm text-gray-600">NBR, EPDM, Viton, Silicone</p>
+                <p class="text-xs text-gray-400 mt-2">4 matériaux à comparer &rarr;</p>
+            </a>
+            <a href="/fr/charts/metaux/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-300 hover:shadow-sm transition-all">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">Métaux</h2>
+                <p class="text-sm text-gray-600">SS316, SS304, Al</p>
+                <p class="text-xs text-gray-400 mt-2">3 matériaux à comparer &rarr;</p>
+            </a>
+            <a href="/fr/charts/plastiques-courants/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-300 hover:shadow-sm transition-all">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">Plastiques Courants</h2>
+                <p class="text-sm text-gray-600">HDPE, LDPE, PP, uPVC +1</p>
+                <p class="text-xs text-gray-400 mt-2">5 matériaux à comparer &rarr;</p>
+            </a>
+            <a href="/fr/charts/plastiques-transparents/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-300 hover:shadow-sm transition-all">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">Plastiques Transparents et de Laboratoire</h2>
+                <p class="text-sm text-gray-600">PC, PETG, PMP, PSU +1</p>
+                <p class="text-xs text-gray-400 mt-2">5 matériaux à comparer &rarr;</p>
+            </a>
+            <a href="/fr/charts/plastiques-techniques/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-300 hover:shadow-sm transition-all">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">Plastiques Techniques</h2>
+                <p class="text-sm text-gray-600">Nylon, POM, PS</p>
+                <p class="text-xs text-gray-400 mt-2">3 matériaux à comparer &rarr;</p>
+            </a>
+            <a href="/fr/charts/tous-les-materiaux/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-300 hover:shadow-sm transition-all">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">24 Matériaux</h2>
+                <p class="text-sm text-gray-600">Al, ECTFE, EPDM, FEP +20</p>
+                <p class="text-xs text-gray-400 mt-2">24 matériaux à comparer &rarr;</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>&copy; 2026 ChemicalResistance.org &mdash; Outil gratuit de compatibilit&eacute; chimique</p>
+            <p class="mt-2">Sources de donn&eacute;es : B&uuml;rkle, INEOS, normes industrielles</p>
+        </div>
+    </footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
+</body>
+</html>

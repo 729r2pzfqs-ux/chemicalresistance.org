@@ -31,15 +31,62 @@
     <meta name="twitter:description" content="Trouvez les meilleurs matériaux pour le stockage de Nitric Acid. Évaluation de résistance chimique pour HDPE, PTFE, Viton, acier inoxydable et plus de 20 autres matériaux.">
 </head>
 <body class="text-gray-700 min-h-screen">
-    <header class="bg-white border-b sticky top-0 z-50">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/fr/" class="flex items-center gap-2">
-                <img src="/logos/logo-icon-128x128.png" class="w-10 h-10 rounded-xl">
-                <span class="font-bold text-gray-900">ChemicalResistance.org</span>
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Base de données de résistance chimique</div>
+                </div>
             </a>
-            <a href="/chemicals/fr/" class="text-gray-600 text-sm">← Tous les Produits Chimiques</a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/fr/" class="text-gray-600 hover:text-gray-900 hover:underline">Matériaux</a>
+                    <a href="/chemicals/fr/" class="text-emerald-600 font-medium">Produits chimiques</a>
+                    <a href="/fr/compare/" class="text-gray-600 hover:text-gray-900 hover:underline">Comparer</a>
+                    <a href="/fr/charts/" class="text-gray-600 hover:text-gray-900 hover:underline">Tableaux</a>
+                    <a href="/fr/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">Stockage</a>
+                    <a href="/fr/sds-decoder/" class="text-gray-600 hover:text-gray-900 hover:underline">FDS</a>
+                    <a href="/fr/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">Viscosité</a>
+                    <a href="/fr/about/" class="text-gray-600 hover:text-gray-900 hover:underline">À propos</a>
+                </nav>
+                <select id="langSelect" aria-label="Choisir la langue" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="fr" selected>🇫🇷 FR</option>
+                    <option value="pt">🇧🇷 PT</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/fr/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tableau de résistance</a>
+                <a href="/materials/fr/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tous les matériaux</a>
+                <a href="/chemicals/fr/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">Tous les produits chimiques</a>
+                <a href="/fr/compare/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Comparer les matériaux</a>
+                <a href="/fr/charts/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Tableaux comparatifs</a>
+                <a href="/fr/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Compatibilité de stockage</a>
+                <a href="/fr/sds-decoder/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Décodeur FDS</a>
+                <a href="/fr/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">Viscosité</a>
+                <a href="/fr/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">À propos</a>
+            </nav>
         </div>
     </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
+    </script>
     
     <section class="bg-gradient-to-b from-emerald-50 to-white px-4 py-8">
         <div class="max-w-4xl mx-auto">
