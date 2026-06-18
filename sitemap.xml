@@ -27226,27 +27226,45 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chemicalresistance.org/charts/ptfe-compatibility-chart/</loc>
+    <loc>https://chemicalresistance.org/charts/fluoropolymers/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chemicalresistance.org/charts/ss316-compatibility-chart/</loc>
+    <loc>https://chemicalresistance.org/charts/elastomers/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chemicalresistance.org/charts/hdpe-compatibility-chart/</loc>
+    <loc>https://chemicalresistance.org/charts/metals/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chemicalresistance.org/charts/nbr-compatibility-chart/</loc>
+    <loc>https://chemicalresistance.org/charts/commodity-plastics/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemicalresistance.org/charts/transparent-plastics/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemicalresistance.org/charts/engineering-plastics/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemicalresistance.org/charts/all-materials/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
