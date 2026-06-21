@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 ChemicalResistance.org | 免费化学兼容性数据库</title>
+    <meta name="description" content="了解 ChemicalResistance.org — 一个为工程师和安全专业人员提供的免费化学品与材料兼容性查询工具。">
+    <link rel="canonical" href="https://chemicalresistance.org/zh-about">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+    </style>
+
+    <meta property="og:title" content="关于 ChemicalResistance.org | 免费化学兼容性数据库">
+    <meta property="og:description" content="了解 ChemicalResistance.org — 一个为工程师和安全专业人员提供的免费化学品与材料兼容性查询工具。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemicalresistance.org/zh-about">
+    <meta property="og:site_name" content="ChemicalResistance.org">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="关于 ChemicalResistance.org | 免费化学兼容性数据库">
+    <meta name="twitter:description" content="了解 ChemicalResistance.org — 一个为工程师和安全专业人员提供的免费化学品与材料兼容性查询工具。">
+</head>
+<body class="text-gray-700 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-2">
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">化学耐受性数据库</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">材料</a>
+                    <a href="/chemicals/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">化学品</a>
+                    <a href="/zh/compare/" class="text-gray-600 hover:text-gray-900 hover:underline">对比</a>
+                    <a href="/zh/charts/" class="text-gray-600 hover:text-gray-900 hover:underline">图表</a>
+                    <a href="/zh/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">存储</a>
+                    <a href="/zh/sds-decoder/" class="text-gray-600 hover:text-gray-900 hover:underline">SDS解码器</a>
+                    <a href="/zh/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">粘度</a>
+                    <a href="/zh/about/" class="text-emerald-600 font-medium">关于</a>
+                </nav>
+                <select id="langSelect" aria-label="选择语言" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">&#127468;&#127463; EN</option>
+                    <option value="es">&#127466;&#127480; ES</option>
+                    <option value="de">&#127465;&#127466; DE</option>
+                    <option value="fr">&#127467;&#127479; FR</option>
+                    <option value="pt">&#127463;&#127479; PT</option>
+                    <option value="zh" selected>&#127464;&#127475; ZH</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">耐化学性表</a>
+                <a href="/materials/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有材料</a>
+                <a href="/chemicals/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有化学品</a>
+                <a href="/zh/compare/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">材料对比</a>
+                <a href="/zh/charts/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">对比图表</a>
+                <a href="/zh/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">存储兼容性</a>
+                <a href="/zh/sds-decoder/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDS解码器</a>
+                <a href="/zh/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">粘度</a>
+                <a href="/zh/about/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">关于</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
+    </script>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-emerald-50 to-white px-4 py-12 md:py-16">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                关于 ChemicalResistance.org
+            </h1>
+            <p class="text-lg text-gray-600">
+                一个现代化的免费工具，帮助您找到适合化学品存储和处理的兼容材料。
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="px-4 py-12">
+        <div class="max-w-3xl mx-auto">
+            
+            <!-- Mission -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">我们的使命</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    选择错误的化学品存储材料可能导致容器失效、泄漏、环境损害和工作场所伤害。然而，查找可靠的兼容性数据传统上意味着翻阅分散的PDF图表或昂贵的专有数据库。
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    <strong>ChemicalResistance.org</strong> 旨在改变这一现状。我们构建了一个快速、可搜索的数据库，涵盖 <strong>超过1,650种化学品</strong> 和 <strong>24种材料</strong> — 完全免费，无需注册。
+                </p>
+            </div>
+
+            <!-- Who It's For -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">适用人群</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center mb-2"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5m-4.75-11.396c.251.023.501.05.75.082M12 21a8.966 8.966 0 0 0 5.982-2.275M12 21a8.966 8.966 0 0 1-5.982-2.275M15.75 3.186a24.168 24.168 0 0 1 2.209.362M8.25 3.186a24.168 24.168 0 0 0-2.209.362"/></svg></div>
+                        <h3 class="font-semibold text-gray-900 mb-1">化学工程师</h3>
+                        <p class="text-sm text-gray-600">为工艺设备、管道和储罐选择材料。</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center mb-2"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751A11.959 11.959 0 0 0 12 2.714Z"/></svg></div>
+                        <h3 class="font-semibold text-gray-900 mb-1">安全专业人员</h3>
+                        <p class="text-sm text-gray-600">确保适当的二次收容和泄漏应急设备。</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center mb-2"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.048.58.024 1.194-.14 1.743"/></svg></div>
+                        <h3 class="font-semibold text-gray-900 mb-1">维护团队</h3>
+                        <p class="text-sm text-gray-600">选择兼容的密封件、垫片和替换零件。</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-gray-200 p-5">
+                        <div class="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center mb-2"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg></div>
+                        <h3 class="font-semibold text-gray-900 mb-1">采购经理</h3>
+                        <p class="text-sm text-gray-600">指定正确的桶、IBC和存储容器。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What We Cover -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">覆盖范围</h2>
+                <div class="bg-white rounded-xl border border-gray-200 p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-3">超过1,650种化学品</h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 酸类（硫酸、盐酸、硝酸等）</li>
+                                <li>• 碱类（氢氧化钠、氨等）</li>
+                                <li>• 溶剂（丙酮、甲苯、醇类）</li>
+                                <li>• 燃料（汽油、柴油、生物柴油）</li>
+                                <li>• 油类（液压油、机油、硅油）</li>
+                                <li>• 盐类和水溶液</li>
+                                <li>• 食品级物质</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-3">24种材料</h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• <strong>塑料：</strong>HDPE、LDPE、PP、PVC、PA、PC、POM</li>
+                                <li>• <strong>氟聚合物：</strong>PTFE、PVDF、FEP、ECTFE</li>
+                                <li>• <strong>弹性体：</strong>EPDM、氟橡胶(FPM)、NBR、硅胶</li>
+                                <li>• <strong>金属：</strong>304不锈钢、316不锈钢、铝</li>
+                            </ul>
+                            <p class="text-sm text-gray-500 mt-3">
+                                提供20°C和50°C下的评级数据（如有）。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Source -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">数据来源</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    我们的耐化学性数据基于 <a href="https://buerkle.de" class="text-emerald-600 hover:underline font-medium">Bürkle GmbH</a> 发布的全面兼容性图表。Bürkle是一家德国实验室和工业设备制造商，在化学品处理方面拥有数十年经验。
+                </p>
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                    <p class="text-sm text-amber-800">
+                        <strong>重要说明：</strong>Bürkle慷慨地允许这些数据在注明出处的情况下"自由传播和复制"。我们在整个网站中保留了此出处说明，并鼓励用户访问 <a href="https://buerkle.de" class="underline">buerkle.de</a> 查看原始资料。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Rating System -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">评级系统</h2>
+                <p class="text-gray-600 mb-4">我们使用简单的A-D评级标准：</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-emerald-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">A</span>
+                        <span class="text-gray-700"><strong>优秀</strong> — 完全耐受。推荐长期使用。</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">B</span>
+                        <span class="text-gray-700"><strong>良好</strong> — 可能有轻微影响。适用于大多数应用。</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-amber-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">C</span>
+                        <span class="text-gray-700"><strong>有限</strong> — 预期有一定降解。仅适用于短期使用。</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded font-bold text-sm w-12 text-center">D</span>
+                        <span class="text-gray-700"><strong>不推荐</strong> — 严重侵蚀。请勿使用。</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-gray-300 text-gray-600 px-3 py-1 rounded font-bold text-sm w-12 text-center">NR</span>
+                        <span class="text-gray-700"><strong>无数据</strong> — 未测试或数据不可用。</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">免责声明</h2>
+                <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+                    <p class="text-red-800 mb-3">
+                        <strong><svg class="w-5 h-5 text-red-600 inline-block mr-1 -mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>本工具仅供参考。</strong>
+                    </p>
+                    <p class="text-sm text-red-700 mb-3">
+                        耐化学性取决于许多因素，单一数据库无法涵盖所有情况：
+                    </p>
+                    <ul class="text-sm text-red-700 list-disc list-inside space-y-1 mb-3">
+                        <li>实际浓度和纯度</li>
+                        <li>温度和压力条件</li>
+                        <li>暴露时间和循环次数</li>
+                        <li>机械应力和紫外线暴露</li>
+                        <li>其他化学品的存在（混合物）</li>
+                        <li>材料等级和制造商差异</li>
+                    </ul>
+                    <p class="text-sm text-red-700">
+                        <strong>请务必与设备制造商确认兼容性，并对关键应用进行测试。</strong>我们不对基于这些信息做出的决定承担责任。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">联系我们</h2>
+                <p class="text-gray-600">
+                    发现错误？有建议？我们期待您的来信。
+                </p>
+                <p class="text-gray-600 mt-2">
+                    Email: <a href="mailto:info@chemicalresistance.org" class="text-emerald-600 hover:underline">info@chemicalresistance.org</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>© 2026 ChemicalResistance.org — 免费化学兼容性工具</p>
+            <p class="mt-2">耐化学性数据来源： <a href="https://buerkle.de" class="text-emerald-400 hover:underline">Bürkle GmbH (buerkle.de)</a></p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

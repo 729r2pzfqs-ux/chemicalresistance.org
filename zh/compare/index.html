@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>材料对比 — 耐化学性并排对比</title>
+    <meta name="description" content="创建您自己的材料对比。从24种材料中选择2至3种，查看超过1600种化学品的耐受性评级。">
+    <link rel="canonical" href="https://chemicalresistance.org/zh/compare/">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .rating-A { background: #22c55e; color: white; }
+        .rating-B { background: #3b82f6; color: white; }
+        .rating-C { background: #f59e0b; color: white; }
+        .rating-D { background: #ef4444; color: white; }
+        .rating-NR { background: #e5e7eb; color: #9ca3af; }
+        .diff-row { background: #fffbeb; }
+        @media print { header, footer, .no-print { display: none !important; } body { background: white; } }
+    </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"如何对比不同材料的耐化学性？","acceptedAnswer":{"@type":"Answer","text":"使用上方的对比工具，从下拉菜单中选择2或3种材料。该工具将显示超过1600种化学品在20°C和50°C下的耐受性评级（A至D）并排对比。"}},{"@type":"Question","name":"A、B、C、D评级代表什么？","acceptedAnswer":{"@type":"Answer","text":"A (Excelente) = resistência durável. B (Bom) = resistência limitada, adequado para contatos de curta duração. C (Regular) = o material pode inchar ou se degradar. D (Ruim) = o material não é adequado."}}]}
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x1emzgmkzd");
+</script>
+</head>
+<body class="text-gray-700 min-h-screen">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-2">
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">化学耐受性数据库</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">材料</a>
+                    <a href="/chemicals/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">化学品</a>
+                    <a href="/zh/compare/" class="text-emerald-600 font-medium">对比</a>
+                    <a href="/zh/charts/" class="text-gray-600 hover:text-gray-900 hover:underline">图表</a>
+                    <a href="/zh/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">存储</a>
+                    <a href="/zh/sds-decoder/" class="text-gray-600 hover:text-gray-900 hover:underline">SDS解码器</a>
+                    <a href="/zh/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">粘度</a>
+                    <a href="/zh/about/" class="text-gray-600 hover:text-gray-900 hover:underline">关于</a>
+                </nav>
+                <select id="langSelect" aria-label="选择语言" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">&#127468;&#127463; EN</option>
+                    <option value="es">&#127466;&#127480; ES</option>
+                    <option value="de">&#127465;&#127466; DE</option>
+                    <option value="fr">&#127467;&#127479; FR</option>
+                    <option value="pt">&#127463;&#127479; PT</option>
+                    <option value="zh" selected>&#127464;&#127475; ZH</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">耐化学性表</a>
+                <a href="/materials/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有材料</a>
+                <a href="/chemicals/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有化学品</a>
+                <a href="/zh/compare/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">材料对比</a>
+                <a href="/zh/charts/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">对比图表</a>
+                <a href="/zh/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">存储兼容性</a>
+                <a href="/zh/sds-decoder/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDS解码器</a>
+                <a href="/zh/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">粘度</a>
+                <a href="/zh/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">关于</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
+    </script>
+
+    <section class="bg-gradient-to-b from-blue-50 to-white px-4 py-8 md:py-12">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-gray-900 mb-3">创建您的材料对比</h1>
+            <p class="text-lg text-gray-600">选择2或3种材料，即时并排对比超过1600种化学品的耐化学性。</p>
+        </div>
+    </section>
+
+    <section class="px-4 py-6 no-print">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-xl border border-gray-200 p-5">
+                <div class="flex flex-col gap-4">
+                    <div class="text-sm font-semibold text-gray-700 mb-1">选择要对比的材料：</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">材料 1</label>
+                            <select id="mat1" class="w-full px-3 py-2.5 border border-gray-200 rounded-lg bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm font-medium"></select>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">材料 2</label>
+                            <select id="mat2" class="w-full px-3 py-2.5 border border-gray-200 rounded-lg bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm font-medium"></select>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">材料 3 <span class="text-gray-400">（可选）</span></label>
+                            <select id="mat3" class="w-full px-3 py-2.5 border border-gray-200 rounded-lg bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm font-medium"></select>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 mt-1">
+                        <button id="compareBtn" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium text-sm transition-colors">立即对比</button>
+                        <button id="resetBtn" class="px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm transition-colors">重置</button>
+                        <span id="statusMsg" class="text-sm text-gray-500 ml-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="legendSection" class="px-4 hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-wrap gap-4 text-sm text-gray-600 mb-2">
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-A"></span> A = 优秀</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-B"></span> B = 良好</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-C"></span> C = 一般</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-D"></span> D = 差</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="filterSection" class="px-4 py-4 hidden no-print">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-xl border border-gray-200 p-4">
+                <div class="flex flex-col md:flex-row gap-3">
+                    <div class="flex-1">
+                        <input type="text" id="searchInput" placeholder="搜索化学品..." class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 outline-none text-sm">
+                    </div>
+                    <select id="ratingFilter" class="px-3 py-2 border border-gray-200 rounded-lg text-sm">
+                        <option value="all">所有评级</option>
+                        <option value="any-A">至少一个A</option>
+                        <option value="any-D">至少一个D</option>
+                        <option value="diff">不同评级</option>
+                        <option value="all-A">所有材料为A</option>
+                    </select>
+                    <select id="tempFilter" class="px-3 py-2 border border-gray-200 rounded-lg text-sm">
+                        <option value="c20">20°C</option>
+                        <option value="c50">50°C</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resultsSection" class="px-4 py-4 hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-3 flex items-center justify-between text-sm text-gray-500">
+                <span>显示 <span id="resultCount" class="font-semibold text-gray-700">0</span> 种化学品</span>
+                <label class="flex items-center gap-2 cursor-pointer no-print">
+                    <input type="checkbox" id="highlightDiffs" checked class="rounded">
+                    <span>高亮差异</span>
+                </label>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full" style="min-width:500px">
+                        <thead class="sticky top-0 z-10">
+                            <tr id="tableHead" class="bg-gray-50 text-left text-sm"></tr>
+                        </thead>
+                        <tbody id="tableBody" class="divide-y divide-gray-100"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="loadMore" class="mt-4 text-center hidden">
+                <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 text-sm">加载更多</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 py-8 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">常见问题</h2>
+            <div class="space-y-3">
+                <details class="border border-gray-200 rounded-xl overflow-hidden">
+                    <summary class="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">如何对比不同材料的耐化学性？</summary>
+                    <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">使用上方的对比工具，从下拉菜单中选择2或3种材料。该工具将显示超过1600种化学品在20°C和50°C下的耐受性评级（A至D）并排对比。</div>
+                </details>
+                <details class="border border-gray-200 rounded-xl overflow-hidden">
+                    <summary class="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">A、B、C、D评级代表什么？</summary>
+                    <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">A（优秀）= 材料具有持久耐受性。B（良好）= 耐受性有限，适合短期接触。C（一般）= 材料可能膨胀或降解。D（差）= 材料不适用。</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">热门对比</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/zh/compare/etfe-vs-ectfe/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">ETFE vs ECTFE</h3>
+                    <p class="text-sm text-gray-600">乙烯-四氟乙烯共聚物 vs 乙烯-三氟氯乙烯共聚物</p>
+                </a>
+                <a href="/zh/compare/ptfe-vs-fep/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">PTFE vs FEP</h3>
+                    <p class="text-sm text-gray-600">聚四氟乙烯（特氟龙） vs 氟化乙烯丙烯共聚物</p>
+                </a>
+                <a href="/zh/compare/nbr-vs-epdm/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">NBR vs EPDM</h3>
+                    <p class="text-sm text-gray-600">丁腈橡胶（Buna-N） vs 三元乙丙橡胶</p>
+                </a>
+                <a href="/zh/compare/hdpe-vs-pvdf/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">HDPE vs PVDF</h3>
+                    <p class="text-sm text-gray-600">高密度聚乙烯 vs 聚偏氟乙烯</p>
+                </a>
+                <a href="/zh/compare/polysulfone-vs-pvdf/" class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">聚砜 vs PVDF</h3>
+                    <p class="text-sm text-gray-600">聚砜（PSU） vs 聚偏氟乙烯</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 py-8 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">按组分类的对比图表</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                <a href="/zh/charts/fluoropolymers/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">氟聚合物</div>
+                    <div class="text-xs text-gray-500">PTFE, FEP, PVDF, ECTFE</div>
+                </a>
+                <a href="/zh/charts/elastomers/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">弹性体</div>
+                    <div class="text-xs text-gray-500">NBR, EPDM, Viton, Silicone</div>
+                </a>
+                <a href="/zh/charts/metals/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">金属</div>
+                    <div class="text-xs text-gray-500">SS316, SS304, Al</div>
+                </a>
+                <a href="/zh/charts/common-plastics/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">常用塑料</div>
+                    <div class="text-xs text-gray-500">HDPE, LDPE, PP, uPVC +1</div>
+                </a>
+                <a href="/zh/charts/transparent-plastics/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">透明及实验室塑料</div>
+                    <div class="text-xs text-gray-500">PC, PETG, PMP, PSU +1</div>
+                </a>
+                <a href="/zh/charts/engineering-plastics/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">工程塑料</div>
+                    <div class="text-xs text-gray-500">Nylon, POM, PS</div>
+                </a>
+                <a href="/zh/charts/all-materials/" class="p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 transition-colors text-center">
+                    <div class="font-bold text-gray-900 text-sm">全部24种材料</div>
+                    <div class="text-xs text-gray-500">Al, ECTFE, EPDM, FEP +20</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            <p>&copy; 2026 ChemicalResistance.org &mdash; 免费化学兼容性工具</p>
+            <p class="mt-2">数据来源：B&uuml;rkle、INEOS、行业标准</p>
+        </div>
+    </footer>
+
+    <script>
+    var ALL_MATS = [
+        { key: 'AL',         name: '铝',                short: 'Al',       dir: 'aluminium',       group: '金属' },
+        { key: 'ECTFE_ETFE', name: 'ECTFE / ETFE',           short: 'ECTFE',    dir: 'ectfe-etfe',      group: '氟聚合物' },
+        { key: 'EPDM',       name: 'EPDM',                   short: 'EPDM',     dir: 'epdm',            group: '弹性体' },
+        { key: 'FEP',        name: 'FEP',                    short: 'FEP',      dir: 'fep',             group: '氟聚合物' },
+        { key: 'FPM',        name: '氟橡胶 (FPM/FKM)',        short: 'Viton',    dir: 'viton',           group: '弹性体' },
+        { key: 'HDPE',       name: 'HDPE',                   short: 'HDPE',     dir: 'hdpe',            group: '常用塑料' },
+        { key: 'LDPE',       name: 'LDPE',                   short: 'LDPE',     dir: 'ldpe',            group: '常用塑料' },
+        { key: 'NBR',        name: '丁腈橡胶 (NBR)',          short: 'NBR',      dir: 'nbr',             group: '弹性体' },
+        { key: 'PA',         name: '尼龙 (PA)',             short: 'Nylon',    dir: 'nylon-pa',        group: '工程塑料' },
+        { key: 'PC',         name: '聚碳酸酯 (PC)',     short: 'PC',       dir: 'polycarbonate',   group: '透明塑料' },
+        { key: 'PETG',       name: 'PETG',                   short: 'PETG',     dir: 'petg',            group: '透明塑料' },
+        { key: 'PMP',        name: 'PMP',                    short: 'PMP',      dir: 'pmp',             group: '透明塑料' },
+        { key: 'POM',        name: '缩醛 (POM)',            short: 'POM',      dir: 'acetal-pom',      group: '工程塑料' },
+        { key: 'PP',         name: '聚丙烯 (PP)',      short: 'PP',       dir: 'pp',              group: '常用塑料' },
+        { key: 'PS',         name: '聚苯乙烯 (PS)',       short: 'PS',       dir: 'polystyrene',     group: '工程塑料' },
+        { key: 'PSU',        name: '聚砜 (PSU)',     short: 'PSU',      dir: 'polysulfone',     group: '透明塑料' },
+        { key: 'PTFE',       name: 'PTFE (Teflon)',           short: 'PTFE',     dir: 'ptfe',            group: '氟聚合物' },
+        { key: 'PVC_HART',   name: '硬质PVC (PVC-U)',    short: 'uPVC',     dir: 'pvc-rigid',       group: '常用塑料' },
+        { key: 'PVC_WEICH',  name: '软质PVC (PVC-P)',   short: 'pPVC',     dir: 'pvc-flexible',    group: '常用塑料' },
+        { key: 'PVDF',       name: 'PVDF',                   short: 'PVDF',     dir: 'pvdf',            group: '氟聚合物' },
+        { key: 'SAN',        name: 'SAN',                    short: 'SAN',      dir: 'san',             group: '透明塑料' },
+        { key: 'SI',         name: 'Silicone',               short: 'Silicone', dir: 'silicone',        group: '弹性体' },
+        { key: 'V2A',        name: '304不锈钢 (V2A)',   short: 'SS304',    dir: 'stainless-steel-304', group: '金属' },
+        { key: 'V4A',        name: '316不锈钢 (V4A)',   short: 'SS316',    dir: 'ss316',           group: '金属' },
+    ];
+    
+    const ratingMap = { '1':'A', '2':'B', '3':'C', '4':'D', '0':'NR' };
+
+    function translateConc(conc) {
+        if (!conc) return '&mdash;';
+        return conc;
+    }
+
+    function getRating(c, matKey, temp) {
+        return ratingMap[c.ratings[matKey]?.[temp]] || 'NR';
+    }
+
+    var allData = [];
+    var filtered = [];
+    var displayCount = 80;
+    var activeMats = [];
+    var dataLoaded = false;
+
+    function populateSelects() {
+        var groups = {};
+        ALL_MATS.forEach(function(m) {
+            if (!groups[m.group]) groups[m.group] = [];
+            groups[m.group].push(m);
+        });
+        var groupOrder = ['氟聚合物', '弹性体', '金属', '常用塑料', '透明塑料', '工程塑料'];
+
+        ['mat1', 'mat2', 'mat3'].forEach(function(id, i) {
+            var sel = document.getElementById(id);
+            if (i === 2) {
+                var opt = document.createElement('option');
+                opt.value = '';
+                opt.textContent = '— 无 —';
+                sel.appendChild(opt);
+            }
+            groupOrder.forEach(function(gName) {
+                var og = document.createElement('optgroup');
+                og.label = gName;
+                (groups[gName] || []).forEach(function(m) {
+                    var opt = document.createElement('option');
+                    opt.value = m.key;
+                    opt.textContent = m.name;
+                    og.appendChild(opt);
+                });
+                sel.appendChild(og);
+            });
+        });
+        document.getElementById('mat1').value = 'PTFE';
+        document.getElementById('mat2').value = 'HDPE';
+        document.getElementById('mat3').value = '';
+    }
+
+    function hasDiff(c, temp) {
+        var ratings = new Set();
+        for (var i = 0; i < activeMats.length; i++) {
+            var r = c.ratings[activeMats[i].key]?.[temp];
+            if (r && r !== '0') ratings.add(r);
+        }
+        return ratings.size > 1;
+    }
+
+    function loadData() {
+        if (dataLoaded) return Promise.resolve();
+        document.getElementById('statusMsg').textContent = '加载数据...';
+        return fetch('/data/chemicals_burkle_full.json')
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                allData = data;
+                dataLoaded = true;
+                document.getElementById('statusMsg').textContent = '';
+            })
+            .catch(function() {
+                document.getElementById('statusMsg').textContent = '加载失败，请重试。';
+            });
+    }
+
+    function runComparison() {
+        var k1 = document.getElementById('mat1').value;
+        var k2 = document.getElementById('mat2').value;
+        var k3 = document.getElementById('mat3').value;
+        if (k1 === k2 || (k3 && (k3 === k1 || k3 === k2))) {
+            document.getElementById('statusMsg').textContent = '请选择不同的材料。';
+            return;
+        }
+        activeMats = [ALL_MATS.find(function(m) { return m.key === k1; }), ALL_MATS.find(function(m) { return m.key === k2; })];
+        if (k3) activeMats.push(ALL_MATS.find(function(m) { return m.key === k3; }));
+
+        loadData().then(function() {
+            var thead = document.getElementById('tableHead');
+            thead.innerHTML = '<th class="py-3 px-4 font-semibold text-gray-600">化学品</th>'
+                + '<th class="py-3 px-3 font-semibold text-gray-600 text-sm">浓度</th>'
+                + activeMats.map(function(m) {
+                    return '<th class="py-3 px-2 font-semibold text-gray-600 text-center whitespace-nowrap"><a href="/materials/zh/' + m.dir + '/" class="hover:text-emerald-600 hover:underline">' + m.short + '</a></th>';
+                }).join('');
+
+            document.getElementById('legendSection').classList.remove('hidden');
+            document.getElementById('filterSection').classList.remove('hidden');
+            document.getElementById('resultsSection').classList.remove('hidden');
+
+            var params = new URLSearchParams();
+            params.set('m1', k1); params.set('m2', k2);
+            if (k3) params.set('m3', k3);
+            history.replaceState(null, '', '?' + params.toString());
+
+            applyFilters();
+            document.getElementById('legendSection').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
+    function applyFilters() {
+        if (!activeMats.length) return;
+        var query = document.getElementById('searchInput').value.toLowerCase();
+        var filter = document.getElementById('ratingFilter').value;
+        var temp = document.getElementById('tempFilter').value;
+
+        var relevant = allData.filter(function(c) {
+            var count = 0;
+            for (var i = 0; i < activeMats.length; i++) {
+                if (c.ratings[activeMats[i].key] && c.ratings[activeMats[i].key].c20 && c.ratings[activeMats[i].key].c20 !== '0') count++;
+                if (count >= 2) return true;
+            }
+            return false;
+        });
+
+        filtered = relevant.filter(function(c) {
+            if (query) {
+                if (!c.name.toLowerCase().includes(query) && !(c.cas && c.cas.includes(query))) return false;
+            }
+            if (filter === 'diff') return hasDiff(c, temp);
+            if (filter === 'any-A') return activeMats.some(function(m) { return getRating(c, m.key, temp) === 'A'; });
+            if (filter === 'any-D') return activeMats.some(function(m) { return getRating(c, m.key, temp) === 'D'; });
+            if (filter === 'all-A') return activeMats.every(function(m) {
+                var r = getRating(c, m.key, temp);
+                return r === 'A' || r === 'NR';
+            });
+            return true;
+        });
+
+        filtered.sort(function(a, b) {
+            var aDiff = hasDiff(a, temp) ? 0 : 1;
+            var bDiff = hasDiff(b, temp) ? 0 : 1;
+            if (aDiff !== bDiff) return aDiff - bDiff;
+            return a.name.localeCompare(b.name, 'zh');
+        });
+
+        displayCount = 80;
+        renderTable();
+    }
+
+    function renderTable() {
+        var tbody = document.getElementById('tableBody');
+        var temp = document.getElementById('tempFilter').value;
+        var highlight = document.getElementById('highlightDiffs').checked;
+        var toShow = filtered.slice(0, displayCount);
+
+        document.getElementById('resultCount').textContent = filtered.length;
+        document.getElementById('loadMore').classList.toggle('hidden', displayCount >= filtered.length);
+
+        tbody.innerHTML = toShow.map(function(c) {
+            var conc = translateConc(c.concentration);
+            var isDiff = hasDiff(c, temp);
+            var rowClass = (highlight && isDiff) ? 'diff-row hover:bg-amber-100' : 'hover:bg-gray-50';
+
+            var cells = '';
+            for (var i = 0; i < activeMats.length; i++) {
+                var r = getRating(c, activeMats[i].key, temp);
+                cells += '<td class="py-2 px-2 text-center"><span class="rating-' + r + ' px-1.5 py-0.5 rounded text-xs font-bold">' + r + '</span></td>';
+            }
+
+            return '<tr class="' + rowClass + '">'
+                + '<td class="py-2 px-4 text-sm"><div class="font-medium text-gray-900">' + c.name + '</div></td>'
+                + '<td class="py-2 px-3 text-xs text-gray-500">' + conc + '</td>'
+                + cells + '</tr>';
+        }).join('');
+    }
+
+    function loadMore() { displayCount += 80; renderTable(); }
+
+    document.getElementById('compareBtn').addEventListener('click', runComparison);
+    document.getElementById('resetBtn').addEventListener('click', function() {
+        document.getElementById('mat1').value = 'PTFE';
+        document.getElementById('mat2').value = 'HDPE';
+        document.getElementById('mat3').value = '';
+        document.getElementById('legendSection').classList.add('hidden');
+        document.getElementById('filterSection').classList.add('hidden');
+        document.getElementById('resultsSection').classList.add('hidden');
+        document.getElementById('searchInput').value = '';
+        document.getElementById('ratingFilter').value = 'all';
+        document.getElementById('tempFilter').value = 'c20';
+        history.replaceState(null, '', '/zh/compare/');
+        activeMats = [];
+    });
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+    document.getElementById('ratingFilter').addEventListener('change', applyFilters);
+    document.getElementById('tempFilter').addEventListener('change', applyFilters);
+    document.getElementById('highlightDiffs').addEventListener('change', renderTable);
+
+    populateSelects();
+
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('m1') && params.get('m2')) {
+        var m1 = params.get('m1'), m2 = params.get('m2'), m3 = params.get('m3') || '';
+        if (ALL_MATS.find(function(m) { return m.key === m1; }) && ALL_MATS.find(function(m) { return m.key === m2; })) {
+            document.getElementById('mat1').value = m1;
+            document.getElementById('mat2').value = m2;
+            if (m3 && ALL_MATS.find(function(m) { return m.key === m3; })) document.getElementById('mat3').value = m3;
+            runComparison();
+        }
+    }
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "cba547e85ee54e0f9cdc27e68405eead"}'></script>
+</body>
+</html>
