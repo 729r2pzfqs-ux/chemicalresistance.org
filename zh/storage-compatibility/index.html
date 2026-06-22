@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>化学品存储兼容性检查器 | 能否一起存储？</title>
+    <meta name="description" content="免费工具，检查化学品是否可以安全地一起存储。按安全标准的储存柜建议。">
+    <meta name="keywords" content="化学品存储, 化学品隔离, 危险物质存储, 安全储存柜">
+    <link rel="canonical" href="https://chemicalresistance.org/zh/storage-compatibility">
+    
+    <link rel="alternate" hreflang="en" href="https://chemicalresistance.org/storage-compatibility">
+    <link rel="alternate" hreflang="pt" href="https://chemicalresistance.org/pt/storage-compatibility">
+    <link rel="alternate" hreflang="zh" href="https://chemicalresistance.org/zh/storage-compatibility">
+<link rel="alternate" hreflang="es" href="https://chemicalresistance.org/es/storage-compatibility">
+    <link rel="alternate" hreflang="pt" href="https://chemicalresistance.org/pt/storage-compatibility">
+    <link rel="alternate" hreflang="pt" href="https://chemicalresistance.org/pt/storage-compatibility">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="化学品存储兼容性检查器">
+    <meta property="og:description" content="检查化学品是否可以安全地一起存储。免费工具。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemicalresistance.org/zh/storage-compatibility">
+    <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .rating-ok { background: #22c55e; color: white; }
+        .rating-caution { background: #f59e0b; color: white; }
+        .rating-separate { background: #f97316; color: white; }
+        .rating-never { background: #ef4444; color: white; }
+        .chemical-tag { transition: all 0.2s; }
+        .chemical-tag:hover { transform: scale(1.02); }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "化学品存储兼容性检查器",
+        "description": "检查化学品是否可以安全地一起存储",
+        "url": "https://chemicalresistance.org/zh/storage-compatibility.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-2">
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">化学品耐受性数据库</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">材料</a>
+                    <a href="/chemicals/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">化学品</a>
+                    <a href="/zh/compare/" class="text-gray-600 hover:text-gray-900 hover:underline">对比</a>
+                    <a href="/zh/charts/" class="text-gray-600 hover:text-gray-900 hover:underline">图表</a>
+                    <a href="/zh/storage-compatibility/" class="text-emerald-600 font-medium">存储</a>
+                    <a href="/zh/sds-decoder/" class="text-gray-600 hover:text-gray-900 hover:underline">SDS解读器</a>
+                    <a href="/zh/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">粘度</a>
+                    <a href="/zh/about/" class="text-gray-600 hover:text-gray-900 hover:underline">关于</a>
+                </nav>
+                <select id="langSelect" aria-label="选择语言" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">&#127468;&#127463; EN</option>
+                    <option value="es">&#127466;&#127480; ES</option>
+                    <option value="de">&#127465;&#127466; DE</option>
+                    <option value="fr">&#127467;&#127479; FR</option>
+                    <option value="pt">&#127463;&#127479; PT</option>
+                    <option value="zh" selected>&#127464;&#127475; ZH</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">耐受性数据表</a>
+                <a href="/materials/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有材料</a>
+                <a href="/chemicals/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有化学品</a>
+                <a href="/zh/compare/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">材料对比</a>
+                <a href="/zh/charts/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">对比图表</a>
+                <a href="/zh/storage-compatibility/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">存储兼容性</a>
+                <a href="/zh/sds-decoder/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">SDS解读器</a>
+                <a href="/zh/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">粘度</a>
+                <a href="/zh/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">关于</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
+    </script>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Hero -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <i data-lucide="box" class="w-8 h-8 inline-block text-blue-600 mr-2"></i>
+                化学品存储兼容性检查器
+            </h1>
+            <p class="text-gray-600 text-lg">检查化学品是否可以安全地一起存储。依据职业安全标准。</p>
+        </div>
+
+        <!-- Search & Add Chemicals -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">添加化学品以检查兼容性：</label>
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                <input 
+                    type="text" 
+                    id="chemicalSearch" 
+                    placeholder="搜索化学品名称或CAS号（例如硫酸、丙酮、氢氧化钠...）"
+                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg"
+                    autocomplete="off"
+                >
+                <div id="searchResults" class="absolute w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden max-h-64 overflow-y-auto z-10"></div>
+            </div>
+            
+            <div id="selectedChemicals" class="flex flex-wrap gap-2 mt-4 min-h-[48px]">
+                <span class="text-gray-400 text-sm" id="emptyState">未选择化学品。请在上方搜索并添加化学品。</span>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="hidden">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="git-compare" class="w-5 h-5 text-blue-600"></i>
+                    兼容性结果
+                </h2>
+                <div id="compatibilityResults"></div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="archive" class="w-5 h-5 text-blue-600"></i>
+                    存储建议
+                </h2>
+                <div id="cabinetRecommendations"></div>
+            </div>
+        </div>
+
+        <!-- Interactive Segregation Chart -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <i data-lucide="grid-3x3" class="w-5 h-5 text-blue-600"></i>
+                化学品隔离表
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">点击单元格查看详情。依据职业安全标准。</p>
+            
+            <div class="flex flex-wrap gap-3 mb-6 p-3 bg-gray-50 rounded-lg">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-green-500 rounded"></div><span class="text-sm">可以一起存储</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-yellow-500 rounded"></div><span class="text-sm">需具体确认</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-orange-500 rounded"></div><span class="text-sm">分开存储柜</span></div>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-red-600 rounded"></div><span class="text-sm">绝对禁止</span></div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="p-2 bg-gray-100 border border-gray-200"></th>
+                            <th class="p-3 bg-red-50 border border-gray-200 text-center">
+                                <img src="../../img/ghs/ghs05.svg" alt="酸类" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-red-700">酸类</div>
+                            </th>
+                            <th class="p-3 bg-blue-50 border border-gray-200 text-center">
+                                <img src="../../img/ghs/ghs05.svg" alt="Base" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-blue-700">碱类</div>
+                            </th>
+                            <th class="p-3 bg-orange-50 border border-gray-200 text-center">
+                                <img src="../../img/ghs/ghs02.svg" alt="易燃品" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-orange-700">易燃品</div>
+                            </th>
+                            <th class="p-3 bg-yellow-50 border border-gray-200 text-center">
+                                <img src="../../img/ghs/ghs03.svg" alt="氧化剂" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-yellow-700">氧化剂</div>
+                            </th>
+                            <th class="p-3 bg-purple-50 border border-gray-200 text-center">
+                                <img src="../../img/ghs/ghs06.svg" alt="有毒品" class="w-10 h-10 mx-auto mb-1">
+                                <div class="font-bold text-purple-700">有毒品</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-3 bg-red-50 border border-gray-200 font-bold text-red-700">
+                                <img src="../../img/ghs/ghs05.svg" alt="酸类" class="w-8 h-8 inline mr-2">酸类
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('acid','acid')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('acid','base')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">禁止</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','oxidizer')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('acid','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">确认</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-blue-50 border border-gray-200 font-bold text-blue-700">
+                                <img src="../../img/ghs/ghs05.svg" alt="Base" class="w-8 h-8 inline mr-2">碱类
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('base','acid')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">禁止</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('base','base')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('base','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','oxidizer')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">确认</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">确认</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-orange-50 border border-gray-200 font-bold text-orange-700">
+                                <img src="../../img/ghs/ghs02.svg" alt="易燃品" class="w-8 h-8 inline mr-2">易燃品
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','acid')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','base')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('flammable','flammable')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('flammable','oxidizer')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">禁止</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','toxic')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-yellow-50 border border-gray-200 font-bold text-yellow-700">
+                                <img src="../../img/ghs/ghs03.svg" alt="氧化剂" class="w-8 h-8 inline mr-2">氧化剂
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','acid')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('oxidizer','base')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">确认</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('oxidizer','flammable')">
+                                <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">禁止</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('oxidizer','oxidizer')">
+                                <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','toxic')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 bg-purple-50 border border-gray-200 font-bold text-purple-700">
+                                <img src="../../img/ghs/ghs06.svg" alt="有毒品" class="w-8 h-8 inline mr-2">有毒品
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','acid')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">确认</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','base')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">确认</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','flammable')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','oxidizer')">
+                                <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">分开</span>
+                            </td>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','toxic')">
+                                <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">确认</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-4 text-xs text-gray-600">
+                <span><span class="inline-block w-3 h-3 rounded rating-ok mr-1"></span> 可以一起存储</span>
+                <span><span class="inline-block w-3 h-3 rounded rating-caution mr-1"></span> 需具体确认</span>
+                <span><span class="inline-block w-3 h-3 rounded rating-separate mr-1"></span> 分开存储柜</span>
+                <span><span class="inline-block w-3 h-3 rounded rating-never mr-1"></span> 绝对禁止</span>
+            </div>
+        </div>
+
+        <!-- Related Tools -->
+        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+            <h3 class="font-bold text-gray-900 mb-3">其他工具</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/zh/" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                    <i data-lucide="flask-round" class="w-8 h-8 text-blue-600"></i>
+                    <div>
+                        <div class="font-medium text-gray-900">化学品耐受性</div>
+                        <div class="text-sm text-gray-600">检查材料兼容性</div>
+                    </div>
+                </a>
+                <a href="../../sds-decoder" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                    <i data-lucide="file-text" class="w-8 h-8 text-green-600"></i>
+                    <div>
+                        <div class="font-medium text-gray-900">SDS解读器</div>
+                        <div class="text-sm text-gray-600">安全数据简明解读</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center text-gray-400 text-sm">
+                <p>⚠️ 本工具仅供参考。请始终查阅安全数据表和当地法规。</p>
+                <p class="mt-2">© 2026 ChemicalResistance.org — <a href="/zh/about/" class="underline hover:text-white">关于</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/chemicals_hazard_data.js"></script>
+    
+    <script>
+    const chemicalDatabase = window.chemicalHazardDB;
+    const compatibilityRules = window.storageCompatibility;
+
+    const classColors = {
+        acid: { bg: "bg-red-100", border: "border-red-400", text: "text-red-700" },
+        base: { bg: "bg-blue-100", border: "border-blue-400", text: "text-blue-700" },
+        flammable: { bg: "bg-orange-100", border: "border-orange-400", text: "text-orange-700" },
+        oxidizer: { bg: "bg-yellow-100", border: "border-yellow-400", text: "text-yellow-700" },
+        toxic: { bg: "bg-purple-100", border: "border-purple-400", text: "text-purple-700" },
+        corrosive: { bg: "bg-red-100", border: "border-red-500", text: "text-red-800" }
+    };
+
+    const classNames = {
+        acid: "酸类", base: "碱类", flammable: "易燃品", 
+        oxidizer: "氧化剂", toxic: "有毒品", corrosive: "腐蚀品"
+    };
+
+    let selectedChemicals = [];
+    const searchInput = document.getElementById('chemicalSearch');
+    const searchResults = document.getElementById('searchResults');
+    const selectedContainer = document.getElementById('selectedChemicals');
+    const resultsSection = document.getElementById('results');
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        if (query.length < 2) {
+            searchResults.classList.add('hidden');
+            return;
+        }
+
+        const matches = Object.keys(chemicalDatabase).filter(name => {
+            const chem = chemicalDatabase[name];
+            return name.toLowerCase().includes(query) || 
+                chem.cas?.includes(query) ||
+                chem.pt?.toLowerCase().includes(query) ||
+                chem.synonyms?.some(s => s.toLowerCase().includes(query));
+        }).slice(0, 10);
+
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="p-3 text-gray-500">未找到化学品</div>';
+        } else {
+            searchResults.innerHTML = matches.map(name => {
+                const chem = chemicalDatabase[name];
+                const displayName = chem.pt || name;
+                const classLabels = (chem.classes || []).map(c => 
+                    `<span class="text-xs px-1.5 py-0.5 rounded ${classColors[c]?.bg || 'bg-gray-100'} ${classColors[c]?.text || 'text-gray-700'}">${classNames[c] || c}</span>`
+                ).join(' ');
+                return `
+                    <div class="p-3 hover:bg-blue-50 cursor-pointer border-b last:border-b-0" onclick="addChemical('${name}')">
+                        <div class="font-medium text-gray-900">${displayName}</div>
+                        <div class="text-xs text-gray-500 mt-1">CAS: ${chem.cas || '无'} · ${classLabels || '无危险'}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+        searchResults.classList.remove('hidden');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.add('hidden');
+        }
+    });
+
+    function addChemical(name) {
+        if (selectedChemicals.includes(name)) return;
+        if (selectedChemicals.length >= 10) {
+            alert('最多同时比较10种化学品');
+            return;
+        }
+        selectedChemicals.push(name);
+        searchInput.value = '';
+        searchResults.classList.add('hidden');
+        updateSelectedDisplay();
+        updateResults();
+    }
+
+    function removeChemical(name) {
+        selectedChemicals = selectedChemicals.filter(c => c !== name);
+        updateSelectedDisplay();
+        updateResults();
+    }
+
+    function updateSelectedDisplay() {
+        if (selectedChemicals.length === 0) {
+            selectedContainer.innerHTML = '<span class="text-gray-400 text-sm">未选择化学品。请在上方搜索并添加化学品。</span>';
+            resultsSection.classList.add('hidden');
+            return;
+        }
+
+        selectedContainer.innerHTML = selectedChemicals.map(name => {
+            const chem = chemicalDatabase[name];
+            const displayName = chem.pt || name;
+            const mainClass = (chem.classes || [])[0];
+            const colors = classColors[mainClass] || { bg: 'bg-gray-100', border: 'border-gray-300', text: 'text-gray-700' };
+            return `
+                <div class="chemical-tag flex items-center gap-2 px-3 py-2 rounded-lg border-2 ${colors.bg} ${colors.border}">
+                    <span class="font-medium ${colors.text}">${displayName}</span>
+                    <button onclick="removeChemical('${name}')" class="text-gray-400 hover:text-red-500">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            `;
+        }).join('');
+        lucide.createIcons();
+    }
+
+    function getCompatibility(class1, class2) {
+        const key1 = `${class1}+${class2}`;
+        const key2 = `${class2}+${class1}`;
+        return compatibilityRules[key1] || compatibilityRules[key2] || { rating: "caution", reason: "请检查具体化学品" };
+    }
+
+    function updateResults() {
+        if (selectedChemicals.length < 2) {
+            resultsSection.classList.add('hidden');
+            return;
+        }
+        resultsSection.classList.remove('hidden');
+
+        const pairs = [];
+        for (let i = 0; i < selectedChemicals.length; i++) {
+            for (let j = i + 1; j < selectedChemicals.length; j++) {
+                const chem1 = chemicalDatabase[selectedChemicals[i]];
+                const chem2 = chemicalDatabase[selectedChemicals[j]];
+                const name1 = chem1.de || selectedChemicals[i];
+                const name2 = chem2.de || selectedChemicals[j];
+                
+                let worstRating = "ok";
+                let worstReason = "可以一起存储";
+                
+                for (const c1 of (chem1.classes || [])) {
+                    for (const c2 of (chem2.classes || [])) {
+                        const compat = getCompatibility(c1, c2);
+                        if (compat.rating === "never" || (compat.rating === "separate" && worstRating !== "never") || 
+                            (compat.rating === "caution" && worstRating === "ok")) {
+                            worstRating = compat.rating;
+                            worstReason = compat.reason;
+                        }
+                    }
+                }
+                
+                pairs.push({ chem1: name1, chem2: name2, rating: worstRating, reason: worstReason });
+            }
+        }
+
+        const severity = { never: 0, separate: 1, caution: 2, ok: 3 };
+        pairs.sort((a, b) => severity[a.rating] - severity[b.rating]);
+
+        const ratingIcons = { ok: '✓', caution: '⚠️', separate: '↔️', never: '✗' };
+        const ratingLabels = { ok: '可以', caution: '注意', separate: '分开', never: '禁止' };
+
+        document.getElementById('compatibilityResults').innerHTML = pairs.map(p => `
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-3 border-b last:border-b-0 ${p.rating === 'never' ? 'bg-red-50' : ''}">
+                <div class="flex items-center gap-3 mb-2 md:mb-0">
+                    <span class="font-medium">${p.chem1}</span>
+                    <span class="text-gray-400">+</span>
+                    <span class="font-medium">${p.chem2}</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm text-gray-600">${p.reason}</span>
+                    <span class="px-2 py-1 rounded text-xs font-medium rating-${p.rating}">${ratingIcons[p.rating]} ${ratingLabels[p.rating]}</span>
+                </div>
+            </div>
+        `).join('');
+
+        const cabinets = { acid: [], base: [], flammable: [], oxidizer: [], toxic: [], general: [] };
+        
+        for (const name of selectedChemicals) {
+            const chem = chemicalDatabase[name];
+            const displayName = chem.pt || name;
+            const classes = chem.classes || [];
+            if (classes.includes('acid')) cabinets.acid.push(displayName);
+            else if (classes.includes('base')) cabinets.base.push(displayName);
+            else if (classes.includes('flammable')) cabinets.flammable.push(displayName);
+            else if (classes.includes('oxidizer')) cabinets.oxidizer.push(displayName);
+            else if (classes.includes('toxic')) cabinets.toxic.push(displayName);
+            else cabinets.general.push(displayName);
+        }
+
+        const cabinetLabels = {
+            acid: { name: '酸类储存柜', icon: 'flask-round', color: 'red' },
+            base: { name: '碱类储存柜', icon: 'droplets', color: 'blue' },
+            flammable: { name: '易燃品储存柜', icon: 'flame', color: 'orange' },
+            oxidizer: { name: '氧化剂储存柜', icon: 'zap', color: 'yellow' },
+            toxic: { name: '有毒品储存柜', icon: 'skull', color: 'purple' },
+            general: { name: '通用储存', icon: 'box', color: 'gray' }
+        };
+
+        document.getElementById('cabinetRecommendations').innerHTML = Object.entries(cabinets)
+            .filter(([_, chems]) => chems.length > 0)
+            .map(([cab, chems]) => {
+                const info = cabinetLabels[cab];
+                return `
+                    <div class="p-4 rounded-lg border-2 border-${info.color}-200 bg-${info.color}-50 mb-3 last:mb-0">
+                        <div class="flex items-center gap-2 font-medium text-${info.color}-700 mb-2">
+                            <i data-lucide="${info.icon}" class="w-5 h-5"></i>
+                            ${info.name}
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            ${chems.map(c => `<span class="px-2 py-1 bg-white rounded text-sm">${c}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+        lucide.createIcons();
+    }
+
+    function changeLanguage(lang) {
+        const urls = {
+            en: '/storage-compatibility.html',
+            de: '/de/storage-compatibility.html',
+            es: '/es/storage-compatibility.html',
+            fr: '/fr/storage-compatibility.html',
+            pt: '/pt/storage-compatibility.html'
+        };
+        window.location.href = urls[lang] || urls.en;
+    }
+
+    const compatDetails = {
+        'acid+acid': { title: '✅ 酸类可以一起存储', msg: '酸类通常可以一起存储在耐酸储存柜中。远离金属和碱类。' },
+        'acid+base': { title: '❌ 绝对不可：酸类 + 碱类', msg: '剧烈反应！酸碱混合会引发放热中和反应。可能导致沸腾、飞溅、释放热量和有毒蒸气。' },
+        'base+acid': { title: '❌ 绝对不可：碱类 + 酸类', msg: '剧烈反应！碱酸混合会引发放热中和反应。可能导致沸腾、飞溅、释放热量和有毒蒸气。' },
+        'acid+flammable': { title: '↔ 分开存储：酸类 + 易燃品', msg: '存放在不同储存柜中。酸类可能产生热量并点燃可燃物质。' },
+        'flammable+acid': { title: '↔ 分开存储：易燃品 + 酸类', msg: '存放在不同储存柜中。酸类可能产生热量并点燃可燃物质。' },
+        'acid+oxidizer': { title: '↔ 分开存储：酸类 + 氧化剂', msg: '分开存储。某些组合会产生有毒气体（如漂白剂中的氯 + 酸）。' },
+        'oxidizer+acid': { title: '↔ 分开存储：氧化剂 + 酸类', msg: '分开存储。某些组合会产生有毒气体。' },
+        'acid+toxic': { title: '⚠ 需确认：酸类 + 有毒品', msg: '请检查具体化学品。某些有毒化合物在酸性环境中会释放危险气体（如氰化物 → HCN）。' },
+        'toxic+acid': { title: '⚠ 需确认：有毒品 + 酸类', msg: '请检查具体化学品。' },
+        'base+base': { title: '✅ 碱类可以一起存储', msg: '碱类可以一起存储。远离酸类和活性金属（铝、锌）。' },
+        'base+flammable': { title: '↔ 分开存储：碱类 + 易燃品', msg: '存放在不同储存柜中。强碱可能与某些有机化合物反应。' },
+        'flammable+base': { title: '↔ 分开存储：易燃品 + 碱类', msg: '存放在不同储存柜中。' },
+        'base+oxidizer': { title: '⚠ 需确认：碱类 + 氧化剂', msg: '请检查具体化学品。通常比酸类 + 氧化剂反应性低。' },
+        'oxidizer+base': { title: '⚠ 需确认：氧化剂 + 碱类', msg: '请检查具体化学品。' },
+        'base+toxic': { title: '⚠ 需确认：碱类 + 有毒品', msg: '请检查具体化学品。可能发生某些反应。' },
+        'toxic+base': { title: '⚠ 需确认：有毒品 + 碱类', msg: '请检查具体化学品。' },
+        'flammable+flammable': { title: '✅ 易燃品可以一起存储', msg: '存放在经过认证的易燃品安全储存柜中。容器接地，远离点火源。' },
+        'flammable+oxidizer': { title: '❌ 绝对不可：易燃品 + 氧化剂', msg: '极端火灾/爆炸危险！氧化剂会加剧火灾并可能导致自燃。' },
+        'oxidizer+flammable': { title: '❌ 绝对不可：氧化剂 + 易燃品', msg: '极端火灾/爆炸危险！氧化剂会加剧火灾并可能导致自燃。' },
+        'flammable+toxic': { title: '↔ 分开存储：易燃品 + 有毒品', msg: '存放在不同的通风区域。有毒物质起火会造成极度危险的状况。' },
+        'toxic+flammable': { title: '↔ 分开存储：有毒品 + 易燃品', msg: '存放在不同的通风区域。' },
+        'oxidizer+oxidizer': { title: '✅ 氧化剂可以一起存储', msg: '通常可以，但请检查具体化学品。某些氧化剂之间不兼容。' },
+        'oxidizer+toxic': { title: '↔ 分开存储：氧化剂 + 有毒品', msg: '分开存储。氧化剂可能与有毒化合物反应并释放危险蒸气。' },
+        'toxic+oxidizer': { title: '↔ 分开存储：有毒品 + 氧化剂', msg: '分开存储。' },
+        'toxic+toxic': { title: '⚠ 需确认：有毒品一起存储', msg: '请检查具体化学品。许多有毒品可以一起存储，但需确认不会发生反应。' }
+    };
+
+    function showCompatInfo(class1, class2) {
+        const key = `${class1}+${class2}`;
+        const info = compatDetails[key] || { title: '检查兼容性', msg: '请查阅这些具体化学品的安全数据表。' };
+        alert(`${info.title}\n\n${info.msg}`);
+    }
+
+    lucide.createIcons();
+    </script>
+<nav style="max-width:900px;margin:2rem auto;padding:1rem;border-top:1px solid #e5e7eb;text-align:center;font-size:0.875rem;color:#6b7280"><a href="/" style="color:#6b7280;text-decoration:none;margin:0 8px">Home</a>&middot;<a href="/chemicals/" style="color:#6b7280;text-decoration:none;margin:0 8px">Chemicals</a>&middot;<a href="/sds-decoder/" style="color:#6b7280;text-decoration:none;margin:0 8px">SDS Decoder</a>&middot;<a href="/storage-compatibility/" style="color:#6b7280;text-decoration:none;margin:0 8px">Storage</a>&middot;<a href="/about/" style="color:#6b7280;text-decoration:none;margin:0 8px">About</a>&middot;<a href="/privacy.html" style="color:#6b7280;text-decoration:none;margin:0 8px">Privacy</a></nav>
+</body>
+</html>

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SDS解读器 | 安全数据表解读 | 个人防护装备与存储</title>
+    <meta name="description" content="免费工具用于解读安全数据表 (SDS)。获取清晰的危险摘要、个人防护装备要求、存储指南和运输信息。">
+    <meta name="keywords" content="SDS解读器, 安全数据表, GHS象形图, 个人防护装备要求, 化学品危险, H短语">
+    <link rel="canonical" href="https://chemicalresistance.org/zh/sds-decoder">
+    
+    <link rel="alternate" hreflang="en" href="https://chemicalresistance.org/sds-decoder">
+    <link rel="alternate" hreflang="de" href="https://chemicalresistance.org/de/sds-decoder">
+    <link rel="alternate" hreflang="pt" href="https://chemicalresistance.org/pt/sds-decoder">
+    <link rel="alternate" hreflang="zh" href="https://chemicalresistance.org/zh/sds-decoder">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SDS解读器 | 安全数据表解读">
+    <meta property="og:description" content="即时解读安全数据表。获取个人防护装备要求、存储指南和危险信息。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemicalresistance.org/zh/sds-decoder">
+    <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
+        .ghs-icon { width: 48px; height: 48px; }
+        .section-card { transition: all 0.2s; }
+        .section-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SDS解读器",
+        "description": "将安全数据表解读为清晰的摘要",
+        "url": "https://chemicalresistance.org/zh/sds-decoder.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-2">
+                <img src="/logos/logo-icon-128x128.png" alt="ChemicalResistance" class="w-10 h-10 rounded-xl">
+                <div>
+                    <div class="font-bold text-gray-900">ChemicalResistance.org</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">化学品耐受性数据库</div>
+                </div>
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="/materials/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">材料</a>
+                    <a href="/chemicals/zh/" class="text-gray-600 hover:text-gray-900 hover:underline">化学品</a>
+                    <a href="/zh/compare/" class="text-gray-600 hover:text-gray-900 hover:underline">对比</a>
+                    <a href="/zh/charts/" class="text-gray-600 hover:text-gray-900 hover:underline">图表</a>
+                    <a href="/zh/storage-compatibility/" class="text-gray-600 hover:text-gray-900 hover:underline">存储</a>
+                    <a href="/zh/sds-decoder/" class="text-emerald-600 font-medium">SDS解读器</a>
+                    <a href="/zh/viscosity/" class="text-gray-600 hover:text-gray-900 hover:underline">粘度</a>
+                    <a href="/zh/about/" class="text-gray-600 hover:text-gray-900 hover:underline">关于</a>
+                </nav>
+                <select id="langSelect" aria-label="选择语言" class="bg-gray-100 border border-gray-200 rounded-lg px-2 py-1 text-sm cursor-pointer">
+                    <option value="en">&#127468;&#127463; EN</option>
+                    <option value="es">&#127466;&#127480; ES</option>
+                    <option value="de">&#127465;&#127466; DE</option>
+                    <option value="fr">&#127467;&#127479; FR</option>
+                    <option value="pt">&#127463;&#127479; PT</option>
+                    <option value="zh" selected>&#127464;&#127475; ZH</option>
+                </select>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">耐受性数据表</a>
+                <a href="/materials/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有材料</a>
+                <a href="/chemicals/zh/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">所有化学品</a>
+                <a href="/zh/compare/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">材料对比</a>
+                <a href="/zh/charts/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">对比图表</a>
+                <a href="/zh/storage-compatibility/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">存储兼容性</a>
+                <a href="/zh/sds-decoder/" class="py-2 px-3 rounded-lg text-emerald-700 bg-emerald-50 font-medium">SDS解读器</a>
+                <a href="/zh/viscosity/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">粘度</a>
+                <a href="/zh/about/" class="py-2 px-3 rounded-lg text-gray-700 hover:bg-gray-50">关于</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.getElementById('langSelect').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang === 'en') window.location.href = '/';
+            else window.location.href = '/' + lang + '/';
+        });
+    </script>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Hero -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <i data-lucide="file-text" class="w-8 h-8 inline-block text-green-600 mr-2"></i>
+                SDS解读器
+            </h1>
+            <p class="text-gray-600 text-lg">清晰解读安全数据表。即时获取个人防护装备、存储和危险信息。</p>
+        </div>
+
+        <!-- Search -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">搜索化学品：</label>
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                <input 
+                    type="text" 
+                    id="chemicalSearch" 
+                    placeholder="按名称或CAS编号搜索（如：硫酸、7664-93-9...）"
+                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 text-lg"
+                    autocomplete="off"
+                >
+                <div id="searchResults" class="absolute w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg hidden max-h-64 overflow-y-auto z-10"></div>
+            </div>
+        </div>
+
+        <!-- SDS Results (hidden initially) -->
+        <div id="sdsResults" class="hidden">
+            <div id="chemicalHeader" class="bg-gradient-to-r from-green-600 to-green-700 rounded-xl p-6 mb-6 text-white"></div>
+
+            <div id="ghsSection" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="alert-triangle" class="w-5 h-5 text-red-500"></i>
+                    GHS危险象形图
+                </h2>
+                <div id="ghsPictograms" class="flex flex-wrap gap-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="section-card bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="hard-hat" class="w-5 h-5 text-blue-500"></i>
+                        所需个人防护装备
+                    </h2>
+                    <div id="ppeList" class="space-y-3"></div>
+                </div>
+
+                <div class="section-card bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
+                        存储
+                    </h2>
+                    <div id="storageInfo" class="space-y-3"></div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="alert-circle" class="w-5 h-5 text-red-500"></i>
+                    危险说明（H短语）
+                </h2>
+                <div id="hazardStatements" class="space-y-2"></div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="heart-pulse" class="w-5 h-5 text-red-500"></i>
+                    急救措施
+                </h2>
+                <div id="firstAid" class="grid md:grid-cols-2 gap-4"></div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="truck" class="w-5 h-5 text-purple-500"></i>
+                    运输信息
+                </h2>
+                <div id="transportInfo" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+            </div>
+
+            <div class="bg-green-50 rounded-xl p-6 border border-green-100">
+                <h3 class="font-bold text-gray-900 mb-3">后续步骤</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="../../zh" id="resistanceLink" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                        <i data-lucide="flask-round" class="w-8 h-8 text-blue-600"></i>
+                        <div>
+                            <div class="font-medium text-gray-900">检查材料兼容性</div>
+                            <div class="text-sm text-gray-600">查找此化学品的耐受材料</div>
+                        </div>
+                    </a>
+                    <a href="../../storage-compatibility" class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition">
+                        <i data-lucide="box" class="w-8 h-8 text-orange-600"></i>
+                        <div>
+                            <div class="font-medium text-gray-900">存储兼容性</div>
+                            <div class="text-sm text-gray-600">我可以将此化学品与其他化学品一起存储吗？</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GHS Reference -->
+        <div id="ghsReference" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <i data-lucide="info" class="w-5 h-5 text-blue-600"></i>
+                GHS象形图参考
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">全球统一制度 (GHS) 使用以下象形图来标识危险：</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs01.svg" alt="GHS01" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS01 - 爆炸物</div>
+                    <div class="text-sm text-gray-600 text-center">爆炸物、自反应物质</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs02.svg" alt="GHS02" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS02 - 易燃</div>
+                    <div class="text-sm text-gray-600 text-center">易燃气体、液体、固体</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs03.svg" alt="GHS03" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS03 - 氧化剂</div>
+                    <div class="text-sm text-gray-600 text-center">可能引起或加剧火灾</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs04.svg" alt="GHS04" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS04 - 压缩气体</div>
+                    <div class="text-sm text-gray-600 text-center">高压气体</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs05.svg" alt="GHS05" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS05 - 腐蚀</div>
+                    <div class="text-sm text-gray-600 text-center">皮肤腐蚀、眼睛损伤</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs06.svg" alt="GHS06" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS06 - 有毒</div>
+                    <div class="text-sm text-gray-600 text-center">急性毒性（致命或有毒）</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs07.svg" alt="GHS07" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS07 - 刺激性</div>
+                    <div class="text-sm text-gray-600 text-center">刺激、致敏、麻醉</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs08.svg" alt="GHS08" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS08 - 健康危害</div>
+                    <div class="text-sm text-gray-600 text-center">致癌、致突变、器官损伤</div>
+                </div>
+                <div class="p-4 border rounded-lg flex flex-col items-center">
+                    <img src="../../img/ghs/ghs09.svg" alt="GHS09" class="w-16 h-16 mb-2">
+                    <div class="font-medium text-center">GHS09 - 环境危害</div>
+                    <div class="text-sm text-gray-600 text-center">对水生环境有害</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What is an SDS -->
+        <div id="sdsExplainer" class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">什么是安全数据表 (SDS)？</h2>
+            <p class="text-gray-600 mb-4">安全数据表是一份提供化学品或混合物完整信息的文件。危险化学品必须提供安全数据表，包含以下16个标准章节：</p>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+                <div class="flex gap-2"><span class="font-medium text-gray-700">1.</span> 物质标识</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">2.</span> 危险标识</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">3.</span> 成分/组成信息</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">4.</span> 急救措施</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">5.</span> 消防措施</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">6.</span> 泄漏应急处理</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">7.</span> 操作处置与存储</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">8.</span> 接触控制/个人防护</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">9.</span> 物理和化学性质</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">10.</span> 稳定性和反应性</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">11.</span> 毒理学信息</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">12.</span> 生态学信息</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">13.</span> 废弃处置</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">14.</span> 运输信息</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">15.</span> 法规信息</div>
+                <div class="flex gap-2"><span class="font-medium text-gray-700">16.</span> 其他信息</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center text-gray-400 text-sm">
+                <p>⚠️ 本工具仅提供摘要。如需详细信息，请始终查阅完整的安全数据表。</p>
+                <p class="mt-2">© 2026 ChemicalResistance.org — <a href="../../zh/about/" class="underline hover:text-white">关于</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/chemicals_hazard_data.js"></script>
+    
+    <script>
+    const sdsDatabase = window.chemicalHazardDB;
+    
+    // Translation helper - pattern-based for comprehensive coverage
+    function t(text) {
+        if (!text) return text;
+        
+        // Word/phrase replacements (applied in order)
+        const patterns = [
+            // PPE - Eye protection
+            ["Chemical splash goggles", "防溅护目镜"],
+            ["Chemical goggles", "化学防护眼镜"],
+            ["Safety goggles", "安全护目镜"],
+            ["Safety glasses", "安全眼镜"],
+            ["Face shield", "面部防护罩"],
+            ["face shield", "面部防护罩"],
+            ["Sealed goggles", "密封护目镜"],
+            // PPE - Gloves
+            ["Butyl or neoprene gloves", "丁基或氯丁橡胶手套"],
+            ["PVC or neoprene gloves", "PVC或氯丁橡胶手套"],
+            ["Butyl rubber gloves", "丁基橡胶手套"],
+            ["Butyl gloves", "丁基手套"],
+            ["Butyl rubber", "丁基橡胶"],
+            ["Neoprene gloves", "氯丁橡胶手套"],
+            ["Nitrile gloves", "丁腈手套"],
+            ["PVC gloves", "PVC手套"],
+            ["Rubber gloves", "橡胶手套"],
+            ["Viton gloves", "Viton手套"],
+            ["Cryogenic gloves", "低温手套"],
+            ["Insulated gloves", "隔热手套"],
+            ["Leather gloves", "皮革手套"],
+            ["Chemical-resistant gloves", "耐化学品手套"],
+            ["Double gloves", "双层手套"],
+            ["Gloves recommended", "建议佩戴手套"],
+            ["Gloves optional", "手套可选"],
+            ["Gloves", "手套"],
+            // PPE - Respiratory
+            ["Full-face respirator", "全面罩防毒面具"],
+            ["Organic vapor respirator", "有机蒸气防护面罩"],
+            ["Acid gas respirator", "酸性气体防护面罩"],
+            ["Dust mask", "防尘口罩"],
+            ["Dust respirator", "防尘口罩"],
+            ["P100 respirator", "P100防护口罩"],
+            ["P3 respirator", "P3防护口罩"],
+            ["Particulate respirator", "颗粒物防护口罩"],
+            ["SCBA", "自给式空气呼吸器"],
+            ["Supplied air", "供气式呼吸器"],
+            ["respirator", "防护口罩"],
+            // PPE - Body
+            ["Full chemical suit", "全身化学防护服"],
+            ["Chemical-resistant suit", "耐化学品防护服"],
+            ["chemical-resistant suit", "耐化学品防护服"],
+            ["Chemical-resistant boots", "耐化学品靴"],
+            ["Chemical-resistant apron", "耐化学品围裙"],
+            ["Chemical suit", "化学防护服"],
+            ["Full protective suit", "全身防护服"],
+            ["Protective clothing", "防护服"],
+            ["Full suit", "全身防护服"],
+            ["Lab coat", "实验室白大褂"],
+            ["Apron", "围裙"],
+            ["Long sleeves", "长袖"],
+            ["emergency shower access", "紧急淋浴设施"],
+            ["Emergency shower and eyewash access", "紧急淋浴和洗眼设施"],
+            ["Emergency shower required", "需要紧急淋浴"],
+            ["eyewash", "洗眼器"],
+            // Storage cabinets
+            ["Acid cabinet", "酸类储存柜"],
+            ["Base cabinet", "碱类储存柜"],
+            ["Flammable cabinet", "易燃品储存柜"],
+            ["Flammable safety cabinet", "易燃品安全储存柜"],
+            ["Oxidizer cabinet", "氧化剂储存柜"],
+            ["Toxic cabinet", "有毒品储存柜"],
+            ["Corrosive cabinet", "腐蚀品储存柜"],
+            ["Corrosive storage", "腐蚀品存储"],
+            ["Locked poison cabinet", "上锁毒品柜"],
+            ["Cylinder storage", "气瓶存储"],
+            ["Compressed gas storage", "压缩气体存储"],
+            ["General storage", "一般存储"],
+            ["General chemical storage", "一般化学品存储"],
+            ["Toxic storage", "有毒品存储"],
+            ["Highly toxic storage", "剧毒品存储"],
+            // Storage conditions
+            ["separate from bases and oxidizers", "远离碱类和氧化剂"],
+            ["separate from organics", "远离有机物"],
+            ["separate from flammables", "远离易燃品"],
+            ["separate from acids", "远离酸类"],
+            ["away from acids", "远离酸类"],
+            ["away from heat", "远离热源"],
+            ["away from ignition", "远离点火源"],
+            ["away from metals", "远离金属"],
+            ["keep dry", "保持干燥"],
+            ["Store in well-ventilated area", "存放在通风良好的区域"],
+            ["Well-ventilated area", "通风良好的区域"],
+            ["well-ventilated area", "通风良好的区域"],
+            ["well-ventilated", "通风良好"],
+            ["ventilated area", "通风区域"],
+            ["add acid to water, never reverse", "将酸加入水中，切勿反向操作"],
+            ["never reverse", "切勿反向操作"],
+            ["Room temperature", "室温"],
+            ["Cool, dry place", "阴凉干燥处"],
+            ["Store below", "储存温度低于"],
+            ["Store in", "存放于"],
+            ["refrigerated", "冷藏"],
+            ["dark", "避光"],
+            ["locked", "上锁"],
+            // Incompatibles
+            ["Organic materials", "有机材料"],
+            ["Strong acids", "强酸"],
+            ["Strong bases", "强碱"],
+            ["Reducing agents", "还原剂"],
+            ["Oxidizers", "氧化剂"],
+            ["Flammables", "易燃品"],
+            ["Bases", "碱类"],
+            ["Acids", "酸类"],
+            ["Metals", "金属"],
+            ["Water", "水"],
+            ["Heat", "热"],
+            // Hazard statements
+            ["Causes severe skin burns and eye damage", "导致严重皮肤灼伤和眼睛损伤"],
+            ["Causes serious eye damage", "导致严重眼睛损伤"],
+            ["Causes serious eye irritation", "导致严重眼睛刺激"],
+            ["Causes skin irritation", "导致皮肤刺激"],
+            ["Causes eye irritation", "导致眼睛刺激"],
+            ["May be corrosive to metals", "可能腐蚀金属"],
+            ["Highly flammable liquid and vapour", "高度易燃液体和蒸气"],
+            ["Extremely flammable gas", "极度易燃气体"],
+            ["Flammable liquid and vapour", "易燃液体和蒸气"],
+            ["May cause drowsiness or dizziness", "可能导致嗜睡或头晕"],
+            ["May cause respiratory irritation", "可能导致呼吸道刺激"],
+            ["May cause an allergic skin reaction", "可能导致皮肤过敏反应"],
+            ["Harmful if swallowed", "吞咽有害"],
+            ["Harmful if inhaled", "吸入有害"],
+            ["Harmful in contact with skin", "皮肤接触有害"],
+            ["Toxic if swallowed", "吞咽有毒"],
+            ["Toxic if inhaled", "吸入有毒"],
+            ["Toxic in contact with skin", "皮肤接触有毒"],
+            ["Fatal if swallowed", "吞咽致命"],
+            ["Fatal if inhaled", "吸入致命"],
+            ["Fatal in contact with skin", "皮肤接触致命"],
+            ["Suspected of causing cancer", "怀疑致癌"],
+            ["May cause cancer", "可能致癌"],
+            ["May damage fertility", "可能损害生育能力"],
+            ["May damage the unborn child", "可能损害胎儿"],
+            ["Causes damage to organs", "导致器官损伤"],
+            ["May cause damage to organs", "可能导致器官损伤"],
+            ["Very toxic to aquatic life", "对水生生物剧毒"],
+            ["Toxic to aquatic life", "对水生生物有毒"],
+            // First aid
+            ["Move to fresh air", "转移到新鲜空气处"],
+            ["Give oxygen if breathing difficult", "呼吸困难时给予氧气"],
+            ["If breathing difficult, give oxygen", "呼吸困难时给予氧气"],
+            ["Seek medical help", "寻求医疗帮助"],
+            ["Seek medical attention", "就医"],
+            ["Seek immediate medical attention", "立即就医"],
+            ["Get medical attention", "就医"],
+            ["Call poison control", "拨打中毒控制中心电话"],
+            ["Remove clothing", "脱去衣物"],
+            ["Remove contaminated clothing", "脱去受污染的衣物"],
+            ["Wash with soap and water", "用肥皂和水清洗"],
+            ["Wash with water", "用水清洗"],
+            ["Flush skin with water", "用水冲洗皮肤"],
+            ["Flush with water", "用水冲洗"],
+            ["for 15-20 minutes", "持续15-20分钟"],
+            ["for 15+ minutes", "至少持续15分钟"],
+            ["for 15 minutes", "持续15分钟"],
+            ["lifting eyelids", "撑开眼睑"],
+            ["Rinse mouth", "漱口"],
+            ["Do NOT induce vomiting", "切勿催吐"],
+            ["Do not induce vomiting", "不要催吐"],
+            ["Drink milk or water if conscious", "如清醒可饮用牛奶或水"],
+            ["Drink water if conscious", "如清醒可饮水"],
+            ["if symptoms persist", "如症状持续"],
+            // Chemical synonyms
+            ["Battery acid", "电池酸"],
+            ["Oil of vitriol", "硫酸"],
+            ["Muriatic acid", "盐酸"],
+            ["Hydrogen chloride solution", "氯化氢溶液"],
+            ["Aqua fortis", "硝酸"],
+            ["Caustic soda", "苛性钠"],
+            ["Lye", "碱液"],
+            ["Caustic potash", "苛性钾"],
+            ["Ammonia gas", "氨气"],
+            ["Ammonia solution", "氨水"],
+            ["Slaked lime", "熟石灰"],
+            ["Hydrated lime", "氢氧化钙"],
+            ["Ethyl alcohol", "乙醇"],
+            ["Wood alcohol", "甲醇"],
+            ["Rubbing alcohol", "异丙醇"],
+            ["Bleach", "漂白剂"],
+            ["Chlorine bleach", "含氯漂白剂"],
+            ["Chlorine gas", "氯气"],
+            ["Peroxide", "过氧化物"],
+            ["Formalin", "福尔马林"],
+            // Transport
+            ["Not regulated", "不受管制"],
+            // Common qualifiers
+            ["if ventilation inadequate", "如通风不足"],
+            ["in confined spaces", "在密闭空间中"],
+            ["for prolonged contact", "长时间接触时"],
+            ["at high concentrations", "在高浓度下"],
+            ["with good ventilation", "通风良好时"],
+            ["Not typically required", "通常不需要"],
+            ["Not normally required", "通常不需要"],
+            ["Not required", "不需要"],
+            ["Required", "需要"],
+            ["recommended", "建议"],
+            ["optional", "可选"],
+            ["minimum", "最低"],
+            ["only", "仅"],
+            ["or", "或"],
+            ["and", "和"],
+            ["if", "如"],
+            ["for", "用于"],
+            ["from", "从"],
+        ];
+        
+        let result = text;
+        for (const [en, zh] of patterns) {
+            result = result.split(en).join(zh);
+        }
+        return result;
+    }
+    
+    // Chinese GHS descriptions
+    const ghsIcons = {
+        "GHS01": { img: "img/ghs/ghs01.svg", name: "爆炸物", desc: "爆炸物、自反应物质" },
+        "GHS02": { img: "img/ghs/ghs02.svg", name: "易燃", desc: "易燃材料" },
+        "GHS03": { img: "img/ghs/ghs03.svg", name: "氧化剂", desc: "可能引起或加剧火灾" },
+        "GHS04": { img: "img/ghs/ghs04.svg", name: "压缩气体", desc: "高压气体" },
+        "GHS05": { img: "img/ghs/ghs05.svg", name: "腐蚀", desc: "导致灼伤" },
+        "GHS06": { img: "img/ghs/ghs06.svg", name: "有毒", desc: "急性毒性" },
+        "GHS07": { img: "img/ghs/ghs07.svg", name: "刺激性", desc: "刺激、致敏" },
+        "GHS08": { img: "img/ghs/ghs08.svg", name: "健康危害", desc: "致癌、致突变、器官损伤" },
+        "GHS09": { img: "img/ghs/ghs09.svg", name: "环境危害", desc: "对水生环境有害" }
+    };
+
+    const searchInput = document.getElementById('chemicalSearch');
+    const searchResults = document.getElementById('searchResults');
+    const sdsResults = document.getElementById('sdsResults');
+    const ghsReference = document.getElementById('ghsReference');
+    const sdsExplainer = document.getElementById('sdsExplainer');
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        if (query.length < 2) {
+            searchResults.classList.add('hidden');
+            return;
+        }
+
+        const matches = Object.keys(sdsDatabase).filter(name => {
+            const chem = sdsDatabase[name];
+            return name.toLowerCase().includes(query) || 
+                chem.cas?.includes(query) ||
+                chem.zh?.toLowerCase().includes(query) ||
+                chem.synonyms?.some(s => s.toLowerCase().includes(query));
+        }).slice(0, 10);
+
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="p-3 text-gray-500">数据库中未找到该化学品</div>';
+        } else {
+            searchResults.innerHTML = matches.map(name => {
+                const chem = sdsDatabase[name];
+                const displayName = chem.zh || name;
+                const ghsImages = (chem.ghs || []).map(g => `<img src="../../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-10 h-10 inline-block">`).join('');
+                return `
+                    <div class="p-3 hover:bg-green-50 cursor-pointer border-b last:border-b-0" onclick="showSDS('${name}')">
+                        <div class="font-medium text-gray-900">${displayName}</div>
+                        <div class="text-xs text-gray-500 mt-1">
+                            CAS: ${chem.cas || '不适用'} · ${ghsImages || '非危险品'}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        searchResults.classList.remove('hidden');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.add('hidden');
+        }
+    });
+
+    function showSDS(name) {
+        const chem = sdsDatabase[name];
+        if (!chem) return;
+
+        const displayName = chem.zh || name;
+        searchInput.value = displayName;
+        searchResults.classList.add('hidden');
+        sdsResults.classList.remove('hidden');
+        ghsReference.classList.add('hidden');
+        sdsExplainer.classList.add('hidden');
+
+        const ghsImagesHeader = (chem.ghs || []).map(g => `<img src="../../${ghsIcons[g]?.img || ''}" alt="${g}" class="w-12 h-12 inline-block">`).join('');
+        document.getElementById('chemicalHeader').innerHTML = `
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-2xl font-bold mb-1">${displayName}</h2>
+                    <div class="text-green-100">
+                        <span class="font-mono">${chem.formula || ''}</span> · CAS: ${chem.cas || '不适用'}
+                    </div>
+                    ${chem.synonyms?.length ? `<div class="text-green-200 text-sm mt-1">别名：${chem.synonyms.join(', ')}</div>` : ''}
+                </div>
+                <div class="flex gap-1">${ghsImagesHeader}</div>
+            </div>
+        `;
+
+        const ghsSection = document.getElementById('ghsSection');
+        if (chem.ghs && chem.ghs.length > 0) {
+            ghsSection.classList.remove('hidden');
+            document.getElementById('ghsPictograms').innerHTML = chem.ghs.map(g => {
+                const icon = ghsIcons[g];
+                return `
+                    <div class="flex items-center gap-3 p-3 bg-red-50 rounded-lg border border-red-200">
+                        <img src="../../${icon?.img || ''}" alt="${g}" class="w-12 h-12">
+                        <div>
+                            <div class="font-medium text-gray-900">${g} - ${icon?.name || '未知'}</div>
+                            <div class="text-sm text-gray-600">${icon?.desc || ''}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        } else {
+            ghsSection.classList.add('hidden');
+        }
+
+        const ppe = chem.ppe || { eyes: {type: 'Safety glasses'}, skin: {type: 'Gloves recommended'}, respiratory: {type: 'Not required'} };
+        document.getElementById('ppeList').innerHTML = `
+            <div class="flex items-center gap-3 ${ppe.eyes?.required ? 'text-gray-900' : 'text-gray-400'}">
+                <i data-lucide="eye" class="w-5 h-5"></i>
+                <div>
+                    <div class="font-medium">眼部防护</div>
+                    <div class="text-sm text-gray-600">${t(ppe.eyes?.type) || '建议佩戴安全眼镜'}</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 ${ppe.skin?.required ? 'text-gray-900' : 'text-gray-400'}">
+                <i data-lucide="hand" class="w-5 h-5"></i>
+                <div>
+                    <div class="font-medium">皮肤防护</div>
+                    <div class="text-sm text-gray-600">${t(ppe.skin?.type) || '长时间接触时佩戴手套'}</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 ${ppe.respiratory?.required ? 'text-gray-900' : 'text-gray-400'}">
+                <i data-lucide="wind" class="w-5 h-5"></i>
+                <div>
+                    <div class="font-medium">呼吸防护</div>
+                    <div class="text-sm text-gray-600">${t(ppe.respiratory?.type) || '通常不需要'}</div>
+                </div>
+            </div>
+            ${ppe.other ? `<div class="text-sm text-gray-600 mt-2 pt-2 border-t">ℹ️ ${t(ppe.other)}</div>` : ''}
+        `;
+
+        const storage = chem.storage || { cabinet: 'General storage', temp: 'Room temperature', ventilation: 'Normal', incompatible: [] };
+        document.getElementById('storageInfo').innerHTML = `
+            <div class="flex items-center gap-3">
+                <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
+                <div class="font-medium">${t(storage.cabinet)}</div>
+            </div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="thermometer" class="w-5 h-5 text-blue-500"></i>
+                <div>${t(storage.temp)}</div>
+            </div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="wind" class="w-5 h-5 text-cyan-500"></i>
+                <div>${t(storage.ventilation)}</div>
+            </div>
+            ${storage.incompatible?.length ? `
+            <div class="mt-2 pt-2 border-t">
+                <div class="text-sm font-medium text-red-600 mb-1">⚠️ 远离以下物质：</div>
+                <div class="text-sm text-gray-600">${storage.incompatible.map(i => t(i)).join(', ')}</div>
+            </div>` : ''}
+        `;
+
+        const hazardSection = document.getElementById('hazardStatements');
+        if (chem.hazardStatements && chem.hazardStatements.length > 0) {
+            hazardSection.parentElement.classList.remove('hidden');
+            hazardSection.innerHTML = chem.hazardStatements.map(h => `
+                <div class="flex gap-3 p-2 bg-red-50 rounded">
+                    <span class="font-mono text-red-600 font-medium">${h.code}</span>
+                    <span class="text-gray-700">${t(h.text)}</span>
+                </div>
+            `).join('');
+        } else {
+            hazardSection.parentElement.classList.add('hidden');
+        }
+
+        const fa = chem.firstAid || { inhalation: 'Move to fresh air.', skin: 'Wash with water.', eyes: 'Flush with water.', ingestion: 'Rinse mouth.' };
+        document.getElementById('firstAid').innerHTML = `
+            <div class="p-3 bg-blue-50 rounded-lg">
+                <div class="font-medium text-blue-700 mb-1">💨 吸入</div>
+                <div class="text-sm text-gray-600">${t(fa.inhalation)}</div>
+            </div>
+            <div class="p-3 bg-orange-50 rounded-lg">
+                <div class="font-medium text-orange-700 mb-1">🖐️ 皮肤接触</div>
+                <div class="text-sm text-gray-600">${t(fa.skin)}</div>
+            </div>
+            <div class="p-3 bg-purple-50 rounded-lg">
+                <div class="font-medium text-purple-700 mb-1">👁️ 眼睛接触</div>
+                <div class="text-sm text-gray-600">${t(fa.eyes)}</div>
+            </div>
+            <div class="p-3 bg-red-50 rounded-lg">
+                <div class="font-medium text-red-700 mb-1">🍽️ 摄入</div>
+                <div class="text-sm text-gray-600">${t(fa.ingestion)}</div>
+            </div>
+        `;
+
+        const tr = chem.transport || { un: '-', class: '-', packingGroup: '-', properShipping: 'Not regulated' };
+        document.getElementById('transportInfo').innerHTML = `
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-2xl font-bold text-gray-900">${tr.un}</div>
+                <div class="text-xs text-gray-500">联合国编号</div>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-2xl font-bold text-gray-900">${tr.class}</div>
+                <div class="text-xs text-gray-500">危险类别</div>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-2xl font-bold text-gray-900">${tr.packingGroup}</div>
+                <div class="text-xs text-gray-500">包装类别</div>
+            </div>
+            <div class="p-3 bg-gray-50 rounded-lg text-center">
+                <div class="text-sm font-medium text-gray-900">${t(tr.properShipping)}</div>
+                <div class="text-xs text-gray-500">运输名称</div>
+            </div>
+        `;
+
+        document.getElementById('resistanceLink').href = `../zh/?search=${encodeURIComponent(name)}`;
+
+        lucide.createIcons();
+        sdsResults.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function changeLanguage(lang) {
+        const urls = {
+            en: '/sds-decoder/',
+            de: '/de/sds-decoder/',
+            es: '/es/sds-decoder/',
+            fr: '/fr/sds-decoder/',
+            pt: '/pt/sds-decoder/',
+            zh: '/zh/sds-decoder/'
+        };
+        window.location.href = urls[lang] || urls.en;
+    }
+
+    lucide.createIcons();
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParam = urlParams.get('search');
+    if (searchParam) {
+        searchInput.value = searchParam;
+        const matches = Object.keys(sdsDatabase).filter(name => 
+            name.toLowerCase().includes(searchParam.toLowerCase()) ||
+            sdsDatabase[name].zh?.toLowerCase().includes(searchParam.toLowerCase())
+        );
+        if (matches.length > 0) {
+            showSDS(matches[0]);
+        }
+    }
+    </script>
+<nav style="max-width:900px;margin:2rem auto;padding:1rem;border-top:1px solid #e5e7eb;text-align:center;font-size:0.875rem;color:#6b7280"><a href="/" style="color:#6b7280;text-decoration:none;margin:0 8px">Home</a>&middot;<a href="/chemicals/" style="color:#6b7280;text-decoration:none;margin:0 8px">Chemicals</a>&middot;<a href="/sds-decoder/" style="color:#6b7280;text-decoration:none;margin:0 8px">SDS Decoder</a>&middot;<a href="/storage-compatibility/" style="color:#6b7280;text-decoration:none;margin:0 8px">Storage</a>&middot;<a href="/about/" style="color:#6b7280;text-decoration:none;margin:0 8px">About</a>&middot;<a href="/privacy.html" style="color:#6b7280;text-decoration:none;margin:0 8px">Privacy</a></nav>
+</body>
+</html>
