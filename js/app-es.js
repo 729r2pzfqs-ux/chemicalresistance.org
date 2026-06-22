@@ -236,11 +236,9 @@ function setupEventListeners() {
     langSelect?.addEventListener('change', () => {
         const lang = langSelect.value;
         if (lang === 'en') {
-            window.location.href = 'index.html';
-        } else if (lang === 'fr') {
-            window.location.href = 'fr.html';
-        } else if (lang === 'de') {
-            window.location.href = 'de.html';
+            window.location.href = '/';
+        } else {
+            window.location.href = '/' + lang + '/';
         }
     });
 
