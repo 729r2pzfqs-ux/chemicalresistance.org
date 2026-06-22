@@ -38,15 +38,15 @@ const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
 // GHS pictogram emojis
 const ghsImages = {
-    'GHS01': 'img/ghs/ghs01.svg', // Explosif
-    'GHS02': 'img/ghs/ghs02.svg', // Inflammable
-    'GHS03': 'img/ghs/ghs03.svg', // Comburant
-    'GHS04': 'img/ghs/ghs04.svg', // Gaz sous pression
-    'GHS05': 'img/ghs/ghs05.svg', // Corrosif
-    'GHS06': 'img/ghs/ghs06.svg', // Toxique
-    'GHS07': 'img/ghs/ghs07.svg', // Nocif
-    'GHS08': 'img/ghs/ghs08.svg', // Danger pour la santé
-    'GHS09': 'img/ghs/ghs09.svg', // Dangereux pour l'environnement
+    'GHS01': '/img/ghs/ghs01.svg', // Explosif
+    'GHS02': '/img/ghs/ghs02.svg', // Inflammable
+    'GHS03': '/img/ghs/ghs03.svg', // Comburant
+    'GHS04': '/img/ghs/ghs04.svg', // Gaz sous pression
+    'GHS05': '/img/ghs/ghs05.svg', // Corrosif
+    'GHS06': '/img/ghs/ghs06.svg', // Toxique
+    'GHS07': '/img/ghs/ghs07.svg', // Nocif
+    'GHS08': '/img/ghs/ghs08.svg', // Danger pour la santé
+    'GHS09': '/img/ghs/ghs09.svg', // Dangereux pour l'environnement
 };
 
 // Map old EU hazard codes to GHS pictograms (French labels)

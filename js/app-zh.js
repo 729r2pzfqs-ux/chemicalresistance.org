@@ -38,15 +38,15 @@ const ratingOrder = { '1': 0, '2': 1, '3': 2, '4': 3, '0': 4 };
 
 // GHS pictogram emojis
 const ghsImages = {
-    'GHS01': 'img/ghs/ghs01.svg', // 爆炸物
-    'GHS02': 'img/ghs/ghs02.svg', // 易燃
-    'GHS03': 'img/ghs/ghs03.svg', // 氧化剂
-    'GHS04': 'img/ghs/ghs04.svg', // 压缩气体
-    'GHS05': 'img/ghs/ghs05.svg', // 腐蚀性
-    'GHS06': 'img/ghs/ghs06.svg', // 有毒
-    'GHS07': 'img/ghs/ghs07.svg', // 有害
-    'GHS08': 'img/ghs/ghs08.svg', // 健康危害
-    'GHS09': 'img/ghs/ghs09.svg', // 环境危害
+    'GHS01': '/img/ghs/ghs01.svg', // 爆炸物
+    'GHS02': '/img/ghs/ghs02.svg', // 易燃
+    'GHS03': '/img/ghs/ghs03.svg', // 氧化剂
+    'GHS04': '/img/ghs/ghs04.svg', // 压缩气体
+    'GHS05': '/img/ghs/ghs05.svg', // 腐蚀性
+    'GHS06': '/img/ghs/ghs06.svg', // 有毒
+    'GHS07': '/img/ghs/ghs07.svg', // 有害
+    'GHS08': '/img/ghs/ghs08.svg', // 健康危害
+    'GHS09': '/img/ghs/ghs09.svg', // 环境危害
 };
 
 // Map old EU hazard codes to GHS pictograms (Chinese labels)
