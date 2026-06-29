@@ -5240,7 +5240,7 @@
 <url><loc>https://chemicalresistance.org/chemicals/zinc-sulfate/ss316/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-sulfate/stainless-steel-304/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 <url><loc>https://chemicalresistance.org/chemicals/zinc-sulfate/viton/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-<url><loc>https://chemicalresistance.org/de</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://chemicalresistance.org/de/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://chemicalresistance.org/de-about</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 <url><loc>https://chemicalresistance.org/de/sds-decoder</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://chemicalresistance.org/de/storage-compatibility</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
@@ -5423,7 +5423,7 @@
 <url><loc>https://chemicalresistance.org/epdm/white-spirit</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://chemicalresistance.org/epdm/xylene</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://chemicalresistance.org/epdm/zinc-chloride</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-<url><loc>https://chemicalresistance.org/es</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://chemicalresistance.org/es/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://chemicalresistance.org/es-about</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 <url><loc>https://chemicalresistance.org/es/sds-decoder</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://chemicalresistance.org/es/storage-compatibility</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
@@ -5517,7 +5517,7 @@
 <url><loc>https://chemicalresistance.org/fep/white-spirit</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://chemicalresistance.org/fep/xylene</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://chemicalresistance.org/fep/zinc-chloride</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-<url><loc>https://chemicalresistance.org/fr</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://chemicalresistance.org/fr/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://chemicalresistance.org/fr-about</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 <url><loc>https://chemicalresistance.org/fr/sds-decoder</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://chemicalresistance.org/fr/storage-compatibility</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
@@ -27337,7 +27337,7 @@
   <url><loc>https://chemicalresistance.org/zh/compare/nbr-vs-epdm/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chemicalresistance.org/zh/compare/hdpe-vs-pvdf/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chemicalresistance.org/zh/compare/polysulfone-vs-pvdf/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chemicalresistance.org/zh-about/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://chemicalresistance.org/zh-about</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://chemicalresistance.org/zh/about/</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://chemicalresistance.org/materials/zh/acetal-pom/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://chemicalresistance.org/materials/zh/aluminium/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
@@ -27565,8 +27565,8 @@
   <url><loc>https://chemicalresistance.org/chemicals/zh/zinc-oxide/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chemicalresistance.org/chemicals/zh/zinc-sulfate/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chemicalresistance.org/chemicals/zh/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://chemicalresistance.org/zh/storage-compatibility/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://chemicalresistance.org/zh/sds-decoder/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chemicalresistance.org/zh/storage-compatibility</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chemicalresistance.org/zh/sds-decoder</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chemicalresistance.org/chemicals/zh/acetaldehyde/acetal-pom/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chemicalresistance.org/chemicals/zh/acetaldehyde/aluminium/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chemicalresistance.org/chemicals/zh/acetaldehyde/ectfe-etfe/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -32343,4 +32343,8 @@
   <url><loc>https://chemicalresistance.org/chemicals/zh/zinc-sulfate/ss316/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chemicalresistance.org/chemicals/zh/zinc-sulfate/stainless-steel-304/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chemicalresistance.org/chemicals/zh/zinc-sulfate/viton/</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://chemicalresistance.org/</loc><lastmod>2026-06-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://chemicalresistance.org/zh</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://chemicalresistance.org/privacy.html</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+<url><loc>https://chemicalresistance.org/terms.html</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>
