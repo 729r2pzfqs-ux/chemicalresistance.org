@@ -302,7 +302,7 @@ def create_comparison_pages():
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{description}">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -560,7 +560,7 @@ def create_comparison_pages():
     <meta name="description" content="Compare chemical resistance of different materials side-by-side. ETFE vs ECTFE, PTFE vs FEP, NBR vs EPDM and more.">
     <link rel="canonical" href="https://chemicalresistance.org/compare/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>* { font-family: 'Inter', sans-serif; } body { background: #f8fafc; }</style>
 <script type="text/javascript">
@@ -652,7 +652,7 @@ def create_chart_pages():
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{desc}">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -885,7 +885,7 @@ def create_chart_pages():
 <title>Chemical Compatibility Charts — Printable Resistance Ratings</title>
 <meta name="description" content="Printable chemical compatibility charts for PTFE, 316 Stainless Steel, HDPE, and NBR. Color-coded resistance ratings for 900+ chemicals.">
 <link rel="canonical" href="https://chemicalresistance.org/charts/">
-<link rel="icon" href="/favicon.ico"><script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/tailwind.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>*{font-family:'Inter',sans-serif;}body{background:#f8fafc;}</style>
 </head><body class="text-gray-700 min-h-screen">

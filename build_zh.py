@@ -325,7 +325,7 @@ def build_chart_page(chart):
     <meta property="og:title" content="{chart['title']}">
     <meta property="og:description" content="{chart['desc']}">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 <script type="application/ld+json">
@@ -556,7 +556,7 @@ def build_charts_index():
     <meta name="description" content="耐化学性对比图表：氟聚合物、弹性体、金属和塑料并排对比。">
     <link rel="canonical" href="https://chemicalresistance.org/zh/charts/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>* {{ font-family: 'Inter', sans-serif; }} body {{ background: #f8fafc; }}</style>
 {CLARITY}
@@ -683,7 +683,7 @@ def build_comparison_page(comp):
     <meta name="description" content="{comp['title']}. 找到最适合您应用的材料。">
     <link rel="canonical" href="https://chemicalresistance.org/zh/compare/{comp['slug']}/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 {CLARITY}
@@ -894,7 +894,7 @@ def build_compare_index():
     <meta name="description" content="创建您自己的材料对比。从24种材料中选择2至3种，查看超过1600种化学品的耐受性评级。">
     <link rel="canonical" href="https://chemicalresistance.org/zh/compare/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 <script type="application/ld+json">

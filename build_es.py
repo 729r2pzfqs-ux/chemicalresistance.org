@@ -324,7 +324,7 @@ def build_chart_page(chart):
     <meta property="og:title" content="{chart['title']}">
     <meta property="og:description" content="{chart['desc']}">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 <script type="application/ld+json">
@@ -555,7 +555,7 @@ def build_charts_index():
     <meta name="description" content="Tablas comparativas de resistencia qu&iacute;mica: fluoropol&iacute;meros, elast&oacute;meros, metales y pl&aacute;sticos lado a lado.">
     <link rel="canonical" href="https://chemicalresistance.org/es/charts/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>* {{ font-family: 'Inter', sans-serif; }} body {{ background: #f8fafc; }}</style>
 {CLARITY}
@@ -682,7 +682,7 @@ def build_comparison_page(comp):
     <meta name="description" content="{comp['title']}. Vea qué material es mejor para su aplicación.">
     <link rel="canonical" href="https://chemicalresistance.org/es/compare/{comp['slug']}/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 {CLARITY}
@@ -894,7 +894,7 @@ def build_compare_index():
     <meta name="description" content="Cree su propia comparación de materiales. Seleccione 2-3 materiales de 24 opciones y vea calificaciones de resistencia para más de 1.600 químicos.">
     <link rel="canonical" href="https://chemicalresistance.org/es/compare/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 <script type="application/ld+json">

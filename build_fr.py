@@ -324,7 +324,7 @@ def build_chart_page(chart):
     <meta property="og:title" content="{chart['title']}">
     <meta property="og:description" content="{chart['desc']}">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 <script type="application/ld+json">
@@ -555,7 +555,7 @@ def build_charts_index():
     <meta name="description" content="Tableaux comparatifs de r&eacute;sistance chimique : fluoropolym&egrave;res, &eacute;lastom&egrave;res, m&eacute;taux et plastiques c&ocirc;te &agrave; c&ocirc;te.">
     <link rel="canonical" href="https://chemicalresistance.org/fr/charts/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>* {{ font-family: 'Inter', sans-serif; }} body {{ background: #f8fafc; }}</style>
 {CLARITY}
@@ -682,7 +682,7 @@ def build_comparison_page(comp):
     <meta name="description" content="{comp['title']}. Découvrez quel matériau est le mieux adapté à votre application.">
     <link rel="canonical" href="https://chemicalresistance.org/fr/compare/{comp['slug']}/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 {CLARITY}
@@ -893,7 +893,7 @@ def build_compare_index():
     <meta name="description" content="Créez votre propre comparaison de matériaux. Sélectionnez 2 à 3 matériaux parmi 24 options et consultez les évaluations de résistance pour plus de 1 600 produits chimiques.">
     <link rel="canonical" href="https://chemicalresistance.org/fr/compare/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
 <script type="application/ld+json">

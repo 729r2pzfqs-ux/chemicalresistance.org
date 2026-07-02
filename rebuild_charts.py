@@ -189,7 +189,7 @@ def generate_chart(chart):
     <meta property="og:title" content="{chart['title']}">
     <meta property="og:description" content="{chart['desc']}">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -499,7 +499,7 @@ def generate_index():
     <meta name="description" content="Compare chemical resistance of multiple materials side by side. Fluoropolymers, elastomers, metals, plastics — find the right material for your chemicals.">
     <link rel="canonical" href="https://chemicalresistance.org/charts/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>*{{font-family:'Inter',sans-serif;}}body{{background:#f8fafc;}}</style>
 <script type="text/javascript">

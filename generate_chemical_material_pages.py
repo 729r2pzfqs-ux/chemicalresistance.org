@@ -85,7 +85,7 @@ def generate_page(chemical, material_code, material_slug, material_name):
     <meta property="og:title" content="{chem_name} + {material_name} Compatibility">
     <meta property="og:description" content="Is {material_name} resistant to {chem_name}? {r20[1]} rating at 20°C.">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *{{font-family:'Inter',sans-serif}}body{{background:#f8fafc}}

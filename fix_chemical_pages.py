@@ -59,7 +59,7 @@ for chem_slug in english_slugs:
     <meta name="description" content="Can {mat_name} resist {chem_name}? See compatibility rating for {mat_name} containers with {chem_name} at different temperatures.">
     <link rel="icon" href="../../favicon.ico">
     <link rel="canonical" href="https://chemicalresistance.org/chemicals/{chem_slug}/{mat_slug}/">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>*{{font-family:'Inter',sans-serif}}body{{background:#f8fafc}}</style>
     <script type="application/ld+json">{{

@@ -140,7 +140,7 @@ for chem in data:
     <meta name="description" content="Is {mat_name} resistant to {chem_name}? Rating: {r20[1]} at 20°C, {r50[1]} at 50°C.">
     <link rel="icon" href="/favicon.ico">
     <link rel="canonical" href="https://chemicalresistance.org/chemicals/{en_slug}/{mat_slug}/">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <style>*{{font-family:system-ui,sans-serif}}body{{background:#f8fafc}}.rating{{display:inline-block;padding:0.5rem 1rem;border-radius:0.5rem;font-weight:700;font-size:1.25rem}}</style>
 </head>
 <body class="text-gray-700 min-h-screen">

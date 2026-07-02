@@ -93,7 +93,7 @@ def generate_pair_page(mat_code, mat_info, chem_data):
     <meta name="description" content="Is {mat_name} resistant to {chem_name}? {grade_text} resistance rating at 20°C. Full compatibility data with temperature comparison.">
     <link rel="icon" href="../../favicon.ico">
     <link rel="canonical" href="https://chemicalresistance.org/{mat_slug}/{chem_slug}">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *{{font-family:'Inter',sans-serif}}body{{background:#f8fafc}}

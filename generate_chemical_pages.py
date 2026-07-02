@@ -118,7 +118,7 @@ def generate_chemical_page(chem_data):
     <meta property="og:title" content="{name} Chemical Resistance Chart">
     <meta property="og:description" content="Find which materials are compatible with {name}. {len(ratings)} materials tested.">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {{ font-family: 'Inter', sans-serif; }}

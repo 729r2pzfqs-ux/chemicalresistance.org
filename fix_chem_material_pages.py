@@ -123,7 +123,7 @@ for chem_slug in os.listdir('chemicals'):
     <meta name="description" content="Is {mat_name} resistant to {chem_name}? Rating: {rating_20[1]} at 20°C, {rating_50[1]} at 50°C. Container compatibility guide.">
     <link rel="icon" href="/favicon.ico">
     <link rel="canonical" href="https://chemicalresistance.org/chemicals/{chem_slug}/{mat_slug}/">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *{{font-family:'Inter',sans-serif}}body{{background:#f8fafc}}

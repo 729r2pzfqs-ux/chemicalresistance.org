@@ -558,7 +558,7 @@ def generate_page(mat_dir, mat_info):
     <meta property="og:title" content="{display} Chemical Resistance Chart">
     <meta property="og:description" content="{desc_escaped}">
     <meta property="og:type" content="article">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
