@@ -50,7 +50,7 @@ def main():
     
     # Skip data folder
     for html_file in ROOT.rglob('*.html'):
-        if 'data/' in str(html_file) or 'ova-source' in str(html_file):
+        if 'data/' in str(html_file):
             continue
         
         if update_file(html_file):
