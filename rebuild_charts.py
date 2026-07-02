@@ -206,13 +206,6 @@ def generate_chart(chart):
 <script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{faq_items}]}}
 </script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){{
-        c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    }})(window, document, "clarity", "script", "x1emzgmkzd");
-</script>
 </head>
 <body class="text-gray-700 min-h-screen">
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50 no-print">
@@ -502,13 +495,6 @@ def generate_index():
     <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>*{{font-family:'Inter',sans-serif;}}body{{background:#f8fafc;}}</style>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){{
-        c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    }})(window, document, "clarity", "script", "x1emzgmkzd");
-</script>
 </head>
 <body class="text-gray-700 min-h-screen">
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">

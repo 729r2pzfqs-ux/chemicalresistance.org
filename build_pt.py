@@ -13,14 +13,6 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 GA_HEAD = '''<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>'''
 
-CLARITY = '''<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "x1emzgmkzd");
-</script>'''
-
 CF_BEACON = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "cba547e85ee54e0f9cdc27e68405eead"}\'></script>'
 
 STYLES = '''    <style>
@@ -330,7 +322,6 @@ def build_chart_page(chart):
 <script type="application/ld+json">
 {faq_schema}
 </script>
-{CLARITY}
 </head>
 <body class="text-gray-700 min-h-screen">
 {header}
@@ -558,7 +549,6 @@ def build_charts_index():
     <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>* {{ font-family: 'Inter', sans-serif; }} body {{ background: #f8fafc; }}</style>
-{CLARITY}
 </head>
 <body class="text-gray-700 min-h-screen">
 {header}
@@ -685,7 +675,6 @@ def build_comparison_page(comp):
     <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {STYLES}
-{CLARITY}
 </head>
 <body class="text-gray-700 min-h-screen">
 {header}
@@ -899,7 +888,6 @@ def build_compare_index():
 <script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{"@type":"Question","name":"Como comparar a resistência química de diferentes materiais?","acceptedAnswer":{{"@type":"Answer","text":"Use a ferramenta de comparação acima para selecionar 2 ou 3 materiais nos menus suspensos. A ferramenta exibe as classificações de resistência (A a D) para mais de 1.600 produtos químicos a 20°C e 50°C lado a lado."}}}},{{"@type":"Question","name":"O que significam as classificações A, B, C, D?","acceptedAnswer":{{"@type":"Answer","text":"A (Excelente) = resistência durável. B (Bom) = resistência limitada, adequado para contatos de curta duração. C (Regular) = o material pode inchar ou se degradar. D (Ruim) = o material não é adequado."}}}}]}}
 </script>
-{CLARITY}
 </head>
 <body class="text-gray-700 min-h-screen">
 {header}
