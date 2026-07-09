@@ -14,6 +14,7 @@ def get_header(active=None):
     """Generate the unified header HTML. `active` is a nav key to highlight."""
 
     links = [
+        ('home', '/', 'Lookup'),
         ('materials', '/materials/', 'Materials'),
         ('chemicals', '/chemicals/', 'Chemicals'),
         ('compare', '/compare/', 'Compare'),
