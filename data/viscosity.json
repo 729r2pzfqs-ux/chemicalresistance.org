@@ -139,7 +139,7 @@
   },
   {
     "medium": "Glukose",
-    "temperature_c": "25-30°C",
+    "temperature_c": "25-30",
     "viscosity_mPas": "4.300-6.800 mPas",
     "medium_en": "Glucose"
   },
@@ -592,17 +592,5 @@
     "temperature_c": 20,
     "viscosity_mPas": "400",
     "medium_en": "Sugar Solution 70°Bx"
-  },
-  {
-    "medium": "°Bx = °Brix",
-    "temperature_c": null,
-    "viscosity_mPas": "",
-    "medium_en": "°Bx = °Brix"
-  },
-  {
-    "medium": "°Bé = °Baumé",
-    "temperature_c": null,
-    "viscosity_mPas": "",
-    "medium_en": "°Bé = °Baumé"
   }
 ]
