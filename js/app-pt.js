@@ -129,11 +129,11 @@ window.toggleMoreMaterials = function() {
 async function init() {
     try {
         const response = await fetch('/data/chemicals_burkle_full.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         chemicals = await response.json();
         buildIndex();
         setupEventListeners();
         showDefaultChemical();
-        console.log(`Loaded ${chemicals.length} chemicals with ${Object.keys(materialInfo).length} materials`);
     } catch (err) {
         console.error('Failed to load chemical data:', err);
         document.getElementById('searchInput').placeholder = 'Erro ao carregar...';

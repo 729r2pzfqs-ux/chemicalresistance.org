@@ -30,8 +30,8 @@
     <meta property="og:title" content="Chemikalienbeständigkeit | 1.600+ Chemikalien">
     <meta property="og:description" content="Kostenloses Tool zur Prüfung der Materialverträglichkeit. 1.600+ Chemikalien, 24 Materialien inkl. HDPE, PTFE, Viton, V4A.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chemicalresistance.org/de">
-    <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
+    <meta property="og:url" content="https://chemicalresistance.org/de/">
+    <meta property="og:image" content="https://chemicalresistance.org/og-image.png/">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="ChemicalResistance.org">
     
@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Chemikalienbeständigkeit | 1.600+ Chemikalien">
     <meta name="twitter:description" content="Kostenlose Beständigkeitstabelle. Prüfen Sie HDPE, PP, PTFE, Viton, Edelstahl und mehr.">
-    <meta name="twitter:image" content="https://chemicalresistance.org/og-image.png">
+    <meta name="twitter:image" content="https://chemicalresistance.org/og-image.png/">
     
     <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -154,12 +154,12 @@
                 </div>
                 <input 
                     type="text" 
-                    id="searchInput" 
+                    id="searchInput" role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" 
                     placeholder="Suche: Schwefelsäure, Aceton, 7664-93-9..."
                     class="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 outline-none transition-all"
                     autocomplete="off"
                 >
-                <div id="searchResults" class="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hidden z-50 max-h-96 overflow-y-auto">
+                <div id="searchResults" role="listbox" class="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hidden z-50 max-h-96 overflow-y-auto">
                 </div>
             </div>
             
@@ -373,6 +373,7 @@
 <p class="mt-3 text-xs text-center"><a href="/privacy.html" class="hover:underline">Datenschutz</a> <span class="mx-1">&middot;</span> <a href="/terms.html" class="hover:underline">Nutzungsbedingungen</a></p>
 </footer>
 
+    <script src="../js/chemical_translations_de.js"></script>
     <script src="../js/app-de-v4.js"></script>
     <script>
         lucide.createIcons();

@@ -137,7 +137,7 @@
                     <table class="w-full" style="min-width:600px">
                         <thead class="sticky top-0 z-10">
                             <tr class="bg-gray-50 text-left text-sm">
-                                <th class="py-3 px-4 font-semibold text-gray-600">Chemical</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600 sticky left-0 z-20 bg-gray-50">Chemical</th>
                                 <th class="py-3 px-3 font-semibold text-gray-600 text-sm">Conc.</th>
                                 <th class="py-3 px-2 font-semibold text-gray-600 text-center whitespace-nowrap"><a href="/materials/nylon-pa/" class="hover:text-blue-600 hover:underline">Nylon</a></th><th class="py-3 px-2 font-semibold text-gray-600 text-center whitespace-nowrap"><a href="/materials/acetal-pom/" class="hover:text-blue-600 hover:underline">POM</a></th><th class="py-3 px-2 font-semibold text-gray-600 text-center whitespace-nowrap"><a href="/materials/polystyrene/" class="hover:text-blue-600 hover:underline">PS</a></th>
                             </tr>
@@ -328,7 +328,7 @@
             }
 
             return `<tr class="${rowClass}">
-                <td class="py-2 px-4 text-sm">
+                <td class="py-2 px-4 text-sm sticky left-0 z-10 bg-white">
                     <div class="font-medium text-gray-900">${displayName}</div>
                     ${displayName !== c.name ? `<div class="text-xs text-gray-400">${c.name}</div>` : ''}
                 </td>

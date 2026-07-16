@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="tfjFiLNfE2XRTDXv-YeHRGhboMNC79rUeXr9T3FxRXc">
-    <title>耐化学性 | 1,600+ 种化学品 | 免费兼容性指南</title>
+    <title>耐化学性 | 1,650+ 种化学品 | 免费兼容性指南</title>
     <meta name="description" content="免费耐化学性数据表，超过1,600种化学品和24种材料。查询HDPE、PP、PTFE、氟橡胶、不锈钢的兼容性，确保安全存储。">
     <meta name="keywords" content="耐化学性, 材料兼容性, HDPE耐受性, PTFE兼容性, 化学品存储, 耐腐蚀性">
     <link rel="canonical" href="https://chemicalresistance.org/zh/">
@@ -25,19 +25,19 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="耐化学性 | 1,600+ 种化学品">
+    <meta property="og:title" content="耐化学性 | 1,650+ 种化学品">
     <meta property="og:description" content="免费材料兼容性查询工具。超过1,600种化学品，24种材料包括HDPE、PTFE、氟橡胶、316不锈钢。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chemicalresistance.org/zh">
-    <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
+    <meta property="og:url" content="https://chemicalresistance.org/zh/">
+    <meta property="og:image" content="https://chemicalresistance.org/og-image.png/">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:site_name" content="ChemicalResistance.org">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="耐化学性 | 1,600+ 种化学品">
+    <meta name="twitter:title" content="耐化学性 | 1,650+ 种化学品">
     <meta name="twitter:description" content="免费化学兼容性数据表。查询HDPE、PP、PTFE、氟橡胶、不锈钢等。">
-    <meta name="twitter:image" content="https://chemicalresistance.org/og-image.png">
+    <meta name="twitter:image" content="https://chemicalresistance.org/og-image.png/">
     
     <link rel="stylesheet" href="/css/tailwind.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -152,12 +152,12 @@
                 </div>
                 <input 
                     type="text" 
-                    id="searchInput" 
+                    id="searchInput" role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" 
                     placeholder="搜索：硫酸、丙酮、7664-93-9..."
                     class="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 outline-none transition-all"
                     autocomplete="off"
                 >
-                <div id="searchResults" class="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hidden z-50 max-h-96 overflow-y-auto">
+                <div id="searchResults" role="listbox" class="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hidden z-50 max-h-96 overflow-y-auto">
                 </div>
             </div>
             

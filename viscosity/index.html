@@ -88,6 +88,7 @@
     </script>
 
     <!-- Hero -->
+    <main>
     <section class="bg-gradient-to-b from-blue-50 to-white px-4 py-8 md:py-12">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
@@ -200,12 +201,12 @@
         <div class="max-w-4xl mx-auto">
             <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
                 <div class="overflow-x-auto">
-                    <table class="w-full">
+                    <table class="w-full" aria-label="Chemical viscosity reference table">
                         <thead>
                             <tr class="bg-gray-50 text-left text-sm">
-                                <th class="py-3 px-2 sm:px-4 font-semibold text-gray-600">Substance</th>
-                                <th class="py-3 px-2 sm:px-4 font-semibold text-gray-600 text-center whitespace-nowrap">Temp</th>
-                                <th class="py-3 px-2 sm:px-4 font-semibold text-gray-600 text-right whitespace-nowrap">Viscosity</th>
+                                <th scope="col" class="py-3 px-2 sm:px-4 font-semibold text-gray-600">Substance</th>
+                                <th scope="col" class="py-3 px-2 sm:px-4 font-semibold text-gray-600 text-center whitespace-nowrap">Temp</th>
+                                <th scope="col" class="py-3 px-2 sm:px-4 font-semibold text-gray-600 text-right whitespace-nowrap">Viscosity</th>
                             </tr>
                         </thead>
                         <tbody id="viscosityTable">
@@ -243,6 +244,7 @@
     </section>
 
     <!-- Footer -->
+    </main>
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
             <p>© 2026 ChemicalResistance.org — Free Chemical Compatibility Tool</p>

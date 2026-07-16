@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Any Materials Side-by-Side | Chemical Resistance Tool</title>
-    <meta name="description" content="Build your own chemical resistance comparison. Pick any 2-3 materials from 24 options and see side-by-side ratings for 1,600+ chemicals at 20°C and 50°C.">
+    <meta name="description" content="Build your own chemical resistance comparison. Pick any 2-3 materials from 24 options and see side-by-side ratings for 1,650+ chemicals at 20°C and 50°C.">
     <link rel="canonical" href="https://chemicalresistance.org/compare/">
     <link rel="alternate" hreflang="x-default" href="https://chemicalresistance.org/compare/">
     <link rel="alternate" hreflang="en" href="https://chemicalresistance.org/compare/">
@@ -20,7 +20,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <meta property="og:title" content="Compare Any Materials Side-by-Side | Chemical Resistance Tool">
-    <meta property="og:description" content="Build your own chemical resistance comparison. Pick any 2-3 materials from 24 options and see side-by-side ratings for 1,600+ chemicals.">
+    <meta property="og:description" content="Build your own chemical resistance comparison. Pick any 2-3 materials from 24 options and see side-by-side ratings for 1,650+ chemicals.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
     <link rel="stylesheet" href="/css/tailwind.min.css">
@@ -88,10 +88,11 @@
     </script>
 
     <!-- Hero -->
+    <main>
     <section class="bg-gradient-to-b from-blue-50 to-white px-4 py-8 md:py-12">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-3xl font-bold text-gray-900 mb-3">Build Your Own Material Comparison</h1>
-            <p class="text-lg text-gray-600">Pick any 2 or 3 materials and instantly compare their chemical resistance side-by-side across 1,600+ chemicals.</p>
+            <p class="text-lg text-gray-600">Pick any 2 or 3 materials and instantly compare their chemical resistance side-by-side across 1,650+ chemicals.</p>
         </div>
     </section>
 
@@ -173,7 +174,7 @@
             </div>
             <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
                 <div class="overflow-x-auto">
-                    <table class="w-full" style="min-width:500px">
+                    <table class="w-full" style="min-width:500px" aria-label="Chemical resistance comparison">
                         <thead class="sticky top-0 z-10">
                             <tr id="tableHead" class="bg-gray-50 text-left text-sm"></tr>
                         </thead>
@@ -274,6 +275,7 @@
         </div>
     </section>
 
+    </main>
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
             <p>&copy; 2026 ChemicalResistance.org &mdash; Free chemical compatibility tool</p>
@@ -424,10 +426,10 @@
 
         loadData().then(() => {
             const thead = document.getElementById('tableHead');
-            thead.innerHTML = '<th class="py-3 px-4 font-semibold text-gray-600">Chemical</th>'
-                + '<th class="py-3 px-3 font-semibold text-gray-600 text-sm">Conc.</th>'
+            thead.innerHTML = '<th scope="col" class="py-3 px-4 font-semibold text-gray-600">Chemical</th>'
+                + '<th scope="col" class="py-3 px-3 font-semibold text-gray-600 text-sm">Conc.</th>'
                 + activeMats.map(m =>
-                    '<th class="py-3 px-2 font-semibold text-gray-600 text-center whitespace-nowrap"><a href="/materials/' + m.dir + '/" class="hover:text-emerald-600 hover:underline">' + m.short + '</a></th>'
+                    '<th scope="col" class="py-3 px-2 font-semibold text-gray-600 text-center whitespace-nowrap"><a href="/materials/' + m.dir + '/" class="hover:text-emerald-600 hover:underline">' + m.short + '</a></th>'
                 ).join('');
 
             document.getElementById('legendSection').classList.remove('hidden');

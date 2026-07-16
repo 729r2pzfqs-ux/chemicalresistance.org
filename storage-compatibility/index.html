@@ -28,8 +28,8 @@
     <meta property="og:title" content="Chemical Storage Compatibility Checker">
     <meta property="og:description" content="Check if chemicals can be stored together safely. Free tool with OSHA/NFPA guidelines.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chemicalresistance.org/storage-compatibility">
-    <meta property="og:image" content="https://chemicalresistance.org/og-image.png">
+    <meta property="og:url" content="https://chemicalresistance.org/storage-compatibility/">
+    <meta property="og:image" content="https://chemicalresistance.org/og-image.png/">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -189,27 +189,27 @@
             </div>
 
             <div class="overflow-x-auto">
-                <table class="w-full text-sm border-collapse">
+                <table class="w-full text-sm border-collapse" aria-label="Chemical segregation compatibility matrix">
                     <thead>
                         <tr>
-                            <th class="p-2 bg-gray-100 border border-gray-200"></th>
-                            <th class="p-3 bg-red-50 border border-gray-200 text-center">
+                            <th scope="col" class="p-2 bg-gray-100 border border-gray-200"></th>
+                            <th scope="col" class="p-3 bg-red-50 border border-gray-200 text-center">
                                 <img src="../img/ghs/ghs05.svg" alt="Acid" class="w-10 h-10 mx-auto mb-1">
                                 <div class="font-bold text-red-700">Acids</div>
                             </th>
-                            <th class="p-3 bg-blue-50 border border-gray-200 text-center">
+                            <th scope="col" class="p-3 bg-blue-50 border border-gray-200 text-center">
                                 <img src="../img/ghs/ghs05.svg" alt="Base" class="w-10 h-10 mx-auto mb-1">
                                 <div class="font-bold text-blue-700">Bases</div>
                             </th>
-                            <th class="p-3 bg-orange-50 border border-gray-200 text-center">
+                            <th scope="col" class="p-3 bg-orange-50 border border-gray-200 text-center">
                                 <img src="../img/ghs/ghs02.svg" alt="Flammable" class="w-10 h-10 mx-auto mb-1">
                                 <div class="font-bold text-orange-700">Flammables</div>
                             </th>
-                            <th class="p-3 bg-yellow-50 border border-gray-200 text-center">
+                            <th scope="col" class="p-3 bg-yellow-50 border border-gray-200 text-center">
                                 <img src="../img/ghs/ghs03.svg" alt="Oxidizer" class="w-10 h-10 mx-auto mb-1">
                                 <div class="font-bold text-yellow-700">Oxidizers</div>
                             </th>
-                            <th class="p-3 bg-purple-50 border border-gray-200 text-center">
+                            <th scope="col" class="p-3 bg-purple-50 border border-gray-200 text-center">
                                 <img src="../img/ghs/ghs06.svg" alt="Toxic" class="w-10 h-10 mx-auto mb-1">
                                 <div class="font-bold text-purple-700">Toxics</div>
                             </th>
@@ -217,102 +217,102 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="p-3 bg-red-50 border border-gray-200 font-bold text-red-700">
+                            <th scope="row" class="p-3 bg-red-50 border border-gray-200 font-bold text-red-700">
                                 <img src="../img/ghs/ghs05.svg" alt="Acid" class="w-8 h-8 inline mr-2">Acids
-                            </td>
-                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('acid','acid')">
+                            </th>
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('acid','acid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('acid','acid')">
                                 <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('acid','base')">
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('acid','base')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('acid','base')">
                                 <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','flammable')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','flammable')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('acid','flammable')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','oxidizer')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('acid','oxidizer')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('acid','oxidizer')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('acid','toxic')">
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('acid','toxic')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('acid','toxic')">
                                 <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
                             </td>
                         </tr>
                         <tr>
-                            <td class="p-3 bg-blue-50 border border-gray-200 font-bold text-blue-700">
+                            <th scope="row" class="p-3 bg-blue-50 border border-gray-200 font-bold text-blue-700">
                                 <img src="../img/ghs/ghs05.svg" alt="Base" class="w-8 h-8 inline mr-2">Bases
-                            </td>
-                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('base','acid')">
+                            </th>
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('base','acid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('base','acid')">
                                 <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('base','base')">
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('base','base')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('base','base')">
                                 <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('base','flammable')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('base','flammable')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('base','flammable')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','oxidizer')">
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','oxidizer')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('base','oxidizer')">
                                 <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','toxic')">
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('base','toxic')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('base','toxic')">
                                 <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
                             </td>
                         </tr>
                         <tr>
-                            <td class="p-3 bg-orange-50 border border-gray-200 font-bold text-orange-700">
+                            <th scope="row" class="p-3 bg-orange-50 border border-gray-200 font-bold text-orange-700">
                                 <img src="../img/ghs/ghs02.svg" alt="Flammable" class="w-8 h-8 inline mr-2">Flammables
-                            </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','acid')">
+                            </th>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','acid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('flammable','acid')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','base')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','base')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('flammable','base')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('flammable','flammable')">
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('flammable','flammable')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('flammable','flammable')">
                                 <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('flammable','oxidizer')">
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('flammable','oxidizer')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('flammable','oxidizer')">
                                 <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','toxic')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('flammable','toxic')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('flammable','toxic')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
                         </tr>
                         <tr>
-                            <td class="p-3 bg-yellow-50 border border-gray-200 font-bold text-yellow-700">
+                            <th scope="row" class="p-3 bg-yellow-50 border border-gray-200 font-bold text-yellow-700">
                                 <img src="../img/ghs/ghs03.svg" alt="Oxidizer" class="w-8 h-8 inline mr-2">Oxidizers
-                            </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','acid')">
+                            </th>
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','acid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('oxidizer','acid')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('oxidizer','base')">
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('oxidizer','base')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('oxidizer','base')">
                                 <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('oxidizer','flammable')">
+                            <td class="p-4 border border-gray-200 bg-red-200 text-center cursor-pointer hover:bg-red-300 transition" onclick="showCompatInfo('oxidizer','flammable')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('oxidizer','flammable')">
                                 <span class="text-2xl">✗</span><br><span class="text-xs font-bold text-red-800">NEVER</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('oxidizer','oxidizer')">
+                            <td class="p-4 border border-gray-200 bg-green-100 text-center cursor-pointer hover:bg-green-200 transition" onclick="showCompatInfo('oxidizer','oxidizer')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('oxidizer','oxidizer')">
                                 <span class="text-2xl">✓</span><br><span class="text-xs font-medium text-green-800">OK</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','toxic')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('oxidizer','toxic')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('oxidizer','toxic')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
                         </tr>
                         <tr>
-                            <td class="p-3 bg-purple-50 border border-gray-200 font-bold text-purple-700">
+                            <th scope="row" class="p-3 bg-purple-50 border border-gray-200 font-bold text-purple-700">
                                 <img src="../img/ghs/ghs06.svg" alt="Toxic" class="w-8 h-8 inline mr-2">Toxics
-                            </td>
-                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','acid')">
+                            </th>
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','acid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('toxic','acid')">
                                 <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','base')">
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','base')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('toxic','base')">
                                 <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','flammable')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','flammable')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('toxic','flammable')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','oxidizer')">
+                            <td class="p-4 border border-gray-200 bg-orange-100 text-center cursor-pointer hover:bg-orange-200 transition" onclick="showCompatInfo('toxic','oxidizer')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('toxic','oxidizer')">
                                 <span class="text-2xl">↔</span><br><span class="text-xs font-medium text-orange-800">Separate</span>
                             </td>
-                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','toxic')">
+                            <td class="p-4 border border-gray-200 bg-yellow-100 text-center cursor-pointer hover:bg-yellow-200 transition" onclick="showCompatInfo('toxic','toxic')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')showCompatInfo('toxic','toxic')">
                                 <span class="text-2xl">⚠</span><br><span class="text-xs font-medium text-yellow-800">Check</span>
                             </td>
                         </tr>

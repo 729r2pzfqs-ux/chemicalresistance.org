@@ -175,8 +175,12 @@ function getHazardBadges(hazardStr) {
 
 // Convert numeric ratings to letter grades for display
 function ratingToGrade(val) {
-    const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR' };
-    return map[val] || 'NR';
+    if (!val && val !== '0') return 'NR';
+    // Sanitize corrupt values: strip leading '-', strip leading zeros, take first char
+    let s = String(val).replace(/^-/, '').replace(/^0+/, '') || '0';
+    if (s.length > 1) s = s[0];
+    const map = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '0': 'NR', 'K': 'D' };
+    return map[s] || 'NR';
 }
 
 // Global state
@@ -190,11 +194,11 @@ let currentLang = window.pageLang || document.documentElement.lang || 'en';
 async function init() {
     try {
         const response = await fetch('data/chemicals_burkle_full.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         chemicals = await response.json();
         buildIndex();
         setupEventListeners();
         showDefaultChemical();
-        console.log(`Loaded ${chemicals.length} chemicals with ${Object.keys(materialInfo).length} materials`);
     } catch (err) {
         console.error('Failed to load chemical data:', err);
         document.getElementById('searchInput').placeholder = 'Error loading data...';
@@ -304,15 +308,40 @@ function setupEventListeners() {
     const searchResults = document.getElementById('searchResults');
     const langSelect = document.getElementById('langSelect');
 
+    function setSearchExpanded(open) {
+        searchInput.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) searchResults.classList.remove('hidden');
+        else searchResults.classList.add('hidden');
+    }
+
     // Search input - only trigger on text search, not material selection
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
         if (query.length < 2) {
-            searchResults.classList.add('hidden');
+            setSearchExpanded(false);
             return;
         }
         showSearchResults(query);
-        searchResults.classList.remove('hidden');
+        setSearchExpanded(true);
+    });
+
+    // Keyboard navigation for search dropdown
+    searchInput.addEventListener('keydown', (e) => {
+        const items = searchResults.querySelectorAll('[role="option"]');
+        const focused = searchResults.querySelector('[role="option"]:focus');
+        const idx = Array.from(items).indexOf(focused);
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            const next = items[idx + 1] || items[0];
+            next?.focus();
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            const prev = items[idx - 1] || items[items.length - 1];
+            prev?.focus();
+        } else if (e.key === 'Escape') {
+            setSearchExpanded(false);
+            searchInput.focus();
+        }
     });
 
     // Material checkbox changes - only update the results TABLE, don't trigger search
@@ -325,18 +354,37 @@ function setupEventListeners() {
         }
     });
 
-    // Click on search result
+    // Click or keyboard on search result
+    function selectSearchItem(item) {
+        const key = item.dataset.key;
+        const indices = chemicalGroups[key];
+        if (indices?.length > 0) {
+            showResultsForGroup(indices);
+            setSearchExpanded(false);
+            document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
     searchResults.addEventListener('click', (e) => {
         const item = e.target.closest('[data-key]');
-        if (item) {
-            const key = item.dataset.key;
-            const indices = chemicalGroups[key];
-            if (indices?.length > 0) {
-                showResultsForGroup(indices);
-                searchResults.classList.add('hidden');
-                // Scroll to results
-                document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+        if (item) selectSearchItem(item);
+    });
+    searchResults.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            const item = e.target.closest('[data-key]');
+            if (item) { e.preventDefault(); selectSearchItem(item); }
+        } else if (e.key === 'Escape') {
+            setSearchExpanded(false);
+            searchInput.focus();
+        } else if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            const items = searchResults.querySelectorAll('[role="option"]');
+            const idx = Array.from(items).indexOf(document.activeElement);
+            (items[idx + 1] || items[0])?.focus();
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            const items = searchResults.querySelectorAll('[role="option"]');
+            const idx = Array.from(items).indexOf(document.activeElement);
+            (items[idx - 1] || items[items.length - 1])?.focus();
         }
     });
 
@@ -353,7 +401,7 @@ function setupEventListeners() {
     // Close search on click outside
     document.addEventListener('click', (e) => {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-            searchResults.classList.add('hidden');
+            setSearchExpanded(false);
         }
     });
 }
@@ -429,14 +477,23 @@ function showSearchResults(query) {
             const isFuzzy = info.score >= 3;
             const fuzzyBadge = isFuzzy ? '<span class="ml-2 text-xs text-blue-500 bg-blue-50 px-1 rounded">~similar</span>' : '';
             return `
-                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${chemKey}">
+                <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-0" data-key="${chemKey}" role="option" tabindex="-1">
                     <div class="font-medium text-gray-900">${highlightMatch(displayName, query)}${fuzzyBadge}</div>
                 </div>
             `;
         }).join('');
         searchResults.classList.remove('hidden');
     } else {
-        searchResults.innerHTML = `<div class="px-4 py-3 text-gray-500">No chemicals found for "${query}"<br><span class="text-xs">Try: acetone, sulfuric acid, sodium hydroxide</span></div>`;
+        const noResult = document.createElement('div');
+        noResult.className = 'px-4 py-3 text-gray-500';
+        const msg = document.createElement('div');
+        msg.textContent = `No chemicals found for "${query}"`;
+        const hint = document.createElement('span');
+        hint.className = 'text-xs';
+        hint.textContent = 'Try: acetone, sulfuric acid, sodium hydroxide';
+        noResult.appendChild(msg);
+        noResult.appendChild(hint);
+        searchResults.replaceChildren(noResult);
         searchResults.classList.remove('hidden');
     }
 }
