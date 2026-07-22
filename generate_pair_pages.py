@@ -186,6 +186,16 @@ def generate_pair_page(mat_code, mat_info, chem_data):
     return html
 
 def main():
+    raise SystemExit(
+        "generate_pair_pages.py is RETIRED and must not be run.\n\n"
+        "It generated a root-level mirror tree (/<material>/<chemical>/, e.g. /hdpe/acetone/)\n"
+        "duplicating the canonical /chemicals/<chemical>/<material>/ pages. Those 2,136 pages\n"
+        "were orphaned (no inbound links), self-canonical (so they competed with the canonical\n"
+        "pages in search), carried no hreflang, and 16% contradicted the canonical ratings.\n"
+        "They were deleted as part of the scaled-content recovery.\n\n"
+        "The canonical pair pages are built by generate_chemical_material_pages.py. Use that."
+    )
+
     with open('data/chemicals_burkle_full.json', 'r') as f:
         chemicals = json.load(f)
     

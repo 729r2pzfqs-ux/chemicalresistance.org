@@ -154,7 +154,11 @@ EXACT_REPLACEMENTS = [
     ('Os dados de resistência química são baseados nas tabelas de compatibilidade completas da Bürkle GmbH (buerkle.de), um fabricante alemão com décadas de experiência em equipamentos para manuseio de produtos químicos.', '化学品耐受性数据基于Bürkle GmbH (buerkle.de) 的完整兼容性数据表，该公司是一家拥有数十年化学品处理设备经验的德国制造商。'),
 
     # Content section for chemical pages
-    ('Sobre a compatibilidade de', '关于…的兼容性 -'),
+    # NOTE: "Sobre a compatibilidade de {X}" is NOT handled here. A plain string
+    # replacement cannot reorder the trailing chemical name, which produced the
+    # dangling placeholder "关于…的兼容性 - {X}". It is handled by a reordering
+    # regex in process_html() instead. Do not re-add an exact mapping for it.
+    ('Pesquisar concentrações específicas', '查询特定浓度'),
     ('A escolha do material correto para o manuseio ou armazenamento de', '选择正确的材料来处理或储存'),
     ('é crucial para a segurança e durabilidade do equipamento.', '对于设备安全和耐久性至关重要。'),
     ('Um material inadequado pode causar falha do recipiente, vazamentos ou contaminação.', '不合适的材料可能导致容器故障、泄漏或污染。'),
@@ -258,6 +262,16 @@ REGEX_REPLACEMENTS = [
 
 def process_html(content):
     """Apply all text replacements to HTML content."""
+
+    # 0. Reordering replacements. Chinese puts the possessor before 的, so
+    #    "Sobre a compatibilidade de {X}" becomes "{X}的兼容性". This must run
+    #    before the exact replacements below, which would otherwise translate
+    #    the Portuguese fragments piecemeal and strand the chemical name.
+    content = re.sub(
+        r'Sobre a compatibilidade de\s+([^<]+)',
+        lambda m: f'{m.group(1).strip()}的兼容性',
+        content
+    )
 
     # 1. Apply all exact string replacements
     for old, new in EXACT_REPLACEMENTS:
