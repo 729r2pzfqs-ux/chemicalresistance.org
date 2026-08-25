@@ -77,6 +77,7 @@ def generate_page(chemical, material_code, material_slug, material_name):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');</script>
     <title>{chem_name} Resistance of {material_name} | Chemical Compatibility</title>
     <meta name="description" content="Can {material_name} resist {chem_name}? Rating: {r20[1]} at 20°C, {r50[1]} at 50°C. See if {material_name} containers are safe for {chem_name} storage.">

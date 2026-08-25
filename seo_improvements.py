@@ -290,6 +290,7 @@ def create_comparison_pages():
 <html lang="en">
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -546,6 +547,7 @@ def create_comparison_pages():
 <html lang="en">
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -629,6 +631,7 @@ def create_chart_pages():
 <html lang="en">
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -859,6 +862,7 @@ def create_chart_pages():
     idx = '''<!DOCTYPE html>
 <html lang="en"><head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-LTK6VVHYDW");</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chemical Compatibility Charts — Printable Resistance Ratings</title>

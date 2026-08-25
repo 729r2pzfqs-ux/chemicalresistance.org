@@ -54,6 +54,7 @@ for chem_slug in english_slugs:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');</script>
     <title>{chem_name} Resistance of {mat_name} | Chemical Compatibility</title>
     <meta name="description" content="Can {mat_name} resist {chem_name}? See compatibility rating for {mat_name} containers with {chem_name} at different temperatures.">

@@ -105,6 +105,7 @@ for en_slug, de_name in CORRECT_MAPPINGS.items():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTK6VVHYDW"></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');</script>
     <title>{chem_name} Resistance of {mat_name} | ChemicalResistance.org</title>
     <meta name="description" content="Is {mat_name} resistant to {chem_name}? Rating: {r20[1]} at 20°C, {r50[1]} at 50°C.">
