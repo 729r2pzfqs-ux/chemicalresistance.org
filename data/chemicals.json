@@ -17399,7 +17399,7 @@
       "Butanol, sek-",
       "Butanol-2"
     ],
-    "name_es": "Butylalcohol, sekundär"
+    "name_es": "Alcohol Butílico, secundario"
   },
   {
     "name": "Butylalkohol, tertiär",
@@ -17511,7 +17511,7 @@
       "Butanol, tert-",
       "Methylpropanol-2, 2-"
     ],
-    "name_es": "Butylalcohol, tertiär"
+    "name_es": "Alcohol Butílico, terciario"
   },
   {
     "name": "Butylamin",
@@ -21462,7 +21462,7 @@
       "Hexadecylalkohol",
       "Palmitylalkohol"
     ],
-    "name_es": "Cetylalcohol"
+    "name_es": "Alcohol Cetílico"
   },
   {
     "name": "Chinin",
@@ -43973,7 +43973,7 @@
       "Furfuralkohol",
       "Hydroxymethylfuran, 2-"
     ],
-    "name_es": "Furfurylalcohol"
+    "name_es": "Alcohol Furfurílico"
   },
   {
     "name": "Gallussäure",
@@ -59761,7 +59761,7 @@
       "Dodecanol",
       "Dodecylalkohol"
     ],
-    "name_es": "Laurylalcohol"
+    "name_es": "Alcohol Laurílico"
   },
   {
     "name": "Laurylchlorid",
@@ -78021,7 +78021,7 @@
     "aliases": [
       "Octanol, 1-"
     ],
-    "name_es": "Octylalcohol, -n"
+    "name_es": "Octyl Alcohol, -n"
   },
   {
     "name": "Octylkresol",
@@ -86152,7 +86152,7 @@
       "Ethinylcarbiol",
       "Propin-1-ol, 2-"
     ],
-    "name_es": "Propargylalcohol"
+    "name_es": "Alcohol Propargílico"
   },
   {
     "name": "Propen",
@@ -98809,7 +98809,7 @@
     "aliases": [
       "Hydroxymethyltetrahydrofuran, 2-"
     ],
-    "name_es": "Tetrahydrofurfurylalcohol"
+    "name_es": "Alcohol Tetrahidrofurfurílico"
   },
   {
     "name": "Tetrahydronaphthalin",
@@ -102325,7 +102325,7 @@
       "Hendecanol",
       "Undecanol"
     ],
-    "name_es": "Undecylalcohol"
+    "name_es": "Alcohol Undecílico"
   },
   {
     "name": "Urin",

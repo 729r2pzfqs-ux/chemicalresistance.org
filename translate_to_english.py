@@ -3,6 +3,7 @@
 Translate all German chemical names to English for chemicalresistance.org
 """
 import json
+import os
 import re
 
 # Comprehensive German → English chemical term translations
@@ -1100,9 +1101,28 @@ ADDITIONAL_TRANSLATIONS = {
     'ätznatron': 'caustic soda',
 }
 
+# Hand-verified English names, keyed by the lowercased German name.
+# These win over every rule below and are returned verbatim (no .title()).
+# The fallback loop in this module applies TERM_TRANSLATIONS as unanchored
+# substring replacements, so a rule like 'ethan' -> 'ethane' also fires inside
+# 'ethanol' and yields 'ethaneol'. Names corrected by hand are pinned here so a
+# regeneration cannot reintroduce that corruption.
+_OVERRIDES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'data', 'chemical_names_en_overrides.json')
+try:
+    with open(_OVERRIDES_PATH, encoding='utf-8') as _f:
+        VERIFIED_NAMES = json.load(_f)
+except FileNotFoundError:
+    VERIFIED_NAMES = {}
+
+
 def translate_chemical_name(german_name):
     """Translate a German chemical name to English."""
     result = german_name.lower()
+    
+    # Hand-verified names win outright, returned exactly as written
+    if result in VERIFIED_NAMES:
+        return VERIFIED_NAMES[result]
     
     # Try exact match in additional translations first
     if result in ADDITIONAL_TRANSLATIONS:
