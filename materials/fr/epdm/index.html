@@ -116,13 +116,12 @@
                 EPDM Tableau de Résistance Chimique
             </h1>
             <p class="text-lg text-gray-600 mb-4">
-                EPDM (Ethylene Propylene Diene Monomer) est un polyvalent synthetic rubber excellent for water, steam, 
-                and polar chemicals. It's the go-to choice for outdoor applications and hot water systems.
+                L'EPDM (monomère éthylène-propylène-diène) est un caoutchouc synthétique polyvalent, excellent pour l'eau, la vapeur et les produits chimiques polaires. C'est le choix de référence pour les applications extérieures et les circuits d'eau chaude.
             </p>
             <div class="flex flex-wrap gap-3">
-                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">1,650+ chemicals tested</span>
-                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
-                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Elastomer</span>
+                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">1 650+ produits chimiques testés</span>
+                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">Données à 20 °C et 50 °C</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Élastomère</span>
             </div>
         </div>
     </section>
@@ -136,15 +135,15 @@
             </div>
             <div>
                 <div class="text-2xl font-bold text-blue-600" id="statB">—</div>
-                <div class="text-sm text-gray-500">Good (B)</div>
+                <div class="text-sm text-gray-500">Bon (B)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-amber-600" id="statC">—</div>
-                <div class="text-sm text-gray-500">Limited (C)</div>
+                <div class="text-sm text-gray-500">Limité (C)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-red-600" id="statD">—</div>
-                <div class="text-sm text-gray-500">Not Recommended (D)</div>
+                <div class="text-sm text-gray-500">Non recommandé (D)</div>
             </div>
         </div>
     </section>
@@ -156,19 +155,19 @@
             <div class="bg-white rounded-xl border border-gray-200 p-4 mb-6">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Search chemicals</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Rechercher des produits chimiques</label>
                         <input type="text" id="searchInput" placeholder="e.g. Water, Sodium hydroxide..." 
                             class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-orange-500 focus:ring-2 focus:ring-orange-100 outline-none">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Rating filter</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Filtrer par note</label>
                         <select id="ratingFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-orange-500 outline-none">
-                            <option value="all">All ratings</option>
+                            <option value="all">Toutes les notes</option>
                             <option value="A">A - Excellent</option>
-                            <option value="B">B - Good</option>
-                            <option value="AB">A & B (Compatible)</option>
-                            <option value="C">C - Limited</option>
-                            <option value="D">D - Not recommended</option>
+                            <option value="B">B - Bon</option>
+                            <option value="AB">A et B (compatibles)</option>
+                            <option value="C">C - Limité</option>
+                            <option value="D">D - Non recommandé</option>
                         </select>
                     </div>
                     <div>
@@ -183,7 +182,7 @@
 
             <!-- Results count -->
             <div class="mb-4 text-sm text-gray-500">
-                Showing <span id="resultCount" class="font-semibold text-gray-700">0</span> chemicals
+                Affichage de <span id="resultCount" class="font-semibold text-gray-700">0</span> produits chimiques
             </div>
 
             <!-- Table -->
@@ -208,7 +207,7 @@
             <!-- Load more -->
             <div id="loadMore" class="mt-4 text-center hidden">
                 <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 transition-colors">
-                    Load more chemicals
+                    Charger plus de produits chimiques
                 </button>
             </div>
         </div>
@@ -221,38 +220,38 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Full Name</span>
-                        <span class="font-medium text-gray-900">Ethylene Propylene Diene Monomer</span>
+                        <span class="text-gray-600">Nom complet</span>
+                        <span class="font-medium text-gray-900">Monomère éthylène-propylène-diène</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
                         <span class="text-gray-600">Type</span>
-                        <span class="font-medium text-gray-900">Synthetic rubber (elastomer)</span>
+                        <span class="font-medium text-gray-900">Caoutchouc synthétique (élastomère)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Max Temperature</span>
-                        <span class="font-medium text-gray-900">150°C (302°F) continuous</span>
+                        <span class="text-gray-600">Température maximale</span>
+                        <span class="font-medium text-gray-900">150 °C (302 °F) en continu</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Min Temperature</span>
+                        <span class="text-gray-600">Température minimale</span>
                         <span class="font-medium text-gray-900">-50°C (-58°F)</span>
                     </div>
                 </div>
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Hardness Range</span>
+                        <span class="text-gray-600">Plage de dureté</span>
                         <span class="font-medium text-gray-900">40–90 Shore A</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">UV/Ozone Resistance</span>
+                        <span class="text-gray-600">Résistance aux UV/à l'ozone</span>
                         <span class="font-medium text-gray-900">Excellent</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">FDA Grades</span>
-                        <span class="font-medium text-gray-900">Available</span>
+                        <span class="text-gray-600">Qualités FDA</span>
+                        <span class="font-medium text-gray-900">Disponibles</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Cost</span>
-                        <span class="font-medium text-gray-900">Low-Moderate</span>
+                        <span class="text-gray-600">Coût</span>
+                        <span class="font-medium text-gray-900">Faible à modéré</span>
                     </div>
                 </div>
             </div>
@@ -269,21 +268,21 @@
                         <i data-lucide="droplets" class="w-5 h-5 text-blue-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">Systèmes d'Eau</h3>
-                    <p class="text-sm text-gray-600">Hot/cold water seals, plumbing gaskets, water pumps</p>
+                    <p class="text-sm text-gray-600">Joints d'eau chaude/froide, joints de plomberie, pompes à eau</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
                     <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="cloud" class="w-5 h-5 text-orange-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">Vapeur et CVC</h3>
-                    <p class="text-sm text-gray-600">Steam hoses, HVAC seals, radiator hoses</p>
+                    <p class="text-sm text-gray-600">Flexibles vapeur, joints CVC, durites de radiateur</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
                     <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="sun" class="w-5 h-5 text-emerald-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">Extérieur/Toiture</h3>
-                    <p class="text-sm text-gray-600">Roofing membranes, window seals, weatherstripping</p>
+                    <p class="text-sm text-gray-600">Membranes de toiture, joints de fenêtre, joints d'étanchéité</p>
                 </div>
             </div>
         </div>
@@ -293,40 +292,40 @@
     <section class="px-4 py-12 bg-red-50 border-t border-red-100">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">⚠️ Non Recommandé Pour</h2>
-            <p class="text-gray-600 mb-4">EPDM swells and degrades when exposed to:</p>
+            <p class="text-gray-600 mb-4">L'EPDM gonfle et se dégrade au contact de :</p>
             <div class="grid md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Petroleum oils and fuels (gasoline, diesel)
+                        Huiles minérales et carburants (essence, gazole)
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Mineral oils and greases
+                        Huiles et graisses minérales
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Aromatic hydrocarbons (benzene, toluene)
+                        Hydrocarbures aromatiques (benzène, toluène)
                     </li>
                 </ul>
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Halogenated solvents
+                        Solvants halogénés
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Concentrated acids
+                        Acides concentrés
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Turpentine and hydrocarbon solvents
+                        Térébenthine et solvants hydrocarbonés
                     </li>
                 </ul>
             </div>
             <div class="mt-4 p-3 bg-white rounded-lg border border-red-200">
                 <p class="text-sm text-gray-600">
-                    <strong>Tip:</strong> For oil and fuel applications, use NBR (Nitrile) or Viton® (FKM) instead.
+                    <strong>Conseil :</strong> Pour les applications huiles et carburants, utilisez plutôt du NBR (nitrile) ou du Viton® (FKM).
                 </p>
             </div>
         </div>
@@ -339,19 +338,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <a href="../nbr" class="p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">NBR</div>
-                    <div class="text-xs text-gray-500">For oils/fuels</div>
+                    <div class="text-xs text-gray-500">Pour huiles/carburants</div>
                 </a>
                 <a href="../ptfe" class="p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">PTFE</div>
-                    <div class="text-xs text-gray-500">Universal</div>
+                    <div class="text-xs text-gray-500">Universel</div>
                 </a>
                 <a href="../pp" class="p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">PP</div>
-                    <div class="text-xs text-gray-500">Rigid option</div>
+                    <div class="text-xs text-gray-500">Option rigide</div>
                 </a>
                 <a href="../ss316" class="p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">SS 316</div>
-                    <div class="text-xs text-gray-500">Metal option</div>
+                    <div class="text-xs text-gray-500">Option métallique</div>
                 </a>
             </div>
         </div>
@@ -360,8 +359,8 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
-            <p>© 2026 ChemicalResistance.org — Free chemical compatibility tool</p>
-            <p class="mt-2">Data sources: Bürkle, INEOS, industry standards</p>
+            <p>© 2026 ChemicalResistance.org — Outil gratuit de compatibilité chimique</p>
+            <p class="mt-2">Sources des données : Bürkle, INEOS, normes industrielles</p>
         </div>
     <p class="mt-3 text-xs text-center"><a href="/privacy.html" class="hover:underline">Confidentialité</a> <span class="mx-1">&middot;</span> <a href="/terms.html" class="hover:underline">Conditions</a></p>
 </footer>
@@ -443,11 +442,11 @@
     function translateConc(conc) {
         if (!conc) return '—';
         const map = {
-            'wässrig': 'Aqueous', 'gesättigt': 'Saturated', 'verdünnt': 'Diluted',
-            'konz.': 'Concentrated', 'konzentriert': 'Concentrated', 'rein': 'Pure',
-            'techn. rein': 'Technical Grade', 'jede': 'Any', 'gering': 'Low',
-            'flüssig': 'Liquid', 'gasförmig': 'Gaseous', 'geschmolzen': 'Molten',
-            'trocken': 'Dry', 'feucht': 'Wet/Moist', 'fest': 'Solid',
+            'wässrig': 'Aqueux', 'gesättigt': 'Saturé', 'verdünnt': 'Dilué',
+            'konz.': 'Concentré', 'konzentriert': 'Concentré', 'rein': 'Pur',
+            'techn. rein': 'Qualité technique', 'jede': 'Toute', 'gering': 'Faible',
+            'flüssig': 'Liquide', 'gasförmig': 'Gazeux', 'geschmolzen': 'Fondu',
+            'trocken': 'Sec', 'feucht': 'Humide', 'fest': 'Solide',
             'Pulver': 'Powder', 'gemahlen': 'Ground', 'ölhaltig': 'Oil-containing',
             'sulfuriert': 'Sulfurized'
         };

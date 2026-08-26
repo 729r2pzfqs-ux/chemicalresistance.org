@@ -2,6 +2,10 @@
 """
 Generate Chinese (ZH) versions of all material and chemical pages for chemicalresistance.org.
 Copies PT pages to ZH equivalents, then performs comprehensive text replacements.
+
+Anything this pass misses stays Portuguese on a Chinese page, so run
+fix_cross_language.py afterwards; it is idempotent and has a --check mode that
+reports what is still untranslated.
 """
 
 import os
@@ -100,9 +104,15 @@ EXACT_REPLACEMENTS = [
     # Rating words in specific HTML contexts
     ('> Excelente<', '> 优秀<'),
     ('>Excelente<', '>优秀<'),
-    ('> Aceitável<', '> 一般<'),
-    ('>Aceitável<', '>一般<'),
+    ('> Aceitável<', '> 尚可<'),
+    ('>Aceitável<', '>尚可<'),
+    ('Sem dados disponíveis', '无数据'),
     ('Sem dados', '无数据'),
+    ('Boa (B)', '良好 (B)'),
+    ('>Boa<', '>良好<'),
+    ('Andere Materialien', '其他材料'),
+    ('<strong>Nota:</strong>', '<strong>注意：</strong>'),
+    ('aria-label="Menu"', 'aria-label="菜单"'),
 
     # Químicos Testados
     ('Químicos Testados', '种化学品已测试'),
@@ -143,7 +153,7 @@ EXACT_REPLACEMENTS = [
 
     ('A = Excelente (totalmente resistente, recomendado para uso prolongado).', 'A = 优秀（完全耐受，推荐长期使用）。'),
     ('B = Bom (leve alteração possível, adequado para a maioria das aplicações).', 'B = 良好（可能有轻微变化，适用于大多数应用）。'),
-    ('C = Aceitável (alguma degradação, uso apenas a curto prazo).', 'C = 一般（有一定降解，仅限短期使用）。'),
+    ('C = Aceitável (alguma degradação, uso apenas a curto prazo).', 'C = 尚可（有一定降解，仅限短期使用）。'),
     ('D = Não recomendado (ataque significativo, não utilizar).', 'D = 不推荐（严重腐蚀，请勿使用）。'),
     ('Sempre verifique as classificações junto ao fabricante do seu equipamento.', '请务必与设备制造商核实评级。'),
 
@@ -235,9 +245,12 @@ EXACT_REPLACEMENTS = [
     ('> Bom ', '> 良好 '),
     (') Excelente', ') 优秀'),
     (') Bom', ') 良好'),
-    (') Aceitável', ') 一般'),
-    ('Excelente a ', '优秀（'),
-    ('Aceitável a ', '一般（'),
+    (') Aceitável', ') 尚可'),
+    # NOTE: do NOT add ('Excelente a ', '优秀（') style rules here. The rating
+    # pair "Excelente a 20°C, Bom a 50°C" needs both slots rewritten together;
+    # a one-sided rule opens a full-width paren it never closes and leaves the
+    # second slot in Portuguese, which is where "优秀（20°C, 良好 a 50°C" came
+    # from. process_html() rebuilds the whole pair with a regex instead.
 
     # "chemicals tested" badge
     ('chemicals tested', '种化学品已测试'),
@@ -260,6 +273,29 @@ REGEX_REPLACEMENTS = [
 ]
 
 
+# Rating pair, e.g. "Classificação: Excelente a 20°C, Bom a 50°C". Both slots
+# have to be rewritten in one go, and the temperatures need full-width parens.
+ZH_RATING_WORDS = {
+    'Excelente': '优秀', 'Bom': '良好', 'Boa': '良好', 'Aceitável': '尚可',
+    'Não recomendado': '不推荐', 'Sem dados': '无数据',
+    '优秀': '优秀', '良好': '良好', '尚可': '尚可', '一般': '尚可',
+    '不推荐': '不推荐', '无数据': '无数据',
+}
+_RW = '|'.join(sorted(ZH_RATING_WORDS, key=len, reverse=True))
+RATING_PAIR_RE = re.compile(
+    rf'(?:Classificação:|评级[：:])\s*({_RW})\s*(?:（|\s+a\s+)\s*(\d+)°C[）)]?\s*[,，]\s*'
+    rf'({_RW})\s*(?:（|\s+a\s+)\s*(\d+)°C[）)]?'
+)
+
+# "O PTFE é resistente..." / "A resistência de X varia..." — the Portuguese
+# article has no Chinese equivalent and must be dropped, not translated.
+ARTICLE_RE = re.compile(r'(?<=content=")[OA] (?=[^"]{1,30}(?:能耐受|的耐受性))')
+
+CONCENTRATION_RE = re.compile(
+    r'A 的耐受性 - ([^<\n]+?) varia conforme a concentração\.(\s*)'
+    r'Dados disponíveis para:\s*([^<]*?)\.(\s*)')
+
+
 def process_html(content):
     """Apply all text replacements to HTML content."""
 
@@ -280,6 +316,18 @@ def process_html(content):
     # 2. Apply regex replacements for short Portuguese words
     for pattern, replacement in REGEX_REPLACEMENTS:
         content = re.sub(pattern, replacement, content)
+
+    # 2a. Rating pairs, Portuguese articles and the concentration note. These
+    #     cannot be plain string swaps: the pair needs both slots at once, the
+    #     article has to disappear rather than be translated, and the note has
+    #     to move the chemical name in front of 的.
+    content = RATING_PAIR_RE.sub(
+        lambda m: (f'评级：{ZH_RATING_WORDS[m.group(1)]}（{m.group(2)}°C），'
+                   f'{ZH_RATING_WORDS[m.group(3)]}（{m.group(4)}°C）'),
+        content)
+    content = ARTICLE_RE.sub('', content)
+    content = CONCENTRATION_RE.sub(
+        r'\1 的耐受性因浓度而异。\2可用浓度数据：\3。\4', content)
 
     # 3. Language selector: deselect PT, select ZH
     content = content.replace('<option value="pt" selected>', '<option value="pt">')

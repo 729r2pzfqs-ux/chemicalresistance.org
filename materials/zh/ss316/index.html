@@ -37,7 +37,7 @@
         .rating-D { background: #ef4444; color: white; }
         .rating-NR { background: #e5e7eb; color: #9ca3af; }
     </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "A\u00e7o Inoxid\u00e1vel 316 Tabela de Resist\u00eancia Qu\u00edmica | SS316 Compatibility", "url": "https://chemicalresistance.org/materials/zh/ss316/", "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "316 不锈钢 化学品耐受性数据表 | SS316 兼容性", "url": "https://chemicalresistance.org/materials/zh/ss316/", "inLanguage": "zh"}</script>
 <link rel="alternate" hreflang="x-default" href="https://chemicalresistance.org/materials/ss316/">
 <link rel="alternate" hreflang="en" href="https://chemicalresistance.org/materials/ss316/">
 <link rel="alternate" hreflang="de" href="https://chemicalresistance.org/materials/de/ss316/">
@@ -72,7 +72,7 @@
                     <option value="es">&#127466;&#127480; ES</option>
                     <option value="de">&#127465;&#127466; DE</option>
                 </select>
-                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="菜单">
                     <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
@@ -113,16 +113,15 @@
                 <span class="text-gray-600">SS 316</span>
             </div>
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-                316不锈钢 Chemical Resistance
+                316 不锈钢化学品耐受性
             </h1>
             <p class="text-lg text-gray-600 mb-4">
-                SS 316 (1.4401/1.4404) is the "marine grade" stainless steel with excellent corrosion resistance. 
-                The molybdenum content provides superior protection against chlorides and pitting compared to 304.
+                SS 316（1.4401/1.4404）是耐腐蚀性优异的“船用级”不锈钢。其钼含量使其在抵抗氯化物和点蚀方面明显优于 304。
             </p>
             <div class="flex flex-wrap gap-3">
                 <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">850+ 种化学品已测试</span>
-                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
-                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Marine grade</span>
+                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">20°C 与 50°C 数据</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">船用级</span>
             </div>
         </div>
     </section>
@@ -156,23 +155,23 @@
             <div class="bg-white rounded-xl border border-gray-200 p-4 mb-6">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Search chemicals</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">搜索化学品</label>
                         <input type="text" id="searchInput" placeholder="e.g. Sulfuric acid, Sodium chloride..." 
                             class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 focus:ring-2 focus:ring-slate-100 outline-none">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Rating filter</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">按评级筛选</label>
                         <select id="ratingFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 outline-none">
-                            <option value="all">All ratings</option>
-                            <option value="A">A - Excellent</option>
-                            <option value="B">B - Good</option>
-                            <option value="AB">A & B (Compatible)</option>
-                            <option value="C">C - Limited</option>
+                            <option value="all">全部评级</option>
+                            <option value="A">A - 优秀</option>
+                            <option value="B">B - 良好</option>
+                            <option value="AB">A 和 B（兼容）</option>
+                            <option value="C">C - 尚可</option>
                             <option value="D">D - 不推荐</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Temperatura</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">温度</label>
                         <select id="tempFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 outline-none">
                             <option value="c20">20°C</option>
                             <option value="c50">50°C</option>
@@ -183,7 +182,7 @@
 
             <!-- Results count -->
             <div class="mb-4 text-sm text-gray-500">
-                Showing <span id="resultCount" class="font-semibold text-gray-700">0</span> chemicals
+                显示 <span id="resultCount" class="font-semibold text-gray-700">0</span> 种化学品
             </div>
 
             <!-- Table -->
@@ -193,7 +192,7 @@
                         <thead>
                             <tr class="bg-gray-50 text-left text-sm">
                                 <th class="py-3 px-4 font-semibold text-gray-600">化学品</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600">Concentration</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">浓度</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600">CAS</th>
@@ -208,7 +207,7 @@
             <!-- Load more -->
             <div id="loadMore" class="mt-4 text-center hidden">
                 <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 transition-colors">
-                    Load more chemicals
+                    加载更多化学品
                 </button>
             </div>
         </div>
@@ -217,42 +216,42 @@
     <!-- Material Properties -->
     <section class="px-4 py-12 bg-white border-t border-gray-200">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Propriedades do SS 316</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">SS 316 性能参数</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Grade</span>
+                        <span class="text-gray-600">牌号</span>
                         <span class="font-medium text-gray-900">AISI 316 / 1.4401 (EU)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Low Carbon Variant</span>
+                        <span class="text-gray-600">低碳型号</span>
                         <span class="font-medium text-gray-900">316L / 1.4404</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Max Temperature</span>
-                        <span class="font-medium text-gray-900">870°C (1600°F) intermittent</span>
+                        <span class="text-gray-600">最高温度</span>
+                        <span class="font-medium text-gray-900">870°C（1600°F）间歇使用</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Molybdenum Content</span>
-                        <span class="font-medium text-gray-900">2-3% (pitting resistance)</span>
+                        <span class="text-gray-600">钼含量</span>
+                        <span class="font-medium text-gray-900">2-3%（抗点蚀）</span>
                     </div>
                 </div>
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Density</span>
+                        <span class="text-gray-600">密度</span>
                         <span class="font-medium text-gray-900">8.0 g/cm³</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Magnetic</span>
-                        <span class="font-medium text-gray-900">No (austenitic)</span>
+                        <span class="text-gray-600">磁性</span>
+                        <span class="font-medium text-gray-900">否（奥氏体）</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Weldable</span>
-                        <span class="font-medium text-gray-900">Yes (use 316L for welding)</span>
+                        <span class="text-gray-600">可焊接性</span>
+                        <span class="font-medium text-gray-900">是（焊接请选用 316L）</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Cost</span>
-                        <span class="font-medium text-gray-900">Moderate-High</span>
+                        <span class="text-gray-600">成本</span>
+                        <span class="font-medium text-gray-900">中等至较高</span>
                     </div>
                 </div>
             </div>
@@ -269,21 +268,21 @@
                         <i data-lucide="ship" class="w-5 h-5 text-slate-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">船舶设备</h3>
-                    <p class="text-sm text-gray-600">Boat fittings, coastal structures, offshore platforms</p>
+                    <p class="text-sm text-gray-600">船用配件、沿海结构、海上平台</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
                     <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="pill" class="w-5 h-5 text-blue-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">制药</h3>
-                    <p class="text-sm text-gray-600">Process vessels, reactors, cleanroom equipment</p>
+                    <p class="text-sm text-gray-600">工艺容器、反应器、洁净室设备</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
                     <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="utensils" class="w-5 h-5 text-emerald-600"></i>
                     </div>
-                    <h3 class="font-bold text-gray-900 mb-1">Processamento de Alimentos</h3>
-                    <p class="text-sm text-gray-600">Tanks, conveyors, brewing equipment, dairy</p>
+                    <h3 class="font-bold text-gray-900 mb-1">食品加工</h3>
+                    <p class="text-sm text-gray-600">储罐、输送设备、酿造设备、乳品设备</p>
                 </div>
             </div>
         </div>
@@ -293,41 +292,40 @@
     <section class="px-4 py-12 bg-red-50 border-t border-red-100">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">⚠️ 不推荐用于</h2>
-            <p class="text-gray-600 mb-4">SS 316 can corrode when exposed to:</p>
+            <p class="text-gray-600 mb-4">SS 316 接触以下物质可能发生腐蚀：</p>
             <div class="grid md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Hydrochloric acid (any concentration)
+                        盐酸（任何浓度）
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Hot concentrated sulfuric acid
+                        热的浓硫酸
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Ferric chloride solutions
+                        氯化铁溶液
                     </li>
                 </ul>
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Bleach / sodium hypochlorite
+                        漂白剂/次氯酸钠
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Seawater at elevated temperatures
+                        高温海水
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                        Reducing acids without oxidizers
+                        不含氧化剂的还原性酸
                     </li>
                 </ul>
             </div>
             <div class="mt-4 p-3 bg-white rounded-lg border border-red-200">
                 <p class="text-sm text-gray-600">
-                    <strong>Tip:</strong> For highly aggressive chloride environments, consider upgrading to 
-                    duplex stainless steel (2205) or super-austenitic grades (904L, 254 SMO).
+                    <strong>提示：</strong> 在氯化物腐蚀极强的环境中，建议改用双相不锈钢（2205）或超级奥氏体牌号（904L、254 SMO）。
                 </p>
             </div>
         </div>
@@ -336,23 +334,23 @@
     <!-- Compare -->
     <section class="px-4 py-12 bg-white border-t border-gray-200">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Comparar Materiais</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">材料对比</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <a href="../stainless-steel-304" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">SS 304</div>
-                    <div class="text-xs text-gray-500">Budget option</div>
+                    <div class="text-xs text-gray-500">经济型选择</div>
                 </a>
                 <a href="../hdpe" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">HDPE</div>
-                    <div class="text-xs text-gray-500">Plastic alternative</div>
+                    <div class="text-xs text-gray-500">塑料替代材料</div>
                 </a>
                 <a href="../ptfe" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">PTFE</div>
-                    <div class="text-xs text-gray-500">Lined option</div>
+                    <div class="text-xs text-gray-500">内衬式选择</div>
                 </a>
                 <a href="../viton" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">Viton®</div>
-                    <div class="text-xs text-gray-500">For seals</div>
+                    <div class="text-xs text-gray-500">用于密封件</div>
                 </a>
             </div>
         </div>
@@ -361,8 +359,8 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
-            <p>© 2026 ChemicalResistance.org — Free chemical compatibility tool</p>
-            <p class="mt-2">Data sources: Bürkle, INEOS, industry standards</p>
+            <p>© 2026 ChemicalResistance.org — 免费化学品兼容性工具</p>
+            <p class="mt-2">数据来源：Bürkle、INEOS、行业标准</p>
         </div>
     <p class="mt-3 text-xs text-center"><a href="/privacy.html" class="hover:underline">隐私政策</a> <span class="mx-1">&middot;</span> <a href="/terms.html" class="hover:underline">使用条款</a></p>
 </footer>
@@ -444,11 +442,11 @@
     function translateConc(conc) {
         if (!conc) return '—';
         const map = {
-            'wässrig': 'Aqueous', 'gesättigt': 'Saturated', 'verdünnt': 'Diluted',
-            'konz.': 'Concentrated', 'konzentriert': 'Concentrated', 'rein': 'Pure',
-            'techn. rein': 'Technical Grade', 'jede': 'Any', 'gering': 'Low',
-            'flüssig': 'Liquid', 'gasförmig': 'Gaseous', 'geschmolzen': 'Molten',
-            'trocken': 'Dry', 'feucht': 'Wet/Moist', 'fest': 'Solid',
+            'wässrig': '水溶液', 'gesättigt': '饱和', 'verdünnt': '稀释',
+            'konz.': '浓', 'konzentriert': '浓', 'rein': '纯',
+            'techn. rein': '工业纯', 'jede': '任意', 'gering': '低',
+            'flüssig': '液态', 'gasförmig': '气态', 'geschmolzen': '熔融',
+            'trocken': '干燥', 'feucht': '潮湿', 'fest': '固态',
             'Pulver': 'Powder', 'gemahlen': 'Ground', 'ölhaltig': 'Oil-containing',
             'sulfuriert': 'Sulfurized'
         };

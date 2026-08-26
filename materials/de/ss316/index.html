@@ -112,16 +112,15 @@
                 <span class="text-gray-600">SS 316</span>
             </div>
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-                Edelstahl 316 Chemical Resistance
+                Edelstahl 316 Chemikalienbeständigkeit
             </h1>
             <p class="text-lg text-gray-600 mb-4">
-                SS 316 (1.4401/1.4404) is the "marine grade" stainless steel with excellent corrosion resistance. 
-                The molybdenum content provides superior protection against chlorides and pitting compared to 304.
+                SS 316 (1.4401/1.4404) ist der Edelstahl in „Marine-Qualität“ mit ausgezeichneter Korrosionsbeständigkeit. Der Molybdängehalt bietet gegenüber 304 einen deutlich besseren Schutz vor Chloriden und Lochfraß.
             </p>
             <div class="flex flex-wrap gap-3">
-                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">850+ chemicals tested</span>
-                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">20°C & 50°C data</span>
-                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Marine grade</span>
+                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">850+ Chemikalien geprüft</span>
+                <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">Daten bei 20 °C & 50 °C</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Marine-Qualität</span>
             </div>
         </div>
     </section>
@@ -131,19 +130,19 @@
         <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
                 <div class="text-2xl font-bold text-emerald-600" id="statA">—</div>
-                <div class="text-sm text-gray-500">Excellent (A)</div>
+                <div class="text-sm text-gray-500">Ausgezeichnet (A)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-blue-600" id="statB">—</div>
-                <div class="text-sm text-gray-500">Good (B)</div>
+                <div class="text-sm text-gray-500">Gut (B)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-amber-600" id="statC">—</div>
-                <div class="text-sm text-gray-500">Limited (C)</div>
+                <div class="text-sm text-gray-500">Begrenzt (C)</div>
             </div>
             <div>
                 <div class="text-2xl font-bold text-red-600" id="statD">—</div>
-                <div class="text-sm text-gray-500">Not Recommended (D)</div>
+                <div class="text-sm text-gray-500">Nicht empfohlen (D)</div>
             </div>
         </div>
     </section>
@@ -155,19 +154,19 @@
             <div class="bg-white rounded-xl border border-gray-200 p-4 mb-6">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Search chemicals</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Chemikalien suchen</label>
                         <input type="text" id="searchInput" placeholder="e.g. Sulfuric acid, Sodium chloride..." 
                             class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 focus:ring-2 focus:ring-slate-100 outline-none">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Rating filter</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nach Bewertung filtern</label>
                         <select id="ratingFilter" class="px-4 py-2 border border-gray-200 rounded-lg focus:border-slate-500 outline-none">
-                            <option value="all">All ratings</option>
-                            <option value="A">A - Excellent</option>
-                            <option value="B">B - Good</option>
-                            <option value="AB">A & B (Compatible)</option>
-                            <option value="C">C - Limited</option>
-                            <option value="D">D - Not recommended</option>
+                            <option value="all">Alle Bewertungen</option>
+                            <option value="A">A – Ausgezeichnet</option>
+                            <option value="B">B – Gut</option>
+                            <option value="AB">A & B (verträglich)</option>
+                            <option value="C">C – Begrenzt</option>
+                            <option value="D">D – Nicht empfohlen</option>
                         </select>
                     </div>
                     <div>
@@ -182,7 +181,7 @@
 
             <!-- Results count -->
             <div class="mb-4 text-sm text-gray-500">
-                Showing <span id="resultCount" class="font-semibold text-gray-700">0</span> chemicals
+                Angezeigt: <span id="resultCount" class="font-semibold text-gray-700">0</span> Chemikalien
             </div>
 
             <!-- Table -->
@@ -192,7 +191,7 @@
                         <thead>
                             <tr class="bg-gray-50 text-left text-sm">
                                 <th class="py-3 px-4 font-semibold text-gray-600">Chemikalie</th>
-                                <th class="py-3 px-4 font-semibold text-gray-600">Concentration</th>
+                                <th class="py-3 px-4 font-semibold text-gray-600">Konzentration</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600 text-center">20°C</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600 text-center">50°C</th>
                                 <th class="py-3 px-4 font-semibold text-gray-600">CAS</th>
@@ -207,7 +206,7 @@
             <!-- Load more -->
             <div id="loadMore" class="mt-4 text-center hidden">
                 <button onclick="loadMore()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 transition-colors">
-                    Load more chemicals
+                    Weitere Chemikalien laden
                 </button>
             </div>
         </div>
@@ -220,38 +219,38 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Grade</span>
+                        <span class="text-gray-600">Güte</span>
                         <span class="font-medium text-gray-900">AISI 316 / 1.4401 (EU)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Low Carbon Variant</span>
+                        <span class="text-gray-600">Variante mit niedrigem Kohlenstoffgehalt</span>
                         <span class="font-medium text-gray-900">316L / 1.4404</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Max Temperature</span>
-                        <span class="font-medium text-gray-900">870°C (1600°F) intermittent</span>
+                        <span class="text-gray-600">Max. Temperatur</span>
+                        <span class="font-medium text-gray-900">870 °C (1600 °F) zeitweise</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Molybdenum Content</span>
-                        <span class="font-medium text-gray-900">2-3% (pitting resistance)</span>
+                        <span class="text-gray-600">Molybdängehalt</span>
+                        <span class="font-medium text-gray-900">2–3 % (Lochfraßbeständigkeit)</span>
                     </div>
                 </div>
                 <div class="space-y-4">
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Density</span>
+                        <span class="text-gray-600">Dichte</span>
                         <span class="font-medium text-gray-900">8.0 g/cm³</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Magnetic</span>
-                        <span class="font-medium text-gray-900">No (austenitic)</span>
+                        <span class="text-gray-600">Magnetisch</span>
+                        <span class="font-medium text-gray-900">Nein (austenitisch)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Weldable</span>
-                        <span class="font-medium text-gray-900">Yes (use 316L for welding)</span>
+                        <span class="text-gray-600">Schweißbar</span>
+                        <span class="font-medium text-gray-900">Ja (für Schweißarbeiten 316L verwenden)</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-gray-100">
-                        <span class="text-gray-600">Cost</span>
-                        <span class="font-medium text-gray-900">Moderate-High</span>
+                        <span class="text-gray-600">Kosten</span>
+                        <span class="font-medium text-gray-900">Mittel bis hoch</span>
                     </div>
                 </div>
             </div>
@@ -268,21 +267,21 @@
                         <i data-lucide="ship" class="w-5 h-5 text-slate-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">Meeresausrüstung</h3>
-                    <p class="text-sm text-gray-600">Boat fittings, coastal structures, offshore platforms</p>
+                    <p class="text-sm text-gray-600">Bootsbeschläge, Küstenbauwerke, Offshore-Plattformen</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
                     <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="pill" class="w-5 h-5 text-blue-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">Pharmazeutisch</h3>
-                    <p class="text-sm text-gray-600">Process vessels, reactors, cleanroom equipment</p>
+                    <p class="text-sm text-gray-600">Prozessbehälter, Reaktoren, Reinraumausrüstung</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-200">
                     <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-3">
                         <i data-lucide="utensils" class="w-5 h-5 text-emerald-600"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-1">Lebensmittelverarbeitung</h3>
-                    <p class="text-sm text-gray-600">Tanks, conveyors, brewing equipment, dairy</p>
+                    <p class="text-sm text-gray-600">Tanks, Förderanlagen, Brauereianlagen, Molkereitechnik</p>
                 </div>
             </div>
         </div>
@@ -292,41 +291,40 @@
     <section class="px-4 py-12 bg-red-50 border-t border-red-100">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">⚠️ Nicht empfohlen für</h2>
-            <p class="text-gray-600 mb-4">SS 316 can corrode when exposed to:</p>
+            <p class="text-gray-600 mb-4">SS 316 kann bei Kontakt mit Folgendem korrodieren:</p>
             <div class="grid md:grid-cols-2 gap-4">
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Hydrochloric acid (any concentration)
+                        Salzsäure (jede Konzentration)
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Hot concentrated sulfuric acid
+                        Heiße konzentrierte Schwefelsäure
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Ferric chloride solutions
+                        Eisen(III)-chloridlösungen
                     </li>
                 </ul>
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Bleach / sodium hypochlorite
+                        Bleiche / Natriumhypochlorit
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                        Seawater at elevated temperatures
+                        Meerwasser bei erhöhten Temperaturen
                     </li>
                     <li class="flex items-center gap-2 text-gray-700">
                         <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                        Reducing acids without oxidizers
+                        Reduzierende Säuren ohne Oxidationsmittel
                     </li>
                 </ul>
             </div>
             <div class="mt-4 p-3 bg-white rounded-lg border border-red-200">
                 <p class="text-sm text-gray-600">
-                    <strong>Tip:</strong> For highly aggressive chloride environments, consider upgrading to 
-                    duplex stainless steel (2205) or super-austenitic grades (904L, 254 SMO).
+                    <strong>Tipp:</strong> Für stark chloridhaltige Umgebungen empfiehlt sich ein Wechsel zu Duplex-Edelstahl (2205) oder superaustenitischen Güten (904L, 254 SMO).
                 </p>
             </div>
         </div>
@@ -339,19 +337,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <a href="../stainless-steel-304" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">SS 304</div>
-                    <div class="text-xs text-gray-500">Budget option</div>
+                    <div class="text-xs text-gray-500">Günstige Alternative</div>
                 </a>
                 <a href="../hdpe" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">HDPE</div>
-                    <div class="text-xs text-gray-500">Plastic alternative</div>
+                    <div class="text-xs text-gray-500">Kunststoff-Alternative</div>
                 </a>
                 <a href="../ptfe" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">PTFE</div>
-                    <div class="text-xs text-gray-500">Lined option</div>
+                    <div class="text-xs text-gray-500">Ausgekleidete Alternative</div>
                 </a>
                 <a href="../viton" class="p-4 rounded-xl border border-gray-200 hover:border-slate-400 hover:bg-slate-50 transition-colors text-center">
                     <div class="font-bold text-gray-900">Viton®</div>
-                    <div class="text-xs text-gray-500">For seals</div>
+                    <div class="text-xs text-gray-500">Für Dichtungen</div>
                 </a>
             </div>
         </div>
@@ -360,8 +358,8 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8 px-4">
         <div class="max-w-5xl mx-auto text-center text-sm">
-            <p>© 2026 ChemicalResistance.org — Free chemical compatibility tool</p>
-            <p class="mt-2">Data sources: Bürkle, INEOS, industry standards</p>
+            <p>© 2026 ChemicalResistance.org — Kostenloses Tool für chemische Verträglichkeit</p>
+            <p class="mt-2">Datenquellen: Bürkle, INEOS, Industriestandards</p>
         </div>
     <p class="mt-3 text-xs text-center"><a href="/privacy.html" class="hover:underline">Datenschutz</a> <span class="mx-1">&middot;</span> <a href="/terms.html" class="hover:underline">Nutzungsbedingungen</a></p>
 </footer>
@@ -443,11 +441,11 @@
     function translateConc(conc) {
         if (!conc) return '—';
         const map = {
-            'wässrig': 'Aqueous', 'gesättigt': 'Saturated', 'verdünnt': 'Diluted',
-            'konz.': 'Concentrated', 'konzentriert': 'Concentrated', 'rein': 'Pure',
-            'techn. rein': 'Technical Grade', 'jede': 'Any', 'gering': 'Low',
-            'flüssig': 'Liquid', 'gasförmig': 'Gaseous', 'geschmolzen': 'Molten',
-            'trocken': 'Dry', 'feucht': 'Wet/Moist', 'fest': 'Solid',
+            'wässrig': 'Wässrig', 'gesättigt': 'Gesättigt', 'verdünnt': 'Verdünnt',
+            'konz.': 'Konzentriert', 'konzentriert': 'Konzentriert', 'rein': 'Rein',
+            'techn. rein': 'Technisch rein', 'jede': 'Jede', 'gering': 'Gering',
+            'flüssig': 'Flüssig', 'gasförmig': 'Gasförmig', 'geschmolzen': 'Geschmolzen',
+            'trocken': 'Trocken', 'feucht': 'Feucht', 'fest': 'Fest',
             'Pulver': 'Powder', 'gemahlen': 'Ground', 'ölhaltig': 'Oil-containing',
             'sulfuriert': 'Sulfurized'
         };

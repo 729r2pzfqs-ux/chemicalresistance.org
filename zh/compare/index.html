@@ -31,7 +31,7 @@
         @media print { header, footer, .no-print { display: none !important; } body { background: white; } }
     </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"如何对比不同材料的耐化学性？","acceptedAnswer":{"@type":"Answer","text":"使用上方的对比工具，从下拉菜单中选择2或3种材料。该工具将显示超过1600种化学品在20°C和50°C下的耐受性评级（A至D）并排对比。"}},{"@type":"Question","name":"A、B、C、D评级代表什么？","acceptedAnswer":{"@type":"Answer","text":"A (Excelente) = resistência durável. B (Bom) = resistência limitada, adequado para contatos de curta duração. C (Regular) = o material pode inchar ou se degradar. D (Ruim) = o material não é adequado."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"如何对比不同材料的耐化学性？","acceptedAnswer":{"@type":"Answer","text":"使用上方的对比工具，从下拉菜单中选择2或3种材料。该工具将显示超过1600种化学品在20°C和50°C下的耐受性评级（A至D）并排对比。"}},{"@type":"Question","name":"A、B、C、D评级代表什么？","acceptedAnswer":{"@type":"Answer","text":"A（优秀）= 长期耐受。B（良好）= 耐受性有限，适合短时间接触。C（尚可）= 材料可能溶胀或降解。D（不推荐）= 材料不适用。"}}]}
 </script>
 </head>
 <body class="text-gray-700 min-h-screen">
@@ -62,7 +62,7 @@
                     <option value="es">&#127466;&#127480; ES</option>
                     <option value="de">&#127465;&#127466; DE</option>
                 </select>
-                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="菜单">
                     <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
@@ -133,7 +133,7 @@
             <div class="flex flex-wrap gap-4 text-sm text-gray-600 mb-2">
                 <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-A"></span> A = 优秀</span>
                 <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-B"></span> B = 良好</span>
-                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-C"></span> C = 一般</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-C"></span> C = 尚可</span>
                 <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-D"></span> D = 差</span>
             </div>
         </div>
@@ -197,7 +197,7 @@
                 </details>
                 <details class="border border-gray-200 rounded-xl overflow-hidden">
                     <summary class="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">A、B、C、D评级代表什么？</summary>
-                    <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">A（优秀）= 材料具有持久耐受性。B（良好）= 耐受性有限，适合短期接触。C（一般）= 材料可能膨胀或降解。D（差）= 材料不适用。</div>
+                    <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">A（优秀）= 材料具有持久耐受性。B（良好）= 耐受性有限，适合短期接触。C（尚可）= 材料可能膨胀或降解。D（不推荐）= 材料不适用。</div>
                 </details>
             </div>
         </div>
@@ -286,7 +286,7 @@
         { key: 'LDPE',       name: 'LDPE',                   short: 'LDPE',     dir: 'ldpe',            group: '常用塑料' },
         { key: 'NBR',        name: '丁腈橡胶 (NBR)',          short: 'NBR',      dir: 'nbr',             group: '弹性体' },
         { key: 'PA',         name: '尼龙 (PA)',             short: 'Nylon',    dir: 'nylon-pa',        group: '工程塑料' },
-        { key: 'PC',         name: '聚碳酸酯 (PC)',     short: 'PC',       dir: 'polycarbonate',   group: '透明塑料' },
+        { key: 'PC',         name: '聚碳酸酯 (PC)',     short: 'PC',       dir: 'Polycarbonate',   group: '透明塑料' },
         { key: 'PETG',       name: 'PETG',                   short: 'PETG',     dir: 'petg',            group: '透明塑料' },
         { key: 'PMP',        name: 'PMP',                    short: 'PMP',      dir: 'pmp',             group: '透明塑料' },
         { key: 'POM',        name: '缩醛 (POM)',            short: 'POM',      dir: 'acetal-pom',      group: '工程塑料' },

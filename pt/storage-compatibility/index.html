@@ -24,7 +24,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="Verificador de Compatibilidade de Armazenamento Químico">
-    <meta property="og:description" content="Verifique se os produtos químicos podem ser armazenados juntos com segurança. Kostenloses Tool.">
+    <meta property="og:description" content="Verifique se os produtos químicos podem ser armazenados juntos com segurança. Ferramenta gratuita.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chemicalresistance.org/pt/storage-compatibility/">
     <meta property="og:image" content="https://chemicalresistance.org/og-image.png/">
@@ -423,7 +423,7 @@
     function addChemical(name) {
         if (selectedChemicals.includes(name)) return;
         if (selectedChemicals.length >= 10) {
-            alert('Maximal 10 Chemikalien können gleichzeitig verglichen werden');
+            alert('Só é possível comparar 10 produtos químicos de cada vez');
             return;
         }
         selectedChemicals.push(name);
@@ -466,7 +466,7 @@
     function getCompatibility(class1, class2) {
         const key1 = `${class1}+${class2}`;
         const key2 = `${class2}+${class1}`;
-        return compatibilityRules[key1] || compatibilityRules[key2] || { rating: "caution", reason: "Verificar les produits chimiques spécifiques" };
+        return compatibilityRules[key1] || compatibilityRules[key2] || { rating: "caution", reason: "Verificar os produtos químicos específicos" };
     }
 
     function updateResults() {

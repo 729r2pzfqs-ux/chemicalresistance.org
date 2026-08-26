@@ -25,7 +25,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="Vérificateur de Compatibilité de Stockage Chimique">
-    <meta property="og:description" content="Vérifiez si les produits chimiques peuvent être stockés ensemble en toute sécurité. Kostenloses Tool.">
+    <meta property="og:description" content="Vérifiez si les produits chimiques peuvent être stockés ensemble en toute sécurité. Outil gratuit.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chemicalresistance.org/fr/storage-compatibility/">
     <meta property="og:image" content="https://chemicalresistance.org/og-image.png/">
@@ -424,7 +424,7 @@
     function addChemical(name) {
         if (selectedChemicals.includes(name)) return;
         if (selectedChemicals.length >= 10) {
-            alert('Maximal 10 Chemikalien können gleichzeitig verglichen werden');
+            alert('Impossible de comparer plus de 10 produits chimiques à la fois');
             return;
         }
         selectedChemicals.push(name);

@@ -31,7 +31,7 @@
         @media print { header, footer, .no-print { display: none !important; } body { background: white; } }
     </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"对比了多少种材料？","acceptedAnswer":{"@type":"Answer","text":"本表对比了24种可用材料：4种氟聚合物、4种弹性体、3种金属、5种常用塑料、5种透明塑料和3种工程塑料。"}},{"@type":"Question","name":"A、B、C、D评级代表什么？","acceptedAnswer":{"@type":"Answer","text":"A（优秀）= 材料具有持久耐受性。B（良好）= 耐受性有限，适合短期接触。C（一般）= 材料可能膨胀或降解。D（差）= 材料不适用。"}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"对比了多少种材料？","acceptedAnswer":{"@type":"Answer","text":"本表对比了24种可用材料：4种氟聚合物、4种弹性体、3种金属、5种常用塑料、5种透明塑料和3种工程塑料。"}},{"@type":"Question","name":"A、B、C、D评级代表什么？","acceptedAnswer":{"@type":"Answer","text":"A（优秀）= 材料具有持久耐受性。B（良好）= 耐受性有限，适合短期接触。C（尚可）= 材料可能膨胀或降解。D（不推荐）= 材料不适用。"}}]}
 </script>
 </head>
 <body class="text-gray-700 min-h-screen">
@@ -62,7 +62,7 @@
                     <option value="es">&#127466;&#127480; ES</option>
                     <option value="de">&#127465;&#127466; DE</option>
                 </select>
-                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="菜单">
                     <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
@@ -106,7 +106,7 @@
             <div class="flex flex-wrap gap-4 text-sm text-gray-600">
                 <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-A"></span> A = 优秀</span>
                 <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-B"></span> B = 良好</span>
-                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-C"></span> C = 一般</span>
+                <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-C"></span> C = 尚可</span>
                 <span class="flex items-center gap-1"><span class="w-4 h-4 rounded rating-D"></span> D = 差</span>
             </div>
         </div>
@@ -174,7 +174,7 @@
             </details>
             <details class="border border-gray-200 rounded-xl overflow-hidden">
                 <summary class="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">A、B、C、D评级代表什么？</summary>
-                <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">A（优秀）= 材料具有持久耐受性。B（良好）= 耐受性有限，适合短期接触。C（一般）= 材料可能膨胀或降解。D（差）= 材料不适用。</div>
+                <div class="px-5 py-4 border-t border-gray-100 text-gray-600 text-sm">A（优秀）= 材料具有持久耐受性。B（良好）= 耐受性有限，适合短期接触。C（尚可）= 材料可能膨胀或降解。D（不推荐）= 材料不适用。</div>
             </details>
             </div>
         </div>
@@ -221,7 +221,7 @@
 </footer>
 
     <script>
-    var MATS = [{"key": "AL", "short": "Al", "dir": "aluminium"}, {"key": "ECTFE_ETFE", "short": "ECTFE", "dir": "ectfe-etfe"}, {"key": "EPDM", "short": "EPDM", "dir": "epdm"}, {"key": "FEP", "short": "FEP", "dir": "fep"}, {"key": "FPM", "short": "Viton", "dir": "viton"}, {"key": "HDPE", "short": "HDPE", "dir": "hdpe"}, {"key": "LDPE", "short": "LDPE", "dir": "ldpe"}, {"key": "NBR", "short": "NBR", "dir": "nbr"}, {"key": "PA", "short": "Nylon", "dir": "nylon-pa"}, {"key": "PC", "short": "PC", "dir": "polycarbonate"}, {"key": "PETG", "short": "PETG", "dir": "petg"}, {"key": "PMP", "short": "PMP", "dir": "pmp"}, {"key": "POM", "short": "POM", "dir": "acetal-pom"}, {"key": "PP", "short": "PP", "dir": "pp"}, {"key": "PS", "short": "PS", "dir": "polystyrene"}, {"key": "PSU", "short": "PSU", "dir": "polysulfone"}, {"key": "PTFE", "short": "PTFE", "dir": "ptfe"}, {"key": "PVC_HART", "short": "uPVC", "dir": "pvc-rigid"}, {"key": "PVC_WEICH", "short": "pPVC", "dir": "pvc-flexible"}, {"key": "PVDF", "short": "PVDF", "dir": "pvdf"}, {"key": "SAN", "short": "SAN", "dir": "san"}, {"key": "SI", "short": "Silicone", "dir": "silicone"}, {"key": "V2A", "short": "SS304", "dir": "stainless-steel-304"}, {"key": "V4A", "short": "SS316", "dir": "ss316"}];
+    var MATS = [{"key": "AL", "short": "Al", "dir": "aluminium"}, {"key": "ECTFE_ETFE", "short": "ECTFE", "dir": "ectfe-etfe"}, {"key": "EPDM", "short": "EPDM", "dir": "epdm"}, {"key": "FEP", "short": "FEP", "dir": "fep"}, {"key": "FPM", "short": "Viton", "dir": "viton"}, {"key": "HDPE", "short": "HDPE", "dir": "hdpe"}, {"key": "LDPE", "short": "LDPE", "dir": "ldpe"}, {"key": "NBR", "short": "NBR", "dir": "nbr"}, {"key": "PA", "short": "Nylon", "dir": "nylon-pa"}, {"key": "PC", "short": "PC", "dir": "Polycarbonate"}, {"key": "PETG", "short": "PETG", "dir": "petg"}, {"key": "PMP", "short": "PMP", "dir": "pmp"}, {"key": "POM", "short": "POM", "dir": "acetal-pom"}, {"key": "PP", "short": "PP", "dir": "pp"}, {"key": "PS", "short": "PS", "dir": "polystyrene"}, {"key": "PSU", "short": "PSU", "dir": "polysulfone"}, {"key": "PTFE", "short": "PTFE", "dir": "ptfe"}, {"key": "PVC_HART", "short": "uPVC", "dir": "pvc-rigid"}, {"key": "PVC_WEICH", "short": "pPVC", "dir": "pvc-flexible"}, {"key": "PVDF", "short": "PVDF", "dir": "pvdf"}, {"key": "SAN", "short": "SAN", "dir": "san"}, {"key": "SI", "short": "Silicone", "dir": "silicone"}, {"key": "V2A", "short": "SS304", "dir": "stainless-steel-304"}, {"key": "V4A", "short": "SS316", "dir": "ss316"}];
     
     const ratingMap = { '1':'A', '2':'B', '3':'C', '4':'D', '0':'NR' };
 
