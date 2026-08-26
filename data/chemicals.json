@@ -105,7 +105,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gases de escape, alcalinos"
+    "name_es": "Gases de escape, alcalino"
   },
   {
     "name": "Abgase, fluorwasserstoffhaltig",
@@ -213,7 +213,7 @@
         "c50": "2"
       }
     },
-    "name_es": "Gases de escape con ácido fluorhídrico"
+    "name_es": "Gases de escape, que contiene ácido flúorhídrico"
   },
   {
     "name": "Abgase, kohlendioxidhaltig",
@@ -321,7 +321,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gases de escape con dióxido de carbono"
+    "name_es": "Gases de escape, que contiene dióxido de carbono"
   },
   {
     "name": "Abgase, nitrosehaltig",
@@ -429,7 +429,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gases de escape nitrosos"
+    "name_es": "Gases de escape, que contiene óxidos de nitrógeno"
   },
   {
     "name": "Abgase, salzsäurehaltig",
@@ -537,7 +537,7 @@
         "c50": "2L"
       }
     },
-    "name_es": "Gases de escape con ácido clorhídrico"
+    "name_es": "Gases de escape, que contiene ácido clorhídrico"
   },
   {
     "name": "Abgase, schwefeldioxidhaltig",
@@ -645,7 +645,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gases de escape con dióxido de azufre"
+    "name_es": "Gases de escape, que contiene dióxido de azufre"
   },
   {
     "name": "Abgase, schwefelsäurehaltig",
@@ -753,7 +753,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gases de escape con ácido sulfúrico"
+    "name_es": "Gases de escape, que contiene ácido sulfúrico"
   },
   {
     "name": "Abgase, schwefeltrioxidhaltig",
@@ -861,7 +861,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gases de escape con trióxido de azufre"
+    "name_es": "Gases de escape, que contiene trióxido de azufre"
   },
   {
     "name": "Acetaldehyd",
@@ -972,7 +972,7 @@
     "aliases": [
       "Ethanal"
     ],
-    "name_es": "acetaldehído"
+    "name_es": "Acetaldehído"
   },
   {
     "name": "Acetaldehyd",
@@ -1083,7 +1083,7 @@
     "aliases": [
       "Ethanal"
     ],
-    "name_es": "acetaldehído"
+    "name_es": "Acetaldehído"
   },
   {
     "name": "Acetamid",
@@ -1306,7 +1306,7 @@
       "Dimethylketon",
       "Propanon, 2-"
     ],
-    "name_es": "acetona"
+    "name_es": "Acetona"
   },
   {
     "name": "Acetonitril",
@@ -1417,7 +1417,7 @@
     "aliases": [
       "Methylcyanid"
     ],
-    "name_es": "acetonitrilo"
+    "name_es": "Acetonitrilo"
   },
   {
     "name": "Acetophenon",
@@ -1639,7 +1639,7 @@
     "aliases": [
       "Essigsäurechlorid"
     ],
-    "name_es": "Acetylcloruro"
+    "name_es": "Cloruro de Acetilo"
   },
   {
     "name": "Acetylen",
@@ -2636,7 +2636,7 @@
       "Chlor-1-propen, 3-",
       "Chlorpropylen, 3-"
     ],
-    "name_es": "Cloruro De Alilo"
+    "name_es": "Cloruro de alilo"
   },
   {
     "name": "Allylsenföl",
@@ -2856,7 +2856,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aluminio(hidróxido)acetato"
+    "name_es": "Aluminio(hidróxido)acetato"
   },
   {
     "name": "Aluminiumammoniumsulfat",
@@ -2968,7 +2968,7 @@
       "Ammoniumalaun",
       "Ammoniumaluminiumsulfat"
     ],
-    "name_es": "aluminioammoniumsulfato"
+    "name_es": "Sulfato de aluminio y amonio"
   },
   {
     "name": "Aluminiumchlorid",
@@ -3079,7 +3079,7 @@
     "aliases": [
       "Salzsäure-Aluminiumsalz, wasserfrei"
     ],
-    "name_es": "aluminiocloruro"
+    "name_es": "Cloruro de aluminio"
   },
   {
     "name": "Aluminiumchlorid",
@@ -3190,7 +3190,7 @@
     "aliases": [
       "Salzsäure-Aluminiumsalz, wasserfrei"
     ],
-    "name_es": "aluminiocloruro"
+    "name_es": "Cloruro de aluminio"
   },
   {
     "name": "Aluminiumchlorid",
@@ -3301,7 +3301,7 @@
     "aliases": [
       "Salzsäure-Aluminiumsalz, wasserfrei"
     ],
-    "name_es": "aluminiocloruro"
+    "name_es": "Cloruro de aluminio"
   },
   {
     "name": "Aluminiumfluorid",
@@ -3412,7 +3412,7 @@
     "aliases": [
       "Aluminiumtrifluorid"
     ],
-    "name_es": "aluminiofluoruro"
+    "name_es": "Fluoruro de aluminio"
   },
   {
     "name": "Aluminiumhydroxid",
@@ -3523,7 +3523,7 @@
     "aliases": [
       "Hydrargillit"
     ],
-    "name_es": "aluminiohidróxido"
+    "name_es": "Hidróxido de aluminio"
   },
   {
     "name": "Aluminiumnitrat",
@@ -3631,7 +3631,7 @@
         "c50": "0"
       }
     },
-    "name_es": "aluminionitrato"
+    "name_es": "Nitrato de aluminio"
   },
   {
     "name": "Aluminiumoxid",
@@ -3739,7 +3739,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aluminioóxido"
+    "name_es": "Óxido de aluminio"
   },
   {
     "name": "Aluminiumsulfat",
@@ -3847,7 +3847,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aluminiosulfato"
+    "name_es": "Sulfato de aluminio"
   },
   {
     "name": "Aluminiumsulfat",
@@ -3955,7 +3955,7 @@
         "c50": "2"
       }
     },
-    "name_es": "aluminiosulfato"
+    "name_es": "Sulfato de aluminio"
   },
   {
     "name": "Ameisensäure",
@@ -4067,7 +4067,7 @@
       "Formylsäure",
       "Methansäure"
     ],
-    "name_es": "ácido fórmico"
+    "name_es": "Ácido Fórmico"
   },
   {
     "name": "Ameisensäure",
@@ -4179,7 +4179,7 @@
       "Formylsäure",
       "Methansäure"
     ],
-    "name_es": "ácido fórmico"
+    "name_es": "Ácido Fórmico"
   },
   {
     "name": "Ameisensäure",
@@ -4291,7 +4291,7 @@
       "Formylsäure",
       "Methansäure"
     ],
-    "name_es": "ácido fórmico"
+    "name_es": "Ácido Fórmico"
   },
   {
     "name": "Aminoessigsäure",
@@ -4512,7 +4512,7 @@
         "c50": "2"
       }
     },
-    "name_es": "amonioacetato"
+    "name_es": "Acetato de amonio"
   },
   {
     "name": "Ammoniumcarbonat",
@@ -4623,7 +4623,7 @@
     "aliases": [
       "Hirschhornsalz"
     ],
-    "name_es": "amoniocarbonato"
+    "name_es": "Carbonato de amonio"
   },
   {
     "name": "Ammoniumcarbonat",
@@ -4734,7 +4734,7 @@
     "aliases": [
       "Hirschhornsalz"
     ],
-    "name_es": "amoniocarbonato"
+    "name_es": "Carbonato de amonio"
   },
   {
     "name": "Ammoniumchlorid",
@@ -4845,7 +4845,7 @@
     "aliases": [
       "Salmiak"
     ],
-    "name_es": "amoniocloruro"
+    "name_es": "Cloruro de amonio"
   },
   {
     "name": "Ammoniumchlorid",
@@ -4956,7 +4956,7 @@
     "aliases": [
       "Salmiak"
     ],
-    "name_es": "amoniocloruro"
+    "name_es": "Cloruro de amonio"
   },
   {
     "name": "Ammoniumdihydrogenphosphat",
@@ -5068,7 +5068,7 @@
       "Ammoniummonophosphat, monobasisch",
       "Ammoniumphosphat, prim."
     ],
-    "name_es": "amoniodihydrogenfosfato"
+    "name_es": "Dihidrogenofosfato de amonio"
   },
   {
     "name": "Ammoniumeisen-(II)-sulfat",
@@ -5180,7 +5180,7 @@
       "Eisen-(II)-ammoniumsulfat",
       "Mohrsches Salz"
     ],
-    "name_es": "amonioeisen-(II)-sulfato"
+    "name_es": "Sulfato de amonio y hierro(II)"
   },
   {
     "name": "Ammoniumeisen-(III)-sulfat",
@@ -5292,7 +5292,7 @@
       "Eisenalaun",
       "Eisenammoniumalaun"
     ],
-    "name_es": "amonioeisen-(III)-sulfato"
+    "name_es": "Sulfato de amonio y hierro(III)"
   },
   {
     "name": "Ammoniumfluorid",
@@ -5403,7 +5403,7 @@
     "aliases": [
       "Fluorammonium"
     ],
-    "name_es": "amoniofluoruro"
+    "name_es": "Fluoruro de amonio"
   },
   {
     "name": "Ammoniumfluorid",
@@ -5514,7 +5514,7 @@
     "aliases": [
       "Fluorammonium"
     ],
-    "name_es": "amoniofluoruro"
+    "name_es": "Fluoruro de amonio"
   },
   {
     "name": "Ammoniumglycolat",
@@ -5625,7 +5625,7 @@
     "aliases": [
       "Ammonium-2-hydroxyacetat"
     ],
-    "name_es": "Glicolato De Amonio"
+    "name_es": "Glicolato de amonio"
   },
   {
     "name": "Ammoniumheptamolybdat",
@@ -5847,7 +5847,7 @@
     "aliases": [
       "Ammoniumbicarbonat"
     ],
-    "name_es": "amoniohydrogencarbonato"
+    "name_es": "Hidrogenocarbonato de amonio"
   },
   {
     "name": "Ammoniumhydrogendifluorid",
@@ -5958,7 +5958,7 @@
     "aliases": [
       "Ammoniumbifluorid"
     ],
-    "name_es": "amoniohydrogendifluoruro"
+    "name_es": "Hidrogenodifluoruro de amonio"
   },
   {
     "name": "Ammoniumhydrosulfid",
@@ -6069,7 +6069,7 @@
     "aliases": [
       "Ammoniumhydrogensulfid"
     ],
-    "name_es": "amoniohydrosulfuro"
+    "name_es": "Hidrosulfuro de amonio"
   },
   {
     "name": "Ammoniumhydroxid",
@@ -6182,7 +6182,7 @@
       "Ammoniakwasser",
       "Salmiakgeist"
     ],
-    "name_es": "amoniohidróxido"
+    "name_es": "Hidróxido de amonio"
   },
   {
     "name": "Ammoniumhydroxid",
@@ -6295,7 +6295,7 @@
       "Ammoniakwasser",
       "Salmiakgeist"
     ],
-    "name_es": "amoniohidróxido"
+    "name_es": "Hidróxido de amonio"
   },
   {
     "name": "Ammoniumhydroxid",
@@ -6408,7 +6408,7 @@
       "Ammoniakwasser",
       "Salmiakgeist"
     ],
-    "name_es": "amoniohidróxido"
+    "name_es": "Hidróxido de amonio"
   },
   {
     "name": "Ammoniummetaphosphat",
@@ -6519,7 +6519,7 @@
     "aliases": [
       "Ammoniumpolyphosphat"
     ],
-    "name_es": "amoniometafosfato"
+    "name_es": "Metafosfato de amonio"
   },
   {
     "name": "Ammoniumnitrat",
@@ -6630,7 +6630,7 @@
     "aliases": [
       "Ammonsalpeter"
     ],
-    "name_es": "amonionitrato"
+    "name_es": "Nitrato de amonio"
   },
   {
     "name": "Ammoniumnitrat",
@@ -6741,7 +6741,7 @@
     "aliases": [
       "Ammonsalpeter"
     ],
-    "name_es": "amonionitrato"
+    "name_es": "Nitrato de amonio"
   },
   {
     "name": "Ammoniumnitrit",
@@ -6849,7 +6849,7 @@
         "c50": "1"
       }
     },
-    "name_es": "amonionitrito"
+    "name_es": "Nitrito de amonio"
   },
   {
     "name": "Ammoniumoxalat",
@@ -6960,7 +6960,7 @@
     "aliases": [
       "Oxalsäure-Ammoniumsalz"
     ],
-    "name_es": "Oxalato De Amonio"
+    "name_es": "Oxalato de amonio"
   },
   {
     "name": "Ammoniumperoxodisulfat",
@@ -7071,7 +7071,7 @@
     "aliases": [
       "Ammoniumpersulfat"
     ],
-    "name_es": "amonioperoxodisulfato"
+    "name_es": "Peroxodisulfato de amonio"
   },
   {
     "name": "Ammoniumperoxodisulfat",
@@ -7182,7 +7182,7 @@
     "aliases": [
       "Ammoniumpersulfat"
     ],
-    "name_es": "amonioperoxodisulfato"
+    "name_es": "Peroxodisulfato de amonio"
   },
   {
     "name": "Ammoniumsulfat",
@@ -7293,7 +7293,7 @@
     "aliases": [
       "Ammoniak, schwefelsaures"
     ],
-    "name_es": "amoniosulfato"
+    "name_es": "Sulfato de amonio"
   },
   {
     "name": "Ammoniumsulfat",
@@ -7404,7 +7404,7 @@
     "aliases": [
       "Ammoniak, schwefelsaures"
     ],
-    "name_es": "amoniosulfato"
+    "name_es": "Sulfato de amonio"
   },
   {
     "name": "Ammoniumsulfid",
@@ -7512,7 +7512,7 @@
         "c50": "1"
       }
     },
-    "name_es": "amoniosulfuro"
+    "name_es": "Sulfuro de amonio"
   },
   {
     "name": "Ammoniumsulfid",
@@ -7620,7 +7620,7 @@
         "c50": "1"
       }
     },
-    "name_es": "amoniosulfuro"
+    "name_es": "Sulfuro de amonio"
   },
   {
     "name": "Ammoniumthiocyanat",
@@ -8069,7 +8069,7 @@
       "Chlorpentan, 1-",
       "Pentylchlorid"
     ],
-    "name_es": "Cloruro De Amilo"
+    "name_es": "Cloruro de amilo"
   },
   {
     "name": "Amylzimtaldehyd",
@@ -8181,7 +8181,7 @@
       "Jasminaldehyd",
       "Pentylzimtaldehyd, a-"
     ],
-    "name_es": "Aldehído amilcinámico"
+    "name_es": "Amilcinamaldehído"
   },
   {
     "name": "Ananassaft",
@@ -8289,7 +8289,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Jugo de piña"
+    "name_es": "Zumo de Piña"
   },
   {
     "name": "Anilin",
@@ -8401,7 +8401,7 @@
       "Aminobenzol",
       "Phenylamin"
     ],
-    "name_es": "anilina"
+    "name_es": "Anilina"
   },
   {
     "name": "Anilinchlorhydrat",
@@ -8952,7 +8952,7 @@
     "aliases": [
       "Antimon-(V)-chlorid"
     ],
-    "name_es": "Antimonpentacloruro"
+    "name_es": "Pentacloruro de antimonio"
   },
   {
     "name": "Antimontrichlorid",
@@ -9063,7 +9063,7 @@
     "aliases": [
       "Antimon-(III)-chlorid"
     ],
-    "name_es": "Antimontricloruro"
+    "name_es": "Tricloruro de antimonio"
   },
   {
     "name": "Antimontrichlorid",
@@ -9174,7 +9174,7 @@
     "aliases": [
       "Antimon-(III)-chlorid"
     ],
-    "name_es": "Antimontricloruro"
+    "name_es": "Tricloruro de antimonio"
   },
   {
     "name": "Antimontrichlorid",
@@ -9285,7 +9285,7 @@
     "aliases": [
       "Antimon-(III)-chlorid"
     ],
-    "name_es": "Antimontricloruro"
+    "name_es": "Tricloruro de antimonio"
   },
   {
     "name": "Apfelsaft",
@@ -9393,7 +9393,7 @@
         "c50": "1"
       }
     },
-    "name_es": "jugo de manzana"
+    "name_es": "Zumo de Manzana"
   },
   {
     "name": "Apfelsinensaft",
@@ -9504,7 +9504,7 @@
     "aliases": [
       "Orangensaft"
     ],
-    "name_es": "Jugo de naranja"
+    "name_es": "Zumo de naranja"
   },
   {
     "name": "Apfelsinenschalenöl",
@@ -9727,7 +9727,7 @@
       "Arsenanhydrid",
       "Arsensäureanhydrid"
     ],
-    "name_es": "Arsenpentóxido"
+    "name_es": "Arsénicopentóxido"
   },
   {
     "name": "Arsensäure",
@@ -10162,7 +10162,7 @@
     "aliases": [
       "Tropasäure-tropylester-sulfat"
     ],
-    "name_es": "Atropinsulfato"
+    "name_es": "Sulfato de atropina"
   },
   {
     "name": "Baldriantropfen",
@@ -10270,7 +10270,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gotas de valeriana"
+    "name_es": "Gotas de Valeriana"
   },
   {
     "name": "Bariumbromid",
@@ -10378,7 +10378,7 @@
         "c50": "2L"
       }
     },
-    "name_es": "bariobromuro"
+    "name_es": "Bromuro de bario"
   },
   {
     "name": "Bariumcarbonat",
@@ -10486,7 +10486,7 @@
         "c50": "1"
       }
     },
-    "name_es": "bariocarbonato"
+    "name_es": "Carbonato de bario"
   },
   {
     "name": "Bariumchlorid",
@@ -10594,7 +10594,7 @@
         "c50": "1L"
       }
     },
-    "name_es": "bariocloruro"
+    "name_es": "Cloruro de bario"
   },
   {
     "name": "Bariumchlorid",
@@ -10702,7 +10702,7 @@
         "c50": "1L"
       }
     },
-    "name_es": "bariocloruro"
+    "name_es": "Cloruro de bario"
   },
   {
     "name": "Bariumhydroxid",
@@ -10813,7 +10813,7 @@
     "aliases": [
       "Ätzbaryt"
     ],
-    "name_es": "bariohidróxido"
+    "name_es": "Hidróxido de bario"
   },
   {
     "name": "Bariumhydroxid",
@@ -10924,7 +10924,7 @@
     "aliases": [
       "Ätzbaryt"
     ],
-    "name_es": "bariohidróxido"
+    "name_es": "Hidróxido de bario"
   },
   {
     "name": "Bariumsulfid",
@@ -11032,7 +11032,7 @@
         "c50": "1"
       }
     },
-    "name_es": "bariosulfuro"
+    "name_es": "Sulfuro de bario"
   },
   {
     "name": "Baumwollsamenöl",
@@ -11359,7 +11359,7 @@
         "c50": "1"
       }
     },
-    "name_es": "gasolina"
+    "name_es": "Gasolina"
   },
   {
     "name": "Benzoesäure",
@@ -11470,7 +11470,7 @@
     "aliases": [
       "Benzolcarbonsäure"
     ],
-    "name_es": "ácido benzoico"
+    "name_es": "Ácido Benzoico"
   },
   {
     "name": "Benzoesäure",
@@ -11581,7 +11581,7 @@
     "aliases": [
       "Benzolcarbonsäure"
     ],
-    "name_es": "ácido benzoico"
+    "name_es": "Ácido Benzoico"
   },
   {
     "name": "Benzoesäureethylester",
@@ -11692,7 +11692,7 @@
     "aliases": [
       "Ethylbenzoat"
     ],
-    "name_es": "ácido benzoicoethylester"
+    "name_es": "Benzoato de etilo"
   },
   {
     "name": "Benzol",
@@ -11803,7 +11803,7 @@
     "aliases": [
       "Benzen"
     ],
-    "name_es": "benceno"
+    "name_es": "Benceno"
   },
   {
     "name": "Benzolsulfonsäure",
@@ -12025,7 +12025,7 @@
     "aliases": [
       "Benzoesäurechlorid"
     ],
-    "name_es": "Benzoylcloruro"
+    "name_es": "Cloruro de Benzoilo"
   },
   {
     "name": "Benzylacetat",
@@ -12136,7 +12136,7 @@
     "aliases": [
       "Essigsäurebenzylester"
     ],
-    "name_es": "Acetato De Bencilo"
+    "name_es": "Acetato de bencilo"
   },
   {
     "name": "Benzylalkohol",
@@ -12358,7 +12358,7 @@
     "aliases": [
       "Benzoesäurebenzylester"
     ],
-    "name_es": "Benzoato de bencilo"
+    "name_es": "Bencilbenzoato"
   },
   {
     "name": "Benzylchlorid",
@@ -12470,7 +12470,7 @@
       "Chlormethylbenzol",
       "Chlortoluol, alpha-"
     ],
-    "name_es": "Cloruro De Bencilo"
+    "name_es": "Cloruro de bencilo"
   },
   {
     "name": "Bernsteinsäure",
@@ -12805,7 +12805,7 @@
     "aliases": [
       "Diethylsuccinat"
     ],
-    "name_es": "Succinato De Dietilo"
+    "name_es": "Succinato de Dietilo"
   },
   {
     "name": "Bienenwachs",
@@ -12913,7 +12913,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Cera de abeja"
+    "name_es": "Cera de abejas"
   },
   {
     "name": "Bier",
@@ -13021,7 +13021,7 @@
         "c50": "1"
       }
     },
-    "name_es": "cerveza"
+    "name_es": "Cerveza"
   },
   {
     "name": "Bismutchlorid",
@@ -13129,7 +13129,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Bismutcloruro"
+    "name_es": "Cloruro de bismuto"
   },
   {
     "name": "Bismutsubnitrat",
@@ -13237,7 +13237,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Bismutsubnitrato"
+    "name_es": "Subnitrato de bismuto"
   },
   {
     "name": "Bisulfitlauge",
@@ -13669,7 +13669,7 @@
         "c50": "1"
       }
     },
-    "name_es": "betún"
+    "name_es": "Betún"
   },
   {
     "name": "Blausäure",
@@ -13780,7 +13780,7 @@
     "aliases": [
       "Cyanwasserstoff(säure)"
     ],
-    "name_es": "ácido cianhídrico"
+    "name_es": "Ácido Cianhídrico"
   },
   {
     "name": "Blausäure",
@@ -13891,7 +13891,7 @@
     "aliases": [
       "Cyanwasserstoff(säure)"
     ],
-    "name_es": "ácido cianhídrico"
+    "name_es": "Ácido Cianhídrico"
   },
   {
     "name": "Blei-(II)-acetat",
@@ -14002,7 +14002,7 @@
     "aliases": [
       "Bleizucker"
     ],
-    "name_es": "plomo-(II)-acetato"
+    "name_es": "Acetato de plomo(II)"
   },
   {
     "name": "Blei-(II)-acetat",
@@ -14113,7 +14113,7 @@
     "aliases": [
       "Bleizucker"
     ],
-    "name_es": "plomo-(II)-acetato"
+    "name_es": "Acetato de plomo(II)"
   },
   {
     "name": "Blei-(II)-nitrat",
@@ -14224,7 +14224,7 @@
     "aliases": [
       "Bleisalpeter"
     ],
-    "name_es": "plomo-(II)-nitrato"
+    "name_es": "Nitrato de plomo(II)"
   },
   {
     "name": "Blei-(II)-nitrat",
@@ -14335,7 +14335,7 @@
     "aliases": [
       "Bleisalpeter"
     ],
-    "name_es": "plomo-(II)-nitrato"
+    "name_es": "Nitrato de plomo(II)"
   },
   {
     "name": "Bleistearat",
@@ -14551,7 +14551,7 @@
         "c50": "1"
       }
     },
-    "name_es": "plomosulfato"
+    "name_es": "Sulfato de plomo"
   },
   {
     "name": "Borsäure",
@@ -14659,7 +14659,7 @@
         "c50": "1"
       }
     },
-    "name_es": "ácido bórico"
+    "name_es": "Ácido Bórico"
   },
   {
     "name": "Borsäure",
@@ -14767,7 +14767,7 @@
         "c50": "1"
       }
     },
-    "name_es": "ácido bórico"
+    "name_es": "Ácido Bórico"
   },
   {
     "name": "Bremsflüssigkeit",
@@ -14983,7 +14983,7 @@
         "c50": "4"
       }
     },
-    "name_es": "bromo"
+    "name_es": "Bromo"
   },
   {
     "name": "Brombenzol",
@@ -15208,7 +15208,7 @@
       "Chlorbrommethan",
       "Methylenchlorbromid"
     ],
-    "name_es": "bromochlormethan"
+    "name_es": "Bromoclorometano"
   },
   {
     "name": "Bromdämpfe",
@@ -15427,7 +15427,7 @@
     "aliases": [
       "Methylbromid"
     ],
-    "name_es": "bromomethan"
+    "name_es": "Bromometano"
   },
   {
     "name": "Bromoform",
@@ -15538,7 +15538,7 @@
     "aliases": [
       "Tribrommethan"
     ],
-    "name_es": "bromooform"
+    "name_es": "Bromoformo"
   },
   {
     "name": "Brompentafluorid",
@@ -15646,7 +15646,7 @@
         "c50": "4"
       }
     },
-    "name_es": "bromopentafluoruro"
+    "name_es": "Pentafluoruro de bromo"
   },
   {
     "name": "Bromsäure",
@@ -15862,7 +15862,7 @@
         "c50": "4"
       }
     },
-    "name_es": "bromotrifluoruro"
+    "name_es": "Trifluoruro de bromo"
   },
   {
     "name": "Bromtrifluormethan",
@@ -15973,7 +15973,7 @@
     "aliases": [
       "Freon 13 B1"
     ],
-    "name_es": "bromotrifluormethan"
+    "name_es": "Bromotriflúormetano"
   },
   {
     "name": "Bromwasser",
@@ -16189,7 +16189,7 @@
         "c50": "4"
       }
     },
-    "name_es": "ácido bromhídrico"
+    "name_es": "Ácido Bromhídrico"
   },
   {
     "name": "Bromwasserstoffsäure",
@@ -16297,7 +16297,7 @@
         "c50": "4"
       }
     },
-    "name_es": "ácido bromhídrico"
+    "name_es": "Ácido Bromhídrico"
   },
   {
     "name": "Bromwasserstoffsäure",
@@ -16405,7 +16405,7 @@
         "c50": "4"
       }
     },
-    "name_es": "ácido bromhídrico"
+    "name_es": "Ácido Bromhídrico"
   },
   {
     "name": "Butadien, 1,3-",
@@ -16735,7 +16735,7 @@
     "aliases": [
       "Butylalkohol"
     ],
-    "name_es": "butanol"
+    "name_es": "Butanol"
   },
   {
     "name": "Butantriol",
@@ -17733,7 +17733,7 @@
     "aliases": [
       "Butandiol"
     ],
-    "name_es": "Butilenglicol"
+    "name_es": "Butilenoglicol"
   },
   {
     "name": "Butylglycol",
@@ -18281,7 +18281,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Cadmiumbromuro"
+    "name_es": "Bromuro de cadmio"
   },
   {
     "name": "Calciumacetat",
@@ -18389,7 +18389,7 @@
         "c50": "1"
       }
     },
-    "name_es": "calcioacetato"
+    "name_es": "Acetato de calcio"
   },
   {
     "name": "Calciumbicarbonat",
@@ -18500,7 +18500,7 @@
     "aliases": [
       "Calciumhydrogencarbonat"
     ],
-    "name_es": "calciobicarbonato"
+    "name_es": "Bicarbonato de calcio"
   },
   {
     "name": "Calciumbisulfit",
@@ -18612,7 +18612,7 @@
       "Calciumhydrogensulfit",
       "Sulfitlauge"
     ],
-    "name_es": "calciobisulfit"
+    "name_es": "Bisulfito de calcio"
   },
   {
     "name": "Calciumbisulfit",
@@ -18724,7 +18724,7 @@
       "Calciumhydrogensulfit",
       "Sulfitlauge"
     ],
-    "name_es": "calciobisulfit"
+    "name_es": "Bisulfito de calcio"
   },
   {
     "name": "Calciumbromid",
@@ -18832,7 +18832,7 @@
         "c50": "0"
       }
     },
-    "name_es": "calciobromuro"
+    "name_es": "Bromuro de calcio"
   },
   {
     "name": "Calciumcarbid",
@@ -18940,7 +18940,7 @@
         "c50": "1"
       }
     },
-    "name_es": "calciocarbid"
+    "name_es": "Carburo de calcio"
   },
   {
     "name": "Calciumcarbonat",
@@ -19048,7 +19048,7 @@
         "c50": "1"
       }
     },
-    "name_es": "calciocarbonato"
+    "name_es": "Carbonato de calcio"
   },
   {
     "name": "Calciumchlorat",
@@ -19267,7 +19267,7 @@
     "aliases": [
       "Chlorcalcium"
     ],
-    "name_es": "calciocloruro"
+    "name_es": "Cloruro de calcio"
   },
   {
     "name": "Calciumchlorid",
@@ -19378,7 +19378,7 @@
     "aliases": [
       "Chlorcalcium"
     ],
-    "name_es": "calciocloruro"
+    "name_es": "Cloruro de calcio"
   },
   {
     "name": "Calciumhydroxid",
@@ -19491,7 +19491,7 @@
       "Kalkhydrat",
       "Kalkwasser"
     ],
-    "name_es": "calciohidróxido"
+    "name_es": "Hidróxido de calcio"
   },
   {
     "name": "Calciumhydroxid",
@@ -19604,7 +19604,7 @@
       "Kalkhydrat",
       "Kalkwasser"
     ],
-    "name_es": "calciohidróxido"
+    "name_es": "Hidróxido de calcio"
   },
   {
     "name": "Calciumhypochlorit",
@@ -19712,7 +19712,7 @@
         "c50": "0"
       }
     },
-    "name_es": "calciohypochlorit"
+    "name_es": "Hipoclorito de calcio"
   },
   {
     "name": "Calciumhypochlorit",
@@ -19820,7 +19820,7 @@
         "c50": "0"
       }
     },
-    "name_es": "calciohypochlorit"
+    "name_es": "Hipoclorito de calcio"
   },
   {
     "name": "Calciumnitrat",
@@ -19931,7 +19931,7 @@
     "aliases": [
       "Kalksalpeter"
     ],
-    "name_es": "calcionitrato"
+    "name_es": "Nitrato de calcio"
   },
   {
     "name": "Calciumnitrat",
@@ -20042,7 +20042,7 @@
     "aliases": [
       "Kalksalpeter"
     ],
-    "name_es": "calcionitrato"
+    "name_es": "Nitrato de calcio"
   },
   {
     "name": "Calciumoxid",
@@ -20154,7 +20154,7 @@
       "Ätzkalk",
       "Kalk, gebrannt"
     ],
-    "name_es": "calcioóxido"
+    "name_es": "Óxido de calcio"
   },
   {
     "name": "Calciumphosphat",
@@ -20262,7 +20262,7 @@
         "c50": "1"
       }
     },
-    "name_es": "calciofosfato"
+    "name_es": "Fosfato de calcio"
   },
   {
     "name": "Calciumphosphat",
@@ -20370,7 +20370,7 @@
         "c50": "1"
       }
     },
-    "name_es": "calciofosfato"
+    "name_es": "Fosfato de calcio"
   },
   {
     "name": "Calciumsulfat",
@@ -20481,7 +20481,7 @@
     "aliases": [
       "Gips"
     ],
-    "name_es": "calciosulfato"
+    "name_es": "Sulfato de calcio"
   },
   {
     "name": "Calciumsulfid",
@@ -20589,7 +20589,7 @@
         "c50": "1"
       }
     },
-    "name_es": "calciosulfuro"
+    "name_es": "Sulfuro de calcio"
   },
   {
     "name": "Calciumsulfid",
@@ -20697,7 +20697,7 @@
         "c50": "1"
       }
     },
-    "name_es": "calciosulfuro"
+    "name_es": "Sulfuro de calcio"
   },
   {
     "name": "Campher",
@@ -21133,7 +21133,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Carbolineo"
+    "name_es": "Carbolineum"
   },
   {
     "name": "Carnaubawachs",
@@ -21897,7 +21897,7 @@
     "aliases": [
       "Chlor-2-propanon, 1-"
     ],
-    "name_es": "cloroaceton"
+    "name_es": "Cloroacetona"
   },
   {
     "name": "Chloracetophenon, p-",
@@ -22005,7 +22005,7 @@
         "c50": "0"
       }
     },
-    "name_es": "cloroacetophenon, p-"
+    "name_es": "Cloroacetofenona, p-"
   },
   {
     "name": "Chloralhydrat",
@@ -22452,7 +22452,7 @@
     "aliases": [
       "Chloropren"
     ],
-    "name_es": "clorobutadien"
+    "name_es": "Clorobutadieno"
   },
   {
     "name": "Chlordifluormethan",
@@ -22565,7 +22565,7 @@
       "Freon 22",
       "Frigen 22"
     ],
-    "name_es": "clorodifluormethan"
+    "name_es": "Clorodiflúormetano"
   },
   {
     "name": "Chlordioxid",
@@ -22673,7 +22673,7 @@
         "c50": "4"
       }
     },
-    "name_es": "clorodióxido"
+    "name_es": "Dióxido de cloro"
   },
   {
     "name": "Chloressigsäure",
@@ -23006,7 +23006,7 @@
     "aliases": [
       "Ethylchlorid"
     ],
-    "name_es": "cloroethan"
+    "name_es": "Cloroetano"
   },
   {
     "name": "Chlorethanol",
@@ -23119,7 +23119,7 @@
       "Ethylenchlorhydrin",
       "Glykolchlorhydrin"
     ],
-    "name_es": "cloroethanol"
+    "name_es": "Cloroetanol"
   },
   {
     "name": "Chlorethylen",
@@ -23230,7 +23230,7 @@
     "aliases": [
       "Vinylchlorid"
     ],
-    "name_es": "cloroethylen"
+    "name_es": "Cloroetileno"
   },
   {
     "name": "Chlorfluormethan",
@@ -23341,7 +23341,7 @@
     "aliases": [
       "Freon 31"
     ],
-    "name_es": "clorofluormethan"
+    "name_es": "Cloroflúormetano"
   },
   {
     "name": "Chlorgas",
@@ -23449,7 +23449,7 @@
         "c50": "0"
       }
     },
-    "name_es": "gas cloro"
+    "name_es": "Cloro gaseoso"
   },
   {
     "name": "Chlorkalk",
@@ -23557,7 +23557,7 @@
         "c50": "0L"
       }
     },
-    "name_es": "clorokalk"
+    "name_es": "Cloruro de cal"
   },
   {
     "name": "Chlorkalk",
@@ -23665,7 +23665,7 @@
         "c50": "0L"
       }
     },
-    "name_es": "clorokalk"
+    "name_es": "Cloruro de cal"
   },
   {
     "name": "Chlormethan",
@@ -23777,7 +23777,7 @@
       "Chlormethyl",
       "Methylchlorid"
     ],
-    "name_es": "cloromethan"
+    "name_es": "Clorometano"
   },
   {
     "name": "Chlornaphthalin, 1-",
@@ -23885,7 +23885,7 @@
         "c50": "0"
       }
     },
-    "name_es": "cloronaphthalin, 1-"
+    "name_es": "Cloronaftaleno, 1-"
   },
   {
     "name": "Chloroform",
@@ -23996,7 +23996,7 @@
     "aliases": [
       "Trichlormethan"
     ],
-    "name_es": "cloroformo"
+    "name_es": "Cloroformo"
   },
   {
     "name": "Chlorpentafluorethan",
@@ -24107,7 +24107,7 @@
     "aliases": [
       "Freon 115"
     ],
-    "name_es": "cloropentafluorethan"
+    "name_es": "Cloropentaflúoretano"
   },
   {
     "name": "Chlorsäure",
@@ -24758,7 +24758,7 @@
         "c50": "4"
       }
     },
-    "name_es": "clorotrifluoruro"
+    "name_es": "Trifluoruro de cloro"
   },
   {
     "name": "Chlortrifluormethan",
@@ -24869,7 +24869,7 @@
     "aliases": [
       "Freon 13"
     ],
-    "name_es": "clorotrifluormethan"
+    "name_es": "Clorotriflúormetano"
   },
   {
     "name": "Chlorwasser",
@@ -25085,7 +25085,7 @@
         "c50": "2L"
       }
     },
-    "name_es": "Cloruro de hidrógeno(gas)"
+    "name_es": "Cloruro de hidrógeno (gas)"
   },
   {
     "name": "Chromalaun",
@@ -25304,7 +25304,7 @@
         "c50": "K"
       }
     },
-    "name_es": "cromosale"
+    "name_es": "Cromosale"
   },
   {
     "name": "Chromsäure",
@@ -25416,7 +25416,7 @@
       "Chrom-(VI)-oxid",
       "Chromtrioxid"
     ],
-    "name_es": "ácido crómico"
+    "name_es": "Ácido Crómico"
   },
   {
     "name": "Chromsäure",
@@ -25528,7 +25528,7 @@
       "Chrom-(VI)-oxid",
       "Chromtrioxid"
     ],
-    "name_es": "ácido crómico"
+    "name_es": "Ácido Crómico"
   },
   {
     "name": "Chromsäure",
@@ -25640,7 +25640,7 @@
       "Chrom-(VI)-oxid",
       "Chromtrioxid"
     ],
-    "name_es": "ácido crómico"
+    "name_es": "Ácido Crómico"
   },
   {
     "name": "Chromschwefelsäure",
@@ -25859,7 +25859,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Clophen A60 (PCB)"
+    "name_es": "Clophen A60"
   },
   {
     "name": "Cobalt-(II)-chlorid",
@@ -25970,7 +25970,7 @@
     "aliases": [
       "Cobaltdichlorid"
     ],
-    "name_es": "Cobalt-(II)-cloruro"
+    "name_es": "Cloruro de cobalto(II)"
   },
   {
     "name": "Crotonaldehyd",
@@ -26859,7 +26859,7 @@
       "Dolcymen",
       "Isopropyl-4-methylbenzol, 1-"
     ],
-    "name_es": "p-Cimeno"
+    "name_es": "P-Cimeno"
   },
   {
     "name": "Dampf",
@@ -27078,7 +27078,7 @@
     "aliases": [
       "Dichlordiphenyltrichlorethan"
     ],
-    "name_es": "DDT (Emulsión)"
+    "name_es": "Ddt (emulsión)"
   },
   {
     "name": "Decahydronaphtalin",
@@ -27189,7 +27189,7 @@
     "aliases": [
       "Decalin"
     ],
-    "name_es": "Decahidronaftaleno"
+    "name_es": "Decahidronaphtalin"
   },
   {
     "name": "Decan",
@@ -28072,7 +28072,7 @@
       "Decandisäuredibenzylester",
       "Sebacinsäuredibenzylester"
     ],
-    "name_es": "Sebacato de dibencilo"
+    "name_es": "Sebacato de Dibencilo"
   },
   {
     "name": "Dibromethan-1,2",
@@ -28183,7 +28183,7 @@
     "aliases": [
       "Ethylen(di)bromid"
     ],
-    "name_es": "1,2-Dibromoetano"
+    "name_es": "Dibromoetano-1,2"
   },
   {
     "name": "Dibromtetrafluormethan",
@@ -28294,7 +28294,7 @@
     "aliases": [
       "Freon 114 B2"
     ],
-    "name_es": "Dibromtetrafluorometano"
+    "name_es": "Dibromotetraflúormetano"
   },
   {
     "name": "Dibutylamin",
@@ -28402,7 +28402,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dibutilamina"
+    "name_es": "Dibutilaminaa"
   },
   {
     "name": "Dibutylether",
@@ -28625,7 +28625,7 @@
       "Elaol",
       "Phthalsäuredibutylester"
     ],
-    "name_es": "Ftalato de dibutilo"
+    "name_es": "Ftalato de Dibutilo"
   },
   {
     "name": "Dibutylphthalat",
@@ -28737,7 +28737,7 @@
       "Elaol",
       "Phthalsäuredibutylester"
     ],
-    "name_es": "Ftalato de dibutilo"
+    "name_es": "Ftalato de Dibutilo"
   },
   {
     "name": "Dibutylsebacat",
@@ -28849,7 +28849,7 @@
       "Decandisäuredibutylester",
       "Sebacinsäuredibutylester"
     ],
-    "name_es": "Sebacato de dibutilo"
+    "name_es": "Sebacato de Dibutilo"
   },
   {
     "name": "Dichlorbenzol, 1,2-",
@@ -28961,7 +28961,7 @@
       "Dichlorbenzen, 1,2-",
       "Dichlorbenzol, o-"
     ],
-    "name_es": "1,2-Diclorobenceno"
+    "name_es": "Diclorobenceno, 1,2-"
   },
   {
     "name": "Dichlorbenzol, 1,4-",
@@ -29073,7 +29073,7 @@
       "Dichlorbenzen, 1,4-",
       "Dichlorbenzol, p-"
     ],
-    "name_es": "1,4-Diclorobenceno"
+    "name_es": "Diclorobenceno, 1,4-"
   },
   {
     "name": "Dichlordifluormethan",
@@ -29186,7 +29186,7 @@
       "Freon 12",
       "Frigen 12"
     ],
-    "name_es": "Diclorodifluorometano"
+    "name_es": "Diclorodiflúormetano"
   },
   {
     "name": "Dichlordifluormethan",
@@ -29299,7 +29299,7 @@
       "Freon 12",
       "Frigen 12"
     ],
-    "name_es": "Diclorodifluorometano"
+    "name_es": "Diclorodiflúormetano"
   },
   {
     "name": "Dichloressigsäure",
@@ -29737,7 +29737,7 @@
       "Frigen 21",
       "Monofluordichlormethan"
     ],
-    "name_es": "Diclorofluorometano"
+    "name_es": "Dicloroflúormetano"
   },
   {
     "name": "Dichlor-hexafluorcyclobutan",
@@ -29848,7 +29848,7 @@
     "aliases": [
       "Freon C316"
     ],
-    "name_es": "Dicloro-hexafluorociclobutano"
+    "name_es": "Dicloro-hexaflúorciclobutano"
   },
   {
     "name": "Dichlorisopropylether",
@@ -30070,7 +30070,7 @@
     "aliases": [
       "Methylen(di)chlorid"
     ],
-    "name_es": "diclorometano"
+    "name_es": "Diclorometano"
   },
   {
     "name": "Dichlorpropan",
@@ -30292,7 +30292,7 @@
     "aliases": [
       "Freon 114"
     ],
-    "name_es": "Diclorotetrafluoroetano"
+    "name_es": "Diclorotetraflúoretano"
   },
   {
     "name": "Dicyclohexylamin (DCHA)",
@@ -30400,7 +30400,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diciclohexilamina (DCHA)"
+    "name_es": "Diciclohexilaminaa (dcha)"
   },
   {
     "name": "Dicyclohexylphthalat",
@@ -30512,7 +30512,7 @@
       "Dihexylphthalat",
       "Phthalsäuredicyclohexylester"
     ],
-    "name_es": "Ftalato de diciclohexilo"
+    "name_es": "Ftalato de Diciclohexilo"
   },
   {
     "name": "Dieselkraftstoff",
@@ -30620,7 +30620,7 @@
         "c50": "1"
       }
     },
-    "name_es": "diéselkraftstoff"
+    "name_es": "Combustible Diésel"
   },
   {
     "name": "Dieselöl",
@@ -30836,7 +30836,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dietanolamina (DEA)"
+    "name_es": "Dietanolaminaa (dea)"
   },
   {
     "name": "Diethylamin",
@@ -31166,7 +31166,7 @@
     "aliases": [
       "Diglycol"
     ],
-    "name_es": "Dietilenglicol"
+    "name_es": "Dietilenoglicol"
   },
   {
     "name": "Diethylenglycolether",
@@ -31498,7 +31498,7 @@
       "Malonester",
       "Malonsäurediethylester"
     ],
-    "name_es": "Malonato de dietilo"
+    "name_es": "Malonato de Dietilo"
   },
   {
     "name": "Diethylsebacat",
@@ -31610,7 +31610,7 @@
       "Decandisäurediethylester",
       "Sebacinsäurediethylester"
     ],
-    "name_es": "Sebacato de dietilo"
+    "name_es": "Sebacato de Dietilo"
   },
   {
     "name": "Difluorchlorethan",
@@ -31721,7 +31721,7 @@
     "aliases": [
       "Freon 142b"
     ],
-    "name_es": "Difluorocloroetano"
+    "name_es": "Diflúorcloroetano"
   },
   {
     "name": "Difluorethan",
@@ -31832,7 +31832,7 @@
     "aliases": [
       "Freon 152a"
     ],
-    "name_es": "Difluoroetano"
+    "name_es": "Diflúoretano"
   },
   {
     "name": "Difluormethan",
@@ -31943,7 +31943,7 @@
     "aliases": [
       "Freon 32"
     ],
-    "name_es": "Difluorometano"
+    "name_es": "Diflúormetano"
   },
   {
     "name": "Difluortetrachlorethan",
@@ -32054,7 +32054,7 @@
     "aliases": [
       "Freon 112"
     ],
-    "name_es": "Difluorotetracloroetano"
+    "name_es": "Diflúortetracloroetano"
   },
   {
     "name": "Diglycolsäure",
@@ -32384,7 +32384,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diisobutileno (DIB)"
+    "name_es": "Diisobutileno (dib)"
   },
   {
     "name": "Diisobutylketon",
@@ -32495,7 +32495,7 @@
     "aliases": [
       "Isobutylketon"
     ],
-    "name_es": "Diisobutilcetona"
+    "name_es": "Diisobutylcetona"
   },
   {
     "name": "Diisooctylphthalat (DOP)",
@@ -32603,7 +32603,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Ftalato de diisooctilo (DOP)"
+    "name_es": "Ftalato de Diisooctilo (Dop)"
   },
   {
     "name": "Diisopropylketon",
@@ -32714,7 +32714,7 @@
     "aliases": [
       "Dimethylpentanon-3, 2,4-"
     ],
-    "name_es": "Diisopropilcetona"
+    "name_es": "Diisopropylcetona"
   },
   {
     "name": "Dimethylamin",
@@ -33149,7 +33149,7 @@
         "c50": "1"
       }
     },
-    "name_es": "dimetilformamida (DMF)"
+    "name_es": "Dimetilformamiduroaa (dmf)"
   },
   {
     "name": "Dimethylphthalat (DMP)",
@@ -33257,7 +33257,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Ftalato de dimetilo (DMP)"
+    "name_es": "Ftalato de Dimetilo (Dmp)"
   },
   {
     "name": "Dimethylsulfoxid (DMSO)",
@@ -33365,7 +33365,7 @@
         "c50": "1"
       }
     },
-    "name_es": "dimetilsulfóxido (DMSO)"
+    "name_es": "Dimetilsulfóxido (dmso)"
   },
   {
     "name": "Dinatriumphosphat",
@@ -33477,7 +33477,7 @@
       "Dinatriumhydrogenphosphat",
       "Natriumphosphat, sekundär"
     ],
-    "name_es": "Dinatriumfosfato"
+    "name_es": "Fosfato disódico"
   },
   {
     "name": "Dinonylphthalat (DNP)",
@@ -33585,7 +33585,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Ftalato de dinonilo (DNP)"
+    "name_es": "Ftalato de Dinonilo (Dnp)"
   },
   {
     "name": "Dioctyladipat",
@@ -33697,7 +33697,7 @@
       "Adipinsäuredioctylester",
       "Bis(2-ethylhexyl)-adipat"
     ],
-    "name_es": "Adipato de dioctilo"
+    "name_es": "Adipato de Dioctilo"
   },
   {
     "name": "Dioctylsebacat",
@@ -33808,7 +33808,7 @@
     "aliases": [
       "Bis(2-ethylhexyl)-sebacat, Sebacinsäure-bis(2-ethylhexylester)"
     ],
-    "name_es": "Sebacato de dioctilo"
+    "name_es": "Sebacato de Dioctilo"
   },
   {
     "name": "Dioxan",
@@ -34250,7 +34250,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Difilo"
+    "name_es": "Diphyl"
   },
   {
     "name": "Dipropylenglycol",
@@ -34358,7 +34358,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dipropilenglicol"
+    "name_es": "Dipropilenoglicol"
   },
   {
     "name": "Dipropylketon",
@@ -34469,7 +34469,7 @@
     "aliases": [
       "Heptanon-4"
     ],
-    "name_es": "Dipropilcetona"
+    "name_es": "Dipropylcetona"
   },
   {
     "name": "Eisen-(II)-chlorid",
@@ -34580,7 +34580,7 @@
     "aliases": [
       "Ferrochlorid"
     ],
-    "name_es": "hierro-(II)-cloruro"
+    "name_es": "Cloruro de hierro(II)"
   },
   {
     "name": "Eisen-(II)-sulfat",
@@ -34691,7 +34691,7 @@
     "aliases": [
       "Eisenvitriol"
     ],
-    "name_es": "hierro-(II)-sulfato"
+    "name_es": "Sulfato de hierro(II)"
   },
   {
     "name": "Eisen-(II)-sulfat",
@@ -34802,7 +34802,7 @@
     "aliases": [
       "Eisenvitriol"
     ],
-    "name_es": "hierro-(II)-sulfato"
+    "name_es": "Sulfato de hierro(II)"
   },
   {
     "name": "Eisen-(II)-sulfat",
@@ -34913,7 +34913,7 @@
     "aliases": [
       "Eisenvitriol"
     ],
-    "name_es": "hierro-(II)-sulfato"
+    "name_es": "Sulfato de hierro(II)"
   },
   {
     "name": "Eisen-(III)-chlorid",
@@ -35024,7 +35024,7 @@
     "aliases": [
       "Ferrichlorid"
     ],
-    "name_es": "hierro-(III)-cloruro"
+    "name_es": "Cloruro de hierro(III)"
   },
   {
     "name": "Eisen-(III)-sulfat",
@@ -35132,7 +35132,7 @@
         "c50": "1"
       }
     },
-    "name_es": "hierro-(III)-sulfato"
+    "name_es": "Sulfato de hierro(III)"
   },
   {
     "name": "Eisennitrat",
@@ -35243,7 +35243,7 @@
     "aliases": [
       "Eisen-(III)-nitrat"
     ],
-    "name_es": "hierronitrato"
+    "name_es": "Nitrato de hierro"
   },
   {
     "name": "Eisennitrat",
@@ -35354,7 +35354,7 @@
     "aliases": [
       "Eisen-(III)-nitrat"
     ],
-    "name_es": "hierronitrato"
+    "name_es": "Nitrato de hierro"
   },
   {
     "name": "Emulgatoren",
@@ -35678,7 +35678,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Efetina"
+    "name_es": "Ephetin"
   },
   {
     "name": "Epichlorhydrin",
@@ -35897,7 +35897,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gas natural"
+    "name_es": "Gas Natural"
   },
   {
     "name": "Erdnußöl",
@@ -36221,7 +36221,7 @@
         "c50": "2"
       }
     },
-    "name_es": "vinagre"
+    "name_es": "Vinagre"
   },
   {
     "name": "Essigsäure",
@@ -36334,7 +36334,7 @@
       "Ethansäure",
       "Methancarbonsäure"
     ],
-    "name_es": "ácido acético"
+    "name_es": "Ácido Acético"
   },
   {
     "name": "Essigsäure",
@@ -36447,7 +36447,7 @@
       "Ethansäure",
       "Methancarbonsäure"
     ],
-    "name_es": "ácido acético"
+    "name_es": "Ácido Acético"
   },
   {
     "name": "Essigsäure",
@@ -36560,7 +36560,7 @@
       "Ethansäure",
       "Methancarbonsäure"
     ],
-    "name_es": "ácido acético"
+    "name_es": "Ácido Acético"
   },
   {
     "name": "Essigsäure",
@@ -36673,7 +36673,7 @@
       "Ethansäure",
       "Methancarbonsäure"
     ],
-    "name_es": "ácido acético"
+    "name_es": "Ácido Acético"
   },
   {
     "name": "Essigsäure",
@@ -36786,7 +36786,7 @@
       "Ethansäure",
       "Methancarbonsäure"
     ],
-    "name_es": "ácido acético"
+    "name_es": "Ácido Acético"
   },
   {
     "name": "Essigsaure Tonerde",
@@ -37119,7 +37119,7 @@
     "aliases": [
       "Butylacetat"
     ],
-    "name_es": "ácido acéticobutylester"
+    "name_es": "Acetato de butilo"
   },
   {
     "name": "Essigsäuremethylester",
@@ -37230,7 +37230,7 @@
     "aliases": [
       "Methylacetat"
     ],
-    "name_es": "ácido acéticomethylester"
+    "name_es": "Acetato de metilo"
   },
   {
     "name": "Ethanol",
@@ -37342,7 +37342,7 @@
       "Alkohol",
       "Ethylalkohol"
     ],
-    "name_es": "etanol"
+    "name_es": "Etanol"
   },
   {
     "name": "Ethanol",
@@ -37454,7 +37454,7 @@
       "Alkohol",
       "Ethylalkohol"
     ],
-    "name_es": "etanol"
+    "name_es": "Etanol"
   },
   {
     "name": "Ethanol",
@@ -37566,7 +37566,7 @@
       "Alkohol",
       "Ethylalkohol"
     ],
-    "name_es": "etanol"
+    "name_es": "Etanol"
   },
   {
     "name": "Ethanolamin",
@@ -37902,7 +37902,7 @@
       "Essigester",
       "Essigsäureethylester"
     ],
-    "name_es": "Acetato De Etilo"
+    "name_es": "Acetato de etilo"
   },
   {
     "name": "Ethylacrylat",
@@ -39014,7 +39014,7 @@
       "Ethandiol",
       "Glycol"
     ],
-    "name_es": "Etilenglicol"
+    "name_es": "Etilenoglicol"
   },
   {
     "name": "Ethylenglycolmonoethyletheracetat",
@@ -39802,7 +39802,7 @@
       "Hydroxypropionsäure-ethylester, 2-",
       "Milchsäure-ethylester"
     ],
-    "name_es": "Lactato de etilo"
+    "name_es": "Etillactato"
   },
   {
     "name": "Eukalyptusöl",
@@ -40131,7 +40131,7 @@
       "Kalium(hexa)cyanoferrat-(III)",
       "Kaliumeisen-(III)-cyanid"
     ],
-    "name_es": "Ferricianuro de potasio"
+    "name_es": "Ferricyanpotasio"
   },
   {
     "name": "Ferrocyankalium",
@@ -40244,7 +40244,7 @@
       "Kalium(hexa)cyanoferrat-(II)",
       "Kaliumeisen-(II)-cyanid"
     ],
-    "name_es": "Ferrocianuro de potasio"
+    "name_es": "Ferrocyanpotasio"
   },
   {
     "name": "Ferrocyankalium",
@@ -40357,7 +40357,7 @@
       "Kalium(hexa)cyanoferrat-(II)",
       "Kaliumeisen-(II)-cyanid"
     ],
-    "name_es": "Ferrocianuro de potasio"
+    "name_es": "Ferrocyanpotasio"
   },
   {
     "name": "Fett, mineralisch",
@@ -41113,7 +41113,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Aceite de pescado"
+    "name_es": "Aceite de Pescado"
   },
   {
     "name": "Flugmotorenkraftstoffe (JP)",
@@ -41221,7 +41221,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Combustible de aviación (JP)"
+    "name_es": "Combustible de Aviación (Jp)"
   },
   {
     "name": "Fluid 101, 100°C",
@@ -41329,7 +41329,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Fluido 101, 100°C"
+    "name_es": "Fluid 101, 100°C"
   },
   {
     "name": "Fluor",
@@ -41653,7 +41653,7 @@
         "c50": "0"
       }
     },
-    "name_es": "flúorchloralkane (FCKW)"
+    "name_es": "Flúorcloroalkane (fckw)"
   },
   {
     "name": "Fluoride",
@@ -41761,7 +41761,7 @@
         "c50": "K"
       }
     },
-    "name_es": "fluoruroe"
+    "name_es": "Flúoruroe"
   },
   {
     "name": "Fluorkohlenwasserstoffe (FKW)",
@@ -41980,7 +41980,7 @@
     "aliases": [
       "Flusssäure, wasserfrei"
     ],
-    "name_es": "Fluoruro De Hidrógeno"
+    "name_es": "Fluoruro de hidrógeno"
   },
   {
     "name": "Flüssigseifen",
@@ -42200,7 +42200,7 @@
       "Fluorwasserstofflösung",
       "Fluorwasserstoffsäure"
     ],
-    "name_es": "ácido fluorhídrico"
+    "name_es": "Ácido Fluorhídrico"
   },
   {
     "name": "Flusssäure",
@@ -42312,7 +42312,7 @@
       "Fluorwasserstofflösung",
       "Fluorwasserstoffsäure"
     ],
-    "name_es": "ácido fluorhídrico"
+    "name_es": "Ácido Fluorhídrico"
   },
   {
     "name": "Flusssäure",
@@ -42424,7 +42424,7 @@
       "Fluorwasserstofflösung",
       "Fluorwasserstoffsäure"
     ],
-    "name_es": "ácido fluorhídrico"
+    "name_es": "Ácido Fluorhídrico"
   },
   {
     "name": "Flusssäure",
@@ -42536,7 +42536,7 @@
       "Fluorwasserstofflösung",
       "Fluorwasserstoffsäure"
     ],
-    "name_es": "ácido fluorhídrico"
+    "name_es": "Ácido Fluorhídrico"
   },
   {
     "name": "Formaldehydlösung",
@@ -43091,7 +43091,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Emulsiones fotográficas"
+    "name_es": "Fotoemulsiónen"
   },
   {
     "name": "Fotoentwickler",
@@ -43199,7 +43199,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Revelador fotográfico"
+    "name_es": "Revelador Fotográfico"
   },
   {
     "name": "Fotofixierbäder",
@@ -43307,7 +43307,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Baños fijadores fotográficos"
+    "name_es": "Baño Fijador Fotográfico"
   },
   {
     "name": "Frostschutzmittel (KFZ)",
@@ -43415,7 +43415,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Anticongelante (automóvil)"
+    "name_es": "Anticongelante (Automóvil)"
   },
   {
     "name": "Fruchtsäfte",
@@ -43523,7 +43523,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Jugos de frutas"
+    "name_es": "Zumos de frutas"
   },
   {
     "name": "Fructose",
@@ -43634,7 +43634,7 @@
     "aliases": [
       "Fruchtzucker"
     ],
-    "name_es": "fructosa"
+    "name_es": "Fructosa"
   },
   {
     "name": "Furan",
@@ -44192,7 +44192,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Mosto de fermentación"
+    "name_es": "Mosto de Fermentación"
   },
   {
     "name": "Gasöl",
@@ -44732,7 +44732,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Genantina"
+    "name_es": "Genantin"
   },
   {
     "name": "Gerbeextrakte, pflanzlich",
@@ -44840,7 +44840,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Extractos de curtido, vegetales"
+    "name_es": "Extractos Curtientes Vegetales"
   },
   {
     "name": "Gerbextrakte",
@@ -44948,7 +44948,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Extractos de curtido"
+    "name_es": "Extractos Curtientes"
   },
   {
     "name": "Getriebeöl, EP (Hypoid), 110°C",
@@ -45168,7 +45168,7 @@
       "Dextrose",
       "Traubenzucker"
     ],
-    "name_es": "glucosa"
+    "name_es": "Glucosa"
   },
   {
     "name": "Glycerin",
@@ -45609,7 +45609,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Glisantina"
+    "name_es": "Glysantin"
   },
   {
     "name": "Grubengas",
@@ -45828,7 +45828,7 @@
     "aliases": [
       "Trihydroxypurin, 2,6,8-"
     ],
-    "name_es": "ácido úrico"
+    "name_es": "Ácido Úrico"
   },
   {
     "name": "Harnstoff",
@@ -46368,7 +46368,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aceite de calefacción"
+    "name_es": "Fueloil"
   },
   {
     "name": "Helium",
@@ -46584,7 +46584,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Henkel-P3-solución"
+    "name_es": "Solución Henkel P3"
   },
   {
     "name": "Heptan, n-",
@@ -46695,7 +46695,7 @@
     "aliases": [
       "Dipropylmethan, n-"
     ],
-    "name_es": "heptano, n-"
+    "name_es": "Heptano, n-"
   },
   {
     "name": "Heptanol, 1-",
@@ -46806,7 +46806,7 @@
     "aliases": [
       "Heptylalkohol"
     ],
-    "name_es": "heptanool, 1-"
+    "name_es": "Heptanol, 1-"
   },
   {
     "name": "Heptanon",
@@ -46914,7 +46914,7 @@
         "c50": "1"
       }
     },
-    "name_es": "heptanoon"
+    "name_es": "Heptanona"
   },
   {
     "name": "Hexachlorbenzol (HCB)",
@@ -47022,7 +47022,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Hexaclorobenceno (HCB)"
+    "name_es": "Hexaclorobenceno (hcb)"
   },
   {
     "name": "Hexachlorbutadien (HCBD)",
@@ -47130,7 +47130,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Hexaclorobutadieno (HCBD)"
+    "name_es": "Hexaclorobutadieno (hcbd)"
   },
   {
     "name": "Hexachlorcyclohexan (HCH)",
@@ -47238,7 +47238,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Hexaclorociclohexano (HCH)"
+    "name_es": "Hexaclorociclohexanoo (hch)"
   },
   {
     "name": "Hexamethylentetramin",
@@ -47352,7 +47352,7 @@
       "Methenamin",
       "Urotropin"
     ],
-    "name_es": "Hexametilentetramina"
+    "name_es": "Hexametilenotetramina"
   },
   {
     "name": "Hexan, n-",
@@ -47460,7 +47460,7 @@
         "c50": "1"
       }
     },
-    "name_es": "hexano, n-"
+    "name_es": "Hexano, n-"
   },
   {
     "name": "Hexanal",
@@ -47573,7 +47573,7 @@
       "Hexaldehyd",
       "Hexylaldehyd"
     ],
-    "name_es": "hexanoal"
+    "name_es": "Hexanoal"
   },
   {
     "name": "Hexanol, (1-)",
@@ -47792,7 +47792,7 @@
         "c50": "1"
       }
     },
-    "name_es": "hexanotriol"
+    "name_es": "Hexanotriol"
   },
   {
     "name": "Hexen, 1-",
@@ -47904,7 +47904,7 @@
       "Butylethylen",
       "Hexylen"
     ],
-    "name_es": "1-Hexeno"
+    "name_es": "Hex-1-Eno"
   },
   {
     "name": "Holzöl",
@@ -48123,7 +48123,7 @@
         "c50": "1"
       }
     },
-    "name_es": "miel"
+    "name_es": "Miel"
   },
   {
     "name": "Hydraulikflüssigkeiten, HFA",
@@ -48771,7 +48771,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aceite hidráulicoe (aceite mineralbasis)"
+    "name_es": "Aceite hidráulicoe (aceite mineralbasis)"
   },
   {
     "name": "Hydrazin",
@@ -48883,7 +48883,7 @@
       "Diamid",
       "Diazan"
     ],
-    "name_es": "Hidracina"
+    "name_es": "Hidrazina"
   },
   {
     "name": "Hydrazinhydrat",
@@ -48994,7 +48994,7 @@
     "aliases": [
       "Hydraziniumhydroxid"
     ],
-    "name_es": "Hidrato de hidracina"
+    "name_es": "Hidrato de hidrazina"
   },
   {
     "name": "Hydrochinon",
@@ -49216,7 +49216,7 @@
     "aliases": [
       "Hydroxylaminsulfat"
     ],
-    "name_es": "Hydroxylammoniumsulfato"
+    "name_es": "Sulfato de hidroxilamonio"
   },
   {
     "name": "Hydroxylammoniumsulfat",
@@ -49327,7 +49327,7 @@
     "aliases": [
       "Hydroxylaminsulfat"
     ],
-    "name_es": "Hydroxylammoniumsulfato"
+    "name_es": "Sulfato de hidroxilamonio"
   },
   {
     "name": "Ingwer",
@@ -50109,7 +50109,7 @@
       "Isopropylalkohol",
       "Propanol, 2-"
     ],
-    "name_es": "Alcohol isopropílico"
+    "name_es": "Isopropanol"
   },
   {
     "name": "Isopropylacetat",
@@ -50665,7 +50665,7 @@
     "aliases": [
       "Triiodmethan"
     ],
-    "name_es": "yodooform"
+    "name_es": "Yodoformo"
   },
   {
     "name": "Jodpentafluorid",
@@ -50773,7 +50773,7 @@
         "c50": "0"
       }
     },
-    "name_es": "yodopentafluoruro"
+    "name_es": "Pentafluoruro de yodo"
   },
   {
     "name": "Jodtinktur",
@@ -50881,7 +50881,7 @@
         "c50": "0L"
       }
     },
-    "name_es": "yodotinktur"
+    "name_es": "Yodotinktur"
   },
   {
     "name": "Kakao",
@@ -51097,7 +51097,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Manteca de cacao"
+    "name_es": "Cacaomantequilla"
   },
   {
     "name": "Kaliumacetat",
@@ -51205,7 +51205,7 @@
         "c50": "1"
       }
     },
-    "name_es": "potasioacetato"
+    "name_es": "Acetato de potasio"
   },
   {
     "name": "Kaliumaluminiumsulfat",
@@ -51317,7 +51317,7 @@
       "Alaune",
       "Kalialaune"
     ],
-    "name_es": "potasioaluminiumsulfato"
+    "name_es": "Sulfato de potasio y aluminio"
   },
   {
     "name": "Kaliumaluminiumsulfat",
@@ -51429,7 +51429,7 @@
       "Alaune",
       "Kalialaune"
     ],
-    "name_es": "potasioaluminiumsulfato"
+    "name_es": "Sulfato de potasio y aluminio"
   },
   {
     "name": "Kaliumborat",
@@ -51972,7 +51972,7 @@
     "aliases": [
       "Bromkalium"
     ],
-    "name_es": "potasiobromuro"
+    "name_es": "Bromuro de potasio"
   },
   {
     "name": "Kaliumcarbonat",
@@ -52083,7 +52083,7 @@
     "aliases": [
       "Pottasche"
     ],
-    "name_es": "potasiocarbonato"
+    "name_es": "Carbonato de potasio"
   },
   {
     "name": "Kaliumcarbonat",
@@ -52194,7 +52194,7 @@
     "aliases": [
       "Pottasche"
     ],
-    "name_es": "potasiocarbonato"
+    "name_es": "Carbonato de potasio"
   },
   {
     "name": "Kaliumchlorat",
@@ -52302,7 +52302,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Clorato De Potasio"
+    "name_es": "Clorato de potasio"
   },
   {
     "name": "Kaliumchlorat",
@@ -52410,7 +52410,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Clorato De Potasio"
+    "name_es": "Clorato de potasio"
   },
   {
     "name": "Kaliumchlorid",
@@ -52521,7 +52521,7 @@
     "aliases": [
       "Chlorkalium"
     ],
-    "name_es": "potasiocloruro"
+    "name_es": "Cloruro de potasio"
   },
   {
     "name": "Kaliumchromat",
@@ -52855,7 +52855,7 @@
       "Cyankali",
       "Cyankalium"
     ],
-    "name_es": "Cianuro De Potasio"
+    "name_es": "Cianuro de potasio"
   },
   {
     "name": "Kaliumcyanid",
@@ -52967,7 +52967,7 @@
       "Cyankali",
       "Cyankalium"
     ],
-    "name_es": "Cianuro De Potasio"
+    "name_es": "Cianuro de potasio"
   },
   {
     "name": "Kaliumdichromat",
@@ -53300,7 +53300,7 @@
     "aliases": [
       "Fluorkalium"
     ],
-    "name_es": "potasiofluoruro"
+    "name_es": "Fluoruro de potasio"
   },
   {
     "name": "Kaliumhydrogencarbonat",
@@ -53411,7 +53411,7 @@
     "aliases": [
       "Kaliumbicarbonat"
     ],
-    "name_es": "potasiohydrogencarbonato"
+    "name_es": "Hidrogenocarbonato de potasio"
   },
   {
     "name": "Kaliumhydrogensulfat",
@@ -53522,7 +53522,7 @@
     "aliases": [
       "Kaliumbisulfat"
     ],
-    "name_es": "potasiohydrogensulfato"
+    "name_es": "Hidrogenosulfato de potasio"
   },
   {
     "name": "Kaliumhydrogensulfat",
@@ -53633,7 +53633,7 @@
     "aliases": [
       "Kaliumbisulfat"
     ],
-    "name_es": "potasiohydrogensulfato"
+    "name_es": "Hidrogenosulfato de potasio"
   },
   {
     "name": "Kaliumhydrogentartat",
@@ -53859,7 +53859,7 @@
       "Caustic Potash",
       "Ätzkali"
     ],
-    "name_es": "potasiohidróxido"
+    "name_es": "Hidróxido de potasio"
   },
   {
     "name": "Kaliumhydroxid",
@@ -53972,7 +53972,7 @@
       "Caustic Potash",
       "Ätzkali"
     ],
-    "name_es": "potasiohidróxido"
+    "name_es": "Hidróxido de potasio"
   },
   {
     "name": "Kaliumhydroxid",
@@ -54085,7 +54085,7 @@
       "Caustic Potash",
       "Ätzkali"
     ],
-    "name_es": "potasiohidróxido"
+    "name_es": "Hidróxido de potasio"
   },
   {
     "name": "Kaliumhydroxid",
@@ -54198,7 +54198,7 @@
       "Caustic Potash",
       "Ätzkali"
     ],
-    "name_es": "potasiohidróxido"
+    "name_es": "Hidróxido de potasio"
   },
   {
     "name": "Kaliumhydroxid",
@@ -54311,7 +54311,7 @@
       "Caustic Potash",
       "Ätzkali"
     ],
-    "name_es": "potasiohidróxido"
+    "name_es": "Hidróxido de potasio"
   },
   {
     "name": "Kaliumhypochlorit",
@@ -54419,7 +54419,7 @@
         "c50": "2L"
       }
     },
-    "name_es": "potasiohypochlorit"
+    "name_es": "Hipoclorito de potasio"
   },
   {
     "name": "Kaliumjodat",
@@ -54860,7 +54860,7 @@
     "aliases": [
       "Kalisalpeter"
     ],
-    "name_es": "potasionitrato"
+    "name_es": "Nitrato de potasio"
   },
   {
     "name": "Kaliumnitrat",
@@ -54971,7 +54971,7 @@
     "aliases": [
       "Kalisalpeter"
     ],
-    "name_es": "potasionitrato"
+    "name_es": "Nitrato de potasio"
   },
   {
     "name": "Kaliumperchlorat",
@@ -55079,7 +55079,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Perclorato De Potasio"
+    "name_es": "Perclorato de potasio"
   },
   {
     "name": "Kaliumperchlorat",
@@ -55187,7 +55187,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Perclorato De Potasio"
+    "name_es": "Perclorato de potasio"
   },
   {
     "name": "Kaliumpermanganat",
@@ -55512,9 +55512,9 @@
       }
     },
     "aliases": [
-      "Kalioumperoxodisulfat"
+      "Kaliumperoxodisulfat"
     ],
-    "name_es": "potasiopersulfato"
+    "name_es": "Persulfato de potasio"
   },
   {
     "name": "Kaliumsulfat",
@@ -55622,7 +55622,7 @@
         "c50": "1"
       }
     },
-    "name_es": "potasiosulfato"
+    "name_es": "Sulfato de potasio"
   },
   {
     "name": "Kaliumsulfid",
@@ -55730,7 +55730,7 @@
         "c50": "1"
       }
     },
-    "name_es": "potasiosulfuro"
+    "name_es": "Sulfuro de potasio"
   },
   {
     "name": "Kaliumsulfit",
@@ -55838,7 +55838,7 @@
         "c50": "0"
       }
     },
-    "name_es": "potasiosulfit"
+    "name_es": "Sulfito de potasio"
   },
   {
     "name": "Kaliumthiosulfat",
@@ -55946,7 +55946,7 @@
         "c50": "1"
       }
     },
-    "name_es": "potasiothiosulfato"
+    "name_es": "Tiosulfato de potasio"
   },
   {
     "name": "Kardamom",
@@ -56162,7 +56162,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Dispersión de caucho"
+    "name_es": "Cauchodispersión"
   },
   {
     "name": "Kerosin",
@@ -56601,7 +56601,7 @@
     "aliases": [
       "Siliciumdioxid"
     ],
-    "name_es": "ácido silícico"
+    "name_es": "Ácido Silícico"
   },
   {
     "name": "Knochenöl",
@@ -56820,7 +56820,7 @@
     "aliases": [
       "Kohlensäure"
     ],
-    "name_es": "dióxido de carbono"
+    "name_es": "Dióxido de carbono"
   },
   {
     "name": "Kohlendioxid, feucht",
@@ -57576,7 +57576,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kraftstoff + 20% etanol"
+    "name_es": "Combustible + 20% etanol"
   },
   {
     "name": "Kraftstoff + 20% Methanol",
@@ -57684,7 +57684,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Kraftstoff + 20% metanol"
+    "name_es": "Combustible + 20% metanol"
   },
   {
     "name": "Kraftstoff, Normal",
@@ -57792,7 +57792,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Combustible, normal"
+    "name_es": "Gasolina Normal"
   },
   {
     "name": "Kraftstoff, Super",
@@ -57900,7 +57900,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Combustible, súper"
+    "name_es": "Gasolina Súper"
   },
   {
     "name": "Kreide",
@@ -58231,7 +58231,7 @@
       "Hydroxytoluol",
       "Methylphenol"
     ],
-    "name_es": "Cresol (mezclas)"
+    "name_es": "Cresol (-mezclae)"
   },
   {
     "name": "Kümmel",
@@ -58447,7 +58447,7 @@
         "c50": "4"
       }
     },
-    "name_es": "cobre-(I)-cloruro"
+    "name_es": "Cloruro de cobre(I)"
   },
   {
     "name": "Kupfer-(II)-chlorid",
@@ -58555,7 +58555,7 @@
         "c50": "4"
       }
     },
-    "name_es": "cobre-(II)-cloruro"
+    "name_es": "Cloruro de cobre(II)"
   },
   {
     "name": "Kupfer-(II)-nitrat",
@@ -58663,7 +58663,7 @@
         "c50": "1"
       }
     },
-    "name_es": "cobre-(II)-nitrato"
+    "name_es": "Nitrato de cobre(II)"
   },
   {
     "name": "Kupfer-(II)-nitrat",
@@ -58771,7 +58771,7 @@
         "c50": "1"
       }
     },
-    "name_es": "cobre-(II)-nitrato"
+    "name_es": "Nitrato de cobre(II)"
   },
   {
     "name": "Kupferacetat",
@@ -58879,7 +58879,7 @@
         "c50": "1"
       }
     },
-    "name_es": "cobreacetato"
+    "name_es": "Acetato de cobre"
   },
   {
     "name": "Kupfercyanid",
@@ -59102,7 +59102,7 @@
     "aliases": [
       "Kupfersulfat, wässrig"
     ],
-    "name_es": "cobrevitriol"
+    "name_es": "Vitriolo de cobre"
   },
   {
     "name": "Lachgas",
@@ -59210,7 +59210,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gas de la risa (óxido nitroso)"
+    "name_es": "Óxido Nitroso"
   },
   {
     "name": "Lactame",
@@ -60089,7 +60089,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Aceite de hígado de bacalao"
+    "name_es": "Aceite de Hígado de Bacalao"
   },
   {
     "name": "Leim (Knochenleim)",
@@ -60197,7 +60197,7 @@
         "c50": "1"
       }
     },
-    "name_es": "cola (Knochenleim)"
+    "name_es": "Cola (cola de huesos)"
   },
   {
     "name": "Leinöl",
@@ -60305,7 +60305,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aceite de linaza"
+    "name_es": "Aceite de linaza"
   },
   {
     "name": "Lemongrasöl",
@@ -60849,7 +60849,7 @@
       "Dipenten",
       "Menthadien-1,8, p-"
     ],
-    "name_es": "DL-Limoneno"
+    "name_es": "Dl-Limoneno"
   },
   {
     "name": "Lithiumbromid",
@@ -60957,7 +60957,7 @@
         "c50": "0"
       }
     },
-    "name_es": "litiobromuro"
+    "name_es": "Bromuro de litio"
   },
   {
     "name": "Lorbeer",
@@ -61173,7 +61173,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Lisol"
+    "name_es": "Lysol"
   },
   {
     "name": "Magnesiumbromid",
@@ -61281,7 +61281,7 @@
         "c50": "0"
       }
     },
-    "name_es": "magnesiobromuro"
+    "name_es": "Bromuro de magnesio"
   },
   {
     "name": "Magnesiumcarbonat",
@@ -61392,7 +61392,7 @@
     "aliases": [
       "Magnesit"
     ],
-    "name_es": "magnesiocarbonato"
+    "name_es": "Carbonato de magnesio"
   },
   {
     "name": "Magnesiumchlorid",
@@ -61500,7 +61500,7 @@
         "c50": "0L"
       }
     },
-    "name_es": "magnesiocloruro"
+    "name_es": "Cloruro de magnesio"
   },
   {
     "name": "Magnesiumchlorit",
@@ -61608,7 +61608,7 @@
         "c50": "0"
       }
     },
-    "name_es": "magnesiochlorit"
+    "name_es": "Clorito de magnesio"
   },
   {
     "name": "Magnesiumhydroxid",
@@ -61716,7 +61716,7 @@
         "c50": "1"
       }
     },
-    "name_es": "magnesiohidróxido"
+    "name_es": "Hidróxido de magnesio"
   },
   {
     "name": "Magnesiumjodid",
@@ -61932,7 +61932,7 @@
         "c50": "0"
       }
     },
-    "name_es": "magnesionitrato"
+    "name_es": "Nitrato de magnesio"
   },
   {
     "name": "Magnesiumsulfat",
@@ -62044,7 +62044,7 @@
       "Bittersalz",
       "Epsom-Salz"
     ],
-    "name_es": "magnesiosulfato"
+    "name_es": "Sulfato de magnesio"
   },
   {
     "name": "Maiskeimöl",
@@ -62482,7 +62482,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Aceite de almendra"
+    "name_es": "Aceite de almendras"
   },
   {
     "name": "Margarine",
@@ -62698,7 +62698,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Mbajo enelade"
+    "name_es": "Mermelada"
   },
   {
     "name": "Maschinenöl",
@@ -63022,7 +63022,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Mosto de melaza"
+    "name_es": "Mosto de Melaza"
   },
   {
     "name": "Menthol",
@@ -63579,7 +63579,7 @@
       "Holzgeist",
       "Methylalkohol"
     ],
-    "name_es": "metanol"
+    "name_es": "Metanol"
   },
   {
     "name": "Methoxybutanol",
@@ -63801,7 +63801,7 @@
     "aliases": [
       "Ölsäuremethoxyethylester"
     ],
-    "name_es": "Oleato de metoxietilo"
+    "name_es": "Metoxietiloleato"
   },
   {
     "name": "Methyethylether",
@@ -63909,7 +63909,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Éter metil etílico"
+    "name_es": "Éter metiletílico"
   },
   {
     "name": "Methylacrylat",
@@ -64021,7 +64021,7 @@
       "Acrylsäuremethylester",
       "Methylpropenoat"
     ],
-    "name_es": "Acrilato de metilo"
+    "name_es": "Macrilato de etilo"
   },
   {
     "name": "Methylamin, (Mono-)",
@@ -64133,7 +64133,7 @@
       "Aminomethan",
       "Methanamin"
     ],
-    "name_es": "Metilamina (mono-)"
+    "name_es": "Metilaminaa, (mono-)"
   },
   {
     "name": "Methylbenzol",
@@ -64245,7 +64245,7 @@
       "Toluen",
       "Toluol"
     ],
-    "name_es": "Metilbenceno (tolueno)"
+    "name_es": "Metilbenceno"
   },
   {
     "name": "Methylbutanol",
@@ -64467,7 +64467,7 @@
     "aliases": [
       "Hexanon-2"
     ],
-    "name_es": "Metilbutilcetona"
+    "name_es": "Metilbutylcetona"
   },
   {
     "name": "Methylchloracetat",
@@ -65018,7 +65018,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Metiletilcetona (MEK)"
+    "name_es": "Metiletilcetona (mek)"
   },
   {
     "name": "Methylformiat",
@@ -65578,7 +65578,7 @@
     "aliases": [
       "Ölsäuremethylester"
     ],
-    "name_es": "Oleato de metilo"
+    "name_es": "Metiloleato"
   },
   {
     "name": "Methylpropylketon",
@@ -65689,7 +65689,7 @@
     "aliases": [
       "Pentanon, 2-"
     ],
-    "name_es": "Metilpropilcetona"
+    "name_es": "Metilpropylcetona"
   },
   {
     "name": "Methylsalicylat",
@@ -66131,7 +66131,7 @@
         "c50": "1"
       }
     },
-    "name_es": "leche"
+    "name_es": "Leche"
   },
   {
     "name": "Milchsäure",
@@ -66242,7 +66242,7 @@
     "aliases": [
       "Hydroxypropionsäure, 2-"
     ],
-    "name_es": "ácido láctico"
+    "name_es": "Ácido Láctico"
   },
   {
     "name": "Milchsäure",
@@ -66353,7 +66353,7 @@
     "aliases": [
       "Hydroxypropionsäure, 2-"
     ],
-    "name_es": "ácido láctico"
+    "name_es": "Ácido Láctico"
   },
   {
     "name": "Milchsäure",
@@ -66464,7 +66464,7 @@
     "aliases": [
       "Hydroxypropionsäure, 2-"
     ],
-    "name_es": "ácido láctico"
+    "name_es": "Ácido Láctico"
   },
   {
     "name": "Mineralöl",
@@ -66572,7 +66572,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aceite mineral"
+    "name_es": "Aceite Mineral"
   },
   {
     "name": "Mineralwasser",
@@ -67223,7 +67223,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nuez moscada"
+    "name_es": "Nuez Moscada"
   },
   {
     "name": "Muskatnussöl",
@@ -67439,7 +67439,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Quitaesmalte"
+    "name_es": "Quitaesmalte de uñas"
   },
   {
     "name": "Naphtha",
@@ -67763,7 +67763,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Naphthalin (in alcohol)"
+    "name_es": "Naftaleno (in alcohol)"
   },
   {
     "name": "Natriumacetat",
@@ -67871,7 +67871,7 @@
         "c50": "1"
       }
     },
-    "name_es": "sodioacetato"
+    "name_es": "Acetato de sodio"
   },
   {
     "name": "Natriumaluminiumsulfat",
@@ -67979,7 +67979,7 @@
         "c50": "1"
       }
     },
-    "name_es": "sodioaluminiumsulfato"
+    "name_es": "Sulfato de sodio y aluminio"
   },
   {
     "name": "Natriumbenzoat",
@@ -68090,7 +68090,7 @@
     "aliases": [
       "Benzoesäure Natriumsalz"
     ],
-    "name_es": "Benzoato De Sodio"
+    "name_es": "Benzoato de sodio"
   },
   {
     "name": "Natriumbenzoat",
@@ -68201,7 +68201,7 @@
     "aliases": [
       "Benzoesäure Natriumsalz"
     ],
-    "name_es": "Benzoato De Sodio"
+    "name_es": "Benzoato de sodio"
   },
   {
     "name": "Natriumbenzoat",
@@ -68312,7 +68312,7 @@
     "aliases": [
       "Benzoesäure Natriumsalz"
     ],
-    "name_es": "Benzoato De Sodio"
+    "name_es": "Benzoato de sodio"
   },
   {
     "name": "Natriumbicarbonat",
@@ -68423,7 +68423,7 @@
     "aliases": [
       "Natriumhydrogencarbonat"
     ],
-    "name_es": "sodiobicarbonato"
+    "name_es": "Bicarbonato de sodio"
   },
   {
     "name": "Natriumbisulfat",
@@ -68534,7 +68534,7 @@
     "aliases": [
       "Natriumhydrogensulfat"
     ],
-    "name_es": "sodiobisulfato"
+    "name_es": "Bisulfato de sodio"
   },
   {
     "name": "Natriumbisulfat",
@@ -68645,7 +68645,7 @@
     "aliases": [
       "Natriumhydrogensulfat"
     ],
-    "name_es": "sodiobisulfato"
+    "name_es": "Bisulfato de sodio"
   },
   {
     "name": "Natriumbisulfit",
@@ -68757,7 +68757,7 @@
       "Bisulfit",
       "Natriumhydrogensulfit"
     ],
-    "name_es": "sodiobisulfit"
+    "name_es": "Bisulfito de sodio"
   },
   {
     "name": "Natriumborat",
@@ -69197,7 +69197,7 @@
         "c50": "0"
       }
     },
-    "name_es": "sodiobromuro"
+    "name_es": "Bromuro de sodio"
   },
   {
     "name": "Natriumcarbonat",
@@ -69308,7 +69308,7 @@
     "aliases": [
       "Soda"
     ],
-    "name_es": "sodiocarbonato"
+    "name_es": "Carbonato de sodio"
   },
   {
     "name": "Natriumcarbonat",
@@ -69419,7 +69419,7 @@
     "aliases": [
       "Soda"
     ],
-    "name_es": "sodiocarbonato"
+    "name_es": "Carbonato de sodio"
   },
   {
     "name": "Natriumcarbonat",
@@ -69530,7 +69530,7 @@
     "aliases": [
       "Soda"
     ],
-    "name_es": "sodiocarbonato"
+    "name_es": "Carbonato de sodio"
   },
   {
     "name": "Natriumchlorat",
@@ -69638,7 +69638,7 @@
         "c50": "1L"
       }
     },
-    "name_es": "Clorato De Sodio"
+    "name_es": "Clorato de sodio"
   },
   {
     "name": "Natriumchlorat",
@@ -69746,7 +69746,7 @@
         "c50": "1L"
       }
     },
-    "name_es": "Clorato De Sodio"
+    "name_es": "Clorato de sodio"
   },
   {
     "name": "Natriumchlorid",
@@ -69857,7 +69857,7 @@
     "aliases": [
       "Kochsalz"
     ],
-    "name_es": "sodiocloruro"
+    "name_es": "Cloruro de sodio"
   },
   {
     "name": "Natriumchlorid",
@@ -69968,7 +69968,7 @@
     "aliases": [
       "Kochsalz"
     ],
-    "name_es": "sodiocloruro"
+    "name_es": "Cloruro de sodio"
   },
   {
     "name": "Natriumchlorit",
@@ -70076,7 +70076,7 @@
         "c50": "3"
       }
     },
-    "name_es": "sodiochlorit"
+    "name_es": "Clorito de sodio"
   },
   {
     "name": "Natriumchromat",
@@ -70295,7 +70295,7 @@
     "aliases": [
       "Cyannatrium"
     ],
-    "name_es": "Cianuro De Sodio"
+    "name_es": "Cianuro de sodio"
   },
   {
     "name": "Natriumcyanid",
@@ -70406,7 +70406,7 @@
     "aliases": [
       "Cyannatrium"
     ],
-    "name_es": "Cianuro De Sodio"
+    "name_es": "Cianuro de sodio"
   },
   {
     "name": "Natriumdichromat",
@@ -70515,7 +70515,7 @@
       }
     },
     "aliases": [
-      "Matriumpyrochromat",
+      "Natriumpyrochromat",
       "Natriumbichromat"
     ],
     "name_es": "Dicromato de sodio"
@@ -70628,11 +70628,11 @@
     },
     "aliases": [
       "Disulfit",
-      "Matriummetabisulfit",
+      "Natriummetabisulfit",
       "Natriumpyrosulfit",
       "Pyrosulfit"
     ],
-    "name_es": "sodiodisulfit"
+    "name_es": "Disulfito de sodio"
   },
   {
     "name": "Natriumdithionit",
@@ -70745,7 +70745,7 @@
       "Natriumhydrosulfit",
       "Natriumhypodisulfit"
     ],
-    "name_es": "sodiodithionit"
+    "name_es": "Ditionito de sodio"
   },
   {
     "name": "Natriumdithionit",
@@ -70858,7 +70858,7 @@
       "Natriumhydrosulfit",
       "Natriumhypodisulfit"
     ],
-    "name_es": "sodiodithionit"
+    "name_es": "Ditionito de sodio"
   },
   {
     "name": "Natriumdodecylbenzolsulfonat",
@@ -71074,7 +71074,7 @@
         "c50": "0"
       }
     },
-    "name_es": "sodiofluoruro"
+    "name_es": "Fluoruro de sodio"
   },
   {
     "name": "Natriumhexacyanoferrat-(II)",
@@ -71290,7 +71290,7 @@
         "c50": "0"
       }
     },
-    "name_es": "sodiohexametafosfato"
+    "name_es": "Hexametafosfato de sodio"
   },
   {
     "name": "Natriumhydroxid",
@@ -71404,7 +71404,7 @@
       "Lye",
       "Ätznatron"
     ],
-    "name_es": "sodiohidróxido"
+    "name_es": "Hidróxido de sodio"
   },
   {
     "name": "Natriumhydroxid",
@@ -71518,7 +71518,7 @@
       "Lye",
       "Ätznatron"
     ],
-    "name_es": "sodiohidróxido"
+    "name_es": "Hidróxido de sodio"
   },
   {
     "name": "Natriumhydroxid",
@@ -71632,7 +71632,7 @@
       "Lye",
       "Ätznatron"
     ],
-    "name_es": "sodiohidróxido"
+    "name_es": "Hidróxido de sodio"
   },
   {
     "name": "Natriumhydroxid",
@@ -71746,7 +71746,7 @@
       "Lye",
       "Ätznatron"
     ],
-    "name_es": "sodiohidróxido"
+    "name_es": "Hidróxido de sodio"
   },
   {
     "name": "Natriumhydroxid",
@@ -71860,7 +71860,7 @@
       "Lye",
       "Ätznatron"
     ],
-    "name_es": "sodiohidróxido"
+    "name_es": "Hidróxido de sodio"
   },
   {
     "name": "Natriumhydroxid",
@@ -71974,7 +71974,7 @@
       "Lye",
       "Ätznatron"
     ],
-    "name_es": "sodiohidróxido"
+    "name_es": "Hidróxido de sodio"
   },
   {
     "name": "Natriumhypochlorit",
@@ -72087,7 +72087,7 @@
       "Eau de Labarraque",
       "Natronbleichlauge"
     ],
-    "name_es": "sodiohypochlorit"
+    "name_es": "Hipoclorito de sodio"
   },
   {
     "name": "Natriumhypochlorit",
@@ -72200,7 +72200,7 @@
       "Eau de Labarraque",
       "Natronbleichlauge"
     ],
-    "name_es": "sodiohypochlorit"
+    "name_es": "Hipoclorito de sodio"
   },
   {
     "name": "Natriumhypochlorit",
@@ -72313,7 +72313,7 @@
       "Eau de Labarraque",
       "Natronbleichlauge"
     ],
-    "name_es": "sodiohypochlorit"
+    "name_es": "Hipoclorito de sodio"
   },
   {
     "name": "Natriumhypochlorit",
@@ -72426,7 +72426,7 @@
       "Eau de Labarraque",
       "Natronbleichlauge"
     ],
-    "name_es": "sodiohypochlorit"
+    "name_es": "Hipoclorito de sodio"
   },
   {
     "name": "Natriumjodid",
@@ -72645,7 +72645,7 @@
     "aliases": [
       "Natronsalpeter"
     ],
-    "name_es": "sodionitrato"
+    "name_es": "Nitrato de sodio"
   },
   {
     "name": "Natriumnitrat",
@@ -72756,7 +72756,7 @@
     "aliases": [
       "Natronsalpeter"
     ],
-    "name_es": "sodionitrato"
+    "name_es": "Nitrato de sodio"
   },
   {
     "name": "Natriumnitrit",
@@ -72864,7 +72864,7 @@
         "c50": "1"
       }
     },
-    "name_es": "sodionitrito"
+    "name_es": "Nitrito de sodio"
   },
   {
     "name": "Natriumnitrit",
@@ -72972,7 +72972,7 @@
         "c50": "1"
       }
     },
-    "name_es": "sodionitrito"
+    "name_es": "Nitrito de sodio"
   },
   {
     "name": "Natriumoxalat",
@@ -73083,7 +73083,7 @@
     "aliases": [
       "Oxalsäure Natriumsalz"
     ],
-    "name_es": "Oxalato De Sodio"
+    "name_es": "Oxalato de sodio"
   },
   {
     "name": "Natriumperborat",
@@ -73413,7 +73413,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Perclorato De Sodio"
+    "name_es": "Perclorato de sodio"
   },
   {
     "name": "Natriumperoxid",
@@ -73521,7 +73521,7 @@
         "c50": "1"
       }
     },
-    "name_es": "sodioperóxido"
+    "name_es": "Peróxido de sodio"
   },
   {
     "name": "Natriumperoxid",
@@ -73629,7 +73629,7 @@
         "c50": "2"
       }
     },
-    "name_es": "sodioperóxido"
+    "name_es": "Peróxido de sodio"
   },
   {
     "name": "Natriumpersulfat",
@@ -73740,7 +73740,7 @@
     "aliases": [
       "Natriumperoxodisulfat"
     ],
-    "name_es": "sodiopersulfato"
+    "name_es": "Persulfato de sodio"
   },
   {
     "name": "Natriumphosphat",
@@ -73852,7 +73852,7 @@
       "Natriumphosphat-Dodecahydrat",
       "Trinatriumphosphat, tribasisch"
     ],
-    "name_es": "sodiofosfato"
+    "name_es": "Fosfato de sodio"
   },
   {
     "name": "Natriumphosphat",
@@ -73964,7 +73964,7 @@
       "Natriumphosphat-Dodecahydrat",
       "Trinatriumphosphat, tribasisch"
     ],
-    "name_es": "sodiofosfato"
+    "name_es": "Fosfato de sodio"
   },
   {
     "name": "Natriumsilicat",
@@ -74183,7 +74183,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Estearato De Sodio"
+    "name_es": "Estearato de sodio"
   },
   {
     "name": "Natriumsulfat",
@@ -74295,7 +74295,7 @@
       "Dinatriumsulfat",
       "Glaubersalz"
     ],
-    "name_es": "sodiosulfato"
+    "name_es": "Sulfato de sodio"
   },
   {
     "name": "Natriumsulfat",
@@ -74407,7 +74407,7 @@
       "Dinatriumsulfat",
       "Glaubersalz"
     ],
-    "name_es": "sodiosulfato"
+    "name_es": "Sulfato de sodio"
   },
   {
     "name": "Natriumsulfat",
@@ -74519,7 +74519,7 @@
       "Dinatriumsulfat",
       "Glaubersalz"
     ],
-    "name_es": "sodiosulfato"
+    "name_es": "Sulfato de sodio"
   },
   {
     "name": "Natriumsulfid",
@@ -74630,7 +74630,7 @@
     "aliases": [
       "Schwefelnatrium"
     ],
-    "name_es": "sodiosulfuro"
+    "name_es": "Sulfuro de sodio"
   },
   {
     "name": "Natriumsulfid",
@@ -74741,7 +74741,7 @@
     "aliases": [
       "Schwefelnatrium"
     ],
-    "name_es": "sodiosulfuro"
+    "name_es": "Sulfuro de sodio"
   },
   {
     "name": "Natriumsulfit",
@@ -74849,7 +74849,7 @@
         "c50": "1"
       }
     },
-    "name_es": "sodiosulfit"
+    "name_es": "Sulfito de sodio"
   },
   {
     "name": "Natriumthiosulfat",
@@ -74961,7 +74961,7 @@
       "Fixiersalz",
       "Natriumthiosulfat-5-hydrat"
     ],
-    "name_es": "sodiothiosulfato"
+    "name_es": "Tiosulfato de sodio"
   },
   {
     "name": "Natriumthiosulfat",
@@ -75073,7 +75073,7 @@
       "Fixiersalz",
       "Natriumthiosulfat-5-hydrat"
     ],
-    "name_es": "sodiothiosulfato"
+    "name_es": "Tiosulfato de sodio"
   },
   {
     "name": "Natriumthiosulfat",
@@ -75185,7 +75185,7 @@
       "Fixiersalz",
       "Natriumthiosulfat-5-hydrat"
     ],
-    "name_es": "sodiothiosulfato"
+    "name_es": "Tiosulfato de sodio"
   },
   {
     "name": "Nelken",
@@ -75293,7 +75293,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Clavos de olor"
+    "name_es": "Clavo"
   },
   {
     "name": "Neon",
@@ -75401,7 +75401,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Neón"
+    "name_es": "Neon"
   },
   {
     "name": "Netzmittel",
@@ -75512,7 +75512,7 @@
     "aliases": [
       "Tenside"
     ],
-    "name_es": "Agentes humectantes"
+    "name_es": "Agentes Humectantes"
   },
   {
     "name": "Nickel-(II)-chlorid",
@@ -75623,7 +75623,7 @@
     "aliases": [
       "Chlornickel"
     ],
-    "name_es": "níquel-(II)-cloruro"
+    "name_es": "Cloruro de níquel(II)"
   },
   {
     "name": "Nickel-(II)-chlorid",
@@ -75734,7 +75734,7 @@
     "aliases": [
       "Chlornickel"
     ],
-    "name_es": "níquel-(II)-cloruro"
+    "name_es": "Cloruro de níquel(II)"
   },
   {
     "name": "Nickelacetat",
@@ -75842,7 +75842,7 @@
         "c50": "0"
       }
     },
-    "name_es": "níquelacetato"
+    "name_es": "Acetato de níquel"
   },
   {
     "name": "Nickelnitrat",
@@ -75950,7 +75950,7 @@
         "c50": "0"
       }
     },
-    "name_es": "níquelnitrato"
+    "name_es": "Nitrato de níquel"
   },
   {
     "name": "Nickelsulfat",
@@ -76058,7 +76058,7 @@
         "c50": "1"
       }
     },
-    "name_es": "níquelsulfato"
+    "name_es": "Sulfato de níquel"
   },
   {
     "name": "Nickelsulfat",
@@ -76166,7 +76166,7 @@
         "c50": "1"
       }
     },
-    "name_es": "níquelsulfato"
+    "name_es": "Sulfato de níquel"
   },
   {
     "name": "Nicotin",
@@ -77148,7 +77148,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Gases nitrosos"
+    "name_es": "Gases Nitrosos"
   },
   {
     "name": "Nitrotoluole",
@@ -77256,7 +77256,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Nitrotoluenos"
+    "name_es": "Nitrotoluenoe"
   },
   {
     "name": "Nitroverdünnung",
@@ -77364,7 +77364,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Diluyente nitro"
+    "name_es": "Diluyente Nitro"
   },
   {
     "name": "Nonanol",
@@ -77583,7 +77583,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Pulpa de fruta"
+    "name_es": "Pulpa de frutas"
   },
   {
     "name": "Obstwein",
@@ -77910,7 +77910,7 @@
         "c50": "1"
       }
     },
-    "name_es": "n-Octano"
+    "name_es": "Octano, n-"
   },
   {
     "name": "Octylalkohol, -n",
@@ -78021,7 +78021,7 @@
     "aliases": [
       "Octanol, 1-"
     ],
-    "name_es": "Octyl Alcohol, -n"
+    "name_es": "Alcohol Octílico, -n"
   },
   {
     "name": "Octylkresol",
@@ -78129,7 +78129,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Octilcresol"
+    "name_es": "Octylcresol"
   },
   {
     "name": "Öle und Fette, pflanzlich",
@@ -78561,7 +78561,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Vapores de óleum"
+    "name_es": "Vapores de Óleum"
   },
   {
     "name": "Olivenöl",
@@ -78669,7 +78669,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aceite de oliva"
+    "name_es": "Aceite de oliva"
   },
   {
     "name": "Ölsäure",
@@ -78781,7 +78781,7 @@
       "Octadec-9-ensäure, cis-",
       "Olein"
     ],
-    "name_es": "Ácido oleico"
+    "name_es": "Ácido Oleico"
   },
   {
     "name": "Oxalsäure",
@@ -78892,7 +78892,7 @@
     "aliases": [
       "Ethandisäure"
     ],
-    "name_es": "ácido oxálico"
+    "name_es": "Ácido Oxálico"
   },
   {
     "name": "Oxalsäure",
@@ -79003,7 +79003,7 @@
     "aliases": [
       "Ethandisäure"
     ],
-    "name_es": "ácido oxálico"
+    "name_es": "Ácido Oxálico"
   },
   {
     "name": "Oxymethylfurfurol, 5-",
@@ -79114,7 +79114,7 @@
     "aliases": [
       "Hydroxymethylfurfural, 5-"
     ],
-    "name_es": "5-Oximetilfurfural"
+    "name_es": "5-Hidroximetilfurfural"
   },
   {
     "name": "Ozon",
@@ -79222,7 +79222,7 @@
         "c50": "0"
       }
     },
-    "name_es": "ozono"
+    "name_es": "Ozono"
   },
   {
     "name": "Ozon-Luft-Gemisch",
@@ -79443,7 +79443,7 @@
       "Fettsäure C16",
       "Hexadecansäure"
     ],
-    "name_es": "Ácido palmítico"
+    "name_es": "Ácido Palmítico"
   },
   {
     "name": "Palmkernöl",
@@ -79767,7 +79767,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Parafinas"
+    "name_es": "Parafinae"
   },
   {
     "name": "Paraffinemulsion",
@@ -79875,7 +79875,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Emulsión de parafina"
+    "name_es": "Parafinaemulsión"
   },
   {
     "name": "Paraffinwachs",
@@ -80635,7 +80635,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Pentaclorodifenilo"
+    "name_es": "Pentaclorodifenil"
   },
   {
     "name": "Pentan",
@@ -80859,7 +80859,7 @@
       "Amylhydrosulfid",
       "Amylmercaptan"
     ],
-    "name_es": "1-Pentanotiol"
+    "name_es": "Pentanotiol, 1-"
   },
   {
     "name": "Perchlorethylen (PER)",
@@ -80967,7 +80967,7 @@
         "c50": "0"
       }
     },
-    "name_es": "percloroetileno (PER)"
+    "name_es": "Percloroetileno (per)"
   },
   {
     "name": "Perchlorsäure",
@@ -81078,7 +81078,7 @@
     "aliases": [
       "Überchlorsäure"
     ],
-    "name_es": "ácido perclórico"
+    "name_es": "Ácido Perclórico"
   },
   {
     "name": "Perchlorsäure",
@@ -81189,7 +81189,7 @@
     "aliases": [
       "Überchlorsäure"
     ],
-    "name_es": "ácido perclórico"
+    "name_es": "Ácido Perclórico"
   },
   {
     "name": "Perfluorpropan",
@@ -81300,7 +81300,7 @@
     "aliases": [
       "Freon 218"
     ],
-    "name_es": "Perfluoropropano"
+    "name_es": "Perflúorpropano"
   },
   {
     "name": "Petrolether",
@@ -82176,7 +82176,7 @@
         "c50": "1"
       }
     },
-    "name_es": "fenolharzformmasse"
+    "name_es": "Fenolresinaformmasse"
   },
   {
     "name": "Phenylethanol",
@@ -82510,7 +82510,7 @@
     "aliases": [
       "Hydrazinobenzol"
     ],
-    "name_es": "Fenilhidracina"
+    "name_es": "Fenilhidrazina"
   },
   {
     "name": "Phenylhydrazin-HCl",
@@ -82621,7 +82621,7 @@
     "aliases": [
       "Phenylhydrazinchlorhydrat"
     ],
-    "name_es": "Fenilhidracina-HCl"
+    "name_es": "Fenilhidrazina-hcl"
   },
   {
     "name": "Phenylsulfonat",
@@ -83061,7 +83061,7 @@
         "c50": "1"
       }
     },
-    "name_es": "fosfatoe"
+    "name_es": "Fosfatoe"
   },
   {
     "name": "Phosphin",
@@ -83285,7 +83285,7 @@
       "Trichlorphosphinoxid",
       "Trichlorphosphoroxid"
     ],
-    "name_es": "fósforooxycloruro"
+    "name_es": "Oxicloruro de fósforo"
   },
   {
     "name": "Phosphoroxychlorid",
@@ -83398,7 +83398,7 @@
       "Trichlorphosphinoxid",
       "Trichlorphosphoroxid"
     ],
-    "name_es": "fósforooxycloruro"
+    "name_es": "Oxicloruro de fósforo"
   },
   {
     "name": "Phosphorpentachlorid",
@@ -83510,7 +83510,7 @@
       "Phosphorperchlorid",
       "Phosphorsäurechlorid"
     ],
-    "name_es": "fósforopentacloruro"
+    "name_es": "Pentacloruro de fósforo"
   },
   {
     "name": "Phosphorpentoxid",
@@ -83623,7 +83623,7 @@
       "Phosphorsäureanhydrid",
       "Tetraphosphordecaoxid"
     ],
-    "name_es": "fósforopentóxido"
+    "name_es": "Pentóxido de fósforo"
   },
   {
     "name": "Phosphorsäure",
@@ -83734,7 +83734,7 @@
     "aliases": [
       "Orthophosphorsäure"
     ],
-    "name_es": "ácido fosfórico"
+    "name_es": "Ácido Fosfórico"
   },
   {
     "name": "Phosphorsäure",
@@ -83845,7 +83845,7 @@
     "aliases": [
       "Orthophosphorsäure"
     ],
-    "name_es": "ácido fosfórico"
+    "name_es": "Ácido Fosfórico"
   },
   {
     "name": "Phosphorsäure",
@@ -83956,7 +83956,7 @@
     "aliases": [
       "Orthophosphorsäure"
     ],
-    "name_es": "ácido fosfórico"
+    "name_es": "Ácido Fosfórico"
   },
   {
     "name": "Phosphorsäure",
@@ -84067,7 +84067,7 @@
     "aliases": [
       "Orthophosphorsäure"
     ],
-    "name_es": "ácido fosfórico"
+    "name_es": "Ácido Fosfórico"
   },
   {
     "name": "Phosphortrichlorid",
@@ -84179,7 +84179,7 @@
       "Phosphor-(III)-chlorid",
       "Trichlorphosphin"
     ],
-    "name_es": "fósforotricloruro"
+    "name_es": "Tricloruro de fósforo"
   },
   {
     "name": "Phthalsäure",
@@ -84731,7 +84731,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Pimienta de Jamaica"
+    "name_es": "Pimiento"
   },
   {
     "name": "Piperidin",
@@ -85063,7 +85063,7 @@
       "Polyglycol",
       "Polyoxyethylen"
     ],
-    "name_es": "Polietilenglicol"
+    "name_es": "Polyetilenoglicol"
   },
   {
     "name": "Polyran M25 N",
@@ -85603,7 +85603,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Aire comprimido"
+    "name_es": "Pressaire"
   },
   {
     "name": "Prontosil",
@@ -86040,7 +86040,7 @@
       "Hydroxypropan",
       "Propylalkohol"
     ],
-    "name_es": "propanol"
+    "name_es": "Propanol"
   },
   {
     "name": "Propargylalkohol",
@@ -86709,7 +86709,7 @@
     "aliases": [
       "Aminopropan"
     ],
-    "name_es": "n-Propilamina"
+    "name_es": "Propilaminaa, n-"
   },
   {
     "name": "Propylenglycol",
@@ -86820,7 +86820,7 @@
     "aliases": [
       "Propandiol, 1,2-"
     ],
-    "name_es": "Propilenglicol"
+    "name_es": "Propilenoglicol"
   },
   {
     "name": "Propylenglycolmethylether",
@@ -87913,7 +87913,7 @@
         "c50": "1"
       }
     },
-    "name_es": "mercurio"
+    "name_es": "Mercurio"
   },
   {
     "name": "Quecksilber-(II)-chlorid",
@@ -88021,7 +88021,7 @@
         "c50": "4"
       }
     },
-    "name_es": "mercurio-(II)-cloruro"
+    "name_es": "Cloruro de mercurio(II)"
   },
   {
     "name": "Quecksilber-(II)-cyanid",
@@ -88129,7 +88129,7 @@
         "c50": "0"
       }
     },
-    "name_es": "mercurio-(II)-cyanid"
+    "name_es": "Cianuro de mercurio(II)"
   },
   {
     "name": "Quecksilbernitrat",
@@ -88241,7 +88241,7 @@
       "Quecksilber-(II)-nitrat",
       "Quecksilberpernitrat"
     ],
-    "name_es": "mercurionitrato"
+    "name_es": "Nitrato de mercurio"
   },
   {
     "name": "Ramasit",
@@ -88679,7 +88679,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Sebo de res"
+    "name_es": "Sebo de Vaca"
   },
   {
     "name": "Rindertalg-Emulsion",
@@ -88787,7 +88787,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Emulsión de sebo de res"
+    "name_es": "Emulsión de sebo de vacuno"
   },
   {
     "name": "Rizinusöl",
@@ -89219,7 +89219,7 @@
         "c50": "2"
       }
     },
-    "name_es": "Gases de tostado"
+    "name_es": "Gases de Tostación"
   },
   {
     "name": "Rüböl",
@@ -89543,7 +89543,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Sagrotan (desinfectante)"
+    "name_es": "Sagrotan"
   },
   {
     "name": "Salicylaldehyd",
@@ -89654,7 +89654,7 @@
     "aliases": [
       "Hydroxybenzaldehyd, 2-"
     ],
-    "name_es": "Salicilaldehído"
+    "name_es": "Salicylaldehído"
   },
   {
     "name": "Salicylsäure",
@@ -89986,7 +89986,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Ácido nítrico"
+    "name_es": "Ácido Nítrico"
   },
   {
     "name": "Salpetersäure",
@@ -90094,7 +90094,7 @@
         "c50": "2"
       }
     },
-    "name_es": "Ácido nítrico"
+    "name_es": "Ácido Nítrico"
   },
   {
     "name": "Salpetersäure",
@@ -90202,7 +90202,7 @@
         "c50": "2"
       }
     },
-    "name_es": "Ácido nítrico"
+    "name_es": "Ácido Nítrico"
   },
   {
     "name": "Salpetersäure",
@@ -90310,7 +90310,7 @@
         "c50": "3"
       }
     },
-    "name_es": "Ácido nítrico"
+    "name_es": "Ácido Nítrico"
   },
   {
     "name": "Salpetersäure",
@@ -90418,7 +90418,7 @@
         "c50": "2"
       }
     },
-    "name_es": "Ácido nítrico"
+    "name_es": "Ácido Nítrico"
   },
   {
     "name": "Salzsäure",
@@ -90529,7 +90529,7 @@
     "aliases": [
       "Chlorwasserstoffsäure"
     ],
-    "name_es": "ácido clorhídrico"
+    "name_es": "Ácido Clorhídrico"
   },
   {
     "name": "Salzsäure",
@@ -90640,7 +90640,7 @@
     "aliases": [
       "Chlorwasserstoffsäure"
     ],
-    "name_es": "ácido clorhídrico"
+    "name_es": "Ácido Clorhídrico"
   },
   {
     "name": "Salzsäure",
@@ -90751,7 +90751,7 @@
     "aliases": [
       "Chlorwasserstoffsäure"
     ],
-    "name_es": "ácido clorhídrico"
+    "name_es": "Ácido Clorhídrico"
   },
   {
     "name": "Salzsäure",
@@ -90862,7 +90862,7 @@
     "aliases": [
       "Chlorwasserstoffsäure"
     ],
-    "name_es": "ácido clorhídrico"
+    "name_es": "Ácido Clorhídrico"
   },
   {
     "name": "Salzsole",
@@ -90970,7 +90970,7 @@
         "c50": "2"
       }
     },
-    "name_es": "salsole"
+    "name_es": "Salsalmuera"
   },
   {
     "name": "Salzwasser, Meerwasser",
@@ -91190,7 +91190,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Condensado de vapor saturado"
+    "name_es": "Condensado de Vapor Saturado"
   },
   {
     "name": "Sauerstoff",
@@ -91298,7 +91298,7 @@
         "c50": "1"
       }
     },
-    "name_es": "oxígeno"
+    "name_es": "Oxígeno"
   },
   {
     "name": "Schmieröle",
@@ -91406,7 +91406,7 @@
         "c50": "1"
       }
     },
-    "name_es": "aceite lubricantee"
+    "name_es": "Aceite lubricanté"
   },
   {
     "name": "Schmierseife",
@@ -91622,7 +91622,7 @@
         "c50": "1"
       }
     },
-    "name_es": "azufre"
+    "name_es": "Azufre"
   },
   {
     "name": "Schwefel, geschmolzen, 121 °C",
@@ -91842,7 +91842,7 @@
       "Dischwefeldichlorid",
       "Schwefelmonochlorid"
     ],
-    "name_es": "azufrecloruro"
+    "name_es": "Cloruro de azufre"
   },
   {
     "name": "Schwefeldioxid",
@@ -91950,7 +91950,7 @@
         "c50": "1"
       }
     },
-    "name_es": "dióxido de azufre"
+    "name_es": "Dióxido de azufre"
   },
   {
     "name": "Schwefeldioxid",
@@ -92058,7 +92058,7 @@
         "c50": "1"
       }
     },
-    "name_es": "dióxido de azufre"
+    "name_es": "Dióxido de azufre"
   },
   {
     "name": "Schwefelhexafluorid",
@@ -92166,7 +92166,7 @@
         "c50": "1"
       }
     },
-    "name_es": "azufrehexafluoruro"
+    "name_es": "Hexafluoruro de azufre"
   },
   {
     "name": "Schwefelkohlenstoff",
@@ -92278,7 +92278,7 @@
       "Carbondisulfid",
       "Kohlen(stoff)disulfid"
     ],
-    "name_es": "Disulfuro De Carbono"
+    "name_es": "Disulfuro de carbono"
   },
   {
     "name": "Schwefelsäure",
@@ -92386,7 +92386,7 @@
         "c50": "3"
       }
     },
-    "name_es": "ácido sulfúrico"
+    "name_es": "Ácido Sulfúrico"
   },
   {
     "name": "Schwefelsäure",
@@ -92494,7 +92494,7 @@
         "c50": "4"
       }
     },
-    "name_es": "ácido sulfúrico"
+    "name_es": "Ácido Sulfúrico"
   },
   {
     "name": "Schwefelsäure",
@@ -92602,7 +92602,7 @@
         "c50": "3"
       }
     },
-    "name_es": "ácido sulfúrico"
+    "name_es": "Ácido Sulfúrico"
   },
   {
     "name": "Schwefelsäure",
@@ -92710,7 +92710,7 @@
         "c50": "3"
       }
     },
-    "name_es": "ácido sulfúrico"
+    "name_es": "Ácido Sulfúrico"
   },
   {
     "name": "Schwefelsäure",
@@ -92818,7 +92818,7 @@
         "c50": "1"
       }
     },
-    "name_es": "ácido sulfúrico"
+    "name_es": "Ácido Sulfúrico"
   },
   {
     "name": "Schwefelsäure",
@@ -92926,7 +92926,7 @@
         "c50": "2"
       }
     },
-    "name_es": "ácido sulfúrico"
+    "name_es": "Ácido Sulfúrico"
   },
   {
     "name": "Schwefelsäure",
@@ -93034,7 +93034,7 @@
         "c50": "3"
       }
     },
-    "name_es": "ácido sulfúrico"
+    "name_es": "Ácido Sulfúrico"
   },
   {
     "name": "Schwefeltrioxid",
@@ -93142,7 +93142,7 @@
         "c50": "1"
       }
     },
-    "name_es": "trióxido de azufre"
+    "name_es": "Trióxido de azufre"
   },
   {
     "name": "Schwefelwasserstoff",
@@ -93250,7 +93250,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Sulfuro De Hidrógeno"
+    "name_es": "Sulfuro de hidrógeno"
   },
   {
     "name": "Schweflige Säure",
@@ -93796,7 +93796,7 @@
     "aliases": [
       "Essigsäure Silbersalz"
     ],
-    "name_es": "plataacetato"
+    "name_es": "Acetato de plata"
   },
   {
     "name": "Silbercyanid",
@@ -94012,7 +94012,7 @@
         "c50": "1"
       }
     },
-    "name_es": "platanitrato"
+    "name_es": "Nitrato de plata"
   },
   {
     "name": "Silbernitrat",
@@ -94120,7 +94120,7 @@
         "c50": "1"
       }
     },
-    "name_es": "platanitrato"
+    "name_es": "Nitrato de plata"
   },
   {
     "name": "Siliconfette",
@@ -95098,7 +95098,7 @@
     "aliases": [
       "Branntweine"
     ],
-    "name_es": "Bebidas espirituosas"
+    "name_es": "Licores"
   },
   {
     "name": "Spiritus",
@@ -95206,7 +95206,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Alcohol"
+    "name_es": "Alcohol de Quemar"
   },
   {
     "name": "Spülmittel",
@@ -95752,7 +95752,7 @@
     "aliases": [
       "Octadecansäure"
     ],
-    "name_es": "Ácido esteárico"
+    "name_es": "Ácido Esteárico"
   },
   {
     "name": "Stearinsäurebutylester",
@@ -96079,7 +96079,7 @@
         "c50": "1"
       }
     },
-    "name_es": "nitrógeno"
+    "name_es": "Nitrógeno"
   },
   {
     "name": "Stickstofftetroxid",
@@ -96190,7 +96190,7 @@
     "aliases": [
       "Distickstofftetroxid"
     ],
-    "name_es": "nitrógenotetróxido"
+    "name_es": "Tetróxido de nitrógeno"
   },
   {
     "name": "Strontiumbromid",
@@ -96298,7 +96298,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Strontiumbromuro"
+    "name_es": "Bromuro de estroncio"
   },
   {
     "name": "Strychnin",
@@ -96626,7 +96626,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Sulfurylcloruro"
+    "name_es": "Cloruro de Sulfurilo"
   },
   {
     "name": "Talg",
@@ -97066,7 +97066,7 @@
         "c50": "1"
       }
     },
-    "name_es": "alquitrán"
+    "name_es": "Alquitrán"
   },
   {
     "name": "Terpentinersatz",
@@ -97174,7 +97174,7 @@
         "c50": "1"
       }
     },
-    "name_es": "trementinaersatz"
+    "name_es": "Sustituto de trementina"
   },
   {
     "name": "Terpentinöl",
@@ -97390,7 +97390,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Bencina de prueba"
+    "name_es": "Testgasolina"
   },
   {
     "name": "Testkraftstoff A (ISO-Fluid A)",
@@ -97498,7 +97498,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Combustible de prueba A (ISO-Fluid A)"
+    "name_es": "Combustible de Prueba A (Iso-Fluid A)"
   },
   {
     "name": "Testkraftstoff B (ISO-Fluid B)",
@@ -97606,7 +97606,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Combustible de prueba B (ISO-Fluid B)"
+    "name_es": "Combustible de Prueba B (Iso-Fluid B)"
   },
   {
     "name": "Testkraftstoff C (ISO-Fluid C)",
@@ -97714,7 +97714,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Combustible de prueba C (ISO-Fluid C)"
+    "name_es": "Combustible de Prueba C (Iso-Fluid C)"
   },
   {
     "name": "Testkraftstoff D (ISO-Fluid D)",
@@ -97822,7 +97822,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Combustible de prueba D (ISO-Fluid D)"
+    "name_es": "Combustible de Prueba D (Iso-Fluid D)"
   },
   {
     "name": "Tetrabromethan (TBE)",
@@ -97930,7 +97930,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Tetrabromoetano (TBE)"
+    "name_es": "Tetrabromoetano (tbe)"
   },
   {
     "name": "Tetrabromkohlenstoff",
@@ -98042,7 +98042,7 @@
       "Kohlenstofftetrabromid",
       "Tetrabrommethan"
     ],
-    "name_es": "Tetrabromuro de carbono"
+    "name_es": "Tetrabromocarbono"
   },
   {
     "name": "Tetrachlorethan",
@@ -98258,7 +98258,7 @@
         "c50": "1L"
       }
     },
-    "name_es": "tetracloruro de carbono (TETRA)"
+    "name_es": "Tetracloruro de carbono (tetra)"
   },
   {
     "name": "Tetraethylblei (TEL)",
@@ -98366,7 +98366,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Tetraetilplomo (TEL)"
+    "name_es": "Tetraetilplomo (tel)"
   },
   {
     "name": "Tetraethylorthosilicat",
@@ -98590,7 +98590,7 @@
     "aliases": [
       "Freon 14"
     ],
-    "name_es": "Tetrafluorometano"
+    "name_es": "Tetraflúormetano"
   },
   {
     "name": "Tetrahydrofuran (THF)",
@@ -98698,7 +98698,7 @@
         "c50": "1"
       }
     },
-    "name_es": "tetrahidrofurano (THF)"
+    "name_es": "Tetrahidrofurano (thf)"
   },
   {
     "name": "Tetrahydrofurfurylalkohol",
@@ -99143,7 +99143,7 @@
     "aliases": [
       "Schwefligsäuredichlorid"
     ],
-    "name_es": "Thionylcloruro"
+    "name_es": "Cloruro de Tionilo"
   },
   {
     "name": "Thiophen",
@@ -99479,7 +99479,7 @@
       "Tetrachlortitan",
       "Titanchlorid"
     ],
-    "name_es": "Titantetracloruro"
+    "name_es": "Tetracloruro de titanio"
   },
   {
     "name": "Traganth",
@@ -99917,7 +99917,7 @@
     "aliases": [
       "Citronensäuretributylester"
     ],
-    "name_es": "Citrato de tributilo"
+    "name_es": "Tributylcitrato"
   },
   {
     "name": "Tributylphosphat (TBP)",
@@ -100025,7 +100025,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Tributylfosfato (TBP)"
+    "name_es": "Tributylfosfato (tbp)"
   },
   {
     "name": "Trichloracetaldehyd",
@@ -100568,7 +100568,7 @@
         "c50": "1L"
       }
     },
-    "name_es": "tricloroetileno (TRI)"
+    "name_es": "Tricloroetileno (tri)"
   },
   {
     "name": "Trichlorfluormethan",
@@ -100681,7 +100681,7 @@
       "Freon 11",
       "Trichlormonofluormethan"
     ],
-    "name_es": "Triclorofluorometano"
+    "name_es": "Tricloroflúormetano"
   },
   {
     "name": "Trichlorphenol",
@@ -100900,7 +100900,7 @@
     "aliases": [
       "Freon 113"
     ],
-    "name_es": "Triclorotrifluoroetano"
+    "name_es": "Triclorotriflúoretano"
   },
   {
     "name": "Triethanolamin (TEA)",
@@ -101008,7 +101008,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Trietanolamina (TEA)"
+    "name_es": "Trietanolaminaa (tea)"
   },
   {
     "name": "Triethylamin (TEA)",
@@ -101116,7 +101116,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Trietilamina (TEA)"
+    "name_es": "Trietilaminaa (tea)"
   },
   {
     "name": "Trifluortrichlorethan",
@@ -101224,7 +101224,7 @@
         "c50": "0"
       }
     },
-    "name_es": "Trifluorotricloroetano"
+    "name_es": "Triflúortricloroetano"
   },
   {
     "name": "Triglycol",
@@ -101335,7 +101335,7 @@
     "aliases": [
       "Triethylenglycol"
     ],
-    "name_es": "Triglicol"
+    "name_es": "Trietilenglicol"
   },
   {
     "name": "Triglycolacetat",
@@ -101554,7 +101554,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Triisopropilbenceno"
+    "name_es": "Triisopropylbenceno"
   },
   {
     "name": "Trikresylphosphat (TCF)",
@@ -101662,7 +101662,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Trikresylfosfato (TCF)"
+    "name_es": "Trikresylfosfato (tcf)"
   },
   {
     "name": "Trimethylolpropan",
@@ -101886,7 +101886,7 @@
     "aliases": [
       "Natriumphosphat, tertiär"
     ],
-    "name_es": "Trinatriumfosfato"
+    "name_es": "Fosfato trisódico"
   },
   {
     "name": "Trioctylphosphat",
@@ -102105,7 +102105,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Tripropilenglicol (TPG)"
+    "name_es": "Tripropilenoglicol (tpg)"
   },
   {
     "name": "Turbinenöl (Mineralölbasis)",
@@ -102871,7 +102871,7 @@
     "aliases": [
       "Essigsäurevinylester"
     ],
-    "name_es": "Acetato de vinilo"
+    "name_es": "Vinilacetato"
   },
   {
     "name": "Vinylidenchlorid",
@@ -102983,7 +102983,7 @@
       "Dichlorethen, 1,1-",
       "Dichlorethylen, 1,1-"
     ],
-    "name_es": "Cloruro De Vinilideno"
+    "name_es": "Cloruro de Vinilideno"
   },
   {
     "name": "Vitamin C",
@@ -103091,7 +103091,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Vitamina C"
+    "name_es": "Vitaminaa c"
   },
   {
     "name": "Wachsalkohol",
@@ -103307,7 +103307,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Ceras"
+    "name_es": "Cerae"
   },
   {
     "name": "Walnussöl",
@@ -103523,7 +103523,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Esperma de ballena"
+    "name_es": "Esperma de Ballena"
   },
   {
     "name": "Waschmittel",
@@ -103631,7 +103631,7 @@
         "c50": "1"
       }
     },
-    "name_es": "detergente"
+    "name_es": "Detergente"
   },
   {
     "name": "Wasser",
@@ -103739,7 +103739,7 @@
         "c50": "1"
       }
     },
-    "name_es": "agua"
+    "name_es": "Agua"
   },
   {
     "name": "Wasser, destilliertes ~",
@@ -104063,7 +104063,7 @@
         "c50": "1"
       }
     },
-    "name_es": "hidrógeno"
+    "name_es": "Hidrógeno"
   },
   {
     "name": "Wasserstoffperoxid",
@@ -104174,7 +104174,7 @@
     "aliases": [
       "Wasserstoffsuperoxid"
     ],
-    "name_es": "peróxido de hidrógeno"
+    "name_es": "Peróxido de hidrógeno"
   },
   {
     "name": "Wasserstoffperoxid",
@@ -104285,7 +104285,7 @@
     "aliases": [
       "Wasserstoffsuperoxid"
     ],
-    "name_es": "peróxido de hidrógeno"
+    "name_es": "Peróxido de hidrógeno"
   },
   {
     "name": "Wasserstoffperoxid",
@@ -104396,7 +104396,7 @@
     "aliases": [
       "Wasserstoffsuperoxid"
     ],
-    "name_es": "peróxido de hidrógeno"
+    "name_es": "Peróxido de hidrógeno"
   },
   {
     "name": "Wasserstoffperoxid",
@@ -104507,7 +104507,7 @@
     "aliases": [
       "Wasserstoffsuperoxid"
     ],
-    "name_es": "peróxido de hidrógeno"
+    "name_es": "Peróxido de hidrógeno"
   },
   {
     "name": "Weichmacher",
@@ -104615,7 +104615,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Plastificante"
+    "name_es": "Plastificantes"
   },
   {
     "name": "Weine",
@@ -104723,7 +104723,7 @@
         "c50": "1"
       }
     },
-    "name_es": "vinoe"
+    "name_es": "Vinoe"
   },
   {
     "name": "Weingeist",
@@ -104831,7 +104831,7 @@
         "c50": "1"
       }
     },
-    "name_es": "vinogeist"
+    "name_es": "Vinogeist"
   },
   {
     "name": "Weingeist",
@@ -104939,7 +104939,7 @@
         "c50": "1"
       }
     },
-    "name_es": "vinogeist"
+    "name_es": "Vinogeist"
   },
   {
     "name": "Weinsäure",
@@ -105050,7 +105050,7 @@
     "aliases": [
       "Dihydroxybernsteinsäure"
     ],
-    "name_es": "ácido tartárico"
+    "name_es": "Ácido Tartárico"
   },
   {
     "name": "Weinsäure",
@@ -105161,7 +105161,7 @@
     "aliases": [
       "Dihydroxybernsteinsäure"
     ],
-    "name_es": "ácido tartárico"
+    "name_es": "Ácido Tartárico"
   },
   {
     "name": "Whiskey",
@@ -106140,7 +106140,7 @@
         "c50": "1"
       }
     },
-    "name_es": "zincacetato"
+    "name_es": "Acetato de zinc"
   },
   {
     "name": "Zinkbromid",
@@ -106248,7 +106248,7 @@
         "c50": "0"
       }
     },
-    "name_es": "zincbromuro"
+    "name_es": "Bromuro de zinc"
   },
   {
     "name": "Zinkcarbonat",
@@ -106356,7 +106356,7 @@
         "c50": "1"
       }
     },
-    "name_es": "zinccarbonato"
+    "name_es": "Carbonato de zinc"
   },
   {
     "name": "Zinkchlorid",
@@ -106467,7 +106467,7 @@
     "aliases": [
       "Chlorzink"
     ],
-    "name_es": "zinccloruro"
+    "name_es": "Cloruro de zinc"
   },
   {
     "name": "Zinkchlorid",
@@ -106578,7 +106578,7 @@
     "aliases": [
       "Chlorzink"
     ],
-    "name_es": "zinccloruro"
+    "name_es": "Cloruro de zinc"
   },
   {
     "name": "Zinknitrat",
@@ -106686,7 +106686,7 @@
         "c50": "1"
       }
     },
-    "name_es": "zincnitrato"
+    "name_es": "Nitrato de zinc"
   },
   {
     "name": "Zinkoxid",
@@ -106794,7 +106794,7 @@
         "c50": "1"
       }
     },
-    "name_es": "zincóxido"
+    "name_es": "Óxido de zinc"
   },
   {
     "name": "Zinkphosphat",
@@ -106902,7 +106902,7 @@
         "c50": "1"
       }
     },
-    "name_es": "zincfosfato"
+    "name_es": "Fosfato de zinc"
   },
   {
     "name": "Zinksalbe",
@@ -107229,7 +107229,7 @@
     "aliases": [
       "Stearinsäure Zinksalz"
     ],
-    "name_es": "Estearato De Zinc"
+    "name_es": "Estearato de zinc"
   },
   {
     "name": "Zinksulfat",
@@ -107340,7 +107340,7 @@
     "aliases": [
       "Zinkvitriol"
     ],
-    "name_es": "zincsulfato"
+    "name_es": "Sulfato de zinc"
   },
   {
     "name": "Zinn-(II)-chlorid",
@@ -107452,7 +107452,7 @@
       "Zinndichlorid",
       "Zinnprotochlorid"
     ],
-    "name_es": "estaño-(II)-cloruro"
+    "name_es": "Cloruro de estaño(II)"
   },
   {
     "name": "Zinn-(II)-chlorid",
@@ -107564,7 +107564,7 @@
       "Zinndichlorid",
       "Zinnprotochlorid"
     ],
-    "name_es": "estaño-(II)-cloruro"
+    "name_es": "Cloruro de estaño(II)"
   },
   {
     "name": "Zinn-(IV)-chlorid",
@@ -107675,7 +107675,7 @@
     "aliases": [
       "Zinntetrachlorid"
     ],
-    "name_es": "estaño-(IV)-cloruro"
+    "name_es": "Cloruro de estaño(IV)"
   },
   {
     "name": "Zitronensaft",
@@ -107783,7 +107783,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Jugo de limón"
+    "name_es": "Zumo de limón"
   },
   {
     "name": "Zitronensäure",
@@ -107894,7 +107894,7 @@
     "aliases": [
       "Citronensäure"
     ],
-    "name_es": "ácido cítrico"
+    "name_es": "Ácido Cítrico"
   },
   {
     "name": "Zitronensäure",
@@ -108005,7 +108005,7 @@
     "aliases": [
       "Citronensäure"
     ],
-    "name_es": "ácido cítrico"
+    "name_es": "Ácido Cítrico"
   },
   {
     "name": "Zitronensäure",
@@ -108116,7 +108116,7 @@
     "aliases": [
       "Citronensäure"
     ],
-    "name_es": "ácido cítrico"
+    "name_es": "Ácido Cítrico"
   },
   {
     "name": "Zitronenschalenöl",
@@ -108332,7 +108332,7 @@
         "c50": "1"
       }
     },
-    "name_es": "Jugos cítricos"
+    "name_es": "Jugos Cítricos"
   },
   {
     "name": "Zuckerrübensaft",
