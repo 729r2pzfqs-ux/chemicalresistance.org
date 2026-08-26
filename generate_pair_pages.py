@@ -91,7 +91,7 @@ def generate_pair_page(mat_code, mat_info, chem_data):
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="xrS32xSgQE4Xp1oL20j7uQ" async></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','G-LTK6VVHYDW');</script>
     <title>{mat_name} vs {chem_name} | Chemical Resistance</title>
-    <meta name="description" content="Is {mat_name} resistant to {chem_name}? {grade_text} resistance rating at 20°C. Full compatibility data with temperature comparison.">
+    <meta name="description" content="Is {mat_name} resistant to {chem_name}? {grade_text} resistance rating at 20°C. Compatibility data and temperature limits.">
     <link rel="icon" href="../../favicon.ico">
     <link rel="canonical" href="https://chemicalresistance.org/{mat_slug}/{chem_slug}">
     <link rel="stylesheet" href="/css/tailwind.min.css">

@@ -99,7 +99,7 @@ def fix_french_viscosity():
 
         # Fix meta description - more compelling, action-oriented
         old_desc = '<meta name="description" content="Recherche gratuite de viscosité pour plus de 100 liquides et substances. Trouvez les valeurs de viscosité en mPa·s (cP) pour la sélection de pompes et la manipulation des fluides.">'
-        new_desc = '<meta name="description" content="Table de viscosité des liquides : trouvez instantanément la viscosité en mPa·s (cP) de plus de 100 substances — eau, huile, glycérine, acides et solvants. Données à 20°C et 50°C pour la sélection de pompes.">'
+        new_desc = '<meta name="description" content="Table de viscosité des liquides : viscosité en mPa·s (cP) de 100+ substances — eau, huile, glycérine, acides, solvants. Données à 20°C et 50°C.">'
         content = content.replace(old_desc, new_desc)
 
         # Fix OG title too
@@ -274,7 +274,7 @@ def create_comparison_pages():
         b_good = sum(1 for c in chemicals if c['ratings'].get(comp['mat_b'], {}).get('c20') in ('1', '2'))
 
         title = f"{comp['name_a']} vs {comp['name_b']}: Chemical Resistance Comparison"
-        description = f"Compare {comp['name_a']} and {comp['name_b']} chemical resistance side-by-side. See which material is better for your application — temperature range, compatibility ratings, and recommendations."
+        description = f"Compare {comp['name_a']} and {comp['name_b']} chemical resistance side-by-side — temperature range, compatibility ratings and recommendations."
 
         # Pre-escape strings for JSON-LD (can't use backslash in f-string expr in Python 3.10)
         dq = '"'

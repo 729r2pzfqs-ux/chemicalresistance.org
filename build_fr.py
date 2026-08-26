@@ -879,7 +879,7 @@ def build_compare_index():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparer les matériaux &mdash; Résistance chimique côte à côte</title>
-    <meta name="description" content="Créez votre propre comparaison de matériaux. Sélectionnez 2 à 3 matériaux parmi 24 options et consultez les évaluations de résistance pour plus de 1 600 produits chimiques.">
+    <meta name="description" content="Créez votre comparaison de matériaux. Sélectionnez 2 à 3 matériaux parmi 24 et consultez les évaluations de résistance pour 1 600+ produits.">
     <link rel="canonical" href="https://chemicalresistance.org/fr/compare/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/tailwind.min.css">

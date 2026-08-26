@@ -56,7 +56,7 @@ CHARTS = [
         'slug': 'metals',
         'title': 'Metal Chemical Resistance Comparison — SS316 vs SS304 vs Aluminium',
         'h1': 'Metal Comparison Chart',
-        'desc': 'Compare 316 Stainless Steel, 304 Stainless Steel, and Aluminium chemical resistance. See which metal handles your chemicals — acids, alkalis, solvents rated A-D.',
+        'desc': 'Compare 316 Stainless Steel, 304 Stainless Steel and Aluminium chemical resistance. See which metal handles acids, alkalis and solvents, rated A-D.',
         'intro': 'Metal selection for chemical service depends on the specific chemicals, concentration, and temperature. SS 316 adds molybdenum for chloride resistance, SS 304 is the general-purpose workhorse, and aluminium saves weight but has narrower compatibility.',
         'materials': ['V4A','V2A','AL'],
         'color': 'blue',

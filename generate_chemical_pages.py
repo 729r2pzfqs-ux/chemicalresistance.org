@@ -113,7 +113,7 @@ def generate_chemical_page(chem_data):
         gtag('config', 'G-LTK6VVHYDW');
     </script>
     <title>{name} Chemical Resistance | Compatible Materials</title>
-    <meta name="description" content="Which materials are resistant to {name}? Complete compatibility chart for {name}{' (CAS ' + cas + ')' if cas else ''} at 20°C and 50°C.">
+    <meta name="description" content="Which materials are resistant to {name}{' (CAS ' + cas + ')' if cas else ''}? A-D compatibility ratings for 24 materials at 20°C and 50°C.">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://chemicalresistance.org/chemicals/{slug}">
     <meta property="og:title" content="{name} Chemical Resistance Chart">
